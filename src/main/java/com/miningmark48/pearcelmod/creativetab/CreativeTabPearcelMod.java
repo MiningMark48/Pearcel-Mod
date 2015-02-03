@@ -15,11 +15,6 @@ public class CreativeTabPearcelMod {
 			return ModItems.pearcel;
 		}
 		
-		@Override
-		public String getTranslatedTabLabel(){
-			return "Pearcel Mod";
-		}
-		
 	};
 	
 }
