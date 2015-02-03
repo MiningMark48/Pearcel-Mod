@@ -1,0 +1,17 @@
+package com.miningmark48.pearcelmod.init;
+
+import com.miningmark48.pearcelmod.item.*;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+
+	public static final ItemPearcelMod pearcel = new ItemPearcel();
+	
+	public static void init(){
+		
+		GameRegistry.registerItem(pearcel, "pearcelItem");
+		
+	}
+	
+}

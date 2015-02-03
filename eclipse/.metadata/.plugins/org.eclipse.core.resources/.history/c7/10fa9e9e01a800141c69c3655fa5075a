@@ -1,0 +1,17 @@
+package com.miningmark48.pearcelmod.init;
+
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class Recipes {
+	
+	public static void init(){
+		
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.meBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel, 9), new ItemStack(ModBlocks.meBlock));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel), new ItemStack(Items.apple));
+		
+	}
+
+}
