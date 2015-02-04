@@ -1,9 +1,26 @@
 item.pearcelItem.name=Pearcel
 item.pearcelmod:pearcelNugget.name=Pearcel Nugget
-item.pearcelmod:pearcelSword.name=Pearcel Sword
+item.pearcelSword.name=Pearcel Sword
+item.pearcelmod:compressedSugarCaneItem=Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem2=Double Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem3=Triple Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem4=Quadruple Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem5=Quintuple Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem6=Sextuple Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem7=Septuple Compressed Sugar Cane (Item)
+item.pearcelmod:compressedSugarCaneItem8=Octuple Compressed Sugar Cane (Item)
 
 tile.pearcelmod:meBlock.name=ME^Block
 tile.pearcelmod:meGlass.name=ME^Glass
 tile.pearcelmod:pearcelOre.name=Pearcel Ore
 
 itemGroup.pearcelmod=Pearcel Mod
+
+tooltip.pearcel.celmod:compressedSugarCaneItem.desc.0=9 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem2.desc.0=81 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem3.desc.0=729 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem4.desc.0=6,561 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem5.desc.0=59,049 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem6.desc.0=531,441 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem7.desc.0=4,782,969 Sugar Cane
+tooltip.pearcel.celmod:compressedSugarCaneItem8.desc.0=43,046,721 Sugar Cane
