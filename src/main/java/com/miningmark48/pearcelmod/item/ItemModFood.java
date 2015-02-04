@@ -21,7 +21,7 @@ public class ItemModFood extends ItemFood{
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-        list.add(EnumChatFormatting.ITALIC + StatCollector.translateToLocal("tooltip.pearcel." + getUnlocalizedName().substring(9) + ".desc.0"));
+        list.add(EnumChatFormatting.GRAY + StatCollector.translateToLocal("tooltip.pearcel." + getUnlocalizedName().substring(9) + ".desc.0"));
     }
 	
 }
