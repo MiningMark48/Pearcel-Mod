@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.init;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -15,6 +16,7 @@ public class Recipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.pearcel), "xxx", "x x", "xxx", 'x', new ItemStack(ModItems.pearcelNugget));
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelOre), new ItemStack(ModItems.pearcelNugget),  10f);
 		GameRegistry.addRecipe(new ItemStack(ModItems.pearcelSword), "x", "x", "y", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.stick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.sugarCookie, 4), "xyx", 'x', new ItemStack(Items.sugar), 'y', new ItemStack(Items.wheat));
 		//Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.meBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel));
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.meGlass, 8), "xxx", "xyx", "xxx", 'x', new ItemStack(Blocks.glass), 'y', new ItemStack(ModItems.pearcel));
