@@ -13,6 +13,7 @@ public class ModItems {
 
     //Food
 	public static final Item pearcel = new ItemModFood(6, 1.0F, true).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item sugarCookie = new ItemSugarCookie(1, 1.0F, true).setUnlocalizedName("sugarCookie").setTextureName(Reference.MOD_ID + ":sugarCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Tools and Weapons
     public static final Item pearcelSword = new ItemPearcelSword(ToolMaterial.STONE).setUnlocalizedName("pearcelSword").setTextureName(Reference.MOD_ID + ":pearcelSword").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -34,6 +35,7 @@ public class ModItems {
 	public static void init(){
 		
 		GameRegistry.registerItem(pearcel, "pearcelItem");
+        GameRegistry.registerItem(sugarCookie, "sugarCookie");
 		GameRegistry.registerItem(pearcelSword, "pearcelSword");
 		GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
