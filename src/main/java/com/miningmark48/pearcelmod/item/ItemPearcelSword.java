@@ -10,13 +10,9 @@ import net.minecraft.item.ItemSword;
 
 public class ItemPearcelSword extends ItemSword{
 
-	public ItemPearcelSword(ToolMaterial material) {
+	public ItemPearcelSword(ToolMaterial material)
+    {
 		super(material);
-		this.setUnlocalizedName("pearcelmod:pearcelSword");
-		this.setTextureName("pearcelmod:pearcelSword");
-		this.setMaxStackSize(1);
-		this.setMaxDamage(2048);
-		this.setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 	}
 	
 	@Override

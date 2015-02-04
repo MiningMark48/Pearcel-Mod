@@ -9,11 +9,9 @@ import net.minecraft.item.ItemFood;
 
 public class ItemPearcelNugget extends ItemPearcelMod{
 
-	public ItemPearcelNugget(){
+	public ItemPearcelNugget()
+    {
 		super();
-		this.setUnlocalizedName("pearcelNugget");
-		this.setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-		this.setMaxStackSize(16);
 	}
 	
 }
