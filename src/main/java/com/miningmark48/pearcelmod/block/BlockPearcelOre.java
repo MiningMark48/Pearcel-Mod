@@ -7,6 +7,7 @@ public class BlockPearcelOre extends Block {
 	
 	public BlockPearcelOre(){
         super(Material.rock);
+        setStepSound(soundTypeStone);
 	}
 	
 }

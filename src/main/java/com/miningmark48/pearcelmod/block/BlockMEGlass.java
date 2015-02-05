@@ -7,6 +7,7 @@ public class BlockMEGlass extends Block {
 	
 	public BlockMEGlass(){
 		super(Material.glass);
+        setStepSound(soundTypeGlass);
 	}
 	
 	@Override

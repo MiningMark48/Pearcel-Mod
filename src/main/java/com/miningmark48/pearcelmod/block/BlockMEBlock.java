@@ -7,6 +7,7 @@ public class BlockMEBlock extends Block {
 	
 	public BlockMEBlock(){
         super(Material.iron);
+        setStepSound(soundTypeMetal);
 	}
 	
 	

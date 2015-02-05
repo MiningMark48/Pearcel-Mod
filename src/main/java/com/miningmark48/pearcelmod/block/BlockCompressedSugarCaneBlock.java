@@ -19,6 +19,7 @@ public class BlockCompressedSugarCaneBlock extends Block
     public BlockCompressedSugarCaneBlock()
     {
         super(Material.wood);
+        setStepSound(soundTypeWood);
     }
 
     @SideOnly(Side.CLIENT)
