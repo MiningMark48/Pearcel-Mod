@@ -1,7 +1,0 @@
-package com.miningmark48.pearcelmod.proxy;
-
-public interface IProxy {
-
-	public abstract void dothis();
-	
-}

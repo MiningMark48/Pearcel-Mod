@@ -1,9 +1,0 @@
-package com.miningmark48.pearcelmod.init;
-
-import com.miningmark48.pearcelmod.item.*;
-
-public class ModItems {
-
-	public static final ItemPearcelMod pearcel = new ItemPearcel();
-	
-}
