@@ -1,14 +1,12 @@
 package com.miningmark48.pearcelmod.block;
 
-import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 
-import net.minecraft.creativetab.CreativeTabs;
-
-public class BlockPearcelOre extends BlockPearcelMod{
+public class BlockPearcelOre extends Block {
 	
 	public BlockPearcelOre(){
-		this.setBlockName("pearcelOre");
-		this.setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        super(Material.rock);
 	}
 	
 }

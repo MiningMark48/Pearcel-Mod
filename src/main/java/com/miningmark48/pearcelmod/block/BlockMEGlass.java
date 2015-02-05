@@ -1,21 +1,12 @@
 package com.miningmark48.pearcelmod.block;
 
-import java.util.List;
-
-import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
-
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 
-public class BlockMEGlass extends BlockPearcelMod{
+public class BlockMEGlass extends Block {
 	
 	public BlockMEGlass(){
 		super(Material.glass);
-		this.setBlockName("meGlass");
-		this.setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-		this.setLightLevel(0.2f);
 	}
 	
 	@Override

@@ -11,9 +11,10 @@ item.compressedSugarCaneItem6.name=Sextuple Compressed Sugar Cane (Item)
 item.compressedSugarCaneItem7.name=Septuple Compressed Sugar Cane (Item)
 item.compressedSugarCaneItem8.name=Octuple Compressed Sugar Cane (Item)
 
-tile.pearcelmod:meBlock.name=ME^Block
-tile.pearcelmod:meGlass.name=ME^Glass
-tile.pearcelmod:pearcelOre.name=Pearcel Ore
+tile.meBlock.name=ME^Block
+tile.meGlass.name=ME^Glass
+tile.pearcelOre.name=Pearcel Ore
+tile.compressedSugarCaneBlock.name=Compressed Sugar Cane (Block)
 
 itemGroup.pearcelmod=Pearcel Mod
 
