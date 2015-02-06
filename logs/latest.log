@@ -1,143 +1,55 @@
-[22:31:16] [main/INFO]: Logging in with username & password
-[22:32:23] [main/INFO]: Setting user: MiningMark48
-[22:32:41] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:34:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[22:34:14] [Sound Library Loader/INFO]: Sound engine started
-[22:34:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:34:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[22:34:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[22:34:57] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[22:34:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:35:02] [Sound Library Loader/INFO]: Sound engine started
-[22:35:46] [Client thread/INFO]: Deleting level World Gen-
-[22:35:46] [Client thread/INFO]: Attempt 1...
-[22:35:50] [Client thread/INFO]: Deleting level World Gen
-[22:35:50] [Client thread/INFO]: Attempt 1...
-[22:36:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:36:03] [Server thread/INFO]: Generating keypair
-[22:36:05] [Server thread/INFO]: Converting map!
-[22:36:05] [Server thread/INFO]: Scanning folders...
-[22:36:05] [Server thread/INFO]: Total conversion count is 0
-[22:36:14] [Server thread/INFO]: Preparing start region for level 0
-[22:36:15] [Server thread/INFO]: Preparing spawn area: 0%
-[22:36:17] [Server thread/INFO]: Preparing spawn area: 1%
-[22:36:18] [Server thread/INFO]: Preparing spawn area: 2%
-[22:36:19] [Server thread/INFO]: Preparing spawn area: 3%
-[22:36:20] [Server thread/INFO]: Preparing spawn area: 4%
-[22:36:21] [Server thread/INFO]: Preparing spawn area: 4%
-[22:36:23] [Server thread/INFO]: Preparing spawn area: 5%
-[22:36:24] [Server thread/INFO]: Preparing spawn area: 6%
-[22:36:25] [Server thread/INFO]: Preparing spawn area: 7%
-[22:36:26] [Server thread/INFO]: Preparing spawn area: 7%
-[22:36:28] [Server thread/INFO]: Preparing spawn area: 8%
-[22:36:29] [Server thread/INFO]: Preparing spawn area: 9%
-[22:36:30] [Server thread/INFO]: Preparing spawn area: 10%
-[22:36:31] [Server thread/INFO]: Preparing spawn area: 11%
-[22:36:32] [Server thread/INFO]: Preparing spawn area: 12%
-[22:36:33] [Server thread/INFO]: Preparing spawn area: 12%
-[22:36:34] [Server thread/INFO]: Preparing spawn area: 15%
-[22:36:36] [Server thread/INFO]: Preparing spawn area: 15%
-[22:36:38] [Server thread/INFO]: Preparing spawn area: 17%
-[22:36:39] [Server thread/INFO]: Preparing spawn area: 18%
-[22:36:40] [Server thread/INFO]: Preparing spawn area: 19%
-[22:36:41] [Server thread/INFO]: Preparing spawn area: 20%
-[22:36:42] [Server thread/INFO]: Preparing spawn area: 22%
-[22:36:44] [Server thread/INFO]: Preparing spawn area: 24%
-[22:36:45] [Server thread/INFO]: Preparing spawn area: 24%
-[22:36:46] [Server thread/INFO]: Preparing spawn area: 25%
-[22:36:47] [Server thread/INFO]: Preparing spawn area: 26%
-[22:36:48] [Server thread/INFO]: Preparing spawn area: 28%
-[22:36:49] [Server thread/INFO]: Preparing spawn area: 29%
-[22:36:51] [Server thread/INFO]: Preparing spawn area: 30%
-[22:36:52] [Server thread/INFO]: Preparing spawn area: 32%
-[22:36:53] [Server thread/INFO]: Preparing spawn area: 33%
-[22:36:54] [Server thread/INFO]: Preparing spawn area: 34%
-[22:36:55] [Server thread/INFO]: Preparing spawn area: 36%
-[22:36:56] [Server thread/INFO]: Preparing spawn area: 36%
-[22:36:57] [Server thread/INFO]: Preparing spawn area: 37%
-[22:36:58] [Server thread/INFO]: Preparing spawn area: 38%
-[22:37:00] [Server thread/INFO]: Preparing spawn area: 40%
-[22:37:01] [Server thread/INFO]: Preparing spawn area: 41%
-[22:37:02] [Server thread/INFO]: Preparing spawn area: 43%
-[22:37:03] [Server thread/INFO]: Preparing spawn area: 45%
-[22:37:04] [Server thread/INFO]: Preparing spawn area: 46%
-[22:37:05] [Server thread/INFO]: Preparing spawn area: 48%
-[22:37:06] [Server thread/INFO]: Preparing spawn area: 50%
-[22:37:07] [Server thread/INFO]: Preparing spawn area: 52%
-[22:37:08] [Server thread/INFO]: Preparing spawn area: 53%
-[22:37:09] [Server thread/INFO]: Preparing spawn area: 56%
-[22:37:11] [Server thread/INFO]: Preparing spawn area: 57%
-[22:37:12] [Server thread/INFO]: Preparing spawn area: 58%
-[22:37:13] [Server thread/INFO]: Preparing spawn area: 58%
-[22:37:14] [Server thread/INFO]: Preparing spawn area: 59%
-[22:37:15] [Server thread/INFO]: Preparing spawn area: 61%
-[22:37:16] [Server thread/INFO]: Preparing spawn area: 62%
-[22:37:17] [Server thread/INFO]: Preparing spawn area: 63%
-[22:37:18] [Server thread/INFO]: Preparing spawn area: 64%
-[22:37:19] [Server thread/INFO]: Preparing spawn area: 65%
-[22:37:20] [Server thread/INFO]: Preparing spawn area: 67%
-[22:37:21] [Server thread/INFO]: Preparing spawn area: 68%
-[22:37:22] [Server thread/INFO]: Preparing spawn area: 69%
-[22:37:23] [Server thread/INFO]: Preparing spawn area: 70%
-[22:37:24] [Server thread/INFO]: Preparing spawn area: 72%
-[22:37:26] [Server thread/INFO]: Preparing spawn area: 75%
-[22:37:27] [Server thread/INFO]: Preparing spawn area: 77%
-[22:37:28] [Server thread/INFO]: Preparing spawn area: 78%
-[22:37:29] [Server thread/INFO]: Preparing spawn area: 80%
-[22:37:30] [Server thread/INFO]: Preparing spawn area: 81%
-[22:37:31] [Server thread/INFO]: Preparing spawn area: 83%
-[22:37:32] [Server thread/INFO]: Preparing spawn area: 84%
-[22:37:33] [Server thread/INFO]: Preparing spawn area: 86%
-[22:37:35] [Server thread/INFO]: Preparing spawn area: 87%
-[22:37:36] [Server thread/INFO]: Preparing spawn area: 88%
-[22:37:37] [Server thread/INFO]: Preparing spawn area: 88%
-[22:37:38] [Server thread/INFO]: Preparing spawn area: 89%
-[22:37:39] [Server thread/INFO]: Preparing spawn area: 90%
-[22:37:40] [Server thread/INFO]: Preparing spawn area: 92%
-[22:37:41] [Server thread/INFO]: Preparing spawn area: 95%
-[22:37:43] [Server thread/INFO]: Preparing spawn area: 96%
-[22:37:44] [Server thread/INFO]: Preparing spawn area: 98%
-[22:37:45] [Server thread/INFO]: Changing view distance to 12, from 10
-[22:37:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4550ms behind, skipping 91 tick(s)
-[22:37:56] [Server thread/INFO]: MiningMark48[local:E:c1f9488f] logged in with entity id 439 at (-9.5, 75.0, 245.5)
-[22:37:57] [Server thread/INFO]: MiningMark48 joined the game
-[22:39:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 59790ms behind, skipping 1195 tick(s)
-[22:39:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3092ms behind, skipping 61 tick(s)
-[22:39:39] [Server thread/INFO]: Saving and pausing game...
-[22:39:39] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
-[22:39:41] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
-[22:39:41] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
-[22:39:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2208ms behind, skipping 44 tick(s)
-[22:39:55] [Client thread/INFO]: Warning: Clientside chunk ticking took 3877 ms
-[22:40:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12435ms behind, skipping 248 tick(s)
-[22:40:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2379ms behind, skipping 47 tick(s)
-[22:40:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 1270 ms
-[22:40:48] [Client thread/INFO]: Warning: Clientside chunk ticking took 1345 ms
-[22:40:49] [Client thread/INFO]: Warning: Clientside chunk ticking took 758 ms
-[22:40:52] [Client thread/INFO]: Warning: Clientside chunk ticking took 959 ms
-[22:40:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 888 ms
-[22:40:55] [Client thread/INFO]: Warning: Clientside chunk ticking took 626 ms
-[22:40:56] [Client thread/INFO]: Warning: Clientside chunk ticking took 608 ms
-[22:41:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 25584ms behind, skipping 511 tick(s)
-[22:41:15] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2674ms behind, skipping 53 tick(s)
-[22:41:26] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to -4.5,10.5,445.5]
-[22:41:26] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to -4.5,10.5,445.5
-[22:42:09] [Server thread/INFO]: MiningMark48 has just earned the achievement [Taking Inventory]
-[22:42:15] [Client thread/INFO]: [CHAT] MiningMark48 has just earned the achievement [Taking Inventory]
-[22:42:38] [Client thread/INFO]: Warning: Clientside chunk ticking took 661 ms
-[22:42:40] [Client thread/INFO]: Warning: Clientside chunk ticking took 977 ms
-[22:42:46] [Client thread/INFO]: Warning: Clientside chunk ticking took 1705 ms
-[22:42:50] [Client thread/INFO]: Warning: Clientside chunk ticking took 790 ms
-[22:43:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 78018ms behind, skipping 1560 tick(s)
-[22:43:29] [Server thread/INFO]: Saving and pausing game...
-[22:43:29] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
-[22:43:30] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
-[22:43:30] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
-[22:43:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2364ms behind, skipping 47 tick(s)
-[22:43:31] [Server thread/INFO]: Stopping server
-[22:43:31] [Server thread/INFO]: Saving players
-[22:43:31] [Server thread/INFO]: Saving worlds
-[22:43:31] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
-[22:43:31] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
-[22:43:31] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
-[22:44:16] [Client thread/INFO]: Stopping!
+[18:49:23] [main/INFO]: Logging in with username & password
+[18:50:01] [main/INFO]: Setting user: MiningMark48
+[18:50:10] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:51:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[18:51:09] [Sound Library Loader/INFO]: Sound engine started
+[18:51:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:51:26] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:51:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[18:51:28] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:51:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:51:32] [Sound Library Loader/INFO]: Sound engine started
+[18:51:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:51:58] [Server thread/INFO]: Generating keypair
+[18:52:02] [Server thread/INFO]: Preparing start region for level 0
+[18:52:04] [Server thread/INFO]: Preparing spawn area: 0%
+[18:52:05] [Server thread/INFO]: Preparing spawn area: 16%
+[18:52:06] [Server thread/INFO]: Preparing spawn area: 29%
+[18:52:07] [Server thread/INFO]: Preparing spawn area: 58%
+[18:52:08] [Server thread/INFO]: Preparing spawn area: 90%
+[18:52:12] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:52:12] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3506ms behind, skipping 70 tick(s)
+[18:52:13] [Server thread/INFO]: MiningMark48[local:E:6ee948ed] logged in with entity id 297 at (-1336.300000011921, 4.0, 527.8067067898181)
+[18:52:13] [Server thread/INFO]: MiningMark48 joined the game
+[18:52:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 19936ms behind, skipping 398 tick(s)
+[18:52:49] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2298ms behind, skipping 45 tick(s)
+[18:52:55] [Server thread/INFO]: Saving and pausing game...
+[18:52:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:52:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:52:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:52:59] [Server thread/INFO]: Saving and pausing game...
+[18:52:59] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:53:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:53:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:53:19] [Server thread/INFO]: Saving and pausing game...
+[18:53:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:53:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:53:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:53:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2935ms behind, skipping 58 tick(s)
+[18:53:49] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
+[18:53:49] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[18:53:55] [Server thread/INFO]: Saving and pausing game...
+[18:53:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:53:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:53:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:53:58] [Server thread/INFO]: Saving and pausing game...
+[18:53:58] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:53:59] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:53:59] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:54:02] [Server thread/INFO]: Stopping server
+[18:54:02] [Server thread/INFO]: Saving players
+[18:54:02] [Server thread/INFO]: Saving worlds
+[18:54:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:54:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:54:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:54:05] [Client thread/INFO]: Stopping!

@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
@@ -43,7 +44,8 @@ public class PearcelMod {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
-		LogHelper.info("Init Complete!");
+        Achievements.init();
+        LogHelper.info("Init Complete!");
 	}
 	
 	@Mod.EventHandler
