@@ -4,6 +4,7 @@ import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.init.Recipes;
+import com.miningmark48.pearcelmod.init.WorldGen;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
 import com.miningmark48.pearcelmod.proxy.IProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -15,6 +16,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class PearcelMod {
@@ -33,6 +35,8 @@ public class PearcelMod {
 		ModItems.init();
 		ModBlocks.init();
 		Recipes.init();
+
+        GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 		
 		LogHelper.info("Pre-Init Complete!");
 	}

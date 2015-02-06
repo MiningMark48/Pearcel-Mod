@@ -4,6 +4,8 @@ import java.util.Random;
 
 import com.miningmark48.pearcelmod.utility.LogHelper;
 
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -12,41 +14,71 @@ import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGen implements IWorldGenerator{
 
-	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		switch(world.provider.dimensionId){
+            case -1: //Nether
+                generateNether(world, random, chunkX, chunkZ);
+
+                //LogHelper.info("Nether ores generated.");
+                break;
 			case 0: //Overworld
-				this.runGenerator(this.gen_pearcelOre, world, random, chunkX*16, chunkZ*16, 50, 0, 70);
-				LogHelper.info("Ore generated in overworld");
-				break;
-			case -1: //Nether
-				this.runGenerator(this.gen_pearcelOre, world, random, chunkX*16, chunkZ*16, 100, 64, 66);
-				LogHelper.info("Ore generated in nether");
-				break;
+                generateSurface(world, random, chunkX, chunkZ);
+
+               // LogHelper.info("Overworld ores generated.");
+                break;
 			case 1: //End
-				break;
+				generateEnd(world, random, chunkX, chunkZ);
+
+                //LogHelper.info("End ores generated.");
+                break;
 		}
 		
 	}
-	
-	private WorldGenerator gen_pearcelOre;
-	
-	public WorldGen(){
-		this.gen_pearcelOre = new WorldGenMinable(ModBlocks.pearcelOre, 8);
-	}
-	
-	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight){
-		if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
-			throw new IllegalArgumentException("Illeagal height arguments for World Generator.");
-		
-		int heightDiff = maxHeight - minHeight;
-		for (int i = 0; i < chancesToSpawn; i++){
-			int x = chunk_X * 16 + rand.nextInt(16);
-			int y = minHeight + rand.nextInt(heightDiff);
-			int z = chunk_Z * 16 + rand.nextInt(16);
-			generator.generate(world, rand, x, y, z);
-		}
-	}
-	
+
+    private void generateNether(World world, Random rand, int x, int z)
+    {
+        generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 16, 30, 0, 60, Blocks.netherrack);
+    }
+
+    private void generateSurface(World world, Random rand, int x, int z)
+    {
+        generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 12, 20, 0, 66, Blocks.stone);
+    }
+
+
+    private void generateEnd(World world, Random rand, int x, int z)
+    {
+
+    }
+
+    /**
+     * Adds an Ore Spawn to Minecraft. Simply register all Ores to spawn with this method in your Generation method in your IWorldGeneration extending Class
+     *
+     * @param The Block to spawn
+     * @param The World to spawn in
+     * @param A Random object for retrieving random positions within the world to spawn the Block
+     * @param An int for passing the X-Coordinate for the Generation method
+     * @param An int for passing the Z-Coordinate for the Generation method
+     * @param An int for setting the maximum X-Coordinate values for spawning on the X-Axis on a Per-Chunk basis
+     * @param An int for setting the maximum Z-Coordinate values for spawning on the Z-Axis on a Per-Chunk basis
+     * @param An int for setting the maximum size of a vein
+     * @param An int for the Number of chances available for the Block to spawn per-chunk
+     * @param An int for the minimum Y-Coordinate height at which this block may spawn
+     * @param An int for the maximum Y-Coordinate height at which this block may spawn
+     **/
+    public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block generateIn)
+    {
+        int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);
+        int heightRange = maxY - minY;
+        WorldGenMinable gen = new WorldGenMinable(block, veinSize, generateIn);
+        for (int i = 0; i < chance; i++){
+            int xRand = chunkX * 16 + random.nextInt(16);
+            int yRand = random.nextInt(heightRange) + minY;
+            int zRand = chunkZ * 16 + random.nextInt(16);
+            gen.generate(world, random, xRand, yRand, zRand);
+            //LogHelper.info("Pearcel Ore at " + xRand + " " + yRand + " " + zRand);
+        }
+    }
+
 
 }

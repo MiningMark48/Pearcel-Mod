@@ -11,9 +11,17 @@ item.compressedSugarCaneItem6.name=Sextuple Compressed Sugar Cane (Item)
 item.compressedSugarCaneItem7.name=Septuple Compressed Sugar Cane (Item)
 item.compressedSugarCaneItem8.name=Octuple Compressed Sugar Cane (Item)
 
-tile.pearcelmod:meBlock.name=ME^Block
-tile.pearcelmod:meGlass.name=ME^Glass
-tile.pearcelmod:pearcelOre.name=Pearcel Ore
+tile.meBlock.name=ME^Block
+tile.meGlass.name=ME^Glass
+tile.pearcelOre.name=Pearcel Ore
+tile.compressedSugarCaneBlock.name=Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock2.name=Double Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock3.name=Triple Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock4.name=Quadruple Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock5.name=Quintuple Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock6.name=Sextuple Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock7.name=Septuple Compressed Sugar Cane (Block)
+tile.compressedSugarCaneBlock8.name=Octuple Compressed Sugar Cane (Block)
 
 itemGroup.pearcelmod=Pearcel Mod
 
@@ -25,5 +33,5 @@ tooltip.pearcel.ressedSugarCaneItem5.desc.0=59,049 Sugar Cane
 tooltip.pearcel.ressedSugarCaneItem6.desc.0=531,441 Sugar Cane
 tooltip.pearcel.ressedSugarCaneItem7.desc.0=4,782,969 Sugar Cane
 tooltip.pearcel.ressedSugarCaneItem8.desc.0=43,046,721 Sugar Cane
-tooltip.pearcel.rCookie.desc.0=3muchsugar5me
+tooltip.pearcel.rCookie.desc.0=2muchsugar4me
 tooltip.pearcel.celItem.desc.0=Not your regular pear.
