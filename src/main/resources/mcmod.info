@@ -1,17 +1,19 @@
-
 [
 {
-  "modid": "pearcelmod",
-  "name": "Pearcel Mod",
-  "description": "A mod by me, MiningMark48, and Numbah90, that adds pear-cel related stuff. They're pear-cels not pears! I guess you can say this was made for Parcel31u...",
-  "version": "1.0",
-  "mcversion": "1.7.10",
-  "url": "",
-  "updateUrl": "",
-  "authors": [ "MiningMark48", "Numbah90" ],
-  "credits": "Parcel31u : Reason for making this mod! - Codyrule : Textures and Ideas - Numbah90 : Lots of code! - Everyone on #MinecraftForge (Esper) for help",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+"modid": "pearcelmod",
+"name": "Pearcel Mod",
+"description": "A mod by me, MiningMark48, and Numbah90, that adds pear-cel related stuff. They're pear-cels not pears! I guess you can say this was made for Parcel31u...",
+"version": "1.1",
+"credits": "Parcel31u : Reason for making this mod! - Numbah90 : Lots of code! - Codyrule : Textures and Ideas - Everyone on #MinecraftForge (Esper) for help",
+"logoFile": "",
+"mcversion": "1.7.10",
+"url": "http://minecraft.curseforge.com/mc-mods/227627-pearcel-mod",
+"updateUrl": "",
+"authors": [ "MiningMark48", "Numbah90" ],
+"parent":"",
+"screenshots": [],
+"dependencies": [
+"mod_MinecraftForge"
+]
 }
 ]
