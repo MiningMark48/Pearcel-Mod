@@ -32,9 +32,9 @@ public class PearcelMod {
 	public void preInit(FMLPreInitializationEvent event){
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-		
+
+        ModBlocks.init();
 		ModItems.init();
-		ModBlocks.init();
 		Recipes.init();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
