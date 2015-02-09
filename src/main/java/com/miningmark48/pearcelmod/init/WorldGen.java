@@ -37,12 +37,12 @@ public class WorldGen implements IWorldGenerator{
 
     private void generateNether(World world, Random rand, int x, int z)
     {
-        generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 16, 30, 0, 60, Blocks.netherrack);
+        //generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 16, 10, 0, 60, Blocks.netherrack);
     }
 
     private void generateSurface(World world, Random rand, int x, int z)
     {
-        generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 12, 20, 0, 66, Blocks.stone);
+        generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 12, 10, 0, 40, Blocks.stone);
     }
 
 
