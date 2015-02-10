@@ -10,6 +10,7 @@ public class ModBlocks {
 
     //Plants
     public static final Block pearcelPlant = new BlockPearcelPlant().setBlockName("pearcelPlant").setBlockTextureName(Reference.MOD_ID + ":pearcelPlant");
+    public static final Block compressedSugarCanePlant = new BlockCompressedSugarCanePlant().setBlockName("compressedSugarCanePlant").setBlockTextureName(Reference.MOD_ID + ":compressedSugarCanePlant");
 
     //General blocks
 	public static final Block meBlock = new BlockMEBlock().setBlockName("meBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.5f).setBlockTextureName(Reference.MOD_ID + ":meBlock").setHardness(1.6F).setResistance(1.6F);
@@ -33,6 +34,7 @@ public class ModBlocks {
 		GameRegistry.registerBlock(pearcelOre, "pearcelOre");
 		GameRegistry.registerBlock(meGlass, "meGlass");
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
+        GameRegistry.registerBlock(compressedSugarCanePlant, "compressedSugarCanePlant");
         GameRegistry.registerBlock(compressedSugarCaneBlock, "compressedSugarCaneBlock");
         GameRegistry.registerBlock(compressedSugarCaneBlock2, "compressedSugarCaneBlock2");
         GameRegistry.registerBlock(compressedSugarCaneBlock3, "compressedSugarCaneBlock3");
