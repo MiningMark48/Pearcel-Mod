@@ -14,14 +14,14 @@ import net.minecraft.item.ItemSeeds;
 public class ModItems {
 
     //Food
-	public static final Item pearcel = new ItemModFood(6, 1.0F, true).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+	public static final Item pearcel = new ItemModFood(10, 1.5F, true).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item sugarCookie = new ItemSugarCookie(1, 0.5F, true).setUnlocalizedName("sugarCookie").setTextureName(Reference.MOD_ID + ":sugarCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Tools and Weapons
-    public static final Item pearcelSword = new ItemPearcelSword(ToolMaterial.STONE).setUnlocalizedName("pearcelSword").setTextureName(Reference.MOD_ID + ":pearcelSword").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelSword = new ItemPearcelSword(ToolMaterial.IRON).setUnlocalizedName("pearcelSword").setTextureName(Reference.MOD_ID + ":pearcelSword").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //General Items
     public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
