@@ -1,46 +1,37 @@
-[21:00:16] [main/INFO]: Logging in with username & password
-[21:00:53] [main/INFO]: Setting user: MiningMark48
-[21:01:03] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:01:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[21:01:43] [Sound Library Loader/INFO]: Sound engine started
-[21:01:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:01:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:02:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[21:02:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:02:04] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:02:06] [Sound Library Loader/INFO]: Sound engine started
-[21:03:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:03:54] [Server thread/INFO]: Generating keypair
-[21:03:58] [Server thread/INFO]: Preparing start region for level 0
-[21:04:00] [Server thread/INFO]: Preparing spawn area: 0%
-[21:04:01] [Server thread/INFO]: Preparing spawn area: 7%
-[21:04:02] [Server thread/INFO]: Preparing spawn area: 18%
-[21:04:03] [Server thread/INFO]: Preparing spawn area: 63%
-[21:04:06] [Server thread/INFO]: Changing view distance to 12, from 10
-[21:04:09] [Server thread/INFO]: MiningMark48[local:E:ad84daf1] logged in with entity id 212 at (-1351.9934956071568, 4.0, 528.9127858936671)
-[21:04:09] [Server thread/INFO]: MiningMark48 joined the game
-[21:04:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12879ms behind, skipping 257 tick(s)
-[21:04:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8229ms behind, skipping 164 tick(s)
-[21:04:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5710ms behind, skipping 114 tick(s)
-[21:05:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2107ms behind, skipping 42 tick(s)
-[21:06:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10703ms behind, skipping 214 tick(s)
-[21:07:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2030ms behind, skipping 40 tick(s)
-[21:07:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2193ms behind, skipping 43 tick(s)
-[21:10:54] [Server thread/INFO]: Saving and pausing game...
-[21:10:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:10:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:10:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:11:05] [Client thread/INFO]: [CHAT] minecraft:record_13, minecraft:cauldron, minecraft:heavy_weighted_pressure_plate, minecraft:wooden_pickaxe, minecraft:cooked_porkchop, minecraft:chainmail_leggings, minecraft:bread, minecraft:emerald_block, minecraft:birch_stairs, minecraft:melon_block, minecraft:iron_block, minecraft:item_frame, minecraft:comparator, minecraft:coal, minecraft:sapling, minecraft:compass, minecraft:diamond_shovel, minecraft:stone, minecraft:flowing_lava, minecraft:wheat_seeds, minecraft:diamond_horse_armor, minecraft:jukebox, minecraft:carrot_on_a_stick, minecraft:record_ward, minecraft:diamond_leggings, minecraft:gold_ingot, minecraft:cake, minecraft:record_mall, minecraft:diamond_boots, minecraft:cooked_beef, minecraft:writable_book, minecraft:flowing_water, minecraft:brick, minecraft:feather, minecraft:wool, minecraft:porkchop, minecraft:iron_horse_armor, minecraft:netherrack, minecraft:log2, minecraft:name_tag, minecraft:torch, minecraft:redstone_ore, minecraft:furnace, minecraft:fire_charge, minecraft:spruce_stairs, minecraft:stone_stairs, minecraft:ice, minecraft:reeds, minecraft:gunpowder, minecraft:double_plant, minecraft:carrot, minecraft:bucket, minecraft:golden_sword, minecraft:minecart, minecraft:brick_block, minecraft:nether_brick, minecraft:iron_helmet, minecraft:enchanting_table, minecraft:diamond, minecraft:stonebrick, minecraft:vine, minecraft:log, minecraft:repeater, minecraft:coal_block, minecraft:stone_button, minecraft:gold_block, minecraft:golden_horse_armor, minecraft:glass_bottle, minecraft:quartz_block, minecraft:end_portal, minecraft:fish, minecraft:quartz_ore, minecraft:stained_hardened_clay, minecraft:command_block, minecraft:bowl, minecraft:waterlily, minecraft:dark_oak_stairs, minecraft:oak_stairs, minecraft:grass, minecraft:mycelium, minecraft:cobblestone, minecraft:arrow, minecraft:quartz_stairs, minecraft:ender_chest, minecraft:quartz, minecraft:dirt, minecraft:bow, minecraft:anvil, minecraft:lava, minecraft:diamond_hoe, minecraft:lit_furnace, minecraft:diamond_block, minecraft:filled_map, minecraft:jungle_stairs, minecraft:melon, minecraft:chest_minecart, minecraft:stone_pressure_plate, minecraft:gold_ore, minecraft:golden_boots, minecraft:wooden_shovel, minecraft:hopper, minecraft:enchanted_book, minecraft:spider_eye, minecraft:baked_potato, minecraft:melon_seeds, minecraft:brown_mushroom, minecraft:yellow_flower, minecraft:redstone_torch, minecraft:hopper_minecart, minecraft:double_wooden_slab, minecraft:flint_and_steel, minecraft:string, minecraft:leaves2, minecraft:farmland, minecraft:nether_star, minecraft:brewing_stand, minecraft:glowstone, minecraft:apple, minecraft:boat, minecraft:record_wait, minecraft:potato, minecraft:pumpkin, minecraft:dragon_egg, minecraft:blaze_rod, minecraft:sandstone, minecraft:detector_rail, minecraft:light_weighted_pressure_plate, minecraft:golden_hoe, minecraft:painting, minecraft:stone_hoe, minecraft:golden_shovel, minecraft:iron_chestplate, minecraft:record_stal, minecraft:skull, minecraft:lava_bucket, minecraft:leather_chestplate, minecraft:stone_pickaxe, minecraft:record_mellohi, minecraft:cookie, minecraft:diamond_pickaxe, minecraft:cactus, minecraft:lapis_ore, minecraft:cooked_fished, minecraft:redstone_block, minecraft:sandstone_stairs, minecraft:blaze_powder, minecraft:diamond_helmet, minecraft:command_block_minecart, minecraft:clock, minecraft:iron_leggings, minecraft:wooden_hoe, minecraft:slime_ball, minecraft:rotten_flesh, minecraft:saddle, minecraft:acacia_stairs, minecraft:record_blocks, minecraft:potion, minecraft:experience_bottle, minecraft:redstone, minecraft:netherbrick, minecraft:brick_stairs, minecraft:mushroom_stew, minecraft:map, minecraft:daylight_detector, minecraft:water_bucket, minecraft:lead, minecraft:chicken, minecraft:piston, minecraft:snow_layer, minecraft:firework_charge, minecraft:nether_wart, minecraft:red_mushroom, minecraft:chest, minecraft:fishing_rod, minecraft:iron_sword, minecraft:sticky_piston, minecraft:coal_ore, minecraft:golden_pickaxe, minecraft:bedrock, minecraft:pumpkin_pie, minecraft:iron_hoe, minecraft:record_11, minecraft:gravel, minecraft:crafting_table, minecraft:wheat, minecraft:wooden_pressure_plate, minecraft:pumpkin_seeds, minecraft:snowball, minecraft:iron_ingot, minecraft:lapis_block, minecraft:lever, minecraft:bone, minecraft:paper, minecraft:chainmail_chestplate, minecraft:leather, minecraft:end_portal_frame, minecraft:diamond_axe, minecraft:sign, minecraft:chainmail_helmet, minecraft:carrots, minecraft:noteblock, minecraft:glass, minecraft:fence, minecraft:clay_ball, minecraft:tallgrass, minecraft:milk_bucket, minecraft:packed_ice, minecraft:trapped_chest, minecraft:red_mushroom_block, minecraft:diamond_sword, minecraft:tnt_minecart, minecraft:flower_pot, minecraft:brown_mushroom_block, minecraft:emerald, minecraft:beacon, minecraft:gold_nugget, minecraft:red_flower, minecraft:golden_helmet, minecraft:dropper, minecraft:glass_pane, minecraft:leather_leggings, minecraft:iron_shovel, minecraft:book, minecraft:fire, minecraft:golden_apple, minecraft:dye, minecraft:leather_boots, minecraft:wooden_sword, minecraft:soul_sand, minecraft:diamond_ore, minecraft:deadbush, minecraft:fireworks, minecraft:speckled_melon, minecraft:bookshelf, minecraft:magma_cream, minecraft:redstone_lamp, minecraft:sand, minecraft:ender_pearl, minecraft:furnace_minecart, minecraft:iron_door, minecraft:snow, minecraft:wooden_door, minecraft:stone_brick_stairs, minecraft:portal, minecraft:chainmail_boots, minecraft:iron_boots, minecraft:golden_axe, minecraft:fence_gate, minecraft:ghast_tear, minecraft:obsidian, minecraft:diamond_chestplate, minecraft:ender_eye, minecraft:iron_pickaxe, minecraft:clay, minecraft:mossy_cobblestone, minecraft:stone_axe, minecraft:golden_carrot, minecraft:lit_pumpkin, minecraft:stick, minecraft:spawn_egg, minecraft:iron_ore, minecraft:web, minecraft:sugar, minecraft:golden_chestplate, minecraft:hay_block, minecraft:poisonous_potato, minecraft:nether_brick_stairs, minecraft:cooked_chicken, minecraft:wooden_button, minecraft:egg, minecraft:double_stone_slab, minecraft:wooden_axe, minecraft:tnt, minecraft:stone_slab, minecraft:potatoes, minecraft:emerald_ore, minecraft:beef, minecraft:record_cat, minecraft:leaves, minecraft:tripwire_hook, minecraft:fermented_spider_eye, minecraft:activator_rail, minecraft:trapdoor, minecraft:record_far, minecraft:leather_helmet, minecraft:written_book, minecraft:water, minecraft:golden_rail, minecraft:shears, minecraft:golden_leggings, minecraft:carpet, minecraft:flint, minecraft:nether_brick_fence, minecraft:record_strad, minecraft:planks, minecraft:glowstone_dust, minecraft:dispenser, minecraft:record_chirp, minecraft:hardened_clay, minecraft:bed, minecraft:stained_glass_pane, minecraft:sponge, minecraft:cocoa, minecraft:iron_bars, minecraft:stained_glass, minecraft:stone_sword, minecraft:rail, minecraft:monster_egg, minecraft:mob_spawner, minecraft:iron_axe, minecraft:wooden_slab, minecraft:stone_shovel, minecraft:cobblestone_wall, minecraft:ladder, minecraft:end_stone
-[21:11:08] [Client thread/INFO]: [CHAT] minecraft:record_13, minecraft:record_ward, minecraft:record_mall, minecraft:redstone_ore, minecraft:reeds, minecraft:repeater, minecraft:redstone_torch, minecraft:record_wait, minecraft:record_stal, minecraft:record_mellohi, minecraft:redstone_block, minecraft:record_blocks, minecraft:redstone, minecraft:red_mushroom, minecraft:record_11, minecraft:red_mushroom_block, minecraft:red_flower, minecraft:redstone_lamp, minecraft:record_cat, minecraft:record_far, minecraft:record_strad, minecraft:record_chirp
-[21:11:09] [Client thread/INFO]: [CHAT] minecraft:record_13, minecraft:record_ward, minecraft:record_mall, minecraft:redstone_ore, minecraft:reeds, minecraft:repeater, minecraft:redstone_torch, minecraft:record_wait, minecraft:record_stal, minecraft:record_mellohi, minecraft:redstone_block, minecraft:record_blocks, minecraft:redstone, minecraft:red_mushroom, minecraft:record_11, minecraft:red_mushroom_block, minecraft:red_flower, minecraft:redstone_lamp, minecraft:record_cat, minecraft:record_far, minecraft:record_strad, minecraft:record_chirp
-[21:11:43] [Server thread/INFO]: Saving and pausing game...
-[21:11:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:11:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:11:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:11:44] [Server thread/INFO]: Stopping server
-[21:11:44] [Server thread/INFO]: Saving players
-[21:11:44] [Server thread/INFO]: Saving worlds
-[21:11:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:11:44] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:11:44] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:11:55] [Client thread/INFO]: Stopping!
+[22:03:03] [main/INFO]: Setting user: Player311
+[22:03:12] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:03:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[22:03:57] [Sound Library Loader/INFO]: Sound engine started
+[22:04:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:04:18] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[22:04:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[22:04:20] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[22:04:21] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:04:23] [Sound Library Loader/INFO]: Sound engine started
+[22:05:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:05:15] [Server thread/INFO]: Generating keypair
+[22:05:18] [Server thread/INFO]: Preparing start region for level 0
+[22:05:20] [Server thread/INFO]: Preparing spawn area: 0%
+[22:05:21] [Server thread/INFO]: Preparing spawn area: 5%
+[22:05:22] [Server thread/INFO]: Preparing spawn area: 20%
+[22:05:23] [Server thread/INFO]: Preparing spawn area: 54%
+[22:05:24] [Server thread/INFO]: Preparing spawn area: 85%
+[22:05:25] [Server thread/INFO]: Changing view distance to 12, from 10
+[22:05:31] [Server thread/INFO]: Player311[local:E:e3cda52f] logged in with entity id 210 at (-1359.0207438445354, 4.0, 529.6201253664718)
+[22:05:31] [Server thread/INFO]: Player311 joined the game
+[22:05:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5898ms behind, skipping 117 tick(s)
+[22:05:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7792ms behind, skipping 155 tick(s)
+[22:05:54] [Server thread/INFO]: Player311 has just earned the achievement [Taking Inventory]
+[22:05:55] [Client thread/INFO]: [CHAT] Player311 has just earned the achievement [Taking Inventory]
+[22:06:12] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4888ms behind, skipping 97 tick(s)
+[22:06:20] [Server thread/INFO]: Saving and pausing game...
+[22:06:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:06:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:06:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:06:21] [Server thread/INFO]: Stopping server
+[22:06:21] [Server thread/INFO]: Saving players
+[22:06:21] [Server thread/INFO]: Saving worlds
+[22:06:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:06:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:06:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:06:24] [Client thread/INFO]: Stopping!

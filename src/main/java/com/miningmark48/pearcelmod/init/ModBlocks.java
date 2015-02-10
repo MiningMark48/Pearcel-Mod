@@ -10,11 +10,12 @@ public class ModBlocks {
 
     //Plants
     public static final Block pearcelPlant = new BlockPearcelPlant().setBlockName("pearcelPlant").setBlockTextureName(Reference.MOD_ID + ":pearcelPlant");
-    public static final Block compressedSugarCanePlant = new BlockCompressedSugarCanePlant().setBlockName("compressedSugarCanePlant").setBlockTextureName(Reference.MOD_ID + ":compressedSugarCanePlant");
+    public static final Block compressedSugarCanePlant = new BlockCompressedSugarCanePlant().setBlockName("compressedSugarCanePlant").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCanePlant");
 
     //General blocks
 	public static final Block meBlock = new BlockMEBlock().setBlockName("meBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.5f).setBlockTextureName(Reference.MOD_ID + ":meBlock").setHardness(1.6F).setResistance(1.6F);
 	public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
+    public static final Block netherPearcelOre = new BlockNetherPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.2F).setResistance(1.2F);
 	public static final Block meGlass = new BlockMEGlass().setBlockName("meGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":meGlass").setHardness(0.5F).setResistance(0.5F);
 
     //Compressed Blocks
@@ -32,6 +33,7 @@ public class ModBlocks {
 		
 		GameRegistry.registerBlock(meBlock, "meBlock");
 		GameRegistry.registerBlock(pearcelOre, "pearcelOre");
+        GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
 		GameRegistry.registerBlock(meGlass, "meGlass");
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
         GameRegistry.registerBlock(compressedSugarCanePlant, "compressedSugarCanePlant");
