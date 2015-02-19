@@ -22,4 +22,6 @@ public class ItemCompressedSugarCaneItem extends Item {
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
         list.add(EnumChatFormatting.GRAY + StatCollector.translateToLocal("tooltip.pearcel." + getUnlocalizedName().substring(9) + ".desc.0"));
     }
+
+
 }
