@@ -35,6 +35,7 @@ public class Recipes {
 		//Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.meBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel));
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.meGlass, 8), "xxx", "xyx", "xxx", 'x', new ItemStack(Blocks.glass), 'y', new ItemStack(ModItems.pearcel));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.meLamp, 8), "xxx", "xyx", "xxx", 'x', new ItemStack(Blocks.glowstone), 'y', new ItemStack(ModItems.pearcel));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.compressedSugarCaneBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(Items.reeds));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.compressedSugarCaneBlock2), "xxx", "xxx", "xxx", 'x', new ItemStack(ModBlocks.compressedSugarCaneBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.compressedSugarCaneBlock3), "xxx", "xxx", "xxx", 'x', new ItemStack(ModBlocks.compressedSugarCaneBlock2));

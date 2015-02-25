@@ -17,6 +17,7 @@ public class ModBlocks {
 	public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
     public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
 	public static final Block meGlass = new BlockMEGlass().setBlockName("meGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":meGlass").setHardness(0.5F).setResistance(0.5F);
+    public static final Block meLamp = new BlockMELamp().setBlockName("meLamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(2.0F).setBlockTextureName(Reference.MOD_ID + ":meLamp").setHardness(0.5F).setResistance(0.5F);
 
     //Compressed Blocks
     public static final Block compressedSugarCaneBlock = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock").setHardness(1.0F).setResistance(1.0F);
@@ -36,6 +37,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
 
 		GameRegistry.registerBlock(meGlass, "meGlass");
+        GameRegistry.registerBlock(meLamp, "meLamp");
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
         GameRegistry.registerBlock(compressedSugarCanePlant, "compressedSugarCanePlant");
         GameRegistry.registerBlock(compressedSugarCaneBlock, "compressedSugarCaneBlock");
