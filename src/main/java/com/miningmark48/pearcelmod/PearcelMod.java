@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
+import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
@@ -15,6 +16,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -36,6 +38,7 @@ public class PearcelMod {
 		Recipes.init();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 		
 		LogHelper.info("Pre-Init Complete!");
 	}

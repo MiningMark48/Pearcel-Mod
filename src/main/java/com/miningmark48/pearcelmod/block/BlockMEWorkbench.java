@@ -1,10 +1,14 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.PearcelMod;
+import com.miningmark48.pearcelmod.client.gui.Gui;
 import com.miningmark48.pearcelmod.utility.LogHelper;
+import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.gui.inventory.GuiCrafting;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -46,7 +50,8 @@ public class BlockMEWorkbench extends Block
     /**
      * Called upon block activation (right click on the block.)
      */
-    public boolean onBlockActivated(World world, int a, int b, int c, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_)
+    @Override
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float sideX, float sideY, float sideZ)
     {
         if (world.isRemote)
         {
@@ -55,9 +60,11 @@ public class BlockMEWorkbench extends Block
         }
         else
         {
-            player.displayGUIWorkbench(a, b, c);
+            //player.displayGUIWorkbench(x, y, z);
+            player.openGui(PearcelMod.instance, Gui.GUI_ID, world, x, y, z);
             LogHelper.info("ME^Workbench clicked. -- Not Remote");
             return true;
         }
     }
+
 }
