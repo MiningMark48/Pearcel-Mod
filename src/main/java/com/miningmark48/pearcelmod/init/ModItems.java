@@ -15,6 +15,7 @@ public class ModItems {
 
     //Food
 	public static final Item pearcel = new ItemModFood(10, 1.5F, true).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelPie = new ItemModFood(6, 1.0F, true).setUnlocalizedName("pearcelPie").setTextureName(Reference.MOD_ID + ":pearcelPie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item sugarCookie = new ItemSugarCookie(1, 0.5F, true).setUnlocalizedName("sugarCookie").setTextureName(Reference.MOD_ID + ":sugarCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
@@ -46,6 +47,7 @@ public class ModItems {
 		GameRegistry.registerItem(pearcel, "pearcelItem");
         GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
         GameRegistry.registerItem(sugarCookie, "sugarCookie");
+        GameRegistry.registerItem(pearcelPie, "pearcelPie");
 		GameRegistry.registerItem(pearcelSword, "pearcelSword");
         GameRegistry.registerItem(pearcelPickaxe, "pearcelPickaxe");
         GameRegistry.registerItem(pearcelAxe, "pearcelAxe");
