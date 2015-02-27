@@ -33,14 +33,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModItems.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ModItems.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45974576" vertical-offset="157" max-vertical-offset="1156">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1224">
+              <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemPearcelShovel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelShovel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6991342" vertical-offset="0" max-vertical-offset="799">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CraftPearcelSword.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/achievements/CraftPearcelSword.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,8 +81,8 @@
       <file leaf-file-name="ItemPearcelSword.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="578">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#780#781#0" expanded="true" />
                 <element signature="e#802#803#0" expanded="true" />
@@ -73,7 +96,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
               <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,23 +106,9 @@
       <file leaf-file-name="en_US.lang" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="10" selection-end-column="70" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemPearcelPickaxe.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelPickaxe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="714">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,8 +166,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelNugget.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelPickaxe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelAxe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelShovel.java" />
       </list>
     </option>
   </component>
@@ -340,7 +353,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="ModItems&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;refer&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java&#10;mod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/mcmod.info&#10;workbench&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java&#10;sugar cook&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemSugarCookie&#10;itempearcelsw&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelSword&#10;lang&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;reci&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;BlockMeG&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockMEGlass&#10;Pearcel&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;rec&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;me&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEBlock.java&#10;plant&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockCompressedSugarCanePlant.java&#10;PearcelM&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;ModB&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;pear&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelOre.java&#10;worl&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java&#10;pearcelmod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;en&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;achievement&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/achievements/Achievements.java" />
+    <property name="SearchEverywhereHistoryKey" value="craft&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.achievements.CraftPearcelSword&#10;ModItems&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;refer&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java&#10;mod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/mcmod.info&#10;workbench&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java&#10;sugar cook&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemSugarCookie&#10;itempearcelsw&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelSword&#10;lang&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;reci&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;BlockMeG&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockMEGlass&#10;Pearcel&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;rec&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;me&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEBlock.java&#10;plant&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockCompressedSugarCanePlant.java&#10;PearcelM&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;ModB&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;pear&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelOre.java&#10;worl&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java&#10;pearcelmod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;en&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;achievement&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/achievements/Achievements.java" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -524,7 +537,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -585,27 +598,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/achievements/CraftPearcelSword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="425">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/achievements/FindPearcelOre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/achievements/Achievements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="680">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockCompressedSugarCaneBlock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
@@ -925,19 +917,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -953,10 +939,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelAxe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8412371" vertical-offset="187" max-vertical-offset="714">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1224">
+          <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/achievements/CraftPearcelSword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="578">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#780#781#0" expanded="true" />
             <element signature="e#802#803#0" expanded="true" />
@@ -966,18 +990,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="10" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelShovel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45974576" vertical-offset="157" max-vertical-offset="1156">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.6991342" vertical-offset="0" max-vertical-offset="799">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
           </folding>
         </state>
       </provider>

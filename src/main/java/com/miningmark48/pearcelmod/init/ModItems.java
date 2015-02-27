@@ -23,6 +23,8 @@ public class ModItems {
     //Tools and Weapons
     public static final Item pearcelSword = new ItemPearcelSword(ToolMaterial.IRON).setUnlocalizedName("pearcelSword").setTextureName(Reference.MOD_ID + ":pearcelSword").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelPickaxe = new ItemPearcelPickaxe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelPickaxe").setTextureName(Reference.MOD_ID + ":pearcelPickaxe").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelAxe = new ItemPearcelAxe(ToolMaterial.IRON).setUnlocalizedName("pearcelAxe").setTextureName(Reference.MOD_ID + ":pearcelAxe").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelShovel = new ItemPearcelAxe(ToolMaterial.IRON).setUnlocalizedName("pearcelShovel").setTextureName(Reference.MOD_ID + ":pearcelShovel").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //General Items
     public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
@@ -46,6 +48,8 @@ public class ModItems {
         GameRegistry.registerItem(sugarCookie, "sugarCookie");
 		GameRegistry.registerItem(pearcelSword, "pearcelSword");
         GameRegistry.registerItem(pearcelPickaxe, "pearcelPickaxe");
+        GameRegistry.registerItem(pearcelAxe, "pearcelAxe");
+        GameRegistry.registerItem(pearcelShovel, "pearcelShovel");
 		GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
         GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
