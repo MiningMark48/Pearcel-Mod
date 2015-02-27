@@ -55,14 +55,14 @@ public class BlockMEWorkbench extends Block
     {
         if (world.isRemote)
         {
-            LogHelper.info("ME^Workbench clicked. -- Remote");
+            //LogHelper.info("ME^Workbench clicked. -- Remote");
             return true;
         }
         else
         {
             //player.displayGUIWorkbench(x, y, z);
             player.openGui(PearcelMod.instance, Gui.GUI_ID, world, x, y, z);
-            LogHelper.info("ME^Workbench clicked. -- Not Remote");
+            //LogHelper.info("ME^Workbench clicked. -- Not Remote");
             return true;
         }
     }

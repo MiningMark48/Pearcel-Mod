@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
@@ -21,7 +22,6 @@ public class ItemPearcelSword extends ItemSword{
 	public ItemPearcelSword(ToolMaterial material)
     {
 		super(material);
-        //setPotionEffect(Potion.moveSlowdown.id, 15, 1, 0.5F);
 	}
 
     @Override
