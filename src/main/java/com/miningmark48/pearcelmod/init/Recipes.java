@@ -16,10 +16,11 @@ public class Recipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.pearcel), "xxx", "x x", "xxx", 'x', new ItemStack(ModItems.pearcelNugget));
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelOre), new ItemStack(ModItems.pearcelNugget),  10f);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSeeds), new ItemStack(ModItems.pearcel));
-
         GameRegistry.addSmelting(new ItemStack(ModBlocks.netherPearcelOre), new ItemStack(ModItems.pearcelNugget, 2),  10f);
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStick, 4), "x", "x", 'x', new ItemStack(ModItems.pearcel));
 
-		GameRegistry.addRecipe(new ItemStack(ModItems.pearcelSword), "x", "x", "y", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.pearcelSword), "x", "x", "y", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelPickaxe), "xxx", " y ", " y ", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick));
 
 		    //Compressed Sugar Cane (Items)
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.compressedSugarCaneItem), new ItemStack(ModBlocks.compressedSugarCaneBlock), new ItemStack(Items.wheat_seeds));
