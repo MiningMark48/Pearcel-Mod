@@ -29,6 +29,7 @@ public class ModItems {
     public static final Item pearcelShovel = new ItemPearcelAxe(ToolMaterial.IRON).setUnlocalizedName("pearcelShovel").setTextureName(Reference.MOD_ID + ":pearcelShovel").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelHoe = new ItemPearcelHoe(ToolMaterial.IRON).setUnlocalizedName("pearcelHoe").setTextureName(Reference.MOD_ID + ":pearcelHoe").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelShears = new ItemPearcelShears().setUnlocalizedName("pearcelShears").setTextureName(Reference.MOD_ID + ":pearcelShears").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelBow = new ItemPearcelBow().setUnlocalizedName("pearcelBow").setTextureName(Reference.MOD_ID + ":pearcelBow").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //General Items
     public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
@@ -59,6 +60,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelShovel, "pearcelShovel");
         GameRegistry.registerItem(pearcelHoe, "pearcelHoe");
         GameRegistry.registerItem(pearcelShears, "pearcelShears");
+        GameRegistry.registerItem(pearcelBow, "pearcelBow");
 		GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
         GameRegistry.registerItem(pearcelFlour, "pearcelFlour");
