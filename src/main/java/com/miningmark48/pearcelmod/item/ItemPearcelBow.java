@@ -98,7 +98,7 @@ public class ItemPearcelBow extends ItemBow{
             }
             else
             {
-                p_77615_3_.inventory.consumeInventoryItem(Items.arrow);
+                p_77615_3_.inventory.consumeInventoryItem(ModItems.pearcelArrow);
             }
 
             if (!p_77615_2_.isRemote)
