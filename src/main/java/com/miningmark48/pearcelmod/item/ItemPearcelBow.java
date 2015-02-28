@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.init.ModItems;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -47,7 +48,7 @@ public class ItemPearcelBow extends ItemBow{
 
         boolean flag = p_77615_3_.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, p_77615_1_) > 0;
 
-        if (flag || p_77615_3_.inventory.hasItem(Items.arrow))
+        if (flag || p_77615_3_.inventory.hasItem(ModItems.pearcelArrow))
         {
             float f = (float)j / 20.0F;
             f = (f * f + f * 2.0F) / 3.0F;
@@ -114,7 +115,7 @@ public class ItemPearcelBow extends ItemBow{
 
     public int getMaxItemUseDuration(ItemStack p_77626_1_)
     {
-        return 60000;
+        return 72000;
     }
 
     public EnumAction getItemUseAction(ItemStack p_77661_1_)
@@ -131,7 +132,7 @@ public class ItemPearcelBow extends ItemBow{
             return event.result;
         }
 
-        if (p_77659_3_.capabilities.isCreativeMode || p_77659_3_.inventory.hasItem(Items.arrow))
+        if (p_77659_3_.capabilities.isCreativeMode || p_77659_3_.inventory.hasItem(ModItems.pearcelArrow))
         {
             p_77659_3_.setItemInUse(p_77659_1_, this.getMaxItemUseDuration(p_77659_1_));
         }
