@@ -1,5 +1,9 @@
 package com.miningmark48.pearcelmod.proxy;
 
-public class ServerProxy extends CommonProxy{
+public class ServerProxy{
+
+    public void registerRenderThings(){
+
+    }
 
 }

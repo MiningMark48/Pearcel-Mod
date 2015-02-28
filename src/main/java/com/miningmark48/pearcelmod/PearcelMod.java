@@ -6,6 +6,7 @@ import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
 import com.miningmark48.pearcelmod.proxy.IProxy;
+import com.miningmark48.pearcelmod.proxy.ServerProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 
@@ -26,7 +27,7 @@ public class PearcelMod {
 	public static PearcelMod instance;
 	
 	@SidedProxy(clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS)
-	public static IProxy proxy;
+	public static ServerProxy proxy;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
@@ -36,6 +37,9 @@ public class PearcelMod {
         ModBlocks.init();
 		ModItems.init();
 		Recipes.init();
+        EntityPearcelMod.init();
+
+        proxy.registerRenderThings();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
