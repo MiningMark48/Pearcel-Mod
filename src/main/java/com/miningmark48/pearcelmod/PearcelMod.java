@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
+import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.proxy.IProxy;
 import com.miningmark48.pearcelmod.proxy.ServerProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -28,6 +29,7 @@ public class PearcelMod {
 	
 	@SidedProxy(clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS)
 	public static ServerProxy proxy;
+    public static CommonProxy proxyy;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){

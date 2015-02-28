@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 
 public class ModBlocks {
 
@@ -21,6 +22,7 @@ public class ModBlocks {
     public static final Block meWorkbench = new BlockMEWorkbench().setBlockName("meWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":meWorkbench").setHardness(2.5F).setResistance(5.0F);
     public static final Block pearcelTorch = new BlockPearcelTorch().setBlockName("pearcelTorch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelTorch").setHardness(0.0F).setResistance(10.0F).setLightLevel(1.0F);
     public static final Block pearcelBlock = new BlockPearcelBlock().setBlockName("pearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelBlock").setHardness(1.5F).setResistance(1.0F);
+    public static final Block pearcelPainting = new BlockPearcelPainting(Material.cloth).setBlockName("pearcelPainting").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.2F).setResistance(0.1F);
 
     //Compressed Blocks
     public static final Block compressedSugarCaneBlock = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock").setHardness(1.0F).setResistance(1.0F);
@@ -44,6 +46,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(meWorkbench, "meWorkbench");
         GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
+        GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
         GameRegistry.registerBlock(compressedSugarCanePlant, "compressedSugarCanePlant");
         GameRegistry.registerBlock(compressedSugarCaneBlock, "compressedSugarCaneBlock");
         GameRegistry.registerBlock(compressedSugarCaneBlock2, "compressedSugarCaneBlock2");

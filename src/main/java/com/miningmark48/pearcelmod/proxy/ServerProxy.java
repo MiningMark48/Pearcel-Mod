@@ -6,4 +6,7 @@ public class ServerProxy{
 
     }
 
+    public void registerTileEntitySpecialRenderer(){
+
+    }
 }
