@@ -1,10 +1,8 @@
 package com.miningmark48.pearcelmod.proxy;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
-import com.miningmark48.pearcelmod.mob.EntityPearcelSquid;
-import com.miningmark48.pearcelmod.mob.RenderPearcelCow;
-import com.miningmark48.pearcelmod.mob.RenderPearcelSquid;
+import com.miningmark48.pearcelmod.mob.*;
+import com.miningmark48.pearcelmod.model.ModelPearcelMob;
 import com.miningmark48.pearcelmod.renderer.RenderItemPearcelPainting;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelPainting;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
@@ -24,6 +22,8 @@ public class ClientProxy extends ServerProxy{
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelCow.class, new RenderPearcelCow(new ModelCow(), 0));
         //Pearcel Squid
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelSquid.class, new RenderPearcelSquid(new ModelSquid(), 0));
+        //Pearcel Mob
+        RenderingRegistry.registerEntityRenderingHandler(EntityPearcelMob.class, new RenderPearcelMob(new ModelPearcelMob(), 0));
     //Blocks
         //Pearcel Painting
         TileEntitySpecialRenderer render = new RenderPearcelPainting();
