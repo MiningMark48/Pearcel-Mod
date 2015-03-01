@@ -79,11 +79,11 @@ public class EntityPearcelCow extends EntityAnimal{
         {
             if (itemstack.stackSize-- == 1)
             {
-                player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(Items.milk_bucket));
+                player.inventory.setInventorySlotContents(player.inventory.currentItem, new ItemStack(ModItems.pearcelJuice));
             }
-            else if (!player.inventory.addItemStackToInventory(new ItemStack(Items.milk_bucket)))
+            else if (!player.inventory.addItemStackToInventory(new ItemStack(ModItems.pearcelJuice)))
             {
-                player.dropPlayerItemWithRandomChoice(new ItemStack(Items.milk_bucket, 1, 0), false);
+                player.dropPlayerItemWithRandomChoice(new ItemStack(ModItems.pearcelJuice, 1, 0), false);
             }
 
             return true;
