@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.init;
 
 import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
+import com.miningmark48.pearcelmod.mob.EntityPearcelSquid;
 import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.entity.Entity;
@@ -16,6 +17,7 @@ public class EntityPearcelMod {
 
     public static void registerEntity(){
         createEntity(EntityPearcelCow.class, "Pearcel Cow", 0x59C24C, 0x4BAD3E);
+        createEntity(EntityPearcelSquid.class, "Pearcel Squid", 0x59C24C, 0x0C43C4);
     }
 
     public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor){
