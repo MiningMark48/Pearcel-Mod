@@ -50,24 +50,28 @@ public class ModItems {
 
 	
 	public static void init(){
-		
-		GameRegistry.registerItem(pearcel, "pearcelItem");
-        GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
+        //Food
+        GameRegistry.registerItem(pearcel, "pearcelItem");
         GameRegistry.registerItem(sugarCookie, "sugarCookie");
         GameRegistry.registerItem(pearcelPie, "pearcelPie");
         GameRegistry.registerItem(pearcelBread, "pearcelBread");
         GameRegistry.registerItem(pearcelJuice, "pearcelJuice");
-		GameRegistry.registerItem(pearcelSword, "pearcelSword");
+        //Plants
+        GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
+        //Tools and Weapons
+        GameRegistry.registerItem(pearcelSword, "pearcelSword");
         GameRegistry.registerItem(pearcelPickaxe, "pearcelPickaxe");
         GameRegistry.registerItem(pearcelAxe, "pearcelAxe");
         GameRegistry.registerItem(pearcelShovel, "pearcelShovel");
         GameRegistry.registerItem(pearcelHoe, "pearcelHoe");
         GameRegistry.registerItem(pearcelShears, "pearcelShears");
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
-		GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
+        //General Items
+        GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
         GameRegistry.registerItem(pearcelFlour, "pearcelFlour");
         GameRegistry.registerItem(pearcelArrow, "pearcelArrow");
+        //Compressed Items
         GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
         GameRegistry.registerItem(compressedSugarCaneItem2, "compressedSugarCaneItem2");
         GameRegistry.registerItem(compressedSugarCaneItem3, "compressedSugarCaneItem3");

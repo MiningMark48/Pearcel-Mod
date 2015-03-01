@@ -12,18 +12,18 @@ public class ModBlocks {
     //Plants
     public static final Block pearcelPlant = new BlockPearcelPlant().setBlockName("pearcelPlant").setBlockTextureName(Reference.MOD_ID + ":pearcelPlant");
     public static final Block compressedSugarCanePlant = new BlockCompressedSugarCanePlant().setBlockName("compressedSugarCanePlant").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCanePlant");
-
+    //Ore
+    public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
+    public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
+    //Models
+    public static final Block pearcelPainting = new BlockPearcelPainting(Material.cloth).setBlockName("pearcelPainting").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.2F).setResistance(0.1F);
     //General blocks
 	public static final Block meBlock = new BlockMEBlock().setBlockName("meBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.5f).setBlockTextureName(Reference.MOD_ID + ":meBlock").setHardness(1.6F).setResistance(1.6F);
-	public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
-    public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
 	public static final Block meGlass = new BlockMEGlass().setBlockName("meGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":meGlass").setHardness(0.5F).setResistance(2000.0F);
     public static final Block meLamp = new BlockMELamp().setBlockName("meLamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(2.0F).setBlockTextureName(Reference.MOD_ID + ":meLamp").setHardness(0.5F).setResistance(0.5F);
     public static final Block meWorkbench = new BlockMEWorkbench().setBlockName("meWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":meWorkbench").setHardness(2.5F).setResistance(5.0F);
     public static final Block pearcelTorch = new BlockPearcelTorch().setBlockName("pearcelTorch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelTorch").setHardness(0.0F).setResistance(10.0F).setLightLevel(1.0F);
     public static final Block pearcelBlock = new BlockPearcelBlock().setBlockName("pearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelBlock").setHardness(1.5F).setResistance(1.0F);
-    public static final Block pearcelPainting = new BlockPearcelPainting(Material.cloth).setBlockName("pearcelPainting").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.2F).setResistance(0.1F);
-
     //Compressed Blocks
     public static final Block compressedSugarCaneBlock = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock").setHardness(1.0F).setResistance(1.0F);
     public static final Block compressedSugarCaneBlock2 = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock2").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock2").setHardness(1.2F).setResistance(1.1F);
@@ -36,17 +36,22 @@ public class ModBlocks {
 
 
 	public static void init(){
-		
+
+        //General Blocks
 		GameRegistry.registerBlock(meBlock, "meBlock");
         GameRegistry.registerBlock(pearcelBlock, "pearcelBlock");
-		GameRegistry.registerBlock(pearcelOre, "pearcelOre");
-        GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
 		GameRegistry.registerBlock(meGlass, "meGlass");
         GameRegistry.registerBlock(meLamp, "meLamp");
         GameRegistry.registerBlock(meWorkbench, "meWorkbench");
         GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
+        //Ores
+        GameRegistry.registerBlock(pearcelOre, "pearcelOre");
+        GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
+        //Plants
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
+        //Models
         GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
+        //Compressed Blocks
         GameRegistry.registerBlock(compressedSugarCanePlant, "compressedSugarCanePlant");
         GameRegistry.registerBlock(compressedSugarCaneBlock, "compressedSugarCaneBlock");
         GameRegistry.registerBlock(compressedSugarCaneBlock2, "compressedSugarCaneBlock2");
