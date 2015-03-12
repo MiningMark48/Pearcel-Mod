@@ -2,16 +2,21 @@ package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.client.gui.Gui;
+import com.miningmark48.pearcelmod.client.gui.GuiMEWorkbench;
+import com.miningmark48.pearcelmod.reference.GUIs;
+import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiCrafting;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
@@ -47,23 +52,12 @@ public class BlockMEWorkbench extends Block
         this.field_150034_b = p_149651_1_.registerIcon(this.getTextureName() + "_front");
     }
 
-    /**
-     * Called upon block activation (right click on the block.)
-     */
-    @Override
-    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float sideX, float sideY, float sideZ)
-    {
-        if (world.isRemote)
-        {
-            //LogHelper.info("ME^Workbench clicked. -- Remote");
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ){
+        if (!player.isSneaking()){
+            player.openGui(Reference.MOD_ID, GUIs.guiIDMEWorkbench, world, x, y, z);
             return true;
-        }
-        else
-        {
-            //player.displayGUIWorkbench(x, y, z);
-            player.openGui(PearcelMod.instance, Gui.GUI_ID, world, x, y, z);
-            //LogHelper.info("ME^Workbench clicked. -- Not Remote");
-            return true;
+        }else{
+            return false;
         }
     }
 
