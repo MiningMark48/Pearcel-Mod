@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.block;
 import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.client.gui.Gui;
 import com.miningmark48.pearcelmod.client.gui.GuiMEWorkbench;
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
@@ -41,7 +42,7 @@ public class BlockMEWorkbench extends Block
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int p_149691_1_, int p_149691_2_)
     {
-        return p_149691_1_ == 1 ? this.field_150035_a : (p_149691_1_ == 0 ? Blocks.planks.getBlockTextureFromSide(p_149691_1_) : (p_149691_1_ != 2 && p_149691_1_ != 4 ? this.blockIcon : this.field_150034_b));
+        return p_149691_1_ == 1 ? this.field_150035_a : (p_149691_1_ == 0 ? ModBlocks.pearcelBlock.getBlockTextureFromSide(p_149691_1_) : (p_149691_1_ != 2 && p_149691_1_ != 4 ? this.blockIcon : this.field_150034_b));
     }
 
     @SideOnly(Side.CLIENT)

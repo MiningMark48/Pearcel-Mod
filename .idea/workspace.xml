@@ -23,14 +23,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IVETCraftingManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IVETCraftingManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/crafting/IVETCraftingManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7193764" vertical-offset="816" max-vertical-offset="4165">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="4165">
+              <caret line="65" column="85" selection-start-line="65" selection-start-column="85" selection-end-line="65" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockMEWorkbench.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.75821596" vertical-offset="102" max-vertical-offset="782">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockMEMagicTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/client/gui/GuiMEWorkbench.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/GUIs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/client/container/ContainerMEWorkbench.java" />
@@ -169,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/crafting/IVETCraftingManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java" />
       </list>
     </option>
   </component>
@@ -568,7 +578,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="reci&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;torch&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelTorch.java&#10;cont&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/client/container/ContainerMEWorkbench.java&#10;Blo&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockIVET.java&#10;g&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/client/gui/GuiHandler.java&#10;lang&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;mod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;gui&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/client/gui/GuiMEWorkbench.java&#10;enti&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/mob/EntityPearcelCow.java&#10;block&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;cow&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/mob/RenderPearcelCow.java&#10;cli&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ClientProxy.java&#10;render&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/mob/RenderPearcelCow.java&#10;&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelBow.java&#10;milk&#9;FILE&#9;jar://C:/Users/MarkA/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1230/forgeSrc-1.7.10-10.13.2.1230-sources.jar!/net/minecraft/item/ItemBucketMilk.java&#10;bow&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelBow.java&#10;nugget&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelNugget.java&#10;rec&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;sword&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSword.java&#10;modi&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;ser&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ServerProxy.java&#10;comm&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/CommonProxy.java&#10;mo&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;clien&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ClientProxy.java&#10;serv&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ServerProxy.java&#10;craft&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.achievements.CraftPearcelSword&#10;ModItems&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;refer&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java&#10;workbench&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java&#10;sugar cook&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemSugarCookie&#10;itempearcelsw&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelSword&#10;BlockMeG&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockMEGlass&#10;Pearcel&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;me&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEBlock.java&#10;plant&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockCompressedSugarCanePlant.java&#10;PearcelM&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;ModB&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;pear&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelOre.java&#10;worl&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java&#10;pearcelmod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;en&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;achievement&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/achievements/Achievements.java" />
+    <property name="SearchEverywhereHistoryKey" value="work&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java&#10;reci&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;torch&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelTorch.java&#10;cont&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/client/container/ContainerMEWorkbench.java&#10;Blo&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockIVET.java&#10;g&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/client/gui/GuiHandler.java&#10;lang&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;mod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;gui&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/client/gui/GuiMEWorkbench.java&#10;enti&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/mob/EntityPearcelCow.java&#10;block&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;cow&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/mob/RenderPearcelCow.java&#10;cli&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ClientProxy.java&#10;render&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/mob/RenderPearcelCow.java&#10;&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelBow.java&#10;milk&#9;FILE&#9;jar://C:/Users/MarkA/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1230/forgeSrc-1.7.10-10.13.2.1230-sources.jar!/net/minecraft/item/ItemBucketMilk.java&#10;bow&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelBow.java&#10;nugget&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelNugget.java&#10;rec&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java&#10;sword&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSword.java&#10;modi&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;ser&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ServerProxy.java&#10;comm&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/CommonProxy.java&#10;mo&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;clien&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ClientProxy.java&#10;serv&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/proxy/ServerProxy.java&#10;craft&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.achievements.CraftPearcelSword&#10;ModItems&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java&#10;refer&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java&#10;workbench&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java&#10;sugar cook&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemSugarCookie&#10;itempearcelsw&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelSword&#10;BlockMeG&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockMEGlass&#10;Pearcel&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;me&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockMEBlock.java&#10;plant&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockCompressedSugarCanePlant.java&#10;PearcelM&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;ModB&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java&#10;pear&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelOre.java&#10;worl&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java&#10;pearcelmod&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java&#10;en&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/resources/assets/pearcelmod/lang/en_US.lang&#10;achievement&#9;FILE&#9;file://C:/Users/MarkA/Desktop/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/achievements/Achievements.java" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -1054,13 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1230/forgeSrc-1.7.10-10.13.2.1230-sources.jar!/net/minecraft/item/crafting/CraftingManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5729">
@@ -1191,11 +1194,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/crafting/IVETCraftingManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7193764" vertical-offset="816" max-vertical-offset="4165">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="4165">
+          <caret line="65" column="85" selection-start-line="65" selection-start-column="85" selection-end-line="65" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockMEWorkbench.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75821596" vertical-offset="102" max-vertical-offset="782">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
