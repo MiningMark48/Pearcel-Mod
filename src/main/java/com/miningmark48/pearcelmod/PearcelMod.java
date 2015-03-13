@@ -38,7 +38,6 @@ public class PearcelMod {
 
         ModBlocks.init();
 		ModItems.init();
-		Recipes.init();
         EntityPearcelMod.init();
 
         proxy.registerRenderThings();
@@ -51,6 +50,7 @@ public class PearcelMod {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+        Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");
 	}
