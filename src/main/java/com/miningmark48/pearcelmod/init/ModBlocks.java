@@ -54,7 +54,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
         //Models
         GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
-        GameRegistry.registerBlock(meMagicTable, "meMagicTable");
+        //GameRegistry.registerBlock(meMagicTable, "meMagicTable");
         //Compressed Blocks
         GameRegistry.registerBlock(compressedSugarCanePlant, "compressedSugarCanePlant");
         GameRegistry.registerBlock(compressedSugarCaneBlock, "compressedSugarCaneBlock");
