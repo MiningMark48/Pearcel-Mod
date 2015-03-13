@@ -39,6 +39,9 @@ public class IVETCraftingManager
 
         recipes = new ArrayList();
 
+        //Add Recipes Here
+        //this.addShapelessRecipe(new ItemStack(BLOCK/ITEM TO GET, #), FROM THIS BLOCK/ITEM);
+
         this.addShapelessRecipe(new ItemStack(Blocks.mossy_cobblestone), Blocks.cobblestone);
         this.addShapelessRecipe(new ItemStack(Blocks.cobblestone), Blocks.mossy_cobblestone);
         this.addShapelessRecipe(new ItemStack(ModBlocks.meWorkbench), Blocks.crafting_table);
@@ -52,6 +55,13 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.iron_ingot, 2), Items.gold_ingot);
         this.addShapelessRecipe(new ItemStack(Blocks.obsidian), Items.lava_bucket);
         this.addShapelessRecipe(new ItemStack(Items.writable_book), Items.written_book);
+        this.addShapelessRecipe(new ItemStack(Items.book, 2), Items.written_book);
+        this.addShapelessRecipe(new ItemStack(Items.book, 4), Blocks.bookshelf);
+        this.addShapelessRecipe(new ItemStack(Items.wheat_seeds), ModItems.pearcelSeeds);
+        this.addShapelessRecipe(new ItemStack(ModItems.pearcelSeeds), Items.wheat_seeds);
+        this.addShapelessRecipe(new ItemStack(Items.iron_ingot, 2), ModBlocks.meBlock);
+        this.addShapelessRecipe(new ItemStack(Items.glass_bottle, 16), Items.bucket);
+
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
     }
