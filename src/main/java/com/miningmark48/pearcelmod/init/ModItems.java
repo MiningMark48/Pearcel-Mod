@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.init;
 
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -19,6 +20,7 @@ public class ModItems {
     public static final Item sugarCookie = new ItemSugarCookie(1, 0.5F, true).setUnlocalizedName("sugarCookie").setTextureName(Reference.MOD_ID + ":sugarCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBread = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelBread").setTextureName(Reference.MOD_ID + ":pearcelBread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item angelDust = new ItemAngelDust(1, 0.5F, true).setUnlocalizedName("angelDust").setTextureName(Reference.MOD_ID + ":angelDust").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -57,6 +59,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelPie, "pearcelPie");
         GameRegistry.registerItem(pearcelBread, "pearcelBread");
         GameRegistry.registerItem(pearcelJuice, "pearcelJuice");
+        GameRegistry.registerItem(angelDust, "angelDust");
         //Plants
         GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
         //Tools and Weapons
