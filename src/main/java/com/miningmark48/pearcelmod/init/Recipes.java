@@ -25,6 +25,8 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelJuice), new ItemStack(ModItems.pearcel), new ItemStack(Items.bucket), new ItemStack(Items.sugar));
         GameRegistry.addShapelessRecipe(new ItemStack(Items.sugar, 9), new ItemStack(ModItems.compressedSugarCaneItem));
         GameRegistry.addRecipe(new ItemStack(ModItems.sugarCookie, 4), "xyx", 'x', new ItemStack(Items.sugar), 'y', new ItemStack(Items.wheat));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pcp), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.meWorkbench));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pcp), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Blocks.crafting_table));
         //Tools and Weapons
 		GameRegistry.addRecipe(new ItemStack(ModItems.pearcelSword), "x", "x", "y", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelPickaxe), "xxx", " y ", " y ", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick));
