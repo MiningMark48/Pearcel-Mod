@@ -40,6 +40,8 @@ public class ModItems {
     public static final Item pearcelStick = new ItemPearcelStick().setUnlocalizedName("pearcelStick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelFlour = new ItemPearcelFlour().setUnlocalizedName("pearcelFlour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelArrow = new ItemPearcelArrow().setUnlocalizedName("pearcelArrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item meMatter = new ItemMEMatter().setUnlocalizedName("meMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item meMatterNeutral = new ItemMEMatterNeutral().setUnlocalizedName("meMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Compressed Items
     public static final Item compressedSugarCaneItem = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -76,6 +78,8 @@ public class ModItems {
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
         GameRegistry.registerItem(pearcelFlour, "pearcelFlour");
         GameRegistry.registerItem(pearcelArrow, "pearcelArrow");
+        GameRegistry.registerItem(meMatter, "meMatter");
+        GameRegistry.registerItem(meMatterNeutral, "meMatterNeutral");
         //Compressed Items
         GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
         GameRegistry.registerItem(compressedSugarCaneItem2, "compressedSugarCaneItem2");
