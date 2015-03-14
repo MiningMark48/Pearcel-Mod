@@ -26,6 +26,7 @@ public class ModBlocks {
     public static final Block ivet = new BlockIVET().setBlockName("ivet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":ivet").setHardness(1.0F).setResistance(1000.0F);
     public static final Block pearcelTorch = new BlockPearcelTorch().setBlockName("pearcelTorch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelTorch").setHardness(0.0F).setResistance(10.0F).setLightLevel(1.0F);
     public static final Block pearcelBlock = new BlockPearcelBlock().setBlockName("pearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelBlock").setHardness(1.5F).setResistance(1.0F);
+    public static final Block bedrockGlass = new BlockBedrockGlass().setBlockName("bedrockGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":bedrockGlass").setBlockUnbreakable().setResistance(99999.9F);
     //Compressed Blocks
     public static final Block compressedSugarCaneBlock = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock").setHardness(1.0F).setResistance(1.0F);
     public static final Block compressedSugarCaneBlock2 = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock2").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock2").setHardness(1.2F).setResistance(1.1F);
@@ -47,6 +48,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(meWorkbench, "meWorkbench");
         GameRegistry.registerBlock(ivet, "ivet");
         GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
+        GameRegistry.registerBlock(bedrockGlass, "bedrockGlass");
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
