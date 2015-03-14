@@ -9,6 +9,7 @@ public class Commands {
         event.registerServerCommand(new commandVersion());
         event.registerServerCommand(new commandCredit());
         event.registerServerCommand(new commandSubscribe());
+        event.registerServerCommand(new commandIVET());
     }
 
 }
