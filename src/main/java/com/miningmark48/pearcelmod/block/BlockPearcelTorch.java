@@ -21,7 +21,7 @@ public class BlockPearcelTorch extends Block
 
     public BlockPearcelTorch()
     {
-        super(Material.circuits);
+        super(Material.rock);
         this.setTickRandomly(true);
     }
 

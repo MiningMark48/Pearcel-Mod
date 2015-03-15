@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 public class BlockMELamp extends Block {
 
     public BlockMELamp(){
-        super(Material.glass);
+        super(Material.rock);
         setStepSound(soundTypeGlass);
     }
 
