@@ -1,6 +1,12 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
+import com.miningmark48.pearcelmod.achievements.CraftPearcelMelon;
 import com.miningmark48.pearcelmod.init.ModItems;
+import com.miningmark48.pearcelmod.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -31,7 +37,6 @@ public class ItemPearcelBow extends ItemBow{
     private static final String __OBFID = "CL_00001777";
 
     public ItemPearcelBow(){
-
     }
 
     public void onPlayerStoppedUsing(ItemStack p_77615_1_, World p_77615_2_, EntityPlayer p_77615_3_, int p_77615_4_)
@@ -138,12 +143,13 @@ public class ItemPearcelBow extends ItemBow{
         }
 
         return p_77659_1_;
+
     }
 
 
     public int getItemEnchantability()
     {
-        return 1;
+        return 2;
     }
 
     @SideOnly(Side.CLIENT)
@@ -167,7 +173,10 @@ public class ItemPearcelBow extends ItemBow{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("I've got the power!");
+        par3List.add("Infinite power...");
+        if (!par1ItemStack.isItemEnchanted()){
+            par1ItemStack.addEnchantment(Enchantment.infinity, 1);
+        }
     }
 
     @Override
@@ -177,9 +186,8 @@ public class ItemPearcelBow extends ItemBow{
             EntityPlayer player = (EntityPlayer) entity;
             ItemStack equipped = player.getCurrentEquippedItem();
             if (equipped == stack){
-                player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 20, 1));
+                //TODO
             }
         }
     }
-
 }
