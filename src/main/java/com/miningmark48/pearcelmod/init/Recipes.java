@@ -92,7 +92,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(Items.iron_ingot, 8), "xx", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.bucket), " x ", "x x", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.flint, 4), "x x", "x x", 'x', new ItemStack(ModItems.meMatter));
-        GameRegistry.addRecipe(new ItemStack(Items.ghast_tear, 2), "x", " xx", 'x', new ItemStack(ModItems.meMatter));
+        GameRegistry.addRecipe(new ItemStack(Items.ghast_tear, 2), "x  ", " xx", 'x', new ItemStack(ModItems.meMatter));
 
 	}
 
