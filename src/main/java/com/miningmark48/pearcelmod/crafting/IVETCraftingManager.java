@@ -66,6 +66,8 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Blocks.torch), ModBlocks.pearcelTorch);
         this.addShapelessRecipe(new ItemStack(Items.diamond), Blocks.coal_block);
         this.addShapelessRecipe(new ItemStack(ModItems.meMatter), ModItems.meMatterNeutral);
+        this.addShapelessRecipe(new ItemStack(Items.brick), Items.netherbrick);
+        this.addShapelessRecipe(new ItemStack(Items.netherbrick), Items.brick);
 
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
