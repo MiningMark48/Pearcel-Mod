@@ -23,7 +23,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class PearcelMod {
-	
+
 	@Mod.Instance(Reference.MOD_ID)
 	public static PearcelMod instance;
 	

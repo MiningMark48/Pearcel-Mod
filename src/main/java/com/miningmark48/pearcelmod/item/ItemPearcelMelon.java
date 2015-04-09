@@ -21,7 +21,7 @@ public class ItemPearcelMelon extends ItemFood {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-        list.add("This is simply a Pearcel Melon...");
+        list.add("This is simply a " + EnumChatFormatting.STRIKETHROUGH + "Pearcel"+ EnumChatFormatting.RESET + " Scrub Melon...");
     }
 
 }
