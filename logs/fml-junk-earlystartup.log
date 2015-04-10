@@ -1681,3 +1681,21 @@
 [13:31:32] [main/WARN] [LaunchWrapper]: Tweak class name cpw.mods.fml.common.launcher.FMLTweaker has already been visited -- skipping
 [13:31:32] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker
 [13:31:32] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[14:59:28] [main/INFO] [GradleStart]: accessToken: modstest
+[14:59:29] [main/INFO] [GradleStart]: version: 1.6
+[14:59:29] [main/INFO] [GradleStart]: Extra: [--tweakClass, cpw.mods.fml.common.launcher.FMLTweaker]
+[14:59:30] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --accessToken, {REDACTED}, --assetIndex, 1.7.10, --assetsDir, C:/Users/MarkA/.gradle/caches/minecraft/assets, --version, 1.6, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker]
+[14:59:30] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:59:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:59:31] [main/WARN] [LaunchWrapper]: Tweak class name cpw.mods.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[14:59:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker
+[14:59:31] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[15:06:40] [main/INFO] [GradleStart]: accessToken: modstest
+[15:06:40] [main/INFO] [GradleStart]: version: 1.6
+[15:06:40] [main/INFO] [GradleStart]: Extra: [--tweakClass, cpw.mods.fml.common.launcher.FMLTweaker]
+[15:06:41] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --accessToken, {REDACTED}, --assetIndex, 1.7.10, --assetsDir, C:/Users/MarkA/.gradle/caches/minecraft/assets, --version, 1.6, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker]
+[15:06:41] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[15:06:42] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[15:06:42] [main/WARN] [LaunchWrapper]: Tweak class name cpw.mods.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[15:06:42] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker
+[15:06:42] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker

@@ -29,6 +29,7 @@ public class ModBlocks {
     public static final Block bedrockGlass = new BlockBedrockGlass().setBlockName("bedrockGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":bedrockGlass").setBlockUnbreakable().setResistance(99999.9F);
     public static final Block meMatterBlock = new BlockMEMatter().setBlockName("meMatterBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":meMatterBlock").setHardness(0.6F).setResistance(1.0F);
     public static final Block FBomb = new BlockFBomb().setBlockName("FBomb").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":FBomb").setHardness(0.3F).setResistance(1.5F);
+    public static final Block barrier = new BlockBarrier().setBlockName("barrier").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":barrier").setBlockUnbreakable().setResistance(99999.9F);
     //Compressed Blocks
     public static final Block compressedSugarCaneBlock = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock").setHardness(1.0F).setResistance(1.0F);
     public static final Block compressedSugarCaneBlock2 = new BlockCompressedSugarCaneBlock().setBlockName("compressedSugarCaneBlock2").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":compressedSugarCaneBlock2").setHardness(1.2F).setResistance(1.1F);
@@ -53,6 +54,8 @@ public class ModBlocks {
         GameRegistry.registerBlock(bedrockGlass, "bedrockGlass");
         GameRegistry.registerBlock(meMatterBlock, "meMatterBlock");
         GameRegistry.registerBlock(FBomb, "FBomb");
+        GameRegistry.registerBlock(barrier, "barrier");
+
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
