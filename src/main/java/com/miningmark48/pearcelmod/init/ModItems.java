@@ -35,6 +35,7 @@ public class ModItems {
     public static final Item pearcelShears = new ItemPearcelShears().setUnlocalizedName("pearcelShears").setTextureName(Reference.MOD_ID + ":pearcelShears").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBow = new ItemPearcelBow().setUnlocalizedName("pearcelBow").setTextureName(Reference.MOD_ID + ":pearcelBow").setMaxStackSize(1).setMaxDamage(100).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
+    public static final Item pearcelStaff = new ItemPearcelStaff(ToolMaterial.EMERALD).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(256);
 
     //General Items
     public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
@@ -43,6 +44,8 @@ public class ModItems {
     public static final Item pearcelArrow = new ItemPearcelArrow().setUnlocalizedName("pearcelArrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item meMatter = new ItemMEMatter().setUnlocalizedName("meMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item meMatterNeutral = new ItemMEMatterNeutral().setUnlocalizedName("meMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item redMatter = new ItemRedMatter().setUnlocalizedName("redMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item greenMatter = new ItemGreenMatter().setUnlocalizedName("greenMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Compressed Items
     public static final Item compressedSugarCaneItem = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -75,6 +78,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelShears, "pearcelShears");
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
         GameRegistry.registerItem(pcp, "pcp");
+        GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
         //General Items
         GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
@@ -82,6 +86,8 @@ public class ModItems {
         GameRegistry.registerItem(pearcelArrow, "pearcelArrow");
         GameRegistry.registerItem(meMatter, "meMatter");
         GameRegistry.registerItem(meMatterNeutral, "meMatterNeutral");
+        GameRegistry.registerItem(redMatter, "redMatter");
+        GameRegistry.registerItem(greenMatter, "greenMatter");
         //Compressed Items
         GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
         GameRegistry.registerItem(compressedSugarCaneItem2, "compressedSugarCaneItem2");
