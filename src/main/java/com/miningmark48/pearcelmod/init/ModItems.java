@@ -15,13 +15,14 @@ import net.minecraft.item.ItemSeeds;
 public class ModItems {
 
     //Food
-	public static final Item pearcel = new ItemModFood(10, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelPie = new ItemModFood(8, 0.3F, false).setUnlocalizedName("pearcelPie").setTextureName(Reference.MOD_ID + ":pearcelPie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item sugarCookie = new ItemSugarCookie(1, 0.5F, true).setUnlocalizedName("sugarCookie").setTextureName(Reference.MOD_ID + ":sugarCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBread = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelBread").setTextureName(Reference.MOD_ID + ":pearcelBread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item angelDust = new ItemAngelDust(1, 0.5F, true).setUnlocalizedName("angelDust").setTextureName(Reference.MOD_ID + ":angelDust").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelMelon = new ItemPearcelMelon(4, 1.0F, false).setUnlocalizedName("pearcelMelon").setTextureName(Reference.MOD_ID + ":pearcelMelon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelSandwich = new ItemModFood(10, 1.4F, true).setUnlocalizedName("pearcelSandwich").setTextureName(Reference.MOD_ID + ":pearcelSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -67,6 +68,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelJuice, "pearcelJuice");
         GameRegistry.registerItem(angelDust, "angelDust");
         GameRegistry.registerItem(pearcelMelon, "pearcelMelon");
+        GameRegistry.registerItem(pearcelSandwich, "pearcelSandwich");
         //Plants
         GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
         //Tools and Weapons
