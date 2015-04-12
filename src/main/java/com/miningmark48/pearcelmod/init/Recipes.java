@@ -39,6 +39,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelArrow, 4), "x", "y", "z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(Items.feather));
         GameRegistry.addRecipe(new ItemStack(ModItems.pcp), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.meWorkbench));
         GameRegistry.addRecipe(new ItemStack(ModItems.pcp), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Blocks.crafting_table));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStaff), "  x", " y ", "z a", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.redMatter), 'a', new ItemStack(ModItems.greenMatter));
 		//Compressed Sugar Cane (Items)
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.compressedSugarCaneItem), new ItemStack(ModBlocks.compressedSugarCaneBlock), new ItemStack(Items.wheat_seeds));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.compressedSugarCaneItem2), new ItemStack(ModBlocks.compressedSugarCaneBlock2), new ItemStack(Items.wheat_seeds));
