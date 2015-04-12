@@ -22,7 +22,8 @@ public class ModItems {
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item angelDust = new ItemAngelDust(1, 0.5F, true).setUnlocalizedName("angelDust").setTextureName(Reference.MOD_ID + ":angelDust").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelMelon = new ItemPearcelMelon(4, 1.0F, false).setUnlocalizedName("pearcelMelon").setTextureName(Reference.MOD_ID + ":pearcelMelon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelSandwich = new ItemModFood(10, 1.4F, true).setUnlocalizedName("pearcelSandwich").setTextureName(Reference.MOD_ID + ":pearcelSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelSandwich = new ItemModFood(10, 1.3F, true).setUnlocalizedName("pearcelSandwich").setTextureName(Reference.MOD_ID + ":pearcelSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item melonSandwich = new ItemModFood(11, 1.4F, true).setUnlocalizedName("melonSandwich").setTextureName(Reference.MOD_ID + ":melonSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -47,6 +48,11 @@ public class ModItems {
     public static final Item meMatterNeutral = new ItemMEMatterNeutral().setUnlocalizedName("meMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item redMatter = new ItemRedMatter().setUnlocalizedName("redMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item greenMatter = new ItemGreenMatter().setUnlocalizedName("greenMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelJar = new ItemPearcelJar().setUnlocalizedName("pearcelJar").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+
+
 
     //Compressed Items
     public static final Item compressedSugarCaneItem = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -69,6 +75,7 @@ public class ModItems {
         GameRegistry.registerItem(angelDust, "angelDust");
         GameRegistry.registerItem(pearcelMelon, "pearcelMelon");
         GameRegistry.registerItem(pearcelSandwich, "pearcelSandwich");
+        GameRegistry.registerItem(melonSandwich, "melonSandwich");
         //Plants
         GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
         //Tools and Weapons
@@ -90,6 +97,9 @@ public class ModItems {
         GameRegistry.registerItem(meMatterNeutral, "meMatterNeutral");
         GameRegistry.registerItem(redMatter, "redMatter");
         GameRegistry.registerItem(greenMatter, "greenMatter");
+        GameRegistry.registerItem(pearcelJar, "pearcelJar");
+        GameRegistry.registerItem(pearcelJelly, "pearcelJelly");
+        GameRegistry.registerItem(melonJelly, "melonJelly");
         //Compressed Items
         GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
         GameRegistry.registerItem(compressedSugarCaneItem2, "compressedSugarCaneItem2");
