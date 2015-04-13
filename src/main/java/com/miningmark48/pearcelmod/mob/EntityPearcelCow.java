@@ -67,7 +67,7 @@ public class EntityPearcelCow extends EntityAnimal{
     }
 
     protected Item getDropItem(){
-        return ModItems.pearcel;
+        return ModItems.pearcelBeef;
     }
 
     //To be changed from bucket of milk to bucket of pearcel juice
