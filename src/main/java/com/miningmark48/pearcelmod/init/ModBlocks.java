@@ -53,7 +53,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
         GameRegistry.registerBlock(bedrockGlass, "bedrockGlass");
         GameRegistry.registerBlock(meMatterBlock, "meMatterBlock");
-        GameRegistry.registerBlock(FBomb, "FBomb");
+        //GameRegistry.registerBlock(FBomb, "FBomb");
         GameRegistry.registerBlock(barrier, "barrier");
 
         //Ores
