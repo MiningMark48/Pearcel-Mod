@@ -53,6 +53,7 @@ public class PearcelMod {
         Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");
+        ClientProxy.addCapes();
 	}
 	
 	@Mod.EventHandler
