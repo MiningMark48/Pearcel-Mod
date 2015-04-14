@@ -26,6 +26,15 @@ public class ModItems {
     public static final Item melonSandwich = new ItemModFood(11, 1.4F, true).setUnlocalizedName("melonSandwich").setTextureName(Reference.MOD_ID + ":melonSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBeef = new ItemModFood(1, 0.1F, true).setUnlocalizedName("pearcelBeef").setTextureName(Reference.MOD_ID + ":pearcelBeef").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelSteak = new ItemModFood(7, 0.8F, true).setUnlocalizedName("pearcelSteak").setTextureName(Reference.MOD_ID + ":pearcelSteak").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie = new ItemModFood(1, 0.1F, false).setUnlocalizedName("pearcelCookie").setTextureName(Reference.MOD_ID + ":pearcelCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie2 = new ItemModFood(2, 0.2F, false).setUnlocalizedName("pearcelCookie2").setTextureName(Reference.MOD_ID + ":pearcelCookie2").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie3 = new ItemModFood(3, 0.3F, false).setUnlocalizedName("pearcelCookie3").setTextureName(Reference.MOD_ID + ":pearcelCookie3").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie4 = new ItemModFood(4, 0.4F, false).setUnlocalizedName("pearcelCookie4").setTextureName(Reference.MOD_ID + ":pearcelCookie4").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie5 = new ItemModFood(5, 0.5F, false).setUnlocalizedName("pearcelCookie5").setTextureName(Reference.MOD_ID + ":pearcelCookie5").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie6 = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelCookie6").setTextureName(Reference.MOD_ID + ":pearcelCookie6").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie7 = new ItemModFood(7, 0.7F, false).setUnlocalizedName("pearcelCookie7").setTextureName(Reference.MOD_ID + ":pearcelCookie7").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie8 = new ItemModFood(8, 0.8F, false).setUnlocalizedName("pearcelCookie8").setTextureName(Reference.MOD_ID + ":pearcelCookie8").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelCookie9 = new ItemModFood(9, 0.9F, false).setUnlocalizedName("pearcelCookie9").setTextureName(Reference.MOD_ID + ":pearcelCookie9").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -113,6 +122,16 @@ public class ModItems {
         GameRegistry.registerItem(compressedSugarCaneItem6, "compressedSugarCaneItem6");
         GameRegistry.registerItem(compressedSugarCaneItem7, "compressedSugarCaneItem7");
         GameRegistry.registerItem(compressedSugarCaneItem8, "compressedSugarCaneItem8");
+
+        GameRegistry.registerItem(pearcelCookie, "pearcelCookie");
+        GameRegistry.registerItem(pearcelCookie2, "pearcelCookie2");
+        GameRegistry.registerItem(pearcelCookie3, "pearcelCookie3");
+        GameRegistry.registerItem(pearcelCookie4, "pearcelCookie4");
+        GameRegistry.registerItem(pearcelCookie5, "pearcelCookie5");
+        GameRegistry.registerItem(pearcelCookie6, "pearcelCookie6");
+        GameRegistry.registerItem(pearcelCookie7, "pearcelCookie7");
+        GameRegistry.registerItem(pearcelCookie8, "pearcelCookie8");
+        GameRegistry.registerItem(pearcelCookie9, "pearcelCookie9");
 		
 	}
 	
