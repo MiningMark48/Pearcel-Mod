@@ -28,8 +28,7 @@ public class PearcelMod {
 	public static PearcelMod instance;
 	
 	@SidedProxy(clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS)
-	public static ServerProxy proxy;
-    public static CommonProxy proxyy;
+	public static IProxy proxy;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){

@@ -17,7 +17,6 @@ public class ModItems {
     //Food
 	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelPie = new ItemModFood(8, 0.3F, false).setUnlocalizedName("pearcelPie").setTextureName(Reference.MOD_ID + ":pearcelPie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item sugarCookie = new ItemSugarCookie(1, 0.5F, true).setUnlocalizedName("sugarCookie").setTextureName(Reference.MOD_ID + ":sugarCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBread = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelBread").setTextureName(Reference.MOD_ID + ":pearcelBread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item angelDust = new ItemAngelDust(1, 0.5F, true).setUnlocalizedName("angelDust").setTextureName(Reference.MOD_ID + ":angelDust").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -63,23 +62,10 @@ public class ModItems {
     public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
-
-
-    //Compressed Items
-    public static final Item compressedSugarCaneItem = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem2 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem2").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem2").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem3 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem3").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem3").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem4 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem4").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem4").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem5 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem5").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem5").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem6 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem6").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem6").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem7 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem7").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem7").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item compressedSugarCaneItem8 = new ItemCompressedSugarCaneItem().setUnlocalizedName("compressedSugarCaneItem8").setTextureName(Reference.MOD_ID + ":compressedSugarCaneItem8").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-
 	
 	public static void init(){
         //Food
         GameRegistry.registerItem(pearcel, "pearcelItem");
-        GameRegistry.registerItem(sugarCookie, "sugarCookie");
         GameRegistry.registerItem(pearcelPie, "pearcelPie");
         GameRegistry.registerItem(pearcelBread, "pearcelBread");
         GameRegistry.registerItem(pearcelJuice, "pearcelJuice");
@@ -113,15 +99,6 @@ public class ModItems {
         GameRegistry.registerItem(pearcelJar, "pearcelJar");
         GameRegistry.registerItem(pearcelJelly, "pearcelJelly");
         GameRegistry.registerItem(melonJelly, "melonJelly");
-        //Compressed Items
-        GameRegistry.registerItem(compressedSugarCaneItem, "compressedSugarCaneItem");
-        GameRegistry.registerItem(compressedSugarCaneItem2, "compressedSugarCaneItem2");
-        GameRegistry.registerItem(compressedSugarCaneItem3, "compressedSugarCaneItem3");
-        GameRegistry.registerItem(compressedSugarCaneItem4, "compressedSugarCaneItem4");
-        GameRegistry.registerItem(compressedSugarCaneItem5, "compressedSugarCaneItem5");
-        GameRegistry.registerItem(compressedSugarCaneItem6, "compressedSugarCaneItem6");
-        GameRegistry.registerItem(compressedSugarCaneItem7, "compressedSugarCaneItem7");
-        GameRegistry.registerItem(compressedSugarCaneItem8, "compressedSugarCaneItem8");
 
         GameRegistry.registerItem(pearcelCookie, "pearcelCookie");
         GameRegistry.registerItem(pearcelCookie2, "pearcelCookie2");
