@@ -20,7 +20,7 @@ import net.minecraftforge.client.MinecraftForgeClient;
 
 import java.io.File;
 
-public class ClientProxy extends ServerProxy{
+public class ClientProxy extends CommonProxy{
 
     public void registerRenderThings(){
     //Mobs
