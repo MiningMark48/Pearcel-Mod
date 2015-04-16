@@ -53,7 +53,7 @@ public class ItemPearcelStaff extends ItemSword{
             return item;
         }else{
             player.addVelocity(0, 0.5, 0);
-            item.damageItem(2, player);
+            item.damageItem(1, player);
             return item;
         }
     }
