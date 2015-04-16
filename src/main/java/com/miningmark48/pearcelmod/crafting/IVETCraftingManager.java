@@ -68,6 +68,18 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(ModItems.meMatter), ModItems.meMatterNeutral);
         this.addShapelessRecipe(new ItemStack(Items.brick), Items.netherbrick);
         this.addShapelessRecipe(new ItemStack(Items.netherbrick), Items.brick);
+        this.addShapelessRecipe(new ItemStack(Items.record_11), Items.record_ward);
+        this.addShapelessRecipe(new ItemStack(Items.record_13), Items.record_11);
+        this.addShapelessRecipe(new ItemStack(Items.record_blocks), Items.record_13);
+        this.addShapelessRecipe(new ItemStack(Items.record_cat), Items.record_blocks);
+        this.addShapelessRecipe(new ItemStack(Items.record_chirp), Items.record_cat);
+        this.addShapelessRecipe(new ItemStack(Items.record_far), Items.record_chirp);
+        this.addShapelessRecipe(new ItemStack(Items.record_mall), Items.record_far);
+        this.addShapelessRecipe(new ItemStack(Items.record_mellohi), Items.record_mall);
+        this.addShapelessRecipe(new ItemStack(Items.record_stal), Items.record_mellohi);
+        this.addShapelessRecipe(new ItemStack(Items.record_strad), Items.record_stal);
+        this.addShapelessRecipe(new ItemStack(Items.record_wait), Items.record_strad);
+        this.addShapelessRecipe(new ItemStack(Items.record_ward), Items.record_wait);
 
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
