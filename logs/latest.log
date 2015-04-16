@@ -1,8 +1,8 @@
-[19:21:35] [main/INFO]: Setting user: MiningMark48
-[19:21:36] [Client thread/INFO]: LWJGL Version: 2.9.1
-[19:21:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[19:21:44] [Sound Library Loader/INFO]: Sound engine started
-[19:21:56] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[20:45:42] [main/INFO]: Setting user: MiningMark48
+[20:45:43] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:45:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[20:45:49] [Sound Library Loader/INFO]: Sound engine started
+[20:45:49] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -27,11 +27,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[19:21:56] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[19:21:56] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[19:21:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[19:21:56] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[19:21:56] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[20:45:50] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[20:45:50] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[20:45:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[20:45:50] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[20:45:50] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -59,43 +59,30 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[19:21:56] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[19:21:57] [Sound Library Loader/INFO]: Sound engine started
-[19:22:53] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[19:22:53] [Server thread/INFO]: Generating keypair
-[19:22:53] [Server thread/INFO]: Converting map!
-[19:22:53] [Server thread/INFO]: Scanning folders...
-[19:22:53] [Server thread/INFO]: Total conversion count is 0
-[19:22:54] [Server thread/INFO]: Preparing start region for level 0
-[19:22:55] [Server thread/INFO]: Changing view distance to 12, from 10
-[19:22:56] [Server thread/INFO]: MiningMark48[local:E:511cd66d] logged in with entity id 30 at (164.5, 4.0, -1216.5)
-[19:22:56] [Server thread/INFO]: MiningMark48 joined the game
-[19:23:01] [Server thread/INFO]: Saving and pausing game...
-[19:23:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:23:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:23:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:23:33] [Server thread/INFO]: MiningMark48 has just earned the achievement [Taking Inventory]
-[19:23:33] [Client thread/INFO]: [CHAT] MiningMark48 has just earned the achievement [Taking Inventory]
-[19:23:34] [Server thread/INFO]: Saving and pausing game...
-[19:23:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:23:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:23:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:23:45] [Server thread/INFO]: Saving and pausing game...
-[19:23:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:23:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:23:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:28:09] [Server thread/INFO]: Saving and pausing game...
-[19:28:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:28:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:28:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:28:25] [Server thread/INFO]: Saving and pausing game...
-[19:28:25] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:28:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:28:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:28:26] [Server thread/INFO]: Stopping server
-[19:28:26] [Server thread/INFO]: Saving players
-[19:28:26] [Server thread/INFO]: Saving worlds
-[19:28:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:28:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:28:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:28:29] [Client thread/INFO]: Stopping!
+[20:45:50] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[20:45:50] [Sound Library Loader/INFO]: Sound engine started
+[20:47:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:47:15] [Server thread/INFO]: Generating keypair
+[20:47:17] [Server thread/INFO]: Preparing start region for level 0
+[20:47:18] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:47:18] [Server thread/INFO]: MiningMark48[local:E:8a4398e0] logged in with entity id 169 at (222.9438506914505, 17.35966973551649, -1285.1174962266186)
+[20:47:18] [Server thread/INFO]: MiningMark48 joined the game
+[20:47:19] [Server thread/INFO]: Saving and pausing game...
+[20:47:19] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:47:19] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:47:19] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:48:13] [Server thread/INFO]: Saving and pausing game...
+[20:48:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:48:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:48:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:51:10] [Server thread/INFO]: Saving and pausing game...
+[20:51:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:51:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:51:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:52:34] [Server thread/INFO]: Stopping server
+[20:52:34] [Server thread/INFO]: Saving players
+[20:52:34] [Server thread/INFO]: Saving worlds
+[20:52:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:52:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:52:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:52:35] [Client thread/INFO]: Stopping!
