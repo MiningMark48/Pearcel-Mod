@@ -52,7 +52,8 @@ public class ItemPearcelStaff extends ItemSword{
             item.damageItem(20, player);
             return item;
         }else{
-            player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 100, 2));
+            player.addVelocity(0, 0.5, 0);
+            item.damageItem(2, player);
             return item;
         }
     }
