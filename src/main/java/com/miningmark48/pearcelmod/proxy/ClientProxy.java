@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.model.ModelPearcelMob;
 import com.miningmark48.pearcelmod.renderer.RenderItemPearcelPainting;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelPainting;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
+import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.Minecraft;
@@ -57,7 +58,9 @@ public class ClientProxy extends CommonProxy{
     @Override
     public void registerKeyBindings(){
         ClientRegistry.registerKeyBinding(Keybindings.regen);
-        ClientRegistry.registerKeyBinding(Keybindings.effects_clear);
+        LogHelper.info("Register 1");
+        ClientRegistry.registerKeyBinding(Keybindings.clear);
+        LogHelper.info("Register 2");
     }
 
 }

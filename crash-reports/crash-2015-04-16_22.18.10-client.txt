@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 4/16/15 10:18 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.miningmark48.pearcelmod.client.handler.KeyInputEventHandler.handlerKeyInputEvent(KeyInputEventHandler.java:40)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_6_KeyInputEventHandler_handlerKeyInputEvent_KeyInputEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)
+	at cpw.mods.fml.common.FMLCommonHandler.fireKeyInput(FMLCommonHandler.java:540)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1953)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78)
+	at GradleStart.main(GradleStart.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.miningmark48.pearcelmod.client.handler.KeyInputEventHandler.handlerKeyInputEvent(KeyInputEventHandler.java:40)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_6_KeyInputEventHandler_handlerKeyInputEvent_KeyInputEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)
+	at cpw.mods.fml.common.FMLCommonHandler.fireKeyInput(FMLCommonHandler.java:540)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['MiningMark48'/165, l='MpServer', x=168.50, y=5.62, z=-1223.50]]
+	Chunk stats: MultiplayerChunkCache: 625, 625
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (166,4,-1222), Chunk: (at 6,0,10 in 10,-77; contains blocks 160,0,-1232 to 175,255,-1217), Region: (0,-3; contains chunks 0,-96 to 31,-65, blocks 0,0,-1536 to 511,255,-1025)
+	Level time: 57974 game time, 31646 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 49 total; [EntitySheep['Sheep'/68, l='MpServer', x=145.44, y=4.00, z=-1153.81], EntityCow['Cow'/141, l='MpServer', x=241.56, y=4.00, z=-1221.75], EntityClientPlayerMP['MiningMark48'/165, l='MpServer', x=168.50, y=5.62, z=-1223.50], EntityHorse['Horse'/142, l='MpServer', x=238.84, y=4.00, z=-1213.00], EntityBat['Bat'/67, l='MpServer', x=143.85, y=5.01, z=-1208.71], EntityVillager['Villager'/76, l='MpServer', x=168.78, y=5.00, z=-1298.50], EntityCow['Cow'/129, l='MpServer', x=233.03, y=4.00, z=-1203.13], EntityCow['Cow'/128, l='MpServer', x=230.47, y=4.00, z=-1205.25], EntityItem['item.item.pearcelStaff'/78, l='MpServer', x=170.72, y=4.13, z=-1228.13], EntityItem['item.item.potion'/79, l='MpServer', x=171.88, y=4.13, z=-1231.06], EntityVillager['Villager'/72, l='MpServer', x=169.47, y=5.00, z=-1303.94], EntityVillager['Villager'/74, l='MpServer', x=169.50, y=5.00, z=-1303.06], EntityPig['Pig'/19, l='MpServer', x=90.72, y=4.00, z=-1219.19], EntityChicken['Chicken'/81, l='MpServer', x=163.41, y=4.00, z=-1160.38], EntityChicken['Chicken'/20, l='MpServer', x=92.44, y=4.00, z=-1227.41], EntityItem['item.item.potion'/80, l='MpServer', x=171.22, y=4.13, z=-1231.19], EntityCow['Cow'/144, l='MpServer', x=243.75, y=4.00, z=-1193.72], EntityPig['Pig'/25, l='MpServer', x=104.25, y=4.00, z=-1283.22], EntitySheep['Sheep'/24, l='MpServer', x=97.03, y=4.00, z=-1291.94], EntityPearcelMob['Pearcel Mob'/27, l='MpServer', x=114.13, y=4.00, z=-1278.13], EntityCow['Cow'/26, l='MpServer', x=103.28, y=4.00, z=-1279.66], EntityCow['Cow'/29, l='MpServer', x=98.81, y=4.00, z=-1271.09], EntityPig['Pig'/28, l='MpServer', x=104.16, y=4.00, z=-1264.06], EntityVillager['Villager'/91, l='MpServer', x=183.94, y=5.50, z=-1302.50], EntityPig['Pig'/30, l='MpServer', x=102.53, y=4.00, z=-1263.75], EntityPig['Pig'/34, l='MpServer', x=97.84, y=4.00, z=-1234.81], EntityChicken['Chicken'/35, l='MpServer', x=101.59, y=4.00, z=-1223.59], EntityCow['Cow'/100, l='MpServer', x=190.09, y=4.00, z=-1259.88], EntitySheep['Sheep'/33, l='MpServer', x=96.53, y=4.00, z=-1232.34], EntityPig['Pig'/101, l='MpServer', x=191.16, y=4.00, z=-1199.81], EntityVillager['Villager'/99, l='MpServer', x=179.31, y=5.00, z=-1294.69], EntityPig['Pig'/36, l='MpServer', x=91.16, y=4.00, z=-1217.66], EntitySheep['Sheep'/110, l='MpServer', x=217.56, y=4.00, z=-1275.81], EntityPearcelMob['Pearcel Mob'/111, l='MpServer', x=217.75, y=4.00, z=-1217.84], EntityCow['Cow'/46, l='MpServer', x=114.75, y=4.00, z=-1257.56], EntityChicken['Chicken'/47, l='MpServer', x=127.56, y=4.00, z=-1149.44], EntityPig['Pig'/107, l='MpServer', x=207.78, y=4.00, z=-1207.28], EntitySheep['Sheep'/44, l='MpServer', x=114.38, y=4.00, z=-1296.16], EntityPearcelMob['Pearcel Mob'/45, l='MpServer', x=122.31, y=4.00, z=-1254.53], EntityChicken['Chicken'/49, l='MpServer', x=121.56, y=4.00, z=-1150.56], EntitySheep['Sheep'/48, l='MpServer', x=115.97, y=4.00, z=-1147.06], EntityPearcelMob['Pearcel Mob'/114, l='MpServer', x=222.34, y=4.00, z=-1189.78], EntityPig['Pig'/113, l='MpServer', x=211.06, y=4.00, z=-1216.84], EntitySheep['Sheep'/112, l='MpServer', x=218.88, y=4.00, z=-1225.25], EntityChicken['Chicken'/59, l='MpServer', x=134.63, y=4.00, z=-1151.59], EntityPig['Pig'/127, l='MpServer', x=228.63, y=4.00, z=-1210.22], EntityPig['Pig'/58, l='MpServer', x=130.16, y=4.00, z=-1296.84], EntityHorse['Horse'/126, l='MpServer', x=239.22, y=4.00, z=-1227.91], EntityCow['Cow'/125, l='MpServer', x=237.81, y=4.00, z=-1236.22]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78)
+	at GradleStart.main(GradleStart.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_71, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 73215576 bytes (69 MB) / 188456960 bytes (179 MB) up to 415629312 bytes (396 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	pearcelmod{1.7.10-1.7} [Pearcel Mod] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 6250 Graphics   GL version 4.1.10429 Compatibility Profile Context, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
