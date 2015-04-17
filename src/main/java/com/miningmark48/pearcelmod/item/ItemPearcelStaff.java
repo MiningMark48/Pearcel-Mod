@@ -6,6 +6,7 @@ import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
 
 import com.miningmark48.pearcelmod.reference.GUIs;
+import com.miningmark48.pearcelmod.reference.Key;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -29,8 +30,9 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Right Click = Jump Boost");
-        par3List.add("Shift + Right Click = Regen (-20 Durability)");
+        par3List.add("Right Click = Jump Boost (-1 Durability");
+        par3List.add("Shift + Right Click = Regen (-1 Durability)");
+        par3List.add("Press " + Key.REGEN + " for regen effect. (-10 Durability)");
     }
 
     @Override
@@ -48,8 +50,8 @@ public class ItemPearcelStaff extends ItemSword{
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
     {
         if (player.isSneaking()){
-            player.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 200, 1));
-            item.damageItem(20, player);
+            player.addVelocity(0, -0.5, 0);
+            item.damageItem(1, player);
             return item;
         }else{
             player.addVelocity(0, 0.5, 0);

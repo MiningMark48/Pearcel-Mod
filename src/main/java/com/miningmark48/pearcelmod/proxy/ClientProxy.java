@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.proxy;
 
+import com.miningmark48.pearcelmod.client.settings.Keybindings;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.model.ModelPearcelMob;
@@ -14,6 +15,7 @@ import net.minecraft.client.model.ModelSquid;
 import net.minecraft.client.renderer.ThreadDownloadImageData;
 import net.minecraft.client.renderer.texture.ITextureObject;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -50,6 +52,12 @@ public class ClientProxy extends CommonProxy{
         for (String username : owners){
             Minecraft.getMinecraft().renderEngine.loadTexture(new ResourceLocation("cloaks/" + username), (ITextureObject)image);
         }
+    }
+
+    @Override
+    public void registerKeyBindings(){
+        ClientRegistry.registerKeyBinding(Keybindings.regen);
+        ClientRegistry.registerKeyBinding(Keybindings.effects_clear);
     }
 
 }

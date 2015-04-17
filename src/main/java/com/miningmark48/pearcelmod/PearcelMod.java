@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.client.gui.GuiHandler;
+import com.miningmark48.pearcelmod.client.handler.KeyInputEventHandler;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
@@ -35,11 +36,13 @@ public class PearcelMod {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
+
         ModBlocks.init();
 		ModItems.init();
         EntityPearcelMod.init();
 
         proxy.registerRenderThings();
+        proxy.registerKeyBindings();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
@@ -49,6 +52,7 @@ public class PearcelMod {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
         Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");
