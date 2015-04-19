@@ -26,4 +26,8 @@ public class BlockBarrier extends Block {
         setStepSound(soundTypeMetal);
     }
 
+    public boolean canPlaceBlockAt(World world, int x, int y, int z){
+        return false;
+    }
+
 }

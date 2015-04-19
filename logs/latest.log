@@ -1,9 +1,9 @@
-[15:21:55] [main/INFO]: Logging in with username & password
-[15:22:43] [main/INFO]: Setting user: MiningMark48
-[15:22:56] [Client thread/INFO]: LWJGL Version: 2.9.1
-[15:23:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[15:24:09] [Sound Library Loader/INFO]: Sound engine started
-[15:25:02] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[16:32:57] [main/INFO]: Logging in with username & password
+[16:34:09] [main/INFO]: Setting user: MiningMark48
+[16:34:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:36:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[16:36:39] [Sound Library Loader/INFO]: Sound engine started
+[16:37:26] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -28,11 +28,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[15:25:06] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[15:25:14] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[15:25:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[15:25:17] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[15:25:20] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[16:37:32] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[16:37:37] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[16:37:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[16:37:40] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[16:37:41] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -60,44 +60,47 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[15:25:22] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[15:25:26] [Sound Library Loader/INFO]: Sound engine started
-[15:26:18] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[15:26:18] [Server thread/INFO]: Generating keypair
-[15:26:23] [Server thread/INFO]: Preparing start region for level 0
-[15:26:24] [Server thread/INFO]: Preparing spawn area: 0%
-[15:26:25] [Server thread/INFO]: Preparing spawn area: 12%
-[15:26:26] [Server thread/INFO]: Preparing spawn area: 18%
-[15:26:27] [Server thread/INFO]: Preparing spawn area: 50%
-[15:26:30] [Server thread/INFO]: Changing view distance to 12, from 10
-[15:26:35] [Server thread/INFO]: MiningMark48[local:E:6c8a9195] logged in with entity id 175 at (172.80572117782663, 4.0, -1226.5042554302463)
-[15:26:35] [Server thread/INFO]: MiningMark48 joined the game
-[15:26:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11380ms behind, skipping 227 tick(s)
-[15:27:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 14348ms behind, skipping 286 tick(s)
-[15:27:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4770ms behind, skipping 95 tick(s)
-[15:27:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5661ms behind, skipping 113 tick(s)
-[15:27:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3928ms behind, skipping 78 tick(s)
-[15:28:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3033ms behind, skipping 60 tick(s)
-[15:28:49] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3150ms behind, skipping 63 tick(s)
-[15:29:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3025ms behind, skipping 60 tick(s)
-[15:29:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2282ms behind, skipping 45 tick(s)
-[15:29:20] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
-[15:29:20] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[15:29:28] [Server thread/INFO]: Saving and pausing game...
-[15:29:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[15:29:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[15:29:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[15:29:29] [Server thread/INFO]: Saving and pausing game...
-[15:29:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[15:29:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[15:29:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[15:29:39] [Server thread/INFO]: MiningMark48 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
-[15:29:39] [Server thread/INFO]: MiningMark48 left the game
-[15:29:39] [Server thread/INFO]: Stopping singleplayer server as player logged out
-[15:29:39] [Server thread/INFO]: Stopping server
-[15:29:39] [Server thread/INFO]: Saving players
-[15:29:39] [Server thread/INFO]: Saving worlds
-[15:29:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[15:29:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[15:29:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[15:29:49] [Client thread/INFO]: Stopping!
+[16:37:43] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[16:37:47] [Sound Library Loader/INFO]: Sound engine started
+[16:38:51] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:38:51] [Server thread/INFO]: Generating keypair
+[16:38:56] [Server thread/INFO]: Preparing start region for level 0
+[16:38:58] [Server thread/INFO]: Preparing spawn area: 0%
+[16:39:00] [Server thread/INFO]: Preparing spawn area: 14%
+[16:39:01] [Server thread/INFO]: Preparing spawn area: 45%
+[16:39:02] [Server thread/INFO]: Preparing spawn area: 61%
+[16:39:07] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:39:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4377ms behind, skipping 87 tick(s)
+[16:39:09] [Server thread/INFO]: MiningMark48[local:E:e11335d6] logged in with entity id 172 at (171.8467448745475, 4.0, -1227.7014939477222)
+[16:39:09] [Server thread/INFO]: MiningMark48 joined the game
+[16:39:47] [Client thread/INFO]: Warning: Clientside chunk ticking took 105 ms
+[16:40:07] [Client thread/INFO]: [CHAT] pearcelmod:barrier, pearcelmod:bedrockGlass
+[16:40:09] [Server thread/INFO]: [MiningMark48: Given [Barrier [WIP]] * 1 to MiningMark48]
+[16:40:09] [Client thread/INFO]: [CHAT] Given [Barrier [WIP]] * 1 to MiningMark48
+[16:40:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 42092ms behind, skipping 841 tick(s)
+[16:40:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2170ms behind, skipping 43 tick(s)
+[16:40:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7774ms behind, skipping 155 tick(s)
+[16:40:36] [Client thread/INFO]: [CHAT] /setblock, /setworldspawn
+[16:40:42] [Client thread/INFO]: [CHAT] /setblock <x> <y> <z> <TileName> [dataValue] [oldBlockHandling] [dataTag]
+[16:40:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7333ms behind, skipping 146 tick(s)
+[16:41:09] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6877ms behind, skipping 137 tick(s)
+[16:41:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3174ms behind, skipping 63 tick(s)
+[16:41:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10940ms behind, skipping 218 tick(s)
+[16:41:59] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2997ms behind, skipping 59 tick(s)
+[16:42:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4915ms behind, skipping 98 tick(s)
+[16:42:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6348ms behind, skipping 126 tick(s)
+[16:42:51] [Server thread/INFO]: [MiningMark48: Block placed]
+[16:42:51] [Client thread/INFO]: [CHAT] Block placed
+[16:42:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7019ms behind, skipping 140 tick(s)
+[16:43:09] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4651ms behind, skipping 93 tick(s)
+[16:43:15] [Server thread/INFO]: Saving and pausing game...
+[16:43:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:43:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:43:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:43:21] [Server thread/INFO]: Stopping server
+[16:43:21] [Server thread/INFO]: Saving players
+[16:43:22] [Server thread/INFO]: Saving worlds
+[16:43:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:43:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:43:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:43:39] [Client thread/INFO]: Stopping!
