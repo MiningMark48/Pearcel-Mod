@@ -9,14 +9,14 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import static net.minecraftforge.common.util.ForgeDirection.*;
 
-public class BlockPearcelTorch extends Block
-{
+public class BlockPearcelTorch extends Block {
     private static final String __OBFID = "CL_00000325";
 
     public BlockPearcelTorch()
@@ -24,6 +24,8 @@ public class BlockPearcelTorch extends Block
         super(Material.rock);
         this.setTickRandomly(true);
     }
+
+
 
     /**
      * Returns a bounding box from the pool of bounding boxes (this means this box can change after the pool has been
@@ -313,4 +315,6 @@ public class BlockPearcelTorch extends Block
             p_149734_1_.spawnParticle("flame", d0, d1, d2, 0.0D, 0.0D, 0.0D);
         }
     }
+
+
 }

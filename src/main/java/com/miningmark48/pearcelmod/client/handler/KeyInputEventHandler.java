@@ -38,22 +38,19 @@ public class KeyInputEventHandler {
         EntityPlayer entityPlayer = FMLClientHandler.instance().getClientPlayerEntity();
         ItemStack currentEquippedStack = entityPlayer.getCurrentEquippedItem();
         if (currentEquippedStack  != null) {
-            if (entityPlayer.worldObj.isRemote) {
                 Item currentEquipped = currentEquippedStack.getItem();
 
                 if (currentEquipped == ModItems.pearcelStaff){
-                    if (Keybindings.regen.isPressed()) {
+                    if (getPressedKeybinding() == Key.REGEN) {
                         entityPlayer.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 200, 1));
                         currentEquippedStack.damageItem(10, entityPlayer);
                         LogHelper.info("REGENERATION");
-                    }else if (Keybindings.clear.isPressed()){
+                    }else if (getPressedKeybinding() == Key.CLEAR){
                         entityPlayer.clearActivePotions();
                         currentEquippedStack.damageItem(5, entityPlayer);
                         LogHelper.info("CLEAR EFFECTS");
                     }
-
                 }
-            }
         }
 
 
