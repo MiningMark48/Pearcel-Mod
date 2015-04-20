@@ -1,29 +1,33 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.init.ModFluids;
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.ItemBucket;
 import net.minecraft.item.ItemBucketMilk;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class ItemPearcelJuice extends ItemBucketMilk{
+public class ItemPearcelJuice extends ItemBucket {
+
+    public ItemPearcelJuice() {
+        super(ModBlocks.pearcelFluid);
+    }
 
     @Override
-    public ItemStack onEaten(ItemStack item, World world, EntityPlayer player)
-    {
-        if (!player.capabilities.isCreativeMode)
-        {
-            --item.stackSize;
+    public boolean tryPlaceContainedLiquid(World world, int x, int y, int z){
+
+        if (!world.isAirBlock(x, y, z)){
+            return false;
+        }else{
+            world.setBlock(x, y, z, ModBlocks.pearcelFluid, 0, 3);
+            return true;
         }
 
-        if (!world.isRemote)
-        {
-            player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 1000, 1));
-        }
-
-        return item.stackSize <= 0 ? new ItemStack(Items.bucket) : item;
     }
 
 }

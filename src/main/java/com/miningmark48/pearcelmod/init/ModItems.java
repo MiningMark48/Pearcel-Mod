@@ -4,6 +4,7 @@ import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 
@@ -18,7 +19,6 @@ public class ModItems {
 	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelPie = new ItemModFood(8, 0.3F, false).setUnlocalizedName("pearcelPie").setTextureName(Reference.MOD_ID + ":pearcelPie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBread = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelBread").setTextureName(Reference.MOD_ID + ":pearcelBread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item angelDust = new ItemAngelDust(1, 0.5F, true).setUnlocalizedName("angelDust").setTextureName(Reference.MOD_ID + ":angelDust").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelMelon = new ItemPearcelMelon(4, 1.0F, false).setUnlocalizedName("pearcelMelon").setTextureName(Reference.MOD_ID + ":pearcelMelon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelSandwich = new ItemModFood(10, 1.3F, true).setUnlocalizedName("pearcelSandwich").setTextureName(Reference.MOD_ID + ":pearcelSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -61,6 +61,7 @@ public class ModItems {
     public static final Item pearcelJar = new ItemPearcelJar().setUnlocalizedName("pearcelJar").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setContainerItem(Items.bucket);
 
 	
 	public static void init(){

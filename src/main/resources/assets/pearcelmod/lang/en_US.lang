@@ -14,7 +14,7 @@ item.pearcelBread.name=Pearcel Bread
 item.pearcelPie.name=Pearcel Pie
 item.angelDust.name=Angel Dust
 item.pearcelMelon.name=Watermelooaan
-item.pearcelJuice.name=Bucket of Pearcel Juice
+item.pearcelJuice.name=Pearcel Juice
 item.pearcelmod:pearcelStick.name=Pearcel Stick
 item.pearcelmod:pearcelFlour.name=Pearcel Flour
 item.pearcelmod:pearcelArrow.name=Pearcel Arrow
@@ -72,7 +72,9 @@ tile.compressedSugarCaneBlock8.name=Octuple Compressed Sugar Cane (Block)
 tile.bedrockGlass.name=Bedrock Glass (Unbreakable)
 tile.meMatterBlock.name=ME^Matter Block
 tile.FBomb.name=F-Bomb
-tile.barrier.name=Barrier [WIP]
+tile.barrier.name=Barrier
+tile.pearcelFluid.name=Pearcel Juice
+tile.pearcelMelonBlock.name=Pearcel Melon
 
 itemGroup.pearcelmod=Pearcel Mod
 
@@ -111,7 +113,7 @@ achievement.findPearcelOre.desc=Find pearcel ore
 achievement.craftPearcelMelon=Melon of Encouragement!
 achievement.craftPearcelMelon.desc=Craft a Pearcel Melon
 achievement.craftMelonSandwich=Peanut Butter Melon Time!
-achievement.craftMelonSanwich.desc=Craft a Melon Sandwich
+achievement.craftMelonSandwich.desc=Craft a Melon Sandwich
 
 entity.Pearcel Cow.name=Pearcel Cow
 entity.Pearcel Squid.name=Pearcel Squid

@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod;
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.client.handler.KeyInputEventHandler;
+import com.miningmark48.pearcelmod.event.EventFillBucket;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
@@ -21,6 +22,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class PearcelMod {
@@ -36,7 +42,8 @@ public class PearcelMod {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
-
+        ModFluids.init();
+        ModMaterials.init();
         ModBlocks.init();
 		ModItems.init();
         EntityPearcelMod.init();
@@ -45,7 +52,9 @@ public class PearcelMod {
         proxy.registerKeyBindings();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+
 		
 		LogHelper.info("Pre-Init Complete!");
 	}
@@ -53,6 +62,7 @@ public class PearcelMod {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
         FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+        MinecraftForge.EVENT_BUS.register(new EventFillBucket());
         Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");
@@ -61,11 +71,15 @@ public class PearcelMod {
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
-		LogHelper.info("Post-Init Complete!");
+
+        ModFluidContainer.init();
+
+        LogHelper.info("Post-Init Complete!");
 	}
 
     @Mod.EventHandler
     public void serverLoad(FMLServerStartingEvent event){
         Commands.init(event);
     }
+
 }
