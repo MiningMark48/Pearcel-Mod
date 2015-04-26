@@ -8,7 +8,7 @@ import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.proxy.IProxy;
-import com.miningmark48.pearcelmod.proxy.ServerProxy;
+
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 
@@ -42,21 +42,18 @@ public class PearcelMod {
         EntityPearcelMod.init();
 
         proxy.registerRenderThings();
-        proxy.registerKeyBindings();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 		
 		LogHelper.info("Pre-Init Complete!");
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
-        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+        //FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
         Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");
-        ClientProxy.addCapes();
 	}
 	
 	@Mod.EventHandler
