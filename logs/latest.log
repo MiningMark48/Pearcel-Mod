@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [18:37:07] [main/INFO]: Setting user: Player247
 [18:37:18] [Client thread/INFO]: LWJGL Version: 2.9.1
 [18:38:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
@@ -96,3 +97,72 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 [18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
 [18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
 [18:45:32] [Client thread/INFO]: Stopping!
+=======
+[15:19:22] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[15:19:26] [Server thread/INFO]: Loading properties
+[15:19:26] [Server thread/INFO]: Default game type: SURVIVAL
+[15:19:26] [Server thread/INFO]: Generating keypair
+[15:19:26] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:19:27] [Server thread/WARN]: Failed to load user banlist: 
+java.io.FileNotFoundException: banned-players.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
+	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
+	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152620_y(DedicatedPlayerList.java:124) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:31) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+[15:19:27] [Server thread/WARN]: Failed to load ip banlist: 
+java.io.FileNotFoundException: banned-ips.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
+	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
+	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152619_x(DedicatedPlayerList.java:112) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:33) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+[15:19:27] [Server thread/WARN]: Failed to load operators list: 
+java.io.FileNotFoundException: ops.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
+	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
+	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.loadOpsList(DedicatedPlayerList.java:136) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:35) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+[15:19:27] [Server thread/WARN]: Failed to load white-list: 
+java.io.FileNotFoundException: whitelist.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
+	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
+	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.readWhiteList(DedicatedPlayerList.java:160) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:36) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+[15:19:27] [Server thread/INFO]: Preparing level "world"
+[15:19:28] [Server thread/INFO]: Preparing start region for level 0
+[15:19:29] [Server thread/INFO]: Preparing spawn area: 5%
+[15:19:30] [Server thread/INFO]: Preparing spawn area: 14%
+[15:19:31] [Server thread/INFO]: Preparing spawn area: 25%
+[15:19:32] [Server thread/INFO]: Preparing spawn area: 35%
+[15:19:33] [Server thread/INFO]: Preparing spawn area: 49%
+[15:19:34] [Server thread/INFO]: Preparing spawn area: 62%
+[15:19:35] [Server thread/INFO]: Preparing spawn area: 79%
+[15:19:36] [Server thread/INFO]: Preparing spawn area: 93%
+[15:19:36] [Server thread/INFO]: Done (9.298s)! For help, type "help" or "?"
+[15:19:40] [Server thread/INFO]: Stopping the server
+[15:19:40] [Server thread/INFO]: Stopping server
+[15:19:40] [Server thread/INFO]: Saving players
+[15:19:40] [Server thread/INFO]: Saving worlds
+[15:19:40] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[15:19:44] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[15:19:45] [Server thread/INFO]: Saving chunks for level 'world'/The End
+>>>>>>> c8774be23da5f1c9db7c36fc6fa4e98d468695e2

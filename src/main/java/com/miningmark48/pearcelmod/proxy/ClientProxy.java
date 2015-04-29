@@ -43,24 +43,4 @@ public class ClientProxy extends CommonProxy{
     public void registerTileEntitySpecialRenderer(){
 
     }
-
-    public static void addCapes(){
-        String capeURL = "http://www.miningmark48.ml/pearcelCape.png";
-        String[] owners = {"MiningMark48", "Codyrule040"};
-
-        ThreadDownloadImageData image = new ThreadDownloadImageData(null, capeURL, null, null);
-
-        for (String username : owners){
-            Minecraft.getMinecraft().renderEngine.loadTexture(new ResourceLocation("cloaks/" + username), (ITextureObject)image);
-        }
-    }
-
-    @Override
-    public void registerKeyBindings(){
-        ClientRegistry.registerKeyBinding(Keybindings.regen);
-        LogHelper.info("Register 1");
-        ClientRegistry.registerKeyBinding(Keybindings.clear);
-        LogHelper.info("Register 2");
-    }
-
 }
