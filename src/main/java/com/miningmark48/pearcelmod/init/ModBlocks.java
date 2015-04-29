@@ -49,7 +49,6 @@ public class ModBlocks {
         //GameRegistry.registerBlock(FBomb, "FBomb");
         GameRegistry.registerBlock(barrier, "barrier");
         GameRegistry.registerBlock(pearcelMelonBlock, "pearcelMelonBlock");
-
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
