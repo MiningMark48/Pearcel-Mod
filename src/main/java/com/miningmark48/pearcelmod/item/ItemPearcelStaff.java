@@ -26,13 +26,13 @@ public class ItemPearcelStaff extends ItemSword{
     public ItemPearcelStaff(ToolMaterial material)
     {
         super(material);
+        this.setFull3D();
     }
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Right Click = Jump Boost (-1 Durability");
-        par3List.add("Shift + Right Click = Regen (-1 Durability)");
-        par3List.add("Press " + Key.REGEN + " for regen effect. (-10 Durability)");
+        par3List.add("Right Click = Jump Up (-1 Durability");
+        par3List.add("Shift + Right Click = Fall Down (-1 Durability)");
     }
 
     @Override
