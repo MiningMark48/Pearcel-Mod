@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-[18:37:07] [main/INFO]: Setting user: Player247
-[18:37:18] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:38:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[18:38:29] [Sound Library Loader/INFO]: Sound engine started
-[18:38:45] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[21:10:31] [main/INFO]: Setting user: Player167
+[21:10:49] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:12:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[21:12:44] [Sound Library Loader/INFO]: Sound engine started
+[21:13:53] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -28,11 +27,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[18:38:49] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[18:38:51] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[18:38:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
-[18:38:53] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[18:38:54] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[21:13:58] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:14:01] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:14:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod
+[21:14:05] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:14:05] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -60,109 +59,32 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[18:38:56] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[18:38:58] [Sound Library Loader/INFO]: Sound engine started
-[18:42:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:42:06] [Server thread/INFO]: Generating keypair
-[18:42:11] [Server thread/INFO]: Preparing start region for level 0
-[18:42:12] [Server thread/INFO]: Preparing spawn area: 0%
-[18:42:13] [Server thread/INFO]: Preparing spawn area: 14%
-[18:42:14] [Server thread/INFO]: Preparing spawn area: 53%
-[18:42:17] [Server thread/INFO]: Changing view distance to 12, from 10
-[18:42:21] [Server thread/INFO]: Player247[local:E:92a739d5] logged in with entity id 165 at (177.93566020414823, 4.0, -1229.4936848705063)
-[18:42:21] [Server thread/INFO]: Player247 joined the game
-[18:42:30] [Server thread/INFO]: Saving and pausing game...
-[18:42:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:42:31] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:42:31] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:42:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 14241ms behind, skipping 284 tick(s)
-[18:42:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5506ms behind, skipping 110 tick(s)
-[18:43:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 16268ms behind, skipping 325 tick(s)
-[18:43:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2177ms behind, skipping 43 tick(s)
-[18:43:36] [Server thread/INFO]: Player247 has just earned the achievement [Taking Inventory]
-[18:43:36] [Client thread/INFO]: [CHAT] Player247 has just earned the achievement [Taking Inventory]
-[18:43:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4272ms behind, skipping 85 tick(s)
-[18:44:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9686ms behind, skipping 193 tick(s)
-[18:44:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 112 ms
-[18:44:56] [Server thread/INFO]: Player247 has just earned the achievement [Melon of Encouragement!]
-[18:44:56] [Client thread/INFO]: [CHAT] Player247 has just earned the achievement [Melon of Encouragement!]
-[18:45:23] [Server thread/INFO]: Saving and pausing game...
-[18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:45:24] [Server thread/INFO]: Stopping server
-[18:45:24] [Server thread/INFO]: Saving players
-[18:45:24] [Server thread/INFO]: Saving worlds
-[18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:45:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:45:32] [Client thread/INFO]: Stopping!
-=======
-[15:19:22] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[15:19:26] [Server thread/INFO]: Loading properties
-[15:19:26] [Server thread/INFO]: Default game type: SURVIVAL
-[15:19:26] [Server thread/INFO]: Generating keypair
-[15:19:26] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:19:27] [Server thread/WARN]: Failed to load user banlist: 
-java.io.FileNotFoundException: banned-players.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
-	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152620_y(DedicatedPlayerList.java:124) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:31) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[15:19:27] [Server thread/WARN]: Failed to load ip banlist: 
-java.io.FileNotFoundException: banned-ips.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
-	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152619_x(DedicatedPlayerList.java:112) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:33) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[15:19:27] [Server thread/WARN]: Failed to load operators list: 
-java.io.FileNotFoundException: ops.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
-	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.loadOpsList(DedicatedPlayerList.java:136) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:35) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[15:19:27] [Server thread/WARN]: Failed to load white-list: 
-java.io.FileNotFoundException: whitelist.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
-	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.readWhiteList(DedicatedPlayerList.java:160) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:36) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[15:19:27] [Server thread/INFO]: Preparing level "world"
-[15:19:28] [Server thread/INFO]: Preparing start region for level 0
-[15:19:29] [Server thread/INFO]: Preparing spawn area: 5%
-[15:19:30] [Server thread/INFO]: Preparing spawn area: 14%
-[15:19:31] [Server thread/INFO]: Preparing spawn area: 25%
-[15:19:32] [Server thread/INFO]: Preparing spawn area: 35%
-[15:19:33] [Server thread/INFO]: Preparing spawn area: 49%
-[15:19:34] [Server thread/INFO]: Preparing spawn area: 62%
-[15:19:35] [Server thread/INFO]: Preparing spawn area: 79%
-[15:19:36] [Server thread/INFO]: Preparing spawn area: 93%
-[15:19:36] [Server thread/INFO]: Done (9.298s)! For help, type "help" or "?"
-[15:19:40] [Server thread/INFO]: Stopping the server
-[15:19:40] [Server thread/INFO]: Stopping server
-[15:19:40] [Server thread/INFO]: Saving players
-[15:19:40] [Server thread/INFO]: Saving worlds
-[15:19:40] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
-[15:19:44] [Server thread/INFO]: Saving chunks for level 'world'/Nether
-[15:19:45] [Server thread/INFO]: Saving chunks for level 'world'/The End
->>>>>>> c8774be23da5f1c9db7c36fc6fa4e98d468695e2
+[21:14:07] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:14:10] [Sound Library Loader/INFO]: Sound engine started
+[21:15:44] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:15:44] [Server thread/INFO]: Generating keypair
+[21:15:49] [Server thread/INFO]: Preparing start region for level 0
+[21:15:50] [Server thread/INFO]: Preparing spawn area: 0%
+[21:15:52] [Server thread/INFO]: Preparing spawn area: 14%
+[21:15:53] [Server thread/INFO]: Preparing spawn area: 49%
+[21:15:54] [Server thread/INFO]: Preparing spawn area: 80%
+[21:15:57] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:15:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2908ms behind, skipping 58 tick(s)
+[21:16:00] [Server thread/INFO]: Player167[local:E:8456cf6e] logged in with entity id 175 at (179.30192680017288, 4.0, -1230.4606686648995)
+[21:16:00] [Server thread/INFO]: Player167 joined the game
+[21:16:29] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 19084ms behind, skipping 381 tick(s)
+[21:16:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2449ms behind, skipping 48 tick(s)
+[21:16:46] [Server thread/INFO]: Player167 has just earned the achievement [Taking Inventory]
+[21:16:47] [Client thread/INFO]: [CHAT] Player167 has just earned the achievement [Taking Inventory]
+[21:17:04] [Client thread/INFO]: [CHAT] §6Huge thanks to my Patreons: §aWatermelooaan
+[21:17:09] [Server thread/INFO]: Saving and pausing game...
+[21:17:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:17:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:17:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:17:10] [Server thread/INFO]: Stopping server
+[21:17:10] [Server thread/INFO]: Saving players
+[21:17:10] [Server thread/INFO]: Saving worlds
+[21:17:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:17:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:17:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:17:13] [Client thread/INFO]: Stopping!

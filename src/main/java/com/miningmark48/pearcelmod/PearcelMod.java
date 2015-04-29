@@ -51,24 +51,18 @@ public class PearcelMod {
         proxy.registerRenderThings();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
-<<<<<<< HEAD
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
-=======
->>>>>>> c8774be23da5f1c9db7c36fc6fa4e98d468695e2
-		
+
 		LogHelper.info("Pre-Init Complete!");
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
-<<<<<<< HEAD
         FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
         MinecraftForge.EVENT_BUS.register(new EventFillBucket());
-=======
         //FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
->>>>>>> c8774be23da5f1c9db7c36fc6fa4e98d468695e2
         Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");

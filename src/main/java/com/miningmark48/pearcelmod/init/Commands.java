@@ -10,6 +10,7 @@ public class Commands {
         event.registerServerCommand(new commandCredit());
         event.registerServerCommand(new commandSubscribe());
         event.registerServerCommand(new commandIVET());
+        event.registerServerCommand(new commandPatreon());
     }
 
 }
