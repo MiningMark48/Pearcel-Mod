@@ -1,9 +1,6 @@
 package com.miningmark48.pearcelmod.init;
 
-import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
-import com.miningmark48.pearcelmod.mob.EntityPearcelHorse;
-import com.miningmark48.pearcelmod.mob.EntityPearcelMob;
-import com.miningmark48.pearcelmod.mob.EntityPearcelSquid;
+import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.entity.Entity;
@@ -21,6 +18,7 @@ public class EntityPearcelMod {
         createEntity(EntityPearcelCow.class, "Pearcel Cow", 0x59C24C, 0x4BAD3E);
         createEntity(EntityPearcelSquid.class, "Pearcel Squid", 0x59C24C, 0x0C43C4);
         createEntity(EntityPearcelMob.class, "Pearcel Mob", 0x59C24C, 0x78480A);
+        createEntity(EntityPearson.class, "Pearson", 0x59C24C, 0x78480A);
         //createEntity(EntityPearcelHorse.class, "Pearcel Horse", 0x59C24C, 0x78480A);
     }
 

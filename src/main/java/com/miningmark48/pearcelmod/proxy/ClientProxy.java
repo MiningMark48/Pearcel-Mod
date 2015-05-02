@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.model.ModelPearcelMob;
+import com.miningmark48.pearcelmod.model.ModelPearson;
 import com.miningmark48.pearcelmod.renderer.RenderItemPearcelPainting;
 import com.miningmark48.pearcelmod.renderer.RenderItemPearcelStaff;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelPainting;
@@ -35,6 +36,8 @@ public class ClientProxy extends CommonProxy{
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelSquid.class, new RenderPearcelSquid(new ModelSquid(), 0));
         //Pearcel Mob
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelMob.class, new RenderPearcelMob(new ModelPearcelMob(), 0));
+        //Pearson
+        RenderingRegistry.registerEntityRenderingHandler(EntityPearson.class, new RenderPearson(new ModelPearson(), 0));
     //Blocks
         //Pearcel Painting
         TileEntitySpecialRenderer render = new RenderPearcelPainting();
