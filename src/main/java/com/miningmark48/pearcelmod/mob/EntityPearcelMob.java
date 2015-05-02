@@ -7,10 +7,21 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
 
 public class EntityPearcelMob extends EntityAnimal {
+
+    public float field_70886_e;
+    public float destPos;
+    public float field_70884_g;
+    public float field_70888_h;
+    public float field_70889_i = 1.0F;
+    /** The time until the next egg is spawned. */
+    public int timeUntilNextEgg;
+    public boolean field_152118_bv;
+    private static final String __OBFID = "CL_00001639";
 
     public EntityPearcelMob(World world){
         super(world);
@@ -49,4 +60,48 @@ public class EntityPearcelMob extends EntityAnimal {
     {
         this.playSound("mob.cow.step", 0.15F, 1.0F);
     }
+
+    public void onLivingUpdate()
+    {
+        super.onLivingUpdate();
+        this.field_70888_h = this.field_70886_e;
+        this.field_70884_g = this.destPos;
+        this.destPos = (float)((double)this.destPos + (double)(this.onGround ? -1 : 4) * 0.3D);
+
+        if (this.destPos < 0.0F)
+        {
+            this.destPos = 0.0F;
+        }
+
+        if (this.destPos > 1.0F)
+        {
+            this.destPos = 1.0F;
+        }
+
+        if (!this.onGround && this.field_70889_i < 1.0F)
+        {
+            this.field_70889_i = 1.0F;
+        }
+
+        this.field_70889_i = (float)((double)this.field_70889_i * 0.9D);
+
+        if (!this.onGround && this.motionY < 0.0D)
+        {
+            this.motionY *= 0.6D;
+        }
+
+        this.field_70886_e += this.field_70889_i * 2.0F;
+
+        if (!this.worldObj.isRemote && !this.isChild() && !this.func_152116_bZ() && --this.timeUntilNextEgg <= 0)
+        {
+            this.playSound("mob.chicken.plop", 1.0F, (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F + 1.0F);
+            this.dropItem(ModItems.pearcel, 1);
+            this.timeUntilNextEgg = this.rand.nextInt(6000) + 6000;
+        }
+    }
+    public boolean func_152116_bZ()
+    {
+        return this.field_152118_bv;
+    }
+
 }
