@@ -42,7 +42,7 @@ public class EntityPearson extends EntityAnimal {
 
     @Override
     public EntityAgeable createChild(EntityAgeable p_90011_1_) {
-        return new EntityPearcelMob(this.worldObj);
+        return new EntityPearson(this.worldObj);
     }
 
     protected void func_145780_a(int a, int b, int c, Block block)
