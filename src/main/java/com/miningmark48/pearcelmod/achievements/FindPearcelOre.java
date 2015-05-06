@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
+import net.minecraft.item.ItemStack;
 
 public class FindPearcelOre {
 

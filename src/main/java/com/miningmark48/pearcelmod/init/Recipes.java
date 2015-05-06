@@ -25,12 +25,13 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.angelDust), new ItemStack(Items.feather), new ItemStack(Items.sugar), new ItemStack(Items.rotten_flesh), new ItemStack(Items.spider_eye));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelMelon, 2), new ItemStack(Items.melon), new ItemStack(ModItems.pearcel));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSandwich), new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.pearcelJelly), new ItemStack(Items.sugar));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.melonSandwich), new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.melonJelly), new ItemStack(Items.sugar));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.melonSandwich), new ItemStack(ModItems.pearcelMelon), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.melonJelly), new ItemStack(Items.sugar));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelJar, 3), "x x", "x x", " x ", 'x', new ItemStack(ModBlocks.meGlass));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelJelly), new ItemStack(ModItems.pearcelJar), new ItemStack(ModItems.pearcel));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.melonJelly), new ItemStack(ModItems.pearcelJar), new ItemStack(ModItems.pearcelMelon));
         GameRegistry.addSmelting(new ItemStack(ModItems.pearcelBeef), new ItemStack(ModItems.pearcelSteak), 10f);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelMelon, 4), new ItemStack(ModBlocks.pearcelMelonBlock));
+        GameRegistry.addSmelting(new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.pearcelFlour), 10f);
 
         //Tools and Weapons
 		GameRegistry.addRecipe(new ItemStack(ModItems.pearcelSword), "x", "x", "y", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick));
@@ -75,7 +76,8 @@ public class Recipes {
 
         //ME^Matter Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.meMatterBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.meMatter));
-        GameRegistry.addRecipe(new ItemStack(ModItems.meMatterNeutral, 8), "xyx", "yzy", "xyx", 'x', new ItemStack(Items.emerald), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(Items.nether_star));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.meMatter), new ItemStack(ModBlocks.meMatterBlock));
+        GameRegistry.addRecipe(new ItemStack(ModItems.meMatterNeutral, 8), "xyx", "yzy", "xyx", 'x', new ItemStack(Items.emerald), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(Blocks.gold_block));
         GameRegistry.addRecipe(new ItemStack(Items.diamond, 2), " x ", "xxx", " x ", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.blaze_rod, 2), "x  ", " x ", "  x", 'x', new ItemStack((ModItems.meMatter)));
         GameRegistry.addRecipe(new ItemStack(Items.nether_star), "xxx", "x x", "xxx", 'x', new ItemStack(ModItems.meMatter));
@@ -87,6 +89,8 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(Items.ghast_tear, 2), "x  ", " xx", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Blocks.cocoa, 4), "x  ", "x  ", "  x", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.record_11), "x  ", "  x", " x ", 'x', new ItemStack(ModItems.meMatter));
+        GameRegistry.addRecipe(new ItemStack(Items.experience_bottle, 16), "x  ", "xx ", " xx", 'x', new ItemStack(ModItems.meMatter));
+        GameRegistry.addRecipe(new ItemStack(Items.leather, 32), "xyy", "yyy", "yyy", 'x', new ItemStack(ModItems.meMatter), 'y', new ItemStack(Items.rotten_flesh));
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.greenMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 2));
