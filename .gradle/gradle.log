@@ -21,10 +21,10 @@ Note: Recompile with -Xlint:unchecked for details.
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:extractMcpData
+:extractMcpData UP-TO-DATE
 :getVersionJson
-:extractUserDev
-:genSrgs SKIPPED
+:extractUserDev UP-TO-DATE
+:genSrgs UP-TO-DATE
 :reobf
 :assemble
 :check UP-TO-DATE
@@ -32,4 +32,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 29.781 secs
+Total time: 5 mins 22.905 secs
