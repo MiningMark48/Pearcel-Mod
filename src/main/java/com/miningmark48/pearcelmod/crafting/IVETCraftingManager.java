@@ -80,6 +80,9 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.record_strad), Items.record_stal);
         this.addShapelessRecipe(new ItemStack(Items.record_wait), Items.record_strad);
         this.addShapelessRecipe(new ItemStack(Items.record_ward), Items.record_wait);
+        this.addShapelessRecipe(new ItemStack(ModItems.pearcelCharcoal), Items.coal);
+        this.addShapelessRecipe(new ItemStack(Items.gunpowder, 2), Items.firework_charge);
+        this.addShapelessRecipe(new ItemStack(Items.gunpowder, 2), Items.fire_charge);
 
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
