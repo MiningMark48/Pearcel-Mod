@@ -2,7 +2,6 @@ package com.miningmark48.pearcelmod.init;
 
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -62,6 +61,7 @@ public class ModItems {
     public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setContainerItem(Items.bucket);
+    public static final Item pearcelCharcoal = new ItemPearcelFuel().setUnlocalizedName("pearcelCharcoal").setTextureName(Reference.MOD_ID + ":pearcelCharcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 	
 	public static void init(){
@@ -100,7 +100,6 @@ public class ModItems {
         GameRegistry.registerItem(pearcelJar, "pearcelJar");
         GameRegistry.registerItem(pearcelJelly, "pearcelJelly");
         GameRegistry.registerItem(melonJelly, "melonJelly");
-
         GameRegistry.registerItem(pearcelCookie, "pearcelCookie");
         GameRegistry.registerItem(pearcelCookie2, "pearcelCookie2");
         GameRegistry.registerItem(pearcelCookie3, "pearcelCookie3");
@@ -110,6 +109,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelCookie7, "pearcelCookie7");
         GameRegistry.registerItem(pearcelCookie8, "pearcelCookie8");
         GameRegistry.registerItem(pearcelCookie9, "pearcelCookie9");
+        GameRegistry.registerItem(pearcelCharcoal, "pearcelCharcoal");
 		
 	}
 	

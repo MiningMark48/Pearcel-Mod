@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.event.EventFillBucket;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
+import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.IProxy;
 
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -44,6 +45,7 @@ public class PearcelMod {
         proxy.registerRenderThings();
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+        GameRegistry.registerFuelHandler(new ItemPearcelFuel());
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
