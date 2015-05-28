@@ -62,7 +62,7 @@ public class ModItems {
     public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setContainerItem(Items.bucket);
     public static final Item pearcelCharcoal = new ItemPearcelFuel().setUnlocalizedName("pearcelCharcoal").setTextureName(Reference.MOD_ID + ":pearcelCharcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-
+    public static final Item dice = new ItemDice().setUnlocalizedName("dice").setTextureName(Reference.MOD_ID + ":dice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 	
 	public static void init(){
         //Food
@@ -110,6 +110,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelCookie8, "pearcelCookie8");
         GameRegistry.registerItem(pearcelCookie9, "pearcelCookie9");
         GameRegistry.registerItem(pearcelCharcoal, "pearcelCharcoal");
+        GameRegistry.registerItem(dice, "dice");
 		
 	}
 	
