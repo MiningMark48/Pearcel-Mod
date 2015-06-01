@@ -31,7 +31,7 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Right Click = Boost Up (-1 Durability");
+        par3List.add("Right Click = Boost Up (-1 Durability)");
         par3List.add("Shift + Right Click = Boost Down (-1 Durability)");
     }
 

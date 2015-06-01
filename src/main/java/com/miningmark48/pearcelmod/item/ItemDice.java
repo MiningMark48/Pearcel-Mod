@@ -17,7 +17,7 @@ public class ItemDice extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Right click me and see what happens!");
+        par3List.add("Yeah, this texture sucks, it is temporary");
     }
 
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
