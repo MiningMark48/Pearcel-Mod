@@ -1,6 +1,8 @@
 package com.miningmark48.pearcelmod.init;
 
+import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
+import com.miningmark48.pearcelmod.proxy.ClientProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -10,9 +12,14 @@ import net.minecraft.item.Item.ToolMaterial;
 import com.miningmark48.pearcelmod.item.*;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemSeeds;
+import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
+
+    //Material
+    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", 40, new int[]{3, 8, 6, 3}, 30);
 
     //Food
 	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -47,6 +54,13 @@ public class ModItems {
     public static final Item pearcelBow = new ItemPearcelBow().setUnlocalizedName("pearcelBow").setTextureName(Reference.MOD_ID + ":pearcelBow").setMaxStackSize(1).setMaxDamage(100).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item pearcelStaff = new ItemPearcelStaff(ToolMaterial.EMERALD).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(450);
+
+    //Armor
+    public static Item pearcelHelmet = new PearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelChestplate = new PearcelArmor(matPearcel, 1).setUnlocalizedName("pearcelChestplate").setTextureName(Reference.MOD_ID + ":pearcelChestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelLeggings = new PearcelArmor(matPearcel, 2).setUnlocalizedName("pearcelLeggings").setTextureName(Reference.MOD_ID + ":pearcelLeggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelBoots = new PearcelArmor(matPearcel, 3).setUnlocalizedName("pearcelBoots").setTextureName(Reference.MOD_ID + ":pearcelBoots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+
 
     //General Items
     public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
@@ -88,6 +102,11 @@ public class ModItems {
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
         GameRegistry.registerItem(pcp, "pcp");
         GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+        //Armor
+        GameRegistry.registerItem(pearcelHelmet, "pearcelHelmet");
+        GameRegistry.registerItem(pearcelChestplate, "pearcelChestplate");
+        GameRegistry.registerItem(pearcelLeggings, "pearcelLeggings");
+        GameRegistry.registerItem(pearcelBoots, "pearcelBoots");
         //General Items
         GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
