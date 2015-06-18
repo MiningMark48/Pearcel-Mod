@@ -53,6 +53,7 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.diamond, 2), Items.emerald);
         this.addShapelessRecipe(new ItemStack(Items.apple), ModItems.pearcel);
         this.addShapelessRecipe(new ItemStack(Items.iron_ingot, 2), Items.gold_ingot);
+        this.addShapelessRecipe(new ItemStack(Items.gold_ingot, 32), Items.diamond);
         this.addShapelessRecipe(new ItemStack(Blocks.obsidian), Items.lava_bucket);
         this.addShapelessRecipe(new ItemStack(Items.writable_book), Items.written_book);
         this.addShapelessRecipe(new ItemStack(Items.book, 2), Items.written_book);
@@ -83,6 +84,8 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(ModItems.pearcelCharcoal), Items.coal);
         this.addShapelessRecipe(new ItemStack(Items.gunpowder, 2), Items.firework_charge);
         this.addShapelessRecipe(new ItemStack(Items.gunpowder, 2), Items.fire_charge);
+        this.addShapelessRecipe(new ItemStack(Items.leather), Items.rotten_flesh);
+        this.addShapelessRecipe(new ItemStack(Items.rotten_flesh), Items.leather);
 
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
