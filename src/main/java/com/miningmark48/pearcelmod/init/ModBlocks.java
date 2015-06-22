@@ -30,6 +30,9 @@ public class ModBlocks {
     public static final Block FBomb = new BlockFBomb().setBlockName("FBomb").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":FBomb").setHardness(0.3F).setResistance(1.5F);
     public static final Block barrier = new BlockBarrier().setBlockName("barrier").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":barrier").setBlockUnbreakable().setResistance(99999.9F);
     public static final Block pearcelMelonBlock = new BlockPearcelMelon().setBlockName("pearcelMelonBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelMelon_Side").setHardness(0.5F).setResistance(1.5F);
+    public static final Block pearcelEndStone = new BlockPearcelEndStone().setBlockName("pearcelEndStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelEndStone");
+    public static final Block pearcelPortal = new BlockPearcelPortal();
+
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
@@ -46,6 +49,8 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
         GameRegistry.registerBlock(bedrockGlass, "bedrockGlass");
         GameRegistry.registerBlock(meMatterBlock, "meMatterBlock");
+        GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
+        GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
         //GameRegistry.registerBlock(FBomb, "FBomb");
         GameRegistry.registerBlock(barrier, "barrier");
         GameRegistry.registerBlock(pearcelMelonBlock, "pearcelMelonBlock");

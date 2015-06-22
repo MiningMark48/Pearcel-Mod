@@ -22,6 +22,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -51,7 +52,6 @@ public class PearcelMod {
         GameRegistry.registerFuelHandler(new ItemPearcelFuel());
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-
 
 		LogHelper.info("Pre-Init Complete!");
 	}
