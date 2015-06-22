@@ -89,7 +89,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.meMatterNeutral, 8), "xyx", "yzy", "xyx", 'x', new ItemStack(Items.emerald), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(Blocks.gold_block));
         GameRegistry.addRecipe(new ItemStack(ModItems.meMatterNeutral, 8), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.iron_block), 'y', new ItemStack(Items.redstone), 'z', new ItemStack(Blocks.diamond_block));
         GameRegistry.addRecipe(new ItemStack(Items.diamond, 2), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.meMatter), 'y', new ItemStack(Items.diamond));
-        GameRegistry.addRecipe(new ItemStack(Items.gold_ingot), "x  ", "x  ", "  y", 'x', new ItemStack(ModItems.meMatter), 'y', new ItemStack(Items.iron_ingot));
+        GameRegistry.addRecipe(new ItemStack(Items.gold_ingot, 16), "x  ", "x  ", "  y", 'x', new ItemStack(ModItems.meMatter), 'y', new ItemStack(Items.iron_ingot));
         GameRegistry.addRecipe(new ItemStack(Items.blaze_rod, 2), "x  ", " x ", "  x", 'x', new ItemStack((ModItems.meMatter)));
         GameRegistry.addRecipe(new ItemStack(Items.nether_star), "xxx", "x x", "xxx", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.clay_ball, 4), "x ", " x", 'x', new ItemStack(ModItems.meMatter));
