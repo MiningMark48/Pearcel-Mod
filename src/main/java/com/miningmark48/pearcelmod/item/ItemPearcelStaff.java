@@ -11,6 +11,7 @@ import cpw.mods.fml.common.gameevent.PlayerEvent;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
@@ -31,6 +32,7 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+        par3List.add("Quite cool.");
         par3List.add("Right Click = Boost Up (-1 Durability)");
         par3List.add("Shift + Right Click = Boost Down (-1 Durability)");
     }
@@ -58,6 +60,13 @@ public class ItemPearcelStaff extends ItemSword{
             item.damageItem(1, player);
             return item;
         }
+    }
+
+    @Override
+    public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
+        hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
+        hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 1));
+        return true;
     }
 
 }
