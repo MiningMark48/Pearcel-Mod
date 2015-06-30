@@ -1,8 +1,6 @@
 package com.miningmark48.pearcelmod.init;
 
-import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
-import com.miningmark48.pearcelmod.proxy.ClientProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -77,7 +75,12 @@ public class ModItems {
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setContainerItem(Items.bucket);
     public static final Item pearcelCharcoal = new ItemPearcelFuel().setUnlocalizedName("pearcelCharcoal").setTextureName(Reference.MOD_ID + ":pearcelCharcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item dice = new ItemDice().setUnlocalizedName("dice").setTextureName(Reference.MOD_ID + ":dice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-	
+    public static final Item tier1Craft = new ItemCraftComponent().setUnlocalizedName("tier1Craft").setTextureName(Reference.MOD_ID + ":tier1Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item tier2Craft = new ItemCraftComponent().setUnlocalizedName("tier2Craft").setTextureName(Reference.MOD_ID + ":tier2Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item tier3Craft = new ItemCraftComponent().setUnlocalizedName("tier3Craft").setTextureName(Reference.MOD_ID + ":tier3Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item tier4Craft = new ItemCraftComponent().setUnlocalizedName("tier4Craft").setTextureName(Reference.MOD_ID + ":tier4Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item armorPlating = new ItemArmorPlating().setUnlocalizedName("armorPlating").setTextureName(Reference.MOD_ID + "armorPlating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+
 	public static void init(){
         //Food
         GameRegistry.registerItem(pearcel, "pearcelItem");
@@ -130,7 +133,12 @@ public class ModItems {
         GameRegistry.registerItem(pearcelCookie9, "pearcelCookie9");
         GameRegistry.registerItem(pearcelCharcoal, "pearcelCharcoal");
         GameRegistry.registerItem(dice, "dice");
-		
+		GameRegistry.registerItem(tier1Craft, "tier1Craft");
+        GameRegistry.registerItem(tier2Craft, "tier2Craft");
+        GameRegistry.registerItem(tier3Craft, "tier3Craft");
+        GameRegistry.registerItem(tier4Craft, "tier4Craft");
+        GameRegistry.registerItem(armorPlating, "armorPlating");
+
 	}
 	
 }
