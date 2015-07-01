@@ -13,7 +13,6 @@ public class FindPearcelOre {
     public void onFoundPearcelOre(PlayerEvent.ItemPickupEvent e) {
         if (e.pickedUp.getEntityItem().equals(ModBlocks.pearcelOre)) {
             e.player.addStat(Achievements.achievementPearcelOre, 1);
-
         }
     }
 

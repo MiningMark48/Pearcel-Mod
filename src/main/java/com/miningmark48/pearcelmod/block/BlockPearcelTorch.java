@@ -8,8 +8,13 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
@@ -24,8 +29,6 @@ public class BlockPearcelTorch extends Block {
         super(Material.rock);
         this.setTickRandomly(true);
     }
-
-
 
     /**
      * Returns a bounding box from the pool of bounding boxes (this means this box can change after the pool has been

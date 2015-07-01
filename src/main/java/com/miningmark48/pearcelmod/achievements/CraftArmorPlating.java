@@ -4,12 +4,12 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 
-public class CraftMelonSandwich {
+public class CraftArmorPlating {
 
     @SubscribeEvent
-    public void onCraftMelonSandwich(PlayerEvent.ItemCraftedEvent e) {
-        if (e.crafting.getItem().equals(ModItems.melonSandwich)) {
-            e.player.addStat(Achievements.achievementMelonSandwich, 1);
+    public void onCraftArmorPlating(PlayerEvent.ItemCraftedEvent e) {
+        if (e.crafting.getItem().equals(ModItems.armorPlating)) {
+            e.player.addStat(Achievements.achievementArmorPlating, 1);
         }
     }
 
