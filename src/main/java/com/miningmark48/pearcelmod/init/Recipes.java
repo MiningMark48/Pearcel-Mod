@@ -108,6 +108,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(Items.record_11), "x  ", "  x", " x ", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.experience_bottle, 16), "x  ", "xx ", " xx", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addRecipe(new ItemStack(Items.leather, 32), "xyy", "yyy", "yyy", 'x', new ItemStack(ModItems.meMatter), 'y', new ItemStack(Items.rotten_flesh));
+        GameRegistry.addRecipe(new ItemStack(Items.ender_pearl, 16), "xyy", "yyy", "yyy", 'x', new ItemStack(ModItems.meMatter), 'y', new ItemStack(Blocks.end_stone));
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.greenMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 2));

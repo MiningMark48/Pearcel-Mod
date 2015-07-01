@@ -86,6 +86,8 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.gunpowder, 2), Items.fire_charge);
         this.addShapelessRecipe(new ItemStack(Items.leather), Items.rotten_flesh);
         this.addShapelessRecipe(new ItemStack(Items.rotten_flesh), Items.leather);
+        this.addShapelessRecipe(new ItemStack(Items.arrow), ModItems.pearcelArrow);
+        this.addShapelessRecipe(new ItemStack(ModItems.pearcelArrow), Items.arrow);
 
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
