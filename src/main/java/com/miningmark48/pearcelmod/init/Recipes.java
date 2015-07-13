@@ -26,7 +26,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelMelon, 2), new ItemStack(Items.melon), new ItemStack(ModItems.pearcel));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSandwich), new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.pearcelJelly), new ItemStack(Items.sugar));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.melonSandwich), new ItemStack(ModItems.pearcelMelon), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.melonJelly), new ItemStack(Items.sugar));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelJar, 3), "x x", "x x", " x ", 'x', new ItemStack(ModBlocks.meGlass));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelJar, 3), "x x", "x x", " y ", 'x', new ItemStack(Blocks.glass), 'y', new ItemStack(ModBlocks.meGlass));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelJelly), new ItemStack(ModItems.pearcelJar), new ItemStack(ModItems.pearcel));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.melonJelly), new ItemStack(ModItems.pearcelJar), new ItemStack(ModItems.pearcelMelon));
         GameRegistry.addSmelting(new ItemStack(ModItems.pearcelBeef), new ItemStack(ModItems.pearcelSteak), 10f);
