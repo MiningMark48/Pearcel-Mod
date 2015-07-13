@@ -28,5 +28,9 @@ public class ItemAngelDust extends ItemFood {
         list.add("Got to 'love' some PCP...");
     }
 
-
+    public ItemStack onEaten(ItemStack item, World world, EntityPlayer player)
+    {
+        player.addVelocity(0, 10.0, 0);
+        return item;
+    }
 }
