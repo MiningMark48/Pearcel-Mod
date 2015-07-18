@@ -1,8 +1,8 @@
-[23:13:44] [main/INFO]: Setting user: Player846
-[23:14:25] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:16:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[23:17:22] [Sound Library Loader/INFO]: Sound engine started
-[23:19:14] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[18:31:29] [main/INFO]: Setting user: Player726
+[18:31:54] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:33:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:33:28] [Sound Library Loader/INFO]: Sound engine started
+[18:34:34] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,16 +22,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_71]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_71]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[23:19:23] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[23:19:27] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[23:19:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[23:19:38] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[23:19:40] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[18:34:38] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[18:34:42] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[18:34:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:34:46] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[18:34:47] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -54,64 +49,43 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_71]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_71]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[23:19:44] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[23:19:48] [Sound Library Loader/INFO]: Sound engine started
-[23:20:40] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:20:40] [Server thread/INFO]: Generating keypair
-[23:20:54] [Server thread/INFO]: Preparing start region for level 0
-[23:20:56] [Server thread/INFO]: Preparing spawn area: 0%
-[23:20:57] [Server thread/INFO]: Preparing spawn area: 6%
-[23:20:58] [Server thread/INFO]: Preparing spawn area: 22%
-[23:20:59] [Server thread/INFO]: Preparing spawn area: 34%
-[23:21:00] [Server thread/INFO]: Preparing spawn area: 58%
-[23:21:01] [Server thread/INFO]: Preparing spawn area: 81%
-[23:21:04] [Server thread/INFO]: Changing view distance to 12, from 10
-[23:21:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9635ms behind, skipping 192 tick(s)
-[23:21:19] [Server thread/INFO]: Player846[local:E:3150552c] logged in with entity id 158 at (908.7608693456519, 4.0, 264.53449369050503)
-[23:21:19] [Server thread/INFO]: Player846 joined the game
-[23:21:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 31075ms behind, skipping 621 tick(s)
-[23:21:58] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2368ms behind, skipping 47 tick(s)
-[23:22:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 25018ms behind, skipping 500 tick(s)
-[23:22:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2796ms behind, skipping 55 tick(s)
-[23:23:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4064ms behind, skipping 81 tick(s)
-[23:23:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2076ms behind, skipping 41 tick(s)
-[23:23:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4787ms behind, skipping 95 tick(s)
-[23:24:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4310ms behind, skipping 86 tick(s)
-[23:25:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2118ms behind, skipping 42 tick(s)
-[23:25:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3026ms behind, skipping 60 tick(s)
-[23:25:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4117ms behind, skipping 82 tick(s)
-[23:25:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2517ms behind, skipping 50 tick(s)
-[23:25:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 433 ms
-[23:26:13] [Server thread/INFO]: Player846 has just earned the achievement [Taking Inventory]
-[23:26:15] [Client thread/INFO]: [CHAT] Player846 has just earned the achievement [Taking Inventory]
-[23:26:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12424ms behind, skipping 248 tick(s)
-[23:26:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2170ms behind, skipping 43 tick(s)
-[23:26:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2161ms behind, skipping 43 tick(s)
-[23:27:47] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 23979ms behind, skipping 479 tick(s)
-[23:28:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2679ms behind, skipping 53 tick(s)
-[23:28:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2329ms behind, skipping 46 tick(s)
-[23:29:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2457ms behind, skipping 49 tick(s)
-[23:30:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11307ms behind, skipping 226 tick(s)
-[23:30:30] [Server thread/INFO]: [Player846: Set the time to 1000]
-[23:30:30] [Client thread/INFO]: [CHAT] Set the time to 1000
-[23:30:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2456ms behind, skipping 49 tick(s)
-[23:31:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3773ms behind, skipping 75 tick(s)
-[23:31:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4392ms behind, skipping 87 tick(s)
-[23:32:14] [Server thread/INFO]: [Player846: Set own game mode to Survival Mode]
-[23:32:15] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[23:33:48] [Server thread/INFO]: Saving and pausing game...
-[23:33:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:33:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:33:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:33:49] [Server thread/INFO]: Stopping server
-[23:33:49] [Server thread/INFO]: Saving players
-[23:33:51] [Server thread/INFO]: Saving worlds
-[23:33:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:33:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:33:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:34:07] [Client thread/INFO]: Stopping!
+[18:34:48] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[18:34:51] [Sound Library Loader/INFO]: Sound engine started
+[18:39:33] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:39:33] [Server thread/INFO]: Generating keypair
+[18:39:39] [Server thread/INFO]: Preparing start region for level 0
+[18:39:42] [Server thread/INFO]: Preparing spawn area: 0%
+[18:39:43] [Server thread/INFO]: Preparing spawn area: 16%
+[18:39:44] [Server thread/INFO]: Preparing spawn area: 41%
+[18:39:45] [Server thread/INFO]: Preparing spawn area: 84%
+[18:39:47] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:39:53] [Server thread/INFO]: Player726[local:E:5a254b31] logged in with entity id 177 at (923.1889568561124, 1934.003714584982, 258.3349100746835)
+[18:39:53] [Server thread/INFO]: Player726 joined the game
+[18:40:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 19027ms behind, skipping 380 tick(s)
+[18:40:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6792ms behind, skipping 135 tick(s)
+[18:40:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10335ms behind, skipping 206 tick(s)
+[18:40:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12109ms behind, skipping 242 tick(s)
+[18:41:02] [Server thread/INFO]: Player726 fell out of the world
+[18:41:02] [Client thread/INFO]: [CHAT] Player726 fell out of the world
+[18:41:02] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[18:41:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6568ms behind, skipping 131 tick(s)
+[18:41:19] [Server thread/INFO]: [Player726: Set own game mode to Creative Mode]
+[18:41:19] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[18:41:21] [Server thread/INFO]: Saving and pausing game...
+[18:41:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:41:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:41:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:41:23] [Server thread/INFO]: Player726 has just earned the achievement [Taking Inventory]
+[18:41:25] [Client thread/INFO]: [CHAT] Player726 has just earned the achievement [Taking Inventory]
+[18:41:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 24691ms behind, skipping 493 tick(s)
+[18:41:52] [Server thread/INFO]: Saving and pausing game...
+[18:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:42:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:42:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:42:01] [Server thread/INFO]: Stopping server
+[18:42:01] [Server thread/INFO]: Saving players
+[18:42:01] [Server thread/INFO]: Saving worlds
+[18:42:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:42:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:42:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:42:06] [Client thread/INFO]: Stopping!
