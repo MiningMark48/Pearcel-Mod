@@ -45,12 +45,13 @@ public class WorldGen implements IWorldGenerator{
     {
         generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 12, 5, 10, 50, Blocks.stone);
         generateOre(ModBlocks.meBlock, world, rand, x, z, 1, 2, 2, 0, 60, Blocks.stone);
+        generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 2, 0, 60, Blocks.stone);
     }
 
 
     private void generateEnd(World world, Random rand, int x, int z)
     {
-
+        generateOre(ModBlocks.pearcelEndStone, world, rand, x, z, 2, 10, 10, 0, 60, Blocks.end_stone);
     }
 
     /**
