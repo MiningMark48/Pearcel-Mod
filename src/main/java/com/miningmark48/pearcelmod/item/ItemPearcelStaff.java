@@ -32,9 +32,9 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Quite cool.");
+        par3List.add("Fly and Heal!");
         par3List.add("Right Click = Boost Up (-1 Durability)");
-        par3List.add("Shift + Right Click = Boost Down (-1 Durability)");
+        par3List.add("Sneak + Right Click = Regen (-50 Durability)");
     }
 
     @Override
@@ -52,8 +52,8 @@ public class ItemPearcelStaff extends ItemSword{
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
     {
         if (player.isSneaking()){
-            player.addVelocity(0, -0.5, 0);
-            item.damageItem(1, player);
+            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 15000, 1));
+            item.damageItem(50, player);
             return item;
         }else{
             player.addVelocity(0, 0.5, 0);
