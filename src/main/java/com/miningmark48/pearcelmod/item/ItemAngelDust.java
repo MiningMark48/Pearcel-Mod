@@ -19,18 +19,19 @@ public class ItemAngelDust extends ItemFood {
     public ItemAngelDust(int healAmount, float saturationModifier, boolean isWolfFood)
     {
         super(healAmount, saturationModifier, isWolfFood);
-        setPotionEffect(Potion.wither.id, 15, 1, 0.5F);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-        list.add("Got to 'love' some PCP...");
+        list.add("Fly like an angel...");
     }
 
     public ItemStack onEaten(ItemStack item, World world, EntityPlayer player)
     {
         player.addVelocity(0, 10.0, 0);
+        player.addPotionEffect(new PotionEffect(Potion.wither.id, 5000, 1));
+        player.addPotionEffect(new PotionEffect(Potion.blindness.id, 15000, 2));
         return item;
     }
 }
