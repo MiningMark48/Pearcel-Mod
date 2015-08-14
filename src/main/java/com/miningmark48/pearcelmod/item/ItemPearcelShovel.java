@@ -33,7 +33,7 @@ public class ItemPearcelShovel extends ItemSpade{
             EntityPlayer player = (EntityPlayer) entity;
             ItemStack equipped = player.getCurrentEquippedItem();
             if (equipped == stack){
-                player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 20, 2));
+                player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 20, 1));
             }
         }
     }
