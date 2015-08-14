@@ -42,6 +42,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.tier2Craft, 2), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.iron_ingot), 'z', new ItemStack(Items.paper));
         GameRegistry.addRecipe(new ItemStack(ModItems.tier3Craft, 2), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(Items.paper));
         GameRegistry.addRecipe(new ItemStack(ModItems.tier4Craft, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.nether_star), 'z', new ItemStack(Items.paper));
+        GameRegistry.addRecipe(new ItemStack(ModItems.tier4Craft, 1), "xyx", "aza", "xax", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.nether_star), 'z', new ItemStack(Items.paper), 'a', new ItemStack(ModItems.tier3Craft));
 
         //Tools and Weapons, Armor
 		GameRegistry.addRecipe(new ItemStack(ModItems.pearcelSword), "x", "z", "y", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.tier2Craft));
