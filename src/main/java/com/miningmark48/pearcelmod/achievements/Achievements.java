@@ -4,6 +4,7 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
@@ -19,6 +20,7 @@ public class Achievements {
     public static Achievement achievementMEMatter;
     public static Achievement achievementPearcelStaff;
     public static Achievement achievementArmorPlating;
+    public static Achievement achievementFreeBeacon;
 
     public static void init(){
         //Creates a new achievement
@@ -30,9 +32,10 @@ public class Achievements {
         achievementMEMatter = new Achievement("achievement.craftMEMatter", "craftMEMatter", 4, 2, new ItemStack(ModItems.meMatter), (Achievement)null).initIndependentStat().registerStat();
         achievementPearcelStaff = new Achievement("achievement.craftPearcelStaff", "craftPearcelStaff", 4, 0, new ItemStack(ModItems.pearcelStaff), achievementMEMatter).registerStat();
         achievementArmorPlating = new Achievement("achievement.craftArmorPlating", "craftArmorPlating", 4, 4, new ItemStack(ModItems.armorPlating), (Achievement)null).initIndependentStat().registerStat();
+        achievementFreeBeacon = new Achievement("achievement.getFreeBeacon", "getFreeBeacon", 0, 4, new ItemStack(Blocks.beacon), (Achievement)null).initIndependentStat().registerStat();
 
         //Creates Achievement Page
-        AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{achievementPearcelSword, achievementPearcelOre, achievementPearcelMelon, achievementMelonSandwich, achievementPearcelCookie9, achievementMEMatter, achievementPearcelStaff, achievementArmorPlating}));
+        AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{achievementPearcelSword, achievementPearcelOre, achievementPearcelMelon, achievementMelonSandwich, achievementPearcelCookie9, achievementMEMatter, achievementPearcelStaff, achievementArmorPlating, achievementFreeBeacon}));
 
         //Register Achievements
         FMLCommonHandler.instance().bus().register(new CraftPearcelSword());
