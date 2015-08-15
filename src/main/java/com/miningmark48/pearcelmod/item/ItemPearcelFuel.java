@@ -15,7 +15,7 @@ public class ItemPearcelFuel extends Item implements IFuelHandler{
             return 2500;
         }else if(item == ModItems.pearcelStick) {
             return 150;
-        }else if(item == ModItems.redMatter || item == ModItems.greenMatter) {
+        }else if(item == ModItems.redMatter || item == ModItems.greenMatter || item == ModItems.meMatter) {
             return 15000;
         }
         else{
