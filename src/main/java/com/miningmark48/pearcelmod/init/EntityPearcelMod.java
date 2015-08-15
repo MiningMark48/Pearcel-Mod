@@ -3,7 +3,6 @@ package com.miningmark48.pearcelmod.init;
 import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.EntityRegistry;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;

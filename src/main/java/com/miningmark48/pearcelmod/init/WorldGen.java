@@ -1,15 +1,11 @@
 package com.miningmark48.pearcelmod.init;
 
 import java.util.Random;
-
-import com.miningmark48.pearcelmod.utility.LogHelper;
-
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenerator;
 import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGen implements IWorldGenerator{

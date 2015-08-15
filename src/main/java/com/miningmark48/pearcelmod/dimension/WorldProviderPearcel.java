@@ -2,7 +2,6 @@ package com.miningmark48.pearcelmod.dimension;
 
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.BiomeGenRiver;
-import net.minecraft.world.biome.WorldChunkManager;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
 

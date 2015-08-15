@@ -1,26 +1,14 @@
 package com.miningmark48.pearcelmod.item;
 
 import java.util.List;
-
-import com.miningmark48.pearcelmod.PearcelMod;
-import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
-
-import com.miningmark48.pearcelmod.reference.GUIs;
-import com.miningmark48.pearcelmod.reference.Key;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
-import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
-import net.minecraftforge.event.entity.player.AttackEntityEvent;
 
 public class ItemPearcelStaff extends ItemSword{
 

@@ -2,8 +2,6 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.reference.GUIs;
-import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;

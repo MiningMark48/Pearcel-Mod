@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.commands;
 
-import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentTranslation;

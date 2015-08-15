@@ -6,7 +6,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.*;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.world.World;
 
 public class ContainerIVET extends Container {
@@ -27,7 +26,6 @@ public class ContainerIVET extends Container {
         this.posZ = z;
 
         this.addSlotToContainer(new SlotCrafting(player.player, craftMatrix, craftResult, 0, 116, 35));
-        //this.addSlotToContainer(new Slot(craftMatrix, 1, 36, 34));
         for (int i = 0; i < 1; i++){
             for (int k = 0; k < 1; k++){
                 this.addSlotToContainer(new Slot(craftMatrix, k + i * 3, 37, 34));

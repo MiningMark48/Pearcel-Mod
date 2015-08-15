@@ -1,23 +1,16 @@
 package com.miningmark48.pearcelmod.client.gui;
 
 import com.miningmark48.pearcelmod.client.container.ContainerIVET;
-import com.miningmark48.pearcelmod.client.container.ContainerMEWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.ContainerWorkbench;
-import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
 public class GuiIVET extends GuiContainer {
-    //int guiWidth = 148;
-    //int guiHeight = 80;
     private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/IVETGui.png");
 
     public GuiIVET(InventoryPlayer player, World world, int x, int y, int z) {

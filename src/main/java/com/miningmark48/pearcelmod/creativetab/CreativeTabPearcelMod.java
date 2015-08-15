@@ -2,7 +2,6 @@ package com.miningmark48.pearcelmod.creativetab;
 
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

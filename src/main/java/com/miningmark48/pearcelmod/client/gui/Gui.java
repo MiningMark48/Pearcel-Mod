@@ -3,14 +3,10 @@ package com.miningmark48.pearcelmod.client.gui;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 
-/**
- * Created by MarkA on 2/25/2015.
- */
 public class Gui extends GuiScreen {
     public static final int GUI_ID = 20;
 
     public Gui(){
-        //Gui Constructor
     }
 
     @Override

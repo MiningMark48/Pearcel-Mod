@@ -7,7 +7,7 @@ import cpw.mods.fml.common.gameevent.PlayerEvent;
 public class CraftPearcelMelon {
 
     @SubscribeEvent
-    public void onCraftSugarCookie(PlayerEvent.ItemCraftedEvent e) {
+    public void onCraftPearcelMelon(PlayerEvent.ItemCraftedEvent e) {
         if (e.crafting.getItem().equals(ModItems.pearcelMelon)) {
             e.player.addStat(Achievements.achievementPearcelMelon, 1);
 

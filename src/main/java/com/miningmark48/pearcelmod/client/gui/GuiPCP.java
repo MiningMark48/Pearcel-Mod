@@ -15,8 +15,6 @@ import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
 public class GuiPCP extends GuiContainer {
-    //int guiWidth = 148;
-    //int guiHeight = 80;
     private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/meWorkbenchGui.png");
     public static final int GUI_ID = 153;
 
@@ -44,19 +42,4 @@ public class GuiPCP extends GuiContainer {
         drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 
     }
-
-
-    /*@Override
-    public void drawScreen(int x, int y, float ticks) {
-        int guiX = (width - guiWidth) / 2;
-        int guiY = (height - guiHeight) / 2;
-        GL11.glColor4f(1, 1, 1, 1);
-        drawDefaultBackground();
-        mc.renderEngine.bindTexture(new ResourceLocation(Reference.MOD_ID + ":textures/gui/meWorkbenchGui.png"));
-        drawTexturedModalRect(guiX, guiY, 0, 0, guiWidth, guiHeight);
-        fontRendererObj.drawString(EnumChatFormatting.BOLD + "ME^Workbench [WIP]", guiX + 22, guiY + 5, 0x404040);
-        fontRendererObj.drawSplitString("ME^Workbench is a WIP and will be finished soon.", guiX + 5, guiY + 20, guiWidth - 5, 0x404040);
-
-        super.drawScreen(x, y, ticks);
-    }*/
 }

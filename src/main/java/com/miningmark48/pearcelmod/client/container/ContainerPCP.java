@@ -1,7 +1,5 @@
 package com.miningmark48.pearcelmod.client.container;
 
-import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.*;
