@@ -26,7 +26,7 @@ public class EntityPearcelMob extends EntityAnimal {
     public EntityPearcelMob(World world){
         super(world);
         this.setSize(1.0F, 1.0F);
-        this.getNavigator().setAvoidsWater(true);
+        this.getNavigator().setAvoidsWater(false);
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, 1.1D));
         this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
