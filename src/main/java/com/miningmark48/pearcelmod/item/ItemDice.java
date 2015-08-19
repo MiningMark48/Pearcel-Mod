@@ -46,11 +46,21 @@ public class ItemDice extends ItemPearcelMod{
                 }else if(diceRand == 2){
                     player.addPotionEffect(new PotionEffect(Potion.confusion.id, 1000, 1));
                 }else if(diceRand == 3){
-                    world.setBlock(playerX, playerY + 2, playerZ, Blocks.iron_block);
+                    world.setBlock(playerX, playerY + 2, playerZ, Blocks.diamond_block);
                 }else if(diceRand == 4){
-                    world.setBlock(playerX, playerY + 10, playerZ, Blocks.anvil);
+                    player.addChatComponentMessage(new ChatComponentTranslation("Look up."));
+
+                    world.setBlock(playerX, playerY + 20, playerZ, Blocks.anvil);
+                    world.setBlock(playerX + 1, playerY + 20, playerZ, Blocks.anvil);
+                    world.setBlock(playerX - 1, playerY + 20, playerZ, Blocks.anvil);
+                    world.setBlock(playerX, playerY + 20, playerZ + 1, Blocks.anvil);
+                    world.setBlock(playerX, playerY + 20, playerZ - 1, Blocks.anvil);
+                    world.setBlock(playerX + 1, playerY + 20, playerZ + 1, Blocks.anvil);
+                    world.setBlock(playerX - 1, playerY + 20, playerZ - 1, Blocks.anvil);
+                    world.setBlock(playerX + 1, playerY + 20, playerZ - 1, Blocks.anvil);
+                    world.setBlock(playerX - 1, playerY + 20, playerZ + 1, Blocks.anvil);
                 }else if(diceRand == 5){
-                    player.addPotionEffect(new PotionEffect(Potion.wither.id, 1000, 0));
+                    player.addPotionEffect(new PotionEffect(Potion.wither.id, 1000, 1));
                 }else if(diceRand == 6){
 
                     player.addStat(Achievements.achievementFreeBeacon, 1);
@@ -68,7 +78,7 @@ public class ItemDice extends ItemPearcelMod{
                     world.setBlock(playerX, playerY + 3, playerZ, Blocks.beacon);
                 }
 
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + "You special rolled a " + diceRand + "."));
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "You special rolled a " + diceRand + "."));
             }else{
                 player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + "You rolled a " + diceRand + "."));
             }
