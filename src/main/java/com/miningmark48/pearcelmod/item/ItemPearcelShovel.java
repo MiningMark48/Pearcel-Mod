@@ -1,10 +1,5 @@
 package com.miningmark48.pearcelmod.item;
 
-import com.miningmark48.pearcelmod.achievements.Achievements;
-import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemSpade;

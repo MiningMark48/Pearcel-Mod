@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.renderer;
 
-import net.minecraft.client.renderer.ItemRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
