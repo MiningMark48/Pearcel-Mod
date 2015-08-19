@@ -14,6 +14,7 @@ public class ConfigurationHandler {
     public static boolean addPearcelStaff;
     public static boolean addFlightItem;
     public static boolean specialDice;
+    public static boolean useMEMatter;
 
     public static void init(File configFile){
 
@@ -43,6 +44,7 @@ public class ConfigurationHandler {
         addPearcelStaff = configuration.getBoolean("Add Pearcel Staff?", Configuration.CATEGORY_GENERAL, true, "Should the Pearcel Staff be added to the game?");
         addFlightItem = configuration.getBoolean("Add Flight Item?", Configuration.CATEGORY_GENERAL, false, "Should the Flight Item be added to the game?");
         specialDice = configuration.getBoolean("Have special dice rolls?", Configuration.CATEGORY_GENERAL, true, "Add Special dice rolls?");
+        useMEMatter = configuration.getBoolean("ME^Matter Recipes", Configuration.CATEGORY_GENERAL, true, "Should ME^Matter recipes be added?");
 
         if (configuration.hasChanged()){
 
