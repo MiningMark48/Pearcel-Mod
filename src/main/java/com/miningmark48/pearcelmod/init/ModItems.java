@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.init;
 
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -102,7 +103,8 @@ public class ModItems {
         GameRegistry.registerItem(pearcelShears, "pearcelShears");
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
         GameRegistry.registerItem(pcp, "pcp");
-        GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+        //GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+
         //Armor
         GameRegistry.registerItem(pearcelHelmet, "pearcelHelmet");
         GameRegistry.registerItem(pearcelChestplate, "pearcelChestplate");
@@ -136,6 +138,11 @@ public class ModItems {
         GameRegistry.registerItem(tier3Craft, "tier3Craft");
         GameRegistry.registerItem(tier4Craft, "tier4Craft");
         GameRegistry.registerItem(armorPlating, "armorPlating");
+
+        //Items to be added if config allows
+        if (ConfigurationHandler.addPearcelStaff){
+            GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+        }
 
 	}
 	
