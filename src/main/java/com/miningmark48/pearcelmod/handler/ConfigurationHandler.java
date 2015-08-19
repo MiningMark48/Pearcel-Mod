@@ -11,11 +11,8 @@ public class ConfigurationHandler {
 
     public static Configuration configuration;
 
-    public static boolean testValueBoolean;
-    public static int testValueInt;
-    public static String testValueString;
-
     public static boolean addPearcelStaff;
+    public static boolean specialDice;
 
     public static void init(File configFile){
 
@@ -42,11 +39,8 @@ public class ConfigurationHandler {
 
     private static void loadConfiguration(){
 
-        testValueBoolean = configuration.getBoolean("Boolean Value", Configuration.CATEGORY_GENERAL, false, "This is a boolean config value");
-        testValueInt = configuration.getInt("Integer Value", Configuration.CATEGORY_GENERAL, 1, 1, 10, "This is an integer config value");
-        testValueString = configuration.getString("String Value", Configuration.CATEGORY_GENERAL, "MiningMark48", "This is a string config value");
-
-        addPearcelStaff = configuration.getBoolean("Add Pearcel Staff?", Configuration.CATEGORY_GENERAL, true, "Should the Pearcel Staff be added into the game? (Requires restart)");
+        addPearcelStaff = configuration.getBoolean("Add Pearcel Staff?", Configuration.CATEGORY_GENERAL, true, "Add Pearcel Staff?");
+        specialDice = configuration.getBoolean("Have special dice rolls?", Configuration.CATEGORY_GENERAL, true, "Add Special dice rolls?");
 
         if (configuration.hasChanged()){
 

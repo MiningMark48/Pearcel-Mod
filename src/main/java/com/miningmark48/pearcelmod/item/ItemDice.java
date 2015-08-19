@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -21,8 +22,12 @@ public class ItemDice extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Right click for special roll.");
-        par3List.add("Sneak + Right click for normal roll.");
+        par3List.add("Right click for normal roll.");
+
+        if (ConfigurationHandler.specialDice){
+            par3List.add("Sneak + Right click for special roll.");
+        }
+
     }
 
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
@@ -35,9 +40,7 @@ public class ItemDice extends ItemPearcelMod{
         int playerZ = (int) player.posZ;
 
         if (!world.isRemote){
-            if (player.isSneaking()){
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + "You rolled a " + diceRand + "."));
-            }else{
+            if (player.isSneaking() && ConfigurationHandler.specialDice){
                 if (diceRand == 1){
                     player.addExperience(100);
                 }else if(diceRand == 2){
@@ -65,6 +68,8 @@ public class ItemDice extends ItemPearcelMod{
                     world.setBlock(playerX, playerY + 3, playerZ, Blocks.beacon);
                 }
 
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + "You special rolled a " + diceRand + "."));
+            }else{
                 player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + "You rolled a " + diceRand + "."));
             }
         }
