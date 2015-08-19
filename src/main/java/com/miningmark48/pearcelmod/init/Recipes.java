@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.init;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -35,7 +36,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelCharcoal, 2), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcelNugget), 'y', new ItemStack(Items.coal));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelNugget, 10), new ItemStack(ModItems.pearcel), new ItemStack(Items.gunpowder));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelCookie), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcelNugget), 'y', new ItemStack(Items.cookie));
-        GameRegistry.addRecipe(new ItemStack(ModItems.dice), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.stone), 'y', new ItemStack(Items.redstone), 'z', new ItemStack(ModItems.tier2Craft));
+        //GameRegistry.addRecipe(new ItemStack(ModItems.dice), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.stone), 'y', new ItemStack(Items.redstone), 'z', new ItemStack(ModItems.tier2Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.armorPlating, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.iron_ingot), 'z', new ItemStack(ModItems.tier2Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.tier1Craft, 2), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcelNugget), 'y', new ItemStack(Items.redstone), 'z', new ItemStack(Items.paper));
         GameRegistry.addRecipe(new ItemStack(ModItems.tier2Craft, 2), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcelNugget), 'y', new ItemStack(Items.iron_ingot), 'z', new ItemStack(Items.paper));
@@ -113,6 +114,15 @@ public class Recipes {
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 1), new ItemStack(ModItems.tier3Craft));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.greenMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 2), new ItemStack(ModItems.tier3Craft));
+
+
+        //Recipes based on config settigns
+        if (ConfigurationHandler.specialDice){
+            GameRegistry.addRecipe(new ItemStack(ModItems.dice), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.stone), 'y', new ItemStack(Items.redstone), 'z', new ItemStack(ModItems.tier4Craft));
+        }else if(!ConfigurationHandler.specialDice){
+            GameRegistry.addRecipe(new ItemStack(ModItems.dice), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.stone), 'y', new ItemStack(Items.redstone), 'z', new ItemStack(ModItems.tier1Craft));
+        }
+        
 
 	}
 
