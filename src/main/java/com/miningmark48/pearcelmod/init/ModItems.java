@@ -51,6 +51,7 @@ public class ModItems {
     public static final Item pearcelBow = new ItemPearcelBow().setUnlocalizedName("pearcelBow").setTextureName(Reference.MOD_ID + ":pearcelBow").setMaxStackSize(1).setMaxDamage(100).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item pearcelStaff = new ItemPearcelStaff(ToolMaterial.EMERALD).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(1000);
+    public static final Item flightItem = new ItemFlight().setTextureName(Reference.MOD_ID + ":flightItem").setUnlocalizedName("flightItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
 
     //Armor
     public static Item pearcelHelmet = new PearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -104,6 +105,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
         GameRegistry.registerItem(pcp, "pcp");
         //GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+        //GameRegistry.registerItem(flightItem, "flightItem");
 
         //Armor
         GameRegistry.registerItem(pearcelHelmet, "pearcelHelmet");
@@ -142,6 +144,8 @@ public class ModItems {
         //Items to be added if config allows
         if (ConfigurationHandler.addPearcelStaff){
             GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+        }else if(ConfigurationHandler.addFlightItem){
+            GameRegistry.registerItem(flightItem, "flightItem");
         }
 
 	}
