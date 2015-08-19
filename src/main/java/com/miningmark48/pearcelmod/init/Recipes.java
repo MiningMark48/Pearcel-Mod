@@ -103,11 +103,17 @@ public class Recipes {
             GameRegistry.addRecipe(new ItemStack(Items.iron_ingot, 16), " x ", "x  ", "x  ", 'x', new ItemStack(ModItems.meMatter));
             GameRegistry.addRecipe(new ItemStack(Items.gold_ingot, 8), "x  ", "x  ", "  x", 'x', new ItemStack(ModItems.meMatter));
             GameRegistry.addRecipe(new ItemStack(Items.diamond, 4), "x  ", "x x", 'x', new ItemStack(ModItems.meMatter));
-            GameRegistry.addRecipe(new ItemStack(Items.emerald, 2), " x ", " x ", 'x', new ItemStack(ModItems.meMatter));
+            GameRegistry.addRecipe(new ItemStack(Items.emerald, 2), " xx", " x ", 'x', new ItemStack(ModItems.meMatter));
+            GameRegistry.addRecipe(new ItemStack(Items.blaze_rod, 8), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.meMatter));
+
+
+            GameRegistry.addShapelessRecipe(new ItemStack(Blocks.stone, 64), new ItemStack(ModItems.meMatter), new ItemStack(Blocks.cobblestone));
+            GameRegistry.addShapelessRecipe(new ItemStack(Blocks.stonebrick, 64), new ItemStack(ModItems.meMatter), new ItemStack(Blocks.stone));
+            GameRegistry.addShapelessRecipe(new ItemStack(Blocks.cobblestone, 111), new ItemStack(ModItems.meMatter), new ItemStack(Items.water_bucket), new ItemStack(Items.lava_bucket), new ItemStack(Blocks.cobblestone));
         }
 
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 1), new ItemStack(ModItems.tier3Craft));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.greenMatter, 2), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 2), new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redMatter, 4), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 1), new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.greenMatter, 4), new ItemStack(ModItems.meMatter), new ItemStack(Items.dye, 1, 2), new ItemStack(ModItems.tier3Craft));
 
 
         //Recipes based on config settigns
