@@ -51,7 +51,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(meMatterBlock, "meMatterBlock");
         GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
         GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
-        GameRegistry.registerBlock(pearcelTNT, "pearcelTNT");
+        //GameRegistry.registerBlock(pearcelTNT, "pearcelTNT");
         GameRegistry.registerBlock(barrier, "barrier");
         GameRegistry.registerBlock(pearcelMelonBlock, "pearcelMelonBlock");
         //Ores

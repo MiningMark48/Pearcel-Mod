@@ -1,8 +1,8 @@
-[00:00:54] [main/INFO]: Setting user: Player437
-[00:01:20] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:02:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[00:02:44] [Sound Library Loader/INFO]: Sound engine started
-[00:03:13] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[22:56:26] [main/INFO]: Setting user: Player275
+[22:56:48] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:58:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[22:59:08] [Sound Library Loader/INFO]: Sound engine started
+[22:59:25] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,11 +22,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[00:03:16] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[00:03:19] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[00:03:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[00:03:23] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[00:03:24] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[22:59:33] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[22:59:36] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:59:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[22:59:40] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:59:41] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -49,6 +49,56 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[00:03:25] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[00:03:28] [Sound Library Loader/INFO]: Sound engine started
-[00:05:25] [Client thread/INFO]: Stopping!
+[22:59:44] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[22:59:46] [Sound Library Loader/INFO]: Sound engine started
+[23:01:14] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:01:14] [Server thread/INFO]: Generating keypair
+[23:02:31] [Server thread/INFO]: Preparing start region for level 0
+[23:02:32] [Server thread/INFO]: Preparing spawn area: 18%
+[23:02:33] [Server thread/INFO]: Preparing spawn area: 50%
+[23:02:34] [Server thread/INFO]: Preparing spawn area: 90%
+[23:02:35] [Server thread/INFO]: Changing view distance to 2, from 10
+[23:02:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6190ms behind, skipping 123 tick(s)
+[23:02:44] [Server thread/INFO]: Player275[local:E:4ebf5645] logged in with entity id 20 at (-168.18459674844712, 56.0, 119.16852535472776)
+[23:02:44] [Server thread/INFO]: Player275 joined the game
+[23:03:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9565ms behind, skipping 191 tick(s)
+[23:04:00] [Server thread/INFO]: <Player275> e set day
+[23:04:00] [Client thread/INFO]: [CHAT] <Player275> e set day
+[23:04:03] [Client thread/INFO]: [CHAT] 'day'' is not a valid number
+[23:04:06] [Server thread/INFO]: [Player275: Set the time to 1000]
+[23:04:06] [Client thread/INFO]: [CHAT] Set the time to 1000
+[23:04:08] [Server thread/INFO]: Player275 has just earned the achievement [Taking Inventory]
+[23:04:10] [Client thread/INFO]: [CHAT] Player275 has just earned the achievement [Taking Inventory]
+[23:04:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5286ms behind, skipping 105 tick(s)
+[23:04:22] [Client thread/INFO]: [CHAT] You are now playing creative+
+[23:04:22] [Client thread/INFO]: [CHAT] You are now playing creative+
+[23:04:53] [Server thread/INFO]: [Player275: Given [tile.pearcelmod:pearcelEndStone.name] * 1 to Player275]
+[23:04:53] [Client thread/INFO]: [CHAT] Given [tile.pearcelmod:pearcelEndStone.name] * 1 to Player275
+[23:05:03] [Server thread/INFO]: [Player275: Given [Pearcel Block] * 1 to Player275]
+[23:05:03] [Client thread/INFO]: [CHAT] Given [Pearcel Block] * 1 to Player275
+[23:05:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4502ms behind, skipping 90 tick(s)
+[23:06:49] [Server thread/INFO]: [Player275: Given [Barrier] * 1 to Player275]
+[23:06:49] [Client thread/INFO]: [CHAT] Given [Barrier] * 1 to Player275
+[23:06:53] [Server thread/INFO]: Saving and pausing game...
+[23:06:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[23:06:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[23:06:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[23:07:18] [Server thread/INFO]: Saving and pausing game...
+[23:07:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[23:07:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[23:07:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[23:07:19] [Server thread/INFO]: Saving and pausing game...
+[23:07:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[23:07:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[23:07:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[23:07:20] [Server thread/INFO]: Saving and pausing game...
+[23:07:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[23:07:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[23:07:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[23:07:20] [Server thread/INFO]: Stopping server
+[23:07:20] [Server thread/INFO]: Saving players
+[23:07:20] [Server thread/INFO]: Saving worlds
+[23:07:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[23:07:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[23:07:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[23:08:19] [Client thread/INFO]: Stopping!
