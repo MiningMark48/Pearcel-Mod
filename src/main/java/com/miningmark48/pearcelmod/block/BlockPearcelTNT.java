@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockFBomb extends Block {
+public class BlockPearcelTNT extends Block {
 
     @SideOnly(Side.CLIENT)
     private IIcon field_150116_a;
@@ -25,7 +25,7 @@ public class BlockFBomb extends Block {
     private IIcon field_150115_b;
     private static final String __OBFID = "CL_00000324";
 
-    public BlockFBomb()
+    public BlockPearcelTNT()
     {
         super(Material.tnt);
     }
