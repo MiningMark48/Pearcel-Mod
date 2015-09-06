@@ -15,6 +15,7 @@ public class ConfigurationHandler {
     public static boolean addFlightItem;
     public static boolean specialDice;
     public static boolean useMEMatter;
+    public static int torcherRange;
 
     public static void init(File configFile){
 
@@ -45,6 +46,7 @@ public class ConfigurationHandler {
         addFlightItem = configuration.getBoolean("Add Flight Item?", Configuration.CATEGORY_GENERAL, false, "Should the Flight Item be added to the game?");
         specialDice = configuration.getBoolean("Have special dice rolls?", Configuration.CATEGORY_GENERAL, true, "Add Special dice rolls?");
         useMEMatter = configuration.getBoolean("ME^Matter Recipes", Configuration.CATEGORY_GENERAL, true, "Should ME^Matter recipes be added?");
+        torcherRange = configuration.getInt("Torcher Range", Configuration.CATEGORY_GENERAL, 25, 1, 500, "What is the range of torches that can be placed by the torcher block?");
 
         if (configuration.hasChanged()){
 
