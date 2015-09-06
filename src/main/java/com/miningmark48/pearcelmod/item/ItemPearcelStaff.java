@@ -40,7 +40,7 @@ public class ItemPearcelStaff extends ItemSword{
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
     {
         if (player.isSneaking()){
-            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 15000, 0));
+            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 5000, 1));
             item.damageItem(50, player);
             return item;
         }else{
