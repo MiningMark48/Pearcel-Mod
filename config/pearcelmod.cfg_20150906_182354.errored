@@ -1,0 +1,23 @@
+# Configuration file
+
+general {
+    # What is the range of torches that can be placed by the torcher block? [range: 1 ~ 100, default: 10]
+    I:=100
+
+    # Should the Flight Item be added to the game? [default: false]
+    B:"Add Flight Item?"=true
+
+    # Should the Pearcel Staff be added to the game? [default: true]
+    B:"Add Pearcel Staff?"=true
+
+    # Add Special dice rolls? [default: true]
+    B:"Have special dice rolls?"=true
+
+    # Should ME^Matter recipes be added? [default: true]
+    B:"ME^Matter Recipes"=true
+
+    # What is the range of torches that can be placed by the torcher block? [range: 1 ~ 100, default: 10]
+    I:"Torcher Range"=10
+}
+
+

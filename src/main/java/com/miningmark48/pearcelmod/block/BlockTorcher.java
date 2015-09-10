@@ -1,9 +1,8 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.reference.GUIs;
-import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -18,70 +17,55 @@ public class BlockTorcher extends BlockPearcelMod{
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ){
         if (!player.isSneaking()){
+
+            player.addStat(Achievements.achievementTorcher, 1);
+
             Random rand = new Random();
             int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
-            if (world.getBlock(x, y, z).getMaterial().isSolid()){
+            if (world.getBlock(x, y-1, z).getMaterial().isSolid()){
                 world.setBlock(x, y, z, ModBlocks.pearcelTorch);
             }
-            for (int i = 1; i <= rangeRand * 10; i++){
+            for (int i = 1; i <= rangeRand * ConfigurationHandler.torcherFrequency; i++){
                 rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
                 int numRand = rand.nextInt(8) + 1;
+                int torchX = x;
+                int torchY = y;
+                int torchZ = z;
                 if (numRand == 1){
-                    int torchX = x + rangeRand;
-                    int torchY = y;
-                    int torchZ = z + rangeRand;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x + rangeRand;
+                    torchY = y;
+                    torchZ = z + rangeRand;
                 }else if(numRand == 2){
-                    int torchX = x - rangeRand;
-                    int torchY = y;
-                    int torchZ = z - rangeRand;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x - rangeRand;
+                    torchY = y;
+                    torchZ = z - rangeRand;
                 }else if(numRand == 3){
-                    int torchX = x + rangeRand;
-                    int torchY = y;
-                    int torchZ = z - rangeRand;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x + rangeRand;
+                    torchY = y;
+                    torchZ = z - rangeRand;
                 }else if(numRand == 4){
-                    int torchX = x - rangeRand;
-                    int torchY = y;
-                    int torchZ = z + rangeRand;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x - rangeRand;
+                    torchY = y;
+                    torchZ = z + rangeRand;
                 }else if(numRand == 5){
-                    int torchX = x - rangeRand;
-                    int torchY = y;
-                    int torchZ = z;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x - rangeRand;
+                    torchY = y;
+                    torchZ = z;
                 }else if(numRand == 6){
-                    int torchX = x + rangeRand;
-                    int torchY = y;
-                    int torchZ = z;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x + rangeRand;
+                    torchY = y;
+                    torchZ = z;
                 }else if(numRand == 7){
-                    int torchX = x;
-                    int torchY = y;
-                    int torchZ = z - rangeRand;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x;
+                    torchY = y;
+                    torchZ = z - rangeRand;
                 }else if(numRand == 8){
-                    int torchX = x;
-                    int torchY = y;
-                    int torchZ = z + rangeRand;
-                    if (world.getBlock(torchX, torchY, torchZ) == Blocks.air && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
-                    }
+                    torchX = x;
+                    torchY = y;
+                    torchZ = z + rangeRand;
+                }
+                if (world.getBlock(torchX, torchY, torchZ) == Blocks.air || world.getBlock(torchX, torchY, torchZ) == Blocks.tallgrass && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
+                    world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
                 }
 
             }

@@ -1,8 +1,8 @@
-[14:35:06] [main/INFO]: Setting user: Player681
-[14:35:26] [Client thread/INFO]: LWJGL Version: 2.9.1
-[14:36:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[14:36:57] [Sound Library Loader/INFO]: Sound engine started
-[14:37:15] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/torcher.png
+[19:08:29] [main/INFO]: Setting user: Player998
+[19:08:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:10:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[19:11:03] [Sound Library Loader/INFO]: Sound engine started
+[19:11:23] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/torcher.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/torcher.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,7 +22,7 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/torcher.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[14:37:16] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[19:11:24] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -42,11 +42,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[14:37:22] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[14:37:24] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[14:37:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[14:37:28] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[14:37:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/torcher.png
+[19:11:29] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[19:11:32] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[19:11:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[19:11:37] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[19:11:37] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/torcher.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/torcher.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -69,7 +69,7 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/torcher.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[14:37:30] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[19:11:38] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -92,463 +92,69 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[14:37:31] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[14:37:33] [Sound Library Loader/INFO]: Sound engine started
-[14:40:31] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:40:31] [Server thread/INFO]: Generating keypair
-[14:40:46] [Server thread/INFO]: Preparing start region for level 0
-[14:40:47] [Server thread/INFO]: Preparing spawn area: 0%
-[14:40:48] [Server thread/INFO]: Preparing spawn area: 8%
-[14:40:49] [Server thread/INFO]: Preparing spawn area: 41%
-[14:40:50] [Server thread/INFO]: Preparing spawn area: 60%
-[14:40:51] [Server thread/INFO]: Preparing spawn area: 92%
-[14:40:52] [Server thread/INFO]: Changing view distance to 2, from 10
-[14:40:58] [Server thread/INFO]: Player681[local:E:db70d49a] logged in with entity id 18 at (-132.85114951400675, 56.0, 122.7305038252511)
-[14:40:59] [Server thread/INFO]: Player681 joined the game
-[14:41:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2596ms behind, skipping 51 tick(s)
-[14:41:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5592ms behind, skipping 111 tick(s)
-[14:41:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4462ms behind, skipping 89 tick(s)
-[14:42:09] [Server thread/INFO]: [Player681: Took all effects from Player681]
-[14:42:09] [Client thread/INFO]: [CHAT] Took all effects from Player681
-[14:42:11] [Server thread/INFO]: Player681 has just earned the achievement [Taking Inventory]
-[14:42:11] [Client thread/INFO]: [CHAT] Player681 has just earned the achievement [Taking Inventory]
-[14:42:51] [Server thread/INFO]: Saving and pausing game...
-[14:42:52] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:42:52] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:42:52] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:42:52] [Server thread/INFO]: Stopping server
-[14:42:52] [Server thread/INFO]: Saving players
-[14:42:52] [Server thread/INFO]: Saving worlds
-[14:42:52] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:42:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:42:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:43:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:43:37] [Server thread/INFO]: Generating keypair
-[14:43:41] [Server thread/INFO]: Preparing start region for level 0
-[14:43:42] [Server thread/INFO]: Preparing spawn area: 10%
-[14:43:43] [Server thread/INFO]: Preparing spawn area: 36%
-[14:43:44] [Server thread/INFO]: Preparing spawn area: 75%
-[14:43:45] [Server thread/INFO]: Changing view distance to 2, from 10
-[14:43:46] [Server thread/INFO]: Player681[local:E:af5715d3] logged in with entity id 96386 at (-137.57008577582562, 56.0, 122.54707250162733)
-[14:43:46] [Server thread/INFO]: Player681 joined the game
-[14:43:49] [Server thread/INFO]: Saving and pausing game...
-[14:43:49] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:43:50] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:43:50] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:44:35] [Server thread/INFO]: Saving and pausing game...
-[14:44:37] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:44:37] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:44:37] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:44:38] [Server thread/INFO]: Stopping server
-[14:44:38] [Server thread/INFO]: Saving players
-[14:44:38] [Server thread/INFO]: Saving worlds
-[14:44:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:44:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:44:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:46:28] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:46:28] [Server thread/INFO]: Generating keypair
-[14:46:30] [Server thread/INFO]: Preparing start region for level 0
-[14:46:31] [Server thread/INFO]: Preparing spawn area: 23%
-[14:46:32] [Server thread/INFO]: Preparing spawn area: 66%
-[14:46:33] [Server thread/INFO]: Preparing spawn area: 96%
-[14:46:33] [Server thread/INFO]: Changing view distance to 2, from 10
-[14:46:33] [Server thread/INFO]: Player681[local:E:b5534129] logged in with entity id 125874 at (-137.7367172086311, 56.0, 119.99202574610639)
-[14:46:33] [Server thread/INFO]: Player681 joined the game
-[14:47:04] [Server thread/INFO]: Saving and pausing game...
-[14:47:04] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:47:04] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:47:04] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:51:18] [Server thread/INFO]: Saving and pausing game...
-[14:51:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:51:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:51:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:55:42] [Server thread/INFO]: Saving and pausing game...
-[14:55:42] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:55:43] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:55:43] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:59:34] [Server thread/INFO]: Saving and pausing game...
-[14:59:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:59:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:59:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[14:59:39] [Server thread/INFO]: Stopping server
-[14:59:39] [Server thread/INFO]: Saving players
-[14:59:39] [Server thread/INFO]: Saving worlds
-[14:59:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[14:59:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[14:59:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:00:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[15:00:05] [Server thread/INFO]: Generating keypair
-[15:00:06] [Server thread/INFO]: Preparing start region for level 0
-[15:00:07] [Server thread/INFO]: Preparing spawn area: 22%
-[15:00:08] [Server thread/INFO]: Preparing spawn area: 69%
-[15:00:09] [Server thread/INFO]: Changing view distance to 2, from 10
-[15:00:10] [Server thread/INFO]: Player681[local:E:1eb37c49] logged in with entity id 209917 at (-149.68454822703558, 57.79508460738442, 77.41744230780506)
-[15:00:10] [Server thread/INFO]: Player681 joined the game
-[15:01:00] [Server thread/INFO]: Saving and pausing game...
-[15:01:00] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:01:00] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:01:00] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:02:15] [Server thread/INFO]: [Player681: Teleported Player681 to 166.5,56.5,72.5]
-[15:02:15] [Client thread/INFO]: [CHAT] Teleported Player681 to 166.5,56.5,72.5
-[15:02:37] [Server thread/INFO]: [Player681: Teleported Player681 to -165.5,56.5,72.5]
-[15:02:37] [Client thread/INFO]: [CHAT] Teleported Player681 to -165.5,56.5,72.5
-[15:02:38] [Server thread/INFO]: Saving and pausing game...
-[15:02:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:02:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:02:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:02:41] [Server thread/INFO]: Saving and pausing game...
-[15:02:41] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:02:41] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:02:41] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:08:05] [Server thread/INFO]: Player681 fell out of the world
-[15:08:06] [Client thread/INFO]: [CHAT] Player681 fell out of the world
-[15:08:06] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[15:08:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11533ms behind, skipping 230 tick(s)
-[15:08:21] [Server thread/INFO]: [@: Set the time to 1000]
-[15:08:21] [Client thread/INFO]: [CHAT] [@: Set the time to 1000]
-[15:08:23] [Server thread/INFO]: Saving and pausing game...
-[15:08:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:08:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:08:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:08:36] [Server thread/INFO]: [@: Set the time to 1000]
-[15:08:36] [Client thread/INFO]: [CHAT] [@: Set the time to 1000]
-[15:08:47] [Server thread/INFO]: [Player681: Set the time to 13000]
-[15:08:47] [Client thread/INFO]: [CHAT] Set the time to 13000
-[15:09:05] [Server thread/INFO]: Saving and pausing game...
-[15:09:05] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:09:05] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:09:05] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:12:54] [Server thread/INFO]: Saving and pausing game...
-[15:12:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:12:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:12:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:17:24] [Server thread/INFO]: Saving and pausing game...
-[15:17:24] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:17:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:17:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:19:16] [Server thread/INFO]: Saving and pausing game...
-[15:19:16] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:19:16] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:19:16] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:20:22] [Server thread/INFO]: Saving and pausing game...
-[15:20:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:20:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:20:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:22:19] [Server thread/INFO]: Saving and pausing game...
-[15:22:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:22:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:22:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:22:20] [Server thread/INFO]: Saving and pausing game...
-[15:22:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:22:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:22:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:23:41] [Server thread/INFO]: Saving and pausing game...
-[15:23:41] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:23:41] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:23:41] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:25:59] [Server thread/INFO]: Saving and pausing game...
-[15:25:59] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:25:59] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:25:59] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:32:56] [Server thread/INFO]: Saving and pausing game...
-[15:32:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:32:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:32:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:35:49] [Server thread/INFO]: Saving and pausing game...
-[15:35:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:35:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:35:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:35:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4809ms behind, skipping 96 tick(s)
-[15:38:02] [Server thread/INFO]: Player681 fell out of the world
-[15:38:02] [Client thread/INFO]: [CHAT] Player681 fell out of the world
-[15:38:02] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[15:40:29] [Server thread/INFO]: Saving and pausing game...
-[15:40:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:40:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:40:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:40:30] [Server thread/INFO]: Stopping server
-[15:40:30] [Server thread/INFO]: Saving players
-[15:40:30] [Server thread/INFO]: Saving worlds
-[15:40:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:40:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:40:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:41:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[15:41:15] [Server thread/INFO]: Generating keypair
-[15:41:17] [Server thread/INFO]: Preparing start region for level 0
-[15:41:18] [Server thread/INFO]: Preparing spawn area: 21%
-[15:41:19] [Server thread/INFO]: Preparing spawn area: 49%
-[15:41:20] [Server thread/INFO]: Preparing spawn area: 84%
-[15:41:21] [Server thread/INFO]: Changing view distance to 2, from 10
-[15:41:21] [Server thread/INFO]: Player681[local:E:10eccfd3] logged in with entity id 820096 at (-329.0943945034355, 58.497579572184044, 142.3436956760783)
-[15:41:21] [Server thread/INFO]: Player681 joined the game
-[15:41:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2079ms behind, skipping 41 tick(s)
-[15:43:12] [Server thread/INFO]: [Player681: Set the time to 13000]
-[15:43:12] [Client thread/INFO]: [CHAT] Set the time to 13000
-[15:43:16] [Server thread/INFO]: Player681 fell out of the world
-[15:43:16] [Client thread/INFO]: [CHAT] Player681 fell out of the world
-[15:43:16] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[15:44:30] [Server thread/INFO]: Saving and pausing game...
-[15:44:31] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:44:31] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:44:31] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:44:43] [Server thread/INFO]: Changing view distance to 4, from 2
-[15:45:21] [Server thread/INFO]: Saving and pausing game...
-[15:45:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:45:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:45:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:45:21] [Server thread/INFO]: Stopping server
-[15:45:21] [Server thread/INFO]: Saving players
-[15:45:21] [Server thread/INFO]: Saving worlds
-[15:45:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:45:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:45:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:51:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[15:51:15] [Server thread/INFO]: Generating keypair
-[15:51:16] [Server thread/INFO]: Preparing start region for level 0
-[15:51:17] [Server thread/INFO]: Preparing spawn area: 30%
-[15:51:18] [Server thread/INFO]: Preparing spawn area: 58%
-[15:51:20] [Server thread/INFO]: Preparing spawn area: 92%
-[15:51:20] [Server thread/INFO]: Changing view distance to 4, from 10
-[15:51:20] [Server thread/INFO]: Player681[local:E:b3a43c3d] logged in with entity id 1006050 at (-176.6524705499404, 56.0, 236.216808180631)
-[15:51:20] [Server thread/INFO]: Player681 joined the game
-[15:51:39] [Server thread/INFO]: Saving and pausing game...
-[15:51:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:51:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:51:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:53:22] [Server thread/INFO]: Saving and pausing game...
-[15:53:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:53:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:53:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:53:53] [Server thread/INFO]: Saving and pausing game...
-[15:53:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:53:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:53:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:55:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2222ms behind, skipping 44 tick(s)
-[15:59:19] [Server thread/INFO]: Saving and pausing game...
-[15:59:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:59:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:59:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:59:25] [Server thread/INFO]: Saving and pausing game...
-[15:59:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:59:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:59:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[15:59:26] [Server thread/INFO]: Stopping server
-[15:59:26] [Server thread/INFO]: Saving players
-[15:59:27] [Server thread/INFO]: Saving worlds
-[15:59:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[15:59:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[15:59:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:12:30] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:12:30] [Server thread/INFO]: Generating keypair
-[16:12:32] [Server thread/INFO]: Preparing start region for level 0
-[16:12:33] [Server thread/INFO]: Preparing spawn area: 13%
-[16:12:34] [Server thread/INFO]: Preparing spawn area: 50%
-[16:12:35] [Server thread/INFO]: Preparing spawn area: 71%
-[16:12:36] [Server thread/INFO]: Preparing spawn area: 85%
-[16:12:37] [Server thread/INFO]: Preparing spawn area: 92%
-[16:12:38] [Server thread/INFO]: Changing view distance to 4, from 10
-[16:12:38] [Server thread/INFO]: Player681[local:E:1139b8f7] logged in with entity id 1101740 at (-80.36781077613995, 56.0, 301.2058907599477)
-[16:12:38] [Server thread/INFO]: Player681 joined the game
-[16:12:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3018ms behind, skipping 60 tick(s)
-[16:13:26] [Server thread/INFO]: Saving and pausing game...
-[16:13:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:13:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:13:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:13:33] [Server thread/INFO]: Saving and pausing game...
-[16:13:34] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:13:34] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:13:34] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:14:08] [Server thread/INFO]: Saving and pausing game...
-[16:14:08] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:14:09] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:14:09] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:14:19] [Server thread/INFO]: Saving and pausing game...
-[16:14:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:14:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:14:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:19:25] [Server thread/INFO]: Saving and pausing game...
-[16:19:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:19:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:19:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:19:56] [Server thread/INFO]: Saving and pausing game...
-[16:19:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:19:57] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:19:57] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:21:32] [Server thread/INFO]: Saving and pausing game...
-[16:21:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:21:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:21:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:21:39] [Server thread/INFO]: Saving and pausing game...
-[16:21:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:21:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:21:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:22:27] [Client thread/INFO]: [CHAT] §2You rolled a 6.
-[16:22:50] [Server thread/INFO]: Saving and pausing game...
-[16:22:50] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:22:51] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:22:51] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:23:05] [Server thread/INFO]: Saving and pausing game...
-[16:23:06] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:23:06] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:23:06] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:24:35] [Server thread/INFO]: Saving and pausing game...
-[16:24:35] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:24:35] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:24:35] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:24:46] [Server thread/INFO]: Saving and pausing game...
-[16:24:46] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:24:47] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:24:47] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:25:57] [Server thread/INFO]: Saving and pausing game...
-[16:25:57] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:25:58] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:25:58] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:28:58] [Server thread/INFO]: Saving and pausing game...
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:28:58] [Server thread/INFO]: Stopping server
-[16:28:58] [Server thread/INFO]: Saving players
-[16:28:59] [Server thread/INFO]: Saving worlds
-[16:28:59] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:28:59] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:28:59] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:30:12] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:30:12] [Server thread/INFO]: Generating keypair
-[16:30:14] [Server thread/INFO]: Preparing start region for level 0
-[16:30:15] [Server thread/INFO]: Preparing spawn area: 21%
-[16:30:16] [Server thread/INFO]: Preparing spawn area: 49%
-[16:30:17] [Server thread/INFO]: Preparing spawn area: 88%
-[16:30:18] [Server thread/INFO]: Changing view distance to 4, from 10
-[16:30:18] [Server thread/INFO]: Player681[local:E:2ae181d0] logged in with entity id 1408838 at (-367.34286322955853, 56.0, 552.3614802221408)
-[16:30:18] [Server thread/INFO]: Player681 joined the game
-[16:30:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2233ms behind, skipping 44 tick(s)
-[16:31:23] [Server thread/INFO]: Saving and pausing game...
-[16:31:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:31:24] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:31:24] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:31:35] [Server thread/INFO]: [Player681: Set the time to 13000]
-[16:31:35] [Client thread/INFO]: [CHAT] Set the time to 13000
-[16:31:55] [Server thread/INFO]: [Player681: Block placed]
-[16:31:55] [Client thread/INFO]: [CHAT] Block placed
-[16:34:16] [Server thread/INFO]: Saving and pausing game...
-[16:34:16] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:34:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:34:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:34:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2355ms behind, skipping 47 tick(s)
-[16:39:47] [Server thread/INFO]: Saving and pausing game...
-[16:39:52] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:39:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:39:53] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:39:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5655ms behind, skipping 113 tick(s)
-[16:41:31] [Server thread/INFO]: [Player681: Block placed]
-[16:41:31] [Client thread/INFO]: [CHAT] Block placed
-[16:41:37] [Server thread/INFO]: [Player681: Block placed]
-[16:41:37] [Client thread/INFO]: [CHAT] Block placed
-[16:41:38] [Server thread/INFO]: [Player681: Block placed]
-[16:41:38] [Client thread/INFO]: [CHAT] Block placed
-[16:41:40] [Server thread/INFO]: [Player681: Block placed]
-[16:41:40] [Client thread/INFO]: [CHAT] Block placed
-[16:43:04] [Server thread/INFO]: Saving and pausing game...
-[16:43:04] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:43:04] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:43:04] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:43:34] [Server thread/INFO]: Saving and pausing game...
-[16:43:34] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:43:34] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:43:34] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:43:56] [Server thread/INFO]: Saving and pausing game...
-[16:43:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:43:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:43:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:48:04] [Server thread/INFO]: [Player681: Block placed]
-[16:48:04] [Client thread/INFO]: [CHAT] Block placed
-[16:48:20] [Server thread/INFO]: Saving and pausing game...
-[16:48:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:48:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:48:20] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:49:21] [Server thread/INFO]: Player681 fell out of the world
-[16:49:21] [Client thread/INFO]: [CHAT] Player681 fell out of the world
-[16:49:21] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[16:49:29] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5501ms behind, skipping 110 tick(s)
-[16:49:38] [Server thread/INFO]: Saving and pausing game...
-[16:49:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:49:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:49:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:49:43] [Client thread/INFO]: [CHAT] You are now playing creative+
-[16:49:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2472ms behind, skipping 49 tick(s)
-[16:50:16] [Server thread/INFO]: Saving and pausing game...
-[16:50:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:50:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:50:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:50:18] [Server thread/INFO]: Saving and pausing game...
-[16:50:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:50:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:50:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:50:25] [Server thread/INFO]: Saving and pausing game...
-[16:50:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:50:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:50:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:50:36] [Server thread/INFO]: [Player681: Set the time to 13000]
-[16:50:36] [Client thread/INFO]: [CHAT] Set the time to 13000
-[16:50:39] [Server thread/INFO]: Saving and pausing game...
-[16:50:39] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:50:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:50:40] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:50:45] [Server thread/INFO]: Saving and pausing game...
-[16:50:45] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:50:45] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:50:45] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:50:54] [Server thread/INFO]: [Player681: Block placed]
-[16:50:54] [Client thread/INFO]: [CHAT] Block placed
-[16:51:59] [Server thread/INFO]: [Player681: Given [TNT] * 1 to Player681]
-[16:51:59] [Client thread/INFO]: [CHAT] Given [TNT] * 1 to Player681
-[16:52:06] [Server thread/INFO]: [Player681: Given [Flint and Steel] * 1 to Player681]
-[16:52:06] [Client thread/INFO]: [CHAT] Given [Flint and Steel] * 1 to Player681
-[16:52:17] [Server thread/INFO]: Saving and pausing game...
-[16:52:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:52:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:52:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:58:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2259ms behind, skipping 45 tick(s)
-[16:59:01] [Server thread/INFO]: Saving and pausing game...
-[16:59:01] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:59:01] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:59:01] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[16:59:02] [Server thread/INFO]: Stopping server
-[16:59:02] [Server thread/INFO]: Saving players
-[16:59:02] [Server thread/INFO]: Saving worlds
-[16:59:02] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[16:59:02] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[16:59:02] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[17:06:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:06:43] [Server thread/INFO]: Generating keypair
-[17:06:46] [Server thread/INFO]: Preparing start region for level 0
-[17:06:47] [Server thread/INFO]: Preparing spawn area: 0%
-[17:06:48] [Server thread/INFO]: Preparing spawn area: 2%
-[17:06:49] [Server thread/INFO]: Preparing spawn area: 9%
-[17:06:50] [Server thread/INFO]: Preparing spawn area: 22%
-[17:06:51] [Server thread/INFO]: Preparing spawn area: 38%
-[17:06:52] [Server thread/INFO]: Preparing spawn area: 47%
-[17:06:53] [Server thread/INFO]: Preparing spawn area: 55%
-[17:06:54] [Server thread/INFO]: Preparing spawn area: 64%
-[17:06:55] [Server thread/INFO]: Preparing spawn area: 79%
-[17:06:56] [Server thread/INFO]: Preparing spawn area: 92%
-[17:06:57] [Server thread/INFO]: Changing view distance to 4, from 10
-[17:06:58] [Server thread/INFO]: Player681[local:E:7b3a5697] logged in with entity id 2467214 at (-238.09567179459975, 76.86435596545438, 102.19151885479278)
-[17:06:58] [Server thread/INFO]: Player681 joined the game
-[17:07:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3530ms behind, skipping 70 tick(s)
-[17:07:24] [Server thread/INFO]: Saving and pausing game...
-[17:07:24] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[17:07:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[17:07:25] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[17:07:49] [Server thread/INFO]: Saving and pausing game...
-[17:07:49] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[17:07:49] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[17:07:49] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[17:10:56] [Server thread/INFO]: Stopping server
-[17:10:56] [Server thread/INFO]: Saving players
-[17:10:57] [Server thread/INFO]: Saving worlds
-[17:10:57] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
-[17:10:57] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
-[17:10:57] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
-[17:11:00] [Client thread/INFO]: Stopping!
+[19:11:40] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[19:11:42] [Sound Library Loader/INFO]: Sound engine started
+[19:14:40] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:14:40] [Server thread/INFO]: Generating keypair
+[19:14:48] [Server thread/INFO]: Preparing start region for level 0
+[19:14:49] [Server thread/INFO]: Preparing spawn area: 0%
+[19:14:51] [Server thread/INFO]: Preparing spawn area: 17%
+[19:14:52] [Server thread/INFO]: Preparing spawn area: 47%
+[19:14:53] [Server thread/INFO]: Preparing spawn area: 57%
+[19:14:54] [Server thread/INFO]: Preparing spawn area: 72%
+[19:14:55] [Server thread/INFO]: Preparing spawn area: 88%
+[19:14:56] [Server thread/INFO]: Preparing spawn area: 96%
+[19:14:57] [Server thread/INFO]: Changing view distance to 4, from 10
+[19:18:10] [Server thread/INFO]: Stopping server
+[19:18:10] [Server thread/INFO]: Saving players
+[19:18:10] [Server thread/INFO]: Saving worlds
+[19:18:10] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:18:10] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:18:10] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:18:14] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:18:14] [Server thread/INFO]: Generating keypair
+[19:18:16] [Server thread/INFO]: Preparing start region for level 0
+[19:18:17] [Server thread/INFO]: Preparing spawn area: 14%
+[19:18:19] [Server thread/INFO]: Preparing spawn area: 45%
+[19:18:20] [Server thread/INFO]: Preparing spawn area: 79%
+[19:18:21] [Server thread/INFO]: Changing view distance to 4, from 10
+[19:18:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4158ms behind, skipping 83 tick(s)
+[19:18:27] [Server thread/INFO]: Player998[local:E:1dd539d9] logged in with entity id 9 at (-158.5, 56.0, 132.5)
+[19:18:28] [Server thread/INFO]: Player998 joined the game
+[19:18:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11292ms behind, skipping 225 tick(s)
+[19:19:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2101ms behind, skipping 42 tick(s)
+[19:20:25] [Server thread/INFO]: Player998 has just earned the achievement [Taking Inventory]
+[19:20:25] [Client thread/INFO]: [CHAT] Player998 has just earned the achievement [Taking Inventory]
+[19:20:46] [Server thread/INFO]: Saving and pausing game...
+[19:20:46] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:20:46] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:20:46] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:20:48] [Server thread/INFO]: Saving and pausing game...
+[19:20:48] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:20:48] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:20:48] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:21:05] [Server thread/INFO]: Player998 has just earned the achievement [Experience the Torcher!]
+[19:21:06] [Client thread/INFO]: [CHAT] Player998 has just earned the achievement [Experience the Torcher!]
+[19:21:11] [Server thread/INFO]: Saving and pausing game...
+[19:21:11] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:21:11] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:21:11] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:21:17] [Server thread/INFO]: Saving and pausing game...
+[19:21:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:21:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:21:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:21:19] [Server thread/INFO]: Saving and pausing game...
+[19:21:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:21:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:21:19] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:21:26] [Server thread/INFO]: Saving and pausing game...
+[19:21:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:21:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:21:26] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:21:27] [Server thread/INFO]: Stopping server
+[19:21:27] [Server thread/INFO]: Saving players
+[19:21:27] [Server thread/INFO]: Saving worlds
+[19:21:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Overworld
+[19:21:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/Nether
+[19:21:27] [Server thread/INFO]: Saving chunks for level 'Iron Superflat'/The End
+[19:30:25] [Client thread/INFO]: Stopping!
