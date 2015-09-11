@@ -33,6 +33,7 @@ public class ModBlocks {
     public static final Block pearcelEndStone = new BlockPearcelEndStone().setBlockName("pearcelEndStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelEndStone");
     public static final Block pearcelPortal = new BlockPearcelPortal();
     public static final Block torcher = new BlockTorcher().setBlockName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":torcher");
+    public static final Block summoner = new BlockSummoner().setBlockName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":summoner");
 
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -53,6 +54,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
         GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
         GameRegistry.registerBlock(torcher, "torcher");
+        GameRegistry.registerBlock(summoner, "summoner");
         //GameRegistry.registerBlock(pearcelTNT, "pearcelTNT");
         GameRegistry.registerBlock(barrier, "barrier");
         GameRegistry.registerBlock(pearcelMelonBlock, "pearcelMelonBlock");

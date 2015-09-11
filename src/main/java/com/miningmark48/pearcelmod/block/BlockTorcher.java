@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.block;
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -22,8 +23,9 @@ public class BlockTorcher extends BlockPearcelMod{
 
             Random rand = new Random();
             int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
+
             if (world.getBlock(x, y-1, z).getMaterial().isSolid()){
-                world.setBlock(x, y, z, ModBlocks.pearcelTorch);
+                world.setBlock(x, y, z, Blocks.torch);
             }
             for (int i = 1; i <= rangeRand * ConfigurationHandler.torcherFrequency; i++){
                 rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
@@ -65,13 +67,15 @@ public class BlockTorcher extends BlockPearcelMod{
                     torchZ = z + rangeRand;
                 }
                 if (world.getBlock(torchX, torchY, torchZ) == Blocks.air || world.getBlock(torchX, torchY, torchZ) == Blocks.tallgrass && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                    world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
+                    world.setBlock(torchX, torchY, torchZ, Blocks.torch);
+                    if (torchX % 2 == 0 && torchZ % 2 == 1){
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, torchX, torchY, torchZ));
+                    }
                 }
-
             }
-
             player.playSound("random.explode", 1.0F, 0.5F);
             world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
+            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
 
             return true;
 
