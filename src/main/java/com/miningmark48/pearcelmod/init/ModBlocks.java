@@ -34,6 +34,10 @@ public class ModBlocks {
     public static final Block pearcelPortal = new BlockPearcelPortal();
     public static final Block torcher = new BlockTorcher().setBlockName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":torcher");
     public static final Block summoner = new BlockSummoner().setBlockName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":summoner");
+    public static final Block dragonInfusedPearcel = new BlockDragonInfusedPearcel().setBlockName("dragonInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":dragonInfusedPearcel");
+    public static final Block enderInfusedPearcel = new BlockPearcelMod(Material.rock).setBlockName("enderInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":enderInfusedPearcel");
+    public static final Block corruptedPearcelBlock = new BlockCorruptedPearcelBlock().setBlockName("corruptedPearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":corruptedPearcelBlock");
+    public static final Block netherInfusedPearcel = new BlockPearcelMod(Material.rock).setBlockName("netherInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherInfusedPearcel");
 
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -55,9 +59,13 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
         GameRegistry.registerBlock(torcher, "torcher");
         GameRegistry.registerBlock(summoner, "summoner");
+        GameRegistry.registerBlock(dragonInfusedPearcel, "dragonInfusedPearcel");
+        GameRegistry.registerBlock(enderInfusedPearcel, "enderInfusedPearcel");
         //GameRegistry.registerBlock(pearcelTNT, "pearcelTNT");
         GameRegistry.registerBlock(barrier, "barrier");
         GameRegistry.registerBlock(pearcelMelonBlock, "pearcelMelonBlock");
+        GameRegistry.registerBlock(corruptedPearcelBlock, "corruptedPearcelBlock");
+        GameRegistry.registerBlock(netherInfusedPearcel, "netherInfusedPearcel");
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");

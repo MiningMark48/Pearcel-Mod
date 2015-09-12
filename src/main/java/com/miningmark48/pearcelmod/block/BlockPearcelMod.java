@@ -27,29 +27,7 @@ public class BlockPearcelMod extends Block{
 	
 	}
 	
-	@Override
-    public String getUnlocalizedName(){
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister){
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName){
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
-
-	public void addInformation(ItemStack par1ItemStack,
-			EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-		// TODO Auto-generated method stub
-		
-	}
-
 	public boolean isOpaque() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 	
