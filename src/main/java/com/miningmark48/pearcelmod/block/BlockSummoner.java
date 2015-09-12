@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
@@ -26,7 +27,7 @@ public class BlockSummoner extends BlockPearcelMod{
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
 
-        int chargeXP = 10;
+        int chargeXP = ConfigurationHandler.summonerXP;
         int playerXP = player.experienceLevel;
 
         EntityPearcelMob pearcelmob = new EntityPearcelMob(world);
@@ -48,7 +49,7 @@ public class BlockSummoner extends BlockPearcelMod{
         EntityBlaze blaze = new EntityBlaze(world);
         blaze.setPosition(x, y+2, z);
         EntityGhast ghast = new EntityGhast(world);
-        ghast.setPosition(x, y+2, z);
+        ghast.setPosition(x, y+5, z);
         EntitySkeleton skeleton = new EntitySkeleton(world);
         skeleton.setPosition(x, y+2, z);
         EntityCreeper creeper = new EntityCreeper(world);
