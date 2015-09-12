@@ -58,8 +58,13 @@ public class BlockSummoner extends BlockPearcelMod{
         if(!player.isSneaking() && player.getHeldItem().isItemEqual(new ItemStack(ModItems.sap))){
             if(playerXP >= chargeXP){
                 if (!world.isRemote) {
+                    //Missing Block
+                    if (world.getBlock(x, y+1, z) == Blocks.air){
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Missing Summoner Block."));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                    }
                     //Pearcel Mob
-                    if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelBlock) {
+                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelBlock) {
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(pearcelmob);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Mob summoned."));
@@ -83,6 +88,7 @@ public class BlockSummoner extends BlockPearcelMod{
                         world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(dragon);
                         world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                        player.experienceLevel = playerXP - chargeXP;
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender Dragon summoned."));
                     }
                     //Wither
@@ -92,6 +98,7 @@ public class BlockSummoner extends BlockPearcelMod{
                         world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(wither);
                         world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                        player.experienceLevel = playerXP - chargeXP;
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Wither summoned."));
                     }
                     //Sheep
@@ -138,7 +145,9 @@ public class BlockSummoner extends BlockPearcelMod{
                     }
                     else{
                         if (!world.isRemote){
-                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Incorrect Summoner Block"));
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Incorrect Summoner Block."));
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "The block was corrupted."));
                             world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
                         }
                     }
