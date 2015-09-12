@@ -75,7 +75,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(Blocks.double_stone_slab), "x", "x", 'x', new ItemStack(Blocks.stone_slab));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.torcher, 3), "xyx", "yzy", "xyx", 'x', new ItemStack(ModBlocks.pearcelTorch), 'y', new ItemStack(Blocks.tnt), 'z', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.summoner), "xyx", "yzy", "aaa", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(Items.emerald), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Items.gold_ingot));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.enderInfusedPearcel), "xyx", "yzy", "xyx", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.enderInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.end_stone));
         //Compressed Blocks/Items
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCookie), new ItemStack(Items.egg), new ItemStack(ModItems.pearcelFlour), new ItemStack(Items.sugar), new ItemStack(Items.milk_bucket));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.pearcelCookie2), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCookie));
