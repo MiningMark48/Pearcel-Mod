@@ -88,7 +88,6 @@ public class BlockSummoner extends BlockPearcelMod{
                         world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(dragon);
                         world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-                        player.experienceLevel = playerXP - chargeXP;
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender Dragon summoned."));
                     }
                     //Wither
@@ -98,7 +97,6 @@ public class BlockSummoner extends BlockPearcelMod{
                         world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(wither);
                         world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-                        player.experienceLevel = playerXP - chargeXP;
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Wither summoned."));
                     }
                     //Sheep
@@ -133,7 +131,7 @@ public class BlockSummoner extends BlockPearcelMod{
                     }
                     //Skeleton
                     else if(world.getBlock(x, y+1, z) == Blocks.planks){
-                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(skeleton);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Skeleton summoned."));
                     }
