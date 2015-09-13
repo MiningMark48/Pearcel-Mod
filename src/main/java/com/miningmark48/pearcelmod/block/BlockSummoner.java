@@ -10,6 +10,7 @@ import com.miningmark48.pearcelmod.mob.EntityPearson;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.item.EntityEnderCrystal;
 import net.minecraft.entity.monster.*;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
@@ -54,6 +55,8 @@ public class BlockSummoner extends BlockPearcelMod{
         skeleton.setPosition(x, y+2, z);
         EntityCreeper creeper = new EntityCreeper(world);
         creeper.setPosition(x, y+2, z);
+        EntityEnderCrystal endcrystal = new EntityEnderCrystal(world);
+        endcrystal.setPosition(x, y+2, z);
 
         if(!player.isSneaking() && player.getHeldItem().isItemEqual(new ItemStack(ModItems.sap))){
             if(playerXP >= chargeXP || player.capabilities.isCreativeMode){
@@ -140,6 +143,12 @@ public class BlockSummoner extends BlockPearcelMod{
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(creeper);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Creeper summoned."));
+                    }
+                    //Ender Crystal
+                    else if(world.getBlock(x, y+1, z) == ModBlocks.pearcelEndStone){
+                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                        world.spawnEntityInWorld(endcrystal);
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender crystal summoned."));
                     }
                     else{
                         if (!world.isRemote){
