@@ -36,8 +36,8 @@
       <file leaf-file-name="BlockSummoner.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockSummoner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2184874" vertical-offset="720" max-vertical-offset="2873">
-              <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.4" vertical-offset="2380" max-vertical-offset="3026">
+              <caret line="156" column="83" selection-start-line="156" selection-start-column="83" selection-end-line="156" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+              <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
       <file leaf-file-name="Recipes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2499">
-              <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2499">
+              <caret line="103" column="61" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -88,8 +88,8 @@
       <file leaf-file-name="ModBlocks.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="499" max-vertical-offset="1445">
-              <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1445">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -1086,14 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockDragonInfusedPearcel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
@@ -1120,26 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="499" max-vertical-offset="1445">
-          <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/crafting/IVETCraftingManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="4352">
           <caret line="91" column="109" selection-start-line="91" selection-start-column="109" selection-end-line="91" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="2499">
-          <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1192,10 +1168,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2499">
+          <caret line="103" column="61" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1445">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockSummoner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2184874" vertical-offset="720" max-vertical-offset="2873">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.4" vertical-offset="2380" max-vertical-offset="3026">
+          <caret line="156" column="83" selection-start-line="156" selection-start-column="83" selection-end-line="156" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
