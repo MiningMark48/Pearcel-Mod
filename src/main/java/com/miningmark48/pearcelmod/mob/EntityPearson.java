@@ -9,6 +9,7 @@ import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeModContainer;
 
 public class EntityPearson extends EntityAnimal {
 
@@ -28,8 +29,8 @@ public class EntityPearson extends EntityAnimal {
 
     protected void applyEntityAttributes(){
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0F);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(1.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(50.0F);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.25D);
     }
 
     public boolean isAIEnabled(){
@@ -37,7 +38,7 @@ public class EntityPearson extends EntityAnimal {
     }
 
     protected Item getDropItem(){
-        return ModItems.pearcelCookie;
+        return ModItems.pearcelCookie4;
     }
 
     @Override
@@ -49,4 +50,5 @@ public class EntityPearson extends EntityAnimal {
     {
         this.playSound("mob.cow.step", 0.15F, 1.0F);
     }
+
 }

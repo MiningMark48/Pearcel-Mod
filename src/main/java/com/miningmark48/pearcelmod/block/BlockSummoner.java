@@ -56,7 +56,7 @@ public class BlockSummoner extends BlockPearcelMod{
         creeper.setPosition(x, y+2, z);
 
         if(!player.isSneaking() && player.getHeldItem().isItemEqual(new ItemStack(ModItems.sap))){
-            if(playerXP >= chargeXP){
+            if(playerXP >= chargeXP || player.capabilities.isCreativeMode){
                 if (!world.isRemote) {
                     //Missing Block
                     if (world.getBlock(x, y+1, z) == Blocks.air){
@@ -155,7 +155,7 @@ public class BlockSummoner extends BlockPearcelMod{
                 player.experienceLevel = playerXP - chargeXP;
             }
             }else{
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "You need " + chargeXP + " levels of experience to perform the summon."));
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "You need " + EnumChatFormatting.AQUA + chargeXP + EnumChatFormatting.DARK_RED + " levels of experience to perform the summon."));
             }
 
 
