@@ -91,7 +91,7 @@ public class BlockSummoner extends BlockPearcelMod{
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender Dragon summoned."));
                     }
                     //Wither
-                    else if (world.getBlock(x, y+1, z) == Blocks.soul_sand && world.getBlock(x+2, y, z+2) == Blocks.soul_sand && world.getBlock(x-2, y, z-2) == Blocks.soul_sand && world.getBlock(x+2, y, z-2) == Blocks.soul_sand && world.getBlock(x-2, y, z+2) == Blocks.soul_sand){
+                    else if (world.getBlock(x, y+1, z) == ModBlocks.witherInfusedPearcel && world.getBlock(x+2, y, z+2) == ModBlocks.netherInfusedPearcel && world.getBlock(x-2, y, z-2) == ModBlocks.netherInfusedPearcel && world.getBlock(x+2, y, z-2) == ModBlocks.netherInfusedPearcel && world.getBlock(x-2, y, z+2) == ModBlocks.netherInfusedPearcel){
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
                         world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
