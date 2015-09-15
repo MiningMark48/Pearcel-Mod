@@ -18,6 +18,7 @@ public class ConfigurationHandler {
     public static int torcherRange;
     public static int torcherFrequency;
     public static int summonerXP;
+    public static int summonerRange;
 
     public static void init(File configFile){
 
@@ -50,7 +51,8 @@ public class ConfigurationHandler {
         useMEMatter = configuration.getBoolean("ME^Matter Recipes", Configuration.CATEGORY_GENERAL, true, "Should ME^Matter recipes be added?");
         torcherRange = configuration.getInt("Torcher Range", Configuration.CATEGORY_GENERAL, 25, 1, 500, "What is the range of torches that can be placed by the torcher block?");
         torcherFrequency = configuration.getInt("Torcher Frequency", Configuration.CATEGORY_GENERAL, 2, 50, 2, "What is the frequency of torches that can be placed by the torcher block?");
-        summonerXP = configuration.getInt("Summoner XP", Configuration.CATEGORY_GENERAL, 10, 1, 1000, "How much experience does it cost to summon a mob with the summoner?");
+        summonerXP = configuration.getInt("Summoner XP use", Configuration.CATEGORY_GENERAL, 10, 1, 1000, "How much experience does it cost to summon a mob with the summoner?");
+        summonerRange = configuration.getInt("Range for Summoner", Configuration.CATEGORY_GENERAL, 3, 1, 25, "What is the range in which something may be summoned?");
 
         if (configuration.hasChanged()){
 

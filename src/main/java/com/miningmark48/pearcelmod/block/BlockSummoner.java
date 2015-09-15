@@ -12,6 +12,7 @@ import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityEnderCrystal;
 import net.minecraft.entity.monster.*;
+import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -19,6 +20,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class BlockSummoner extends BlockPearcelMod{
 
@@ -31,32 +34,41 @@ public class BlockSummoner extends BlockPearcelMod{
         int chargeXP = ConfigurationHandler.summonerXP;
         int playerXP = player.experienceLevel;
 
+        Random rand = new Random();
+        int spawnRand = rand.nextInt(ConfigurationHandler.summonerRange) + 1;
+        int negRand = rand.nextInt(2) + 1;
+        if (negRand == 1){
+            spawnRand = -spawnRand;
+        }
+
         EntityPearcelMob pearcelmob = new EntityPearcelMob(world);
-        pearcelmob.setPosition(x, y+2, z);
+        pearcelmob.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityPearson pearson = new EntityPearson(world);
-        pearson.setPosition(x, y+2, z);
+        pearson.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityPearcelSquid pearcelsquid = new EntityPearcelSquid(world);
-        pearcelsquid.setPosition(x, y+2, z);
+        pearcelsquid.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityDragon dragon = new EntityDragon(world);
-        dragon.setPosition(x, y+10, z);
+        dragon.setPosition(x+spawnRand, y+10, z+spawnRand);
         EntityWither wither = new EntityWither(world);
-        wither.setPosition(x, y+5, z);
+        wither.setPosition(x+spawnRand, y+5, z+spawnRand);
         EntitySheep sheep = new EntitySheep(world);
-        sheep.setPosition(x, y+2, z);
+        sheep.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityPearcelCow pearcelcow = new EntityPearcelCow(world);
-        pearcelcow.setPosition(x, y+2, z);
+        pearcelcow.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityEnderman enderman = new EntityEnderman(world);
-        enderman.setPosition(x, y+2, z);
+        enderman.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityBlaze blaze = new EntityBlaze(world);
-        blaze.setPosition(x, y+2, z);
+        blaze.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityGhast ghast = new EntityGhast(world);
-        ghast.setPosition(x, y+5, z);
+        ghast.setPosition(x+spawnRand, y+5, z+spawnRand);
         EntitySkeleton skeleton = new EntitySkeleton(world);
-        skeleton.setPosition(x, y+2, z);
+        skeleton.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityCreeper creeper = new EntityCreeper(world);
-        creeper.setPosition(x, y+2, z);
+        creeper.setPosition(x+spawnRand, y+2, z+spawnRand);
         EntityEnderCrystal endcrystal = new EntityEnderCrystal(world);
-        endcrystal.setPosition(x, y+2, z);
+        endcrystal.setPosition(x+spawnRand, y+2, z+spawnRand);
+        EntityHorse horse = new EntityHorse(world);
+        horse.setPosition(x+spawnRand, y+2, z+spawnRand);
 
         if(!player.isSneaking() && player.getHeldItem().isItemEqual(new ItemStack(ModItems.sap))){
             if(playerXP >= chargeXP || player.capabilities.isCreativeMode){
@@ -150,6 +162,12 @@ public class BlockSummoner extends BlockPearcelMod{
                         world.spawnEntityInWorld(endcrystal);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender crystal summoned."));
                     }
+                    //Horse
+                    else if(world.getBlock(x, y+1, z) == Blocks.hay_block){
+                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                        world.spawnEntityInWorld(horse);
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Horse summoned."));
+                    }
                     else{
                         if (!world.isRemote){
                             player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Incorrect Summoner Block."));
@@ -162,6 +180,11 @@ public class BlockSummoner extends BlockPearcelMod{
                 player.playSound("random.explode", 1.0F, 0.5F);
                 world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
                 player.experienceLevel = playerXP - chargeXP;
+                if (!player.capabilities.isCreativeMode){
+                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Your player's " + EnumChatFormatting.AQUA + chargeXP + EnumChatFormatting.GOLD + " levels infuse into the summoning."));
+                }else{
+                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Your creative mode powers infuse into the summoning."));
+                }
             }
             }else{
                 player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "You need " + EnumChatFormatting.AQUA + chargeXP + EnumChatFormatting.DARK_RED + " levels of experience to perform the summon."));
