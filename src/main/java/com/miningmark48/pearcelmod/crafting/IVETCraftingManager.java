@@ -91,7 +91,6 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(ModBlocks.dragonInfusedPearcel), ModBlocks.enderInfusedPearcel);
         this.addShapelessRecipe(new ItemStack(ModBlocks.witherInfusedPearcel), ModBlocks.netherInfusedPearcel);
 
-
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
     }
 
