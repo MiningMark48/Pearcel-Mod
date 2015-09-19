@@ -67,7 +67,7 @@ public class BlockSummoner extends BlockPearcelMod{
         EntityHorse horse = new EntityHorse(world);
         horse.setPosition(x+spawnRand, y+2, z+spawnRand);
 
-        if(!player.isSneaking() && player.getHeldItem().isItemEqual(new ItemStack(ModItems.sap))){
+        if(!player.isSneaking() && player.getHeldItem().getItem() == ModItems.sap){
             if (!world.isRemote) {
                 //Missing Block
                 if (world.getBlock(x, y+1, z) == Blocks.air){
@@ -176,12 +176,11 @@ public class BlockSummoner extends BlockPearcelMod{
                     }
                 }
             }
-            player.playSound("random.explode", 1.0F, 0.5F);
-            world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
-            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-            player.getHeldItem().damageItem(1, player);
+                player.playSound("random.explode", 1.0F, 0.5F);
+                world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
+                world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                player.getHeldItem().damageItem(1, player);
             }
-
         return true;
     }
 
