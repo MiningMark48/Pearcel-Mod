@@ -178,7 +178,6 @@ public class BlockSummoner extends BlockPearcelMod{
             }
                 player.playSound("random.explode", 1.0F, 0.5F);
                 world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
                 player.getHeldItem().damageItem(1, player);
             }
         return true;
