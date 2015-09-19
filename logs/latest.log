@@ -1,8 +1,8 @@
-[18:14:13] [main/INFO]: Setting user: Player207
-[18:14:42] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:16:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[18:16:42] [Sound Library Loader/INFO]: Sound engine started
-[18:17:28] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[01:16:14] [main/INFO]: Setting user: Player753
+[01:16:38] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:18:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[01:18:48] [Sound Library Loader/INFO]: Sound engine started
+[01:19:06] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,11 +22,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[18:17:34] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[18:17:37] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[18:17:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[18:17:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[18:17:44] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[01:19:18] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[01:19:21] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[01:19:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[01:19:27] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[01:19:28] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -49,99 +49,88 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[18:17:48] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[18:17:50] [Sound Library Loader/INFO]: Sound engine started
-[18:21:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:21:52] [Server thread/INFO]: Generating keypair
-[18:21:59] [Server thread/INFO]: Preparing start region for level 0
-[18:22:00] [Server thread/INFO]: Preparing spawn area: 6%
-[18:22:01] [Server thread/INFO]: Preparing spawn area: 45%
-[18:22:02] [Server thread/INFO]: Preparing spawn area: 80%
-[18:22:04] [Server thread/INFO]: Changing view distance to 4, from 10
-[18:22:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2211ms behind, skipping 44 tick(s)
-[18:55:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 23221ms behind, skipping 464 tick(s)
-[18:57:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11111ms behind, skipping 222 tick(s)
-[18:57:58] [Server thread/INFO]: Stopping server
-[18:58:05] [Server thread/INFO]: Saving players
-[18:58:05] [Server thread/INFO]: Saving worlds
-[18:58:05] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
-[18:58:05] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
-[18:58:05] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
-[19:00:20] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[19:00:20] [Server thread/INFO]: Generating keypair
-[19:00:27] [Server thread/INFO]: Preparing start region for level 0
-[19:00:28] [Server thread/INFO]: Preparing spawn area: 2%
-[19:00:29] [Server thread/INFO]: Preparing spawn area: 6%
-[19:00:31] [Server thread/INFO]: Preparing spawn area: 11%
-[19:00:32] [Server thread/INFO]: Preparing spawn area: 15%
-[19:00:33] [Server thread/INFO]: Preparing spawn area: 20%
-[19:00:34] [Server thread/INFO]: Preparing spawn area: 26%
-[19:00:35] [Server thread/INFO]: Preparing spawn area: 31%
-[19:00:36] [Server thread/INFO]: Preparing spawn area: 39%
-[19:00:37] [Server thread/INFO]: Preparing spawn area: 41%
-[19:00:38] [Server thread/INFO]: Preparing spawn area: 44%
-[19:00:39] [Server thread/INFO]: Preparing spawn area: 48%
-[19:00:40] [Server thread/INFO]: Preparing spawn area: 49%
-[19:00:41] [Server thread/INFO]: Preparing spawn area: 51%
-[19:00:42] [Server thread/INFO]: Preparing spawn area: 52%
-[19:00:43] [Server thread/INFO]: Preparing spawn area: 53%
-[19:00:44] [Server thread/INFO]: Preparing spawn area: 54%
-[19:00:45] [Server thread/INFO]: Preparing spawn area: 55%
-[19:00:47] [Server thread/INFO]: Preparing spawn area: 57%
-[19:00:48] [Server thread/INFO]: Preparing spawn area: 59%
-[19:00:49] [Server thread/INFO]: Preparing spawn area: 61%
-[19:00:50] [Server thread/INFO]: Preparing spawn area: 62%
-[19:00:51] [Server thread/INFO]: Preparing spawn area: 63%
-[19:00:52] [Server thread/INFO]: Preparing spawn area: 64%
-[19:00:53] [Server thread/INFO]: Preparing spawn area: 65%
-[19:00:54] [Server thread/INFO]: Preparing spawn area: 67%
-[19:00:56] [Server thread/INFO]: Preparing spawn area: 69%
-[19:00:57] [Server thread/INFO]: Preparing spawn area: 71%
-[19:00:58] [Server thread/INFO]: Preparing spawn area: 72%
-[19:00:59] [Server thread/INFO]: Preparing spawn area: 73%
-[19:01:00] [Server thread/INFO]: Preparing spawn area: 74%
-[19:01:03] [Server thread/INFO]: Preparing spawn area: 74%
-[19:01:04] [Server thread/INFO]: Preparing spawn area: 85%
-[19:01:06] [Server thread/INFO]: Changing view distance to 4, from 10
-[19:01:12] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5776ms behind, skipping 115 tick(s)
-[19:01:22] [Server thread/INFO]: Player207[local:E:baea4e39] logged in with entity id 105 at (711.5, 56.0, 774.5)
-[19:01:23] [Server thread/INFO]: Player207 joined the game
-[19:01:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3661ms behind, skipping 73 tick(s)
-[19:02:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 36673ms behind, skipping 733 tick(s)
-[19:05:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 159616ms behind, skipping 3192 tick(s)
-[19:05:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2330ms behind, skipping 46 tick(s)
-[19:07:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 26373ms behind, skipping 527 tick(s)
-[19:07:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2102ms behind, skipping 42 tick(s)
-[19:08:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9352ms behind, skipping 187 tick(s)
-[19:10:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 68654ms behind, skipping 1373 tick(s)
-[19:10:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2067ms behind, skipping 41 tick(s)
-[19:12:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 42742ms behind, skipping 854 tick(s)
-[19:12:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2515ms behind, skipping 50 tick(s)
-[19:13:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 38483ms behind, skipping 769 tick(s)
-[19:13:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2515ms behind, skipping 50 tick(s)
-[19:14:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2473ms behind, skipping 49 tick(s)
-[19:14:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4005ms behind, skipping 80 tick(s)
-[19:14:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4375ms behind, skipping 87 tick(s)
-[19:19:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2978ms behind, skipping 59 tick(s)
-[19:20:15] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2217ms behind, skipping 44 tick(s)
-[19:20:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2750ms behind, skipping 55 tick(s)
-[19:21:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4998ms behind, skipping 99 tick(s)
-[19:27:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2188ms behind, skipping 43 tick(s)
-[19:28:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2919ms behind, skipping 58 tick(s)
-[19:30:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6911ms behind, skipping 138 tick(s)
-[19:37:38] [Server thread/INFO]: Player207 has just earned the achievement [Taking Inventory]
-[19:37:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2495ms behind, skipping 49 tick(s)
-[19:37:44] [Client thread/INFO]: [CHAT] Player207 has just earned the achievement [Taking Inventory]
-[19:41:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2059ms behind, skipping 41 tick(s)
-[19:49:17] [Server thread/INFO]: Saving and pausing game...
-[19:49:17] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
-[19:49:18] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
-[19:49:21] [Server thread/INFO]: Saving and pausing game...
-[19:49:21] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
-[19:49:22] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
-[19:49:22] [Server thread/INFO]: Stopping server
-[19:49:22] [Server thread/INFO]: Saving players
-[19:49:23] [Server thread/INFO]: Saving worlds
-[19:49:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
-[19:49:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
-[19:49:59] [Client thread/INFO]: Stopping!
+[01:19:33] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[01:19:36] [Sound Library Loader/INFO]: Sound engine started
+[01:20:40] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[01:20:40] [Server thread/INFO]: Generating keypair
+[01:20:46] [Server thread/INFO]: Preparing start region for level 0
+[01:20:48] [Server thread/INFO]: Preparing spawn area: 6%
+[01:20:49] [Server thread/INFO]: Preparing spawn area: 15%
+[01:20:51] [Server thread/INFO]: Preparing spawn area: 22%
+[01:20:52] [Server thread/INFO]: Preparing spawn area: 51%
+[01:20:53] [Server thread/INFO]: Preparing spawn area: 78%
+[01:20:55] [Server thread/INFO]: Changing view distance to 4, from 10
+[01:21:30] [Server thread/INFO]: Stopping server
+[01:21:30] [Server thread/INFO]: Saving players
+[01:21:30] [Server thread/INFO]: Saving worlds
+[01:21:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[01:21:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[01:21:30] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[01:21:33] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[01:21:33] [Server thread/INFO]: Generating keypair
+[01:21:36] [Server thread/INFO]: Preparing start region for level 0
+[01:21:37] [Server thread/INFO]: Preparing spawn area: 27%
+[01:21:38] [Server thread/INFO]: Preparing spawn area: 65%
+[01:21:39] [Server thread/INFO]: Changing view distance to 4, from 10
+[01:21:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2561ms behind, skipping 51 tick(s)
+[01:21:43] [Server thread/INFO]: Player753[local:E:3d754c96] logged in with entity id 112 at (704.5, 56.0, 772.5)
+[01:21:43] [Server thread/INFO]: Player753 joined the game
+[01:22:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7557ms behind, skipping 151 tick(s)
+[01:22:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2104ms behind, skipping 42 tick(s)
+[01:22:42] [Client thread/INFO]: Warning: Clientside chunk ticking took 159 ms
+[01:22:59] [Server thread/INFO]: Player753 has just earned the achievement [Taking Inventory]
+[01:22:59] [Client thread/INFO]: [CHAT] Player753 has just earned the achievement [Taking Inventory]
+[01:23:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 40066ms behind, skipping 801 tick(s)
+[01:24:42] [Server thread/INFO]: Saving and pausing game...
+[01:24:42] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[01:24:42] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[01:24:42] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[01:24:48] [Client thread/INFO]: [CHAT] §6Blaze summoned.
+[01:25:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2221ms behind, skipping 44 tick(s)
+[01:25:26] [Client thread/INFO]: [CHAT] §6Ender crystal summoned.
+[01:25:53] [Server thread/INFO]: Saving and pausing game...
+[01:25:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[01:25:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[01:25:54] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[01:26:00] [Server thread/INFO]: [Player753: Set the time to 1000]
+[01:26:00] [Client thread/INFO]: [CHAT] Set the time to 1000
+[01:26:12] [Server thread/INFO]: [Player753: Set own game mode to Survival Mode]
+[01:26:12] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[01:26:15] [Client thread/INFO]: [CHAT] §6Pearcel Mob summoned.
+[01:26:30] [Server thread/INFO]: [Player753: Given [Potion of Fire Resistance] * 1 to Player753]
+[01:26:30] [Client thread/INFO]: [CHAT] Given [Potion of Fire Resistance] * 1 to Player753
+[01:26:37] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:37] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:41] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:41] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:41] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:41] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:42] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:42] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:42] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:42] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:43] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:43] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:44] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:44] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:44] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:44] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:45] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:45] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:46] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:46] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:47] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:47] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:26:48] [Server thread/INFO]: Saving and pausing game...
+[01:26:48] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[01:26:48] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[01:26:48] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[01:26:55] [Client thread/INFO]: [CHAT] §4Incorrect Summoner Block.
+[01:26:55] [Client thread/INFO]: [CHAT] §4The block was corrupted.
+[01:27:37] [Server thread/INFO]: Stopping server
+[01:27:37] [Server thread/INFO]: Saving players
+[01:27:37] [Server thread/INFO]: Saving worlds
+[01:27:37] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[01:27:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[01:27:38] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[01:29:44] [Client thread/INFO]: Stopping!
