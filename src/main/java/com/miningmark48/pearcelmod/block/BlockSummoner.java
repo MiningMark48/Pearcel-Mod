@@ -67,120 +67,124 @@ public class BlockSummoner extends BlockPearcelMod{
         EntityHorse horse = new EntityHorse(world);
         horse.setPosition(x+spawnRand, y+2, z+spawnRand);
 
-        if(!player.isSneaking() && player.getHeldItem().getItem() == ModItems.sap){
-            if (!world.isRemote) {
-                //Missing Block
-                if (world.getBlock(x, y+1, z) == Blocks.air){
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Missing Summoner Block."));
-                    world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
-                }
-                //Pearcel Mob
-                else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelBlock) {
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(pearcelmob);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Mob summoned."));
-                }
-                //Pearson
-                else if (world.getBlock(x, y + 1, z) == ModBlocks.meBlock) {
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(pearson);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearson summoned."));
-                }
-                //Pearcel Squid
-                else if (world.getBlock(x, y + 1, z) == Blocks.lapis_block) {
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(pearcelsquid);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Squid summoned."));
-                }
-                //Ender dragon
-                else if (world.getBlock(x, y+1, z) == ModBlocks.dragonInfusedPearcel && world.getBlock(x+2, y, z+2) == ModBlocks.enderInfusedPearcel && world.getBlock(x-2, y, z-2) == ModBlocks.enderInfusedPearcel && world.getBlock(x+2, y, z-2) == ModBlocks.enderInfusedPearcel && world.getBlock(x-2, y, z+2) == ModBlocks.enderInfusedPearcel){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
-                    world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(dragon);
-                    world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-                    player.getHeldItem().damageItem(1, player);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender Dragon summoned."));
-                }
-                //Wither
-                else if (world.getBlock(x, y+1, z) == ModBlocks.witherInfusedPearcel && world.getBlock(x+2, y, z+2) == ModBlocks.netherInfusedPearcel && world.getBlock(x-2, y, z-2) == ModBlocks.netherInfusedPearcel && world.getBlock(x+2, y, z-2) == ModBlocks.netherInfusedPearcel && world.getBlock(x-2, y, z+2) == ModBlocks.netherInfusedPearcel){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
-                    world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(wither);
-                    world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-                    player.getHeldItem().damageItem(1, player);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Wither summoned."));
-                }
-                //Sheep
-                else if (world.getBlock(x, y+1, z) == Blocks.wool){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(sheep);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Sheep summoned."));
-                }
-                //Pearcel Cow
-                else if(world.getBlock(x, y+1, z) == Blocks.hardened_clay){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(pearcelcow);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Cow summoned."));
-                }
-                //Enderman
-                else if(world.getBlock(x, y+1, z) == Blocks.end_stone){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(enderman);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Enderman summoned."));
-                }
-                //Blaze
-                else if(world.getBlock(x, y+1, z) == Blocks.fire){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(blaze);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Blaze summoned."));
-                }
-                //Ghast
-                else if(world.getBlock(x, y+1, z) == Blocks.cobblestone){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(ghast);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ghast summoned."));
-                }
-                //Skeleton
-                else if(world.getBlock(x, y+1, z) == Blocks.planks){
-                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(skeleton);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Skeleton summoned."));
-                }
-                //Creeper
-                else if(world.getBlock(x, y+1, z) == Blocks.tnt){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(creeper);
-                    world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Creeper summoned."));
-                }
-                //Ender Crystal
-                else if(world.getBlock(x, y+1, z) == ModBlocks.pearcelEndStone){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(endcrystal);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender crystal summoned."));
-                }
-                //Horse
-                else if(world.getBlock(x, y+1, z) == Blocks.hay_block){
-                    world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                    world.spawnEntityInWorld(horse);
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Horse summoned."));
-                }
-                else{
-                    if (!world.isRemote){
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Incorrect Summoner Block."));
-                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "The block was corrupted."));
-                        world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+        if(!player.isSneaking() && player.getHeldItem().getItem() == ModItems.sap) {
+            if (player.getHeldItem().getItem() != null && player.getHeldItem().getItem() == ModItems.sap) {
+                    if (!world.isRemote) {
+                        //Missing Block
+                        if (world.getBlock(x, y + 1, z) == Blocks.air) {
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Missing Summoner Block."));
+                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                        }
+                        //Pearcel Mob
+                        else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelBlock) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(pearcelmob);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Mob summoned."));
+                        }
+                        //Pearson
+                        else if (world.getBlock(x, y + 1, z) == ModBlocks.meBlock) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(pearson);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearson summoned."));
+                        }
+                        //Pearcel Squid
+                        else if (world.getBlock(x, y + 1, z) == Blocks.lapis_block) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(pearcelsquid);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Squid summoned."));
+                        }
+                        //Ender dragon
+                        else if (world.getBlock(x, y + 1, z) == ModBlocks.dragonInfusedPearcel && world.getBlock(x + 2, y, z + 2) == ModBlocks.enderInfusedPearcel && world.getBlock(x - 2, y, z - 2) == ModBlocks.enderInfusedPearcel && world.getBlock(x + 2, y, z - 2) == ModBlocks.enderInfusedPearcel && world.getBlock(x - 2, y, z + 2) == ModBlocks.enderInfusedPearcel) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(dragon);
+                            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                            player.getHeldItem().damageItem(1, player);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender Dragon summoned."));
+                        }
+                        //Wither
+                        else if (world.getBlock(x, y + 1, z) == ModBlocks.witherInfusedPearcel && world.getBlock(x + 2, y, z + 2) == ModBlocks.netherInfusedPearcel && world.getBlock(x - 2, y, z - 2) == ModBlocks.netherInfusedPearcel && world.getBlock(x + 2, y, z - 2) == ModBlocks.netherInfusedPearcel && world.getBlock(x - 2, y, z + 2) == ModBlocks.netherInfusedPearcel) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(wither);
+                            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                            player.getHeldItem().damageItem(1, player);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Wither summoned."));
+                        }
+                        //Sheep
+                        else if (world.getBlock(x, y + 1, z) == Blocks.wool) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(sheep);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Sheep summoned."));
+                        }
+                        //Pearcel Cow
+                        else if (world.getBlock(x, y + 1, z) == Blocks.hardened_clay) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(pearcelcow);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Cow summoned."));
+                        }
+                        //Enderman
+                        else if (world.getBlock(x, y + 1, z) == Blocks.end_stone) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(enderman);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Enderman summoned."));
+                        }
+                        //Blaze
+                        else if (world.getBlock(x, y + 1, z) == Blocks.fire) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(blaze);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Blaze summoned."));
+                        }
+                        //Ghast
+                        else if (world.getBlock(x, y + 1, z) == Blocks.cobblestone) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(ghast);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ghast summoned."));
+                        }
+                        //Skeleton
+                        else if (world.getBlock(x, y + 1, z) == Blocks.planks) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(skeleton);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Skeleton summoned."));
+                        }
+                        //Creeper
+                        else if (world.getBlock(x, y + 1, z) == Blocks.tnt) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(creeper);
+                            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Creeper summoned."));
+                        }
+                        //Ender Crystal
+                        else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelEndStone) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(endcrystal);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Ender crystal summoned."));
+                        }
+                        //Horse
+                        else if (world.getBlock(x, y + 1, z) == Blocks.hay_block) {
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(horse);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Horse summoned."));
+                        } else {
+                            if (!world.isRemote) {
+                                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Incorrect Summoner Block."));
+                                world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "The block was corrupted."));
+                                world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                            }
+                        }
                     }
-                }
+                    player.playSound("random.explode", 1.0F, 0.5F);
+                    world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
+                    player.getHeldItem().damageItem(1, player);
+                }else{
+                    if (!world.isRemote){
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "Incorrect summoning item."));
+                    }
             }
-                player.playSound("random.explode", 1.0F, 0.5F);
-                world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
-                player.getHeldItem().damageItem(1, player);
-            }
+        }
         return true;
     }
-
 }
