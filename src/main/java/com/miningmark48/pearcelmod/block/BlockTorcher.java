@@ -6,6 +6,8 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -66,16 +68,18 @@ public class BlockTorcher extends BlockPearcelMod{
                     torchY = y;
                     torchZ = z + rangeRand;
                 }
-                if (world.getBlock(torchX, torchY, torchZ) == Blocks.air || world.getBlock(torchX, torchY, torchZ) == Blocks.tallgrass && world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                    world.setBlock(torchX, torchY, torchZ, Blocks.torch);
-                    if (torchX % 2 == 0 && torchZ % 2 == 1){
-                        world.spawnEntityInWorld(new EntityLightningBolt(world, torchX, torchY, torchZ));
+                if (world.getBlock(torchX, torchY, torchZ) == Blocks.air || world.getBlock(torchX, torchY, torchZ) == Blocks.tallgrass){
+                    if (world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
+                        world.setBlock(torchX, torchY, torchZ, Blocks.torch);
                     }
                 }
             }
             player.playSound("random.explode", 1.0F, 0.5F);
             world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
             world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+            if (!world.isRemote){
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Let there be light!"));
+            }
 
             return true;
 
