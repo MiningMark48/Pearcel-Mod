@@ -153,8 +153,13 @@ public class BlockSummoner extends BlockPearcelMod{
                         else if (world.getBlock(x, y + 1, z) == Blocks.tnt) {
                             world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                             world.spawnEntityInWorld(creeper);
-                            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
                             player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Creeper summoned."));
+                            //Charged Creeper
+                            if (world.getBlock(x, y + 2, z) == Blocks.tnt){
+                                world.setBlock(x, y + 2, z, ModBlocks.corruptedPearcelBlock);
+                                world.spawnEntityInWorld(new EntityLightningBolt(world, x+spawnRand, y, z+spawnRand));
+                                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Creeper was charged."));
+                            }
                         }
                         //Ender Crystal
                         else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelEndStone) {
