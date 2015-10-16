@@ -2067,50 +2067,49 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     LINENUMBER 497 L77
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon net/minecraft/client/renderer/Tessellator I T T F net/minecraft/item/Item net/minecraft/util/IIcon I F F] []
     IINC 10 1
-   L79
     GOTO L58
    L59
     LINENUMBER 526 L59
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon net/minecraft/client/renderer/Tessellator I T T T net/minecraft/item/Item] []
     SIPUSH 2896
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
-   L80
-    LINENUMBER 527 L80
+   L79
+    LINENUMBER 527 L79
     GOTO L34
    L35
     LINENUMBER 530 L35
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon] []
     SIPUSH 2896
     INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
-   L81
-    LINENUMBER 531 L81
+   L80
+    LINENUMBER 531 L80
     SIPUSH 3042
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
-   L82
-    LINENUMBER 532 L82
+   L81
+    LINENUMBER 532 L81
     SIPUSH 770
     SIPUSH 771
     ICONST_1
     ICONST_0
     INVOKESTATIC net/minecraft/client/renderer/OpenGlHelper.glBlendFunc (IIII)V
-   L83
-    LINENUMBER 533 L83
+   L82
+    LINENUMBER 533 L82
     ALOAD 2
     ALOAD 3
     INVOKEVIRTUAL net/minecraft/item/ItemStack.getItemSpriteNumber ()I
     INVOKEVIRTUAL net/minecraft/client/renderer/texture/TextureManager.getResourceLocation (I)Lnet/minecraft/util/ResourceLocation;
     ASTORE 9
-   L84
-    LINENUMBER 534 L84
+   L83
+    LINENUMBER 534 L83
     ALOAD 2
     ALOAD 9
     INVOKEVIRTUAL net/minecraft/client/renderer/texture/TextureManager.bindTexture (Lnet/minecraft/util/ResourceLocation;)V
-   L85
-    LINENUMBER 536 L85
+   L84
+    LINENUMBER 536 L84
     ALOAD 8
-    IFNONNULL L86
-   L87
-    LINENUMBER 538 L87
+    IFNONNULL L85
+   L86
+    LINENUMBER 538 L86
     INVOKESTATIC net/minecraft/client/Minecraft.getMinecraft ()Lnet/minecraft/client/Minecraft;
     INVOKEVIRTUAL net/minecraft/client/Minecraft.getTextureManager ()Lnet/minecraft/client/renderer/texture/TextureManager;
     ALOAD 9
@@ -2119,8 +2118,8 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     LDC "missingno"
     INVOKEVIRTUAL net/minecraft/client/renderer/texture/TextureMap.getAtlasSprite (Ljava/lang/String;)Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;
     ASTORE 8
-   L86
-    LINENUMBER 541 L86
+   L85
+    LINENUMBER 541 L85
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon net/minecraft/util/ResourceLocation] []
     ALOAD 3
     INVOKEVIRTUAL net/minecraft/item/ItemStack.getItem ()Lnet/minecraft/item/Item;
@@ -2128,8 +2127,8 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     ICONST_0
     INVOKEVIRTUAL net/minecraft/item/Item.getColorFromItemStack (Lnet/minecraft/item/ItemStack;I)I
     ISTORE 10
-   L88
-    LINENUMBER 542 L88
+   L87
+    LINENUMBER 542 L87
     ILOAD 10
     BIPUSH 16
     ISHR
@@ -2139,8 +2138,8 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     LDC 255.0
     FDIV
     FSTORE 11
-   L89
-    LINENUMBER 543 L89
+   L88
+    LINENUMBER 543 L88
     ILOAD 10
     BIPUSH 8
     ISHR
@@ -2150,8 +2149,8 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     LDC 255.0
     FDIV
     FSTORE 12
-   L90
-    LINENUMBER 544 L90
+   L89
+    LINENUMBER 544 L89
     ILOAD 10
     SIPUSH 255
     IAND
@@ -2159,33 +2158,33 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     LDC 255.0
     FDIV
     FSTORE 13
-   L91
-    LINENUMBER 546 L91
+   L90
+    LINENUMBER 546 L90
     ALOAD 0
     GETFIELD net/minecraft/client/renderer/entity/RenderItem.renderWithColor : Z
-    IFEQ L92
-   L93
-    LINENUMBER 548 L93
+    IFEQ L91
+   L92
+    LINENUMBER 548 L92
     FLOAD 11
     FLOAD 12
     FLOAD 13
     FCONST_1
     INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
-   L92
-    LINENUMBER 551 L92
+   L91
+    LINENUMBER 551 L91
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon net/minecraft/util/ResourceLocation I F F F] []
     SIPUSH 2896
     INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
-   L94
-    LINENUMBER 552 L94
+   L93
+    LINENUMBER 552 L93
     SIPUSH 3008
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
-   L95
-    LINENUMBER 553 L95
+   L94
+    LINENUMBER 553 L94
     SIPUSH 3042
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
-   L96
-    LINENUMBER 555 L96
+   L95
+    LINENUMBER 555 L95
     ALOAD 0
     ILOAD 4
     ILOAD 5
@@ -2194,35 +2193,35 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     BIPUSH 16
     BIPUSH 16
     INVOKEVIRTUAL net/minecraft/client/renderer/entity/RenderItem.renderIcon (IILnet/minecraft/util/IIcon;II)V
-   L97
-    LINENUMBER 557 L97
+   L96
+    LINENUMBER 557 L96
     SIPUSH 2896
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
-   L98
-    LINENUMBER 558 L98
+   L97
+    LINENUMBER 558 L97
     SIPUSH 3008
     INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
-   L99
-    LINENUMBER 559 L99
+   L98
+    LINENUMBER 559 L98
     SIPUSH 3042
     INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
-   L100
-    LINENUMBER 561 L100
+   L99
+    LINENUMBER 561 L99
     ILOAD 6
-    IFEQ L101
+    IFEQ L100
     ALOAD 3
     ICONST_0
     INVOKEVIRTUAL net/minecraft/item/ItemStack.hasEffect (I)Z
-    IFEQ L101
-   L102
-    LINENUMBER 563 L102
+    IFEQ L100
+   L101
+    LINENUMBER 563 L101
     ALOAD 0
     ALOAD 2
     ILOAD 4
     ILOAD 5
     INVOKEVIRTUAL net/minecraft/client/renderer/entity/RenderItem.renderEffect (Lnet/minecraft/client/renderer/texture/TextureManager;II)V
-   L101
-    LINENUMBER 565 L101
+   L100
+    LINENUMBER 565 L100
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon net/minecraft/util/ResourceLocation I F F F] []
     SIPUSH 2896
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
@@ -2231,10 +2230,10 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
    FRAME FULL [net/minecraft/client/renderer/entity/RenderItem net/minecraft/client/gui/FontRenderer net/minecraft/client/renderer/texture/TextureManager net/minecraft/item/ItemStack I I I I net/minecraft/util/IIcon java/lang/Object I] []
     SIPUSH 2884
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
-   L103
-    LINENUMBER 569 L103
+   L102
+    LINENUMBER 569 L102
     RETURN
-   L104
+   L103
     LOCALVARIABLE block Lnet/minecraft/block/Block; L6 L33 9
     LOCALVARIABLE l I L21 L3 10
     LOCALVARIABLE f F L24 L3 13
@@ -2244,24 +2243,24 @@ public class net/minecraft/client/renderer/entity/RenderItem extends net/minecra
     LOCALVARIABLE i1 I L66 L77 16
     LOCALVARIABLE f1 F L68 L77 17
     LOCALVARIABLE f2 F L69 L77 18
-    LOCALVARIABLE f F L67 L79 13
-    LOCALVARIABLE tessellator Lnet/minecraft/client/renderer/Tessellator; L46 L80 9
-    LOCALVARIABLE item Lnet/minecraft/item/Item; L57 L80 14
+    LOCALVARIABLE f F L67 L59 13
+    LOCALVARIABLE tessellator Lnet/minecraft/client/renderer/Tessellator; L46 L79 9
+    LOCALVARIABLE item Lnet/minecraft/item/Item; L57 L79 14
     LOCALVARIABLE l I L58 L35 10
-    LOCALVARIABLE resourcelocation Lnet/minecraft/util/ResourceLocation; L84 L34 9
-    LOCALVARIABLE f F L91 L34 13
-    LOCALVARIABLE f3 F L89 L34 11
-    LOCALVARIABLE f4 F L90 L34 12
-    LOCALVARIABLE this Lnet/minecraft/client/renderer/entity/RenderItem; L0 L104 0
-    LOCALVARIABLE p_77015_1_ Lnet/minecraft/client/gui/FontRenderer; L0 L104 1
-    LOCALVARIABLE p_77015_2_ Lnet/minecraft/client/renderer/texture/TextureManager; L0 L104 2
-    LOCALVARIABLE p_77015_3_ Lnet/minecraft/item/ItemStack; L0 L104 3
-    LOCALVARIABLE p_77015_4_ I L0 L104 4
-    LOCALVARIABLE p_77015_5_ I L0 L104 5
-    LOCALVARIABLE renderEffect Z L0 L104 6
-    LOCALVARIABLE k I L1 L104 7
-    LOCALVARIABLE object Ljava/lang/Object; L2 L104 8
-    LOCALVARIABLE l I L88 L104 10
+    LOCALVARIABLE resourcelocation Lnet/minecraft/util/ResourceLocation; L83 L34 9
+    LOCALVARIABLE f F L90 L34 13
+    LOCALVARIABLE f3 F L88 L34 11
+    LOCALVARIABLE f4 F L89 L34 12
+    LOCALVARIABLE this Lnet/minecraft/client/renderer/entity/RenderItem; L0 L103 0
+    LOCALVARIABLE p_77015_1_ Lnet/minecraft/client/gui/FontRenderer; L0 L103 1
+    LOCALVARIABLE p_77015_2_ Lnet/minecraft/client/renderer/texture/TextureManager; L0 L103 2
+    LOCALVARIABLE p_77015_3_ Lnet/minecraft/item/ItemStack; L0 L103 3
+    LOCALVARIABLE p_77015_4_ I L0 L103 4
+    LOCALVARIABLE p_77015_5_ I L0 L103 5
+    LOCALVARIABLE renderEffect Z L0 L103 6
+    LOCALVARIABLE k I L1 L103 7
+    LOCALVARIABLE object Ljava/lang/Object; L2 L103 8
+    LOCALVARIABLE l I L87 L103 10
     MAXSTACK = 7
     MAXLOCALS = 19
 

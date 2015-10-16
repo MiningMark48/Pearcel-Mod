@@ -1133,7 +1133,6 @@ public class net/minecraft/nbt/NBTTagCompound extends net/minecraft/nbt/NBTBase 
     INVOKEVIRTUAL java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;
     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
     ASTORE 1
-   L6
     GOTO L2
    L3
     LINENUMBER 392 L3
@@ -1148,11 +1147,11 @@ public class net/minecraft/nbt/NBTTagCompound extends net/minecraft/nbt/NBTBase 
     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
     ARETURN
-   L7
-    LOCALVARIABLE s1 Ljava/lang/String; L5 L6 3
+   L6
+    LOCALVARIABLE s1 Ljava/lang/String; L5 L3 3
     LOCALVARIABLE iterator Ljava/util/Iterator; L2 L3 2
-    LOCALVARIABLE this Lnet/minecraft/nbt/NBTTagCompound; L0 L7 0
-    LOCALVARIABLE s Ljava/lang/String; L1 L7 1
+    LOCALVARIABLE this Lnet/minecraft/nbt/NBTTagCompound; L0 L6 0
+    LOCALVARIABLE s Ljava/lang/String; L1 L6 1
     MAXSTACK = 3
     MAXLOCALS = 4
 

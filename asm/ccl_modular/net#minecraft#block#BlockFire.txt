@@ -1655,7 +1655,6 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
    L12
     LINENUMBER 387 L12
     IINC 6 1
-   L13
     GOTO L7
    L5
     LINENUMBER 396 L5
@@ -1669,18 +1668,18 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     ILOAD 4
     GETSTATIC net/minecraftforge/common/util/ForgeDirection.WEST : Lnet/minecraftforge/common/util/ForgeDirection;
     INVOKEVIRTUAL net/minecraft/block/BlockFire.canCatchFire (Lnet/minecraft/world/IBlockAccess;IIILnet/minecraftforge/common/util/ForgeDirection;)Z
-    IFEQ L14
-   L15
-    LINENUMBER 398 L15
+    IFEQ L13
+   L14
+    LINENUMBER 398 L14
     ICONST_0
     ISTORE 6
-   L16
+   L15
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random I] []
     ILOAD 6
     ICONST_2
-    IF_ICMPGE L14
-   L17
-    LINENUMBER 400 L17
+    IF_ICMPGE L13
+   L16
+    LINENUMBER 400 L16
     ILOAD 2
     ICONST_1
     IADD
@@ -1691,24 +1690,24 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     FMUL
     FSUB
     FSTORE 7
-   L18
-    LINENUMBER 401 L18
+   L17
+    LINENUMBER 401 L17
     ILOAD 3
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 8
-   L19
-    LINENUMBER 402 L19
+   L18
+    LINENUMBER 402 L18
     ILOAD 4
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 9
-   L20
-    LINENUMBER 403 L20
+   L19
+    LINENUMBER 403 L19
     ALOAD 1
     LDC "largesmoke"
     FLOAD 7
@@ -1721,13 +1720,12 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     DCONST_0
     DCONST_0
     INVOKEVIRTUAL net/minecraft/world/World.spawnParticle (Ljava/lang/String;DDDDDD)V
-   L21
-    LINENUMBER 398 L21
+   L20
+    LINENUMBER 398 L20
     IINC 6 1
-   L22
-    GOTO L16
-   L14
-    LINENUMBER 407 L14
+    GOTO L15
+   L13
+    LINENUMBER 407 L13
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random] []
     GETSTATIC net/minecraft/init/Blocks.fire : Lnet/minecraft/block/BlockFire;
     ALOAD 1
@@ -1738,34 +1736,34 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     ISUB
     GETSTATIC net/minecraftforge/common/util/ForgeDirection.SOUTH : Lnet/minecraftforge/common/util/ForgeDirection;
     INVOKEVIRTUAL net/minecraft/block/BlockFire.canCatchFire (Lnet/minecraft/world/IBlockAccess;IIILnet/minecraftforge/common/util/ForgeDirection;)Z
-    IFEQ L23
-   L24
-    LINENUMBER 409 L24
+    IFEQ L21
+   L22
+    LINENUMBER 409 L22
     ICONST_0
     ISTORE 6
-   L25
+   L23
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random I] []
     ILOAD 6
     ICONST_2
-    IF_ICMPGE L23
-   L26
-    LINENUMBER 411 L26
+    IF_ICMPGE L21
+   L24
+    LINENUMBER 411 L24
     ILOAD 2
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 7
-   L27
-    LINENUMBER 412 L27
+   L25
+    LINENUMBER 412 L25
     ILOAD 3
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 8
-   L28
-    LINENUMBER 413 L28
+   L26
+    LINENUMBER 413 L26
     ILOAD 4
     I2F
     ALOAD 5
@@ -1774,8 +1772,8 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     FMUL
     FADD
     FSTORE 9
-   L29
-    LINENUMBER 414 L29
+   L27
+    LINENUMBER 414 L27
     ALOAD 1
     LDC "largesmoke"
     FLOAD 7
@@ -1788,13 +1786,12 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     DCONST_0
     DCONST_0
     INVOKEVIRTUAL net/minecraft/world/World.spawnParticle (Ljava/lang/String;DDDDDD)V
-   L30
-    LINENUMBER 409 L30
+   L28
+    LINENUMBER 409 L28
     IINC 6 1
-   L31
-    GOTO L25
-   L23
-    LINENUMBER 418 L23
+    GOTO L23
+   L21
+    LINENUMBER 418 L21
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random] []
     GETSTATIC net/minecraft/init/Blocks.fire : Lnet/minecraft/block/BlockFire;
     ALOAD 1
@@ -1805,34 +1802,34 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     IADD
     GETSTATIC net/minecraftforge/common/util/ForgeDirection.NORTH : Lnet/minecraftforge/common/util/ForgeDirection;
     INVOKEVIRTUAL net/minecraft/block/BlockFire.canCatchFire (Lnet/minecraft/world/IBlockAccess;IIILnet/minecraftforge/common/util/ForgeDirection;)Z
-    IFEQ L32
-   L33
-    LINENUMBER 420 L33
+    IFEQ L29
+   L30
+    LINENUMBER 420 L30
     ICONST_0
     ISTORE 6
-   L34
+   L31
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random I] []
     ILOAD 6
     ICONST_2
-    IF_ICMPGE L32
-   L35
-    LINENUMBER 422 L35
+    IF_ICMPGE L29
+   L32
+    LINENUMBER 422 L32
     ILOAD 2
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 7
-   L36
-    LINENUMBER 423 L36
+   L33
+    LINENUMBER 423 L33
     ILOAD 3
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 8
-   L37
-    LINENUMBER 424 L37
+   L34
+    LINENUMBER 424 L34
     ILOAD 4
     ICONST_1
     IADD
@@ -1843,8 +1840,8 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     FMUL
     FSUB
     FSTORE 9
-   L38
-    LINENUMBER 425 L38
+   L35
+    LINENUMBER 425 L35
     ALOAD 1
     LDC "largesmoke"
     FLOAD 7
@@ -1857,13 +1854,12 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     DCONST_0
     DCONST_0
     INVOKEVIRTUAL net/minecraft/world/World.spawnParticle (Ljava/lang/String;DDDDDD)V
-   L39
-    LINENUMBER 420 L39
+   L36
+    LINENUMBER 420 L36
     IINC 6 1
-   L40
-    GOTO L34
-   L32
-    LINENUMBER 429 L32
+    GOTO L31
+   L29
+    LINENUMBER 429 L29
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random] []
     GETSTATIC net/minecraft/init/Blocks.fire : Lnet/minecraft/block/BlockFire;
     ALOAD 1
@@ -1874,26 +1870,26 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     ILOAD 4
     GETSTATIC net/minecraftforge/common/util/ForgeDirection.DOWN : Lnet/minecraftforge/common/util/ForgeDirection;
     INVOKEVIRTUAL net/minecraft/block/BlockFire.canCatchFire (Lnet/minecraft/world/IBlockAccess;IIILnet/minecraftforge/common/util/ForgeDirection;)Z
-    IFEQ L41
-   L42
-    LINENUMBER 431 L42
+    IFEQ L37
+   L38
+    LINENUMBER 431 L38
     ICONST_0
     ISTORE 6
-   L43
+   L39
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random I] []
     ILOAD 6
     ICONST_2
-    IF_ICMPGE L41
-   L44
-    LINENUMBER 433 L44
+    IF_ICMPGE L37
+   L40
+    LINENUMBER 433 L40
     ILOAD 2
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 7
-   L45
-    LINENUMBER 434 L45
+   L41
+    LINENUMBER 434 L41
     ILOAD 3
     ICONST_1
     IADD
@@ -1904,16 +1900,16 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     FMUL
     FSUB
     FSTORE 8
-   L46
-    LINENUMBER 435 L46
+   L42
+    LINENUMBER 435 L42
     ILOAD 4
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 9
-   L47
-    LINENUMBER 436 L47
+   L43
+    LINENUMBER 436 L43
     ALOAD 1
     LDC "largesmoke"
     FLOAD 7
@@ -1926,31 +1922,30 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     DCONST_0
     DCONST_0
     INVOKEVIRTUAL net/minecraft/world/World.spawnParticle (Ljava/lang/String;DDDDDD)V
-   L48
-    LINENUMBER 431 L48
+   L44
+    LINENUMBER 431 L44
     IINC 6 1
-   L49
-    GOTO L43
+    GOTO L39
    L3
     LINENUMBER 442 L3
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random] []
     ICONST_0
     ISTORE 6
-   L50
+   L45
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random I] []
     ILOAD 6
     ICONST_3
-    IF_ICMPGE L41
-   L51
-    LINENUMBER 444 L51
+    IF_ICMPGE L37
+   L46
+    LINENUMBER 444 L46
     ILOAD 2
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 7
-   L52
-    LINENUMBER 445 L52
+   L47
+    LINENUMBER 445 L47
     ILOAD 3
     I2F
     ALOAD 5
@@ -1961,16 +1956,16 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     LDC 0.5
     FADD
     FSTORE 8
-   L53
-    LINENUMBER 446 L53
+   L48
+    LINENUMBER 446 L48
     ILOAD 4
     I2F
     ALOAD 5
     INVOKEVIRTUAL java/util/Random.nextFloat ()F
     FADD
     FSTORE 9
-   L54
-    LINENUMBER 447 L54
+   L49
+    LINENUMBER 447 L49
     ALOAD 1
     LDC "largesmoke"
     FLOAD 7
@@ -1983,46 +1978,45 @@ public class net/minecraft/block/BlockFire extends net/minecraft/block/Block  {
     DCONST_0
     DCONST_0
     INVOKEVIRTUAL net/minecraft/world/World.spawnParticle (Ljava/lang/String;DDDDDD)V
-   L55
-    LINENUMBER 442 L55
+   L50
+    LINENUMBER 442 L50
     IINC 6 1
-   L56
-    GOTO L50
-   L41
-    LINENUMBER 450 L41
+    GOTO L45
+   L37
+    LINENUMBER 450 L37
    FRAME FULL [net/minecraft/block/BlockFire net/minecraft/world/World I I I java/util/Random] []
     RETURN
-   L57
+   L51
     LOCALVARIABLE l I L7 L5 6
-    LOCALVARIABLE f F L9 L13 7
-    LOCALVARIABLE f1 F L10 L13 8
-    LOCALVARIABLE f2 F L11 L13 9
-    LOCALVARIABLE l I L16 L14 6
-    LOCALVARIABLE f F L18 L22 7
-    LOCALVARIABLE f1 F L19 L22 8
-    LOCALVARIABLE f2 F L20 L22 9
-    LOCALVARIABLE l I L25 L23 6
-    LOCALVARIABLE f F L27 L31 7
-    LOCALVARIABLE f1 F L28 L31 8
-    LOCALVARIABLE f2 F L29 L31 9
-    LOCALVARIABLE l I L34 L32 6
-    LOCALVARIABLE f F L36 L40 7
-    LOCALVARIABLE f1 F L37 L40 8
-    LOCALVARIABLE f2 F L38 L40 9
-    LOCALVARIABLE l I L43 L3 6
-    LOCALVARIABLE f F L45 L49 7
-    LOCALVARIABLE f1 F L46 L49 8
-    LOCALVARIABLE f2 F L47 L49 9
-    LOCALVARIABLE l I L50 L41 6
-    LOCALVARIABLE f F L52 L56 7
-    LOCALVARIABLE f1 F L53 L56 8
-    LOCALVARIABLE f2 F L54 L56 9
-    LOCALVARIABLE this Lnet/minecraft/block/BlockFire; L0 L57 0
-    LOCALVARIABLE p_149734_1_ Lnet/minecraft/world/World; L0 L57 1
-    LOCALVARIABLE p_149734_2_ I L0 L57 2
-    LOCALVARIABLE p_149734_3_ I L0 L57 3
-    LOCALVARIABLE p_149734_4_ I L0 L57 4
-    LOCALVARIABLE p_149734_5_ Ljava/util/Random; L0 L57 5
+    LOCALVARIABLE f F L9 L5 7
+    LOCALVARIABLE f1 F L10 L5 8
+    LOCALVARIABLE f2 F L11 L5 9
+    LOCALVARIABLE l I L15 L13 6
+    LOCALVARIABLE f F L17 L13 7
+    LOCALVARIABLE f1 F L18 L13 8
+    LOCALVARIABLE f2 F L19 L13 9
+    LOCALVARIABLE l I L23 L21 6
+    LOCALVARIABLE f F L25 L21 7
+    LOCALVARIABLE f1 F L26 L21 8
+    LOCALVARIABLE f2 F L27 L21 9
+    LOCALVARIABLE l I L31 L29 6
+    LOCALVARIABLE f F L33 L29 7
+    LOCALVARIABLE f1 F L34 L29 8
+    LOCALVARIABLE f2 F L35 L29 9
+    LOCALVARIABLE l I L39 L3 6
+    LOCALVARIABLE f F L41 L3 7
+    LOCALVARIABLE f1 F L42 L3 8
+    LOCALVARIABLE f2 F L43 L3 9
+    LOCALVARIABLE l I L45 L37 6
+    LOCALVARIABLE f F L47 L37 7
+    LOCALVARIABLE f1 F L48 L37 8
+    LOCALVARIABLE f2 F L49 L37 9
+    LOCALVARIABLE this Lnet/minecraft/block/BlockFire; L0 L51 0
+    LOCALVARIABLE p_149734_1_ Lnet/minecraft/world/World; L0 L51 1
+    LOCALVARIABLE p_149734_2_ I L0 L51 2
+    LOCALVARIABLE p_149734_3_ I L0 L51 3
+    LOCALVARIABLE p_149734_4_ I L0 L51 4
+    LOCALVARIABLE p_149734_5_ Ljava/util/Random; L0 L51 5
     MAXSTACK = 14
     MAXLOCALS = 10
 
