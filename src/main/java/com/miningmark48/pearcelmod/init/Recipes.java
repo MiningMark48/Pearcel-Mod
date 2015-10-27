@@ -75,7 +75,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelMelonBlock), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.melon));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelMelonBlock), "xx", "xx", 'x', new ItemStack(ModItems.pearcelMelon));
         GameRegistry.addRecipe(new ItemStack(Blocks.double_stone_slab), "x", "x", 'x', new ItemStack(Blocks.stone_slab));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.torcher, 3), "xyx", "yzy", "xyx", 'x', new ItemStack(ModBlocks.pearcelTorch), 'y', new ItemStack(Blocks.tnt), 'z', new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.torcher, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.torch), 'y', new ItemStack(Blocks.tnt), 'z', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.summoner), "xyx", "yzy", "aaa", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(Items.emerald), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Items.gold_ingot));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.enderInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.end_stone));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.netherInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.lava_bucket), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.netherrack));
