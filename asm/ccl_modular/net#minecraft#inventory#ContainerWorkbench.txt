@@ -136,29 +136,28 @@ public class net/minecraft/inventory/ContainerWorkbench extends net/minecraft/in
     LINENUMBER 31 L13
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I I] []
     IINC 6 1
-   L16
     GOTO L9
    L10
     LINENUMBER 39 L10
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I] []
     ICONST_0
     ISTORE 6
-   L17
+   L16
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I] []
     ILOAD 6
     ICONST_3
-    IF_ICMPGE L18
-   L19
-    LINENUMBER 41 L19
+    IF_ICMPGE L17
+   L18
+    LINENUMBER 41 L18
     ICONST_0
     ISTORE 7
-   L20
+   L19
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I I] []
     ILOAD 7
     BIPUSH 9
-    IF_ICMPGE L21
-   L22
-    LINENUMBER 43 L22
+    IF_ICMPGE L20
+   L21
+    LINENUMBER 43 L21
     ALOAD 0
     NEW net/minecraft/inventory/Slot
     DUP
@@ -183,28 +182,27 @@ public class net/minecraft/inventory/ContainerWorkbench extends net/minecraft/in
     INVOKESPECIAL net/minecraft/inventory/Slot.<init> (Lnet/minecraft/inventory/IInventory;III)V
     INVOKEVIRTUAL net/minecraft/inventory/ContainerWorkbench.addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;
     POP
-   L23
-    LINENUMBER 41 L23
+   L22
+    LINENUMBER 41 L22
     IINC 7 1
-    GOTO L20
-   L21
-    LINENUMBER 39 L21
+    GOTO L19
+   L20
+    LINENUMBER 39 L20
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I I] []
     IINC 6 1
-   L24
-    GOTO L17
-   L18
-    LINENUMBER 47 L18
+    GOTO L16
+   L17
+    LINENUMBER 47 L17
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I] []
     ICONST_0
     ISTORE 6
-   L25
+   L23
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I] []
     ILOAD 6
     BIPUSH 9
-    IF_ICMPGE L26
-   L27
-    LINENUMBER 49 L27
+    IF_ICMPGE L24
+   L25
+    LINENUMBER 49 L25
     ALOAD 0
     NEW net/minecraft/inventory/Slot
     DUP
@@ -219,30 +217,30 @@ public class net/minecraft/inventory/ContainerWorkbench extends net/minecraft/in
     INVOKESPECIAL net/minecraft/inventory/Slot.<init> (Lnet/minecraft/inventory/IInventory;III)V
     INVOKEVIRTUAL net/minecraft/inventory/ContainerWorkbench.addSlotToContainer (Lnet/minecraft/inventory/Slot;)Lnet/minecraft/inventory/Slot;
     POP
-   L28
-    LINENUMBER 47 L28
-    IINC 6 1
-    GOTO L25
    L26
-    LINENUMBER 52 L26
+    LINENUMBER 47 L26
+    IINC 6 1
+    GOTO L23
+   L24
+    LINENUMBER 52 L24
    FRAME FULL [net/minecraft/inventory/ContainerWorkbench net/minecraft/entity/player/InventoryPlayer net/minecraft/world/World I I I I] []
     ALOAD 0
     ALOAD 0
     GETFIELD net/minecraft/inventory/ContainerWorkbench.craftMatrix : Lnet/minecraft/inventory/InventoryCrafting;
     INVOKEVIRTUAL net/minecraft/inventory/ContainerWorkbench.onCraftMatrixChanged (Lnet/minecraft/inventory/IInventory;)V
-   L29
-    LINENUMBER 53 L29
+   L27
+    LINENUMBER 53 L27
     RETURN
-   L30
-    LOCALVARIABLE i1 I L12 L16 7
-    LOCALVARIABLE i1 I L20 L24 7
-    LOCALVARIABLE this Lnet/minecraft/inventory/ContainerWorkbench; L0 L30 0
-    LOCALVARIABLE p_i1808_1_ Lnet/minecraft/entity/player/InventoryPlayer; L0 L30 1
-    LOCALVARIABLE p_i1808_2_ Lnet/minecraft/world/World; L0 L30 2
-    LOCALVARIABLE p_i1808_3_ I L0 L30 3
-    LOCALVARIABLE p_i1808_4_ I L0 L30 4
-    LOCALVARIABLE p_i1808_5_ I L0 L30 5
-    LOCALVARIABLE l I L9 L30 6
+   L28
+    LOCALVARIABLE i1 I L12 L10 7
+    LOCALVARIABLE i1 I L19 L17 7
+    LOCALVARIABLE this Lnet/minecraft/inventory/ContainerWorkbench; L0 L28 0
+    LOCALVARIABLE p_i1808_1_ Lnet/minecraft/entity/player/InventoryPlayer; L0 L28 1
+    LOCALVARIABLE p_i1808_2_ Lnet/minecraft/world/World; L0 L28 2
+    LOCALVARIABLE p_i1808_3_ I L0 L28 3
+    LOCALVARIABLE p_i1808_4_ I L0 L28 4
+    LOCALVARIABLE p_i1808_5_ I L0 L28 5
+    LOCALVARIABLE l I L9 L28 6
     MAXSTACK = 9
     MAXLOCALS = 8
 
