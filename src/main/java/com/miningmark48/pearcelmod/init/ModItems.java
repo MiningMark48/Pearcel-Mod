@@ -146,9 +146,7 @@ public class ModItems {
         //Items to be added if config allows
         if (ConfigurationHandler.addPearcelStaff){
             GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
-        }/*else if(ConfigurationHandler.addFlightItem){
-            GameRegistry.registerItem(flightItem, "flightItem");
-        }*/
+        }
 
 	}
 	

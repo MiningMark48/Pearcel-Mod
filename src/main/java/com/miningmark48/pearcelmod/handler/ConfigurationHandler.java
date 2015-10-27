@@ -12,7 +12,6 @@ public class ConfigurationHandler {
     public static Configuration configuration;
 
     public static boolean addPearcelStaff;
-    public static boolean addFlightItem;
     public static boolean useFlightItemParticle;
     public static boolean specialDice;
     public static boolean useMEMatter;
@@ -47,7 +46,6 @@ public class ConfigurationHandler {
     private static void loadConfiguration(){
 
         addPearcelStaff = configuration.getBoolean("Add Pearcel Staff?", Configuration.CATEGORY_GENERAL, true, "Should the Pearcel Staff be added to the game?");
-        addFlightItem = configuration.getBoolean("Add Flight Item?", Configuration.CATEGORY_GENERAL, true, "Should the Flight Item be added to the game?");
         useFlightItemParticle = configuration.getBoolean("Use Flight Item Particles?", Configuration.CATEGORY_GENERAL, true, "Should the particles of the Flight Item be added to the game?");
         specialDice = configuration.getBoolean("Have special dice rolls?", Configuration.CATEGORY_GENERAL, true, "Add Special dice rolls?");
         useMEMatter = configuration.getBoolean("ME^Matter Recipes", Configuration.CATEGORY_GENERAL, true, "Should ME^Matter recipes be added?");
