@@ -6,7 +6,6 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ChatComponentTranslation;
 
 public class EventFlight {
 
