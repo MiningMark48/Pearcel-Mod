@@ -35,7 +35,7 @@ public class Achievements {
         achievementArmorPlating = new Achievement("achievement.craftArmorPlating", "craftArmorPlating", 4, 4, new ItemStack(ModItems.armorPlating), (Achievement)null).initIndependentStat().registerStat();
         achievementFreeBeacon = new Achievement("achievement.getFreeBeacon", "getFreeBeacon", 0, 4, new ItemStack(Blocks.beacon), (Achievement)null).initIndependentStat().registerStat();
         achievementTorcher = new Achievement("achievement.useTorcher", "useTorcher", 4, 6, new ItemStack(ModBlocks.torcher), (Achievement)null).initIndependentStat().registerStat();
-        achievementFlight = new Achievement("achievement.useFlightItem", "useFlightItem", 6, 4, new ItemStack(ModItems.flightItem), (Achievement)null).initIndependentStat().registerStat();
+        achievementFlight = new Achievement("achievement.useFlightItem", "useFlightItem", 6, 2, new ItemStack(ModItems.flightItem), achievementMEMatter).registerStat();
 
         //Creates Achievement Page
         AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{achievementPearcelSword, achievementPearcelOre, achievementPearcelMelon, achievementMelonSandwich, achievementPearcelCookie9, achievementMEMatter, achievementPearcelStaff, achievementArmorPlating, achievementFreeBeacon, achievementTorcher, achievementFlight}));
