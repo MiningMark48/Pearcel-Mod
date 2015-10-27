@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.handler;
 import java.io.File;
 
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
@@ -24,10 +25,9 @@ public class ConfigurationHandler {
 
         //Create the configuration object from the given configuration file
         if (configuration == null){
-
             configuration = new Configuration(configFile);
+            LogHelper.info("Configuration file was created.");
             loadConfiguration();
-
         }
 
     }
@@ -38,6 +38,7 @@ public class ConfigurationHandler {
         if (event.modID.equalsIgnoreCase(Reference.MOD_ID)){
 
             loadConfiguration();
+            LogHelper.info("Configuration settings were loaded.");
 
         }
 
@@ -46,7 +47,7 @@ public class ConfigurationHandler {
     private static void loadConfiguration(){
 
         addPearcelStaff = configuration.getBoolean("Add Pearcel Staff?", Configuration.CATEGORY_GENERAL, true, "Should the Pearcel Staff be added to the game?");
-        useFlightItemParticle = configuration.getBoolean("Use Flight Item Particles?", Configuration.CATEGORY_GENERAL, true, "Should the particles of the Flight Item be added to the game?");
+        useFlightItemParticle = configuration.getBoolean("Use Pearcel Cloud Particles?", Configuration.CATEGORY_GENERAL, true, "Should the particles of the Pearcel Cloud be added to the game?");
         specialDice = configuration.getBoolean("Have special dice rolls?", Configuration.CATEGORY_GENERAL, true, "Add Special dice rolls?");
         useMEMatter = configuration.getBoolean("ME^Matter Recipes", Configuration.CATEGORY_GENERAL, true, "Should ME^Matter recipes be added?");
         torcherRange = configuration.getInt("Torcher Range", Configuration.CATEGORY_GENERAL, 25, 1, 500, "What is the range of torches that can be placed by the torcher block?");
@@ -57,6 +58,7 @@ public class ConfigurationHandler {
         if (configuration.hasChanged()){
 
             configuration.save();
+            LogHelper.info("Configuration settings were saved.");
 
         }
 
