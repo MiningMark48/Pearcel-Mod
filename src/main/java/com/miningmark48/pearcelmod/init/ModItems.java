@@ -106,7 +106,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
         GameRegistry.registerItem(pcp, "pcp");
         //GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
-        //GameRegistry.registerItem(flightItem, "flightItem");
+        GameRegistry.registerItem(flightItem, "flightItem");
         GameRegistry.registerItem(sap, "sap");
 
         //Armor
@@ -146,9 +146,9 @@ public class ModItems {
         //Items to be added if config allows
         if (ConfigurationHandler.addPearcelStaff){
             GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
-        }else if(ConfigurationHandler.addFlightItem){
+        }/*else if(ConfigurationHandler.addFlightItem){
             GameRegistry.registerItem(flightItem, "flightItem");
-        }
+        }*/
 
 	}
 	

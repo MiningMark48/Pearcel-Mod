@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod;
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.event.EventFillBucket;
+import com.miningmark48.pearcelmod.event.EventFlight;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
@@ -55,6 +56,8 @@ public class PearcelMod {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
         MinecraftForge.EVENT_BUS.register(new EventFillBucket());
+        FMLCommonHandler.instance().bus().register(new EventFlight());
+
         Recipes.init();
         Achievements.init();
         LogHelper.info("Init Complete!");
