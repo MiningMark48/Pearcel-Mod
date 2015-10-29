@@ -11,7 +11,6 @@ public class EventFlight {
 
     @SubscribeEvent
     public void tickPlayer(TickEvent.PlayerTickEvent event) {
-
         if (event.player.inventory.hasItemStack(new ItemStack(ModItems.flightItem)) || event.player.capabilities.isCreativeMode){
             event.player.capabilities.allowFlying = true;
             if (event.player.capabilities.isFlying && !event.player.capabilities.isCreativeMode){

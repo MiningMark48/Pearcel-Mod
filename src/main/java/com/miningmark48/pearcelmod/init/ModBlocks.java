@@ -1,7 +1,12 @@
 package com.miningmark48.pearcelmod.init;
 
+import com.miningmark48.pearcelmod.biome.PMLeaf;
+import com.miningmark48.pearcelmod.biome.PMLog;
+import com.miningmark48.pearcelmod.biome.PMSapling;
 import com.miningmark48.pearcelmod.block.*;
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
+import com.miningmark48.pearcelmod.item.ItemLeafBlocks;
+import com.miningmark48.pearcelmod.item.ItemLogBlocks;
 import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -11,6 +16,9 @@ public class ModBlocks {
 
     //Plants
     public static final Block pearcelPlant = new BlockPearcelPlant().setBlockName("pearcelPlant").setBlockTextureName(Reference.MOD_ID + ":pearcelPlant");
+    public static final Block blockLog = new PMLog().setBlockName("blockLog").setBlockTextureName(Reference.MOD_ID + ":blockLog").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Block blockLeaf = new PMLeaf().setBlockName("blockLeaf").setBlockTextureName(Reference.MOD_ID + ":blockLeaf").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Block blockSapling = new PMSapling().setBlockName("blockSapling").setBlockTextureName(Reference.MOD_ID + ":blockSapling").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     //Ore
     public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
     public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
@@ -77,6 +85,9 @@ public class ModBlocks {
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
         //Plants
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
+        GameRegistry.registerBlock(blockLog, ItemLogBlocks.class, blockLog.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(blockLeaf, ItemLeafBlocks.class, blockLeaf.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(blockSapling, ItemLeafBlocks.class, blockSapling.getUnlocalizedName().substring(5));
         //Models
         GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
         //GameRegistry.registerBlock(meMagicTable, "meMagicTable");
