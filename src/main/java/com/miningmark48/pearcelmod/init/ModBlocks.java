@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.block.*;
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.item.ItemLeafBlocks;
 import com.miningmark48.pearcelmod.item.ItemLogBlocks;
+import com.miningmark48.pearcelmod.item.ItemSaplingBlocks;
 import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -87,7 +88,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
         GameRegistry.registerBlock(blockLog, ItemLogBlocks.class, blockLog.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(blockLeaf, ItemLeafBlocks.class, blockLeaf.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(blockSapling, ItemLeafBlocks.class, blockSapling.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(blockSapling, ItemSaplingBlocks.class, blockSapling.getUnlocalizedName().substring(5));
         //Models
         GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
         //GameRegistry.registerBlock(meMagicTable, "meMagicTable");

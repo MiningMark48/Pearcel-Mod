@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.biome;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockLeaves;
@@ -9,9 +10,11 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Random;
 
 public class PMLeaf extends BlockLeaves{
 
@@ -28,7 +31,7 @@ public class PMLeaf extends BlockLeaves{
 
     public int damageDropped(int p_149692_1_)
     {
-        return super.damageDropped(p_149692_1_) + 4;
+        return super.damageDropped(p_149692_1_);
     }
 
     public int getDamageValue(World world, int x, int y, int z)
@@ -44,6 +47,11 @@ public class PMLeaf extends BlockLeaves{
         }
     }
 
+    @Override
+    public Item getItemDropped(int par1, Random random, int par2) {
+        return Item.getItemFromBlock(ModBlocks.blockSapling);
+    }
+
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
@@ -53,7 +61,7 @@ public class PMLeaf extends BlockLeaves{
 
             for (int j = 0; j < leafTypes[i].length; ++j)
             {
-                this.field_150129_M[i][j] = iconRegister.registerIcon(leafTypes[i][j]);
+                this.field_150129_M[i][j] = iconRegister.registerIcon(this.getTextureName() +  "_" + leafTypes[i][j]);
             }
         }
     }
@@ -66,5 +74,20 @@ public class PMLeaf extends BlockLeaves{
     @Override
     public String[] func_150125_e() {
         return leaves;
+    }
+
+    @Override
+    public boolean renderAsNormalBlock(){
+        return false;
+    }
+
+    @Override
+    public boolean isOpaqueCube(){
+        return false;
+    }
+
+    @Override
+    public boolean shouldSideBeRendered(IBlockAccess blockaccess, int x, int y, int z, int side){
+        return true;
     }
 }

@@ -1,6 +1,8 @@
 package com.miningmark48.pearcelmod.biome;
 
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
+import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.biome.WorldGenPearcelTree;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -20,7 +22,7 @@ import java.util.Random;
 
 public class PMSapling extends BlockSapling {
 
-    public static final String[] saplings = new String[] {"pearcel", "me", "birch"};
+    public static final String[] saplings = new String[] {"pearcel", "me"};
     private static final IIcon[] iconLength = new IIcon[saplings.length];
 
     public PMSapling()
@@ -82,8 +84,10 @@ public class PMSapling extends BlockSapling {
         switch (l)
         {
             case 0:
+                object = new WorldGenPearcelTree(ModBlocks.blockLog, ModBlocks.blockLeaf, 0, 0, false, 5, 10, false);
                 break;
             case 1:
+                object = new WorldGenMETree(ModBlocks.blockLog, ModBlocks.blockLeaf, 1, 1, false, 10, 15, false);
                 break;
             case 2:
                 break;
@@ -153,7 +157,7 @@ public class PMSapling extends BlockSapling {
     {
         for (int i = 0; i < iconLength.length; ++i)
         {
-            iconLength[i] = p_149651_1_.registerIcon(this.getUnlocalizedName().substring(5) + "_" + saplings[i]);
+            iconLength[i] = p_149651_1_.registerIcon(this.getTextureName() + "_" + saplings[i]);
         }
     }
 
