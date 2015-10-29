@@ -8,74 +8,28 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava UP-TO-DATE
-:compileJava UP-TO-DATE
-:processResources UP-TO-DATE
-:classes UP-TO-DATE
-:jar UP-TO-DATE
+:sourceMainJava
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:processResources
+:classes
+:jar
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:extractMcpData UP-TO-DATE
 :getVersionJson
 :extractUserDev UP-TO-DATE
-:extractNatives UP-TO-DATE
-:getAssetsIndex
-:getAssets
-:makeStart
-[ant:javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
-[ant:javac] 1 warning
-:runServer
-[06:53:40] [main/INFO] [GradleStart]: Extra: []
-[06:53:40] [main/INFO] [GradleStart]: Running with arguments: [--tweakClass, cpw.mods.fml.common.launcher.FMLServerTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[06:53:40] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLServerTweaker
-[06:53:40] [main/INFO] [FML]: Forge Mod Loader version 7.10.85.1230 for Minecraft 1.7.10 loading
-[06:53:40] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_60, running on Windows 8.1:amd64:6.3, installed at C:\Program Files\Java\jdk1.8.0_60\jre
-[06:53:40] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[06:53:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[06:53:40] [main/INFO] [GradleStart]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
-[06:53:40] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[06:53:40] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[06:53:40] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[06:53:40] [main/ERROR] [FML]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[06:53:41] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[06:53:41] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[06:53:41] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[06:53:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[06:53:41] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
-[06:53:41] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
-[06:53:41] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
-[06:53:43] [main/WARN] [FML]: =============================================================
-[06:53:43] [main/WARN] [FML]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
-[06:53:43] [main/WARN] [FML]: Offendor: net/minecraft/server/gui/MinecraftServerGui$1.windowClosing(Ljava/awt/event/WindowEvent;)V
-[06:53:43] [main/WARN] [FML]: Use FMLCommonHandler.exitJava instead
-[06:53:43] [main/WARN] [FML]: =============================================================
-[06:53:43] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[06:53:43] [Server thread/INFO] [MinecraftForge]: Attempting early MinecraftForge initialization
-[06:53:43] [Server thread/INFO] [FML]: MinecraftForge v10.13.2.1230 Initialized
-[06:53:43] [Server thread/INFO] [FML]: Replaced 182 ore recipies
-[06:53:43] [Server thread/INFO] [MinecraftForge]: Completed early MinecraftForge initialization
-[06:53:43] [Server thread/INFO] [FML]: Searching C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\eclipse\mods for mods
-[06:53:45] [Server thread/INFO] [FML]: Forge Mod Loader has identified 4 mods to load
-[06:53:45] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, pearcelmod] at CLIENT
-[06:53:45] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, pearcelmod] at SERVER
-[06:53:45] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
-[06:53:45] [Server thread/INFO] [FML]: Found 341 ObjectHolder annotations
-[06:53:45] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[06:53:46] [Server thread/INFO] [PearcelMod]: Pre-Init Complete!
-[06:53:46] [Server thread/INFO] [FML]: Applying holder lookups
-[06:53:46] [Server thread/INFO] [FML]: Holder lookups applied
-[06:53:46] [Server thread/INFO]: Loading properties
-[06:53:46] [Server thread/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
-[06:53:46] [Server thread/WARN] [FML]: Can't revert to frozen GameData state without freezing first.
-[06:53:46] [Server thread/INFO] [FML]: Applying holder lookups
-[06:53:46] [Server thread/INFO] [FML]: Holder lookups applied
-[06:53:46] [Server thread/INFO] [FML]: The state engine was in incorrect state POSTINITIALIZATION and forced into state SERVER_STOPPED. Errors may have been discarded.
-Java HotSpot(TM) 64-Bit Server VM warning: Using incremental CMS is deprecated and will likely be removed in a future release
+:genSrgs SKIPPED
+:reobf
+:assemble
+:check UP-TO-DATE
+:build
 
 BUILD SUCCESSFUL
 
-Total time: 13.997 secs
+Total time: 53.26 secs
