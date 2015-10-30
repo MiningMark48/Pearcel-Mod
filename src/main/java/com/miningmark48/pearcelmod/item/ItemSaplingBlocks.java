@@ -1,15 +1,17 @@
 package com.miningmark48.pearcelmod.item;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemBlockWithMetadata;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
 
-public class ItemSaplingBlocks extends ItemBlock{
+public class ItemSaplingBlocks extends ItemBlockWithMetadata{
 
     public static final String[] saplings = new String[] {"pearcel", "me"};
+    private IIcon[] saplingIcons;
 
     public ItemSaplingBlocks(Block block) {
-        super(block);
+        super(block, block);
         this.setHasSubtypes(true);
     }
 

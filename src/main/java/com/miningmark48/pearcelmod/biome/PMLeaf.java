@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.biome;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.init.ModItems;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockLeaves;
@@ -25,7 +26,7 @@ public class PMLeaf extends BlockLeaves{
     {
         if ((side & 3) == 1 && world.rand.nextInt(meta) == 0)
         {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(Items.apple, 1, 0));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(ModItems.pearcel, 1, 0));
         }
     }
 
