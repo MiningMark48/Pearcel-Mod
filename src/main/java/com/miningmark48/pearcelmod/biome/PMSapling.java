@@ -88,7 +88,7 @@ public class PMSapling extends BlockSapling {
                 object = new WorldGenPearcelTree(ModBlocks.blockLog, ModBlocks.blockLeaf, 0, 0, false, 5, 10, false);
                 break;
             case 1:
-                object = new WorldGenMETree(ModBlocks.blockLog, ModBlocks.blockLeaf, 1, 1, false, 10, 15, false);
+                object = new WorldGenMETree(ModBlocks.blockLog, ModBlocks.blockLeaf, 1, 1, false, 15, 20, false);
                 break;
             case 2:
                 break;

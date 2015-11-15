@@ -24,7 +24,7 @@ public class PMLeaf extends BlockLeaves{
 
     protected void func_150124_c(World world, int x, int y, int z, int side, int meta)
     {
-        if ((side & 3) == 1 && world.rand.nextInt(meta) == 0)
+        if (world.rand.nextInt(meta) == 0) //(side & 3) == 1 &&
         {
             this.dropBlockAsItem(world, x, y, z, new ItemStack(ModItems.pearcel, 1, 0));
         }
