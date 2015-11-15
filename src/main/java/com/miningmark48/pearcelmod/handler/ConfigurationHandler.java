@@ -20,6 +20,7 @@ public class ConfigurationHandler {
     public static int torcherFrequency;
     public static int summonerRange;
     public static int sapDurability;
+    public static int maxStaffFlyHeight;
 
     public static void init(File configFile){
 
@@ -54,6 +55,7 @@ public class ConfigurationHandler {
         torcherFrequency = configuration.getInt("Torcher Frequency", Configuration.CATEGORY_GENERAL, 2, 50, 2, "What is the frequency of torches that can be placed by the torcher block?");
         summonerRange = configuration.getInt("Range for Summoner", Configuration.CATEGORY_GENERAL, 3, 1, 25, "What is the range in which something may be summoned?");
         sapDurability = configuration.getInt("Durability for Summoner's Activation Pearcel", Configuration.CATEGORY_GENERAL, 20, 1, 100, "What is the durability of the summoner's activation pearcel?");
+        maxStaffFlyHeight = configuration.getInt("Max height for Pearcel Staff boost", Configuration.CATEGORY_GENERAL, 150, 1, 256, "What is the max height the Pearcel Staff will give you a boost?");
 
         if (configuration.hasChanged()){
 

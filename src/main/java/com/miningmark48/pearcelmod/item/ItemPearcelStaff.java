@@ -1,6 +1,9 @@
 package com.miningmark48.pearcelmod.item;
 
 import java.util.List;
+
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -8,6 +11,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 
 public class ItemPearcelStaff extends ItemSword{
@@ -20,7 +25,7 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Fly and Heal!");
+        par3List.add("Does a quarter damage of the entity's health...");
         par3List.add("Right Click = Boost Up (-1 Durability)");
         par3List.add("Sneak + Right Click = Regen (-50 Durability)");
     }
@@ -44,7 +49,12 @@ public class ItemPearcelStaff extends ItemSword{
             item.damageItem(50, player);
             return item;
         }else{
-            player.addVelocity(0, 0.5, 0);
+            if (player.posY <= ConfigurationHandler.maxStaffFlyHeight){
+                player.addVelocity(0, 0.5, 0);
+            }else if (!world.isRemote){
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "The Pearcel Staff weakens..."));
+                item.damageItem(1, player);
+            }
             item.damageItem(1, player);
             return item;
         }
@@ -52,8 +62,13 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
-        hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
-        hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 1));
+        //hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
+        //hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 1));
+
+        Float entHealth = hitEntity.getHealth();
+        Float entDamageBy = entHealth / 4;
+        hitEntity.setHealth(entHealth - entDamageBy);
+
         return true;
     }
 
