@@ -6,6 +6,9 @@ import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.boss.EntityDragon;
+import net.minecraft.entity.boss.EntityWither;
+import net.minecraft.entity.monster.EntityWitch;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
@@ -16,6 +19,8 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 
 public class ItemPearcelStaff extends ItemSword{
+
+    Float entDamageBy;
 
     public ItemPearcelStaff(ToolMaterial material)
     {
@@ -62,11 +67,14 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
-        //hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
-        //hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 1));
-
         Float entHealth = hitEntity.getHealth();
-        Float entDamageBy = entHealth / 4;
+        if (hitEntity instanceof EntityDragon || hitEntity instanceof EntityWither){
+            entDamageBy = entHealth / 8;
+        }else{
+            entDamageBy = entHealth / 4;
+            hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
+            hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 1));
+        }
         hitEntity.setHealth(entHealth - entDamageBy);
 
         return true;
