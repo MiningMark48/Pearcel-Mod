@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 public class ItemPearcelFuel extends Item implements IFuelHandler{
 
     @Override
-    public int getBurnTime(ItemStack fuel) {
+     public int getBurnTime(ItemStack fuel) {
         Item item = fuel.getItem();
 
         if(item == ModItems.pearcelCharcoal){

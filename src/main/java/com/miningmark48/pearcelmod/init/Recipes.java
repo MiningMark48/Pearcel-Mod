@@ -99,8 +99,10 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCookie7, 9), new ItemStack(ModItems.pearcelCookie8));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCookie8, 9), new ItemStack(ModItems.pearcelCookie9));
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.blockSapling, 1, 0), new ItemStack(ModItems.pearcel), new ItemStack(Blocks.sapling));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.blockSapling, 2, 1), new ItemStack(ModBlocks.meBlock), new ItemStack(Blocks.sapling));
+        //GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.blockSapling, 2, 1), new ItemStack(ModBlocks.meBlock), new ItemStack(Blocks.sapling));
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.pearcelPlanks, 4), new ItemStack(ModBlocks.blockLog, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCharcoal, 9), new ItemStack(ModBlocks.pearcelCharcoalBlock));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelCharcoalBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCharcoal));
 
         //ME^Matter Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.meMatterBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.meMatter));

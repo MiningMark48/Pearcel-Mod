@@ -1,0 +1,107 @@
+---- Minecraft Crash Report ----
+// Oops.
+
+Time: 11/27/15 12:04 AM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.miningmark48.pearcelmod.block.BlockSummoner.onBlockActivated(BlockSummoner.java:70)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.miningmark48.pearcelmod.block.BlockSummoner.onBlockActivated(BlockSummoner.java:70)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player828'/64, l='MpServer', x=742.82, y=57.62, z=768.20]]
+	Chunk stats: MultiplayerChunkCache: 1086, 1086
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (708,4,768), Chunk: (at 4,0,0 in 44,48; contains blocks 704,0,768 to 719,255,783), Region: (1,1; contains chunks 32,32 to 63,63, blocks 512,0,512 to 1023,255,1023)
+	Level time: 481407 game time, 93805 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 29 total; [EntityClientPlayerMP['Player828'/64, l='MpServer', x=742.82, y=57.62, z=768.20], EntityBat['Bat'/26832, l='MpServer', x=767.16, y=64.95, z=819.34], EntityCow['Cow'/18, l='MpServer', x=664.72, y=56.00, z=793.41], EntityBat['Bat'/28658, l='MpServer', x=710.41, y=63.98, z=804.50], EntitySheep['Sheep'/22, l='MpServer', x=684.13, y=56.00, z=729.25], EntityItem['item.item.pearcelItem'/27, l='MpServer', x=713.03, y=56.13, z=717.97], EntityItem['item.item.pearcelItem'/29, l='MpServer', x=709.25, y=56.13, z=720.22], EntityPearcelMob['Pearcel Mob'/28, l='MpServer', x=709.47, y=56.00, z=721.25], EntityPearson['Pearson'/31, l='MpServer', x=711.78, y=54.00, z=765.06], EntityCow['Cow'/32, l='MpServer', x=706.50, y=56.00, z=769.72], EntityItem['item.item.pearcelItem'/38, l='MpServer', x=739.28, y=56.13, z=723.47], EntityPearcelMob['Pearcel Mob'/39, l='MpServer', x=724.56, y=56.00, z=771.66], EntityPearcelMob['Pearcel Mob'/36, l='MpServer', x=746.16, y=56.00, z=721.25], EntityBat['Bat'/33086, l='MpServer', x=756.53, y=56.64, z=796.53], EntityBat['Bat'/7151, l='MpServer', x=684.44, y=56.89, z=838.98], EntityItem['item.item.pearcelItem'/37, l='MpServer', x=740.81, y=56.13, z=724.25], EntityBat['Bat'/29137, l='MpServer', x=749.25, y=56.98, z=807.56], EntityBat['Bat'/18330, l='MpServer', x=692.91, y=62.80, z=836.80], EntityItem['item.item.pearcelItem'/42, l='MpServer', x=745.81, y=56.13, z=780.69], EntityItem['item.item.pearcelItem'/40, l='MpServer', x=745.41, y=56.13, z=771.88], EntityItem['item.item.pearcelItem'/41, l='MpServer', x=750.41, y=56.13, z=778.13], EntityBat['Bat'/46, l='MpServer', x=756.31, y=56.70, z=813.69], EntityBat['Bat'/31175, l='MpServer', x=667.22, y=57.24, z=830.49], EntityBat['Bat'/10273, l='MpServer', x=784.53, y=61.85, z=785.75], EntityBat['Bat'/24500, l='MpServer', x=760.92, y=57.80, z=798.31], EntityBat['Bat'/21181, l='MpServer', x=752.25, y=56.84, z=800.47], EntityBat['Bat'/33362, l='MpServer', x=700.71, y=57.40, z=809.29], EntityItem['item.item.pearcelItem'/62, l='MpServer', x=746.34, y=57.13, z=773.63], EntityItem['item.item.pearcelItem'/61, l='MpServer', x=744.88, y=56.13, z=720.97]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.7.0_79, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 913677496 bytes (871 MB) / 1171259392 bytes (1117 MB) up to 2842689536 bytes (2711 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 6 mods loaded, 6 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.3.74} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.74-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	pearcelmod{1.7.10-1.8.6} [Pearcel Mod] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 4600 GL version 4.3.0 - Build 10.18.15.4256, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
