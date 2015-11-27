@@ -52,6 +52,7 @@ public class ModBlocks {
     public static final Block pearcelStonebricks = new BlockPearcelMod().setBlockName("pearcelStonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStonebricks");
     public static final Block pearcelPlanks = new BlockPlanks().setBlockName("pearcelPlanks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelPlanks");
     public static final Block pearcelCharcoalBlock = new BlockPearcelMod().setBlockName("pearcelCharcoalBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelCharcoalBlock");
+    public static final Block mePlanks = new BlockPlanks().setBlockName("mePlanks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":mePlanks");
 
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -85,6 +86,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcelStonebricks, "pearcelStonebricks");
         GameRegistry.registerBlock(pearcelPlanks, "pearcelPlanks");
         GameRegistry.registerBlock(pearcelCharcoalBlock, "pearcelCharcoalBlock");
+        GameRegistry.registerBlock(mePlanks, "mePlanks");
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");

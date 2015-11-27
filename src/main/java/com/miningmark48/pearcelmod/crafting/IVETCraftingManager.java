@@ -90,6 +90,16 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(ModItems.pearcelArrow), Items.arrow);
         this.addShapelessRecipe(new ItemStack(ModBlocks.dragonInfusedPearcel), ModBlocks.enderInfusedPearcel);
         this.addShapelessRecipe(new ItemStack(ModBlocks.witherInfusedPearcel), ModBlocks.netherInfusedPearcel);
+        this.addShapelessRecipe(new ItemStack(Items.coal), Blocks.coal_ore);
+        this.addShapelessRecipe(new ItemStack(Items.iron_ingot), Blocks.iron_ore);
+        this.addShapelessRecipe(new ItemStack(Items.gold_ingot), Blocks.gold_ore);
+        this.addShapelessRecipe(new ItemStack(Items.diamond), Blocks.diamond_ore);
+        this.addShapelessRecipe(new ItemStack(Items.emerald), Blocks.emerald_ore);
+        this.addShapelessRecipe(new ItemStack(Items.redstone), Blocks.redstone_ore);
+        this.addShapelessRecipe(new ItemStack(Items.quartz), Blocks.quartz_ore);
+        this.addShapelessRecipe(new ItemStack(Items.dye, 1, 3), Blocks.lapis_ore);
+        this.addShapelessRecipe(new ItemStack(ModItems.pearcel), ModBlocks.pearcelOre);
+        this.addShapelessRecipe(new ItemStack(ModItems.pearcel, 2), ModBlocks.netherPearcelOre);
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
     }
