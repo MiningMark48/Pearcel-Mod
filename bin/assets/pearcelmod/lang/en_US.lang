@@ -100,6 +100,7 @@ tile.blockSapling.pearcel.name=Pearcel Sapling
 tile.blockSapling.me.name=ME^Sapling
 tile.pearcelPlanks.name=Pearcel Wood Planks
 tile.pearcelCharcoalBlock.name=Pearcel Charcoal Block
+tile.pearcelFence.name=Pearcel Fence
 
 tooltip.pearcel.celCookie.desc.0=Low on calories!
 tooltip.pearcel.celCookie2.desc.0=9 Pearcel Cookies
@@ -145,3 +146,57 @@ entity.Pearcel Cow.name=Pearcel Cow
 entity.Pearcel Squid.name=Pearcel Squid
 entity.Pearcel Mob.name=Pearcel Mob
 entity.Pearson.name=Pearson
+
+summoner.error.missingBlock=Missing block required for summoning activation!
+summoner.error.incorrectBlock=Incorrect block was used for summoning, block was corrupted.
+summoner.error.incorrectItem=Incorrect item was used for summoning.
+summoner.summoned=was successfully summoned.
+summoner.mobSummon.pearcelmob=Pearcel Mob
+summoner.mobSummon.pearson=Pearson
+summoner.mobSummon.pearcelsquid=Pearcel Squid
+summoner.mobSummon.enderdragon=Ender Dragon
+summoner.mobSummon.wither=Wither
+summoner.mobSummon.sheep=Sheep
+summoner.mobSummon.pearcelcow=Pearcel Cow
+summoner.mobSummon.enderman=Enderman
+summoner.mobSummon.blaze=Blaze
+summoner.mobSummon.ghast=Ghast
+summoner.mobSummon.skeleton=Skeleton
+summoner.mobSummon.creeper=Creeper
+summoner.mobSummon.creeper.charged=Creeper was charged.
+summoner.mobSummon.endercrystal=Ender Crystal
+summoner.mobSummon.horse=Horse
+
+dice.roll.special=You special rolled a
+dice.roll.normal=You rolled a
+
+config.addPearcelStaff.title=Add Pearcel Staff?
+config.addPearcelStaff.desc=Should the Pearcel Staff be added to the game?
+config.useFlightItemParticle.title=Use Pearcel Cloud Particles?
+config.useFlightItemParticle.desc=Should the particles of the Pearcel Cloud be added to the game?
+config.specialDice.title=Have special dice rolls?
+config.specialDice.desc=Add Special dice rolls?
+config.useMEMatter.title=ME^Matter Recipes
+config.useMEMatter.desc=Should ME^Matter recipes be added?
+config.torcherRange.title=Torcher Range
+config.torcherRange.desc=What is the range of torches that can be placed by the torcher block?
+config.torcherFrequency.title=Torcher Frequency
+config.torcherFrequency.desc=What is the frequency of torches that can be placed by the torcher block?
+config.summonerRange.title=Range for Summoner
+config.summonerRange.desc=What is the range in which something may be summoned?
+config.sapDurability.title=Durability for Summoner's Activation Pearcel
+config.sapDurability.desc=What is the durability of the summoner's activation pearcel?
+config.maxStaffFlyHeight.title=Max height for Pearcel Staff boost
+config.maxStaffFlyHeight.desc=What is the max height the Pearcel Staff will give you a boost?
+
+gui.ivet.name=IVET
+gui.meWorkbench.name=ME^Workbench
+gui.pcp.name=Portable Crafting Pearcel
+
+chat.pearcelStaff.weaken=The Pearcel Staff weakens...
+chat.torcher.lit=Let there be light!
+
+command.credit.info=Parcel31u - Reason for this mod -- Codyrule040 - Textures and many ideas
+command.ivet.info=IVET recipes can be found on the github wiki: http://www.github.com/miningmark48/pearcel-mod
+command.version.info=Running Pearcel Mod v
+
