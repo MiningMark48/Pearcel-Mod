@@ -17,11 +17,13 @@ public class ConfigurationHandler {
     public static boolean useFlightItemParticle;
     public static boolean specialDice;
     public static boolean useMEMatter;
+    public static boolean flightItemExhaustion;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int summonerRange;
     public static int sapDurability;
     public static int maxStaffFlyHeight;
+
 
     public static void init(File configFile){
 
@@ -46,6 +48,7 @@ public class ConfigurationHandler {
 
         addPearcelStaff = configuration.getBoolean(StatCollector.translateToLocal("config.addPearcelStaff.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.addPearcelStaff.desc"));
         useFlightItemParticle = configuration.getBoolean(StatCollector.translateToLocal("config.useFlightItemParticle.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useFlightItemParticle.desc"));
+        flightItemExhaustion = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemExhaustion.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemExhaustion.desc"));
         specialDice = configuration.getBoolean(StatCollector.translateToLocal("config.specialDice.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.specialDice.desc"));
         useMEMatter = configuration.getBoolean(StatCollector.translateToLocal("config.useMEMatter.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useMEMatter.desc"));
         torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, 500, StatCollector.translateToLocal("config.torcherRange.desc"));
@@ -53,6 +56,7 @@ public class ConfigurationHandler {
         summonerRange = configuration.getInt(StatCollector.translateToLocal("config.summonerRange.title"), Configuration.CATEGORY_GENERAL, 3, 1, 25, StatCollector.translateToLocal("config.summonerRange.desc"));
         sapDurability = configuration.getInt(StatCollector.translateToLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, StatCollector.translateToLocal("config.sapDurability.desc"));
         maxStaffFlyHeight = configuration.getInt(StatCollector.translateToLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, StatCollector.translateToLocal("config.maxStaffFlyHeight.desc"));
+
 
         if (configuration.hasChanged()){
             configuration.save();

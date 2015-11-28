@@ -6,6 +6,7 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 
 public class EventFlight {
 
@@ -24,7 +25,9 @@ public class EventFlight {
                     event.player.getEntityWorld().spawnParticle("cloud", x - 0.25, y - 1.5, z, 0, -0.01, 0);
                     event.player.getEntityWorld().spawnParticle("cloud", x, y - 1.5, z - 0.25, 0, -0.01, 0);
                 }
-                event.player.addExhaustion(0.0075F);
+                if (ConfigurationHandler.flightItemExhaustion) {
+                    event.player.addExhaustion(0.0075F);
+                }
                 event.player.addStat(Achievements.achievementFlight, 1);
             }
         }else{
