@@ -9,6 +9,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -78,9 +79,9 @@ public class ItemDice extends ItemPearcelMod{
                     world.setBlock(playerX, playerY + 3, playerZ, Blocks.beacon);
                 }
 
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "You special rolled a " + diceRand + "."));
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("dice.roll.special") + " " + diceRand + "."));
             }else{
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + "You rolled a " + diceRand + "."));
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + StatCollector.translateToLocal("dice.roll.normal") + " " + diceRand + "."));
             }
         }
 
