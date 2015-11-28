@@ -4,6 +4,7 @@ import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +36,7 @@ public class commandIVET extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender icommandsender, String[] astring){
-        icommandsender.addChatMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Pearcel Mod: " + EnumChatFormatting.RESET + "The IVET recipes will be added soon."));
+        icommandsender.addChatMessage(new ChatComponentTranslation(StatCollector.translateToLocal("command.ivet.info")));
         return;
     }
 

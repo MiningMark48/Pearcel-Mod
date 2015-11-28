@@ -5,6 +5,7 @@ import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +37,7 @@ public class commandVersion extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender icommandsender, String[] astring){
-        icommandsender.addChatMessage(new ChatComponentTranslation("Running Pearcel Mod v" + EnumChatFormatting.DARK_GREEN + Reference.VERSION));
+        icommandsender.addChatMessage(new ChatComponentTranslation(StatCollector.translateToLocal("command.version.info") + EnumChatFormatting.DARK_GREEN + Reference.VERSION));
         return;
     }
 

@@ -16,6 +16,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class ItemPearcelStaff extends ItemSword{
@@ -57,7 +58,7 @@ public class ItemPearcelStaff extends ItemSword{
             if (player.posY <= ConfigurationHandler.maxStaffFlyHeight){
                 player.addVelocity(0, 0.5, 0);
             }else if (!world.isRemote){
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + "The Pearcel Staff weakens..."));
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("chat.pearcelStaff.weaken")));
                 item.damageItem(1, player);
             }
             item.damageItem(1, player);

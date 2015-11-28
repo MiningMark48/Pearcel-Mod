@@ -4,16 +4,14 @@ import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class commandCredit extends CommandBase {
 
-    String credit =
-            "Parcel31u - Reason for this mod, " +
-            "Numbah90 - Help with development" +
-            "Codyrule040 - Textures and many ideas ";
+    String credit = StatCollector.translateToLocal("command.credit.info");
 
     private List aliases;
 

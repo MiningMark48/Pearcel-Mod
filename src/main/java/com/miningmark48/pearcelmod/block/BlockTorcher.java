@@ -8,6 +8,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -78,7 +79,7 @@ public class BlockTorcher extends BlockPearcelMod{
             world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
             world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
             if (!world.isRemote){
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + "Let there be light!"));
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("chat.torcher.lit")));
             }
 
             return true;
