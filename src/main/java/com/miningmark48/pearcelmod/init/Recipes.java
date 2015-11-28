@@ -82,6 +82,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.netherInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.lava_bucket), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.netherrack));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelStonebricks, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelStone));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelFence, 2), "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelStick));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.meGlassPane, 16), "xxx", "xxx", 'x', new ItemStack(ModBlocks.meGlass));
         //Compressed Blocks/Items
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCookie), new ItemStack(Items.egg), new ItemStack(ModItems.pearcelFlour), new ItemStack(Items.sugar), new ItemStack(Items.milk_bucket));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.pearcelCookie2), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCookie));
