@@ -25,7 +25,7 @@ public class GuiIVET extends GuiContainer {
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j) {
-        this.fontRendererObj.drawString(StatCollector.translateToLocal("IVET"), 75, 5, 0x404040);
+        this.fontRendererObj.drawString(StatCollector.translateToLocal("gui.ivet.name"), 75, 5, 0x404040);
     }
 
     @Override

@@ -30,7 +30,7 @@ public class GuiPCP extends GuiContainer {
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
-        this.fontRendererObj.drawString(StatCollector.translateToLocal("Portable Crafting Pearcel"), 20, 5, 0x404040);
+        this.fontRendererObj.drawString(StatCollector.translateToLocal("gui.pcp.name"), 20, 5, 0x404040);
     }
 
     @Override

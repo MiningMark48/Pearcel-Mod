@@ -6,6 +6,7 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigurationHandler {
@@ -27,7 +28,6 @@ public class ConfigurationHandler {
         //Create the configuration object from the given configuration file
         if (configuration == null){
             configuration = new Configuration(configFile);
-            LogHelper.info("Configuration file was created.");
             loadConfiguration();
         }
 
@@ -37,31 +37,25 @@ public class ConfigurationHandler {
     public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event){
 
         if (event.modID.equalsIgnoreCase(Reference.MOD_ID)){
-
             loadConfiguration();
-            LogHelper.info("Configuration settings were loaded.");
-
         }
 
     }
 
     private static void loadConfiguration(){
 
-        addPearcelStaff = configuration.getBoolean("Add Pearcel Staff?", Configuration.CATEGORY_GENERAL, true, "Should the Pearcel Staff be added to the game?");
-        useFlightItemParticle = configuration.getBoolean("Use Pearcel Cloud Particles?", Configuration.CATEGORY_GENERAL, true, "Should the particles of the Pearcel Cloud be added to the game?");
-        specialDice = configuration.getBoolean("Have special dice rolls?", Configuration.CATEGORY_GENERAL, true, "Add Special dice rolls?");
-        useMEMatter = configuration.getBoolean("ME^Matter Recipes", Configuration.CATEGORY_GENERAL, true, "Should ME^Matter recipes be added?");
-        torcherRange = configuration.getInt("Torcher Range", Configuration.CATEGORY_GENERAL, 25, 1, 500, "What is the range of torches that can be placed by the torcher block?");
-        torcherFrequency = configuration.getInt("Torcher Frequency", Configuration.CATEGORY_GENERAL, 2, 50, 2, "What is the frequency of torches that can be placed by the torcher block?");
-        summonerRange = configuration.getInt("Range for Summoner", Configuration.CATEGORY_GENERAL, 3, 1, 25, "What is the range in which something may be summoned?");
-        sapDurability = configuration.getInt("Durability for Summoner's Activation Pearcel", Configuration.CATEGORY_GENERAL, 20, 1, 100, "What is the durability of the summoner's activation pearcel?");
-        maxStaffFlyHeight = configuration.getInt("Max height for Pearcel Staff boost", Configuration.CATEGORY_GENERAL, 150, 1, 256, "What is the max height the Pearcel Staff will give you a boost?");
+        addPearcelStaff = configuration.getBoolean(StatCollector.translateToLocal("config.addPearcelStaff.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.addPearcelStaff.desc"));
+        useFlightItemParticle = configuration.getBoolean(StatCollector.translateToLocal("config.useFlightItemParticle.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useFlightItemParticle.desc"));
+        specialDice = configuration.getBoolean(StatCollector.translateToLocal("config.specialDice.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.specialDice.desc"));
+        useMEMatter = configuration.getBoolean(StatCollector.translateToLocal("config.useMEMatter.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useMEMatter.desc"));
+        torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, 500, StatCollector.translateToLocal("config.torcherRange.desc"));
+        torcherFrequency = configuration.getInt(StatCollector.translateToLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 50, 2, StatCollector.translateToLocal("config.torcherFrequency.desc"));
+        summonerRange = configuration.getInt(StatCollector.translateToLocal("config.summonerRange.title"), Configuration.CATEGORY_GENERAL, 3, 1, 25, StatCollector.translateToLocal("config.summonerRange.desc"));
+        sapDurability = configuration.getInt(StatCollector.translateToLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, StatCollector.translateToLocal("config.sapDurability.desc"));
+        maxStaffFlyHeight = configuration.getInt(StatCollector.translateToLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, StatCollector.translateToLocal("config.maxStaffFlyHeight.desc"));
 
         if (configuration.hasChanged()){
-
             configuration.save();
-            LogHelper.info("Configuration settings were saved.");
-
         }
 
     }

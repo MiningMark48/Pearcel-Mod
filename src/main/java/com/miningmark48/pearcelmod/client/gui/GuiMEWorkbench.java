@@ -26,7 +26,7 @@ public class GuiMEWorkbench extends GuiContainer {
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
-        this.fontRendererObj.drawString(StatCollector.translateToLocal("ME^Workbench"), 50, 5, 0x404040);
+        this.fontRendererObj.drawString(StatCollector.translateToLocal("gui.meWorkbench.name"), 50, 5, 0x404040);
     }
 
     @Override
