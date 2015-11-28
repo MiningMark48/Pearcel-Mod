@@ -7,6 +7,7 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -21,7 +22,7 @@ public class ItemAngelDust extends ItemFood {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-        list.add("Fly like an angel...");
+        list.add(StatCollector.translateToLocal("tooltip.item.angelDust.line1"));
     }
 
     public ItemStack onEaten(ItemStack item, World world, EntityPlayer player)

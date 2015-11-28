@@ -23,10 +23,10 @@ public class ItemDice extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Right click for normal roll.");
+        par3List.add(StatCollector.translateToLocal("tooltip.item.dice.line1"));
 
         if (ConfigurationHandler.specialDice){
-            par3List.add("Sneak + Right click for special roll.");
+            par3List.add(StatCollector.translateToLocal("tooltip.item.dice.line2"));
         }
 
     }
@@ -49,7 +49,7 @@ public class ItemDice extends ItemPearcelMod{
                 }else if(diceRand == 3){
                     world.setBlock(playerX, playerY + 2, playerZ, Blocks.diamond_block);
                 }else if(diceRand == 4){
-                    player.addChatComponentMessage(new ChatComponentTranslation("Look up."));
+                    player.addChatComponentMessage(new ChatComponentTranslation(StatCollector.translateToLocal("chat.dice.anvilFall")));
 
                     world.setBlock(playerX, playerY + 20, playerZ, Blocks.anvil);
                     world.setBlock(playerX + 1, playerY + 20, playerZ, Blocks.anvil);

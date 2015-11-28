@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class ItemPearcelSword extends ItemSword{
@@ -18,7 +19,7 @@ public class ItemPearcelSword extends ItemSword{
 
     @Override
 	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-            par3List.add("My energy rises when I hold this... ");
+            par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelSword.line1"));
     }
 
     @Override

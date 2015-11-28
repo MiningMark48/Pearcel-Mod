@@ -14,7 +14,7 @@ item.pearcelBow.name=Pearcel Bow
 item.pearcelBread.name=Pearcel Bread
 item.pearcelPie.name=Pearcel Pie
 item.angelDust.name=Angel Dust
-item.pearcelMelon.name=Watermelooaan
+item.pearcelMelon.name=Pearcel Melon
 item.pearcelJuice.name=Bucket of Pearcel Juice
 item.pearcelmod:pearcelStick.name=Pearcel Stick
 item.pearcelmod:pearcelFlour.name=Pearcel Flour
@@ -103,23 +103,6 @@ tile.pearcelCharcoalBlock.name=Pearcel Charcoal Block
 tile.pearcelFence.name=Pearcel Fence
 tile.meGlassPane.name=ME^Glass Pane
 
-tooltip.pearcel.celCookie.desc.0=Low on calories!
-tooltip.pearcel.celCookie2.desc.0=9 Pearcel Cookies
-tooltip.pearcel.celCookie3.desc.0=81 Pearcel Cookies
-tooltip.pearcel.celCookie4.desc.0=729 Pearcel Cookies
-tooltip.pearcel.celCookie5.desc.0=6,561 Pearcel Cookies
-tooltip.pearcel.celCookie6.desc.0=59,049 Pearcel Cookies
-tooltip.pearcel.celCookie7.desc.0=531,441 Pearcel Cookies
-tooltip.pearcel.celCookie8.desc.0=4,782,969 Pearcel Cookies
-tooltip.pearcel.celCookie9.desc.0=43,046,721 Pearcel Cookies
-tooltip.pearcel.celItem.desc.0=Not your regular pear.
-tooltip.pearcel.celPie.desc.0=This tastes funny...
-tooltip.pearcel.celBread.desc.0=This is gonna put some weight on me.
-tooltip.pearcel.celSandwich.desc.0=The carbs are not a lie...
-tooltip.pearcel.nSandwich.desc.0=The Carbs of Encouragement!
-tooltip.pearcel.celBeef.desc.0=Is this rotten?
-tooltip.pearcel.celSteak.desc.0=Yummy!
-
 achievement.craftPearcelSword=G3t rekt m8!
 achievement.craftPearcelSword.desc=Craft a Pearcel Sword
 achievement.findPearcelOre=How does this make since?
@@ -198,8 +181,49 @@ gui.pcp.name=Portable Crafting Pearcel
 
 chat.pearcelStaff.weaken=The Pearcel Staff weakens...
 chat.torcher.lit=Let there be light!
+chat.dice.anvilFall=Look up.
 
 command.credit.info=Parcel31u - Reason for this mod -- Codyrule040 - Textures and many ideas
 command.ivet.info=IVET recipes can be found on the github wiki: http://www.github.com/miningmark48/pearcel-mod
 command.version.info=Running Pearcel Mod v
+
+tooltip.item.pearcelCookie.line1=Low on calories!
+tooltip.item.pearcelCookie2.line1=9 Pearcel Cookies
+tooltip.item.pearcelCookie3.line1=81 Pearcel Cookies
+tooltip.item.pearcelCookie4.line1=729 Pearcel Cookies
+tooltip.item.pearcelCookie5.line1=6,561 Pearcel Cookies
+tooltip.item.pearcelCookie6.line1=59,049 Pearcel Cookies
+tooltip.item.pearcelCookie7.line1=531,441 Pearcel Cookies
+tooltip.item.pearcelCookie8.line1=4,782,969 Pearcel Cookies
+tooltip.item.pearcelCookie9.line1=43,046,721 Pearcel Cookies
+tooltip.item.pearcelItem.line1=Not your regular pear.
+tooltip.item.pearcelPie.line1=This tastes funny...
+tooltip.item.pearcelBread.line1=This is gonna put some weight on me.
+tooltip.item.pearcelSandwich.line1=The carbs are not a lie...
+tooltip.item.melonSandwich.line1=The Carbs of Encouragement!
+tooltip.item.pearcelBeef.line1=Is this rotten?
+tooltip.item.pearcelSteak.line1=Yummy!
+tooltip.item.itemFlight.line1=Fly in the air on a whispy cloud.
+tooltip.item.angelDust.line1=Fly like an angel...
+tooltip.item.dice.line1=Right click for normal roll.
+tooltip.item.dice.line2=Sneak + Right click for special roll.
+tooltip.item.pcp.line1=Portable Crafting Pearcel?
+tooltip.item.pearcelAxe.line1=I think we make a perfect pear.
+tooltip.item.pearcelBow.line1=Infinite power...
+tooltip.item.pearcelMelon.line1=Simply a Pearcel Melon
+tooltip.item.pearcelPickaxe.line1=Such speed...
+tooltip.item.pearcelShovel.line1=Now I can pear through the ground!
+tooltip.item.pearcelStaff.line1=Does a quarter damage of the entity's health...
+tooltip.item.pearcelStaff.line2=Right Click = Boost Up (-1 Durability)
+tooltip.item.pearcelStaff.line3=Sneak + Right Click = Regen (-50 Durability)
+tooltip.item.pearcelStick.line1=I should poke something with this...
+tooltip.item.pearcelSword.line1=My energy rises when I hold this...
+tooltip.item.sap.line1=Uses Left:
+tooltip.item.sap.line2=Right click upon the Summoner
+tooltip.item.sap.line3=to activate the dark Pearcel magic,
+tooltip.item.sap.line4=in which a creature will spawn
+tooltip.item.sap.line5=from the depths of the surrounding summoner blocks.
+
+
+
 

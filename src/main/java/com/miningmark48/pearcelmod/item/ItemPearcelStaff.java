@@ -31,9 +31,9 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Does a quarter damage of the entity's health...");
-        par3List.add("Right Click = Boost Up (-1 Durability)");
-        par3List.add("Sneak + Right Click = Regen (-50 Durability)");
+        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line1"));
+        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line2"));
+        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line3"));
     }
 
     @Override

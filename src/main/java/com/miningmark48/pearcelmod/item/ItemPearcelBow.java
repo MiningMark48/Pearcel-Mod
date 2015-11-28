@@ -13,6 +13,7 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
@@ -164,7 +165,7 @@ public class ItemPearcelBow extends ItemBow{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add("Infinite power...");
+        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelBow.line1"));
         if (!par1ItemStack.isItemEnchanted()){
             par1ItemStack.addEnchantment(Enchantment.infinity, 1);
         }
