@@ -12,8 +12,6 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
-import net.minecraft.block.BlockPane;
-import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
 
 public class ModBlocks {
@@ -57,6 +55,8 @@ public class ModBlocks {
     public static final Block mePlanks = new BlockPlanks().setBlockName("mePlanks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":mePlanks");
     public static final Block pearcelFence = new BlockFence(Reference.MOD_ID + ":pearcelPlanks", Material.wood).setHardness(2.0F).setResistance(5.5F).setBlockName("pearcelFence").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Block meGlassPane = new BlockPearcelPane(Reference.MOD_ID + ":meGlass", Reference.MOD_ID + ":meGlass", Material.glass, true).setBlockName("meGlassPane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(9999.9F);
+    public static final Block pearcelStairs = new BlockPStairs(ModBlocks.pearcelBlock, 1).setBlockName("pearcelStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStairs");
+    public static final Block pearcelWoodStairs = new BlockPStairs(ModBlocks.pearcelPlanks, 1).setBlockName("pearcelWoodStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWoodStairs");
 
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -93,6 +93,8 @@ public class ModBlocks {
         GameRegistry.registerBlock(mePlanks, "mePlanks");
         GameRegistry.registerBlock(pearcelFence, "pearcelFence");
         GameRegistry.registerBlock(meGlassPane, "meGlassPane");
+        GameRegistry.registerBlock(pearcelStairs, "pearcelStairs");
+        GameRegistry.registerBlock(pearcelWoodStairs, "pearcelWoodStairs");
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
