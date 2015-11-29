@@ -8,6 +8,7 @@ public class BlockPlanks extends BlockPearcelMod{
         super(Material.wood);
         this.setHardness(2.0F);
         this.setResistance(5.0F);
+        this.setHarvestLevel("axe", 0);
     }
 
 }
