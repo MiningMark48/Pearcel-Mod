@@ -20,6 +20,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -50,7 +51,7 @@ public class PearcelMod {
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
-		LogHelper.info("Pre-Init Complete!");
+		LogHelper.info(StatCollector.translateToLocal("log.info.preinit"));
 	}
 	
 	@Mod.EventHandler
@@ -60,7 +61,7 @@ public class PearcelMod {
 
         Recipes.init();
         Achievements.init();
-        LogHelper.info("Init Complete!");
+        LogHelper.info(StatCollector.translateToLocal("log.info.init"));
 	}
 	
 	@Mod.EventHandler
@@ -68,7 +69,7 @@ public class PearcelMod {
 
         ModFluidContainer.init();
 
-        LogHelper.info("Post-Init Complete!");
+        LogHelper.info(StatCollector.translateToLocal("log.info.postinit"));
 	}
 
     @Mod.EventHandler

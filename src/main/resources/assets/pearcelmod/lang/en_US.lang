@@ -179,6 +179,10 @@ gui.ivet.name=IVET
 gui.meWorkbench.name=ME^Workbench
 gui.pcp.name=Portable Crafting Pearcel
 
+log.info.preinit=Pre-Init Complete!
+log.info.init=Init Complete!
+log.info.postinit=Post-Init Complete!
+
 chat.pearcelStaff.weaken=The Pearcel Staff weakens...
 chat.torcher.lit=Let there be light!
 chat.dice.anvilFall=Look up.
