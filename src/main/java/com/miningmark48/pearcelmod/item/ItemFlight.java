@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
