@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.proxy;
 
+import com.miningmark48.pearcelmod.entity.EntityPTNT;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.mob.*;
@@ -7,6 +8,7 @@ import com.miningmark48.pearcelmod.model.ModelPearcelMob;
 import com.miningmark48.pearcelmod.model.ModelPearson;
 import com.miningmark48.pearcelmod.renderer.RenderItemPearcelPainting;
 import com.miningmark48.pearcelmod.renderer.RenderItemPearcelStaff;
+import com.miningmark48.pearcelmod.renderer.RenderPTNT;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelPainting;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -31,11 +33,14 @@ public class ClientProxy extends CommonProxy{
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelMob.class, new RenderPearcelMob(new ModelPearcelMob(), 0));
         //Pearson
         RenderingRegistry.registerEntityRenderingHandler(EntityPearson.class, new RenderPearson(new ModelPearson(), 0));
+
     //Blocks
         //Pearcel Painting
         TileEntitySpecialRenderer render = new RenderPearcelPainting();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPainting.class, render);
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.pearcelPainting), new RenderItemPearcelPainting(render, new TileEntityPearcelPainting()));
+        //TNT
+        RenderingRegistry.registerEntityRenderingHandler(EntityPTNT.class, new RenderPTNT());
     //Items
         MinecraftForgeClient.registerItemRenderer(ModItems.pearcelStaff, new RenderItemPearcelStaff());
     }

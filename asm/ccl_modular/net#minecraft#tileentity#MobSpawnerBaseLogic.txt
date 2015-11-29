@@ -96,11 +96,9 @@ public abstract class net/minecraft/tileentity/MobSpawnerBaseLogic {
     ALOAD 0
     ICONST_4
     PUTFIELD net/minecraft/tileentity/MobSpawnerBaseLogic.spawnRange : I
-   L9
-    LINENUMBER 383 L9
     RETURN
-   L10
-    LOCALVARIABLE this Lnet/minecraft/tileentity/MobSpawnerBaseLogic; L0 L10 0
+   L9
+    LOCALVARIABLE this Lnet/minecraft/tileentity/MobSpawnerBaseLogic; L0 L9 0
     MAXSTACK = 2
     MAXLOCALS = 1
 
@@ -554,22 +552,21 @@ public abstract class net/minecraft/tileentity/MobSpawnerBaseLogic {
     LINENUMBER 112 L38
    FRAME FULL [net/minecraft/tileentity/MobSpawnerBaseLogic T T T T D I I net/minecraft/entity/Entity I D D net/minecraft/entity/EntityLiving] []
     IINC 8 1
-   L43
     GOTO L20
    L21
     LINENUMBER 149 L21
    FRAME FULL [net/minecraft/tileentity/MobSpawnerBaseLogic T T T T T T I I] []
     ILOAD 7
     IFEQ L1
-   L44
-    LINENUMBER 151 L44
+   L43
+    LINENUMBER 151 L43
     ALOAD 0
     INVOKESPECIAL net/minecraft/tileentity/MobSpawnerBaseLogic.resetTimer ()V
    L1
     LINENUMBER 155 L1
    FRAME FULL [net/minecraft/tileentity/MobSpawnerBaseLogic] []
     RETURN
-   L45
+   L44
     LOCALVARIABLE d0 D L5 L13 1
     LOCALVARIABLE d1 D L6 L13 3
     LOCALVARIABLE d2 D L7 L3 5
@@ -578,10 +575,10 @@ public abstract class net/minecraft/tileentity/MobSpawnerBaseLogic {
     LOCALVARIABLE d3 D L31 L38 11
     LOCALVARIABLE d4 D L32 L38 13
     LOCALVARIABLE entityliving Lnet/minecraft/entity/EntityLiving; L35 L38 15
-    LOCALVARIABLE d2 D L30 L43 5
+    LOCALVARIABLE d2 D L30 L21 5
     LOCALVARIABLE i I L20 L21 8
     LOCALVARIABLE flag Z L19 L1 7
-    LOCALVARIABLE this Lnet/minecraft/tileentity/MobSpawnerBaseLogic; L0 L45 0
+    LOCALVARIABLE this Lnet/minecraft/tileentity/MobSpawnerBaseLogic; L0 L44 0
     MAXSTACK = 14
     MAXLOCALS = 16
 
@@ -784,42 +781,41 @@ public abstract class net/minecraft/tileentity/MobSpawnerBaseLogic {
     LINENUMBER 181 L33
     ALOAD 4
     ASTORE 2
-   L34
     GOTO L14
    L15
     LINENUMBER 212 L15
    FRAME FULL [net/minecraft/tileentity/MobSpawnerBaseLogic net/minecraft/entity/Entity net/minecraft/nbt/NBTTagCompound java/util/Iterator T net/minecraft/entity/Entity] []
-    GOTO L35
+    GOTO L34
    L1
     LINENUMBER 213 L1
    FRAME FULL [net/minecraft/tileentity/MobSpawnerBaseLogic net/minecraft/entity/Entity] []
     ALOAD 1
     INSTANCEOF net/minecraft/entity/EntityLivingBase
-    IFEQ L35
+    IFEQ L34
     ALOAD 1
     GETFIELD net/minecraft/entity/Entity.worldObj : Lnet/minecraft/world/World;
-    IFNULL L35
-   L36
-    LINENUMBER 215 L36
+    IFNULL L34
+   L35
+    LINENUMBER 215 L35
     ALOAD 1
     CHECKCAST net/minecraft/entity/EntityLiving
     ACONST_NULL
     CHECKCAST net/minecraft/entity/IEntityLivingData
     INVOKEVIRTUAL net/minecraft/entity/EntityLiving.onSpawnWithEgg (Lnet/minecraft/entity/IEntityLivingData;)Lnet/minecraft/entity/IEntityLivingData;
     POP
-   L37
-    LINENUMBER 216 L37
+   L36
+    LINENUMBER 216 L36
     ALOAD 0
     INVOKEVIRTUAL net/minecraft/tileentity/MobSpawnerBaseLogic.getSpawnerWorld ()Lnet/minecraft/world/World;
     ALOAD 1
     INVOKEVIRTUAL net/minecraft/world/World.spawnEntityInWorld (Lnet/minecraft/entity/Entity;)Z
     POP
-   L35
-    LINENUMBER 219 L35
+   L34
+    LINENUMBER 219 L34
    FRAME FULL [net/minecraft/tileentity/MobSpawnerBaseLogic net/minecraft/entity/Entity] []
     ALOAD 1
     ARETURN
-   L38
+   L37
     LOCALVARIABLE s Ljava/lang/String; L8 L10 4
     LOCALVARIABLE nbtbase Lnet/minecraft/nbt/NBTBase; L9 L10 5
     LOCALVARIABLE s1 Ljava/lang/String; L26 L28 9
@@ -827,12 +823,12 @@ public abstract class net/minecraft/tileentity/MobSpawnerBaseLogic {
     LOCALVARIABLE nbttagcompound1 Lnet/minecraft/nbt/NBTTagCompound; L21 L19 7
     LOCALVARIABLE iterator1 Ljava/util/Iterator; L23 L19 8
     LOCALVARIABLE entity2 Lnet/minecraft/entity/Entity; L18 L33 6
-    LOCALVARIABLE nbttagcompound2 Lnet/minecraft/nbt/NBTTagCompound; L17 L34 4
+    LOCALVARIABLE nbttagcompound2 Lnet/minecraft/nbt/NBTTagCompound; L17 L15 4
     LOCALVARIABLE entity1 Lnet/minecraft/entity/Entity; L14 L15 5
     LOCALVARIABLE nbttagcompound Lnet/minecraft/nbt/NBTTagCompound; L3 L15 2
     LOCALVARIABLE iterator Ljava/util/Iterator; L5 L15 3
-    LOCALVARIABLE this Lnet/minecraft/tileentity/MobSpawnerBaseLogic; L0 L38 0
-    LOCALVARIABLE p_98265_1_ Lnet/minecraft/entity/Entity; L0 L38 1
+    LOCALVARIABLE this Lnet/minecraft/tileentity/MobSpawnerBaseLogic; L0 L37 0
+    LOCALVARIABLE p_98265_1_ Lnet/minecraft/entity/Entity; L0 L37 1
     MAXSTACK = 9
     MAXLOCALS = 11
 
