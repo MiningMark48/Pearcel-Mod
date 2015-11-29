@@ -1,12 +1,19 @@
 package com.miningmark48.pearcelmod.item;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityTNTPrimed;
+import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.StatCollector;
+import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -32,6 +39,27 @@ public class ItemPearcelPickaxe extends ItemPickaxe{
                 player.addPotionEffect(new PotionEffect(Potion.digSpeed.getId(), 20, 0));
             }
         }
+    }
+
+    public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)
+    {
+        EntityTNTPrimed tnt = new EntityTNTPrimed(world);
+        MovingObjectPosition movingobjectposition = entityplayer.rayTrace(70D, 1.0F);
+        if (movingobjectposition == null)
+        {
+            return itemstack;
+        }
+        Vec3 vec3d = movingobjectposition.hitVec;
+        double d = vec3d.xCoord;
+        double d1 = vec3d.yCoord;
+        double d2 = vec3d.zCoord;
+        int i = MathHelper.floor_double(d);
+        int j = MathHelper.floor_double(d1);
+        int k = MathHelper.floor_double(d2);
+        tnt.setPosition(i, j, k);
+        world.spawnEntityInWorld(tnt);
+
+        return itemstack;
     }
 
 }

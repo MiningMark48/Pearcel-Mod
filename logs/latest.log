@@ -1,8 +1,8 @@
-[21:33:32] [main/INFO]: Setting user: Player656
-[21:33:34] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:33:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[21:33:40] [Sound Library Loader/INFO]: Sound engine started
-[21:33:41] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[22:12:10] [main/INFO]: Setting user: Player609
+[22:12:12] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:12:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[22:12:18] [Sound Library Loader/INFO]: Sound engine started
+[22:12:19] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,11 +22,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[21:33:43] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
-[21:33:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[21:33:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[21:33:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[21:33:43] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[22:12:20] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
+[22:12:21] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:12:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[22:12:21] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:12:21] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -49,30 +49,26 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[21:33:44] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
-[21:33:45] [Sound Library Loader/INFO]: Sound engine started
-[21:33:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:33:49] [Server thread/INFO]: Generating keypair
-[21:33:49] [Server thread/INFO]: Preparing start region for level 0
-[21:33:50] [Server thread/INFO]: Changing view distance to 16, from 10
-[21:33:51] [Server thread/INFO]: Player656[local:E:be85d348] logged in with entity id 59 at (717.5564331541365, 56.0, 788.337642050049)
-[21:33:51] [Server thread/INFO]: Player656 joined the game
-[21:34:02] [Server thread/INFO]: [Player656: Cleared the inventory of Player656, removing 78 items]
-[21:34:02] [Client thread/INFO]: [CHAT] Cleared the inventory of Player656, removing 78 items
-[21:34:06] [Server thread/INFO]: [Player656: Given [Pearcel Cloud] * 1 to Player656]
-[21:34:07] [Client thread/INFO]: [CHAT] Given [Pearcel Cloud] * 1 to Player656
-[21:34:49] [Server thread/INFO]: [Player656: Given [ME^Glass Pane] * 1 to Player656]
-[21:34:49] [Client thread/INFO]: [CHAT] Given [ME^Glass Pane] * 1 to Player656
-[21:34:54] [Server thread/INFO]: [Player656: Set own game mode to Creative Mode]
-[21:34:54] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[21:35:23] [Server thread/INFO]: Saving and pausing game...
-[21:35:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
-[21:35:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
-[21:35:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
-[21:35:23] [Server thread/INFO]: Stopping server
-[21:35:23] [Server thread/INFO]: Saving players
-[21:35:23] [Server thread/INFO]: Saving worlds
-[21:35:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
-[21:35:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
-[21:35:23] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
-[21:35:24] [Client thread/INFO]: Stopping!
+[22:12:22] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
+[22:12:23] [Sound Library Loader/INFO]: Sound engine started
+[22:12:26] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:12:26] [Server thread/INFO]: Generating keypair
+[22:12:27] [Server thread/INFO]: Preparing start region for level 0
+[22:12:28] [Server thread/INFO]: Changing view distance to 16, from 10
+[22:12:28] [Server thread/INFO]: Player609[local:E:f5edff1f] logged in with entity id 68 at (736.6510954248691, 56.739356496400234, 777.4697652388514)
+[22:12:28] [Server thread/INFO]: Player609 joined the game
+[22:13:56] [Server thread/INFO]: Saving and pausing game...
+[22:13:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[22:13:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[22:13:56] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[22:15:32] [Server thread/INFO]: Saving and pausing game...
+[22:15:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[22:15:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[22:15:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[22:15:32] [Server thread/INFO]: Stopping server
+[22:15:32] [Server thread/INFO]: Saving players
+[22:15:32] [Server thread/INFO]: Saving worlds
+[22:15:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Overworld
+[22:15:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/Nether
+[22:15:32] [Server thread/INFO]: Saving chunks for level 'Iron Superflat 2'/The End
+[22:15:34] [Client thread/INFO]: Stopping!
