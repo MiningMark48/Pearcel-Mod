@@ -7,6 +7,7 @@ public class BlockPStairs extends BlockStairs{
 
     public BlockPStairs(Block block, int par2) {
         super(block, par2);
+        this.useNeighborBrightness = true;
     }
 
 }
