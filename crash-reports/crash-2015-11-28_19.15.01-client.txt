@@ -1,0 +1,81 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 11/28/15 7:15 PM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.ExceptionInInitializerError
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:162)
+	at cpw.mods.fml.common.Loader.preinitializeMods(Loader.java:515)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:239)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:522)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:931)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.miningmark48.pearcelmod.init.ModFluids.init(ModFluids.java:12)
+	at com.miningmark48.pearcelmod.PearcelMod.preInit(PearcelMod.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:513)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.preinitializeMods(Loader.java:513)
+	... 12 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.block.Block.<init>(Block.java:458)
+	at net.minecraftforge.fluids.BlockFluidBase.<init>(BlockFluidBase.java:55)
+	at net.minecraftforge.fluids.BlockFluidClassic.<init>(BlockFluidClassic.java:27)
+	at com.miningmark48.pearcelmod.block.BlockPearcelFluid.<init>(BlockPearcelFluid.java:10)
+	at com.miningmark48.pearcelmod.init.ModBlocks.<clinit>(ModBlocks.java:62)
+	... 41 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.7.0_79, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 369700872 bytes (352 MB) / 597688320 bytes (570 MB) up to 2842689536 bytes (2711 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 6 mods loaded, 6 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized
+	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized
+	NotEnoughItems{1.0.3.74} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.74-dev.jar) Unloaded->Constructed->Pre-initialized
+	pearcelmod{1.7.10-1.8.6} [Pearcel Mod] (bin) Unloaded->Constructed->Errored
