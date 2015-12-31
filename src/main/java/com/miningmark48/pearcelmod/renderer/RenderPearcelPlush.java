@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.renderer;
 
 import com.miningmark48.pearcelmod.model.ModelPearcelPlush;
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -28,6 +29,7 @@ public class RenderPearcelPlush extends TileEntitySpecialRenderer {
         GL11.glRotatef(meta * (-90), 0.0F, 0.0F, 1.0F);
         GL11.glPopMatrix();
     }
+
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f) {
         GL11.glPushMatrix();
@@ -36,6 +38,11 @@ public class RenderPearcelPlush extends TileEntitySpecialRenderer {
         Minecraft.getMinecraft().renderEngine.bindTexture(texture);
         GL11.glPushMatrix();
         GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
+
+        TileEntityPearcelPlush myTile = (TileEntityPearcelPlush) tileEntity;
+        int direction = myTile.direction;
+        GL11.glRotatef(direction * 90 - 270, 0.0F, 1.0F, 0.0F);
+
         this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
         GL11.glPopMatrix();
         GL11.glPopMatrix();
