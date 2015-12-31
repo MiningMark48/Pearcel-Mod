@@ -82,6 +82,8 @@ public class ModItems {
     public static final Item tier4Craft = new ItemCraftComponent().setUnlocalizedName("tier4Craft").setTextureName(Reference.MOD_ID + ":tier4Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item armorPlating = new ItemArmorPlating().setUnlocalizedName("armorPlating").setTextureName(Reference.MOD_ID + "armorPlating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
+    public static final Item testItem = new ItemTestItem().setUnlocalizedName("testItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+
 	public static void init(){
         //Food
         GameRegistry.registerItem(pearcel, "pearcelItem");
@@ -142,6 +144,8 @@ public class ModItems {
         GameRegistry.registerItem(tier3Craft, "tier3Craft");
         GameRegistry.registerItem(tier4Craft, "tier4Craft");
         GameRegistry.registerItem(armorPlating, "armorPlating");
+
+        //GameRegistry.registerItem(testItem, "testItem");
 
         //Items to be added if config allows
         if (ConfigurationHandler.addPearcelStaff){

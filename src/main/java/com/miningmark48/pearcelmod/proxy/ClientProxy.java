@@ -6,11 +6,9 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.model.ModelPearcelMob;
 import com.miningmark48.pearcelmod.model.ModelPearson;
-import com.miningmark48.pearcelmod.renderer.RenderItemPearcelPainting;
-import com.miningmark48.pearcelmod.renderer.RenderItemPearcelStaff;
-import com.miningmark48.pearcelmod.renderer.RenderPTNT;
-import com.miningmark48.pearcelmod.renderer.RenderPearcelPainting;
+import com.miningmark48.pearcelmod.renderer.*;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.model.ModelCow;
@@ -36,9 +34,13 @@ public class ClientProxy extends CommonProxy{
 
     //Blocks
         //Pearcel Painting
-        TileEntitySpecialRenderer render = new RenderPearcelPainting();
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPainting.class, render);
-        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.pearcelPainting), new RenderItemPearcelPainting(render, new TileEntityPearcelPainting()));
+        TileEntitySpecialRenderer renderPPainting = new RenderPearcelPainting();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPainting.class, renderPPainting);
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.pearcelPainting), new RenderItemPearcelPainting());
+        //Pearcel Plush
+        TileEntitySpecialRenderer renderPPlush = new RenderPearcelPlush();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPlush.class, renderPPlush);
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.pearcelPlush), new RenderItemPearcelPlush());
         //TNT
         RenderingRegistry.registerEntityRenderingHandler(EntityPTNT.class, new RenderPTNT());
     //Items

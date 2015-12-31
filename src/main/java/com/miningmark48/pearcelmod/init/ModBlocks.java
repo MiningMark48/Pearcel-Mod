@@ -57,6 +57,7 @@ public class ModBlocks {
     public static final Block meGlassPane = new BlockPearcelPane(Reference.MOD_ID + ":meGlass", Reference.MOD_ID + ":meGlass", Material.glass, true).setBlockName("meGlassPane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(9999.9F).setStepSound(Block.soundTypeGlass);
     public static final Block pearcelStairs = new BlockPStairs(ModBlocks.pearcelBlock, 0).setBlockName("pearcelStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStairs");
     public static final Block pearcelWoodStairs = new BlockPStairs(ModBlocks.pearcelPlanks, 1).setBlockName("pearcelWoodStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWoodStairs");
+    public static final Block pearcelPlush = new BlockPearcelPlush(Material.carpet).setBlockName("pearcelPlush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -105,6 +106,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(blockSapling, ItemSaplingBlocks.class, blockSapling.getUnlocalizedName().substring(5));
         //Models
         GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
+        GameRegistry.registerBlock(pearcelPlush, "pearcelPlush");
         //Fluid
         GameRegistry.registerBlock(pearcelFluid, "pearcelFluid");
 		

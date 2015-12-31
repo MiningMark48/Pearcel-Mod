@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.init;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -108,6 +109,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.pearcelPlanks, 4), new ItemStack(ModBlocks.blockLog, 1, 0));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCharcoal, 9), new ItemStack(ModBlocks.pearcelCharcoalBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelCharcoalBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCharcoal));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelPlush), " x ", "xyx", "z z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.pearcelBlock), 'z', new ItemStack(ModItems.pearcelStick));
 
         //ME^Matter Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.meMatterBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.meMatter));
