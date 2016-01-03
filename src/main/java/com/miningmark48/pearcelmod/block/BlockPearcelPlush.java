@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.mob.EntityPearcelMob;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
@@ -9,9 +10,11 @@ import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
 public class BlockPearcelPlush extends BlockContainer{
@@ -51,6 +54,15 @@ public class BlockPearcelPlush extends BlockContainer{
         TileEntityPearcelPlush tile = (TileEntityPearcelPlush) world.getTileEntity(x, y, z);
         tile.direction = MathHelper.floor_double((double) (entity.rotationYaw * 4.0F / 360) * 0.5D) & 3;
 
+    }
+
+    @Override
+    public void onBlockDestroyedByExplosion(World world, int x, int y, int z, Explosion explosion) {
+        EntityPearcelMob pearcelmob = new EntityPearcelMob(world);
+        pearcelmob.setPosition(x, y + 1, z);
+        if (!world.isRemote){
+            world.spawnEntityInWorld(pearcelmob);
+        }
     }
 
 }

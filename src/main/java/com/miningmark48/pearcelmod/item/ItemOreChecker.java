@@ -42,7 +42,6 @@ public class ItemOreChecker extends ItemPearcelMod{
             }
             player.getHeldItem().damageItem(1, player);
         }
-
         return item;
     }
 }
