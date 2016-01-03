@@ -66,6 +66,8 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelBoots), "y y", "xyx", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.sap), "xab", "yzy", "bax", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(Items.emerald), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Items.gold_ingot), 'b', new ItemStack(ModItems.pearcel));
         GameRegistry.addRecipe(new ItemStack(ModItems.flightItem), "aba", "cdc", "aba", 'a', new ItemStack(ModItems.pearcel), 'b', new ItemStack(Items.feather), 'c', new ItemStack(ModItems.meMatter), 'd', new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.oreChecker), " a ", "bcb", "bdb", 'a', new ItemStack(Blocks.glass_pane), 'b', new ItemStack(ModItems.pearcel), 'c', new ItemStack(ModItems.tier2Craft), 'd', new ItemStack(Items.redstone));
+        
 		//Blocks
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelTorch, 4), "x", "y", 'x', new ItemStack(ModItems.pearcelCharcoal), 'y', new ItemStack(ModItems.pearcelStick));
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.meBlock), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.iron_ingot));
