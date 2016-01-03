@@ -1,8 +1,8 @@
-[14:36:29] [main/INFO]: Setting user: Player984
-[14:36:31] [Client thread/INFO]: LWJGL Version: 2.9.1
-[14:36:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[14:36:36] [Sound Library Loader/INFO]: Sound engine started
-[14:36:37] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[14:41:05] [main/INFO]: Setting user: Player984
+[14:41:07] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:41:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[14:41:12] [Sound Library Loader/INFO]: Sound engine started
+[14:41:13] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,7 +22,7 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[14:36:37] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[14:41:13] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -42,11 +42,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[14:36:38] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
-[14:36:39] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[14:36:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[14:36:39] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[14:36:39] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
+[14:41:14] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
+[14:41:14] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[14:41:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[14:41:15] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[14:41:15] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPainting.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -69,7 +69,7 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPainting.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[14:36:39] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[14:41:15] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -92,34 +92,60 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[14:36:40] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
-[14:36:41] [Sound Library Loader/INFO]: Sound engine started
-[14:36:45] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:36:45] [Server thread/INFO]: Generating keypair
-[14:36:46] [Server thread/INFO]: Preparing start region for level 0
-[14:36:46] [Server thread/INFO]: Changing view distance to 3, from 10
-[14:36:47] [Server thread/INFO]: Player984[local:E:5d369cb7] logged in with entity id 125 at (388.0694639040335, 55.0, 0.9038798414002335)
-[14:36:47] [Server thread/INFO]: Player984 joined the game
-[14:36:51] [Server thread/INFO]: Saving and pausing game...
-[14:36:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:36:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:36:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:36:55] [Server thread/INFO]: [Player984: Set own game mode to Creative Mode]
-[14:36:55] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:36:56] [Server thread/INFO]: Player984 has just earned the achievement [Taking Inventory]
-[14:36:57] [Client thread/INFO]: [CHAT] Player984 has just earned the achievement [Taking Inventory]
-[14:37:13] [Client thread/INFO]: [CHAT] §6Pearcel Mob was successfully summoned.
-[14:37:25] [Server thread/INFO]: [Player984: Set own game mode to Survival Mode]
-[14:37:25] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:37:27] [Client thread/INFO]: [CHAT] §6Pearcel Mob was successfully summoned.
-[14:37:32] [Server thread/INFO]: Saving and pausing game...
-[14:37:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:37:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:37:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:37:33] [Server thread/INFO]: Stopping server
-[14:37:33] [Server thread/INFO]: Saving players
-[14:37:33] [Server thread/INFO]: Saving worlds
-[14:37:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[14:37:33] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[14:37:33] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[14:37:33] [Client thread/INFO]: Stopping!
+[14:41:16] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
+[14:41:17] [Sound Library Loader/INFO]: Sound engine started
+[14:41:22] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:41:22] [Server thread/INFO]: Generating keypair
+[14:41:23] [Server thread/INFO]: Preparing start region for level 0
+[14:41:23] [Server thread/INFO]: Changing view distance to 3, from 10
+[14:41:24] [Server thread/INFO]: Player984[local:E:5be6b01a] logged in with entity id 128 at (384.82859877165964, 56.0, 9.978345914855202)
+[14:41:24] [Server thread/INFO]: Player984 joined the game
+[14:41:36] [Server thread/INFO]: [Player984: Set own game mode to Creative Mode]
+[14:41:36] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[14:41:52] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:01] [Server thread/INFO]: [Player984: Set own game mode to Survival Mode]
+[14:42:01] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[14:42:02] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:03] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:03] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:03] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:03] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:03] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:04] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:04] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:04] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:04] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:04] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:05] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:05] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:05] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:05] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:05] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:06] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:06] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:06] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:06] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:06] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:07] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:07] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:07] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:09] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:11] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:11] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:12] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:12] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:13] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:13] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:16] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:42:17] [Client thread/INFO]: [CHAT] §2Pearcel Ore detected.
+[14:43:09] [Server thread/INFO]: Saving and pausing game...
+[14:43:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:43:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:43:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:43:10] [Server thread/INFO]: Stopping server
+[14:43:10] [Server thread/INFO]: Saving players
+[14:43:10] [Server thread/INFO]: Saving worlds
+[14:43:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:43:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:43:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:43:11] [Client thread/INFO]: Stopping!

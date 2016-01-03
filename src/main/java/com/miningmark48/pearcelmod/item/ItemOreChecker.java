@@ -30,6 +30,7 @@ public class ItemOreChecker extends ItemPearcelMod{
             }else{
                 player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("chat.oreChecker.null")));
             }
+            player.getHeldItem().damageItem(1, player);
         }
 
         return item;
