@@ -87,7 +87,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelStairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelWoodStairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelPlanks));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelPlush), " x ", "xyx", "z z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.pearcelBlock), 'z', new ItemStack(ModItems.pearcelStick));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.foolsPearcelOre), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.gunpowder), 'z', new ItemStack(ModItems.tier2Craft));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.foolsPearcelOre, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.gunpowder), 'z', new ItemStack(ModItems.tier2Craft));
 
         //Compressed Blocks/Items
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCookie), new ItemStack(Items.egg), new ItemStack(ModItems.pearcelFlour), new ItemStack(Items.sugar), new ItemStack(Items.milk_bucket));
