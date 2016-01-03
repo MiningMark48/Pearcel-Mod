@@ -86,6 +86,9 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.meGlassPane, 16), "xxx", "xxx", 'x', new ItemStack(ModBlocks.meGlass));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelStairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelWoodStairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelPlanks));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelPlush), " x ", "xyx", "z z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.pearcelBlock), 'z', new ItemStack(ModItems.pearcelStick));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.foolsPearcelOre), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.gunpowder), 'z', new ItemStack(ModItems.tier2Craft));
+
         //Compressed Blocks/Items
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCookie), new ItemStack(Items.egg), new ItemStack(ModItems.pearcelFlour), new ItemStack(Items.sugar), new ItemStack(Items.milk_bucket));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.pearcelCookie2), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCookie));
@@ -109,8 +112,6 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.pearcelPlanks, 4), new ItemStack(ModBlocks.blockLog, 1, 0));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCharcoal, 9), new ItemStack(ModBlocks.pearcelCharcoalBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelCharcoalBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCharcoal));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelPlush), " x ", "xyx", "z z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.pearcelBlock), 'z', new ItemStack(ModItems.pearcelStick));
-
         //ME^Matter Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.meMatterBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.meMatter));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.meMatter, 9), new ItemStack(ModBlocks.meMatterBlock));
