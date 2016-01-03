@@ -9,11 +9,21 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
+import java.util.List;
+
 public class ItemOreChecker extends ItemPearcelMod{
 
 
     public ItemOreChecker(){
         super();
+    }
+
+    @Override
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+        int itemDurability = par1ItemStack.getMaxDamage() - par1ItemStack.getItemDamage();
+
+        par3List.add(EnumChatFormatting.GOLD + StatCollector.translateToLocal("tooltip.item.oreChecker.line1") + " " + EnumChatFormatting.AQUA + itemDurability);
+        par3List.add(StatCollector.translateToLocal("tooltip.item.oreChecker.line2"));
     }
 
     @Override
