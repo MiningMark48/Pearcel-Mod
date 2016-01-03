@@ -54,6 +54,7 @@ item.pearcelmod:tier4Craft.name=Tier 4 Crafting Component
 item.pearcelmod:armorPlating.name=Pearcel Armor Plating
 item.pearcelmod:sap.name=Summoner's Activation Pearcel
 item.pearcelmod:flightItem.name=Pearcel Cloud
+item.pearcelmod:oreChecker.name=Ore Checker
 
 tile.pearcelPlant.name=Pearcel Plant
 tile.compressedSugarCanePlant.name=Compressed Sugar Cane Plant
@@ -190,6 +191,9 @@ log.info.postinit=Post-Init Complete!
 chat.pearcelStaff.weaken=The Pearcel Staff weakens...
 chat.torcher.lit=Let there be light!
 chat.dice.anvilFall=Look up.
+chat.oreChecker.success=Pearcel Ore detected.
+chat.oreChecker.fail=Fools Pearcel Ore detected.
+chat.oreChecker.null=Found block cannot be scanned.
 
 command.credit.info=Parcel31u - Reason for this mod -- Codyrule040 - Textures and many ideas
 command.ivet.info=NEI Support coming soon, IVET recipes can be found on the github wiki: http://www.github.com/miningmark48/pearcel-mod

@@ -53,6 +53,7 @@ public class ModItems {
     public static final Item pearcelStaff = new ItemPearcelStaff(ToolMaterial.GOLD).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(1000);
     public static final Item flightItem = new ItemFlight().setTextureName(Reference.MOD_ID + ":flightItem").setUnlocalizedName("flightItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item sap = new ItemSAP().setTextureName(Reference.MOD_ID + ":sap").setUnlocalizedName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(ConfigurationHandler.sapDurability);
+    public static final Item oreChecker = new ItemOreChecker().setUnlocalizedName("oreChecker").setTextureName(Reference.MOD_ID + "oreChecker").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
 
     //Armor
     public static Item pearcelHelmet = new PearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -110,6 +111,7 @@ public class ModItems {
         //GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
         GameRegistry.registerItem(flightItem, "flightItem");
         GameRegistry.registerItem(sap, "sap");
+        GameRegistry.registerItem(oreChecker, "oreChecker");
 
         //Armor
         GameRegistry.registerItem(pearcelHelmet, "pearcelHelmet");
