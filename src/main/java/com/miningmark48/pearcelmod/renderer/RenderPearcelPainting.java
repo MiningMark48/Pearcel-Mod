@@ -8,12 +8,13 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.AdvancedModelLoader;
+import net.minecraftforge.client.model.IModelCustom;
 import org.lwjgl.opengl.GL11;
 
 public class RenderPearcelPainting extends TileEntitySpecialRenderer{
 
     private static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/model/pearcelPainting.png");
-
     private ModelPearcelPainting model;
 
     public RenderPearcelPainting(){

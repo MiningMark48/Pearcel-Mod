@@ -45,6 +45,7 @@ public class ClientProxy extends CommonProxy{
         RenderingRegistry.registerEntityRenderingHandler(EntityPTNT.class, new RenderPTNT());
     //Items
         MinecraftForgeClient.registerItemRenderer(ModItems.pearcelStaff, new RenderItemPearcelStaff());
+        //MinecraftForgeClient.registerItemRenderer(ModItems.pearcel, new RenderItemPearcel());
     }
     //Armor
     public int addArmor(String armor){
