@@ -46,8 +46,6 @@ public class EntityPearson extends EntityAnimal {
         int randNum = rand.nextInt(500) + 1;
         if(randNum == 1) {
             return ModItems.pearcelStaff;
-        }else if(randNum == 2){
-            this.attackingPlayer.inventory.addItemStackToInventory(new ItemStack(ModItems.pearcel, 64));
         }
         return ModItems.pearcelCookie;
     }
