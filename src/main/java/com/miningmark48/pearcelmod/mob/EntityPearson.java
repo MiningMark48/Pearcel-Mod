@@ -8,10 +8,15 @@ import net.minecraft.entity.ai.*;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeModContainer;
 
+import java.util.Random;
+
 public class EntityPearson extends EntityAnimal {
+
+    Random rand = new Random();
 
     public EntityPearson(World world){
         super(world);
@@ -38,7 +43,13 @@ public class EntityPearson extends EntityAnimal {
     }
 
     protected Item getDropItem(){
-        return ModItems.pearcelCookie4;
+        int randNum = rand.nextInt(500) + 1;
+        if(randNum == 1) {
+            return ModItems.pearcelStaff;
+        }else if(randNum == 2){
+            this.attackingPlayer.inventory.addItemStackToInventory(new ItemStack(ModItems.pearcel, 64));
+        }
+        return ModItems.pearcelCookie;
     }
 
     @Override
