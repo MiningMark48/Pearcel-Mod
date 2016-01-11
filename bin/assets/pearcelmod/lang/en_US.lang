@@ -55,6 +55,7 @@ item.pearcelmod:armorPlating.name=Pearcel Armor Plating
 item.pearcelmod:sap.name=Summoner's Activation Pearcel
 item.pearcelmod:flightItem.name=Pearcel Cloud
 item.pearcelmod:oreChecker.name=Ore Checker
+item.chargedPearcelSword.name=Charged Pearcel Sword
 
 tile.pearcelPlant.name=Pearcel Plant
 tile.compressedSugarCanePlant.name=Compressed Sugar Cane Plant
@@ -237,6 +238,9 @@ tooltip.item.sap.line4=in which a creature will spawn
 tooltip.item.sap.line5=from the depths of the surrounding summoner blocks.
 tooltip.item.oreChecker.line1=Uses Left:
 tooltip.item.oreChecker.line2=Scans pearcel ore to determine if it is fake or not.
+tooltip.item.chargedPearcelSword.line1=Charging...
+tooltip.item.chargedPearcelSword.line2=Right click to zap!
+tooltip.item.chargedPearcelSword.line3=Sneak & Right Click to do a super zap!
 
 
 

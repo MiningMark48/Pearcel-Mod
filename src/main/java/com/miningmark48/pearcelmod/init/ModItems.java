@@ -42,11 +42,11 @@ public class ModItems {
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Tools and Weapons
-    public static final Item pearcelSword = new ItemPearcelSword(ToolMaterial.IRON).setUnlocalizedName("pearcelSword").setTextureName(Reference.MOD_ID + ":pearcelSword").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelPickaxe = new ItemPearcelPickaxe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelPickaxe").setTextureName(Reference.MOD_ID + ":pearcelPickaxe").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelAxe = new ItemPearcelAxe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelAxe").setTextureName(Reference.MOD_ID + ":pearcelAxe").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelShovel = new ItemPearcelShovel(ToolMaterial.EMERALD).setUnlocalizedName("pearcelShovel").setTextureName(Reference.MOD_ID + ":pearcelShovel").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelHoe = new ItemPearcelHoe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelHoe").setTextureName(Reference.MOD_ID + ":pearcelHoe").setMaxStackSize(1).setMaxDamage(2048).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelSword = new ItemPearcelSword(ToolMaterial.IRON).setUnlocalizedName("pearcelSword").setTextureName(Reference.MOD_ID + ":pearcelSword").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelPickaxe = new ItemPearcelPickaxe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelPickaxe").setTextureName(Reference.MOD_ID + ":pearcelPickaxe").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelAxe = new ItemPearcelAxe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelAxe").setTextureName(Reference.MOD_ID + ":pearcelAxe").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelShovel = new ItemPearcelShovel(ToolMaterial.EMERALD).setUnlocalizedName("pearcelShovel").setTextureName(Reference.MOD_ID + ":pearcelShovel").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelHoe = new ItemPearcelHoe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelHoe").setTextureName(Reference.MOD_ID + ":pearcelHoe").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelShears = new ItemPearcelShears().setUnlocalizedName("pearcelShears").setTextureName(Reference.MOD_ID + ":pearcelShears").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBow = new ItemPearcelBow().setUnlocalizedName("pearcelBow").setTextureName(Reference.MOD_ID + ":pearcelBow").setMaxStackSize(1).setMaxDamage(100).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
@@ -54,6 +54,7 @@ public class ModItems {
     public static final Item flightItem = new ItemFlight().setTextureName(Reference.MOD_ID + ":flightItem").setUnlocalizedName("flightItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item sap = new ItemSAP().setTextureName(Reference.MOD_ID + ":sap").setUnlocalizedName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(ConfigurationHandler.sapDurability);
     public static final Item oreChecker = new ItemOreChecker().setUnlocalizedName("oreChecker").setTextureName(Reference.MOD_ID + "oreChecker").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(32);
+    public static final Item chargedPearcelSword = new ItemChargedPearcelSword(ToolMaterial.EMERALD).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Armor
     public static Item pearcelHelmet = new PearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -112,6 +113,7 @@ public class ModItems {
         GameRegistry.registerItem(flightItem, "flightItem");
         GameRegistry.registerItem(sap, "sap");
         GameRegistry.registerItem(oreChecker, "oreChecker");
+        GameRegistry.registerItem(chargedPearcelSword, "chargedPearcelSword");
 
         //Armor
         GameRegistry.registerItem(pearcelHelmet, "pearcelHelmet");

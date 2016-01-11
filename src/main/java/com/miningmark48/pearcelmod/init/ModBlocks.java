@@ -63,7 +63,6 @@ public class ModBlocks {
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
-
 	public static void init(){
 
         //General Blocks
