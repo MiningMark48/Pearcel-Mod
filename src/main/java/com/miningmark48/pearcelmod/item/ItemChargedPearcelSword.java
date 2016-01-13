@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.item;
 
-import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -9,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Random;
 
 public class ItemChargedPearcelSword extends ItemSword{
 
@@ -44,27 +43,38 @@ public class ItemChargedPearcelSword extends ItemSword{
 
     @Override
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player){
+        Random rand = new Random();
         int x = Minecraft.getMinecraft().objectMouseOver.blockX;
         int y = Minecraft.getMinecraft().objectMouseOver.blockY;
         int z = Minecraft.getMinecraft().objectMouseOver.blockZ;
         int damageDue = 1;
-        int damageMultiplier = 10;
+        int multiplier = 10;
+        int lightningRangeMin = 2;
+        int lightningRangeMax = 5;
+        float exhaustionAmount = 1.0F;
 
         if (!world.getBlock(x, y, z).isAir(world, x, y, z)) {
             if (!player.isSneaking()) {
                 world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
                 player.getHeldItem().damageItem(damageDue, player);
+                player.addExhaustion(exhaustionAmount);
             }else{
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x+1, y, z));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x-1, y, z));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z+1));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z-1));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x+1, y, z+1));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x-1, y, z-1));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x+1, y, z-1));
-                world.spawnEntityInWorld(new EntityLightningBolt(world, x-1, y, z+1));
-                player.getHeldItem().damageItem(damageDue * damageMultiplier, player);
+                for (int i = 0; i < rand.nextInt(lightningRangeMax) + lightningRangeMin; i++) {
+                    world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+                    if (rand.nextInt(lightningRangeMax) % 2 == 0){
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x + i, y, z));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x - i, y, z));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z + i));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z - i));
+                    }else{
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x + i, y, z + i));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x - i, y, z - i));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x + i, y, z - i));
+                        world.spawnEntityInWorld(new EntityLightningBolt(world, x - i, y, z + i));
+                    }
+                }
+                player.getHeldItem().damageItem(damageDue * multiplier, player);
+                player.addExhaustion(exhaustionAmount * multiplier);
             }
         }
 

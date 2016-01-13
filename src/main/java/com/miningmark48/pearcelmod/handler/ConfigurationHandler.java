@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.handler;
 
 import java.io.File;
+import java.util.concurrent.locks.Condition;
 
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
@@ -23,6 +24,8 @@ public class ConfigurationHandler {
     public static int summonerRange;
     public static int sapDurability;
     public static int maxStaffFlyHeight;
+    public static int minPearcelLightning;
+    public static int maxPearcelLightning;
 
 
     public static void init(File configFile){
@@ -56,6 +59,8 @@ public class ConfigurationHandler {
         summonerRange = configuration.getInt(StatCollector.translateToLocal("config.summonerRange.title"), Configuration.CATEGORY_GENERAL, 3, 1, 25, StatCollector.translateToLocal("config.summonerRange.desc"));
         sapDurability = configuration.getInt(StatCollector.translateToLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, StatCollector.translateToLocal("config.sapDurability.desc"));
         maxStaffFlyHeight = configuration.getInt(StatCollector.translateToLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, StatCollector.translateToLocal("config.maxStaffFlyHeight.desc"));
+        minPearcelLightning = configuration.getInt(StatCollector.translateToLocal("config.minPearcelLightning.title"), Configuration.CATEGORY_GENERAL, 2, 0, 99, StatCollector.translateToLocal("config.minPearcelLightning.desc"));
+        maxPearcelLightning = configuration.getInt(StatCollector.translateToLocal("config.maxPearcelLightning.title"), Configuration.CATEGORY_GENERAL, 5, 1, 100, StatCollector.translateToLocal("config.maxPearcelLightning.desc"));
 
 
         if (configuration.hasChanged()){

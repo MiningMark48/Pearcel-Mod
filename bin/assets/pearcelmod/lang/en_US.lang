@@ -180,6 +180,10 @@ config.sapDurability.title=Durability for Summoner's Activation Pearcel
 config.sapDurability.desc=What is the durability of the summoner's activation pearcel?
 config.maxStaffFlyHeight.title=Max height for Pearcel Staff boost
 config.maxStaffFlyHeight.desc=What is the max height the Pearcel Staff will give you a boost?
+config.minPearcelLightning.title=Min. Lightning Range
+config.minPearcelLightning.desc=Minimum range for the Charged Pearcel Sword's Lightning
+config.maxPearcelLightning.title=Max. Lightning Range
+config.maxPearcelLightning.desc=Maximum range for the Charged Pearcel Sword's Lightning
 
 gui.ivet.name=IVET
 gui.meWorkbench.name=ME^Workbench
