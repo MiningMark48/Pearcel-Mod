@@ -5,43 +5,31 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
-:extractMcpData
+:compileApiJava UP-TO-DATE
+:processApiResources UP-TO-DATE
+:apiClasses UP-TO-DATE
+:sourceMainJava
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:processResources
+:classes
+:jar
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:extractMcpData UP-TO-DATE
 :getVersionJson
-:extractUserDev
-:genSrgs
-:extractNatives
-:getAssetsIndex
-:getAssets
-Current status: 0/145   0%
-Current status: 4/145   2%
-Current status: 17/145   11%
-Current status: 22/145   15%
-Current status: 46/145   31%
-Current status: 70/145   48%
-Current status: 98/145   67%
-Current status: 118/145   81%
-Current status: 145/145   100%
-:makeStart
-[ant:javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
-[ant:javac] 1 warning
-:downloadMcpTools
-:downloadClient
-:downloadServer
-:mergeJars
-:deobfuscateJar
-Applying SpecialSource...
-Applying Exceptor...
-:decompile
-:processSources
-Injecting fml files
-Applying fml patches
-Applying forge patches
-:remapJar
-:extractMinecraftSrc
-:recompMinecraft UP-TO-DATE
-:repackMinecraft
-:setupDecompWorkspace
+:extractUserDev UP-TO-DATE
+:genSrgs SKIPPED
+:reobf
+:assemble
+:check UP-TO-DATE
+:build
 
 BUILD SUCCESSFUL
 
-Total time: 4 mins 16.467 secs
+Total time: 58.6 secs
