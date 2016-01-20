@@ -13,6 +13,8 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemSeeds;
 import net.minecraftforge.common.util.EnumHelper;
 
+import java.sql.Ref;
+
 public class ModItems {
 
     //Material
@@ -49,11 +51,11 @@ public class ModItems {
     public static final Item pearcelHoe = new ItemPearcelHoe(ToolMaterial.EMERALD).setUnlocalizedName("pearcelHoe").setTextureName(Reference.MOD_ID + ":pearcelHoe").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelShears = new ItemPearcelShears().setUnlocalizedName("pearcelShears").setTextureName(Reference.MOD_ID + ":pearcelShears").setMaxStackSize(1).setMaxDamage(1024).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBow = new ItemPearcelBow().setUnlocalizedName("pearcelBow").setTextureName(Reference.MOD_ID + ":pearcelBow").setMaxStackSize(1).setMaxDamage(100).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
+    public static final Item pcp = new ItemPCP().setUnlocalizedName("pcp").setTextureName(Reference.MOD_ID + ":pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item pearcelStaff = new ItemPearcelStaff(ToolMaterial.GOLD).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(1000);
     public static final Item flightItem = new ItemFlight().setTextureName(Reference.MOD_ID + ":flightItem").setUnlocalizedName("flightItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item sap = new ItemSAP().setTextureName(Reference.MOD_ID + ":sap").setUnlocalizedName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(ConfigurationHandler.sapDurability);
-    public static final Item oreChecker = new ItemOreChecker().setUnlocalizedName("oreChecker").setTextureName(Reference.MOD_ID + "oreChecker").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(32);
+    public static final Item oreChecker = new ItemOreChecker().setUnlocalizedName("oreChecker").setTextureName(Reference.MOD_ID + ":oreChecker").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(32);
     public static final Item chargedPearcelSword = new ItemChargedPearcelSword(ToolMaterial.EMERALD).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Armor
@@ -64,17 +66,17 @@ public class ModItems {
 
 
     //General Items
-    public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
-    public static final Item pearcelStick = new ItemPearcelStick().setUnlocalizedName("pearcelStick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelFlour = new ItemPearcelFlour().setUnlocalizedName("pearcelFlour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelArrow = new ItemPearcelArrow().setUnlocalizedName("pearcelArrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item meMatter = new ItemMEMatter().setUnlocalizedName("meMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item meMatterNeutral = new ItemMEMatterNeutral().setUnlocalizedName("meMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item redMatter = new ItemRedMatter().setUnlocalizedName("redMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item greenMatter = new ItemGreenMatter().setUnlocalizedName("greenMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelJar = new ItemPearcelJar().setUnlocalizedName("pearcelJar").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setTextureName(Reference.MOD_ID + ":pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
+    public static final Item pearcelStick = new ItemPearcelStick().setUnlocalizedName("pearcelStick").setTextureName(Reference.MOD_ID + ":pearcelStick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelFlour = new ItemPearcelFlour().setUnlocalizedName("pearcelFlour").setTextureName(Reference.MOD_ID + ":pearcelFlour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelArrow = new ItemPearcelArrow().setUnlocalizedName("pearcelArrow").setTextureName(Reference.MOD_ID + ":pearcelArrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item meMatter = new ItemMEMatter().setUnlocalizedName("meMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setTextureName(Reference.MOD_ID + ":meMatter");
+    public static final Item meMatterNeutral = new ItemMEMatterNeutral().setUnlocalizedName("meMatterNeutral").setTextureName(Reference.MOD_ID + ":meMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item redMatter = new ItemRedMatter().setUnlocalizedName("redMatter").setTextureName(Reference.MOD_ID + ":redMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item greenMatter = new ItemGreenMatter().setUnlocalizedName("greenMatter").setTextureName(Reference.MOD_ID + ":greenMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelJar = new ItemPearcelJar().setUnlocalizedName("pearcelJar").setTextureName(Reference.MOD_ID + ":pearcelJar").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setTextureName(Reference.MOD_ID + ":pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setTextureName(Reference.MOD_ID + ":melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setContainerItem(Items.bucket);
     public static final Item pearcelCharcoal = new ItemPearcelFuel().setUnlocalizedName("pearcelCharcoal").setTextureName(Reference.MOD_ID + ":pearcelCharcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item dice = new ItemDice().setUnlocalizedName("dice").setTextureName(Reference.MOD_ID + ":dice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -82,7 +84,7 @@ public class ModItems {
     public static final Item tier2Craft = new ItemCraftComponent().setUnlocalizedName("tier2Craft").setTextureName(Reference.MOD_ID + ":tier2Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier3Craft = new ItemCraftComponent().setUnlocalizedName("tier3Craft").setTextureName(Reference.MOD_ID + ":tier3Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier4Craft = new ItemCraftComponent().setUnlocalizedName("tier4Craft").setTextureName(Reference.MOD_ID + ":tier4Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item armorPlating = new ItemArmorPlating().setUnlocalizedName("armorPlating").setTextureName(Reference.MOD_ID + "armorPlating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item armorPlating = new ItemArmorPlating().setUnlocalizedName("armorPlating").setTextureName(Reference.MOD_ID + ":armorPlating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     public static final Item testItem = new ItemTestItem().setUnlocalizedName("testItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
