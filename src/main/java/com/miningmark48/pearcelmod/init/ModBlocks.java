@@ -28,7 +28,7 @@ public class ModBlocks {
     //Models
         public static final Block pearcelPainting = new BlockPearcelPainting(Material.cloth).setBlockName("pearcelPainting").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.2F).setResistance(0.1F);
     //General blocks
-        public static final Block meGlass = new BlockMEGlass().setBlockName("meGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":meGlass").setHardness(0.5F).setResistance(99999.9F);
+        public static final Block pearcelGlass = new BlockPearcelGlass().setBlockName("pearcelGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":pearcelGlass").setHardness(0.5F).setResistance(99999.9F);
         public static final Block meLamp = new BlockMELamp().setBlockName("meLamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(2.0F).setBlockTextureName(Reference.MOD_ID + ":meLamp").setHardness(0.5F).setResistance(99999.9F);
         public static final Block meWorkbench = new BlockMEWorkbench().setBlockName("meWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":meWorkbench").setHardness(2.5F).setResistance(5.0F);
         public static final Block ivet = new BlockIVET().setBlockName("ivet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":ivet").setHardness(1.0F).setResistance(1000.0F);
@@ -61,14 +61,12 @@ public class ModBlocks {
     public static void init(){
 
         //General Blocks
-            GameRegistry.registerBlock(meBlock, "meBlock");
             GameRegistry.registerBlock(pearcelBlock, "pearcelBlock");
-            GameRegistry.registerBlock(meGlass, "meGlass");
+            GameRegistry.registerBlock(pearcelGlass, "pearcelGlass");
             GameRegistry.registerBlock(meLamp, "meLamp");
             GameRegistry.registerBlock(meWorkbench, "meWorkbench");
             GameRegistry.registerBlock(ivet, "ivet");
             GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
-            GameRegistry.registerBlock(bedrockGlass, "bedrockGlass");
             GameRegistry.registerBlock(meMatterBlock, "meMatterBlock");
             GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
             GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");

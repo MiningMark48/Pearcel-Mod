@@ -1,8 +1,8 @@
 package com.miningmark48.pearcelmod.block;
 
-public class BlockMEGlass extends BlockPearcelMod {
+public class BlockPearcelGlass extends BlockPearcelMod {
 	
-	public BlockMEGlass(){
+	public BlockPearcelGlass(){
 		super();
 	}
 	
