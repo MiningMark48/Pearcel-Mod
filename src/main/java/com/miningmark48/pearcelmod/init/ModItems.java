@@ -42,7 +42,6 @@ public class ModItems {
     public static final Item pearcelStaff = new ItemPearcelStaff(ToolMaterial.GOLD).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(1000);
     public static final Item flightItem = new ItemFlight().setTextureName(Reference.MOD_ID + ":flightItem").setUnlocalizedName("flightItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item sap = new ItemSAP().setTextureName(Reference.MOD_ID + ":sap").setUnlocalizedName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(ConfigurationHandler.sapDurability);
-    public static final Item oreChecker = new ItemOreChecker().setUnlocalizedName("oreChecker").setTextureName(Reference.MOD_ID + ":oreChecker").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(32);
     public static final Item chargedPearcelSword = new ItemChargedPearcelSword(ToolMaterial.EMERALD).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Armor
@@ -66,6 +65,8 @@ public class ModItems {
     public static final Item tier3Craft = new ItemCraftComponent().setUnlocalizedName("tier3Craft").setTextureName(Reference.MOD_ID + ":tier3Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier4Craft = new ItemCraftComponent().setUnlocalizedName("tier4Craft").setTextureName(Reference.MOD_ID + ":tier4Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item armorPlating = new ItemArmorPlating().setUnlocalizedName("armorPlating").setTextureName(Reference.MOD_ID + ":armorPlating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelIngot = new ItemIngot().setUnlocalizedName("pearcelIngot").setTextureName(Reference.MOD_ID + ":pearcelIngot").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+
 
 	public static void init(){
         //Food
@@ -90,7 +91,6 @@ public class ModItems {
         GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
         GameRegistry.registerItem(flightItem, "flightItem");
         GameRegistry.registerItem(sap, "sap");
-        GameRegistry.registerItem(oreChecker, "oreChecker");
         GameRegistry.registerItem(chargedPearcelSword, "chargedPearcelSword");
 
         //Armor
@@ -112,6 +112,7 @@ public class ModItems {
         GameRegistry.registerItem(tier3Craft, "tier3Craft");
         GameRegistry.registerItem(tier4Craft, "tier4Craft");
         GameRegistry.registerItem(armorPlating, "armorPlating");
+        GameRegistry.registerItem(pearcelIngot, "pearcelIngot");
 	}
 	
 }
