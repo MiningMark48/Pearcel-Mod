@@ -5,14 +5,12 @@ import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 
-public class CraftMEMatter {
+public class CraftPearcelMatter {
 
     @SubscribeEvent
-    public void onCraftMEMatter(PlayerEvent.ItemCraftedEvent e){
-        if(e.crafting.getItem().equals(ModItems.meMatter)){
-            e.player.addStat(Achievements.achievementMEMatter, 1);
-
-            LogHelper.info(e.player + " crafted ME^Matter");
+    public void onCraftPearcelMatter(PlayerEvent.ItemCraftedEvent e){
+        if(e.crafting.getItem().equals(ModItems.pearcelMatter)){
+            e.player.addStat(Achievements.achievementPearcelMatter, 1);
         }
     }
 

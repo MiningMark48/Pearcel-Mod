@@ -13,8 +13,6 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemSeeds;
 import net.minecraftforge.common.util.EnumHelper;
 
-import java.sql.Ref;
-
 public class ModItems {
 
     //Material
@@ -24,21 +22,10 @@ public class ModItems {
 	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelPie = new ItemModFood(8, 0.3F, false).setUnlocalizedName("pearcelPie").setTextureName(Reference.MOD_ID + ":pearcelPie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBread = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelBread").setTextureName(Reference.MOD_ID + ":pearcelBread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item angelDust = new ItemAngelDust(1, 0.5F, true).setUnlocalizedName("angelDust").setTextureName(Reference.MOD_ID + ":angelDust").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelMelon = new ItemPearcelMelon(4, 1.0F, false).setUnlocalizedName("pearcelMelon").setTextureName(Reference.MOD_ID + ":pearcelMelon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelSandwich = new ItemModFood(10, 1.3F, true).setUnlocalizedName("pearcelSandwich").setTextureName(Reference.MOD_ID + ":pearcelSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item melonSandwich = new ItemModFood(11, 1.4F, true).setUnlocalizedName("melonSandwich").setTextureName(Reference.MOD_ID + ":melonSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBeef = new ItemModFood(1, 0.1F, true).setUnlocalizedName("pearcelBeef").setTextureName(Reference.MOD_ID + ":pearcelBeef").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelSteak = new ItemModFood(7, 0.8F, true).setUnlocalizedName("pearcelSteak").setTextureName(Reference.MOD_ID + ":pearcelSteak").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelCookie = new ItemModFood(1, 0.5F, false).setUnlocalizedName("pearcelCookie").setTextureName(Reference.MOD_ID + ":pearcelCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie2 = new ItemModFood(2, 1.0F, false).setUnlocalizedName("pearcelCookie2").setTextureName(Reference.MOD_ID + ":pearcelCookie2").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie3 = new ItemModFood(3, 1.5F, false).setUnlocalizedName("pearcelCookie3").setTextureName(Reference.MOD_ID + ":pearcelCookie3").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie4 = new ItemModFood(4, 2.0F, false).setUnlocalizedName("pearcelCookie4").setTextureName(Reference.MOD_ID + ":pearcelCookie4").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie5 = new ItemModFood(5, 2.5F, false).setUnlocalizedName("pearcelCookie5").setTextureName(Reference.MOD_ID + ":pearcelCookie5").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie6 = new ItemModFood(6, 3.0F, false).setUnlocalizedName("pearcelCookie6").setTextureName(Reference.MOD_ID + ":pearcelCookie6").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie7 = new ItemModFood(7, 3.5F, false).setUnlocalizedName("pearcelCookie7").setTextureName(Reference.MOD_ID + ":pearcelCookie7").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie8 = new ItemModFood(8, 4.0F, false).setUnlocalizedName("pearcelCookie8").setTextureName(Reference.MOD_ID + ":pearcelCookie8").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelCookie9 = new ItemModFood(9, 10.0F, false).setUnlocalizedName("pearcelCookie9").setTextureName(Reference.MOD_ID + ":pearcelCookie9").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -70,23 +57,15 @@ public class ModItems {
     public static final Item pearcelStick = new ItemPearcelStick().setUnlocalizedName("pearcelStick").setTextureName(Reference.MOD_ID + ":pearcelStick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelFlour = new ItemPearcelFlour().setUnlocalizedName("pearcelFlour").setTextureName(Reference.MOD_ID + ":pearcelFlour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelArrow = new ItemPearcelArrow().setUnlocalizedName("pearcelArrow").setTextureName(Reference.MOD_ID + ":pearcelArrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item meMatter = new ItemMEMatter().setUnlocalizedName("meMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setTextureName(Reference.MOD_ID + ":meMatter");
-    public static final Item meMatterNeutral = new ItemMEMatterNeutral().setUnlocalizedName("meMatterNeutral").setTextureName(Reference.MOD_ID + ":meMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item redMatter = new ItemRedMatter().setUnlocalizedName("redMatter").setTextureName(Reference.MOD_ID + ":redMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item greenMatter = new ItemGreenMatter().setUnlocalizedName("greenMatter").setTextureName(Reference.MOD_ID + ":greenMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelJar = new ItemPearcelJar().setUnlocalizedName("pearcelJar").setTextureName(Reference.MOD_ID + ":pearcelJar").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item pearcelJelly = new ItemPearcelJelly().setUnlocalizedName("pearcelJelly").setTextureName(Reference.MOD_ID + ":pearcelJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item melonJelly = new ItemMelonJelly().setUnlocalizedName("melonJelly").setTextureName(Reference.MOD_ID + ":melonJelly").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelMatter = new ItemPearcelMatter().setUnlocalizedName("pearcelMatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setTextureName(Reference.MOD_ID + ":pearcelMatter");
+    public static final Item pearcelMatterNeutral = new ItemPearcelMatterNeutral().setUnlocalizedName("pearcelMatterNeutral").setTextureName(Reference.MOD_ID + ":pearcelMatterNeutral").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelJuice = new ItemPearcelJuice().setUnlocalizedName("pearcelJuice").setTextureName(Reference.MOD_ID + ":pearcelJuice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setContainerItem(Items.bucket);
     public static final Item pearcelCharcoal = new ItemPearcelFuel().setUnlocalizedName("pearcelCharcoal").setTextureName(Reference.MOD_ID + ":pearcelCharcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Item dice = new ItemDice().setUnlocalizedName("dice").setTextureName(Reference.MOD_ID + ":dice").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier1Craft = new ItemCraftComponent().setUnlocalizedName("tier1Craft").setTextureName(Reference.MOD_ID + ":tier1Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier2Craft = new ItemCraftComponent().setUnlocalizedName("tier2Craft").setTextureName(Reference.MOD_ID + ":tier2Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier3Craft = new ItemCraftComponent().setUnlocalizedName("tier3Craft").setTextureName(Reference.MOD_ID + ":tier3Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item tier4Craft = new ItemCraftComponent().setUnlocalizedName("tier4Craft").setTextureName(Reference.MOD_ID + ":tier4Craft").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item armorPlating = new ItemArmorPlating().setUnlocalizedName("armorPlating").setTextureName(Reference.MOD_ID + ":armorPlating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-
-    public static final Item testItem = new ItemTestItem().setUnlocalizedName("testItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 	public static void init(){
         //Food
@@ -94,10 +73,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelPie, "pearcelPie");
         GameRegistry.registerItem(pearcelBread, "pearcelBread");
         GameRegistry.registerItem(pearcelJuice, "pearcelJuice");
-        GameRegistry.registerItem(angelDust, "angelDust");
-        GameRegistry.registerItem(pearcelMelon, "pearcelMelon");
         GameRegistry.registerItem(pearcelSandwich, "pearcelSandwich");
-        GameRegistry.registerItem(melonSandwich, "melonSandwich");
         GameRegistry.registerItem(pearcelBeef, "pearcelBeef");
         GameRegistry.registerItem(pearcelSteak, "pearcelSteak");
         //Plants
@@ -111,7 +87,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelShears, "pearcelShears");
         GameRegistry.registerItem(pearcelBow, "pearcelBow");
         GameRegistry.registerItem(pcp, "pcp");
-        //GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
+        GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
         GameRegistry.registerItem(flightItem, "flightItem");
         GameRegistry.registerItem(sap, "sap");
         GameRegistry.registerItem(oreChecker, "oreChecker");
@@ -127,37 +103,15 @@ public class ModItems {
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
         GameRegistry.registerItem(pearcelFlour, "pearcelFlour");
         GameRegistry.registerItem(pearcelArrow, "pearcelArrow");
-        GameRegistry.registerItem(meMatter, "meMatter");
-        GameRegistry.registerItem(meMatterNeutral, "meMatterNeutral");
-        GameRegistry.registerItem(redMatter, "redMatter");
-        GameRegistry.registerItem(greenMatter, "greenMatter");
-        GameRegistry.registerItem(pearcelJar, "pearcelJar");
-        GameRegistry.registerItem(pearcelJelly, "pearcelJelly");
-        GameRegistry.registerItem(melonJelly, "melonJelly");
+        GameRegistry.registerItem(pearcelMatter, "pearcelMatter");
+        GameRegistry.registerItem(pearcelMatterNeutral, "pearcelMatterNeutral");
         GameRegistry.registerItem(pearcelCookie, "pearcelCookie");
-        GameRegistry.registerItem(pearcelCookie2, "pearcelCookie2");
-        GameRegistry.registerItem(pearcelCookie3, "pearcelCookie3");
-        GameRegistry.registerItem(pearcelCookie4, "pearcelCookie4");
-        GameRegistry.registerItem(pearcelCookie5, "pearcelCookie5");
-        GameRegistry.registerItem(pearcelCookie6, "pearcelCookie6");
-        GameRegistry.registerItem(pearcelCookie7, "pearcelCookie7");
-        GameRegistry.registerItem(pearcelCookie8, "pearcelCookie8");
-        GameRegistry.registerItem(pearcelCookie9, "pearcelCookie9");
         GameRegistry.registerItem(pearcelCharcoal, "pearcelCharcoal");
-        GameRegistry.registerItem(dice, "dice");
 		GameRegistry.registerItem(tier1Craft, "tier1Craft");
         GameRegistry.registerItem(tier2Craft, "tier2Craft");
         GameRegistry.registerItem(tier3Craft, "tier3Craft");
         GameRegistry.registerItem(tier4Craft, "tier4Craft");
         GameRegistry.registerItem(armorPlating, "armorPlating");
-
-        //GameRegistry.registerItem(testItem, "testItem");
-
-        //Items to be added if config allows
-        if (ConfigurationHandler.addPearcelStaff){
-            GameRegistry.registerItem(pearcelStaff, "pearcelStaff");
-        }
-
 	}
 	
 }
