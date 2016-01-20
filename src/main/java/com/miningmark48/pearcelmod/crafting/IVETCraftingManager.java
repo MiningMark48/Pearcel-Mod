@@ -44,7 +44,7 @@ public class IVETCraftingManager
 
         this.addShapelessRecipe(new ItemStack(Blocks.mossy_cobblestone), Blocks.cobblestone);
         this.addShapelessRecipe(new ItemStack(Blocks.cobblestone), Blocks.mossy_cobblestone);
-        this.addShapelessRecipe(new ItemStack(ModBlocks.meWorkbench), Blocks.crafting_table);
+        this.addShapelessRecipe(new ItemStack(ModBlocks.pearcelWorkbench), Blocks.crafting_table);
         this.addShapelessRecipe(new ItemStack(Blocks.sand), Blocks.soul_sand);
         this.addShapelessRecipe(new ItemStack(Blocks.soul_sand), Blocks.sand);
         this.addShapelessRecipe(new ItemStack(Items.redstone, 2), Blocks.piston);
@@ -60,9 +60,7 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.book, 4), Blocks.bookshelf);
         this.addShapelessRecipe(new ItemStack(Items.wheat_seeds), ModItems.pearcelSeeds);
         this.addShapelessRecipe(new ItemStack(ModItems.pearcelSeeds), Items.wheat_seeds);
-        this.addShapelessRecipe(new ItemStack(Items.iron_ingot, 2), ModBlocks.meBlock);
         this.addShapelessRecipe(new ItemStack(Items.glass_bottle, 16), Items.bucket);
-        this.addShapelessRecipe(new ItemStack(ModBlocks.pearcelPainting), Items.painting);
         this.addShapelessRecipe(new ItemStack(ModBlocks.pearcelTorch), Blocks.torch);
         this.addShapelessRecipe(new ItemStack(Blocks.torch), ModBlocks.pearcelTorch);
         this.addShapelessRecipe(new ItemStack(Items.diamond), Blocks.coal_block);

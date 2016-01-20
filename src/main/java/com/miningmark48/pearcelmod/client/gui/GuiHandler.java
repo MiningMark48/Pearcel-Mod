@@ -14,7 +14,7 @@ public class GuiHandler implements IGuiHandler {
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         if (ID == GUIs.guiIDMEWorkbench){
-            return ID == GUIs.guiIDMEWorkbench && world.getBlock(x, y, z) == ModBlocks.meWorkbench ? new ContainerMEWorkbench(player.inventory, world, x, y, z) : null;
+            return ID == GUIs.guiIDMEWorkbench && world.getBlock(x, y, z) == ModBlocks.pearcelWorkbench ? new ContainerMEWorkbench(player.inventory, world, x, y, z) : null;
         }
         if (ID == GUIs.guiIDIVET){
             return ID == GUIs.guiIDIVET && world.getBlock(x, y, z) == ModBlocks.ivet ? new ContainerIVET(player.inventory, world, x, y, z) : null;
@@ -29,7 +29,7 @@ public class GuiHandler implements IGuiHandler {
     @Override
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         if (ID == GUIs.guiIDMEWorkbench){
-            return ID == GUIs.guiIDMEWorkbench && world.getBlock(x, y, z) == ModBlocks.meWorkbench ? new GuiMEWorkbench(player.inventory, world, x, y, z) : null;
+            return ID == GUIs.guiIDMEWorkbench && world.getBlock(x, y, z) == ModBlocks.pearcelWorkbench ? new GuiMEWorkbench(player.inventory, world, x, y, z) : null;
         }
         if (ID == GUIs.guiIDIVET){
             return ID == GUIs.guiIDIVET && world.getBlock(x, y, z) == ModBlocks.ivet ? new GuiIVET(player.inventory, world, x, y, z) : null;

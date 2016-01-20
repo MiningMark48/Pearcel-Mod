@@ -33,10 +33,6 @@ public class ClientProxy extends CommonProxy{
         RenderingRegistry.registerEntityRenderingHandler(EntityPearson.class, new RenderPearson(new ModelPearson(), 0));
 
     //Blocks
-        //Pearcel Painting
-        TileEntitySpecialRenderer renderPPainting = new RenderPearcelPainting();
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPainting.class, renderPPainting);
-        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.pearcelPainting), new RenderItemPearcelPainting());
         //Pearcel Plush
         TileEntitySpecialRenderer renderPPlush = new RenderPearcelPlush();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPlush.class, renderPPlush);

@@ -53,7 +53,7 @@ public class ContainerMEWorkbench extends Container {
 
     @Override
     public boolean canInteractWith(EntityPlayer player){
-        if (worldObj.getBlock(posX, posY, posZ) != ModBlocks.meWorkbench){
+        if (worldObj.getBlock(posX, posY, posZ) != ModBlocks.pearcelWorkbench){
             return false;
         }else{
             return player.getDistanceSq((double)posX + 0.5D, (double)posY + 0.5D, (double)posZ + 0.5D) <= 64.0D;
