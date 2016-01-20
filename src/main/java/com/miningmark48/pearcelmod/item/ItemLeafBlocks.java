@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemLeafBlocks extends ItemBlock{
 
-    public static final String[] leaves = new String[] {"pearcel", "me"};
+    public static final String[] leaves = new String[] {"pearcel"};
 
     public ItemLeafBlocks(Block block) {
         super(block);

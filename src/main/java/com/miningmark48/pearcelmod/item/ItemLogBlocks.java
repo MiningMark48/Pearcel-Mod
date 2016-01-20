@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemLogBlocks extends ItemBlock{
 
-    public static final String[] logs = new String[] {"pearcel", "me"};
+    public static final String[] logs = new String[] {"pearcel"};
 
     public ItemLogBlocks(Block block) {
         super(block);

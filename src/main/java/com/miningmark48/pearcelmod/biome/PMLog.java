@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PMLog extends BlockLog{
 
-    public static final String[] logs = new String[] {"pearcel", "me"};
+    public static final String[] logs = new String[] {"pearcel"};
 
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item item, CreativeTabs tabs, List list){

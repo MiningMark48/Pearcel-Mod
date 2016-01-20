@@ -7,7 +7,7 @@ import net.minecraft.util.IIcon;
 
 public class ItemSaplingBlocks extends ItemBlockWithMetadata{
 
-    public static final String[] saplings = new String[] {"pearcel", "me"};
+    public static final String[] saplings = new String[] {"pearcel"};
     private IIcon[] saplingIcons;
 
     public ItemSaplingBlocks(Block block) {

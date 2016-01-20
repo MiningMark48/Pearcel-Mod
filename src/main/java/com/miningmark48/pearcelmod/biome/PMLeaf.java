@@ -19,8 +19,8 @@ import java.util.Random;
 
 public class PMLeaf extends BlockLeaves{
 
-    public static final String[][] leafTypes = new String[][] {{"leafPearcel", "leafME"}, {"leafPearcelOpaque", "leafMEOpaque"}};
-    public static final String[] leaves = new String[] {"pearcel", "me"};
+    public static final String[][] leafTypes = new String[][] {{"leafPearcel"}, {"leafPearcelOpaque"}};
+    public static final String[] leaves = new String[] {"pearcel"};
 
     protected void func_150124_c(World world, int x, int y, int z, int side, int meta)
     {
