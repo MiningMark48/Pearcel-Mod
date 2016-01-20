@@ -1,6 +1,6 @@
 package com.miningmark48.pearcelmod.client.gui;
 
-import com.miningmark48.pearcelmod.client.container.ContainerMEWorkbench;
+import com.miningmark48.pearcelmod.client.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -10,12 +10,12 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
-public class GuiMEWorkbench extends GuiContainer {
+public class GuiPearcelWorkbench extends GuiContainer {
     private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/meWorkbenchGui.png");
     public static final int GUI_ID = 153;
 
-    public GuiMEWorkbench(InventoryPlayer player, World world, int x, int y, int z){
-        super(new ContainerMEWorkbench(player, world, x, y, z));
+    public GuiPearcelWorkbench(InventoryPlayer player, World world, int x, int y, int z){
+        super(new ContainerPearcelWorkbench(player, world, x, y, z));
 
         this.xSize = 176;
         this.ySize = 166;
@@ -26,7 +26,7 @@ public class GuiMEWorkbench extends GuiContainer {
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
-        this.fontRendererObj.drawString(StatCollector.translateToLocal("gui.meWorkbench.name"), 50, 5, 0x404040);
+        this.fontRendererObj.drawString(StatCollector.translateToLocal("gui.pearcelWorkbench.name"), 40, 5, 0x404040);
     }
 
     @Override

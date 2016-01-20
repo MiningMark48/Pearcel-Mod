@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.world.World;
 
-public class ContainerMEWorkbench extends Container {
+public class ContainerPearcelWorkbench extends Container {
 
     public InventoryCrafting craftMatrix;
     public IInventory craftResult;
@@ -17,7 +17,7 @@ public class ContainerMEWorkbench extends Container {
     private int posY;
     private int posZ;
 
-    public ContainerMEWorkbench(InventoryPlayer player, World world, int x, int y, int z){
+    public ContainerPearcelWorkbench(InventoryPlayer player, World world, int x, int y, int z){
         craftMatrix = new InventoryCrafting(this, 3, 3);
         craftResult = new InventoryCraftResult();
         worldObj = world;

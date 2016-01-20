@@ -1,14 +1,10 @@
 package com.miningmark48.pearcelmod.client.gui;
 
-import com.miningmark48.pearcelmod.client.container.ContainerMEWorkbench;
+import com.miningmark48.pearcelmod.client.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.ContainerWorkbench;
-import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
@@ -19,7 +15,7 @@ public class GuiPCP extends GuiContainer {
     public static final int GUI_ID = 153;
 
     public GuiPCP(InventoryPlayer player, World world, int x, int y, int z){
-        super(new ContainerMEWorkbench(player, world, x, y, z));
+        super(new ContainerPearcelWorkbench(player, world, x, y, z));
 
         this.xSize = 176;
         this.ySize = 166;
