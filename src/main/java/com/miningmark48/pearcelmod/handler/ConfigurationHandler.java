@@ -14,10 +14,8 @@ public class ConfigurationHandler {
 
     public static Configuration configuration;
 
-    public static boolean addPearcelStaff;
     public static boolean useFlightItemParticle;
     public static boolean specialDice;
-    public static boolean useMEMatter;
     public static boolean flightItemExhaustion;
     public static int torcherRange;
     public static int torcherFrequency;
@@ -49,11 +47,9 @@ public class ConfigurationHandler {
 
     private static void loadConfiguration(){
 
-        addPearcelStaff = configuration.getBoolean(StatCollector.translateToLocal("config.addPearcelStaff.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.addPearcelStaff.desc"));
         useFlightItemParticle = configuration.getBoolean(StatCollector.translateToLocal("config.useFlightItemParticle.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useFlightItemParticle.desc"));
         flightItemExhaustion = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemExhaustion.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemExhaustion.desc"));
         specialDice = configuration.getBoolean(StatCollector.translateToLocal("config.specialDice.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.specialDice.desc"));
-        useMEMatter = configuration.getBoolean(StatCollector.translateToLocal("config.useMEMatter.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useMEMatter.desc"));
         torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, 500, StatCollector.translateToLocal("config.torcherRange.desc"));
         torcherFrequency = configuration.getInt(StatCollector.translateToLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 50, 2, StatCollector.translateToLocal("config.torcherFrequency.desc"));
         summonerRange = configuration.getInt(StatCollector.translateToLocal("config.summonerRange.title"), Configuration.CATEGORY_GENERAL, 3, 1, 25, StatCollector.translateToLocal("config.summonerRange.desc"));
