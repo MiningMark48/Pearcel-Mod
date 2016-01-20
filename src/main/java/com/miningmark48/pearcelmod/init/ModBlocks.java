@@ -25,17 +25,13 @@ public class ModBlocks {
         public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
         public static final Block foolsPearcelOre = new BlockFoolsPearcelOre().setBlockName("foolsPearcelOre").setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
         public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
-    //Models
-        public static final Block pearcelPainting = new BlockPearcelPainting(Material.cloth).setBlockName("pearcelPainting").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.2F).setResistance(0.1F);
     //General blocks
         public static final Block pearcelGlass = new BlockPearcelGlass().setBlockName("pearcelGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":pearcelGlass").setHardness(0.5F).setResistance(99999.9F);
-        public static final Block meLamp = new BlockMELamp().setBlockName("meLamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(2.0F).setBlockTextureName(Reference.MOD_ID + ":meLamp").setHardness(0.5F).setResistance(99999.9F);
-        public static final Block meWorkbench = new BlockMEWorkbench().setBlockName("meWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":meWorkbench").setHardness(2.5F).setResistance(5.0F);
+        public static final Block pearcelWorkbench = new BlockPearcelWorkbench().setBlockName("pearcelWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWorkbench").setHardness(2.5F).setResistance(5.0F);
         public static final Block ivet = new BlockIVET().setBlockName("ivet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":ivet").setHardness(1.0F).setResistance(1000.0F);
         public static final Block pearcelTorch = new BlockPearcelTorch().setBlockName("pearcelTorch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelTorch").setHardness(0.0F).setResistance(10.0F).setLightLevel(1.0F);
         public static final Block pearcelBlock = new BlockPearcelBlock().setBlockName("pearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelBlock").setHardness(1.5F).setResistance(10.0F);
-        public static final Block meMatterBlock = new BlockMEMatter().setBlockName("meMatterBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":meMatterBlock").setHardness(0.6F).setResistance(1.0F);
-        public static final Block pearcelMelonBlock = new BlockPearcelMelon().setBlockName("pearcelMelonBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelMelon_Side").setHardness(0.5F).setResistance(1.5F);
+        public static final Block pearcelMatterBlock = new BlockPearcelMatter().setBlockName("pearcelMatterBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelMatterBlock").setHardness(0.6F).setResistance(1.0F);
         public static final Block pearcelEndStone = new BlockPearcelEndStone().setBlockName("pearcelEndStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelEndStone");
         public static final Block pearcelPortal = new BlockPearcelPortal();
         public static final Block torcher = new BlockTorcher().setBlockName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":torcher");
@@ -49,7 +45,6 @@ public class ModBlocks {
         public static final Block pearcelStonebricks = new BlockPearcelMod().setBlockName("pearcelStonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStonebricks");
         public static final Block pearcelPlanks = new BlockPlanks().setBlockName("pearcelPlanks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelPlanks");
         public static final Block pearcelCharcoalBlock = new BlockPearcelMod().setBlockName("pearcelCharcoalBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelCharcoalBlock");
-        public static final Block mePlanks = new BlockPlanks().setBlockName("mePlanks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":mePlanks");
         public static final Block pearcelFence = new BlockFence(Reference.MOD_ID + ":pearcelPlanks", Material.wood).setHardness(2.0F).setResistance(5.5F).setBlockName("pearcelFence").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         public static final Block meGlassPane = new BlockPearcelPane(Reference.MOD_ID + ":meGlass", Reference.MOD_ID + ":meGlass", Material.glass, true).setBlockName("meGlassPane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(9999.9F).setStepSound(Block.soundTypeGlass);
         public static final Block pearcelStairs = new BlockPStairs(ModBlocks.pearcelBlock, 0).setBlockName("pearcelStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStairs");
@@ -63,19 +58,16 @@ public class ModBlocks {
         //General Blocks
             GameRegistry.registerBlock(pearcelBlock, "pearcelBlock");
             GameRegistry.registerBlock(pearcelGlass, "pearcelGlass");
-            GameRegistry.registerBlock(meLamp, "meLamp");
-            GameRegistry.registerBlock(meWorkbench, "meWorkbench");
+            GameRegistry.registerBlock(pearcelWorkbench, "pearcelWorkbench");
             GameRegistry.registerBlock(ivet, "ivet");
             GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
-            GameRegistry.registerBlock(meMatterBlock, "meMatterBlock");
+            GameRegistry.registerBlock(pearcelMatterBlock, "pearcelMatterBlock");
             GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
             GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
             GameRegistry.registerBlock(torcher, "torcher");
             GameRegistry.registerBlock(summoner, "summoner");
             GameRegistry.registerBlock(dragonInfusedPearcel, "dragonInfusedPearcel");
             GameRegistry.registerBlock(enderInfusedPearcel, "enderInfusedPearcel");
-            //GameRegistry.registerBlock(pearcelTNT, "pearcelTNT");
-            GameRegistry.registerBlock(pearcelMelonBlock, "pearcelMelonBlock");
             GameRegistry.registerBlock(corruptedPearcelBlock, "corruptedPearcelBlock");
             GameRegistry.registerBlock(netherInfusedPearcel, "netherInfusedPearcel");
             GameRegistry.registerBlock(witherInfusedPearcel, "witherInfusedPearcel");
@@ -98,7 +90,6 @@ public class ModBlocks {
             GameRegistry.registerBlock(blockLeaf, ItemLeafBlocks.class, blockLeaf.getUnlocalizedName().substring(5));
             GameRegistry.registerBlock(blockSapling, ItemSaplingBlocks.class, blockSapling.getUnlocalizedName().substring(5));
         //Models
-            GameRegistry.registerBlock(pearcelPainting, "pearcelPainting");
             GameRegistry.registerBlock(pearcelPlush, "pearcelPlush");
         //Fluid
             GameRegistry.registerBlock(pearcelFluid, "pearcelFluid");

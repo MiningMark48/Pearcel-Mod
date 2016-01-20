@@ -12,14 +12,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class BlockMEWorkbench extends BlockPearcelMod{
+public class BlockPearcelWorkbench extends BlockPearcelMod{
     @SideOnly(Side.CLIENT)
     private IIcon field_150035_a;
     @SideOnly(Side.CLIENT)
     private IIcon field_150034_b;
     private static final String __OBFID = "CL_00000221";
 
-    public BlockMEWorkbench()
+    public BlockPearcelWorkbench()
     {
         super(Material.wood);
     }
