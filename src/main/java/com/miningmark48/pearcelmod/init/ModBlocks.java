@@ -51,7 +51,7 @@ public class ModBlocks {
         public static final Block pearcelWoodStairs = new BlockPStairs(ModBlocks.pearcelPlanks, 1).setBlockName("pearcelWoodStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWoodStairs");
         public static final Block pearcelPlush = new BlockPearcelPlush(Material.carpet).setBlockName("pearcelPlush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     //Fluids
-        public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
 
     public static void init(){
 
