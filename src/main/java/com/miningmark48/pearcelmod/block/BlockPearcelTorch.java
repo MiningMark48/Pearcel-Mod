@@ -12,12 +12,12 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import static net.minecraftforge.common.util.ForgeDirection.*;
 
-public class BlockPearcelTorch extends Block {
+public class BlockPearcelTorch extends BlockPearcelMod {
     private static final String __OBFID = "CL_00000325";
 
     public BlockPearcelTorch()
     {
-        super(Material.rock);
+        super();
         this.setTickRandomly(true);
     }
 

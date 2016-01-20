@@ -15,8 +15,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockIVET extends Block
-{
+public class BlockIVET extends BlockPearcelMod{
     @SideOnly(Side.CLIENT)
     private IIcon field_150035_a;
     @SideOnly(Side.CLIENT)
@@ -25,7 +24,7 @@ public class BlockIVET extends Block
 
     public BlockIVET()
     {
-        super(Material.iron);
+        super();
     }
 
     /**

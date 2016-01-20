@@ -12,8 +12,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class BlockMEWorkbench extends Block
-{
+public class BlockMEWorkbench extends BlockPearcelMod{
     @SideOnly(Side.CLIENT)
     private IIcon field_150035_a;
     @SideOnly(Side.CLIENT)

@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockPearcelTNT extends Block {
+public class BlockPearcelTNT extends BlockPearcelMod {
 
     @SideOnly(Side.CLIENT)
     private IIcon field_150116_a;

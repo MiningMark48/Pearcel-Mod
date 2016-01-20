@@ -24,6 +24,7 @@ public class BlockPearcelMod extends Block{
 		
 		super(Material.rock);
 		this.setHardness(2.0F);
+        this.setResistance(1.0F);
 	
 	}
 	
