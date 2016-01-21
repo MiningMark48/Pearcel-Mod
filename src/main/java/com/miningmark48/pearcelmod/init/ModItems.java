@@ -20,7 +20,7 @@ public class ModItems {
     public static ItemArmor.ArmorMaterial matChargePearcel = EnumHelper.addArmorMaterial("ChargedPearcelArmor", 50, new int[]{4, 8, 6, 3}, 30);
 
     //Food
-	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+	public static final Item pearcel = new ItemPearcel(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelPie = new ItemModFood(8, 0.3F, false).setUnlocalizedName("pearcelPie").setTextureName(Reference.MOD_ID + ":pearcelPie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelBread = new ItemModFood(6, 0.6F, false).setUnlocalizedName("pearcelBread").setTextureName(Reference.MOD_ID + ":pearcelBread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelSandwich = new ItemModFood(10, 1.3F, true).setUnlocalizedName("pearcelSandwich").setTextureName(Reference.MOD_ID + ":pearcelSandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);

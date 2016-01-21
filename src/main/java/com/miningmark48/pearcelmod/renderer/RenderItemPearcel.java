@@ -1,23 +1,21 @@
 package com.miningmark48.pearcelmod.renderer;
 
+import com.miningmark48.pearcelmod.model.ModelPearcel;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
-import net.minecraftforge.client.model.AdvancedModelLoader;
-import net.minecraftforge.client.model.IModelCustom;
 import org.lwjgl.opengl.GL11;
 
 public class RenderItemPearcel implements IItemRenderer {
 
-    private IModelCustom model;
-    private ResourceLocation texture;
+    protected com.miningmark48.pearcelmod.model.ModelPearcel model;
 
     public RenderItemPearcel(){
 
-        model = AdvancedModelLoader.loadModel(new ResourceLocation(Reference.MOD_ID + ":models/pearcel.obj"));
-        texture = new ResourceLocation(Reference.MOD_ID + ":textures/model/pearcel.png");
+        model = new ModelPearcel();
 
     }
 
@@ -44,7 +42,7 @@ public class RenderItemPearcel implements IItemRenderer {
             case EQUIPPED_FIRST_PERSON:
                 GL11.glPushMatrix();
 
-                Minecraft.getMinecraft().renderEngine.bindTexture(texture);
+                Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Reference.MOD_ID, "textures/model/pearcel.png"));
 
                 GL11.glRotatef(90.0F, 0.0F, 0.0F, 1.0F);
                 GL11.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
@@ -54,7 +52,7 @@ public class RenderItemPearcel implements IItemRenderer {
 
                 GL11.glScalef(0.65F, 0.9F, 0.65F);
 
-                model.renderAll();
+                model.render((Entity) data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
 
                 GL11.glPopMatrix();
             default:
