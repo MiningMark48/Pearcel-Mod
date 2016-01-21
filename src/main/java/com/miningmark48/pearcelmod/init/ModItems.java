@@ -16,7 +16,8 @@ import net.minecraftforge.common.util.EnumHelper;
 public class ModItems {
 
     //Material
-    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", 40, new int[]{3, 8, 6, 3}, 30);
+    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", 25, new int[]{3, 6, 5, 2}, 10);
+    public static ItemArmor.ArmorMaterial matChargePearcel = EnumHelper.addArmorMaterial("ChargedPearcelArmor", 50, new int[]{4, 8, 6, 3}, 30);
 
     //Food
 	public static final Item pearcel = new ItemModFood(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -45,10 +46,14 @@ public class ModItems {
     public static final Item chargedPearcelSword = new ItemChargedPearcelSword(ToolMaterial.EMERALD).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Armor
-    public static Item pearcelHelmet = new PearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static Item pearcelChestplate = new PearcelArmor(matPearcel, 1).setUnlocalizedName("pearcelChestplate").setTextureName(Reference.MOD_ID + ":pearcelChestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static Item pearcelLeggings = new PearcelArmor(matPearcel, 2).setUnlocalizedName("pearcelLeggings").setTextureName(Reference.MOD_ID + ":pearcelLeggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static Item pearcelBoots = new PearcelArmor(matPearcel, 3).setUnlocalizedName("pearcelBoots").setTextureName(Reference.MOD_ID + ":pearcelBoots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelHelmet = new ItemPearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelChestplate = new ItemPearcelArmor(matPearcel, 1).setUnlocalizedName("pearcelChestplate").setTextureName(Reference.MOD_ID + ":pearcelChestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelLeggings = new ItemPearcelArmor(matPearcel, 2).setUnlocalizedName("pearcelLeggings").setTextureName(Reference.MOD_ID + ":pearcelLeggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item pearcelBoots = new ItemPearcelArmor(matPearcel, 3).setUnlocalizedName("pearcelBoots").setTextureName(Reference.MOD_ID + ":pearcelBoots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item chargedPearcelHelmet = new ItemChargedPearcelArmor(matChargePearcel, 0).setUnlocalizedName("chargedPearcelHelmet").setTextureName(Reference.MOD_ID + ":chargedPearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item chargedPearcelChestplate = new ItemChargedPearcelArmor(matChargePearcel, 1).setUnlocalizedName("chargedPearcelChestplate").setTextureName(Reference.MOD_ID + ":chargedPearcelChestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item chargedPearcelLeggings = new ItemChargedPearcelArmor(matChargePearcel, 2).setUnlocalizedName("chargedPearcelLeggings").setTextureName(Reference.MOD_ID + ":chargedPearcelLeggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static Item chargedPearcelBoots = new ItemChargedPearcelArmor(matChargePearcel, 3).setUnlocalizedName("chargedPearcelBoots").setTextureName(Reference.MOD_ID + ":chargedPearcelBoots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
     //General Items
@@ -98,6 +103,10 @@ public class ModItems {
         GameRegistry.registerItem(pearcelChestplate, "pearcelChestplate");
         GameRegistry.registerItem(pearcelLeggings, "pearcelLeggings");
         GameRegistry.registerItem(pearcelBoots, "pearcelBoots");
+        GameRegistry.registerItem(chargedPearcelHelmet, "chargedPearcelHelmet");
+        GameRegistry.registerItem(chargedPearcelChestplate, "chargedPearcelChestplate");
+        GameRegistry.registerItem(chargedPearcelLeggings, "chargedPearcelLeggings");
+        GameRegistry.registerItem(chargedPearcelBoots, "chargedPearcelBoots");
         //General Items
         GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");

@@ -7,9 +7,9 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
 
-public class PearcelArmor extends ItemArmor {
+public class ItemPearcelArmor extends ItemArmor {
 
-    public PearcelArmor(ArmorMaterial material, int type) {
+    public ItemPearcelArmor(ArmorMaterial material, int type) {
         super(material, 0, type);
     }
 
