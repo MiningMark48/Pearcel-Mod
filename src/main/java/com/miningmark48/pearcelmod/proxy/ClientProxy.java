@@ -7,7 +7,6 @@ import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.model.ModelPearcelMob;
 import com.miningmark48.pearcelmod.model.ModelPearson;
 import com.miningmark48.pearcelmod.renderer.*;
-import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -16,8 +15,6 @@ import net.minecraft.client.model.ModelSquid;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
-
-import java.io.File;
 
 public class ClientProxy extends CommonProxy{
 
