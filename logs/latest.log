@@ -1,8 +1,8 @@
-[17:44:34] [main/INFO]: Setting user: Player906
-[17:44:36] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:44:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[17:44:41] [Sound Library Loader/INFO]: Sound engine started
-[17:44:42] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[18:39:17] [main/INFO]: Setting user: Player125
+[18:39:19] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:39:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:39:24] [Sound Library Loader/INFO]: Sound engine started
+[18:39:25] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,11 +22,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[17:44:43] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[17:44:43] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[17:44:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[17:44:43] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[17:44:43] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[18:39:26] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[18:39:26] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[18:39:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:39:27] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[18:39:27] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -49,36 +49,52 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[17:44:44] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[17:44:45] [Sound Library Loader/INFO]: Sound engine started
-[17:52:11] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:52:11] [Server thread/INFO]: Generating keypair
-[17:52:12] [Server thread/INFO]: Preparing start region for level 0
-[17:52:12] [Server thread/INFO]: Changing view distance to 3, from 10
-[17:52:13] [Server thread/INFO]: Player906[local:E:c911fe00] logged in with entity id 273 at (29.965645512893992, 4.0, 737.0521503057571)
-[17:52:13] [Server thread/INFO]: Player906 joined the game
-[17:52:36] [Server thread/INFO]: Saving and pausing game...
-[17:52:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:52:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:52:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:52:50] [Server thread/INFO]: Saving and pausing game...
-[17:52:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:52:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:52:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:53:05] [Server thread/INFO]: Saving and pausing game...
-[17:53:05] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:53:05] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:53:05] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:53:13] [Server thread/INFO]: Player906 has just earned the achievement [Taking Inventory]
-[17:53:13] [Client thread/INFO]: [CHAT] Player906 has just earned the achievement [Taking Inventory]
-[17:55:14] [Server thread/INFO]: Saving and pausing game...
-[17:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:55:14] [Server thread/INFO]: Stopping server
-[17:55:14] [Server thread/INFO]: Saving players
-[17:55:14] [Server thread/INFO]: Saving worlds
-[17:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:55:15] [Client thread/INFO]: Stopping!
+[18:39:27] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[18:39:28] [Sound Library Loader/INFO]: Sound engine started
+[18:39:38] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:39:38] [Server thread/INFO]: Generating keypair
+[18:39:39] [Server thread/INFO]: Preparing start region for level 0
+[18:39:40] [Server thread/INFO]: Changing view distance to 3, from 10
+[18:39:40] [Server thread/INFO]: Player125[local:E:5f6e26af] logged in with entity id 280 at (29.797507707548352, 4.0, 735.4263260142792)
+[18:39:40] [Server thread/INFO]: Player125 joined the game
+[18:40:26] [Server thread/INFO]: Player125 has just earned the achievement [Taking Inventory]
+[18:40:26] [Client thread/INFO]: [CHAT] Player125 has just earned the achievement [Taking Inventory]
+[18:40:44] [Server thread/INFO]: Saving and pausing game...
+[18:40:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:40:44] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:40:44] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:40:45] [Server thread/INFO]: Saving and pausing game...
+[18:40:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:40:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:40:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:40:54] [Server thread/INFO]: Saving and pausing game...
+[18:40:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:40:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:40:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:44:17] [Server thread/INFO]: Saving and pausing game...
+[18:44:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:44:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:44:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:48:29] [Server thread/INFO]: Saving and pausing game...
+[18:48:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:48:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:48:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:48:30] [Server thread/INFO]: Saving and pausing game...
+[18:48:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:48:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:48:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:48:32] [Server thread/INFO]: Saving and pausing game...
+[18:48:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:48:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:48:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:55:14] [Server thread/INFO]: Saving and pausing game...
+[18:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:55:14] [Server thread/INFO]: Stopping server
+[18:55:14] [Server thread/INFO]: Saving players
+[18:55:14] [Server thread/INFO]: Saving worlds
+[18:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:55:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:55:15] [Client thread/INFO]: Stopping!

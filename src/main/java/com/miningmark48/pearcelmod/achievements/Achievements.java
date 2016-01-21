@@ -24,7 +24,7 @@ public class Achievements {
         //Creates a new achievement
         achievementPearcelSword = new Achievement("achievement.craftPearcelSword", "craftPearcelSword", 0, 0, new ItemStack(ModItems.pearcelSword), (Achievement)null).initIndependentStat().registerStat();
         achievementPearcelOre = new Achievement("achievement.findPearcelOre", "findPearcelOre", 2, 0, new ItemStack(ModBlocks.pearcelOre), (Achievement)null).initIndependentStat().registerStat();
-        achievementPearcelMatter = new Achievement("achievement.craftMEMatter", "craftMEMatter", 4, 2, new ItemStack(ModItems.pearcelMatter), (Achievement)null).initIndependentStat().registerStat();
+        achievementPearcelMatter = new Achievement("achievement.craftPearcelMatter", "craftPearcelMatter", 4, 2, new ItemStack(ModItems.pearcelMatter), (Achievement)null).initIndependentStat().registerStat();
         achievementPearcelStaff = new Achievement("achievement.craftPearcelStaff", "craftPearcelStaff", 4, 0, new ItemStack(ModItems.pearcelStaff), achievementPearcelMatter).registerStat();
         achievementArmorPlating = new Achievement("achievement.craftArmorPlating", "craftArmorPlating", 4, 4, new ItemStack(ModItems.armorPlating), (Achievement)null).initIndependentStat().registerStat();
         achievementFreeBeacon = new Achievement("achievement.getFreeBeacon", "getFreeBeacon", 0, 4, new ItemStack(Blocks.beacon), (Achievement)null).initIndependentStat().registerStat();
