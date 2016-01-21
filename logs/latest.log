@@ -1,8 +1,8 @@
-[20:32:21] [main/INFO]: Setting user: Player687
-[20:32:23] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:32:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[20:32:29] [Sound Library Loader/INFO]: Sound engine started
-[20:32:30] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[20:45:20] [main/INFO]: Setting user: Player781
+[20:45:22] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:45:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[20:45:27] [Sound Library Loader/INFO]: Sound engine started
+[20:45:28] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,8 +22,8 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:31] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[20:32:31] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelLeggings.png
+[20:45:29] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelLeggings.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelLeggings.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -43,7 +43,7 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelLeggings.
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:31] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelHelmet.png
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelHelmet.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelHelmet.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -63,7 +63,7 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelHelmet.pn
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:31] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelBoots.png
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelBoots.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelBoots.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -83,7 +83,7 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelBoots.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:31] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelChestplate.png
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelChestplate.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelChestplate.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -103,9 +103,9 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelChestplat
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:31] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[20:32:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[20:32:32] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelLeggings.png
+[20:45:29] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[20:45:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelLeggings.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelLeggings.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -128,7 +128,7 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelLeggings.
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:32] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelHelmet.png
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelHelmet.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelHelmet.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -151,7 +151,7 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelHelmet.pn
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:32] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelBoots.png
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelBoots.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelBoots.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -174,7 +174,7 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelBoots.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:32] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelChestplate.png
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/items/chargedPearcelChestplate.png
 java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelChestplate.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -197,8 +197,8 @@ java.io.FileNotFoundException: pearcelmod:textures/items/chargedPearcelChestplat
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:32] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[20:32:32] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[20:45:29] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[20:45:29] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -221,92 +221,24 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[20:32:33] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[20:32:34] [Sound Library Loader/INFO]: Sound engine started
-[20:33:41] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[20:33:41] [Server thread/INFO]: Generating keypair
-[20:33:42] [Server thread/INFO]: Preparing start region for level 0
-[20:33:42] [Server thread/INFO]: Changing view distance to 3, from 10
-[20:33:43] [Server thread/INFO]: Player687[local:E:38ce1a1a] logged in with entity id 284 at (27.756782952713916, 4.504797444036927, 739.900456277035)
-[20:33:43] [Server thread/INFO]: Player687 joined the game
-[20:33:47] [Server thread/INFO]: Player687 has just earned the achievement [Taking Inventory]
-[20:33:47] [Client thread/INFO]: [CHAT] Player687 has just earned the achievement [Taking Inventory]
-[20:34:40] [Client thread/WARN]: Failed to load texture: pearcelmod:textures/armor/chargedPearcelArmor2.png
-java.io.FileNotFoundException: pearcelmod:textures/armor/chargedPearcelArmor2.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:60) [Render.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:70) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:517) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:167) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:565) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
-	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:112) [GuiInventory.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:839) [GuiContainerCreative.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93) [GuiContainer.class:?]
-	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673) [GuiContainerCreative.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1056) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:951) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[20:34:40] [Client thread/WARN]: Failed to load texture: pearcelmod:textures/armor/chargedPearcelArmor1.png
-java.io.FileNotFoundException: pearcelmod:textures/armor/chargedPearcelArmor1.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:60) [Render.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:70) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:517) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:167) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:565) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
-	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:112) [GuiInventory.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:839) [GuiContainerCreative.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93) [GuiContainer.class:?]
-	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673) [GuiContainerCreative.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1056) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:951) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[20:34:50] [Server thread/INFO]: Saving and pausing game...
-[20:34:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:34:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:34:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:34:55] [Server thread/INFO]: Saving and pausing game...
-[20:34:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:34:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:34:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:34:56] [Server thread/INFO]: Stopping server
-[20:34:56] [Server thread/INFO]: Saving players
-[20:34:56] [Server thread/INFO]: Saving worlds
-[20:34:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:34:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:34:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:34:57] [Client thread/INFO]: Stopping!
+[20:45:30] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[20:45:31] [Sound Library Loader/INFO]: Sound engine started
+[20:45:36] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:45:36] [Server thread/INFO]: Generating keypair
+[20:45:37] [Server thread/INFO]: Preparing start region for level 0
+[20:45:38] [Server thread/INFO]: Changing view distance to 3, from 10
+[20:45:38] [Server thread/INFO]: Player781[local:E:7bf3f93f] logged in with entity id 285 at (29.808193330520997, 4.0, 741.0778595833384)
+[20:45:38] [Server thread/INFO]: Player781 joined the game
+[20:45:45] [Server thread/INFO]: Player781 has just earned the achievement [Taking Inventory]
+[20:45:45] [Client thread/INFO]: [CHAT] Player781 has just earned the achievement [Taking Inventory]
+[20:45:56] [Server thread/INFO]: Saving and pausing game...
+[20:45:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:45:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:45:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:45:57] [Server thread/INFO]: Stopping server
+[20:45:57] [Server thread/INFO]: Saving players
+[20:45:57] [Server thread/INFO]: Saving worlds
+[20:45:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:45:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:45:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:45:58] [Client thread/INFO]: Stopping!
