@@ -61,7 +61,7 @@ public class PearcelMod {
 
         Recipes.init();
         Achievements.init();
-        LogHelper.info(StatCollector.translateToLocal("log.info.init"));
+        LogHelper.info(StatCollector.translateToLocal( "log.info.init"));
 	}
 	
 	@Mod.EventHandler
