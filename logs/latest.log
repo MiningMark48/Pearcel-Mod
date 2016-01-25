@@ -1,8 +1,8 @@
-[01:13:21] [main/INFO]: Setting user: MiningMark48
-[01:13:25] [Client thread/INFO]: LWJGL Version: 2.9.1
-[01:13:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[01:13:34] [Sound Library Loader/INFO]: Sound engine started
-[01:13:37] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[01:24:03] [main/INFO]: Setting user: MiningMark48
+[01:24:06] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:24:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[01:24:13] [Sound Library Loader/INFO]: Sound engine started
+[01:24:15] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -22,11 +22,11 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[01:13:38] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[01:13:38] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[01:13:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[01:13:39] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[01:13:39] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
+[01:24:16] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[01:24:16] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[01:24:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[01:24:17] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[01:24:17] [Client thread/ERROR]: Using missing texture, unable to load pearcelmod:textures/blocks/pearcelPlush.png
 java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -49,62 +49,28 @@ java.io.FileNotFoundException: pearcelmod:textures/blocks/pearcelPlush.png
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[01:13:40] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[01:13:41] [Sound Library Loader/INFO]: Sound engine started
-[01:13:59] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[01:13:59] [Server thread/INFO]: Generating keypair
-[01:14:00] [Server thread/INFO]: Preparing start region for level 0
-[01:14:01] [Server thread/INFO]: Changing view distance to 3, from 10
-[01:14:02] [Server thread/INFO]: MiningMark48[local:E:49cc7327] logged in with entity id 331 at (62.01079527527796, 4.0, 666.8361295881316)
-[01:14:02] [Server thread/INFO]: MiningMark48 joined the game
-[01:14:11] [Server thread/INFO]: MiningMark48 was shot by Skeleton
-[01:14:11] [Client thread/INFO]: [CHAT] MiningMark48 was shot by Skeleton
-[01:14:19] [Server thread/INFO]: [MiningMark48: Given [Pearcel Staff] * 1 to MiningMark48]
-[01:14:19] [Client thread/INFO]: [CHAT] Given [Pearcel Staff] * 1 to MiningMark48
-[01:14:21] [Server thread/INFO]: [MiningMark48: Given [Spawn Pearson] * 64 to MiningMark48]
-[01:14:21] [Client thread/INFO]: [CHAT] Given [Spawn Pearson] * 64 to MiningMark48
-[01:14:23] [Client thread/INFO]: [CHAT] You are now playing creative
-[01:14:23] [Client thread/INFO]: [CHAT] You are now playing creative+
-[01:14:25] [Server thread/INFO]: [MiningMark48: Given [Pearcel Stone] * 1 to MiningMark48]
-[01:14:25] [Client thread/INFO]: [CHAT] Given [Pearcel Stone] * 1 to MiningMark48
-[01:14:36] [Server thread/INFO]: [MiningMark48: Block placed]
-[01:14:36] [Client thread/INFO]: [CHAT] Block placed
-[01:15:11] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
-[01:15:11] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[01:15:12] [Server thread/INFO]: [MiningMark48: Given [Pearcel Cloud [WIP]] * 1 to MiningMark48]
-[01:15:12] [Client thread/INFO]: [CHAT] Given [Pearcel Cloud [WIP]] * 1 to MiningMark48
-[01:15:20] [Server thread/INFO]: [MiningMark48: Given [Pearcel Stone] * 64 to MiningMark48]
-[01:15:20] [Client thread/INFO]: [CHAT] Given [Pearcel Stone] * 64 to MiningMark48
-[01:15:53] [Server thread/INFO]: MiningMark48 was slain by Pearson
-[01:15:53] [Client thread/INFO]: [CHAT] MiningMark48 was slain by Pearson
-[01:16:00] [Server thread/INFO]: [MiningMark48: Given [Pearcel Staff] * 1 to MiningMark48]
-[01:16:00] [Client thread/INFO]: [CHAT] Given [Pearcel Staff] * 1 to MiningMark48
-[01:16:01] [Server thread/INFO]: [MiningMark48: Given [Charged Pearcel Sword] * 1 to MiningMark48]
-[01:16:01] [Client thread/INFO]: [CHAT] Given [Charged Pearcel Sword] * 1 to MiningMark48
-[01:16:02] [Server thread/INFO]: [MiningMark48: Given [Spawn Pearson] * 64 to MiningMark48]
-[01:16:02] [Client thread/INFO]: [CHAT] Given [Spawn Pearson] * 64 to MiningMark48
-[01:16:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.attack
-[01:16:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.attack
-[01:16:06] [Server thread/INFO]: [MiningMark48: Given [Pearcel Cloud [WIP]] * 1 to MiningMark48]
-[01:16:06] [Client thread/INFO]: [CHAT] Given [Pearcel Cloud [WIP]] * 1 to MiningMark48
-[01:16:15] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:15] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:16] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:16] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:16] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:17] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:17] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:18] [Client thread/INFO]: [CHAT] commandBlockOutput, doDaylightCycle, doFireTick, doMobLoot, doMobSpawning, doTileDrops, keepInventory, mobGriefing, naturalRegeneration
-[01:16:23] [Server thread/INFO]: [MiningMark48: Game rule has been updated]
-[01:16:23] [Client thread/INFO]: [CHAT] Game rule has been updated
-[01:17:02] [Server thread/INFO]: Saving and pausing game...
-[01:17:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:17:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:17:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:17:02] [Server thread/INFO]: Stopping server
-[01:17:02] [Server thread/INFO]: Saving players
-[01:17:02] [Server thread/INFO]: Saving worlds
-[01:17:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:17:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:17:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:17:03] [Client thread/INFO]: Stopping!
+[01:24:18] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[01:24:19] [Sound Library Loader/INFO]: Sound engine started
+[01:24:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[01:24:24] [Server thread/INFO]: Generating keypair
+[01:24:24] [Server thread/INFO]: Preparing start region for level 0
+[01:24:25] [Server thread/INFO]: Changing view distance to 3, from 10
+[01:24:26] [Server thread/INFO]: MiningMark48[local:E:78ddf592] logged in with entity id 363 at (21.300000011920933, 12.0, 743.6994293719774)
+[01:24:26] [Server thread/INFO]: MiningMark48 joined the game
+[01:25:11] [Client thread/INFO]: [CHAT] You are now playing adventure
+[01:25:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.attack
+[01:25:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.attack
+[01:25:16] [Client thread/INFO]: [CHAT] You are now playing survival
+[01:25:16] [Client thread/INFO]: [CHAT] You are now playing creative
+[01:25:18] [Client thread/INFO]: [CHAT] You are now playing creative+
+[01:25:27] [Server thread/INFO]: Saving and pausing game...
+[01:25:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:25:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:25:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:25:28] [Server thread/INFO]: Stopping server
+[01:25:28] [Server thread/INFO]: Saving players
+[01:25:28] [Server thread/INFO]: Saving worlds
+[01:25:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:25:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:25:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:25:28] [Client thread/INFO]: Stopping!

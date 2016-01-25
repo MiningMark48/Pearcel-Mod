@@ -21,8 +21,9 @@ public class EntityPearson extends EntityMob {
 
     public EntityPearson(World world){
         super(world);
-        this.setSize(1.5F, 3.0F);
+        this.setSize(0.6F, 2.0F);
         this.getNavigator().setBreakDoors(true);
+        this.getNavigator().setCanSwim(true);
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIWander(this, 1.0D));
         this.tasks.addTask(2, new EntityAIAttackOnCollide(this, EntityPlayer.class, 1.0D, false));
@@ -30,13 +31,14 @@ public class EntityPearson extends EntityMob {
         this.tasks.addTask(4, new EntityAILookIdle(this));
         this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true));
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
+        this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityPearcelMob.class, 0, true));
     }
-
-    protected void applyEntityAttributes(){
+    
+    public void applyEntityAttributes(){
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(50.0F);
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.25D);
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(1.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(5.0D);
     }
 
     public boolean isAIEnabled(){
@@ -48,7 +50,7 @@ public class EntityPearson extends EntityMob {
         if(randNum == 1) {
             return ModItems.pearcelStaff;
         }
-        return ModItems.pearcelCookie;
+        return ModItems.pearcel;
     }
 
     protected void func_145780_a(int a, int b, int c, Block block)
