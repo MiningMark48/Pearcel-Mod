@@ -31,14 +31,15 @@ public class EntityPearson extends EntityMob {
         this.tasks.addTask(4, new EntityAILookIdle(this));
         this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true));
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
-        this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityPearcelMob.class, 0, true));
+        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPearcelMob.class, 0, false));
     }
-    
+
     public void applyEntityAttributes(){
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(50.0F);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.25D);
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(5.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.3D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(7.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(50.0D);
     }
 
     public boolean isAIEnabled(){
@@ -46,7 +47,7 @@ public class EntityPearson extends EntityMob {
     }
 
     protected Item getDropItem(){
-        int randNum = rand.nextInt(500) + 1;
+        int randNum = rand.nextInt(250) + 1;
         if(randNum == 1) {
             return ModItems.pearcelStaff;
         }
