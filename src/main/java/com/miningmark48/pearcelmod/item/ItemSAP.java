@@ -100,7 +100,7 @@ public class ItemSAP extends ItemPearcelMod{
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearcelmob") + " " + StatCollector.translateToLocal("summoner.summoned")));
                     }
                     //Pearson
-                    else if (world.getBlock(x, y + 1, z) == ModBlocks.corruptedPearcelBlock) { //Temporary
+                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelGlass) { //TODO: Change this to something else
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(pearson);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearson") + " " + StatCollector.translateToLocal("summoner.summoned")));
