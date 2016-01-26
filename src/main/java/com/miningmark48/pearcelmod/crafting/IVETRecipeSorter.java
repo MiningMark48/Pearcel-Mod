@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.crafting;
 
-
 import java.util.Comparator;
 
 import net.minecraft.item.crafting.IRecipe;
