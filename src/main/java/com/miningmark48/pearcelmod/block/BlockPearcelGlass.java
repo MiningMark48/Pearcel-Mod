@@ -4,6 +4,7 @@ public class BlockPearcelGlass extends BlockPearcelMod {
 	
 	public BlockPearcelGlass(){
 		super();
+        this.setStepSound(soundTypeGlass);
 	}
 	
 	@Override

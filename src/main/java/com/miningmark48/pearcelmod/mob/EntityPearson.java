@@ -69,6 +69,7 @@ public class EntityPearson extends EntityMob {
         double z = this.posZ;
 
         world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z));
+        world.spawnParticle("hugeexplosion", x, y, z, 1.0D, 0.0D, 0.0D);
         this.setDead();
     }
 
