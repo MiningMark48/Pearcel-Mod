@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.entity.EntityPTNT;
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.passive.EntityHorse;
@@ -41,27 +42,5 @@ public class ItemPearcelPickaxe extends ItemPickaxe{
             }
         }
     }
-
-    /*public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)
-    {
-        EntityTNTPrimed tnt = new EntityPTNT(world);
-        MovingObjectPosition movingobjectposition = entityplayer.rayTrace(70D, 1.0F);
-        if (movingobjectposition == null)
-        {
-            return itemstack;
-        }
-        Vec3 vec3d = movingobjectposition.hitVec;
-        double d = vec3d.xCoord;
-        double d1 = vec3d.yCoord;
-        double d2 = vec3d.zCoord;
-        int i = MathHelper.floor_double(d);
-        int j = MathHelper.floor_double(d1);
-        int k = MathHelper.floor_double(d2);
-        tnt.setPosition(i, j, k);
-        tnt.setInvisible(true);
-        world.spawnEntityInWorld(tnt);
-
-        return itemstack;
-    }*/
 
 }
