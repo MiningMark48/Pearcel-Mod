@@ -21,7 +21,8 @@ public class ModItems {
     public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", 25, new int[]{3, 6, 5, 2}, 10);
     public static ItemArmor.ArmorMaterial matChargePearcel = EnumHelper.addArmorMaterial("ChargedPearcelArmor", 50, new int[]{4, 8, 6, 3}, 30);
     public static ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("Pearcel", 3, 1000, 15.0F, 5.0F, 20);
-    public static ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("Pearcel", 3, 1000, 15.0F, 10.0F, 30);
+    public static ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("Pearcel", 3, 1500, 15.0F, 10.0F, 30);
+    public static ToolMaterial matToolChargedPearcel = EnumHelper.addToolMaterial("Pearcel", 3, 1200, 15.0F, 6.0F, 22);
 
     //Food
 	public static final Item pearcel = new ItemPearcel(9, 1.5F, false).setUnlocalizedName("pearcelItem").setTextureName(Reference.MOD_ID + ":pearcelItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -47,7 +48,7 @@ public class ModItems {
     public static final Item pearcelStaff = new ItemPearcelStaff(matToolPearcelStaff).setTextureName(Reference.MOD_ID + ":pearcelStaff").setUnlocalizedName("pearcelStaff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(1000);
     public static final Item flightItem = new ItemFlight().setTextureName(Reference.MOD_ID + ":flightItem").setUnlocalizedName("flightItem").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item sap = new ItemSAP().setTextureName(Reference.MOD_ID + ":sap").setUnlocalizedName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(ConfigurationHandler.sapDurability);
-    public static final Item chargedPearcelSword = new ItemChargedPearcelSword(matToolPearcel).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item chargedPearcelSword = new ItemChargedPearcelSword(matToolChargedPearcel).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Armor
     public static Item pearcelHelmet = new ItemPearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
