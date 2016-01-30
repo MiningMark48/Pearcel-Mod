@@ -31,7 +31,7 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line1"));
+        par3List.add(EnumChatFormatting.AQUA + StatCollector.translateToLocal("tooltip.item.pearcelStaff.line1"));
         par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line2"));
         par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line3"));
     }
@@ -55,11 +55,13 @@ public class ItemPearcelStaff extends ItemSword{
             item.damageItem(50, player);
             return item;
         }else{
-            if (player.posY <= ConfigurationHandler.maxStaffFlyHeight){
+            if (player.posY <= ConfigurationHandler.maxStaffFlyHeight || player.capabilities.isCreativeMode){
                 player.addVelocity(0, 0.5, 0);
-            }else if (!world.isRemote){
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("chat.pearcelStaff.weaken")));
-                item.damageItem(1, player);
+            }else{
+                if (!world.isRemote) {
+                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("chat.pearcelStaff.weaken")));
+                    item.damageItem(10, player);
+                }
             }
             item.damageItem(1, player);
             return item;
@@ -68,16 +70,8 @@ public class ItemPearcelStaff extends ItemSword{
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
-        Float entHealth = hitEntity.getHealth();
-        if (hitEntity instanceof EntityDragon || hitEntity instanceof EntityWither){
-            entDamageBy = entHealth / 8;
-        }else{
-            entDamageBy = entHealth / 4;
-            hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
-            hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 1));
-        }
-        hitEntity.setHealth(entHealth - entDamageBy);
-
+        hitEntity.addPotionEffect(new PotionEffect(Potion.weakness.id, 2000, 2));
+        hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 2));
         return true;
     }
 
