@@ -372,7 +372,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     LOCALVARIABLE handler Lcodechicken/nei/guihook/IContainerTooltipHandler; L16 L17 5
     LOCALVARIABLE i$ Ljava/util/Iterator; L15 L13 4
     LOCALVARIABLE i I L19 L20 4
-    LOCALVARIABLE itemstack Lnet/minecraft/item/ItemStack; L3 L23 0
+    LOCALVARIABLE stack Lnet/minecraft/item/ItemStack; L3 L23 0
     LOCALVARIABLE gui Lnet/minecraft/client/gui/inventory/GuiContainer; L3 L23 1
     LOCALVARIABLE includeHandlers Z L3 L23 2
     LOCALVARIABLE namelist Ljava/util/List; L0 L23 3
@@ -1642,23 +1642,27 @@ public class codechicken/nei/guihook/GuiContainerManager {
     INVOKESPECIAL java/util/LinkedList.<init> ()V
     ASTORE 3
    L1
-    LINENUMBER 397 L1
+    LINENUMBER 396 L1
+    GETSTATIC codechicken/lib/gui/GuiDraw.fontRenderer : Lnet/minecraft/client/gui/FontRenderer;
+    ASTORE 4
+   L2
+    LINENUMBER 398 L2
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.instanceTooltipHandlers : Ljava/util/List;
     INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
-    ASTORE 4
-   L2
-   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List java/util/Iterator] []
-    ALOAD 4
+    ASTORE 5
+   L3
+   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/client/gui/FontRenderer java/util/Iterator] []
+    ALOAD 5
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
-    IFEQ L3
-    ALOAD 4
+    IFEQ L4
+    ALOAD 5
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST codechicken/nei/guihook/IContainerTooltipHandler
-    ASTORE 5
-   L4
-    LINENUMBER 398 L4
-    ALOAD 5
+    ASTORE 6
+   L5
+    LINENUMBER 399 L5
+    ALOAD 6
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     ILOAD 1
@@ -1666,73 +1670,78 @@ public class codechicken/nei/guihook/GuiContainerManager {
     ALOAD 3
     INVOKEINTERFACE codechicken/nei/guihook/IContainerTooltipHandler.handleTooltip (Lnet/minecraft/client/gui/inventory/GuiContainer;IILjava/util/List;)Ljava/util/List;
     ASTORE 3
-   L5
-    GOTO L2
-   L3
-    LINENUMBER 400 L3
-   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List java/util/Iterator] []
+   L6
+    GOTO L3
+   L4
+    LINENUMBER 401 L4
+   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/client/gui/FontRenderer java/util/Iterator] []
     ALOAD 3
     INVOKEINTERFACE java/util/List.isEmpty ()Z
-    IFEQ L6
+    IFEQ L7
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     INVOKESTATIC codechicken/nei/guihook/GuiContainerManager.shouldShowTooltip (Lnet/minecraft/client/gui/inventory/GuiContainer;)Z
-    IFEQ L6
-   L7
-    LINENUMBER 402 L7
+    IFEQ L7
+   L8
+    LINENUMBER 402 L8
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     INVOKESTATIC codechicken/nei/guihook/GuiContainerManager.getStackMouseOver (Lnet/minecraft/client/gui/inventory/GuiContainer;)Lnet/minecraft/item/ItemStack;
+    ASTORE 5
+   L9
+    LINENUMBER 403 L9
+    ALOAD 5
+    INVOKESTATIC codechicken/nei/guihook/GuiContainerManager.getFontRenderer (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/gui/FontRenderer;
     ASTORE 4
-   L8
-    LINENUMBER 403 L8
-    ALOAD 4
-    IFNULL L9
    L10
     LINENUMBER 404 L10
-    ALOAD 4
+    ALOAD 5
+    IFNULL L11
+   L12
+    LINENUMBER 405 L12
+    ALOAD 5
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     ICONST_1
     INVOKESTATIC codechicken/nei/guihook/GuiContainerManager.itemDisplayNameMultiline (Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/gui/inventory/GuiContainer;Z)Ljava/util/List;
     ASTORE 3
-   L9
-    LINENUMBER 407 L9
-   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/item/ItemStack] []
+   L11
+    LINENUMBER 407 L11
+   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/client/gui/FontRenderer net/minecraft/item/ItemStack] []
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.instanceTooltipHandlers : Ljava/util/List;
     INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
-    ASTORE 5
-   L11
-   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/item/ItemStack java/util/Iterator] []
-    ALOAD 5
+    ASTORE 6
+   L13
+   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/client/gui/FontRenderer net/minecraft/item/ItemStack java/util/Iterator] []
+    ALOAD 6
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
-    IFEQ L6
-    ALOAD 5
+    IFEQ L7
+    ALOAD 6
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST codechicken/nei/guihook/IContainerTooltipHandler
-    ASTORE 6
-   L12
-    LINENUMBER 408 L12
-    ALOAD 6
+    ASTORE 7
+   L14
+    LINENUMBER 408 L14
+    ALOAD 7
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
-    ALOAD 4
+    ALOAD 5
     ILOAD 1
     ILOAD 2
     ALOAD 3
     INVOKEINTERFACE codechicken/nei/guihook/IContainerTooltipHandler.handleItemTooltip (Lnet/minecraft/client/gui/inventory/GuiContainer;Lnet/minecraft/item/ItemStack;IILjava/util/List;)Ljava/util/List;
     ASTORE 3
-   L13
-    GOTO L11
-   L6
-    LINENUMBER 411 L6
-   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List java/lang/Object] []
+   L15
+    GOTO L13
+   L7
+    LINENUMBER 411 L7
+   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/client/gui/FontRenderer java/lang/Object] []
     ALOAD 3
     INVOKEINTERFACE java/util/List.size ()I
-    IFLE L14
-   L15
-    LINENUMBER 412 L15
+    IFLE L16
+   L17
+    LINENUMBER 412 L17
     ALOAD 3
     ICONST_0
     NEW java/lang/StringBuilder
@@ -1748,9 +1757,10 @@ public class codechicken/nei/guihook/GuiContainerManager {
     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
     INVOKEINTERFACE java/util/List.set (ILjava/lang/Object;)Ljava/lang/Object;
     POP
-   L14
-    LINENUMBER 413 L14
-   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List java/lang/Object] []
+   L16
+    LINENUMBER 414 L16
+   FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/List net/minecraft/client/gui/FontRenderer java/lang/Object] []
+    ALOAD 4
     ILOAD 1
     BIPUSH 12
     IADD
@@ -1758,29 +1768,30 @@ public class codechicken/nei/guihook/GuiContainerManager {
     BIPUSH 12
     ISUB
     ALOAD 3
-    INVOKESTATIC codechicken/lib/gui/GuiDraw.drawMultilineTip (IILjava/util/List;)V
-   L16
-    LINENUMBER 414 L16
+    INVOKESTATIC codechicken/lib/gui/GuiDraw.drawMultilineTip (Lnet/minecraft/client/gui/FontRenderer;IILjava/util/List;)V
+   L18
+    LINENUMBER 415 L18
     RETURN
-   L17
-    LOCALVARIABLE handler Lcodechicken/nei/guihook/IContainerTooltipHandler; L4 L5 5
-    LOCALVARIABLE i$ Ljava/util/Iterator; L2 L3 4
-    LOCALVARIABLE handler Lcodechicken/nei/guihook/IContainerTooltipHandler; L12 L13 6
-    LOCALVARIABLE i$ Ljava/util/Iterator; L11 L6 5
-    LOCALVARIABLE stack Lnet/minecraft/item/ItemStack; L8 L6 4
-    LOCALVARIABLE this Lcodechicken/nei/guihook/GuiContainerManager; L0 L17 0
-    LOCALVARIABLE mousex I L0 L17 1
-    LOCALVARIABLE mousey I L0 L17 2
-    LOCALVARIABLE tooltip Ljava/util/List; L1 L17 3
+   L19
+    LOCALVARIABLE handler Lcodechicken/nei/guihook/IContainerTooltipHandler; L5 L6 6
+    LOCALVARIABLE i$ Ljava/util/Iterator; L3 L4 5
+    LOCALVARIABLE handler Lcodechicken/nei/guihook/IContainerTooltipHandler; L14 L15 7
+    LOCALVARIABLE i$ Ljava/util/Iterator; L13 L7 6
+    LOCALVARIABLE stack Lnet/minecraft/item/ItemStack; L9 L7 5
+    LOCALVARIABLE this Lcodechicken/nei/guihook/GuiContainerManager; L0 L19 0
+    LOCALVARIABLE mousex I L0 L19 1
+    LOCALVARIABLE mousey I L0 L19 2
+    LOCALVARIABLE tooltip Ljava/util/List; L1 L19 3
     // signature Ljava/util/List<Ljava/lang/String;>;
     // declaration: java.util.List<java.lang.String>
+    LOCALVARIABLE font Lnet/minecraft/client/gui/FontRenderer; L2 L19 4
     MAXSTACK = 6
-    MAXLOCALS = 7
+    MAXLOCALS = 8
 
   // access flags 0x9
   public static shouldShowTooltip(Lnet/minecraft/client/gui/inventory/GuiContainer;)Z
    L0
-    LINENUMBER 417 L0
+    LINENUMBER 418 L0
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.objectHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
     ASTORE 1
@@ -1794,21 +1805,21 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerObjectHandler
     ASTORE 2
    L3
-    LINENUMBER 418 L3
+    LINENUMBER 419 L3
     ALOAD 2
     ALOAD 0
     INVOKEINTERFACE codechicken/nei/guihook/IContainerObjectHandler.shouldShowTooltip (Lnet/minecraft/client/gui/inventory/GuiContainer;)Z
     IFNE L4
    L5
-    LINENUMBER 419 L5
+    LINENUMBER 420 L5
     ICONST_0
     IRETURN
    L4
-    LINENUMBER 418 L4
+    LINENUMBER 419 L4
    FRAME FULL [net/minecraft/client/gui/inventory/GuiContainer java/util/Iterator codechicken/nei/guihook/IContainerObjectHandler] []
     GOTO L1
    L2
-    LINENUMBER 421 L2
+    LINENUMBER 422 L2
    FRAME FULL [net/minecraft/client/gui/inventory/GuiContainer java/util/Iterator] []
     ALOAD 0
     GETFIELD net/minecraft/client/gui/inventory/GuiContainer.mc : Lnet/minecraft/client/Minecraft;
@@ -1834,7 +1845,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public renderSlotUnderlay(Lnet/minecraft/inventory/Slot;)V
    L0
-    LINENUMBER 425 L0
+    LINENUMBER 426 L0
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.drawHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
     ASTORE 2
@@ -1848,7 +1859,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerDrawHandler
     ASTORE 3
    L3
-    LINENUMBER 426 L3
+    LINENUMBER 427 L3
     ALOAD 3
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -1857,7 +1868,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
    L4
     GOTO L1
    L2
-    LINENUMBER 427 L2
+    LINENUMBER 428 L2
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot java/util/Iterator] []
     RETURN
    L5
@@ -1871,7 +1882,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public renderSlotOverlay(Lnet/minecraft/inventory/Slot;)V
    L0
-    LINENUMBER 430 L0
+    LINENUMBER 431 L0
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.drawHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
     ASTORE 2
@@ -1885,7 +1896,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerDrawHandler
     ASTORE 3
    L3
-    LINENUMBER 431 L3
+    LINENUMBER 432 L3
     ALOAD 3
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -1894,12 +1905,12 @@ public class codechicken/nei/guihook/GuiContainerManager {
    L4
     GOTO L1
    L2
-    LINENUMBER 432 L2
+    LINENUMBER 433 L2
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot java/util/Iterator] []
     SIPUSH 3008
     INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
    L5
-    LINENUMBER 433 L5
+    LINENUMBER 434 L5
     RETURN
    L6
     LOCALVARIABLE drawHandler Lcodechicken/nei/guihook/IContainerDrawHandler; L3 L4 3
@@ -1912,7 +1923,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public objectUnderMouse(II)Z
    L0
-    LINENUMBER 439 L0
+    LINENUMBER 440 L0
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.objectHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
     ASTORE 3
@@ -1926,7 +1937,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerObjectHandler
     ASTORE 4
    L3
-    LINENUMBER 440 L3
+    LINENUMBER 441 L3
     ALOAD 4
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -1935,15 +1946,15 @@ public class codechicken/nei/guihook/GuiContainerManager {
     INVOKEINTERFACE codechicken/nei/guihook/IContainerObjectHandler.objectUnderMouse (Lnet/minecraft/client/gui/inventory/GuiContainer;II)Z
     IFEQ L4
    L5
-    LINENUMBER 441 L5
+    LINENUMBER 442 L5
     ICONST_1
     IRETURN
    L4
-    LINENUMBER 440 L4
+    LINENUMBER 441 L4
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/Iterator codechicken/nei/guihook/IContainerObjectHandler] []
     GOTO L1
    L2
-    LINENUMBER 443 L2
+    LINENUMBER 444 L2
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I java/util/Iterator] []
     ICONST_0
     IRETURN
@@ -1959,7 +1970,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public handleMouseClick(Lnet/minecraft/inventory/Slot;III)V
    L0
-    LINENUMBER 447 L0
+    LINENUMBER 448 L0
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.slotClickHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
     ASTORE 5
@@ -1973,7 +1984,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerSlotClickHandler
     ASTORE 6
    L3
-    LINENUMBER 448 L3
+    LINENUMBER 449 L3
     ALOAD 6
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -1985,12 +1996,12 @@ public class codechicken/nei/guihook/GuiContainerManager {
    L4
     GOTO L1
    L2
-    LINENUMBER 450 L2
+    LINENUMBER 451 L2
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot I I I java/util/Iterator] []
     ICONST_0
     ISTORE 5
    L5
-    LINENUMBER 451 L5
+    LINENUMBER 452 L5
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.slotClickHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
     ASTORE 6
@@ -2004,7 +2015,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerSlotClickHandler
     ASTORE 7
    L8
-    LINENUMBER 452 L8
+    LINENUMBER 453 L8
     ALOAD 7
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -2018,7 +2029,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
    L9
     GOTO L6
    L7
-    LINENUMBER 454 L7
+    LINENUMBER 455 L7
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot I I I I java/util/Iterator] []
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.slotClickHandlers : Ljava/util/LinkedList;
     INVOKEVIRTUAL java/util/LinkedList.iterator ()Ljava/util/Iterator;
@@ -2033,7 +2044,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     CHECKCAST codechicken/nei/guihook/IContainerSlotClickHandler
     ASTORE 7
    L12
-    LINENUMBER 455 L12
+    LINENUMBER 456 L12
     ALOAD 7
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -2045,7 +2056,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
    L13
     GOTO L10
    L11
-    LINENUMBER 456 L11
+    LINENUMBER 457 L11
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot I I I I java/util/Iterator] []
     RETURN
    L14
@@ -2067,15 +2078,15 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public handleKeyboardInput()V
    L0
-    LINENUMBER 461 L0
+    LINENUMBER 462 L0
     INVOKESTATIC org/lwjgl/input/Keyboard.getEventKey ()I
     ISTORE 1
    L1
-    LINENUMBER 462 L1
+    LINENUMBER 463 L1
     INVOKESTATIC org/lwjgl/input/Keyboard.getEventCharacter ()C
     ISTORE 2
    L2
-    LINENUMBER 463 L2
+    LINENUMBER 464 L2
     INVOKESTATIC org/lwjgl/input/Keyboard.getEventKeyState ()Z
     IFNE L3
     ILOAD 1
@@ -2084,21 +2095,21 @@ public class codechicken/nei/guihook/GuiContainerManager {
     INVOKESTATIC java/lang/Character.isDefined (C)Z
     IFEQ L4
    L3
-    LINENUMBER 464 L3
+    LINENUMBER 465 L3
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I] []
     ALOAD 0
     ILOAD 2
     ILOAD 1
     INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.keyTyped (CI)V
    L4
-    LINENUMBER 466 L4
+    LINENUMBER 467 L4
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I] []
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     GETFIELD net/minecraft/client/gui/inventory/GuiContainer.mc : Lnet/minecraft/client/Minecraft;
     INVOKEVIRTUAL net/minecraft/client/Minecraft.func_152348_aa ()V
    L5
-    LINENUMBER 467 L5
+    LINENUMBER 468 L5
     RETURN
    L6
     LOCALVARIABLE this Lcodechicken/nei/guihook/GuiContainerManager; L0 L6 0
@@ -2110,17 +2121,17 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public keyTyped(CI)V
    L0
-    LINENUMBER 471 L0
+    LINENUMBER 472 L0
     ALOAD 0
     ILOAD 1
     ILOAD 2
     INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.firstKeyTyped (CI)Z
     IFEQ L1
    L2
-    LINENUMBER 472 L2
+    LINENUMBER 473 L2
     RETURN
    L1
-    LINENUMBER 474 L1
+    LINENUMBER 475 L1
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I] []
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -2128,7 +2139,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     ILOAD 2
     INVOKESTATIC codechicken/nei/guihook/GuiContainerManager.callKeyTyped (Lnet/minecraft/client/gui/inventory/GuiContainer;CI)V
    L3
-    LINENUMBER 475 L3
+    LINENUMBER 476 L3
     RETURN
    L4
     LOCALVARIABLE this Lcodechicken/nei/guihook/GuiContainerManager; L0 L4 0
@@ -2150,13 +2161,13 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public drawSlotItem(Lnet/minecraft/inventory/Slot;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V
    L0
-    LINENUMBER 485 L0
+    LINENUMBER 486 L0
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     INSTANCEOF codechicken/nei/guihook/IGuiSlotDraw
     IFEQ L1
    L2
-    LINENUMBER 486 L2
+    LINENUMBER 487 L2
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     CHECKCAST codechicken/nei/guihook/IGuiSlotDraw
@@ -2168,7 +2179,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     INVOKEINTERFACE codechicken/nei/guihook/IGuiSlotDraw.drawSlotItem (Lnet/minecraft/inventory/Slot;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V
     GOTO L3
    L1
-    LINENUMBER 488 L1
+    LINENUMBER 489 L1
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot net/minecraft/item/ItemStack I I java/lang/String] []
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.drawItems : Lnet/minecraft/client/renderer/entity/RenderItem;
     GETSTATIC codechicken/lib/gui/GuiDraw.fontRenderer : Lnet/minecraft/client/gui/FontRenderer;
@@ -2181,7 +2192,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     ILOAD 4
     INVOKEVIRTUAL net/minecraft/client/renderer/entity/RenderItem.renderItemAndEffectIntoGUI (Lnet/minecraft/client/gui/FontRenderer;Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/item/ItemStack;II)V
    L4
-    LINENUMBER 489 L4
+    LINENUMBER 490 L4
     GETSTATIC codechicken/nei/guihook/GuiContainerManager.drawItems : Lnet/minecraft/client/renderer/entity/RenderItem;
     GETSTATIC codechicken/lib/gui/GuiDraw.fontRenderer : Lnet/minecraft/client/gui/FontRenderer;
     ALOAD 0
@@ -2194,7 +2205,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     ALOAD 5
     INVOKEVIRTUAL net/minecraft/client/renderer/entity/RenderItem.renderItemOverlayIntoGUI (Lnet/minecraft/client/gui/FontRenderer;Lnet/minecraft/client/renderer/texture/TextureManager;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V
    L3
-    LINENUMBER 491 L3
+    LINENUMBER 492 L3
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager net/minecraft/inventory/Slot net/minecraft/item/ItemStack I I java/lang/String] []
     RETURN
    L5
@@ -2210,22 +2221,22 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public handleSlotClick(III)V
    L0
-    LINENUMBER 497 L0
+    LINENUMBER 498 L0
     ILOAD 1
     ICONST_M1
     IF_ICMPNE L1
    L2
-    LINENUMBER 498 L2
+    LINENUMBER 499 L2
     RETURN
    L1
-    LINENUMBER 500 L1
+    LINENUMBER 501 L1
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I I] []
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     INSTANCEOF codechicken/nei/guihook/IGuiClientSide
     IFEQ L3
    L4
-    LINENUMBER 501 L4
+    LINENUMBER 502 L4
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
     GETFIELD net/minecraft/client/gui/inventory/GuiContainer.mc : Lnet/minecraft/client/Minecraft;
@@ -2242,7 +2253,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     POP
     GOTO L5
    L3
-    LINENUMBER 503 L3
+    LINENUMBER 504 L3
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I I] []
     ALOAD 0
     GETFIELD codechicken/nei/guihook/GuiContainerManager.window : Lnet/minecraft/client/gui/inventory/GuiContainer;
@@ -2262,7 +2273,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
     INVOKEVIRTUAL net/minecraft/client/multiplayer/PlayerControllerMP.windowClick (IIIILnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;
     POP
    L5
-    LINENUMBER 504 L5
+    LINENUMBER 505 L5
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I I I] []
     RETURN
    L6
@@ -2276,15 +2287,15 @@ public class codechicken/nei/guihook/GuiContainerManager {
   // access flags 0x1
   public handleMouseWheel()V
    L0
-    LINENUMBER 510 L0
+    LINENUMBER 511 L0
     INVOKESTATIC org/lwjgl/input/Mouse.getEventDWheel ()I
     ISTORE 1
    L1
-    LINENUMBER 511 L1
+    LINENUMBER 512 L1
     ILOAD 1
     IFEQ L2
    L3
-    LINENUMBER 512 L3
+    LINENUMBER 513 L3
     ALOAD 0
     ILOAD 1
     IFLE L4
@@ -2297,7 +2308,7 @@ public class codechicken/nei/guihook/GuiContainerManager {
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I] [codechicken/nei/guihook/GuiContainerManager I]
     INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.mouseScrolled (I)V
    L2
-    LINENUMBER 513 L2
+    LINENUMBER 514 L2
    FRAME FULL [codechicken/nei/guihook/GuiContainerManager I] []
     RETURN
    L6

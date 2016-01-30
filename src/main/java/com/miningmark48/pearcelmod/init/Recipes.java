@@ -50,7 +50,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelBow), " xy", "z y", " xy", 'x', new ItemStack(ModItems.pearcelStick), 'y', new ItemStack(Items.string), 'z', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelArrow), "x", "y", "z", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.tier2Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pcp), "zx ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModBlocks.pearcelWorkbench), 'z', new ItemStack(ModItems.tier1Craft));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStaff), "  x", "zy ", "bz ", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.pearcelMatter), 'b', new ItemStack(ModItems.tier4Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStaff), "  x", "zy ", "bz ", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.pearcelMatter), 'b', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelHelmet), "xyx", "y y", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelChestplate), "y y", "xyx", "xxx", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelLeggings), "xyx", "x x", "y y", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));

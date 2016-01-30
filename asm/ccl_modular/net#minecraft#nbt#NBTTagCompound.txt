@@ -133,12 +133,8 @@ public class net/minecraft/nbt/NBTTagCompound extends net/minecraft/nbt/NBTBase 
    L7
     LINENUMBER 55 L7
     ALOAD 3
-    BIPUSH 16
     ALOAD 5
-    INVOKEVIRTUAL java/lang/String.length ()I
-    IMUL
-    I2L
-    INVOKEVIRTUAL net/minecraft/nbt/NBTSizeTracker.func_152450_a (J)V
+    INVOKESTATIC net/minecraft/nbt/NBTSizeTracker.readUTF (Lnet/minecraft/nbt/NBTSizeTracker;Ljava/lang/String;)V
    L8
     LINENUMBER 56 L8
     ILOAD 4
@@ -1366,19 +1362,24 @@ public class net/minecraft/nbt/NBTTagCompound extends net/minecraft/nbt/NBTBase 
   private static func_152447_a(Ljava/io/DataInput;Lnet/minecraft/nbt/NBTSizeTracker;)B throws java/io/IOException 
    L0
     LINENUMBER 478 L0
+    ALOAD 1
+    LDC 8
+    INVOKEVIRTUAL net/minecraft/nbt/NBTSizeTracker.func_152450_a (J)V
+   L1
+    LINENUMBER 479 L1
     ALOAD 0
     INVOKEINTERFACE java/io/DataInput.readByte ()B
     IRETURN
-   L1
-    LOCALVARIABLE p_152447_0_ Ljava/io/DataInput; L0 L1 0
-    LOCALVARIABLE p_152447_1_ Lnet/minecraft/nbt/NBTSizeTracker; L0 L1 1
-    MAXSTACK = 1
+   L2
+    LOCALVARIABLE p_152447_0_ Ljava/io/DataInput; L0 L2 0
+    LOCALVARIABLE p_152447_1_ Lnet/minecraft/nbt/NBTSizeTracker; L0 L2 1
+    MAXSTACK = 3
     MAXLOCALS = 2
 
   // access flags 0xA
   private static func_152448_b(Ljava/io/DataInput;Lnet/minecraft/nbt/NBTSizeTracker;)Ljava/lang/String; throws java/io/IOException 
    L0
-    LINENUMBER 483 L0
+    LINENUMBER 484 L0
     ALOAD 0
     INVOKEINTERFACE java/io/DataInput.readUTF ()Ljava/lang/String;
     ARETURN
@@ -1392,68 +1393,73 @@ public class net/minecraft/nbt/NBTTagCompound extends net/minecraft/nbt/NBTBase 
   static func_152449_a(BLjava/lang/String;Ljava/io/DataInput;ILnet/minecraft/nbt/NBTSizeTracker;)Lnet/minecraft/nbt/NBTBase;
     TRYCATCHBLOCK L0 L1 L2 java/io/IOException
    L3
-    LINENUMBER 488 L3
+    LINENUMBER 489 L3
+    ALOAD 4
+    LDC 32
+    INVOKEVIRTUAL net/minecraft/nbt/NBTSizeTracker.func_152450_a (J)V
+   L4
+    LINENUMBER 490 L4
     ILOAD 0
     INVOKESTATIC net/minecraft/nbt/NBTBase.func_150284_a (B)Lnet/minecraft/nbt/NBTBase;
     ASTORE 5
    L0
-    LINENUMBER 492 L0
+    LINENUMBER 494 L0
     ALOAD 5
     ALOAD 2
     ILOAD 3
     ALOAD 4
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.func_152446_a (Ljava/io/DataInput;ILnet/minecraft/nbt/NBTSizeTracker;)V
-   L4
-    LINENUMBER 493 L4
+   L5
+    LINENUMBER 495 L5
     ALOAD 5
    L1
     ARETURN
    L2
-    LINENUMBER 495 L2
+    LINENUMBER 497 L2
    FRAME FULL [I java/lang/String java/io/DataInput I net/minecraft/nbt/NBTSizeTracker net/minecraft/nbt/NBTBase] [java/io/IOException]
     ASTORE 6
-   L5
-    LINENUMBER 497 L5
+   L6
+    LINENUMBER 499 L6
     ALOAD 6
     LDC "Loading NBT data"
     INVOKESTATIC net/minecraft/crash/CrashReport.makeCrashReport (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/crash/CrashReport;
     ASTORE 7
-   L6
-    LINENUMBER 498 L6
+   L7
+    LINENUMBER 500 L7
     ALOAD 7
     LDC "NBT Tag"
     INVOKEVIRTUAL net/minecraft/crash/CrashReport.makeCategory (Ljava/lang/String;)Lnet/minecraft/crash/CrashReportCategory;
     ASTORE 8
-   L7
-    LINENUMBER 499 L7
+   L8
+    LINENUMBER 501 L8
     ALOAD 8
     LDC "Tag name"
     ALOAD 1
     INVOKEVIRTUAL net/minecraft/crash/CrashReportCategory.addCrashSection (Ljava/lang/String;Ljava/lang/Object;)V
-   L8
-    LINENUMBER 500 L8
+   L9
+    LINENUMBER 502 L9
     ALOAD 8
     LDC "Tag type"
     ILOAD 0
     INVOKESTATIC java/lang/Byte.valueOf (B)Ljava/lang/Byte;
     INVOKEVIRTUAL net/minecraft/crash/CrashReportCategory.addCrashSection (Ljava/lang/String;Ljava/lang/Object;)V
-   L9
-    LINENUMBER 501 L9
+   L10
+    LINENUMBER 503 L10
     NEW net/minecraft/util/ReportedException
     DUP
     ALOAD 7
     INVOKESPECIAL net/minecraft/util/ReportedException.<init> (Lnet/minecraft/crash/CrashReport;)V
     ATHROW
-   L10
-    LOCALVARIABLE crashreport Lnet/minecraft/crash/CrashReport; L6 L10 7
-    LOCALVARIABLE crashreportcategory Lnet/minecraft/crash/CrashReportCategory; L7 L10 8
-    LOCALVARIABLE ioexception Ljava/io/IOException; L5 L10 6
-    LOCALVARIABLE p_152449_0_ B L3 L10 0
-    LOCALVARIABLE p_152449_1_ Ljava/lang/String; L3 L10 1
-    LOCALVARIABLE p_152449_2_ Ljava/io/DataInput; L3 L10 2
-    LOCALVARIABLE p_152449_3_ I L3 L10 3
-    LOCALVARIABLE p_152449_4_ Lnet/minecraft/nbt/NBTSizeTracker; L3 L10 4
-    LOCALVARIABLE nbtbase Lnet/minecraft/nbt/NBTBase; L0 L10 5
+   L11
+    LOCALVARIABLE crashreport Lnet/minecraft/crash/CrashReport; L7 L11 7
+    LOCALVARIABLE crashreportcategory Lnet/minecraft/crash/CrashReportCategory; L8 L11 8
+    LOCALVARIABLE ioexception Ljava/io/IOException; L6 L11 6
+    LOCALVARIABLE p_152449_0_ B L3 L11 0
+    LOCALVARIABLE p_152449_1_ Ljava/lang/String; L3 L11 1
+    LOCALVARIABLE p_152449_2_ Ljava/io/DataInput; L3 L11 2
+    LOCALVARIABLE p_152449_3_ I L3 L11 3
+    LOCALVARIABLE p_152449_4_ Lnet/minecraft/nbt/NBTSizeTracker; L3 L11 4
+    LOCALVARIABLE nbtbase Lnet/minecraft/nbt/NBTBase; L0 L11 5
     MAXSTACK = 4
     MAXLOCALS = 9
 

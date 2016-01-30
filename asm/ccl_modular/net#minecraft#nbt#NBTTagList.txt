@@ -139,33 +139,43 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     PUTFIELD net/minecraft/nbt/NBTTagList.tagType : B
    L4
     LINENUMBER 51 L4
+    ALOAD 3
+    LDC 32
+    INVOKEVIRTUAL net/minecraft/nbt/NBTSizeTracker.func_152450_a (J)V
+   L5
+    LINENUMBER 52 L5
     ALOAD 1
     INVOKEINTERFACE java/io/DataInput.readInt ()I
     ISTORE 4
-   L5
-    LINENUMBER 52 L5
+   L6
+    LINENUMBER 53 L6
     ALOAD 0
     NEW java/util/ArrayList
     DUP
     INVOKESPECIAL java/util/ArrayList.<init> ()V
     PUTFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
-   L6
-    LINENUMBER 54 L6
+   L7
+    LINENUMBER 55 L7
     ICONST_0
     ISTORE 5
-   L7
+   L8
    FRAME FULL [net/minecraft/nbt/NBTTagList java/io/DataInput I net/minecraft/nbt/NBTSizeTracker I I] []
     ILOAD 5
     ILOAD 4
-    IF_ICMPGE L8
-   L9
-    LINENUMBER 56 L9
+    IF_ICMPGE L9
+   L10
+    LINENUMBER 57 L10
+    ALOAD 3
+    LDC 32
+    INVOKEVIRTUAL net/minecraft/nbt/NBTSizeTracker.func_152450_a (J)V
+   L11
+    LINENUMBER 58 L11
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     INVOKESTATIC net/minecraft/nbt/NBTBase.func_150284_a (B)Lnet/minecraft/nbt/NBTBase;
     ASTORE 6
-   L10
-    LINENUMBER 57 L10
+   L12
+    LINENUMBER 59 L12
     ALOAD 6
     ALOAD 1
     ILOAD 2
@@ -173,36 +183,36 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     IADD
     ALOAD 3
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.func_152446_a (Ljava/io/DataInput;ILnet/minecraft/nbt/NBTSizeTracker;)V
-   L11
-    LINENUMBER 58 L11
+   L13
+    LINENUMBER 60 L13
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ALOAD 6
     INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
     POP
-   L12
-    LINENUMBER 54 L12
+   L14
+    LINENUMBER 55 L14
     IINC 5 1
-    GOTO L7
-   L8
-    LINENUMBER 61 L8
+    GOTO L8
+   L9
+    LINENUMBER 63 L9
    FRAME FULL [net/minecraft/nbt/NBTTagList java/io/DataInput I net/minecraft/nbt/NBTSizeTracker I I] []
     RETURN
-   L13
-    LOCALVARIABLE nbtbase Lnet/minecraft/nbt/NBTBase; L10 L12 6
-    LOCALVARIABLE k I L7 L8 5
-    LOCALVARIABLE j I L5 L8 4
-    LOCALVARIABLE this Lnet/minecraft/nbt/NBTTagList; L0 L13 0
-    LOCALVARIABLE p_152446_1_ Ljava/io/DataInput; L0 L13 1
-    LOCALVARIABLE p_152446_2_ I L0 L13 2
-    LOCALVARIABLE p_152446_3_ Lnet/minecraft/nbt/NBTSizeTracker; L0 L13 3
+   L15
+    LOCALVARIABLE nbtbase Lnet/minecraft/nbt/NBTBase; L12 L14 6
+    LOCALVARIABLE k I L8 L9 5
+    LOCALVARIABLE j I L6 L9 4
+    LOCALVARIABLE this Lnet/minecraft/nbt/NBTTagList; L0 L15 0
+    LOCALVARIABLE p_152446_1_ Ljava/io/DataInput; L0 L15 1
+    LOCALVARIABLE p_152446_2_ I L0 L15 2
+    LOCALVARIABLE p_152446_3_ Lnet/minecraft/nbt/NBTSizeTracker; L0 L15 3
     MAXSTACK = 4
     MAXLOCALS = 7
 
   // access flags 0x1
   public getId()B
    L0
-    LINENUMBER 68 L0
+    LINENUMBER 70 L0
     BIPUSH 9
     IRETURN
    L1
@@ -213,15 +223,15 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public toString()Ljava/lang/String;
    L0
-    LINENUMBER 73 L0
+    LINENUMBER 75 L0
     LDC "["
     ASTORE 1
    L1
-    LINENUMBER 74 L1
+    LINENUMBER 76 L1
     ICONST_0
     ISTORE 2
    L2
-    LINENUMBER 76 L2
+    LINENUMBER 78 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
@@ -232,13 +242,13 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
     IFEQ L4
    L5
-    LINENUMBER 78 L5
+    LINENUMBER 80 L5
     ALOAD 3
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 4
    L6
-    LINENUMBER 79 L6
+    LINENUMBER 81 L6
     NEW java/lang/StringBuilder
     DUP
     INVOKESPECIAL java/lang/StringBuilder.<init> ()V
@@ -257,11 +267,11 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
     ASTORE 1
    L7
-    LINENUMBER 76 L7
+    LINENUMBER 78 L7
     IINC 2 1
     GOTO L3
    L4
-    LINENUMBER 82 L4
+    LINENUMBER 84 L4
    FRAME FULL [net/minecraft/nbt/NBTTagList java/lang/String I java/util/Iterator] []
     NEW java/lang/StringBuilder
     DUP
@@ -285,19 +295,19 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public appendTag(Lnet/minecraft/nbt/NBTBase;)V
    L0
-    LINENUMBER 91 L0
+    LINENUMBER 93 L0
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     IFNE L1
    L2
-    LINENUMBER 93 L2
+    LINENUMBER 95 L2
     ALOAD 0
     ALOAD 1
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     PUTFIELD net/minecraft/nbt/NBTTagList.tagType : B
     GOTO L3
    L1
-    LINENUMBER 95 L1
+    LINENUMBER 97 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList net/minecraft/nbt/NBTBase] []
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
@@ -305,15 +315,15 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     IF_ICMPEQ L3
    L4
-    LINENUMBER 97 L4
+    LINENUMBER 99 L4
     GETSTATIC java/lang/System.err : Ljava/io/PrintStream;
     LDC "WARNING: Adding mismatching tag types to tag list"
     INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
    L5
-    LINENUMBER 98 L5
+    LINENUMBER 100 L5
     RETURN
    L3
-    LINENUMBER 101 L3
+    LINENUMBER 103 L3
    FRAME FULL [net/minecraft/nbt/NBTTagList net/minecraft/nbt/NBTBase] []
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
@@ -321,7 +331,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
     POP
    L6
-    LINENUMBER 102 L6
+    LINENUMBER 104 L6
     RETURN
    L7
     LOCALVARIABLE this Lnet/minecraft/nbt/NBTTagList; L0 L7 0
@@ -332,7 +342,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public func_150304_a(ILnet/minecraft/nbt/NBTBase;)V
    L0
-    LINENUMBER 106 L0
+    LINENUMBER 108 L0
     ILOAD 1
     IFLT L1
     ILOAD 1
@@ -341,19 +351,19 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.size ()I
     IF_ICMPGE L1
    L2
-    LINENUMBER 108 L2
+    LINENUMBER 110 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     IFNE L3
    L4
-    LINENUMBER 110 L4
+    LINENUMBER 112 L4
     ALOAD 0
     ALOAD 2
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     PUTFIELD net/minecraft/nbt/NBTTagList.tagType : B
     GOTO L5
    L3
-    LINENUMBER 112 L3
+    LINENUMBER 114 L3
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] []
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
@@ -361,15 +371,15 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     IF_ICMPEQ L5
    L6
-    LINENUMBER 114 L6
+    LINENUMBER 116 L6
     GETSTATIC java/lang/System.err : Ljava/io/PrintStream;
     LDC "WARNING: Adding mismatching tag types to tag list"
     INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
    L7
-    LINENUMBER 115 L7
+    LINENUMBER 117 L7
     RETURN
    L5
-    LINENUMBER 118 L5
+    LINENUMBER 120 L5
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] []
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
@@ -379,13 +389,13 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     POP
     GOTO L8
    L1
-    LINENUMBER 122 L1
+    LINENUMBER 124 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] []
     GETSTATIC java/lang/System.err : Ljava/io/PrintStream;
     LDC "WARNING: index out of bounds to set tag in tag list"
     INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
    L8
-    LINENUMBER 124 L8
+    LINENUMBER 126 L8
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] []
     RETURN
    L9
@@ -398,7 +408,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public removeTag(I)Lnet/minecraft/nbt/NBTBase;
    L0
-    LINENUMBER 131 L0
+    LINENUMBER 133 L0
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ILOAD 1
@@ -414,7 +424,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public getCompoundTagAt(I)Lnet/minecraft/nbt/NBTTagCompound;
    L0
-    LINENUMBER 139 L0
+    LINENUMBER 141 L0
     ILOAD 1
     IFLT L1
     ILOAD 1
@@ -423,7 +433,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.size ()I
     IF_ICMPGE L1
    L2
-    LINENUMBER 141 L2
+    LINENUMBER 143 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ILOAD 1
@@ -431,7 +441,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 2
    L3
-    LINENUMBER 142 L3
+    LINENUMBER 144 L3
     ALOAD 2
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     BIPUSH 10
@@ -448,7 +458,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] [net/minecraft/nbt/NBTTagCompound]
     ARETURN
    L1
-    LINENUMBER 146 L1
+    LINENUMBER 148 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList I] []
     NEW net/minecraft/nbt/NBTTagCompound
     DUP
@@ -464,7 +474,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public func_150306_c(I)[I
    L0
-    LINENUMBER 152 L0
+    LINENUMBER 154 L0
     ILOAD 1
     IFLT L1
     ILOAD 1
@@ -473,7 +483,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.size ()I
     IF_ICMPGE L1
    L2
-    LINENUMBER 154 L2
+    LINENUMBER 156 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ILOAD 1
@@ -481,7 +491,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 2
    L3
-    LINENUMBER 155 L3
+    LINENUMBER 157 L3
     ALOAD 2
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     BIPUSH 11
@@ -498,7 +508,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] [[I]
     ARETURN
    L1
-    LINENUMBER 159 L1
+    LINENUMBER 161 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList I] []
     ICONST_0
     NEWARRAY T_INT
@@ -513,7 +523,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public func_150309_d(I)D
    L0
-    LINENUMBER 165 L0
+    LINENUMBER 167 L0
     ILOAD 1
     IFLT L1
     ILOAD 1
@@ -522,7 +532,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.size ()I
     IF_ICMPGE L1
    L2
-    LINENUMBER 167 L2
+    LINENUMBER 169 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ILOAD 1
@@ -530,7 +540,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 2
    L3
-    LINENUMBER 168 L3
+    LINENUMBER 170 L3
     ALOAD 2
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     BIPUSH 6
@@ -546,7 +556,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] [D]
     DRETURN
    L1
-    LINENUMBER 172 L1
+    LINENUMBER 174 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList I] []
     DCONST_0
     DRETURN
@@ -560,7 +570,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public func_150308_e(I)F
    L0
-    LINENUMBER 178 L0
+    LINENUMBER 180 L0
     ILOAD 1
     IFLT L1
     ILOAD 1
@@ -569,7 +579,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.size ()I
     IF_ICMPGE L1
    L2
-    LINENUMBER 180 L2
+    LINENUMBER 182 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ILOAD 1
@@ -577,7 +587,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 2
    L3
-    LINENUMBER 181 L3
+    LINENUMBER 183 L3
     ALOAD 2
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     ICONST_5
@@ -593,7 +603,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] [F]
     FRETURN
    L1
-    LINENUMBER 185 L1
+    LINENUMBER 187 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList I] []
     FCONST_0
     FRETURN
@@ -607,7 +617,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public getStringTagAt(I)Ljava/lang/String;
    L0
-    LINENUMBER 194 L0
+    LINENUMBER 196 L0
     ILOAD 1
     IFLT L1
     ILOAD 1
@@ -616,7 +626,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.size ()I
     IF_ICMPGE L1
    L2
-    LINENUMBER 196 L2
+    LINENUMBER 198 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ILOAD 1
@@ -624,7 +634,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 2
    L3
-    LINENUMBER 197 L3
+    LINENUMBER 199 L3
     ALOAD 2
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.getId ()B
     BIPUSH 8
@@ -640,7 +650,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
    FRAME FULL [net/minecraft/nbt/NBTTagList I net/minecraft/nbt/NBTBase] [java/lang/String]
     ARETURN
    L1
-    LINENUMBER 201 L1
+    LINENUMBER 203 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList I] []
     LDC ""
     ARETURN
@@ -654,7 +664,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public tagCount()I
    L0
-    LINENUMBER 210 L0
+    LINENUMBER 212 L0
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     INVOKEINTERFACE java/util/List.size ()I
@@ -667,52 +677,52 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public copy()Lnet/minecraft/nbt/NBTBase;
    L0
-    LINENUMBER 218 L0
+    LINENUMBER 220 L0
     NEW net/minecraft/nbt/NBTTagList
     DUP
     INVOKESPECIAL net/minecraft/nbt/NBTTagList.<init> ()V
     ASTORE 1
    L1
-    LINENUMBER 219 L1
+    LINENUMBER 221 L1
     ALOAD 1
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     PUTFIELD net/minecraft/nbt/NBTTagList.tagType : B
    L2
-    LINENUMBER 220 L2
+    LINENUMBER 222 L2
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
     ASTORE 2
    L3
-    LINENUMBER 222 L3
+    LINENUMBER 224 L3
    FRAME FULL [net/minecraft/nbt/NBTTagList net/minecraft/nbt/NBTTagList java/util/Iterator] []
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
     IFEQ L4
    L5
-    LINENUMBER 224 L5
+    LINENUMBER 226 L5
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST net/minecraft/nbt/NBTBase
     ASTORE 3
    L6
-    LINENUMBER 225 L6
+    LINENUMBER 227 L6
     ALOAD 3
     INVOKEVIRTUAL net/minecraft/nbt/NBTBase.copy ()Lnet/minecraft/nbt/NBTBase;
     ASTORE 4
    L7
-    LINENUMBER 226 L7
+    LINENUMBER 228 L7
     ALOAD 1
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ALOAD 4
     INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
     POP
    L8
-    LINENUMBER 227 L8
+    LINENUMBER 229 L8
     GOTO L3
    L4
-    LINENUMBER 229 L4
+    LINENUMBER 231 L4
    FRAME FULL [net/minecraft/nbt/NBTTagList net/minecraft/nbt/NBTTagList java/util/Iterator] []
     ALOAD 1
     ARETURN
@@ -728,25 +738,25 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public equals(Ljava/lang/Object;)Z
    L0
-    LINENUMBER 234 L0
+    LINENUMBER 236 L0
     ALOAD 0
     ALOAD 1
     INVOKESPECIAL net/minecraft/nbt/NBTBase.equals (Ljava/lang/Object;)Z
     IFEQ L1
    L2
-    LINENUMBER 236 L2
+    LINENUMBER 238 L2
     ALOAD 1
     CHECKCAST net/minecraft/nbt/NBTTagList
     ASTORE 2
    L3
-    LINENUMBER 238 L3
+    LINENUMBER 240 L3
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     ALOAD 2
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     IF_ICMPNE L1
    L4
-    LINENUMBER 240 L4
+    LINENUMBER 242 L4
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagList : Ljava/util/List;
     ALOAD 2
@@ -754,7 +764,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
     INVOKEINTERFACE java/util/List.equals (Ljava/lang/Object;)Z
     IRETURN
    L1
-    LINENUMBER 244 L1
+    LINENUMBER 246 L1
    FRAME FULL [net/minecraft/nbt/NBTTagList java/lang/Object] []
     ICONST_0
     IRETURN
@@ -768,7 +778,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public hashCode()I
    L0
-    LINENUMBER 249 L0
+    LINENUMBER 251 L0
     ALOAD 0
     INVOKESPECIAL net/minecraft/nbt/NBTBase.hashCode ()I
     ALOAD 0
@@ -784,7 +794,7 @@ public class net/minecraft/nbt/NBTTagList extends net/minecraft/nbt/NBTBase  {
   // access flags 0x1
   public func_150303_d()I
    L0
-    LINENUMBER 254 L0
+    LINENUMBER 256 L0
     ALOAD 0
     GETFIELD net/minecraft/nbt/NBTTagList.tagType : B
     IRETURN
