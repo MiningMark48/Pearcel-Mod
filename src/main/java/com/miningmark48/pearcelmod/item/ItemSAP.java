@@ -94,7 +94,7 @@ public class ItemSAP extends ItemPearcelMod{
                         world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
                     }
                     //Pearcel Mob
-                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelBlock) {
+                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelPlush) {
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(pearcelmob);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearcelmob") + " " + StatCollector.translateToLocal("summoner.summoned")));
