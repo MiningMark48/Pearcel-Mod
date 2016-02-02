@@ -9,7 +9,7 @@ public class ModFluids {
 
     public static void init(){
 
-        fluidPearcel = new Fluid("pearcelFluid");
+        fluidPearcel = new Fluid("pearcelFluid").setGaseous(true);
 
         FluidRegistry.registerFluid(fluidPearcel);
 

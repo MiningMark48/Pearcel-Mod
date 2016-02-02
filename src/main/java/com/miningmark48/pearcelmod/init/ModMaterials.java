@@ -10,7 +10,7 @@ public class ModMaterials {
 
     public static void init(){
 
-        materialFluidPearcel = new MaterialLiquid(MapColor.goldColor);
+        materialFluidPearcel = new MaterialLiquid(MapColor.goldColor).setReplaceable();
 
     }
 
