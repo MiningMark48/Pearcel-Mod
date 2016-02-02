@@ -32,6 +32,7 @@ public class ModItems {
     public static final Item pearcelBeef = new ItemModFood(1, 0.1F, true).setUnlocalizedName("pearcelBeef").setTextureName(Reference.MOD_ID + ":pearcelBeef").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelSteak = new ItemModFood(7, 0.8F, true).setUnlocalizedName("pearcelSteak").setTextureName(Reference.MOD_ID + ":pearcelSteak").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelCookie = new ItemModFood(1, 0.5F, false).setUnlocalizedName("pearcelCookie").setTextureName(Reference.MOD_ID + ":pearcelCookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    public static final Item pearcelJuiceBottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcelJuiceBottle").setTextureName(Reference.MOD_ID + ":pearcelJuiceBottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Plants
     public static final Item pearcelSeeds = new ItemSeeds(ModBlocks.pearcelPlant, Blocks.farmland).setUnlocalizedName("pearcelSeeds").setTextureName(Reference.MOD_ID + ":pearcelSeeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -87,6 +88,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcelSandwich, "pearcelSandwich");
         GameRegistry.registerItem(pearcelBeef, "pearcelBeef");
         GameRegistry.registerItem(pearcelSteak, "pearcelSteak");
+        GameRegistry.registerItem(pearcelJuiceBottle, "pearcelJuiceBottle");
         //Plants
         GameRegistry.registerItem(pearcelSeeds, "pearcelSeeds");
         //Tools and Weapons
