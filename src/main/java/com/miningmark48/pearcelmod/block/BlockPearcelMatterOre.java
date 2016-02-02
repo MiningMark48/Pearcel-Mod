@@ -13,7 +13,7 @@ public class BlockPearcelMatterOre extends BlockPearcelMod{
 
     @Override
     public Item getItemDropped(int meta, Random random, int fortune) {
-        return ModItems.pearcelMatter;
+        return ModItems.pearcelMatterNeutral;
     }
 
 }
