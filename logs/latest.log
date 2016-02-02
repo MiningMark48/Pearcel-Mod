@@ -1,35 +1,39 @@
-[22:08:01] [main/INFO]: Setting user: MiningMark48
-[22:08:04] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:08:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[22:08:14] [Sound Library Loader/INFO]: Sound engine started
-[22:08:16] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[22:08:16] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[22:08:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[22:08:16] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[22:08:18] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[22:08:18] [Sound Library Loader/INFO]: Sound engine started
-[22:08:44] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:08:44] [Server thread/INFO]: Generating keypair
-[22:08:45] [Server thread/INFO]: Preparing start region for level 0
-[22:08:46] [Server thread/INFO]: Changing view distance to 3, from 10
-[22:08:46] [Server thread/INFO]: MiningMark48[local:E:086a52e2] logged in with entity id 722 at (23.49676792752633, 4.0, 718.0362697402799)
-[22:08:46] [Server thread/INFO]: MiningMark48 joined the game
-[22:08:58] [Server thread/INFO]: [MiningMark48: Given [Bucket of Pearcel Juice] * 1 to MiningMark48]
-[22:08:58] [Client thread/INFO]: [CHAT] Given [Bucket of Pearcel Juice] * 1 to MiningMark48
-[22:09:20] [Server thread/INFO]: Saving and pausing game...
-[22:09:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:09:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:09:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:10:04] [Server thread/INFO]: [MiningMark48: Given [Water Bucket] * 1 to MiningMark48]
-[22:10:04] [Client thread/INFO]: [CHAT] Given [Water Bucket] * 1 to MiningMark48
-[22:11:21] [Server thread/INFO]: Saving and pausing game...
-[22:11:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:11:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:11:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:11:22] [Server thread/INFO]: Stopping server
-[22:11:22] [Server thread/INFO]: Saving players
-[22:11:22] [Server thread/INFO]: Saving worlds
-[22:11:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:11:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:11:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:11:23] [Client thread/INFO]: Stopping!
+[17:45:01] [main/INFO]: Setting user: MiningMark48
+[17:45:04] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:45:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[17:45:14] [Sound Library Loader/INFO]: Sound engine started
+[17:45:15] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:45:15] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:45:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[17:45:16] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:45:17] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[17:45:18] [Sound Library Loader/INFO]: Sound engine started
+[17:45:40] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:45:40] [Server thread/INFO]: Generating keypair
+[17:45:41] [Server thread/INFO]: Preparing start region for level 0
+[17:45:42] [Server thread/INFO]: Changing view distance to 3, from 10
+[17:45:43] [Server thread/INFO]: MiningMark48[local:E:2d3ea35e] logged in with entity id 718 at (26.696275451851843, 4.0, 724.3433564353968)
+[17:45:43] [Server thread/INFO]: MiningMark48 joined the game
+[17:45:54] [Server thread/INFO]: [MiningMark48: Given [tile.pearcelMatterOre.name] * 1 to MiningMark48]
+[17:45:54] [Client thread/INFO]: [CHAT] Given [tile.pearcelMatterOre.name] * 1 to MiningMark48
+[17:46:08] [Server thread/INFO]: [MiningMark48: Given [Stone] * 1 to MiningMark48]
+[17:46:08] [Client thread/INFO]: [CHAT] Given [Stone] * 1 to MiningMark48
+[17:46:20] [Server thread/INFO]: [MiningMark48: Given [Pearcel Matter Block] * 1 to MiningMark48]
+[17:46:20] [Client thread/INFO]: [CHAT] Given [Pearcel Matter Block] * 1 to MiningMark48
+[17:46:21] [Server thread/INFO]: [MiningMark48: Given [Pearcel Matter] * 1 to MiningMark48]
+[17:46:21] [Client thread/INFO]: [CHAT] Given [Pearcel Matter] * 1 to MiningMark48
+[17:46:43] [Client thread/INFO]: [CHAT] You are now playing adventure
+[17:46:45] [Client thread/INFO]: [CHAT] You are now playing survival
+[17:46:47] [Server thread/INFO]: [MiningMark48: Given [Pearcel Pickaxe] * 1 to MiningMark48]
+[17:46:47] [Client thread/INFO]: [CHAT] Given [Pearcel Pickaxe] * 1 to MiningMark48
+[17:47:47] [Server thread/INFO]: Saving and pausing game...
+[17:47:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:47:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:47:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:47:47] [Server thread/INFO]: Stopping server
+[17:47:47] [Server thread/INFO]: Saving players
+[17:47:47] [Server thread/INFO]: Saving worlds
+[17:47:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:47:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:47:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:47:49] [Client thread/INFO]: Stopping!

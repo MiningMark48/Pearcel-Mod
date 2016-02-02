@@ -25,6 +25,7 @@ public class ModBlocks {
         public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
         public static final Block foolsPearcelOre = new BlockFoolsPearcelOre().setBlockName("foolsPearcelOre").setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
         public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
+        public static final Block pearcelMatterOre = new BlockPearcelMatterOre().setBlockName("pearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":pearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     //General blocks
         public static final Block pearcelGlass = new BlockPearcelGlass().setBlockName("pearcelGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":pearcelGlass").setHardness(0.5F).setResistance(99999.9F);
         public static final Block pearcelWorkbench = new BlockPearcelWorkbench().setBlockName("pearcelWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWorkbench").setHardness(2.5F).setResistance(5.0F);
@@ -83,6 +84,7 @@ public class ModBlocks {
             GameRegistry.registerBlock(pearcelOre, "pearcelOre");
             GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
             GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
+            GameRegistry.registerBlock(pearcelMatterOre, "pearcelMatterOre");
         //Plants
             GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
             GameRegistry.registerBlock(blockLog, ItemLogBlocks.class, blockLog.getUnlocalizedName().substring(5));
