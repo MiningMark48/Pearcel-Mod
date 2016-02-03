@@ -15,7 +15,7 @@ public class ItemPearcelMatterNeutral extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add(StatCollector.translateToLocal(EnumChatFormatting.YELLOW + "tooltip.item.pearcelMatter.line1"));
+        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelMatterNeutral.line1"));
     }
 
 }
