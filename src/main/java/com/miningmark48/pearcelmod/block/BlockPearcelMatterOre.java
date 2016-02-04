@@ -9,6 +9,7 @@ public class BlockPearcelMatterOre extends BlockPearcelMod{
     public BlockPearcelMatterOre(){
         setHardness(5.0F);
         setResistance(0.1F);
+        setHarvestLevel("pickaxe", 3);
     }
 
     @Override
