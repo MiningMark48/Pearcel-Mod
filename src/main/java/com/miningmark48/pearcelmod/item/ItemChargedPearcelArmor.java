@@ -2,15 +2,9 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.StatCollector;
-
-import java.util.List;
 
 public class ItemChargedPearcelArmor extends ItemArmor{
 

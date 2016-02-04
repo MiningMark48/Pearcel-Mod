@@ -162,7 +162,6 @@ chat.oreChecker.success=Pearcel Ore detected.
 chat.oreChecker.fail=Fools Pearcel Ore detected.
 chat.oreChecker.null=Found block cannot be scanned.
 chat.flightItem.disable=Pearcel Cloud disabled in config.
-chat.sap.nexp=Not enough experience! Missing Levels:
 
 command.credit.info=Parcel31u - Reason for this mod -- Codyrule040 - Textures and many ideas
 command.ivet.info=NEI Support coming soon, IVET recipes can be found on the github wiki: http://www.github.com/miningmark48/pearcel-mod
@@ -204,8 +203,7 @@ tooltip.item.sap.line1=Uses Left:
 tooltip.item.sap.line2=Right click upon the Summoner
 tooltip.item.sap.line3=to activate the dark Pearcel magic,
 tooltip.item.sap.line4=in which a creature will spawn
-tooltip.item.sap.line5=from the depths of the surrounding summoner blocks
-tooltip.item.sap.line6=using the experience of the player.
+tooltip.item.sap.line5=from the depths of the surrounding summoner blocks.
 tooltip.item.oreChecker.line1=Uses Left:
 tooltip.item.oreChecker.line2=Scans pearcel ore to determine if it is fake or not.
 tooltip.item.chargedPearcelSword.line1=Charging...

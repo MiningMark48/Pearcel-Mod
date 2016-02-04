@@ -1,47 +1,33 @@
-[16:54:54] [main/INFO]: Setting user: MiningMark48
-[16:54:58] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:55:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[16:55:12] [Sound Library Loader/INFO]: Sound engine started
-[16:55:13] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:55:13] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:55:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[16:55:14] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[16:55:15] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[16:55:16] [Sound Library Loader/INFO]: Sound engine started
-[16:55:21] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:55:21] [Server thread/INFO]: Generating keypair
-[16:55:22] [Server thread/INFO]: Preparing start region for level 0
-[16:55:23] [Server thread/INFO]: Changing view distance to 3, from 10
-[16:55:23] [Server thread/INFO]: MiningMark48[local:E:f8461965] logged in with entity id 788 at (12.300000011920929, 4.0, 737.5713030096063)
-[16:55:23] [Server thread/INFO]: MiningMark48 joined the game
-[16:55:38] [Server thread/INFO]: [MiningMark48: Set own game mode to Creative Mode]
-[16:55:38] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[16:55:40] [Server thread/ERROR]: Encountered an unexpected exception
-net.minecraft.util.ReportedException: Ticking memory connection
-	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) ~[MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-Caused by: java.lang.RuntimeException: No OpenGL context found in the current thread.
-	at org.lwjgl.opengl.GLContext.getCapabilities(GLContext.java:124) ~[lwjgl-2.9.1.jar:?]
-	at org.lwjgl.opengl.GL11.glPushMatrix(GL11.java:2592) ~[lwjgl-2.9.1.jar:?]
-	at com.miningmark48.pearcelmod.block.BlockIVET.onBlockPlaced(BlockIVET.java:42) ~[BlockIVET.class:?]
-	at net.minecraft.item.ItemBlock.onItemUse(ItemBlock.java:114) ~[ItemBlock.class:?]
-	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507) ~[ForgeHooks.class:?]
-	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142) ~[ItemStack.class:?]
-	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422) ~[ItemInWorldManager.class:?]
-	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:593) ~[NetHandlerPlayServer.class:?]
-	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74) ~[C08PacketPlayerBlockPlacement.class:?]
-	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122) ~[C08PacketPlayerBlockPlacement.class:?]
-	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
-	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
-	... 5 more
-[16:55:40] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\.\crash-reports\crash-2016-02-04_16.55.40-server.txt
-[16:55:40] [Server thread/INFO]: Stopping server
-[16:55:40] [Server thread/INFO]: Saving players
-[16:55:40] [Server thread/INFO]: Saving worlds
-[16:55:40] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:55:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:55:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:08:01] [main/INFO]: Setting user: MiningMark48
+[21:08:04] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:08:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[21:08:13] [Sound Library Loader/INFO]: Sound engine started
+[21:08:14] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:08:14] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:08:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[21:08:15] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:08:16] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[21:08:17] [Sound Library Loader/INFO]: Sound engine started
+[21:08:23] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:08:23] [Server thread/INFO]: Generating keypair
+[21:08:24] [Server thread/INFO]: Preparing start region for level 0
+[21:08:25] [Server thread/INFO]: Changing view distance to 3, from 10
+[21:08:26] [Server thread/INFO]: MiningMark48[local:E:fd3d3857] logged in with entity id 667 at (20.696249433047115, 4.0, 724.480037653211)
+[21:08:26] [Server thread/INFO]: MiningMark48 joined the game
+[21:08:30] [Server thread/INFO]: Saving and pausing game...
+[21:08:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:08:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:08:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:08:39] [Server thread/INFO]: [MiningMark48: Given [Neutralized Pearcel Matter] * 64 to MiningMark48]
+[21:08:39] [Client thread/INFO]: [CHAT] Given [Neutralized Pearcel Matter] * 64 to MiningMark48
+[21:08:48] [Server thread/INFO]: Saving and pausing game...
+[21:08:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:08:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:08:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:08:49] [Server thread/INFO]: Stopping server
+[21:08:49] [Server thread/INFO]: Saving players
+[21:08:49] [Server thread/INFO]: Saving worlds
+[21:08:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:08:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:08:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:08:49] [Client thread/INFO]: Stopping!
