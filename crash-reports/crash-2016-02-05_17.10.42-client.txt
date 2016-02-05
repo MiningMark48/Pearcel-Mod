@@ -1,0 +1,113 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 2/5/16 5:10 PM
+Description: Rendering Block Entity
+
+java.lang.ClassCastException: com.miningmark48.pearcelmod.tileentity.TileEntityIVET cannot be cast to com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush
+	at com.miningmark48.pearcelmod.renderer.RenderIVET.renderTileEntityAt(RenderIVET.java:43)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.miningmark48.pearcelmod.renderer.RenderIVET.renderTileEntityAt(RenderIVET.java:43)
+
+-- Block Entity Details --
+Details:
+	Name: null // com.miningmark48.pearcelmod.tileentity.TileEntityIVET
+	Block type: ID #168 (tile.ivet // com.miningmark48.pearcelmod.block.BlockIVET)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (13,4,723), Chunk: (at 13,0,3 in 0,45; contains blocks 0,0,720 to 15,255,735), Region: (0,1; contains chunks 0,32 to 31,63, blocks 0,0,512 to 511,255,1023)
+	Actual block type: ID #168 (tile.ivet // com.miningmark48.pearcelmod.block.BlockIVET)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['MiningMark48'/883, l='MpServer', x=13.42, y=6.62, z=723.45]]
+	Chunk stats: MultiplayerChunkCache: 49, 49
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (28,4,723), Chunk: (at 12,0,3 in 1,45; contains blocks 16,0,720 to 31,255,735), Region: (0,1; contains chunks 0,32 to 31,63, blocks 0,0,512 to 511,255,1023)
+	Level time: 321648 game time, 24000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 146 total; [EntityItem['item.item.pearcelItem'/550, l='MpServer', x=-6.69, y=4.13, z=695.66], EntityItem['item.item.pearcelItem'/551, l='MpServer', x=-9.06, y=4.13, z=689.97], EntityItem['item.item.pearcelItem'/548, l='MpServer', x=-4.59, y=4.13, z=696.25], EntityItem['item.item.pearcelItem'/549, l='MpServer', x=-12.75, y=4.13, z=697.31], EntityItem['item.item.pearcelItem'/546, l='MpServer', x=-12.81, y=4.13, z=701.19], EntityItem['item.item.pearcelItem'/547, l='MpServer', x=-9.16, y=4.13, z=694.28], EntityItem['item.item.pearcelItem'/544, l='MpServer', x=-11.84, y=4.13, z=701.06], EntityItem['item.item.pearcelItem'/545, l='MpServer', x=-5.25, y=4.13, z=692.69], EntityItem['item.item.pearcelItem'/558, l='MpServer', x=-15.94, y=2.13, z=721.25], EntityItem['item.item.pearcelItem'/559, l='MpServer', x=-7.94, y=4.13, z=749.25], EntityItem['item.item.pearcelItem'/556, l='MpServer', x=-13.84, y=4.13, z=715.59], EntityItem['item.item.pearcelItem'/557, l='MpServer', x=-15.13, y=1.13, z=722.63], EntityItem['item.item.pearcelItem'/554, l='MpServer', x=-10.56, y=4.13, z=714.22], EntityItem['item.item.pearcelItem'/555, l='MpServer', x=-13.88, y=4.13, z=714.75], EntityItem['item.item.pearcelItem'/552, l='MpServer', x=-7.53, y=4.13, z=694.75], EntityItem['item.item.pearcelItem'/553, l='MpServer', x=-7.69, y=4.13, z=691.22], EntityChicken['Chicken'/564, l='MpServer', x=-14.53, y=4.00, z=771.53], EntityItem['item.item.pearcelItem'/563, l='MpServer', x=-14.56, y=4.13, z=753.97], EntityItem['item.item.pearcelItem'/562, l='MpServer', x=-8.91, y=4.13, z=753.03], EntityPearcelMob['Pearcel Mob'/561, l='MpServer', x=-10.86, y=4.00, z=747.75], EntityItem['item.item.pearcelItem'/560, l='MpServer', x=-12.44, y=4.13, z=750.06], EntityItem['item.item.pearcelItem'/516, l='MpServer', x=-19.25, y=4.13, z=744.59], EntityItem['item.item.pearcelItem'/517, l='MpServer', x=-19.75, y=4.13, z=737.91], EntityChicken['Chicken'/518, l='MpServer', x=-23.56, y=4.00, z=753.34], EntityItem['item.item.pearcelItem'/512, l='MpServer', x=-27.06, y=4.13, z=738.03], EntityItem['item.item.pearcelItem'/513, l='MpServer', x=-26.91, y=4.13, z=739.19], EntityItem['item.item.pearcelItem'/514, l='MpServer', x=-18.13, y=4.13, z=747.22], EntityPearcelMob['Pearcel Mob'/515, l='MpServer', x=-17.73, y=4.00, z=737.63], EntityItem['item.item.pearcelItem'/541, l='MpServer', x=-1.66, y=4.13, z=674.41], EntityPearcelMob['Pearcel Mob'/540, l='MpServer', x=-3.22, y=4.00, z=673.57], EntityItem['item.item.pearcelItem'/543, l='MpServer', x=-6.16, y=4.13, z=691.56], EntityPearcelMob['Pearcel Mob'/542, l='MpServer', x=-9.16, y=4.00, z=695.23], EntityItem['item.item.pearcelItem'/537, l='MpServer', x=-12.19, y=4.13, z=680.19], EntityItem['item.item.pearcelItem'/536, l='MpServer', x=-10.88, y=4.13, z=673.59], EntityItem['item.item.pearcelItem'/539, l='MpServer', x=-10.91, y=4.13, z=680.34], EntityItem['item.item.pearcelItem'/538, l='MpServer', x=-10.47, y=4.13, z=672.75], EntityPearcelMob['Pearcel Mob'/615, l='MpServer', x=25.82, y=4.00, z=684.00], EntityClientPlayerMP['MiningMark48'/883, l='MpServer', x=13.42, y=6.62, z=723.45], EntityItem['item.item.pearcelItem'/618, l='MpServer', x=30.53, y=4.13, z=672.56], EntityItem['item.item.pearcelItem'/619, l='MpServer', x=16.22, y=4.13, z=680.94], EntityPearcelMob['Pearcel Mob'/616, l='MpServer', x=18.64, y=4.00, z=676.51], EntityItem['item.item.pearcelItem'/617, l='MpServer', x=27.22, y=4.13, z=675.34], EntityItem['item.item.pearcelItem'/622, l='MpServer', x=18.69, y=4.13, z=679.34], EntityItem['item.item.pearcelItem'/623, l='MpServer', x=17.81, y=4.13, z=686.53], EntityPearcelMob['Pearcel Mob'/620, l='MpServer', x=17.14, y=4.00, z=684.91], EntityItem['item.item.pearcelItem'/621, l='MpServer', x=16.78, y=4.13, z=685.94], EntityItem['item.item.pearcelItem'/627, l='MpServer', x=25.91, y=4.13, z=687.13], EntityItem['item.item.pearcelItem'/864, l='MpServer', x=21.81, y=12.13, z=744.53], EntityItem['item.item.pearcelItem'/626, l='MpServer', x=22.75, y=4.13, z=673.25], EntityItem['item.item.pearcelItem'/625, l='MpServer', x=17.91, y=4.13, z=677.78], EntityPearcelMob['Pearcel Mob'/624, l='MpServer', x=28.91, y=4.00, z=676.38], EntityPearcelMob['Pearcel Mob'/631, l='MpServer', x=19.57, y=4.00, z=677.81], EntityItem['item.item.pearcelItem'/868, l='MpServer', x=38.19, y=1.13, z=694.34], EntityItem['item.item.pearcelItem'/630, l='MpServer', x=25.88, y=4.13, z=684.78], EntityItem['item.item.pearcelItem'/629, l='MpServer', x=23.22, y=4.13, z=674.16], EntityItem['item.item.pearcelItem'/628, l='MpServer', x=19.03, y=4.13, z=677.91], EntityItem['item.item.pearcelItem'/871, l='MpServer', x=49.91, y=4.13, z=694.28], EntityItem['item.item.pearcelItem'/635, l='MpServer', x=20.44, y=4.13, z=742.13], EntityItem['item.item.pearcelItem'/872, l='MpServer', x=52.66, y=4.13, z=725.16], EntityItem['item.item.pearcelItem'/634, l='MpServer', x=18.81, y=4.13, z=742.28], EntityPearcelMob['Pearcel Mob'/633, l='MpServer', x=20.78, y=12.00, z=744.78], EntityItem['item.item.pearcelItem'/632, l='MpServer', x=20.59, y=4.13, z=723.75], EntityItem['item.item.pearcelItem'/637, l='MpServer', x=21.94, y=4.13, z=740.84], EntityItem['item.item.pearcelItem'/636, l='MpServer', x=16.72, y=4.13, z=743.19], EntityItem['item.item.pearcelItem'/851, l='MpServer', x=-1.13, y=4.13, z=672.78], EntityItem['item.item.pearcelItem'/853, l='MpServer', x=-11.94, y=4.13, z=748.41], EntityItem['item.item.pearcelItem'/859, l='MpServer', x=26.06, y=4.13, z=683.94], EntityItem['item.item.pearcelItem'/593, l='MpServer', x=5.94, y=4.13, z=684.03], EntityItem['item.item.pearcelItem'/834, l='MpServer', x=-38.81, y=4.13, z=674.19], EntityPearcelMob['Pearcel Mob'/592, l='MpServer', x=5.78, y=4.00, z=683.23], EntityItem['item.item.pearcelItem'/595, l='MpServer', x=14.72, y=4.13, z=683.97], EntityItem['item.item.pearcelItem'/594, l='MpServer', x=5.91, y=4.13, z=682.66], EntityItem['item.item.pearcelItem'/597, l='MpServer', x=14.84, y=4.13, z=685.34], EntityItem['item.item.pearcelItem'/596, l='MpServer', x=13.28, y=4.13, z=684.72], EntityPearcelMob['Pearcel Mob'/598, l='MpServer', x=14.14, y=4.00, z=672.17], EntityItem['item.item.pearcelItem'/842, l='MpServer', x=-16.75, y=4.13, z=691.31], EntityItem['item.item.pearcelItem'/847, l='MpServer', x=-18.97, y=4.13, z=737.97], EntityItem['item.item.pearcelItem'/678, l='MpServer', x=60.44, y=4.13, z=773.09], EntityItem['item.item.pearcelItem'/677, l='MpServer', x=59.16, y=4.13, z=774.28], EntityItem['item.item.pearcelItem'/676, l='MpServer', x=62.34, y=4.13, z=776.19], EntityItem['item.item.pearcelItem'/675, l='MpServer', x=60.53, y=4.13, z=779.38], EntityPearcelMob['Pearcel Mob'/674, l='MpServer', x=62.69, y=4.00, z=774.75], EntityItem['item.item.pearcelItem'/673, l='MpServer', x=60.78, y=4.13, z=756.38], EntityItem['item.item.pearcelItem'/672, l='MpServer', x=59.66, y=4.13, z=756.53], EntityItem['item.item.pearcelItem'/653, l='MpServer', x=37.03, y=4.13, z=708.31], EntityPearcelMob['Pearcel Mob'/652, l='MpServer', x=40.59, y=4.00, z=710.19], EntityItem['item.item.pearcelItem'/654, l='MpServer', x=38.31, y=4.13, z=708.81], EntityPearcelMob['Pearcel Mob'/649, l='MpServer', x=38.01, y=2.00, z=693.44], EntityItem['item.item.pearcelItem'/648, l='MpServer', x=32.56, y=4.13, z=674.47], EntityItem['item.item.pearcelItem'/650, l='MpServer', x=38.53, y=2.13, z=692.88], EntityPearcelMob['Pearcel Mob'/645, l='MpServer', x=40.47, y=4.00, z=676.29], EntityItem['item.item.pearcelItem'/644, l='MpServer', x=46.81, y=4.13, z=681.16], EntityItem['item.item.pearcelItem'/647, l='MpServer', x=40.41, y=4.13, z=674.63], EntityItem['item.item.pearcelItem'/646, l='MpServer', x=40.69, y=4.13, z=673.59], EntityPearcelMob['Pearcel Mob'/643, l='MpServer', x=45.64, y=4.00, z=681.57], EntityPearcelMob['Pearcel Mob'/668, l='MpServer', x=52.57, y=4.00, z=726.31], EntityPearcelMob['Pearcel Mob'/670, l='MpServer', x=62.23, y=4.00, z=756.41], EntityItem['item.item.pearcelItem'/671, l='MpServer', x=53.06, y=4.13, z=759.59], EntityItem['item.item.pearcelItem'/664, l='MpServer', x=55.47, y=1.13, z=692.38], EntityItem['item.item.pearcelItem'/665, l='MpServer', x=54.41, y=1.13, z=694.72], EntityItem['item.item.pearcelItem'/666, l='MpServer', x=59.88, y=4.13, z=719.13], EntityItem['item.item.pearcelItem'/667, l='MpServer', x=62.78, y=4.13, z=733.38], EntityItem['item.item.pearcelItem'/660, l='MpServer', x=55.25, y=4.13, z=686.28], EntityPearcelMob['Pearcel Mob'/661, l='MpServer', x=50.10, y=4.00, z=696.10], EntityItem['item.item.pearcelItem'/662, l='MpServer', x=56.81, y=1.13, z=693.13], EntityItem['item.item.pearcelItem'/663, l='MpServer', x=56.84, y=1.13, z=694.72], EntityPearcelMob['Pearcel Mob'/658, l='MpServer', x=52.88, y=4.00, z=686.23], EntityItem['item.item.pearcelItem'/659, l='MpServer', x=51.88, y=4.13, z=683.38], EntityPearcelMob['Pearcel Mob'/468, l='MpServer', x=-47.77, y=4.00, z=770.34], EntityHorse['Horse'/469, l='MpServer', x=-32.50, y=4.00, z=770.06], EntityChicken['Chicken'/466, l='MpServer', x=-46.78, y=4.00, z=758.25], EntityItem['item.item.pearcelItem'/467, l='MpServer', x=-44.56, y=4.13, z=764.97], EntityChicken['Chicken'/464, l='MpServer', x=-45.41, y=4.00, z=735.56], EntityPig['Pig'/465, l='MpServer', x=-38.94, y=4.00, z=741.97], EntityPig['Pig'/463, l='MpServer', x=-34.25, y=4.00, z=720.56], EntityItem['item.item.pearcelItem'/462, l='MpServer', x=-45.78, y=4.13, z=706.81], EntityItem['item.item.pearcelItem'/461, l='MpServer', x=-46.78, y=4.13, z=706.84], EntityPearcelMob['Pearcel Mob'/460, l='MpServer', x=-44.74, y=4.00, z=707.51], EntityPearcelMob['Pearcel Mob'/458, l='MpServer', x=-36.80, y=4.00, z=673.60], EntityItem['item.item.pearcelItem'/457, l='MpServer', x=-45.88, y=4.13, z=674.47], EntityItem['item.item.pearcelItem'/456, l='MpServer', x=-41.56, y=4.13, z=676.56], EntityItem['item.item.pearcelItem'/455, l='MpServer', x=-34.84, y=4.13, z=678.06], EntityItem['item.item.pearcelItem'/454, l='MpServer', x=-45.19, y=4.13, z=678.19], EntityItem['item.item.pearcelItem'/453, l='MpServer', x=-43.16, y=4.13, z=679.72], EntityItem['item.item.pearcelItem'/452, l='MpServer', x=-33.91, y=4.13, z=677.97], EntityPearcelMob['Pearcel Mob'/451, l='MpServer', x=-40.80, y=4.00, z=676.67], EntityItem['item.item.pearcelItem'/508, l='MpServer', x=-26.47, y=4.13, z=725.81], EntityItem['item.item.pearcelItem'/509, l='MpServer', x=-20.13, y=3.13, z=722.38], EntityPearcelMob['Pearcel Mob'/510, l='MpServer', x=-29.80, y=4.00, z=731.81], EntityItem['item.item.pearcelItem'/511, l='MpServer', x=-29.13, y=4.13, z=733.22], EntityItem['item.item.pearcelItem'/504, l='MpServer', x=-27.03, y=4.13, z=726.72], EntityItem['item.item.pearcelItem'/505, l='MpServer', x=-25.56, y=4.13, z=726.16], EntityItem['item.item.pearcelItem'/506, l='MpServer', x=-26.84, y=4.13, z=735.03], EntityItem['item.item.pearcelItem'/507, l='MpServer', x=-25.53, y=4.13, z=735.59], EntityItem['item.item.pearcelItem'/500, l='MpServer', x=-18.97, y=4.13, z=716.63], EntityPearcelMob['Pearcel Mob'/501, l='MpServer', x=-27.99, y=4.00, z=733.23], EntityPearcelMob['Pearcel Mob'/502, l='MpServer', x=-17.33, y=2.00, z=721.44], EntityItem['item.item.pearcelItem'/503, l='MpServer', x=-25.19, y=4.13, z=728.06], EntityHorse['Horse'/496, l='MpServer', x=-24.04, y=4.00, z=698.99], EntityPearcelMob['Pearcel Mob'/497, l='MpServer', x=-16.19, y=4.00, z=688.81], EntityPearcelMob['Pearcel Mob'/498, l='MpServer', x=-18.53, y=4.00, z=715.72], EntityPig['Pig'/499, l='MpServer', x=-24.81, y=4.00, z=706.94], EntityItem['item.item.pearcelItem'/493, l='MpServer', x=-17.88, y=4.13, z=675.19], EntityPearcelMob['Pearcel Mob'/492, l='MpServer', x=-19.36, y=4.00, z=674.54], EntityItem['item.item.pearcelItem'/495, l='MpServer', x=-18.41, y=4.13, z=674.09], EntityItem['item.item.pearcelItem'/494, l='MpServer', x=-16.75, y=4.13, z=673.69]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.7.0_79, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 601908576 bytes (574 MB) / 1102053376 bytes (1051 MB) up to 2842689536 bytes (2711 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.46} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.5.110} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.110-universal.jar) 
+	UCHIJAAAA	pearcelmod{1.7.10-2.0.0-build} [Pearcel Mod] (main) 
+	GL info: ' Vendor: 'Intel' Version: '4.3.0 - Build 20.19.15.4331' Renderer: 'Intel(R) HD Graphics 4600'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 4600 GL version 4.3.0 - Build 20.19.15.4331, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

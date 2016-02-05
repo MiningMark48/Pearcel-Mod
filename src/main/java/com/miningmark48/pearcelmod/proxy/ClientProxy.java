@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.mob.*;
 import com.miningmark48.pearcelmod.model.ModelPearcelMob;
 import com.miningmark48.pearcelmod.model.ModelPearson;
 import com.miningmark48.pearcelmod.renderer.*;
+import com.miningmark48.pearcelmod.tileentity.TileEntityIVET;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -34,6 +35,10 @@ public class ClientProxy extends CommonProxy{
         TileEntitySpecialRenderer renderPPlush = new RenderPearcelPlush();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPearcelPlush.class, renderPPlush);
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.pearcelPlush), new RenderItemPearcelPlush());
+        //IVET
+        TileEntitySpecialRenderer renderIVET = new RenderIVET();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityIVET.class, renderIVET);
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.ivet), new RenderItemIVET());
         //TNT
         RenderingRegistry.registerEntityRenderingHandler(EntityPTNT.class, new RenderPTNT());
     //Items
