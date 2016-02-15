@@ -63,7 +63,6 @@ public class ModItems {
 
 
     //General Items
-    public static final Item pearcelNugget = new ItemPearcelNugget().setUnlocalizedName("pearcelNugget").setTextureName(Reference.MOD_ID + ":pearcelNugget").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(16);
     public static final Item pearcelStick = new ItemPearcelStick().setUnlocalizedName("pearcelStick").setTextureName(Reference.MOD_ID + ":pearcelStick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelFlour = new ItemPearcelFlour().setUnlocalizedName("pearcelFlour").setTextureName(Reference.MOD_ID + ":pearcelFlour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item pearcelArrow = new ItemPearcelArrow().setUnlocalizedName("pearcelArrow").setTextureName(Reference.MOD_ID + ":pearcelArrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -115,7 +114,6 @@ public class ModItems {
         GameRegistry.registerItem(chargedPearcelLeggings, "chargedPearcelLeggings");
         GameRegistry.registerItem(chargedPearcelBoots, "chargedPearcelBoots");
         //General Items
-        GameRegistry.registerItem(pearcelNugget, "pearcelNugget");
         GameRegistry.registerItem(pearcelStick, "pearcelStick");
         GameRegistry.registerItem(pearcelFlour, "pearcelFlour");
         GameRegistry.registerItem(pearcelArrow, "pearcelArrow");
