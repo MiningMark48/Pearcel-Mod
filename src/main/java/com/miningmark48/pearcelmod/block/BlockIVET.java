@@ -10,6 +10,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.particle.EffectRenderer;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -26,7 +27,7 @@ public class BlockIVET extends BlockContainer{
     private IIcon field_150034_b;
     private static final String __OBFID = "CL_00000221";
 
-    public BlockIVET(Material material){
+    public BlockIVET(Material material) {
         super(material);
     }
 
@@ -47,22 +48,11 @@ public class BlockIVET extends BlockContainer{
         return new TileEntityIVET();
     }
 
-    /**
-     * Gets the block's texture. Args: side, meta
-     */
-    /*@SideOnly(Side.CLIENT)
-    public IIcon getIcon(int p_149691_1_, int p_149691_2_)
-    {
-        return p_149691_1_ == 1 ? this.field_150035_a : (p_149691_1_ == 0 ? ModBlocks.pearcelBlock.getBlockTextureFromSide(p_149691_1_) : (p_149691_1_ != 2 && p_149691_1_ != 4 ? this.blockIcon : this.field_150034_b));
-    }
-
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister p_149651_1_)
+    public boolean addDestroyEffects(World world, int x, int y, int z, int meta, EffectRenderer effectRenderer)
     {
-        this.blockIcon = p_149651_1_.registerIcon(this.getTextureName() + "_side");
-        this.field_150035_a = p_149651_1_.registerIcon(this.getTextureName() + "_top");
-        this.field_150034_b = p_149651_1_.registerIcon(this.getTextureName() + "_front");
-    }*/
+        return false;
+    }
 
     @SideOnly(Side.CLIENT)
     public void randomDisplayTick(World p_149734_1_, int p_149734_2_, int p_149734_3_, int p_149734_4_, Random p_149734_5_)
