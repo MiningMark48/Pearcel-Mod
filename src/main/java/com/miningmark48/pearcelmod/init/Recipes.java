@@ -50,10 +50,10 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelArrow), "x", "y", "z", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.tier2Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pcp), "zx ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModBlocks.pearcelWorkbench), 'z', new ItemStack(ModItems.tier1Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStaff), "  x", "zy ", "bz ", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModItems.pearcelStick), 'z', new ItemStack(ModItems.pearcelMatter), 'b', new ItemStack(ModItems.tier3Craft));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelHelmet), "xyx", "y y", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelChestplate), "y y", "xyx", "xxx", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelLeggings), "xyx", "x x", "y y", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelBoots), "y y", "xyx", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelHelmet), "xyx", "y y", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier2Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelChestplate), "y y", "xyx", "xxx", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier2Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelLeggings), "xyx", "x x", "y y", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier2Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelBoots), "y y", "xyx", 'x', new ItemStack(ModItems.armorPlating), 'y', new ItemStack(ModItems.tier2Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.chargedPearcelHelmet), "xzx", "zyz", "xzx", 'x', new ItemStack(Blocks.redstone_block), 'y', new ItemStack(ModItems.pearcelHelmet), 'z', new ItemStack(ModItems.armorPlating));
         GameRegistry.addRecipe(new ItemStack(ModItems.chargedPearcelChestplate), "xzx", "zyz", "xzx", 'x', new ItemStack(Blocks.redstone_block), 'y', new ItemStack(ModItems.pearcelChestplate), 'z', new ItemStack(ModItems.armorPlating));
         GameRegistry.addRecipe(new ItemStack(ModItems.chargedPearcelLeggings), "xzx", "zyz", "xzx", 'x', new ItemStack(Blocks.redstone_block), 'y', new ItemStack(ModItems.pearcelLeggings), 'z', new ItemStack(ModItems.armorPlating));
@@ -86,6 +86,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.pearcelPlanks, 4), new ItemStack(ModBlocks.blockLog, 1, 0));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelCharcoal, 1), new ItemStack(ModBlocks.pearcelCharcoalBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelCharcoalBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelCharcoal));
+
         //ME^Matter Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelMatter, 9), new ItemStack(ModBlocks.pearcelMatterBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelMatterBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcelMatter));
@@ -111,6 +112,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.stonebrick, 64), new ItemStack(ModItems.pearcelMatter), new ItemStack(Blocks.stone));
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.cobblestone, 111), new ItemStack(ModItems.pearcelMatter), new ItemStack(Items.water_bucket), new ItemStack(Items.lava_bucket), new ItemStack(Blocks.cobblestone));
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.soul_sand, 64), new ItemStack(ModItems.pearcelMatter), new ItemStack(Items.ghast_tear), new ItemStack(Blocks.netherrack));
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.saddle), new ItemStack(ModItems.pearcelMatter), new ItemStack(Items.leather), new ItemStack(Items.leather), new ItemStack(Items.iron_ingot));
 
 	}
 
