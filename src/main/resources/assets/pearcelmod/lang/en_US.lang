@@ -45,6 +45,7 @@ item.flightItem.name=Pearcel Cloud [WIP]
 item.oreChecker.name=Ore Checker
 item.chargedPearcelSword.name=Charged Pearcel Sword
 item.pearcelIngot.name=Pearcel Ingot
+item.ivep.name=IVEP (Item Value Exchanger Pearcel)
 
 tile.pearcelPlant.name=Pearcel Plant
 tile.pearcelGlass.name=Pearcel Glass
@@ -150,6 +151,7 @@ config.maxPearcelLightning.desc=Maximum range for the Charged Pearcel Sword's Li
 gui.ivet.name=IVET
 gui.pearcelWorkbench.name=Pearcel Workbench
 gui.pcp.name=Portable Crafting Pearcel
+gui.ivep.name=Item Value Exchanger Pearcel
 
 log.info.preinit=Pre-Init Complete!
 log.info.init=Init Complete!
@@ -202,6 +204,7 @@ tooltip.item.chargedPearcelSword.line1=Charging...
 tooltip.item.chargedPearcelSword.line2=Right click to zap!
 tooltip.item.chargedPearcelSword.line3=Sneak & Right Click to do a super zap!
 tooltip.item.pearcelMatterNeutral.line1=Charged by the mystical powers of the IVET.
+tooltip.item.ivep.line1=I'm the same as the IVET, but portable!
 
 
 

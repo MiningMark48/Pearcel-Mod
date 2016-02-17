@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.client.gui;
 
+import com.miningmark48.pearcelmod.client.container.ContainerIVEP;
 import com.miningmark48.pearcelmod.client.container.ContainerIVET;
 import com.miningmark48.pearcelmod.client.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.client.container.ContainerPCP;
@@ -22,6 +23,9 @@ public class GuiHandler implements IGuiHandler {
         if (ID == GUIs.guiIDPCP){
             return new ContainerPCP(player.inventory, world, x, y, z);
         }
+        if (ID == GUIs.guiIDIVEP){
+            return new ContainerIVEP(player.inventory, world, x, y, z);
+        }
         return null;
     }
 
@@ -36,6 +40,9 @@ public class GuiHandler implements IGuiHandler {
         }
         if (ID == GUIs.guiIDPCP){
             return new GuiPCP(player.inventory, world, x, y, z);
+        }
+        if (ID == GUIs.guiIDIVEP){
+            return new GuiIVEP(player.inventory, world, x, y, z);
         }
         return null;
     }
