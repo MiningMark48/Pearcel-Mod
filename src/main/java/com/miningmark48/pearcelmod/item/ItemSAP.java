@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
@@ -45,6 +46,9 @@ public class ItemSAP extends ItemPearcelMod{
 
     @Override
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player){
+
+        player.addStat(Achievements.achievementSummon, 1);
+
         int x = Minecraft.getMinecraft().objectMouseOver.blockX;
         int y = Minecraft.getMinecraft().objectMouseOver.blockY;
         int z = Minecraft.getMinecraft().objectMouseOver.blockZ;
