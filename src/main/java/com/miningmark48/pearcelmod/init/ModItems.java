@@ -14,6 +14,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemTool;
 import net.minecraftforge.common.util.EnumHelper;
+import sun.security.krb5.Config;
 
 public class ModItems {
 
@@ -129,6 +130,7 @@ public class ModItems {
         GameRegistry.registerItem(tier4Craft, "tier4Craft");
         GameRegistry.registerItem(armorPlating, "armorPlating");
         GameRegistry.registerItem(pearcelIngot, "pearcelIngot");
+
 	}
 	
 }

@@ -147,6 +147,8 @@ config.minPearcelLightning.title=Min. Lightning Range
 config.minPearcelLightning.desc=Minimum range for the Charged Pearcel Sword's Lightning
 config.maxPearcelLightning.title=Max. Lightning Range
 config.maxPearcelLightning.desc=Maximum range for the Charged Pearcel Sword's Lightning
+config.craftingTables.title=Disable crafting tables
+config.craftingTables.desc=Prevents vanilla crafting from working.
 
 gui.ivet.name=IVET
 gui.pearcelWorkbench.name=Pearcel Workbench
@@ -164,6 +166,7 @@ chat.oreChecker.success=Pearcel Ore detected.
 chat.oreChecker.fail=Fools Pearcel Ore detected.
 chat.oreChecker.null=Found block cannot be scanned.
 chat.flightItem.disable=Pearcel Cloud disabled in config.
+chat.event.noWorkbench=The Crafting Table has been disabled.
 
 command.credit.info=Parcel31u - Reason for this mod -- Codyrule040 - Textures and many ideas
 command.ivet.info=NEI Support coming soon, IVET recipes can be found on the github wiki: http://www.github.com/miningmark48/pearcel-mod

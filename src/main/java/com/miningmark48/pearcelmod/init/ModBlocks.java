@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.biome.PMLog;
 import com.miningmark48.pearcelmod.biome.PMSapling;
 import com.miningmark48.pearcelmod.block.*;
 import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.item.ItemLeafBlocks;
 import com.miningmark48.pearcelmod.item.ItemLogBlocks;
 import com.miningmark48.pearcelmod.item.ItemSaplingBlocks;
