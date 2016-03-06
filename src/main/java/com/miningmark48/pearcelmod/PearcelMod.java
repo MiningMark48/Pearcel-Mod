@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
+import com.miningmark48.pearcelmod.biome.BiomeGen;
 import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.event.EventCraftingTable;
 import com.miningmark48.pearcelmod.event.EventFillBucket;
@@ -44,6 +45,7 @@ public class PearcelMod {
         ModBlocks.init();
 		ModItems.init();
         EntityPearcelMod.init();
+        BiomeGen.init();
 
         proxy.registerRenderThings();
 
