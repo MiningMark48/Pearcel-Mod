@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -27,6 +29,11 @@ public class ItemChargedPearcelSword extends ItemSword{
         par3List.add("");
         par3List.add(StatCollector.translateToLocal("tooltip.item.chargedPearcelSword.line2"));
         par3List.add(StatCollector.translateToLocal("tooltip.item.chargedPearcelSword.line3"));
+    }
+
+    @SideOnly(Side.CLIENT)
+    public boolean hasEffect(ItemStack stack){
+        return true;
     }
 
     @Override
