@@ -5,12 +5,10 @@ import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
 import com.miningmark48.pearcelmod.mob.EntityPearcelMob;
 import com.miningmark48.pearcelmod.mob.EntityPearcelSquid;
 import com.miningmark48.pearcelmod.mob.EntityPearson;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenTrees;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
 import java.util.Random;
@@ -29,7 +27,7 @@ public class BiomePearcel extends BiomeGenBase{
         this.topBlock = Blocks.grass;
         this.fillerBlock = ModBlocks.pearcelStone;
         theWorldGenerator = new WorldGenMinable(ModBlocks.pearcelOre, 10);
-        this.theBiomeDecorator.treesPerChunk = 3;
+        this.theBiomeDecorator.treesPerChunk = 1;
         this.theBiomeDecorator.clayPerChunk = 2;
         this.theBiomeDecorator.flowersPerChunk = 5;
         this.enableRain = false;
@@ -38,7 +36,7 @@ public class BiomePearcel extends BiomeGenBase{
         this.spawnableCreatureList.add(new SpawnListEntry(EntityPearcelMob.class, 50, 2, 10));
         this.spawnableCreatureList.add(new SpawnListEntry(EntityPearcelCow.class, 20, 2, 3));
         this.spawnableCaveCreatureList.clear();
-        this.spawnableCaveCreatureList.add(new SpawnListEntry(EntityPearson.class, 10, 1, 5));
+        this.spawnableCaveCreatureList.add(new SpawnListEntry(EntityPearson.class, 5, 1, 5));
         this.spawnableWaterCreatureList.clear();
         this.spawnableWaterCreatureList.add(new SpawnListEntry(EntityPearcelSquid.class, 10, 1, 3));
     }
