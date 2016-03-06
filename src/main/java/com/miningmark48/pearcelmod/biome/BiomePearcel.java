@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.biome;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
 import com.miningmark48.pearcelmod.mob.EntityPearcelMob;
+import com.miningmark48.pearcelmod.mob.EntityPearcelSquid;
 import com.miningmark48.pearcelmod.mob.EntityPearson;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -31,13 +32,15 @@ public class BiomePearcel extends BiomeGenBase{
         this.theBiomeDecorator.treesPerChunk = 3;
         this.theBiomeDecorator.clayPerChunk = 2;
         this.theBiomeDecorator.flowersPerChunk = 5;
-
+        this.enableRain = false;
 
         this.spawnableCreatureList.clear();
         this.spawnableCreatureList.add(new SpawnListEntry(EntityPearcelMob.class, 50, 2, 10));
         this.spawnableCreatureList.add(new SpawnListEntry(EntityPearcelCow.class, 20, 2, 3));
         this.spawnableCaveCreatureList.clear();
         this.spawnableCaveCreatureList.add(new SpawnListEntry(EntityPearson.class, 10, 1, 5));
+        this.spawnableWaterCreatureList.clear();
+        this.spawnableWaterCreatureList.add(new SpawnListEntry(EntityPearcelSquid.class, 10, 1, 3));
     }
 
     @Override
