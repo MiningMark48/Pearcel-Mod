@@ -1,69 +1,48 @@
-[11:06:04] [main/INFO]: Setting user: MiningMark48
-[11:06:06] [Client thread/INFO]: LWJGL Version: 2.9.1
-[11:06:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[11:06:15] [Sound Library Loader/INFO]: Sound engine started
-[11:06:17] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[11:06:17] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[11:06:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[11:06:17] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[11:06:21] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[11:06:21] [Sound Library Loader/INFO]: Sound engine started
-[11:08:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[11:08:17] [Server thread/INFO]: Generating keypair
-[11:08:18] [Server thread/INFO]: Preparing start region for level 0
-[11:08:19] [Server thread/INFO]: Changing view distance to 4, from 10
-[11:08:20] [Server thread/INFO]: MiningMark48[local:E:34ca608a] logged in with entity id 542 at (-35.79897229195073, 63.0, -55.192790705745196)
-[11:08:20] [Server thread/INFO]: MiningMark48 joined the game
-[11:08:42] [Server thread/INFO]: Saving and pausing game...
-[11:08:42] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:08:42] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:08:42] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:08:43] [Server thread/INFO]: Stopping server
-[11:08:43] [Server thread/INFO]: Saving players
-[11:08:43] [Server thread/INFO]: Saving worlds
-[11:08:43] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:08:43] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:08:43] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:08:47] [Client thread/INFO]: Deleting level Copy of New World
-[11:08:47] [Client thread/INFO]: Attempt 1...
-[11:08:50] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[11:08:50] [Server thread/INFO]: Generating keypair
-[11:08:50] [Server thread/INFO]: Converting map!
-[11:08:50] [Server thread/INFO]: Scanning folders...
-[11:08:50] [Server thread/INFO]: Total conversion count is 0
-[11:08:50] [Server thread/INFO]: Preparing start region for level 0
-[11:08:51] [Server thread/INFO]: Preparing spawn area: 19%
-[11:08:52] [Server thread/INFO]: Preparing spawn area: 38%
-[11:08:53] [Server thread/INFO]: Preparing spawn area: 58%
-[11:08:54] [Server thread/INFO]: Preparing spawn area: 82%
-[11:08:55] [Server thread/INFO]: Changing view distance to 4, from 10
-[11:08:55] [Server thread/INFO]: MiningMark48[local:E:286d8a6c] logged in with entity id 2354 at (10.5, 68.0, 145.5)
-[11:08:55] [Server thread/INFO]: MiningMark48 joined the game
-[11:10:47] [Server thread/INFO]: Saving and pausing game...
-[11:10:47] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:10:48] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:10:48] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:10:59] [Server thread/INFO]: Saving and pausing game...
-[11:10:59] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:10:59] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:10:59] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:13:43] [Server thread/INFO]: MiningMark48 has just earned the achievement [Taking Inventory]
-[11:13:43] [Client thread/INFO]: [CHAT] MiningMark48 has just earned the achievement [Taking Inventory]
-[11:20:05] [Server thread/INFO]: Saving and pausing game...
-[11:20:05] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:20:05] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:20:05] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:22:11] [Server thread/INFO]: [MiningMark48: Set the time to 13000]
-[11:22:11] [Client thread/INFO]: [CHAT] Set the time to 13000
-[11:22:25] [Client thread/INFO]: [CHAT] You are now playing creative+
-[11:23:31] [Server thread/INFO]: Saving and pausing game...
-[11:23:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:23:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:23:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:23:31] [Server thread/INFO]: Stopping server
-[11:23:31] [Server thread/INFO]: Saving players
-[11:23:31] [Server thread/INFO]: Saving worlds
-[11:23:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:23:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:23:31] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:23:32] [Client thread/INFO]: Stopping!
+[12:01:46] [main/INFO]: Setting user: MiningMark48
+[12:01:48] [Client thread/INFO]: LWJGL Version: 2.9.1
+[12:01:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[12:01:58] [Sound Library Loader/INFO]: Sound engine started
+[12:02:00] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[12:02:00] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[12:02:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[12:02:00] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[12:02:04] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[12:02:05] [Sound Library Loader/INFO]: Sound engine started
+[12:03:09] [Client thread/INFO]: Deleting level Copy of New World
+[12:03:09] [Client thread/INFO]: Attempt 1...
+[12:03:41] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[12:03:41] [Server thread/INFO]: Generating keypair
+[12:03:41] [Server thread/INFO]: Converting map!
+[12:03:41] [Server thread/INFO]: Scanning folders...
+[12:03:41] [Server thread/INFO]: Total conversion count is 0
+[12:03:42] [Server thread/INFO]: Preparing start region for level 0
+[12:03:43] [Server thread/INFO]: Preparing spawn area: 9%
+[12:03:44] [Server thread/INFO]: Preparing spawn area: 27%
+[12:03:45] [Server thread/INFO]: Preparing spawn area: 40%
+[12:03:46] [Server thread/INFO]: Preparing spawn area: 58%
+[12:03:47] [Server thread/INFO]: Preparing spawn area: 79%
+[12:03:48] [Server thread/INFO]: Preparing spawn area: 98%
+[12:03:48] [Server thread/INFO]: Changing view distance to 4, from 10
+[12:03:49] [Server thread/INFO]: MiningMark48[local:E:9d9e9c90] logged in with entity id 260 at (10.5, 68.0, 145.5)
+[12:03:49] [Server thread/INFO]: MiningMark48 joined the game
+[12:03:52] [Server thread/INFO]: Saving and pausing game...
+[12:03:52] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[12:03:55] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[12:03:55] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[12:03:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2533ms behind, skipping 50 tick(s)
+[12:03:57] [Client thread/INFO]: Warning: Clientside chunk ticking took 138 ms
+[12:04:50] [Server thread/INFO]: Saving and pausing game...
+[12:04:50] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[12:04:50] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[12:04:50] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[12:05:29] [Server thread/INFO]: Saving and pausing game...
+[12:05:29] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[12:05:29] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[12:05:29] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[12:05:29] [Server thread/INFO]: Stopping server
+[12:05:29] [Server thread/INFO]: Saving players
+[12:05:29] [Server thread/INFO]: Saving worlds
+[12:05:29] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[12:05:29] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[12:05:29] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[12:05:31] [Client thread/INFO]: Stopping!
