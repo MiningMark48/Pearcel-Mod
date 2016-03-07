@@ -46,6 +46,7 @@ public class PearcelMod {
 		ModItems.init();
         EntityPearcelMod.init();
         BiomeGen.init();
+        DungeonLoot.init();
 
         proxy.registerRenderThings();
 
