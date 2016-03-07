@@ -12,8 +12,9 @@ public class Recipes {
 	public static void init(){
 		
 		//Items
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.enderPearcelOre), new ItemStack(ModItems.pearcelIngot, 4), 15f);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.netherPearcelOre), new ItemStack(ModItems.pearcelIngot, 2), 10f);
-        GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelOre), new ItemStack(ModItems.pearcelIngot, 1), 10f);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelOre), new ItemStack(ModItems.pearcelIngot, 1), 5f);
         GameRegistry.addSmelting(new ItemStack(ModItems.pearcelBeef), new ItemStack(ModItems.pearcelSteak), 10f);
         GameRegistry.addSmelting(new ItemStack(ModItems.pearcelFlour), new ItemStack(ModItems.pearcelBread), 10f);
         GameRegistry.addSmelting(new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelCharcoal), 10f);
@@ -64,9 +65,9 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.ivep), "zxa", "xyx", "axz", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModBlocks.ivet), 'z', new ItemStack(ModItems.tier2Craft), 'a', new ItemStack(ModItems.pearcel));
 
 		//Blocks
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelSand), new ItemStack(ModBlocks.pearcelGlass), 5F);
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelTorch, 4), "x", "y", 'x', new ItemStack(ModItems.pearcelCharcoal), 'y', new ItemStack(ModItems.pearcelStick));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelBlock), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelGlass, 8), "axz", "xyx", "zxa", 'x', new ItemStack(Blocks.glass), 'y', new ItemStack(ModItems.tier2Craft), 'z', new ItemStack(Blocks.obsidian), 'a', new ItemStack(ModItems.pearcelIngot));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelWorkbench), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelPlanks));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.ivet), "cyc", "axa", "bzb", 'a', new ItemStack(Blocks.obsidian), 'b', new ItemStack(ModItems.tier3Craft), 'c', new ItemStack(Items.iron_ingot), 'x', new ItemStack(ModBlocks.pearcelWorkbench), 'y', new ItemStack(Items.book), 'z', new ItemStack(Items.diamond));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.torcher, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(Blocks.tnt), 'y', new ItemStack(Blocks.torch), 'z', new ItemStack(ModItems.tier2Craft));

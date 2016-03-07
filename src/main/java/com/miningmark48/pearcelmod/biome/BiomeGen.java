@@ -8,17 +8,18 @@ import net.minecraftforge.common.BiomeManager;
 public class BiomeGen {
 
     public static BiomeGenBase biomePearcel;
+    public static int biomePearcelID = 100;
 
     public static void init(){
         registerBiomes();
     }
 
     private static void registerBiomes() {
-        biomePearcel = new BiomePearcel(100).setBiomeName(StatCollector.translateToLocal("biome.pearcelPlains.name"));
+        biomePearcel = new BiomePearcel(biomePearcelID).setBiomeName(StatCollector.translateToLocal("biome.pearcelPlains.name"));
         BiomeDictionary.registerBiomeType(biomePearcel, BiomeDictionary.Type.PLAINS);
         BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biomePearcel, 10));
 
-        BiomeManager.removeSpawnBiome(BiomeGenBase.beach);
+        /*BiomeManager.removeSpawnBiome(BiomeGenBase.beach);
         BiomeManager.removeSpawnBiome(BiomeGenBase.birchForest);
         BiomeManager.removeSpawnBiome(BiomeGenBase.birchForestHills);
         BiomeManager.removeSpawnBiome(BiomeGenBase.coldBeach);
@@ -56,7 +57,7 @@ public class BiomeGen {
         BiomeManager.removeSpawnBiome(BiomeGenBase.stoneBeach);
         BiomeManager.removeSpawnBiome(BiomeGenBase.swampland);
         BiomeManager.removeSpawnBiome(BiomeGenBase.taiga);
-        BiomeManager.removeSpawnBiome(BiomeGenBase.taigaHills);
+        BiomeManager.removeSpawnBiome(BiomeGenBase.taigaHills);*/
 
         BiomeManager.addSpawnBiome(biomePearcel);
 

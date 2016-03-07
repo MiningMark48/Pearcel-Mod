@@ -15,6 +15,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.material.Material;
 
+import java.sql.Ref;
+
 public class ModBlocks {
 
     //Plants
@@ -27,6 +29,7 @@ public class ModBlocks {
         public static final Block foolsPearcelOre = new BlockFoolsPearcelOre().setBlockName("foolsPearcelOre").setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
         public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
         public static final Block pearcelMatterOre = new BlockPearcelMatterOre().setBlockName("pearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":pearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        public static final Block enderPearcelOre = new BlockEnderPearcelOre().setBlockName("enderPearcelOre").setBlockTextureName(Reference.MOD_ID + ":enderPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
     //General blocks
         public static final Block pearcelGlass = new BlockPearcelGlass().setBlockName("pearcelGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":pearcelGlass").setHardness(0.5F).setResistance(99999.9F);
         public static final Block pearcelWorkbench = new BlockPearcelWorkbench().setBlockName("pearcelWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWorkbench").setHardness(2.5F).setResistance(5.0F);
@@ -52,6 +55,7 @@ public class ModBlocks {
         public static final Block pearcelStairs = new BlockPStairs(ModBlocks.pearcelBlock, 0).setBlockName("pearcelStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStairs");
         public static final Block pearcelWoodStairs = new BlockPStairs(ModBlocks.pearcelPlanks, 1).setBlockName("pearcelWoodStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWoodStairs");
         public static final Block pearcelPlush = new BlockPearcelPlush(Material.carpet).setBlockName("pearcelPlush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        public static final Block pearcelSand = new BlockPearcelSand().setBlockName("pearcelSand").setBlockTextureName(Reference.MOD_ID + ":pearcelSand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(0.5F).setHardness(1.0F);
     //Fluids
         public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
 
@@ -81,11 +85,13 @@ public class ModBlocks {
             GameRegistry.registerBlock(pearcelGlassPane, "pearcelGlassPane");
             GameRegistry.registerBlock(pearcelStairs, "pearcelStairs");
             GameRegistry.registerBlock(pearcelWoodStairs, "pearcelWoodStairs");
+            GameRegistry.registerBlock(pearcelSand, "pearcelSand");
         //Ores
             GameRegistry.registerBlock(pearcelOre, "pearcelOre");
             GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
             GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
             GameRegistry.registerBlock(pearcelMatterOre, "pearcelMatterOre");
+            GameRegistry.registerBlock(enderPearcelOre, "enderPearceOre");
         //Plants
             GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
             GameRegistry.registerBlock(blockLog, ItemLogBlocks.class, blockLog.getUnlocalizedName().substring(5));
