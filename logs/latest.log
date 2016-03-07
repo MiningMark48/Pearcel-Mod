@@ -1,74 +1,359 @@
-[18:01:04] [main/INFO]: Setting user: MiningMark48
-[18:01:07] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:01:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[18:01:17] [Sound Library Loader/INFO]: Sound engine started
-[18:01:18] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:01:18] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:01:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[18:01:19] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[18:01:22] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[18:01:23] [Sound Library Loader/INFO]: Sound engine started
-[18:01:45] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:01:45] [Server thread/INFO]: Generating keypair
-[18:01:45] [Server thread/INFO]: Converting map!
-[18:01:45] [Server thread/INFO]: Scanning folders...
-[18:01:45] [Server thread/INFO]: Total conversion count is 0
-[18:01:46] [Server thread/INFO]: Preparing start region for level 0
-[18:01:47] [Server thread/INFO]: Preparing spawn area: 8%
-[18:01:48] [Server thread/INFO]: Preparing spawn area: 25%
-[18:01:49] [Server thread/INFO]: Preparing spawn area: 44%
-[18:01:50] [Server thread/INFO]: Preparing spawn area: 64%
-[18:01:51] [Server thread/INFO]: Preparing spawn area: 80%
-[18:01:52] [Server thread/INFO]: Changing view distance to 4, from 10
-[18:01:53] [Server thread/INFO]: MiningMark48[local:E:57c60652] logged in with entity id 238 at (28.5, 65.0, 132.5)
-[18:01:53] [Server thread/INFO]: MiningMark48 joined the game
-[18:01:58] [Server thread/INFO]: Saving and pausing game...
-[18:01:58] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/Overworld
-[18:01:59] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/Nether
-[18:01:59] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/The End
-[18:02:15] [Server thread/INFO]: Saving and pausing game...
-[18:02:15] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/Overworld
-[18:02:15] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/Nether
-[18:02:15] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/The End
-[18:02:16] [Server thread/INFO]: Stopping server
-[18:02:16] [Server thread/INFO]: Saving players
-[18:02:16] [Server thread/INFO]: Saving worlds
-[18:02:16] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/Overworld
-[18:02:16] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/Nether
-[18:02:16] [Server thread/INFO]: Saving chunks for level 'Copy of Bonus'/The End
-[18:02:19] [Client thread/INFO]: Deleting level Bonus
-[18:02:19] [Client thread/INFO]: Attempt 1...
-[18:02:22] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:02:22] [Server thread/INFO]: Generating keypair
-[18:02:22] [Server thread/INFO]: Converting map!
-[18:02:22] [Server thread/INFO]: Scanning folders...
-[18:02:22] [Server thread/INFO]: Total conversion count is 0
-[18:02:22] [Server thread/INFO]: Preparing start region for level 0
-[18:02:23] [Server thread/INFO]: Preparing spawn area: 19%
-[18:02:24] [Server thread/INFO]: Preparing spawn area: 37%
-[18:02:25] [Server thread/INFO]: Preparing spawn area: 58%
-[18:02:26] [Server thread/INFO]: Preparing spawn area: 74%
-[18:02:27] [Server thread/INFO]: Preparing spawn area: 91%
-[18:02:28] [Server thread/INFO]: Changing view distance to 4, from 10
-[18:02:28] [Server thread/INFO]: MiningMark48[local:E:d316b3e2] logged in with entity id 3685 at (28.5, 65.0, 132.5)
-[18:02:28] [Server thread/INFO]: MiningMark48 joined the game
-[18:02:28] [Server thread/INFO]: Saving and pausing game...
-[18:02:28] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Overworld
-[18:02:30] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Nether
-[18:02:30] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/The End
-[18:02:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3299ms behind, skipping 65 tick(s)
-[18:02:45] [Server thread/INFO]: Saving and pausing game...
-[18:02:45] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Overworld
-[18:02:45] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Nether
-[18:02:45] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/The End
-[18:02:46] [Server thread/INFO]: Saving and pausing game...
-[18:02:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Overworld
-[18:02:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Nether
-[18:02:46] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/The End
-[18:02:47] [Server thread/INFO]: Stopping server
-[18:02:47] [Server thread/INFO]: Saving players
-[18:02:47] [Server thread/INFO]: Saving worlds
-[18:02:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Overworld
-[18:02:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/Nether
-[18:02:47] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Bonus'/The End
-[18:03:04] [Client thread/INFO]: Stopping!
+[18:44:55] [main/INFO]: Setting user: MiningMark48
+[18:44:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:45:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:45:07] [Sound Library Loader/INFO]: Sound engine started
+[18:45:08] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:45:08] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:45:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:45:08] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[18:45:12] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[18:45:13] [Sound Library Loader/INFO]: Sound engine started
+[18:50:11] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:50:11] [Server thread/INFO]: Generating keypair
+[18:50:11] [Server thread/INFO]: Preparing start region for level 0
+[18:50:12] [Server thread/INFO]: Changing view distance to 4, from 10
+[18:50:13] [Server thread/INFO]: MiningMark48[local:E:bc8f89c3] logged in with entity id 799 at (56.275082897332986, 4.0, 710.5064305774865)
+[18:50:13] [Server thread/INFO]: MiningMark48 joined the game
+[18:50:18] [Server thread/INFO]: Saving and pausing game...
+[18:50:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:50:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:50:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:50:18] [Server thread/INFO]: Stopping server
+[18:50:18] [Server thread/INFO]: Saving players
+[18:50:18] [Server thread/INFO]: Saving worlds
+[18:50:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:50:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:50:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:50:23] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:50:23] [Server thread/INFO]: Generating keypair
+[18:50:23] [Server thread/INFO]: Preparing start region for level 0
+[18:50:24] [Server thread/INFO]: Changing view distance to 4, from 10
+[18:50:24] [Server thread/INFO]: MiningMark48[local:E:c3ac847e] logged in with entity id 17952 at (59.94201270699125, 86.0, 59.012615040099234)
+[18:50:24] [Server thread/INFO]: MiningMark48 joined the game
+[18:50:24] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:24] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:24] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:24] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:25] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:25] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:25] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:25] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:26] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:26] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:26] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:26] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:26] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:26] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:26] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:26] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:26] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:26] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:26] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:26] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:27] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:27] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:27] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:27] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:27] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:27] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:27] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:27] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:28] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:28] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:28] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:28] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:28] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:28] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:28] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:28] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:28] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:28] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:28] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:28] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:29] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:29] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:29] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:29] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:29] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:29] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:29] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:29] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:29] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:29] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:29] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:29] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:30] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:30] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:30] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:30] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:30] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:30] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:30] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:30] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:30] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:30] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:30] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:30] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:31] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:31] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:31] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:31] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:31] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:31] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:31] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:31] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:32] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:32] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:32] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:32] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:32] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:33] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:33] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:33] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:33] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:33] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:33] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:33] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:33] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:34] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:34] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:34] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:34] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:34] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:34] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:34] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:34] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:34] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:34] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:34] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:34] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:35] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:35] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:35] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:35] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:35] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:35] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:35] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:35] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:36] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:36] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:36] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:36] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:36] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:36] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:36] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:36] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:36] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:36] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:36] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:36] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:37] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:37] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:37] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:37] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:37] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:37] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:37] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:37] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:37] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:37] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:37] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:37] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:38] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:38] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:38] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:38] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:38] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:38] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:38] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:38] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:38] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:38] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:38] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:38] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:39] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:39] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:39] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:39] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:39] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:39] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:39] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:39] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:40] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:40] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:40] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:40] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:40] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:40] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:40] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:40] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:41] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:41] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:41] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:41] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:41] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:41] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:41] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:41] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:42] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:42] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:42] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:42] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:42] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:42] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:42] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:42] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:42] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:42] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:42] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:42] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:43] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:43] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:43] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:43] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:43] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:43] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:43] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:43] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:43] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:43] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:43] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:43] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:44] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:44] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:44] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:44] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:44] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:44] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:44] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:44] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:44] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:44] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:44] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:44] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:45] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:45] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:45] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:45] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:45] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:45] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:45] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:45] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:46] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:46] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:46] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:46] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:46] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:46] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:46] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:46] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:46] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:46] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:46] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:46] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:47] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:47] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:47] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:47] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:47] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:47] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:47] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:47] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:48] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:48] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:48] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:48] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:48] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:48] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:48] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:48] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:48] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:48] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:48] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:48] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:49] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:49] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:49] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:49] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:49] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:49] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:49] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:49] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:49] [Server thread/INFO]: Saving and pausing game...
+[18:50:49] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
+[18:50:50] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
+[18:50:50] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
+[18:50:50] [Server thread/INFO]: Stopping server
+[18:50:50] [Server thread/INFO]: Saving players
+[18:50:50] [Server thread/INFO]: Saving worlds
+[18:50:50] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
+[18:50:50] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
+[18:50:50] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
+[18:50:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:50:52] [Server thread/INFO]: Generating keypair
+[18:50:52] [Server thread/INFO]: Preparing start region for level 0
+[18:50:53] [Server thread/INFO]: Changing view distance to 4, from 10
+[18:50:53] [Server thread/INFO]: MiningMark48[local:E:b0cf5edd] logged in with entity id 21571 at (72.15005034696566, 84.50000079788462, 66.25265232634443)
+[18:50:53] [Server thread/INFO]: MiningMark48 joined the game
+[18:50:53] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:53] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:53] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:53] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:54] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:54] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:54] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:54] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:54] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:54] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:54] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:54] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:55] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:55] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:55] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:55] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:55] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:55] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:55] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:55] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:55] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:55] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:55] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:55] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:56] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:56] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:56] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:56] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:56] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:56] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:56] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:56] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:57] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:57] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:57] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:57] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:57] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:57] [Server thread/INFO]: [@: Object successfully summoned]
+[18:50:57] [Server thread/WARN]: Skipping Entity with id PrimedTNT
+[18:50:57] [Server thread/INFO]: [@: Unable to summon object]
+[18:50:57] [Server thread/INFO]: Saving and pausing game...
+[18:50:57] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
+[18:50:57] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
+[18:50:57] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
+[18:50:57] [Server thread/INFO]: Stopping server
+[18:50:57] [Server thread/INFO]: Saving players
+[18:50:57] [Server thread/INFO]: Saving worlds
+[18:50:57] [Server thread/INFO]: Saving chunks for level 'World Gen'/Overworld
+[18:50:58] [Server thread/INFO]: Saving chunks for level 'World Gen'/Nether
+[18:50:58] [Server thread/INFO]: Saving chunks for level 'World Gen'/The End
+[18:50:58] [Client thread/INFO]: Stopping!
