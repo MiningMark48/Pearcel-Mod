@@ -9,6 +9,8 @@ public class BiomeGen {
 
     public static BiomeGenBase biomePearcel;
     public static int biomePearcelID = 100;
+    public static BiomeGenBase biomePDesert;
+    public static int biomePDesertID = 101;
 
     public static void init(){
         registerBiomes();
@@ -19,7 +21,19 @@ public class BiomeGen {
         BiomeDictionary.registerBiomeType(biomePearcel, BiomeDictionary.Type.PLAINS);
         BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biomePearcel, 10));
 
-        /*BiomeManager.removeSpawnBiome(BiomeGenBase.beach);
+        biomePDesert = new BiomePDesert(biomePDesertID).setBiomeName(StatCollector.translateToLocal("biome.pearcelDesert.name"));
+        BiomeDictionary.registerBiomeType(biomePDesert, BiomeDictionary.Type.HOT);
+        BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(biomePDesert, 10));
+
+        removeSpawnBiomes();
+
+        //BiomeManager.addSpawnBiome(biomePearcel);
+        BiomeManager.addSpawnBiome(biomePDesert);
+
+    }
+
+    private static void removeSpawnBiomes(){
+        BiomeManager.removeSpawnBiome(BiomeGenBase.beach);
         BiomeManager.removeSpawnBiome(BiomeGenBase.birchForest);
         BiomeManager.removeSpawnBiome(BiomeGenBase.birchForestHills);
         BiomeManager.removeSpawnBiome(BiomeGenBase.coldBeach);
@@ -57,10 +71,7 @@ public class BiomeGen {
         BiomeManager.removeSpawnBiome(BiomeGenBase.stoneBeach);
         BiomeManager.removeSpawnBiome(BiomeGenBase.swampland);
         BiomeManager.removeSpawnBiome(BiomeGenBase.taiga);
-        BiomeManager.removeSpawnBiome(BiomeGenBase.taigaHills);*/
-
-        BiomeManager.addSpawnBiome(biomePearcel);
-
+        BiomeManager.removeSpawnBiome(BiomeGenBase.taigaHills);
     }
 
 }

@@ -13,32 +13,26 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 
 import java.util.Random;
 
-public class BiomePearcel extends BiomeGenBase{
+public class BiomePDesert extends BiomeGenBase{
     private static final Height biomeHeight = new Height(0.1F, 0.2F);
     private WorldGenerator theWorldGenerator;
 
-    public BiomePearcel(int id) {
+    public BiomePDesert(int id) {
         super(id);
 
         this.setHeight(biomeHeight);
         this.setColor(65280);
-        this.setTemperatureRainfall(0.9F, 1.0F);
+        this.setTemperatureRainfall(1.5F, 0.0F);
         this.waterColorMultiplier = 1221450;
-        this.topBlock = Blocks.grass;
-        this.fillerBlock = ModBlocks.pearcelStone;
+        this.topBlock = ModBlocks.pearcelSand;
+        this.fillerBlock = Blocks.sandstone;
         theWorldGenerator = new WorldGenMinable(ModBlocks.pearcelOre, 10);
-        this.theBiomeDecorator.treesPerChunk = 1;
-        this.theBiomeDecorator.clayPerChunk = 2;
-        this.theBiomeDecorator.flowersPerChunk = 5;
-        this.enableRain = true;
+        theBiomeDecorator.cactiPerChunk = 2;
+        this.enableRain = false;
 
         this.spawnableCreatureList.clear();
-        this.spawnableCreatureList.add(new SpawnListEntry(EntityPearcelMob.class, 50, 2, 10));
-        this.spawnableCreatureList.add(new SpawnListEntry(EntityPearcelCow.class, 20, 2, 3));
         this.spawnableCaveCreatureList.clear();
-        this.spawnableCaveCreatureList.add(new SpawnListEntry(EntityPearson.class, 5, 1, 5));
         this.spawnableWaterCreatureList.clear();
-        this.spawnableWaterCreatureList.add(new SpawnListEntry(EntityPearcelSquid.class, 10, 1, 3));
     }
 
     @Override
