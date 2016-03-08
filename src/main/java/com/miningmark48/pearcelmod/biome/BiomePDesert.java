@@ -25,7 +25,7 @@ public class BiomePDesert extends BiomeGenBase{
         this.setTemperatureRainfall(1.5F, 0.0F);
         this.waterColorMultiplier = 1221450;
         this.topBlock = ModBlocks.pearcelSand;
-        this.fillerBlock = Blocks.sandstone;
+        this.fillerBlock = ModBlocks.pearcelSandstone;
         theWorldGenerator = new WorldGenMinable(ModBlocks.pearcelOre, 10);
         theBiomeDecorator.cactiPerChunk = 2;
         this.enableRain = false;

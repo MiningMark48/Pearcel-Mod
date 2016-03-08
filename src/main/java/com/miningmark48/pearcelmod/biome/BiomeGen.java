@@ -25,7 +25,7 @@ public class BiomeGen {
         BiomeDictionary.registerBiomeType(biomePDesert, BiomeDictionary.Type.HOT);
         BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(biomePDesert, 10));
 
-        //removeSpawnBiomes();
+        removeSpawnBiomes();
 
         BiomeManager.addSpawnBiome(biomePearcel);
         BiomeManager.addSpawnBiome(biomePDesert);
