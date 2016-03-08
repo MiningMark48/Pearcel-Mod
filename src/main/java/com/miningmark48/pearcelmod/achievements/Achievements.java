@@ -4,7 +4,6 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
 import net.minecraftforge.common.AchievementPage;
@@ -16,7 +15,6 @@ public class Achievements {
     public static Achievement achievementPearcelMatter;
     public static Achievement achievementPearcelStaff;
     public static Achievement achievementArmorPlating;
-    public static Achievement achievementFreeBeacon;
     public static Achievement achievementTorcher;
     public static Achievement achievementFlight;
     public static Achievement achievementSummon;
