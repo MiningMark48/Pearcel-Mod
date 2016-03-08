@@ -14,6 +14,8 @@ public class BiomeGen {
 
     public static void init(){
         registerBiomes();
+        //removeSpawnBiomes();
+        addCustomSpawnBiomes();
     }
 
     private static void registerBiomes() {
@@ -24,12 +26,11 @@ public class BiomeGen {
         biomePDesert = new BiomePDesert(biomePDesertID).setBiomeName(StatCollector.translateToLocal("biome.pearcelDesert.name"));
         BiomeDictionary.registerBiomeType(biomePDesert, BiomeDictionary.Type.HOT);
         BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(biomePDesert, 10));
+    }
 
-        removeSpawnBiomes();
-
+    private static void addCustomSpawnBiomes(){
         BiomeManager.addSpawnBiome(biomePearcel);
         BiomeManager.addSpawnBiome(biomePDesert);
-
     }
 
     private static void removeSpawnBiomes(){

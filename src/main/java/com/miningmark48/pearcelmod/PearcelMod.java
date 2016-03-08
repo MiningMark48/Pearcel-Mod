@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.event.EventCraftingTable;
 import com.miningmark48.pearcelmod.event.EventFillBucket;
 import com.miningmark48.pearcelmod.event.EventFlight;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.handler.TradeHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.ClientProxy;
@@ -22,6 +23,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.VillagerRegistry;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -47,6 +49,10 @@ public class PearcelMod {
         EntityPearcelMod.init();
         BiomeGen.init();
         DungeonLoot.init();
+
+        for (int i = 0; i < 5; ++i) {
+            VillagerRegistry.instance().registerVillageTradeHandler(i, new TradeHandler());
+        }
 
         proxy.registerRenderThings();
 
