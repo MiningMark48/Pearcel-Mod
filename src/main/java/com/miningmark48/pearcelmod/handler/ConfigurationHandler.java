@@ -16,7 +16,6 @@ public class ConfigurationHandler {
 
     public static boolean useFlightItemParticle;
     public static boolean specialDice;
-    public static boolean flightItemExhaustion;
     public static boolean flightItemDisable;
     public static boolean craftingTables;
     public static int torcherRange;
@@ -50,9 +49,8 @@ public class ConfigurationHandler {
     private static void loadConfiguration(){
 
         useFlightItemParticle = configuration.getBoolean(StatCollector.translateToLocal("config.useFlightItemParticle.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useFlightItemParticle.desc"));
-        flightItemExhaustion = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemExhaustion.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemExhaustion.desc"));
         specialDice = configuration.getBoolean(StatCollector.translateToLocal("config.specialDice.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.specialDice.desc"));
-        flightItemDisable = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemDisable.title"), Configuration.CATEGORY_GENERAL, false, StatCollector.translateToLocal("config.flightItemDisable.desc"));
+        flightItemDisable = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemDisable.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemDisable.desc"));
         craftingTables = configuration.getBoolean(StatCollector.translateToLocal("config.craftingTables.title"), Configuration.CATEGORY_GENERAL, false, StatCollector.translateToLocal("config.craftingTables.desc"));
         torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, 500, StatCollector.translateToLocal("config.torcherRange.desc"));
         torcherFrequency = configuration.getInt(StatCollector.translateToLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 50, 2, StatCollector.translateToLocal("config.torcherFrequency.desc"));

@@ -1,49 +1,61 @@
-[17:47:11] [main/INFO]: Setting user: MiningMark48
-[17:47:14] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:47:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[17:47:26] [Sound Library Loader/INFO]: Sound engine started
-[17:47:28] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[17:47:28] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[17:47:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[17:47:29] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[17:47:33] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[17:47:33] [Sound Library Loader/INFO]: Sound engine started
-[17:48:22] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:48:22] [Server thread/INFO]: Generating keypair
-[17:48:22] [Server thread/INFO]: Preparing start region for level 0
-[17:48:24] [Server thread/INFO]: Changing view distance to 4, from 10
-[17:48:24] [Server thread/INFO]: MiningMark48[local:E:77d1bfbc] logged in with entity id 428 at (105.14775087316507, 64.0, 262.23213174447375)
-[17:48:24] [Server thread/INFO]: MiningMark48 joined the game
-[17:48:34] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
-[17:48:34] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[17:48:58] [Server thread/INFO]: [MiningMark48: Given [Pearcel Cloud [WIP]] * 1 to MiningMark48]
-[17:48:58] [Client thread/INFO]: [CHAT] Given [Pearcel Cloud [WIP]] * 1 to MiningMark48
-[17:50:03] [Client thread/INFO]: [CHAT] The number you have entered (1.00000000021715E12) is too big, it must be at most 30000000
-[17:50:05] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 1067.9946125331578,71.33128470611899,1217.1499757923368]
-[17:50:05] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 1067.9946125331578,71.33128470611899,1217.1499757923368
-[17:50:21] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 2159.756842469801,91.17796278614482,2272.9365588526866]
-[17:50:21] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 2159.756842469801,91.17796278614482,2272.9365588526866
-[17:50:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2627ms behind, skipping 52 tick(s)
-[17:50:37] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 3130.270214818401,103.91851494641554,12298.619217951044]
-[17:50:37] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 3130.270214818401,103.91851494641554,12298.619217951044
-[17:50:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2871ms behind, skipping 57 tick(s)
-[17:51:22] [Server thread/WARN]: Fetching addPacket for removed entity
-[17:52:52] [Server thread/INFO]: [MiningMark48: Given [Pearcel Pickaxe] * 1 to MiningMark48]
-[17:52:52] [Client thread/INFO]: [CHAT] Given [Pearcel Pickaxe] * 1 to MiningMark48
-[17:53:13] [Server thread/INFO]: [MiningMark48: Given [Charged Pearcel Sword] * 1 to MiningMark48]
-[17:53:13] [Client thread/INFO]: [CHAT] Given [Charged Pearcel Sword] * 1 to MiningMark48
-[17:53:25] [Server thread/INFO]: [MiningMark48: Given [Pearcel Torch] * 64 to MiningMark48]
-[17:53:25] [Client thread/INFO]: [CHAT] Given [Pearcel Torch] * 64 to MiningMark48
-[17:53:41] [Server thread/INFO]: [MiningMark48: Given [Pearcel Shovel] * 1 to MiningMark48]
-[17:53:41] [Client thread/INFO]: [CHAT] Given [Pearcel Shovel] * 1 to MiningMark48
-[17:54:31] [Server thread/INFO]: Saving and pausing game...
-[17:54:31] [Server thread/INFO]: Saving chunks for level 'dwwwwwwwwwwwwwwwwwwwwww'/Overworld
-[17:54:31] [Server thread/INFO]: Saving chunks for level 'dwwwwwwwwwwwwwwwwwwwwww'/Nether
-[17:54:31] [Server thread/INFO]: Saving chunks for level 'dwwwwwwwwwwwwwwwwwwwwww'/The End
-[17:54:31] [Server thread/INFO]: Stopping server
-[17:54:31] [Server thread/INFO]: Saving players
-[17:54:31] [Server thread/INFO]: Saving worlds
-[17:54:31] [Server thread/INFO]: Saving chunks for level 'dwwwwwwwwwwwwwwwwwwwwww'/Overworld
-[17:54:31] [Server thread/INFO]: Saving chunks for level 'dwwwwwwwwwwwwwwwwwwwwww'/Nether
-[17:54:31] [Server thread/INFO]: Saving chunks for level 'dwwwwwwwwwwwwwwwwwwwwww'/The End
-[17:54:33] [Client thread/INFO]: Stopping!
+[17:47:15] [main/INFO]: Logging in with username & password
+[17:47:23] [main/INFO]: Setting user: MiningMark48
+[17:47:26] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:47:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFil[17:47:38] [Server thread/INFO]: Loading properties
+[17:47:38] [Server thread/INFO]: Default game type: SURVIVAL
+[17:47:38] [Server thread/INFO]: Generating keypair
+[17:47:39] [Server thread/INFO]: S[17:47:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:47:40] [Client threa[17:47:40] [Server thread/INFO]: Preparing sta[17:47:40] [Client thre[17:47:41] [Server thread/INFO]: Preparing spawn area: 26%
+[17:47:42] [Server thread/INFO]: Done (2.467s)! For help, type "help" or "?"
+[17:48:38] [User Authenticator #1/INFO]: UUID of player MiningMark48 is 21ce20ed-aa76-4b45-b952-a15a579bd413
+[17:48:39] [Server thread/INFO]: MiningMark48[/127.0.0.1:58747] logged in with entity id 568 at (167.24770186539374, 82.0, 267.865577334273)
+[17:48:39] [Server thread/INFO]: MiningMark48 joined the game
+[17:49:31] [Server thread/INFO]: [MiningMark48: Given [Summoner's Activation Pearcel] * 1 to MiningMark48]
+[17:49:57] [Server thread/INFO]: MiningMark48 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[17:49:57] [Server thread/INFO]: MiningMark48 left the game
+[17:50:54] [Server thread/INFO]: Stopping the server
+[17:50:54] [Server thread/INFO]: Stopping server
+[17:50:54] [Server thread/INFO]: Saving players
+[17:50:54] [Server thread/INFO]: Saving worlds
+[17:50:54] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[17:50:54] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[17:50:54] [Server thread/INFO]: Saving chunks for level 'world'/The End
+CHAT] §4Missing block required for summoning activation!
+[17:49:09] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:09] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:09] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:09] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:10] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:10] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:10] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:10] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:12] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:12] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:12] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:14] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:14] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:14] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:14] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:16] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:19] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
+[17:49:26] [Client thread/INFO]: Warning: Clientside chunk ticking took 162 ms
+[17:49:31] [Client thread/INFO]: [CHAT] Given [Summoner's Activation Pearcel] * 1 to MiningMark48
+[17:49:33] [Client thread/INFO]: [CHAT] §6Sheep was successfully summoned.
+[17:49:38] [Client thread/INFO]: Warning: Clientside chunk ticking took 179 ms
+[17:49:45] [Client thread/INFO]: [CHAT] You are now playing creative
+[17:49:46] [Client thread/INFO]: [CHAT] You are now playing creative+
+[17:49:53] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:53] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:54] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:54] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:55] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:55] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:55] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:55] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:55] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:56] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:56] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:56] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:56] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:49:56] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
+[17:50:00] [Client thread/INFO]: Stopping!
