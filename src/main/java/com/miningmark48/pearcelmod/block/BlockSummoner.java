@@ -84,7 +84,7 @@ public class BlockSummoner extends BlockPearcelMod{
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearcelmob") + " " + StatCollector.translateToLocal("summoner.summoned")));
                     }
                     //Pearson
-                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelGlass) { //TODO: Change this to something else
+                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelEndStone) { //TODO: Change this to something else
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(pearson);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearson") + " " + StatCollector.translateToLocal("summoner.summoned")));
@@ -168,12 +168,6 @@ public class BlockSummoner extends BlockPearcelMod{
                             }
                             player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.creeper.charged")));
                         }
-                    }
-                    //Ender Crystal
-                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelEndStone) {
-                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                        world.spawnEntityInWorld(endcrystal);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.endercrystal") + " " + StatCollector.translateToLocal("summoner.summoned")));
                     }
                     //Horse
                     else if (world.getBlock(x, y + 1, z) == Blocks.hay_block) {
