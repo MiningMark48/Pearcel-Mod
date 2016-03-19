@@ -9,6 +9,7 @@ import com.miningmark48.pearcelmod.model.ModelPearson;
 import com.miningmark48.pearcelmod.renderer.*;
 import com.miningmark48.pearcelmod.tileentity.TileEntityIVET;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
+import com.miningmark48.pearcelmod.tileentity.TileEntityTorcher;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.model.ModelCow;
@@ -41,6 +42,10 @@ public class ClientProxy extends CommonProxy{
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.ivet), new RenderItemIVET());
         //TNT
         RenderingRegistry.registerEntityRenderingHandler(EntityPTNT.class, new RenderPTNT());
+        //Torcher
+        TileEntitySpecialRenderer renderTorcher = new RenderTorcher();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTorcher.class, renderTorcher);
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.torcher), new RenderItemTorcher());
     //Items
         MinecraftForgeClient.registerItemRenderer(ModItems.pearcelStaff, new RenderItemPearcelStaff());
         //MinecraftForgeClient.registerItemRenderer(ModItems.pearcel, new RenderItemPearcel());
