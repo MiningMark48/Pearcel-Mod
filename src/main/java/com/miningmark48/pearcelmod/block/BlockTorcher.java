@@ -61,7 +61,9 @@ public class BlockTorcher extends BlockContainer{
             int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
 
             if (world.getBlock(x, y-1, z).getMaterial().isSolid()){
-                world.setBlock(x, y, z, Blocks.torch);
+                world.setBlock(x, y, z, ModBlocks.pearcelTorch);
+            }else{
+                world.setBlock(x, y, z, Blocks.air);
             }
             for (int i = 1; i <= rangeRand * ConfigurationHandler.torcherFrequency; i++){
                 rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
@@ -104,7 +106,7 @@ public class BlockTorcher extends BlockContainer{
                 }
                 if (world.getBlock(torchX, torchY, torchZ) == Blocks.air || world.getBlock(torchX, torchY, torchZ) == Blocks.tallgrass){
                     if (world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
-                        world.setBlock(torchX, torchY, torchZ, Blocks.torch);
+                        world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
                     }
                 }
             }
