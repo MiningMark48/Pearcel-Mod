@@ -29,6 +29,7 @@ public class BlockIVET extends BlockContainer{
 
     public BlockIVET(Material material) {
         super(material);
+        this.setBlockBounds(0.125F, 0.0F, 0.125F, 0.875F, 0.75F, 0.875F);
     }
 
     public int getRenderType(){
