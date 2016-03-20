@@ -33,7 +33,7 @@ public class Achievements {
         //Creates Achievement Page
         AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{achievementPearcelSword, achievementPearcelOre, achievementPearcelMatter, achievementPearcelStaff, achievementArmorPlating, achievementTorcher, achievementFlight, achievementSummon}));
 
-        //Register Achievements
+        //Register Achievements (Events)
         FMLCommonHandler.instance().bus().register(new CraftPearcelSword());
         FMLCommonHandler.instance().bus().register(new FindPearcelOre());
         FMLCommonHandler.instance().bus().register(new CraftPearcelMatter());
