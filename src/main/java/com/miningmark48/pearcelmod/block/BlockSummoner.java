@@ -32,7 +32,7 @@ public class BlockSummoner extends BlockPearcelMod{
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
 
         Random rand = new Random();
-        int spawnRand = rand.nextInt(ConfigurationHandler.summonerRange) + 1;
+        int spawnRand = rand.nextInt(5) + 1;
         int negRand = rand.nextInt(2) + 1;
         if (negRand == 1) {
             spawnRand = -spawnRand;

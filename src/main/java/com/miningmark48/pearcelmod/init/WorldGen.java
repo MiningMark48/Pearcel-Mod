@@ -34,7 +34,7 @@ public class WorldGen implements IWorldGenerator{
     private void generateNether(World world, Random rand, int x, int z)
     {
         generateOre(ModBlocks.netherPearcelOre, world, rand, x, z, 3, 6, 10, 0, 60, Blocks.netherrack);
-        generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 2, 0, 60, Blocks.netherrack);
+        generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 20, 0, 60, Blocks.netherrack);
     }
 
     private void generateSurface(World world, Random rand, int x, int z)
@@ -50,8 +50,9 @@ public class WorldGen implements IWorldGenerator{
 
     private void generateEnd(World world, Random rand, int x, int z)
     {
-        generateOre(ModBlocks.pearcelEndStone, world, rand, x, z, 2, 10, 5, 0, 60, Blocks.end_stone);
+        generateOre(ModBlocks.pearcelEndStone, world, rand, x, z, 2, 10, 15, 0, 60, Blocks.end_stone);
         generateOre(ModBlocks.enderPearcelOre, world, rand, x, z, 3, 12, 10, 0, 60, Blocks.end_stone);
+        generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 20, 0, 60, Blocks.end_stone);
     }
 
     /*
