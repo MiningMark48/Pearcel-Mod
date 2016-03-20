@@ -27,7 +27,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSeeds, 1), new ItemStack(ModItems.pearcel));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelJuiceBottle), new ItemStack(Items.glass_bottle), new ItemStack(ModItems.pearcelJuice));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSeeds, 4), new ItemStack(ModItems.pearcelIngot), new ItemStack(Items.wheat_seeds));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStick, 4), "x", "x", 'x', new ItemStack(ModItems.pearcel));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStick, 6), "x", "x", 'x', new ItemStack(ModItems.pearcel));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelStick, 4), "x", "x", 'x', new ItemStack(ModBlocks.pearcelPlanks));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelFlour, 6), "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.bread));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelBread, 3), "xxx", 'x', new ItemStack(ModItems.pearcelFlour));

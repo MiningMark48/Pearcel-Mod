@@ -70,6 +70,7 @@ public class PearcelMod {
         FMLCommonHandler.instance().bus().register(new EventFlight());
         MinecraftForge.EVENT_BUS.register(new EventCraftingTable());
 
+        OreDict.init();
         Recipes.init();
         Achievements.init();
         LogHelper.info(StatCollector.translateToLocal( "log.info.init"));
