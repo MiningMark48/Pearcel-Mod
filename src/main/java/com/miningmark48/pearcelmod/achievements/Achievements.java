@@ -18,12 +18,14 @@ public class Achievements {
     public static Achievement achievementTorcher;
     public static Achievement achievementFlight;
     public static Achievement achievementSummon;
+    public static Achievement achievementIVET;
 
     public static void init(){
         //Creates a new achievement
         achievementPearcelSword = new Achievement("achievement.craftPearcelSword", "craftPearcelSword", 0, 0, new ItemStack(ModItems.pearcelSword), (Achievement)null).initIndependentStat().registerStat();
         achievementPearcelOre = new Achievement("achievement.findPearcelOre", "findPearcelOre", 2, 0, new ItemStack(ModBlocks.pearcelOre), (Achievement)null).initIndependentStat().registerStat();
-        achievementPearcelMatter = new Achievement("achievement.craftPearcelMatter", "craftPearcelMatter", 4, 0, new ItemStack(ModItems.pearcelMatter), (Achievement)null).initIndependentStat().registerStat();
+        achievementIVET = new Achievement("achievement.ivet", "ivet", 4, -2, new ItemStack(ModBlocks.ivet), (Achievement)null).initIndependentStat().registerStat();
+        achievementPearcelMatter = new Achievement("achievement.craftPearcelMatter", "craftPearcelMatter", 4, 0, new ItemStack(ModItems.pearcelMatter), achievementIVET).registerStat();
         achievementPearcelStaff = new Achievement("achievement.craftPearcelStaff", "craftPearcelStaff", 4, 2, new ItemStack(ModItems.pearcelStaff), achievementPearcelMatter).registerStat();
         achievementArmorPlating = new Achievement("achievement.craftArmorPlating", "craftArmorPlating", 0, 4, new ItemStack(ModItems.armorPlating), (Achievement)null).initIndependentStat().registerStat();
         achievementTorcher = new Achievement("achievement.useTorcher", "useTorcher", 0, 2, new ItemStack(ModBlocks.torcher), (Achievement)null).initIndependentStat().registerStat();
@@ -31,11 +33,22 @@ public class Achievements {
         achievementSummon = new Achievement("achievement.summon", "summon", 2, 2, new ItemStack(ModBlocks.summoner), (Achievement)null).initIndependentStat().registerStat();
 
         //Creates Achievement Page
-        AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{achievementPearcelSword, achievementPearcelOre, achievementPearcelMatter, achievementPearcelStaff, achievementArmorPlating, achievementTorcher, achievementFlight, achievementSummon}));
+        AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{
+                achievementPearcelSword,
+                achievementPearcelOre,
+                achievementPearcelMatter,
+                achievementPearcelStaff,
+                achievementArmorPlating,
+                achievementTorcher,
+                achievementFlight,
+                achievementSummon,
+                achievementIVET
+        }));
 
         //Register Achievements (Events)
         FMLCommonHandler.instance().bus().register(new CraftPearcelSword());
         FMLCommonHandler.instance().bus().register(new FindPearcelOre());
+        FMLCommonHandler.instance().bus().register(new CraftIVET());
         FMLCommonHandler.instance().bus().register(new CraftPearcelMatter());
         FMLCommonHandler.instance().bus().register(new CraftPearcelStaff());
         FMLCommonHandler.instance().bus().register(new CraftArmorPlating());
