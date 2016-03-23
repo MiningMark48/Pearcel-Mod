@@ -18,13 +18,13 @@ public class ConfigurationHandler {
     public static boolean specialDice;
     public static boolean flightItemDisable;
     public static boolean craftingTables;
+    public static boolean doSpecialWorldGen;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int sapDurability;
     public static int maxStaffFlyHeight;
     public static int minPearcelLightning;
     public static int maxPearcelLightning;
-
 
     public static void init(File configFile){
 
@@ -51,6 +51,7 @@ public class ConfigurationHandler {
         specialDice = configuration.getBoolean(StatCollector.translateToLocal("config.specialDice.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.specialDice.desc"));
         flightItemDisable = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemDisable.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemDisable.desc"));
         craftingTables = configuration.getBoolean(StatCollector.translateToLocal("config.craftingTables.title"), Configuration.CATEGORY_GENERAL, false, StatCollector.translateToLocal("config.craftingTables.desc"));
+        doSpecialWorldGen = configuration.getBoolean(StatCollector.translateToLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.doSpecialWorldGen.desc"));
         torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, 500, StatCollector.translateToLocal("config.torcherRange.desc"));
         torcherFrequency = configuration.getInt(StatCollector.translateToLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 50, 2, StatCollector.translateToLocal("config.torcherFrequency.desc"));
         sapDurability = configuration.getInt(StatCollector.translateToLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 32, 1, 2048, StatCollector.translateToLocal("config.sapDurability.desc"));

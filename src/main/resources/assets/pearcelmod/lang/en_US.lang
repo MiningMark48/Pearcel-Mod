@@ -159,6 +159,8 @@ config.maxPearcelLightning.title=Max. Lightning Range
 config.maxPearcelLightning.desc=Maximum range for the Charged Pearcel Sword's Lightning
 config.craftingTables.title=Disable Crafting Tables
 config.craftingTables.desc=Prevents vanilla crafting tables and the Pearcel Workbench from working.
+config.doSpecialWorldGen.title=Do Special World Gen?
+config.doSpecialWorldGen.desc=Should there be special world gen like Pearcel Stone and Pearcel Sand?
 
 gui.ivet.name=IVET
 gui.pearcelWorkbench.name=Pearcel Workbench
