@@ -70,7 +70,7 @@ public class ModBlocks {
             GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
             GameRegistry.registerBlock(pearcelMatterBlock, "pearcelMatterBlock");
             GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
-            GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
+            //GameRegistry.registerBlock(pearcelPortal, "pearcelPortal");
             GameRegistry.registerBlock(torcher, "torcher");
             GameRegistry.registerBlock(summoner, "summoner");
             GameRegistry.registerBlock(dragonInfusedPearcel, "dragonInfusedPearcel");
