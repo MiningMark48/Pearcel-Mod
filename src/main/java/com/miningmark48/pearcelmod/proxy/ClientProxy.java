@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.proxy;
 
 import com.miningmark48.pearcelmod.entity.EntityPTNT;
+import com.miningmark48.pearcelmod.entity.EntityPearcelPearl;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.mob.*;
@@ -48,6 +49,8 @@ public class ClientProxy extends CommonProxy{
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.torcher), new RenderItemTorcher());
     //Items
         MinecraftForgeClient.registerItemRenderer(ModItems.pearcelStaff, new RenderItemPearcelStaff());
+        RenderingRegistry.registerEntityRenderingHandler(EntityPearcelPearl.class, new RenderPearcelPearl(ModItems.pearcelPearl));
+
         //MinecraftForgeClient.registerItemRenderer(ModItems.pearcel, new RenderItemPearcel());
     }
     //Armor

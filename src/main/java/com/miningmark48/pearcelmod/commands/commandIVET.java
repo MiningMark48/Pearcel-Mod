@@ -1,7 +1,10 @@
 package com.miningmark48.pearcelmod.commands;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
