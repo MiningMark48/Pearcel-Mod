@@ -98,6 +98,7 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.dye, 1, 3), Blocks.lapis_ore);
         this.addShapelessRecipe(new ItemStack(ModItems.pearcel), ModBlocks.pearcelOre);
         this.addShapelessRecipe(new ItemStack(ModItems.pearcel, 2), ModBlocks.netherPearcelOre);
+        this.addShapelessRecipe(new ItemStack(ModItems.pearcelPearl), Items.ender_pearl);
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
     }

@@ -1,165 +1,125 @@
-[00:04:14] [main/INFO]: Setting user: MiningMark48
-[00:04:16] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:04:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[00:04:25] [Sound Library Loader/INFO]: Sound engine started
-[00:04:26] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[00:04:26] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[00:04:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[00:04:27] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[00:04:30] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[00:04:31] [Sound Library Loader/INFO]: Sound engine started
-[00:04:36] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:04:36] [Server thread/INFO]: Generating keypair
-[00:04:37] [Server thread/INFO]: Preparing start region for level 0
-[00:04:37] [Server thread/INFO]: Changing view distance to 4, from 10
-[00:04:38] [Server thread/INFO]: MiningMark48[local:E:9c9a3b63] logged in with entity id 937 at (40.03543670768511, 4.0, 712.2168294865479)
-[00:04:38] [Server thread/INFO]: MiningMark48 joined the game
-[00:04:57] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-03-25_00.04.57.png
-[00:04:59] [Server thread/INFO]: Saving and pausing game...
-[00:04:59] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:04:59] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:04:59] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:05:01] [Client thread/ERROR]: Couldn't open link
-java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.client.gui.GuiChat.func_146407_a(GuiChat.java:303) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiChat.mouseClicked(GuiChat.java:245) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:344) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiChat.handleMouseInput(GuiChat.java:169) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:313) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1731) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-Caused by: java.io.IOException: Failed to open file:/C:/Users/Mark/Desktop/Mark's%20Stuff/Minecraft%20Mods/Pearcel-Mod/./screenshots/2016-03-25_00.04.57.png. Error message: The system cannot find the file specified.
-
-	at sun.awt.windows.WDesktopPeer.ShellExecute(WDesktopPeer.java:84) ~[?:1.7.0_79]
-	at sun.awt.windows.WDesktopPeer.browse(WDesktopPeer.java:70) ~[?:1.7.0_79]
-	at java.awt.Desktop.browse(Desktop.java:386) ~[?:1.7.0_79]
-	... 21 more
-[00:05:01] [Client thread/ERROR]: Couldn't open link
-java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.client.gui.GuiChat.func_146407_a(GuiChat.java:303) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiChat.mouseClicked(GuiChat.java:245) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:344) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiChat.handleMouseInput(GuiChat.java:169) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:313) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1731) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-Caused by: java.io.IOException: Failed to open file:/C:/Users/Mark/Desktop/Mark's%20Stuff/Minecraft%20Mods/Pearcel-Mod/./screenshots/2016-03-25_00.04.57.png. Error message: The system cannot find the file specified.
-
-	at sun.awt.windows.WDesktopPeer.ShellExecute(WDesktopPeer.java:84) ~[?:1.7.0_79]
-	at sun.awt.windows.WDesktopPeer.browse(WDesktopPeer.java:70) ~[?:1.7.0_79]
-	at java.awt.Desktop.browse(Desktop.java:386) ~[?:1.7.0_79]
-	... 21 more
-[00:05:01] [Client thread/ERROR]: Couldn't open link
-java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.client.gui.GuiChat.func_146407_a(GuiChat.java:303) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiChat.mouseClicked(GuiChat.java:245) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:344) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiChat.handleMouseInput(GuiChat.java:169) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:313) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1731) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-Caused by: java.io.IOException: Failed to open file:/C:/Users/Mark/Desktop/Mark's%20Stuff/Minecraft%20Mods/Pearcel-Mod/./screenshots/2016-03-25_00.04.57.png. Error message: The system cannot find the file specified.
-
-	at sun.awt.windows.WDesktopPeer.ShellExecute(WDesktopPeer.java:84) ~[?:1.7.0_79]
-	at sun.awt.windows.WDesktopPeer.browse(WDesktopPeer.java:70) ~[?:1.7.0_79]
-	at java.awt.Desktop.browse(Desktop.java:386) ~[?:1.7.0_79]
-	... 21 more
-[00:05:02] [Client thread/ERROR]: Couldn't open link
-java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.client.gui.GuiChat.func_146407_a(GuiChat.java:303) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiChat.mouseClicked(GuiChat.java:245) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:344) [GuiScreen.class:?]
-	at net.minecraft.client.gui.GuiChat.handleMouseInput(GuiChat.java:169) [GuiChat.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:313) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1731) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_79]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_79]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_79]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_79]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-Caused by: java.io.IOException: Failed to open file:/C:/Users/Mark/Desktop/Mark's%20Stuff/Minecraft%20Mods/Pearcel-Mod/./screenshots/2016-03-25_00.04.57.png. Error message: The system cannot find the file specified.
-
-	at sun.awt.windows.WDesktopPeer.ShellExecute(WDesktopPeer.java:84) ~[?:1.7.0_79]
-	at sun.awt.windows.WDesktopPeer.browse(WDesktopPeer.java:70) ~[?:1.7.0_79]
-	at java.awt.Desktop.browse(Desktop.java:386) ~[?:1.7.0_79]
-	... 21 more
-[00:06:15] [Server thread/INFO]: Saving and pausing game...
-[00:06:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:06:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:06:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:07:34] [Server thread/INFO]: Saving and pausing game...
-[00:07:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:07:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:07:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:07:50] [Server thread/INFO]: MiningMark48 fell out of the world
-[00:07:50] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
-[00:07:50] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[00:08:17] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 15.053952775086183,54.0,682.5243170445187]
-[00:08:17] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 15.053952775086183,54.0,682.5243170445187
-[00:08:23] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
-[00:08:23] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[00:08:28] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 23.93535675129588,54.0,715.8753526081513]
-[00:08:28] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 23.93535675129588,54.0,715.8753526081513
-[00:12:03] [Server thread/INFO]: Saving and pausing game...
-[00:12:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:12:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:12:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:12:04] [Server thread/INFO]: Stopping server
-[00:12:04] [Server thread/INFO]: Saving players
-[00:12:04] [Server thread/INFO]: Saving worlds
-[00:12:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:12:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:12:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:12:05] [Client thread/INFO]: Stopping!
+[00:30:46] [main/INFO]: Setting user: MiningMark48
+[00:30:48] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:30:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[00:30:58] [Sound Library Loader/INFO]: Sound engine started
+[00:30:59] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[00:30:59] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[00:31:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[00:31:00] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[00:31:04] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[00:31:05] [Sound Library Loader/INFO]: Sound engine started
+[00:31:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[00:31:15] [Server thread/INFO]: Generating keypair
+[00:31:16] [Server thread/INFO]: Preparing start region for level 0
+[00:31:17] [Server thread/INFO]: Changing view distance to 4, from 10
+[00:31:17] [Server thread/INFO]: MiningMark48[local:E:afd8bf85] logged in with entity id 627 at (103.81516309987683, 4.0, 1240.055879735291)
+[00:31:17] [Server thread/INFO]: MiningMark48 joined the game
+[00:31:24] [Server thread/INFO]: Saving and pausing game...
+[00:31:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:31:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:31:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:31:41] [Server thread/INFO]: MiningMark48 fell out of the world
+[00:31:41] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[00:31:41] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[00:31:49] [Server thread/INFO]: [MiningMark48: Given [PCP] * 1 to MiningMark48]
+[00:31:49] [Client thread/INFO]: [CHAT] Given [PCP] * 1 to MiningMark48
+[00:31:54] [Server thread/INFO]: [MiningMark48: Given [Ender Pearl] * 16 to MiningMark48]
+[00:31:54] [Client thread/INFO]: [CHAT] Given [Ender Pearl] * 16 to MiningMark48
+[00:32:04] [Server thread/INFO]: [MiningMark48: Given [Pearcel] * 64 to MiningMark48]
+[00:32:04] [Client thread/INFO]: [CHAT] Given [Pearcel] * 64 to MiningMark48
+[00:32:12] [Server thread/INFO]: [MiningMark48: Given [Tier 3 Crafting Component] * 64 to MiningMark48]
+[00:32:12] [Client thread/INFO]: [CHAT] Given [Tier 3 Crafting Component] * 64 to MiningMark48
+[00:33:14] [Server thread/INFO]: MiningMark48 fell out of the world
+[00:33:14] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[00:33:14] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[00:33:29] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 30.391556434986764,4.0,100693.08463734435]
+[00:33:29] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 30.391556434986764,4.0,100693.08463734435
+[00:33:34] [Server thread/INFO]: MiningMark48 fell out of the world
+[00:33:34] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[00:33:34] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[00:33:42] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 35.071742333237395,4.0,100723.20836946357]
+[00:33:42] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 35.071742333237395,4.0,100723.20836946357
+[00:34:44] [Server thread/INFO]: Saving and pausing game...
+[00:34:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:34:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:34:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:35:02] [Server thread/INFO]: Saving and pausing game...
+[00:35:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:35:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:35:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:36:07] [Server thread/INFO]: Saving and pausing game...
+[00:36:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:36:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:36:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:37:28] [Server thread/INFO]: Saving and pausing game...
+[00:37:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:37:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:37:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:38:24] [Server thread/INFO]: MiningMark48 fell out of the world
+[00:38:24] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[00:38:24] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[00:38:35] [Server thread/INFO]: Saving and pausing game...
+[00:38:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:38:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:38:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:39:11] [Server thread/INFO]: Saving and pausing game...
+[00:39:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:39:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:39:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:39:16] [Server thread/INFO]: Saving and pausing game...
+[00:39:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:39:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:39:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:39:19] [Server thread/INFO]: Saving and pausing game...
+[00:39:19] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:39:19] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:39:19] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:39:29] [Server thread/INFO]: Saving and pausing game...
+[00:39:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:39:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:39:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:40:13] [Server thread/INFO]: Saving and pausing game...
+[00:40:13] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:40:13] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:40:13] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:40:22] [Server thread/INFO]: MiningMark48 fell out of the world
+[00:40:22] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[00:40:22] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[00:40:28] [Server thread/INFO]: Saving and pausing game...
+[00:40:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:40:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:40:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:41:11] [Server thread/INFO]: Saving and pausing game...
+[00:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:41:37] [Server thread/INFO]: Saving and pausing game...
+[00:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:42:14] [Server thread/INFO]: Saving and pausing game...
+[00:42:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:42:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:42:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:42:39] [Server thread/INFO]: Saving and pausing game...
+[00:42:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:42:39] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:42:39] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:43:51] [Client thread/INFO]: [CHAT] The number you have entered (1.000000680010437E9) is too big, it must be at most 30000000
+[00:43:57] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to -1340.8386536479645,4.0,10680.01043705938]
+[00:43:57] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to -1340.8386536479645,4.0,10680.01043705938
+[00:44:37] [Server thread/INFO]: Saving and pausing game...
+[00:44:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:44:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:44:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:45:09] [Server thread/INFO]: Saving and pausing game...
+[00:45:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:45:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:45:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:45:09] [Server thread/INFO]: Stopping server
+[00:45:09] [Server thread/INFO]: Saving players
+[00:45:09] [Server thread/INFO]: Saving worlds
+[00:45:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:45:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:45:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:45:11] [Client thread/INFO]: Stopping!

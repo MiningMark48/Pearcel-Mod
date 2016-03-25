@@ -64,6 +64,7 @@ public class Recipes {
         //GameRegistry.addRecipe(new ItemStack(ModItems.flightItem), "aba", "cdc", "aba", 'a', new ItemStack(ModItems.pearcel), 'b', new ItemStack(Items.feather), 'c', new ItemStack(ModItems.pearcelMatter), 'd', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.chargedPearcelSword), "xzx", "zyz", "xzx", 'x', new ItemStack(Blocks.redstone_block), 'y', new ItemStack(ModItems.pearcelSword), 'z', new ItemStack(ModItems.pearcelIngot));
         GameRegistry.addRecipe(new ItemStack(ModItems.ivep), "zxa", "xyx", "axz", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModBlocks.ivet), 'z', new ItemStack(ModItems.tier2Craft), 'a', new ItemStack(ModItems.pearcel));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelPearl), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft));
 
 		//Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelSand), new ItemStack(ModBlocks.pearcelGlass), 5F);
