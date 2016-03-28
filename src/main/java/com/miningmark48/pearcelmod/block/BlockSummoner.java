@@ -7,6 +7,9 @@ import com.miningmark48.pearcelmod.mob.EntityPearcelCow;
 import com.miningmark48.pearcelmod.mob.EntityPearcelMob;
 import com.miningmark48.pearcelmod.mob.EntityPearcelSquid;
 import com.miningmark48.pearcelmod.mob.EntityPearson;
+import com.miningmark48.pearcelmod.tileentity.TileEntitySummoner;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -16,6 +19,7 @@ import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
@@ -23,10 +27,27 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockSummoner extends BlockPearcelMod{
+public class BlockSummoner extends BlockContainer{
 
     public BlockSummoner(){
-        super();
+        super(Material.wood);
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+        return new TileEntitySummoner();
+    }
+
+    public int getRenderType(){
+        return -1;
+    }
+
+    public boolean isOpaqueCube(){
+        return false;
+    }
+
+    public boolean renderAsNormalBlock(){
+        return false;
     }
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
@@ -195,4 +216,5 @@ public class BlockSummoner extends BlockPearcelMod{
         }
         return true;
     }
+
 }
