@@ -66,7 +66,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.chargedPearcelSword), "xzx", "zyz", "xzx", 'x', new ItemStack(Blocks.redstone_block), 'y', new ItemStack(ModItems.pearcelSword), 'z', new ItemStack(ModItems.pearcelIngot));
         GameRegistry.addRecipe(new ItemStack(ModItems.ivep), "zxa", "xyx", "axz", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModBlocks.ivet), 'z', new ItemStack(ModItems.tier2Craft), 'a', new ItemStack(ModItems.pearcel));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelPearl), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft));
-        GameRegistry.addRecipe(new ItemStack(ModItems.tpPearcel), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(ModItems.pearcelPearl));
+        GameRegistry.addRecipe(new ItemStack(ModItems.tpPearcel), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(ModItems.pearcelPearl));
 
 		//Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelSand), new ItemStack(ModBlocks.pearcelGlass), 5F);
