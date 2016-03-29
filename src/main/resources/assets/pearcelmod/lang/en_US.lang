@@ -50,6 +50,8 @@ item.chargedPearcelSword.name=Charged Pearcel Sword
 item.pearcelIngot.name=Pearcel Ingot
 item.ivep.name=IVEP (Item Value Exchanger Pearcel)
 item.pearcelPearl.name=Ender Pearcel
+item.tpPearcel.name=Teleportation Pearcel
+item.tpPearcel.name.bound=Teleportation Pearcel [Bound]
 
 tile.pearcelPlant.name=Pearcel Plant
 tile.pearcelGlass.name=Pearcel Glass
@@ -182,6 +184,9 @@ chat.oreChecker.fail=Fools Pearcel Ore detected.
 chat.oreChecker.null=Found block cannot be scanned.
 chat.flightItem.disable=Pearcel Cloud disabled in config.
 chat.event.noWorkbench=The Crafting Table has been disabled.
+chat.tpPearcel.location.notSet=Location not bound!
+chat.tpPearcel.location.set=Location has been bounded.
+chat.tpPearcel.tp=Teleportation successful.
 
 command.credit.info=Parcel31u - Reason for this mod -- Codyrule040 - Textures and many ideas
 command.ivet.info=NEI Support coming soon, IVET recipes can be found on the github wiki: http://www.github.com/miningmark48/pearcel-mod
@@ -224,6 +229,9 @@ tooltip.item.chargedPearcelSword.line2=Right click to zap!
 tooltip.item.chargedPearcelSword.line3=Sneak & Right Click to do a super zap!
 tooltip.item.pearcelMatterNeutral.line1=Charged by the mystical powers of the IVET.
 tooltip.item.ivep.line1=I'm the same as the IVET, but portable!
+tooltip.item.tpPearcel.line1=It defies the laws of Pearcel!
+tooltip.item.tpPearcel.line2.bound=Bound To:
+tooltip.item.tpPearcel.line2.notBound=Not Bound!
 
 
 

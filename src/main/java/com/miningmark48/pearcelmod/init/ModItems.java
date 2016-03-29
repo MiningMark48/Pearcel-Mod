@@ -53,6 +53,7 @@ public class ModItems {
     public static final Item chargedPearcelSword = new ItemChargedPearcelSword(matToolChargedPearcel).setUnlocalizedName("chargedPearcelSword").setTextureName(Reference.MOD_ID + ":chargedPearcelSword").setMaxStackSize(1).setMaxDamage(512).setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     public static final Item ivep = new ItemIVEP().setUnlocalizedName("ivep").setTextureName(Reference.MOD_ID + ":ivep").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
     public static final Item pearcelPearl = new ItemPearcelPearl().setUnlocalizedName("pearcelPearl").setTextureName(Reference.MOD_ID + ":pearcelPearl").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1).setMaxDamage(128);
+    public static final Item tpPearcel = new ItemTPPearcel().setUnlocalizedName("tpPearcel").setTextureName(Reference.MOD_ID + ":tpPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     //Armor
     public static Item pearcelHelmet = new ItemPearcelArmor(matPearcel, 0).setUnlocalizedName("pearcelHelmet").setTextureName(Reference.MOD_ID + ":pearcelHelmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -108,6 +109,7 @@ public class ModItems {
         GameRegistry.registerItem(chargedPearcelSword, "chargedPearcelSword");
         GameRegistry.registerItem(ivep, "ivep");
         GameRegistry.registerItem(pearcelPearl, "pearcelPearl");
+        GameRegistry.registerItem(tpPearcel, "tpPearcel");
 
         //Armor
         GameRegistry.registerItem(pearcelHelmet, "pearcelHelmet");

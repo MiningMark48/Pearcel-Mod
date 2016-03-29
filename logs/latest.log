@@ -1,110 +1,63 @@
-[00:46:21] [main/INFO]: Setting user: MiningMark48
-[00:46:24] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:46:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[00:46:36] [Sound Library Loader/INFO]: Sound engine started
-[00:46:38] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[00:46:38] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[00:46:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[00:46:38] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[00:46:42] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[00:46:43] [Sound Library Loader/INFO]: Sound engine started
-[00:46:50] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:46:50] [Server thread/INFO]: Generating keypair
-[00:46:50] [Server thread/INFO]: Preparing start region for level 0
-[00:46:51] [Server thread/INFO]: Changing view distance to 4, from 10
-[00:46:52] [Server thread/INFO]: MiningMark48[local:E:0e9258c5] logged in with entity id 764 at (173.4654445103474, 4.0, 777.1202304155919)
-[00:46:52] [Server thread/INFO]: MiningMark48 joined the game
-[00:47:11] [Server thread/INFO]: [MiningMark48: Given [Summoner's Activation Pearcel] * 1 to MiningMark48]
-[00:47:11] [Client thread/INFO]: [CHAT] Given [Summoner's Activation Pearcel] * 1 to MiningMark48
-[00:47:15] [Server thread/INFO]: [MiningMark48: Given [Pearcel Wood Planks] * 1 to MiningMark48]
-[00:47:15] [Client thread/INFO]: [CHAT] Given [Pearcel Wood Planks] * 1 to MiningMark48
-[00:47:35] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was corrupted.
-[00:47:54] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:48:15] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was corrupted.
-[00:48:19] [Server thread/INFO]: [MiningMark48: Given [Pearcel Glass] * 1 to MiningMark48]
-[00:48:19] [Client thread/INFO]: [CHAT] Given [Pearcel Glass] * 1 to MiningMark48
-[00:48:22] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was corrupted.
-[00:48:31] [Server thread/INFO]: [MiningMark48: Given [Pearcel End Stone] * 1 to MiningMark48]
-[00:48:31] [Client thread/INFO]: [CHAT] Given [Pearcel End Stone] * 1 to MiningMark48
-[00:48:34] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:48:42] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:48:45] [Server thread/INFO]: Saving and pausing game...
-[00:48:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:48:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:48:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:48:50] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:48:52] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:49:01] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:01] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:02] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:02] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:02] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was corrupted.
-[00:49:02] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:02] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:03] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:03] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:03] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:03] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:03] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was corrupted.
-[00:49:04] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:49:16] [Server thread/INFO]: [MiningMark48: Given [Charged Pearcel Sword] * 1 to MiningMark48]
-[00:49:16] [Client thread/INFO]: [CHAT] Given [Charged Pearcel Sword] * 1 to MiningMark48
-[00:49:51] [Server thread/INFO]: [MiningMark48: Given [Pearcel Staff] * 1 to MiningMark48]
-[00:49:51] [Client thread/INFO]: [CHAT] Given [Pearcel Staff] * 1 to MiningMark48
-[00:50:42] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:50:45] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:45] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:45] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:45] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:45] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:46] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:46] [Client thread/INFO]: [CHAT] §4Missing block required for summoning activation!
-[00:50:52] [Server thread/INFO]: Saving and pausing game...
-[00:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:50:58] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was corrupted.
-[00:51:15] [Server thread/INFO]: Saving and pausing game...
-[00:51:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:51:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:51:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:52:27] [Server thread/INFO]: Saving and pausing game...
-[00:52:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:52:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:52:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:52:58] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:52:58] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:52:58] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:52:59] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:52:59] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:52:59] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:53:16] [Server thread/INFO]: Saving and pausing game...
-[00:53:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:53:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:53:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:57:04] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:57:24] [Server thread/INFO]: [MiningMark48: Given [Pearcel Plush] * 1 to MiningMark48]
-[00:57:24] [Client thread/INFO]: [CHAT] Given [Pearcel Plush] * 1 to MiningMark48
-[00:57:41] [Server thread/INFO]: [MiningMark48: Given [Summoner's Activation Pearcel] * 1 to MiningMark48]
-[00:57:41] [Client thread/INFO]: [CHAT] Given [Summoner's Activation Pearcel] * 1 to MiningMark48
-[00:57:49] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[00:57:50] [Server thread/INFO]: Saving and pausing game...
-[00:57:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:57:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:57:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:57:58] [Client thread/INFO]: [CHAT] §6Pearcel Mob was successfully summoned.
-[00:58:18] [Client thread/INFO]: [CHAT] §6Pearcel Mob was successfully summoned.
-[00:58:19] [Client thread/INFO]: [CHAT] §6Pearcel Mob was successfully summoned.
-[00:58:25] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:58:26] [Client thread/INFO]: [CHAT] §6Pearson was successfully summoned.
-[00:58:43] [Server thread/INFO]: Saving and pausing game...
-[00:58:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:58:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:58:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:58:43] [Server thread/INFO]: Stopping server
-[00:58:43] [Server thread/INFO]: Saving players
-[00:58:43] [Server thread/INFO]: Saving worlds
-[00:58:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:58:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:58:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:58:44] [Client thread/INFO]: Stopping!
+[21:55:35] [main/INFO]: Logging in with username & password
+[21:55:41] [main/INFO]: Setting user: MiningMark48
+[21:55:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:55:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[21:55:54] [Sound Library Loader/INFO]: Sound engine started
+[21:55:55] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:55:55] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:55:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[21:55:56] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:56:00] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[21:56:00] [Sound Library Loader/INFO]: Sound engine started
+[21:56:47] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:56:47] [Server thread/INFO]: Generating keypair
+[21:56:48] [Server thread/INFO]: Preparing start region for level 0
+[21:56:49] [Server thread/INFO]: Changing view distance to 4, from 10
+[21:56:49] [Server thread/INFO]: MiningMark48[local:E:eb8515cb] logged in with entity id 885 at (3.8131879389119483, 4.0, -49.545219178685)
+[21:56:49] [Server thread/INFO]: MiningMark48 joined the game
+[21:57:41] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:57:42] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:57:43] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:57:45] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:57:46] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:58:04] [Server thread/INFO]: MiningMark48 fell out of the world
+[21:58:04] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[21:58:04] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[21:58:08] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:58:37] [Server thread/INFO]: Saving and pausing game...
+[21:58:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:58:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:58:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:58:39] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:58:40] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:58:41] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:58:46] [Server thread/INFO]: Saving and pausing game...
+[21:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:59:14] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:16] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:17] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:18] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:25] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:27] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:36] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
+[21:59:36] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:59:40] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:41] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:48] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to -9.497334828369102,105.0,10.452869418112952]
+[21:59:48] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to -9.497334828369102,105.0,10.452869418112952
+[21:59:50] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[21:59:50] [Server thread/INFO]: MiningMark48 fell from a high place
+[21:59:50] [Client thread/INFO]: [CHAT] MiningMark48 fell from a high place
+[21:59:54] [Server thread/INFO]: Saving and pausing game...
+[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:59:54] [Server thread/INFO]: Stopping server
+[21:59:54] [Server thread/INFO]: Saving players
+[21:59:54] [Server thread/INFO]: Saving worlds
+[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:59:55] [Client thread/INFO]: Stopping!
