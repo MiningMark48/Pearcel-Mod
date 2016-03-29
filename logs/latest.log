@@ -1,63 +1,59 @@
-[21:55:35] [main/INFO]: Logging in with username & password
-[21:55:41] [main/INFO]: Setting user: MiningMark48
-[21:55:44] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:55:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[21:55:54] [Sound Library Loader/INFO]: Sound engine started
-[21:55:55] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[21:55:55] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[21:55:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[21:55:56] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[21:56:00] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[21:56:00] [Sound Library Loader/INFO]: Sound engine started
-[21:56:47] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:56:47] [Server thread/INFO]: Generating keypair
-[21:56:48] [Server thread/INFO]: Preparing start region for level 0
-[21:56:49] [Server thread/INFO]: Changing view distance to 4, from 10
-[21:56:49] [Server thread/INFO]: MiningMark48[local:E:eb8515cb] logged in with entity id 885 at (3.8131879389119483, 4.0, -49.545219178685)
-[21:56:49] [Server thread/INFO]: MiningMark48 joined the game
-[21:57:41] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:57:42] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:57:43] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:57:45] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:57:46] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:58:04] [Server thread/INFO]: MiningMark48 fell out of the world
-[21:58:04] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
-[21:58:04] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[21:58:08] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:58:37] [Server thread/INFO]: Saving and pausing game...
-[21:58:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:58:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:58:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:58:39] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:58:40] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:58:41] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:58:46] [Server thread/INFO]: Saving and pausing game...
-[21:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:58:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:59:14] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:16] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:17] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:18] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:25] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:27] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:36] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
-[21:59:36] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[21:59:40] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:41] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:48] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to -9.497334828369102,105.0,10.452869418112952]
-[21:59:48] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to -9.497334828369102,105.0,10.452869418112952
-[21:59:50] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[21:59:50] [Server thread/INFO]: MiningMark48 fell from a high place
-[21:59:50] [Client thread/INFO]: [CHAT] MiningMark48 fell from a high place
-[21:59:54] [Server thread/INFO]: Saving and pausing game...
-[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:59:54] [Server thread/INFO]: Stopping server
-[21:59:54] [Server thread/INFO]: Saving players
-[21:59:54] [Server thread/INFO]: Saving worlds
-[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:59:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:59:55] [Client thread/INFO]: Stopping!
+[22:45:07] [main/INFO]: Setting user: MiningMark48
+[22:45:09] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:45:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[22:45:20] [Sound Library Loader/INFO]: Sound engine started
+[22:45:22] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:45:22] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:45:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[22:45:22] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:45:26] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[22:45:27] [Sound Library Loader/INFO]: Sound engine started
+[22:45:56] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:45:56] [Server thread/INFO]: Generating keypair
+[22:45:56] [Server thread/INFO]: Preparing start region for level 0
+[22:45:58] [Server thread/INFO]: Changing view distance to 4, from 10
+[22:45:58] [Server thread/INFO]: MiningMark48[local:E:a719c9ff] logged in with entity id 870 at (25.5, 4.0, 732.5)
+[22:45:58] [Server thread/INFO]: MiningMark48 joined the game
+[22:46:02] [Server thread/INFO]: Saving and pausing game...
+[22:46:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:46:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:46:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:46:21] [Server thread/INFO]: Saving and pausing game...
+[22:46:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:46:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:46:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:46:36] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:37] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:37] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:39] [Client thread/INFO]: [CHAT] You are now playing adventure
+[22:46:39] [Client thread/INFO]: [CHAT] You are now playing survival
+[22:46:40] [Client thread/INFO]: [CHAT] You are now playing creative
+[22:46:40] [Client thread/INFO]: [CHAT] You are now playing creative+
+[22:46:48] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:50] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:50] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:52] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:46:54] [Client thread/INFO]: [CHAT] §6Teleportation successful.
+[22:47:06] [Server thread/INFO]: Saving and pausing game...
+[22:47:06] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:47:06] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:47:06] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:58:04] [Server thread/INFO]: Saving and pausing game...
+[22:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:58:04] [Server thread/INFO]: Saving and pausing game...
+[22:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:58:47] [Server thread/INFO]: Saving and pausing game...
+[22:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:58:48] [Server thread/INFO]: Stopping server
+[22:58:48] [Server thread/INFO]: Saving players
+[22:58:48] [Server thread/INFO]: Saving worlds
+[22:58:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:58:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:58:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:58:48] [Client thread/INFO]: Stopping!

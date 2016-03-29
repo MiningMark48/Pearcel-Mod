@@ -12,8 +12,6 @@ public class CraftPearcelSword {
     public void onCraftPearcelSword(PlayerEvent.ItemCraftedEvent e) {
         if (e.crafting.getItem().equals(ModItems.pearcelSword)) {
             e.player.addStat(Achievements.achievementPearcelSword, 1);
-
-            LogHelper.info(e.player + " crafted a Pearcel Sword");
         }
     }
 }
