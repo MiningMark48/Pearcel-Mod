@@ -16,6 +16,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
     double tpX = 0;
     double tpY = 0;
     double tpZ = 0;
+    int dim = 0;
 
     public ItemTPPearcel(){
         this.setMaxStackSize(1);
@@ -48,11 +49,13 @@ public class ItemTPPearcel extends ItemPearcelMod{
             stack.stackTagCompound.setDouble("tpX", 0D);
             stack.stackTagCompound.setDouble("tpY", 0D);
             stack.stackTagCompound.setDouble("tpZ", 0D);
+            stack.stackTagCompound.setInteger("dim", 0);
         }
         if (player.isSneaking()) {
             stack.stackTagCompound.setDouble("tpX", player.posX);
             stack.stackTagCompound.setDouble("tpY", player.posY);
             stack.stackTagCompound.setDouble("tpZ", player.posZ);
+            stack.stackTagCompound.setInteger("dim", player.dimension);
             if(!world.isRemote) {
                 player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_GREEN + StatCollector.translateToLocal("chat.tpPearcel.location.set")));
             }
@@ -60,20 +63,27 @@ public class ItemTPPearcel extends ItemPearcelMod{
             tpX = stack.stackTagCompound.getDouble("tpX");
             tpY = stack.stackTagCompound.getDouble("tpY");
             tpZ = stack.stackTagCompound.getDouble("tpZ");
+            dim = stack.stackTagCompound.getInteger("dim");
             if (tpX == 0D && tpY == 0D && tpZ == 0D) {
                 if (!world.isRemote) {
                     player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.RED + StatCollector.translateToLocal("chat.tpPearcel.location.notSet")));
                 }
             } else {
-                player.setPositionAndUpdate(tpX, tpY, tpZ);
-                if(!world.isRemote){
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("chat.tpPearcel.tp")));
-                }
-                if (!player.capabilities.isCreativeMode) {
-                    if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel))) {
-                        player.inventory.consumeInventoryItem(ModItems.pearcel);
-                    } else {
-                        stack.damageItem(1, player);
+                if (player.dimension == dim) {
+                    player.setPositionAndUpdate(tpX, tpY, tpZ);
+                    if (!world.isRemote) {
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("chat.tpPearcel.tp")));
+                    }
+                    if (!player.capabilities.isCreativeMode) {
+                        if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel))) {
+                            player.inventory.consumeInventoryItem(ModItems.pearcel);
+                        } else {
+                            stack.damageItem(1, player);
+                        }
+                    }
+                }else{
+                    if(!world.isRemote){
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.RED + StatCollector.translateToLocal("chat.tpPearcel.wrongDim")));
                     }
                 }
             }
