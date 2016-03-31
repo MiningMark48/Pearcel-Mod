@@ -20,6 +20,8 @@ public class Recipes {
         GameRegistry.addSmelting(new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelCharcoal), 10f);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelBlock), new ItemStack(ModBlocks.pearcelCharcoalBlock, 1), 5f);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelMatterOre), new ItemStack(ModItems.pearcelMatterNeutral, 1), 50F);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.densePearcelOre), new ItemStack(ModItems.pearcelIngot, 4), 20F);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.densePearcelMatterOre), new ItemStack(ModItems.pearcelMatterNeutral, 4), 100F);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelPie), new ItemStack(ModItems.pearcelFlour), new ItemStack(ModItems.pearcel), new ItemStack(Items.egg));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelJuice), new ItemStack(ModItems.pearcel), new ItemStack(Items.bucket), new ItemStack(Items.sugar));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSandwich), new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.pearcelJuice), new ItemStack(Items.sugar));

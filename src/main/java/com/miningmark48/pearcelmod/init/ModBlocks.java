@@ -25,11 +25,14 @@ public class ModBlocks {
         public static final Block blockLeaf = new PMLeaf().setBlockName("blockLeaf").setBlockTextureName(Reference.MOD_ID + ":blockLeaf").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         public static final Block blockSapling = new PMSapling().setBlockName("blockSapling").setBlockTextureName(Reference.MOD_ID + ":blockSapling").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     //Ore
-        public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.2F);
+        public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.0F);
         public static final Block foolsPearcelOre = new BlockFoolsPearcelOre().setBlockName("foolsPearcelOre").setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
         public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
-        public static final Block pearcelMatterOre = new BlockPearcelMatterOre().setBlockName("pearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":pearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        public static final Block pearcelMatterOre = new BlockPearcelMatterOre().setBlockName("pearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":pearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.5F).setResistance(1.2F);;
         public static final Block enderPearcelOre = new BlockEnderPearcelOre().setBlockName("enderPearcelOre").setBlockTextureName(Reference.MOD_ID + ":enderPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
+        public static final Block densePearcelOre = new BlockDensePearcelOre().setBlockName("densePearcelOre").setBlockTextureName(Reference.MOD_ID + ":densePearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.4F).setResistance(1.5F);
+        public static final Block densePearcelMatterOre = new BlockDensePearcelMatterOre().setBlockName("densePearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":densePearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.4F).setResistance(1.5F);
+
     //General blocks
         public static final Block pearcelGlass = new BlockPearcelGlass().setBlockName("pearcelGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":pearcelGlass").setHardness(0.5F).setResistance(99999.9F);
         public static final Block pearcelWorkbench = new BlockPearcelWorkbench().setBlockName("pearcelWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWorkbench").setHardness(2.5F).setResistance(5.0F);
@@ -94,6 +97,8 @@ public class ModBlocks {
             GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
             GameRegistry.registerBlock(pearcelMatterOre, "pearcelMatterOre");
             GameRegistry.registerBlock(enderPearcelOre, "enderPearceOre");
+            GameRegistry.registerBlock(densePearcelOre, "densePearcelOre");
+            GameRegistry.registerBlock(densePearcelMatterOre, "densePearcelMatterOre");
         //Plants
             GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
             GameRegistry.registerBlock(blockLog, ItemLogBlocks.class, blockLog.getUnlocalizedName().substring(5));
