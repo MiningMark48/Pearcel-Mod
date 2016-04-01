@@ -60,6 +60,7 @@ public class ModBlocks {
         public static final Block pearcelPlush = new BlockPearcelPlush(Material.carpet).setBlockName("pearcelPlush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         public static final Block pearcelSand = new BlockPearcelSand().setBlockName("pearcelSand").setBlockTextureName(Reference.MOD_ID + ":pearcelSand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(0.5F).setHardness(1.0F);
         public static final Block pearcelSandstone = new BlockPearcelSandstone().setBlockName("pearcelSandstone").setBlockTextureName(Reference.MOD_ID + ":pearcelSandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(1.0F).setHardness(1.8F);
+        public static final Block pearcelFire = new BlockPearcelFire().setBlockName("pearcelFire").setBlockTextureName(Reference.MOD_ID + ":pearcelFire").setLightLevel(1.0F);
     //Fluids
         public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
 
@@ -91,6 +92,7 @@ public class ModBlocks {
             GameRegistry.registerBlock(pearcelWoodStairs, "pearcelWoodStairs");
             GameRegistry.registerBlock(pearcelSand, "pearcelSand");
             GameRegistry.registerBlock(pearcelSandstone, "pearcelSandstone");
+            GameRegistry.registerBlock(pearcelFire, "pearcelFire");
         //Ores
             GameRegistry.registerBlock(pearcelOre, "pearcelOre");
             GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
