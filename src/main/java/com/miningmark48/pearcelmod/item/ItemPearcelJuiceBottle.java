@@ -24,6 +24,7 @@ public class ItemPearcelJuiceBottle extends ItemPearcelMod{
         {
             player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 1500, 1));
             player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 1500, 0));
+            player.heal(3.0F);
         }
 
         return item.stackSize <= 0 ? new ItemStack(Items.glass_bottle) : item;
