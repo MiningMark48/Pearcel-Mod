@@ -13,6 +13,7 @@ public class ItemSaplingBlocks extends ItemBlockWithMetadata{
     public ItemSaplingBlocks(Block block) {
         super(block, block);
         this.setHasSubtypes(true);
+        block.setStepSound(Block.soundTypeGrass);
     }
 
     public String getUnlocalizedName(ItemStack itemstack){
