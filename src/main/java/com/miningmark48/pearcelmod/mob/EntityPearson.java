@@ -40,9 +40,9 @@ public class EntityPearson extends EntityMob {
     public void applyEntityAttributes(){
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(50.0F);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.3D);
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(7.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(50.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.25D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(5.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(35.0D);
     }
 
     public boolean isAIEnabled(){
