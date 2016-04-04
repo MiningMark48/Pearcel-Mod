@@ -45,7 +45,7 @@ public class WorldGen implements IWorldGenerator{
     private void generateSurface(World world, Random rand, int x, int z)
     {
         generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 12, 25, 10, 70, Blocks.stone);
-        generateOre(ModBlocks.foolsPearcelOre, world, rand, x, z, 3, 12, 10, 10, 50, Blocks.stone);
+        generateOre(ModBlocks.foolsPearcelOre, world, rand, x, z, 3, 5, 10, 10, 50, ModBlocks.pearcelOre);
         generateOre(ModBlocks.pearcelMatterOre, world, rand, x, z, 1, 2, 15, 10, 40, Blocks.stone);
         generateOre(ModBlocks.densePearcelOre, world, rand, x, z, 5, 20, 15, 5, 70, Blocks.stone);
         generateOre(ModBlocks.densePearcelMatterOre, world, rand, x, z, 5, 20, 10, 5, 70, Blocks.stone);
