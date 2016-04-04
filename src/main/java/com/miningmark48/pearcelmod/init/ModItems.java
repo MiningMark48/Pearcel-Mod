@@ -19,8 +19,8 @@ import sun.security.krb5.Config;
 public class ModItems {
 
     //Material
-    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", 25, new int[]{3, 6, 5, 2}, 10);
-    public static ItemArmor.ArmorMaterial matChargePearcel = EnumHelper.addArmorMaterial("ChargedPearcelArmor", 50, new int[]{4, 8, 6, 3}, 30);
+    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", 100, new int[]{3, 6, 5, 2}, 10);
+    public static ItemArmor.ArmorMaterial matChargePearcel = EnumHelper.addArmorMaterial("ChargedPearcelArmor", 200, new int[]{4, 8, 6, 3}, 30);
     public static ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("Pearcel", 3, 1000, 15.0F, 5.0F, 20);
     public static ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("Pearcel", 3, 1500, 15.0F, 10.0F, 30);
     public static ToolMaterial matToolChargedPearcel = EnumHelper.addToolMaterial("Pearcel", 3, 1200, 15.0F, 6.0F, 22);
