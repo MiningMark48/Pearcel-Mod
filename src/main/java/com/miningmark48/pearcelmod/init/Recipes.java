@@ -43,6 +43,9 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.tier4Craft, 1), "xyx", "aza", "xax", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(Items.nether_star), 'z', new ItemStack(Items.paper), 'a', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.tier3Craft, 1), "xyx", "aza", "xax", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(Items.paper), 'a', new ItemStack(ModItems.tier2Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.tier2Craft, 1), "xyx", "aza", "xax", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(Items.iron_ingot), 'z', new ItemStack(Items.paper), 'a', new ItemStack(ModItems.tier1Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelMatterNeutral, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(ModItems.pearcelIngot), 'z', new ItemStack(ModItems.tier2Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelMatterNeutral, 8), "xyx", "yzy", "xyx", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(ModItems.pearcelIngot), 'z', new ItemStack(ModItems.tier3Craft));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcelMatterNeutral, 16), "xyx", "yzy", "xyx", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(ModItems.pearcelIngot), 'z', new ItemStack(ModItems.tier4Craft));
 
         //Tools and Weapons, Armor
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelAndSteel), new ItemStack(ModItems.pearcelAndSteel), new ItemStack(Items.iron_ingot));
