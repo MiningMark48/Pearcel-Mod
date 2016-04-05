@@ -50,9 +50,11 @@ public class EntityPearson extends EntityMob {
     }
 
     protected Item getDropItem(){
-        int randNum = rand.nextInt(250) + 1;
-        if(randNum == 1) {
+        int randNum = rand.nextInt(100) + 1;
+        if(randNum == 1){
             return ModItems.pearcelStaff;
+        }else if (randNum >= 2 && randNum <= 8){
+            return ModItems.pearcelPearl;
         }
         return ModItems.pearcel;
     }
