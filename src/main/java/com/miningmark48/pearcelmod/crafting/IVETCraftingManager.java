@@ -50,6 +50,7 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(Items.redstone, 2), Blocks.piston);
         this.addShapelessRecipe(new ItemStack(Blocks.piston), Blocks.sticky_piston);
         this.addShapelessRecipe(new ItemStack(Blocks.sticky_piston), Blocks.piston);
+        this.addShapelessRecipe(new ItemStack(Items.emerald, 64), Items.nether_star);
         this.addShapelessRecipe(new ItemStack(Items.diamond, 2), Items.emerald);
         this.addShapelessRecipe(new ItemStack(Items.apple), ModItems.pearcel);
         this.addShapelessRecipe(new ItemStack(Items.iron_ingot, 2), Items.gold_ingot);
