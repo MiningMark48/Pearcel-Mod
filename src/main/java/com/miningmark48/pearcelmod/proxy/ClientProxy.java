@@ -54,6 +54,7 @@ public class ClientProxy extends CommonProxy{
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.summoner), new RenderItemSummoner());
     //Items
         MinecraftForgeClient.registerItemRenderer(ModItems.pearcelStaff, new RenderItemPearcelStaff());
+        MinecraftForgeClient.registerItemRenderer(ModItems.dragonInfusedStaff, new RenderItemDragonInfusedStaff());
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelPearl.class, new RenderPearcelPearl(ModItems.pearcelPearl));
 
         //MinecraftForgeClient.registerItemRenderer(ModItems.pearcel, new RenderItemPearcel());

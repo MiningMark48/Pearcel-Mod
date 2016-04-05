@@ -1,29 +1,30 @@
-[16:45:32] [main/INFO]: Setting user: MiningMark48
-[16:45:35] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:45:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[16:45:47] [Sound Library Loader/INFO]: Sound engine started
-[16:45:49] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:45:49] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:45:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[16:45:50] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[16:45:53] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[16:45:54] [Sound Library Loader/INFO]: Sound engine started
-[16:46:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:46:17] [Server thread/INFO]: Generating keypair
-[16:46:18] [Server thread/INFO]: Preparing start region for level 0
-[16:46:19] [Server thread/INFO]: Changing view distance to 4, from 10
-[16:46:19] [Server thread/INFO]: MiningMark48[local:E:5aa58e78] logged in with entity id 761 at (122.24064324203334, 4.248689541046284, 710.0713624811365)
-[16:46:19] [Server thread/INFO]: MiningMark48 joined the game
-[16:46:39] [Server thread/INFO]: [MiningMark48: Given [Pearcel and Steel] * 1 to MiningMark48]
-[16:46:39] [Client thread/INFO]: [CHAT] Given [Pearcel and Steel] * 1 to MiningMark48
-[16:46:44] [Server thread/INFO]: Saving and pausing game...
-[16:46:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:46:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:46:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:46:45] [Server thread/INFO]: Stopping server
-[16:46:45] [Server thread/INFO]: Saving players
-[16:46:45] [Server thread/INFO]: Saving worlds
-[16:46:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:46:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:46:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:46:46] [Client thread/INFO]: Stopping!
+[18:14:24] [main/INFO]: Setting user: MiningMark48
+[18:14:27] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:14:28] [Client thread/ERROR]: Couldn't initialize twitch stream
+[18:14:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:14:38] [Sound Library Loader/INFO]: Sound engine started
+[18:14:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:14:40] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:14:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[18:14:40] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[18:14:44] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[18:14:45] [Sound Library Loader/INFO]: Sound engine started
+[18:15:09] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:15:09] [Server thread/INFO]: Generating keypair
+[18:15:09] [Server thread/INFO]: Preparing start region for level 0
+[18:15:10] [Server thread/INFO]: Changing view distance to 4, from 10
+[18:15:11] [Server thread/INFO]: MiningMark48[local:E:68107fa4] logged in with entity id 788 at (142.8621520025941, 22.1500998354004, 878.5687449457148)
+[18:15:11] [Server thread/INFO]: MiningMark48 joined the game
+[18:15:29] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
+[18:15:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[18:15:51] [Server thread/INFO]: Saving and pausing game...
+[18:15:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:15:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:15:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:15:51] [Server thread/INFO]: Stopping server
+[18:15:51] [Server thread/INFO]: Saving players
+[18:15:51] [Server thread/INFO]: Saving worlds
+[18:15:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:15:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:15:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:15:53] [Client thread/INFO]: Stopping!
