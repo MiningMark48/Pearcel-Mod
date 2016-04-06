@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.entity.EntityPearcelPearl;
 import com.miningmark48.pearcelmod.event.EventCraftingTable;
 import com.miningmark48.pearcelmod.event.EventFillBucket;
 import com.miningmark48.pearcelmod.event.EventFlight;
+import com.miningmark48.pearcelmod.event.EventTroll;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.TradeHandler;
 import com.miningmark48.pearcelmod.init.*;
@@ -76,6 +77,7 @@ public class PearcelMod {
         MinecraftForge.EVENT_BUS.register(new EventFillBucket());
         FMLCommonHandler.instance().bus().register(new EventFlight());
         MinecraftForge.EVENT_BUS.register(new EventCraftingTable());
+        FMLCommonHandler.instance().bus().register(new EventTroll());
 
         OreDict.init();
         Recipes.init();
