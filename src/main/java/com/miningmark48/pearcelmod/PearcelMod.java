@@ -4,10 +4,7 @@ import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.biome.BiomeGen;
 import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.entity.EntityPearcelPearl;
-import com.miningmark48.pearcelmod.event.EventCraftingTable;
-import com.miningmark48.pearcelmod.event.EventFillBucket;
-import com.miningmark48.pearcelmod.event.EventFlight;
-import com.miningmark48.pearcelmod.event.EventTroll;
+import com.miningmark48.pearcelmod.event.*;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.TradeHandler;
 import com.miningmark48.pearcelmod.init.*;
@@ -89,6 +86,7 @@ public class PearcelMod {
 	public void postInit(FMLPostInitializationEvent event){
 
         ModFluidContainer.init();
+        FMLCommonHandler.instance().bus().register(new EventSaplingGrowthMultiplier());
 
         LogHelper.info(StatCollector.translateToLocal("log.info.postinit"));
 	}

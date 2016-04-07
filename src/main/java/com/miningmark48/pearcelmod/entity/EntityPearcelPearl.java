@@ -11,6 +11,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.Chunk;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 
@@ -19,24 +20,10 @@ public class EntityPearcelPearl extends EntityThrowable {
         super(world);
     }
 
-    /**
-     * Make a new instance in a world by a placer {@link EntityLivingBase}.
-     *
-     * @param world  The world.
-     * @param entity The {@link EntityLivingBase} that placed this {@link Entity}.
-     */
     public EntityPearcelPearl(World world, EntityLivingBase entity) {
         super(world, entity);
     }
 
-    /**
-     * Make a new instance at the given location in a world.
-     *
-     * @param world The world.
-     * @param x     X coordinate.
-     * @param y     Y coordinate.
-     * @param z     Z coordinate.
-     */
     @SideOnly(Side.CLIENT)
     public EntityPearcelPearl(World world, double x, double y, double z) {
         super(world, x, y, z);

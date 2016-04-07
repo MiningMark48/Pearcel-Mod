@@ -25,6 +25,7 @@ public class ConfigurationHandler {
     public static int maxStaffFlyHeight;
     public static int minPearcelLightning;
     public static int maxPearcelLightning;
+    public static int saplingGrowthMultiplier;
 
     public static void init(File configFile){
 
@@ -58,6 +59,7 @@ public class ConfigurationHandler {
         maxStaffFlyHeight = configuration.getInt(StatCollector.translateToLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, StatCollector.translateToLocal("config.maxStaffFlyHeight.desc"));
         minPearcelLightning = configuration.getInt(StatCollector.translateToLocal("config.minPearcelLightning.title"), Configuration.CATEGORY_GENERAL, 2, 0, 99, StatCollector.translateToLocal("config.minPearcelLightning.desc"));
         maxPearcelLightning = configuration.getInt(StatCollector.translateToLocal("config.maxPearcelLightning.title"), Configuration.CATEGORY_GENERAL, 5, 1, 100, StatCollector.translateToLocal("config.maxPearcelLightning.desc"));
+        saplingGrowthMultiplier = configuration.getInt(StatCollector.translateToLocal("config.saplingGrowthMultiplier.title"), Configuration.CATEGORY_GENERAL, 0, 0, 1000000, StatCollector.translateToLocal("config.saplingGrowthMultiplier.desc"));
 
         if (configuration.hasChanged()){
             configuration.save();
