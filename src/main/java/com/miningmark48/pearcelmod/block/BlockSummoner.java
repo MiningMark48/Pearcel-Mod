@@ -118,15 +118,19 @@ public class BlockSummoner extends BlockContainer{
                     }
                     //Ender dragon
                     else if (world.getBlock(x, y + 1, z) == ModBlocks.dragonInfusedPearcel && world.getBlock(x + 2, y, z + 2) == ModBlocks.enderInfusedPearcel && world.getBlock(x - 2, y, z - 2) == ModBlocks.enderInfusedPearcel && world.getBlock(x + 2, y, z - 2) == ModBlocks.enderInfusedPearcel && world.getBlock(x - 2, y, z + 2) == ModBlocks.enderInfusedPearcel) {
-                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
-                        world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
-                        world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
-                        world.spawnEntityInWorld(dragon);
-                        if (world.isRemote) {
-                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                        if (player.dimension == 1) { //End ID is 1
+                            world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x + 2, y, z, ModBlocks.corruptedPearcelBlock);
+                            world.setBlock(x - 2, y, z - 2, ModBlocks.corruptedPearcelBlock);
+                            world.spawnEntityInWorld(dragon);
+                            if (world.isRemote) {
+                                world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                            }
+                            player.getHeldItem().damageItem(1, player);
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.enderdragon") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        }else{
+                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.RED + StatCollector.translateToLocal("summoner.mobSummon.enderdragon.incorrectDim")));
                         }
-                        player.getHeldItem().damageItem(1, player);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.enderdragon") + " " + StatCollector.translateToLocal("summoner.summoned")));
                     }
                     //Wither
                     else if (world.getBlock(x, y + 1, z) == ModBlocks.witherInfusedPearcel && world.getBlock(x + 2, y, z + 2) == ModBlocks.netherInfusedPearcel && world.getBlock(x - 2, y, z - 2) == ModBlocks.netherInfusedPearcel && world.getBlock(x + 2, y, z - 2) == ModBlocks.netherInfusedPearcel && world.getBlock(x - 2, y, z + 2) == ModBlocks.netherInfusedPearcel) {
