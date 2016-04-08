@@ -21,6 +21,7 @@ public class Achievements {
     public static Achievement achievementIVET;
     public static Achievement achievementPearcelPearl;
     public static Achievement achievementTPPearcel;
+    public static Achievement achievementDragonStaff;
 
     public static void init(){
         //Creates a new achievement
@@ -35,6 +36,7 @@ public class Achievements {
         achievementSummon = new Achievement("achievement.summon", "summon", 2, 2, new ItemStack(ModBlocks.summoner), (Achievement)null).initIndependentStat().registerStat();
         achievementPearcelPearl = new Achievement("achievement.craftPearcelPearl", "craftPearcelPearl", 2, 4, new ItemStack(ModItems.pearcelPearl), (Achievement)null).initIndependentStat().registerStat();
         achievementTPPearcel = new Achievement("achievement.craftTPPearcel", "craftTPPearcel", 2, 6, new ItemStack(ModItems.tpPearcel), achievementPearcelPearl).registerStat();
+        achievementDragonStaff = new Achievement("achievement.craftDragonStaff", "craftDragonStaff", 4, 4, new ItemStack(ModItems.dragonInfusedStaff), achievementPearcelStaff).registerStat();
 
         //Creates Achievement Page
         AchievementPage.registerAchievementPage(new AchievementPage("Pearcel Mod", new Achievement[]{
@@ -48,7 +50,8 @@ public class Achievements {
                 achievementSummon,
                 achievementIVET,
                 achievementPearcelPearl,
-                achievementTPPearcel
+                achievementTPPearcel,
+                achievementDragonStaff
         }));
 
         //Register Achievements (Events)
@@ -60,6 +63,7 @@ public class Achievements {
         FMLCommonHandler.instance().bus().register(new CraftArmorPlating());
         FMLCommonHandler.instance().bus().register(new CraftPearcelPearl());
         FMLCommonHandler.instance().bus().register(new CraftTPPearcel());
+        FMLCommonHandler.instance().bus().register(new CraftDragonStaff());
 
         LogHelper.info("Achievements loaded!");
     }
