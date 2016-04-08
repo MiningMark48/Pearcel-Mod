@@ -22,6 +22,7 @@ public class Recipes {
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelMatterOre), new ItemStack(ModItems.pearcelMatterNeutral, 1), 50F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.densePearcelOre), new ItemStack(ModItems.pearcelIngot, 4), 20F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.densePearcelMatterOre), new ItemStack(ModItems.pearcelMatterNeutral, 4), 100F);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.blockLog), new ItemStack(ModItems.pearcelCharcoal), 5F);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelPie), new ItemStack(ModItems.pearcelFlour), new ItemStack(ModItems.pearcel), new ItemStack(Items.egg));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelJuice), new ItemStack(ModItems.pearcel), new ItemStack(Items.bucket), new ItemStack(Items.sugar));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcelSandwich), new ItemStack(ModItems.pearcel), new ItemStack(ModItems.pearcelBread), new ItemStack(ModItems.pearcelJuice), new ItemStack(Items.sugar));
@@ -73,7 +74,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.ivep), "zxa", "xyx", "axz", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(ModBlocks.ivet), 'z', new ItemStack(ModItems.tier2Craft), 'a', new ItemStack(ModItems.pearcel));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcelPearl), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft));
         GameRegistry.addRecipe(new ItemStack(ModItems.tpPearcel), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(Items.diamond), 'z', new ItemStack(ModItems.pearcelPearl));
-        GameRegistry.addRecipe(new ItemStack(ModItems.dragonInfusedStaff), "x x", "xyx", "zaz", 'x', new ItemStack(ModItems.tier4Craft), 'y', new ItemStack(ModItems.pearcelStaff), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.dragon_egg));
+        GameRegistry.addRecipe(new ItemStack(ModItems.dragonInfusedStaff), "xbx", "xyx", "zaz", 'x', new ItemStack(ModItems.tier4Craft), 'y', new ItemStack(ModItems.pearcelStaff), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.dragon_egg), 'b', new ItemStack(ModBlocks.corruptedPearcelBlock));
 
 		//Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcelSand), new ItemStack(ModBlocks.pearcelGlass), 5F);
