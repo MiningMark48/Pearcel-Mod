@@ -1,102 +1,66 @@
-[16:23:13] [main/INFO]: Setting user: MiningMark48
-[16:23:16] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:23:16] [Client thread/ERROR]: Couldn't initialize twitch stream
-[16:23:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[16:23:28] [Sound Library Loader/INFO]: Sound engine started
-[16:23:30] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:23:30] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:23:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
-[16:23:30] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[16:23:34] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[16:23:35] [Sound Library Loader/INFO]: Sound engine started
-[16:26:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:26:15] [Server thread/INFO]: Generating keypair
-[16:26:16] [Server thread/INFO]: Preparing start region for level 0
-[16:26:17] [Server thread/INFO]: Changing view distance to 4, from 10
-[16:26:18] [Server thread/INFO]: MiningMark48[local:E:d19efd6e] logged in with entity id 730 at (133.57850343037308, 4.0, 911.6458052501647)
-[16:26:18] [Server thread/INFO]: MiningMark48 joined the game
-[16:26:22] [Server thread/INFO]: Saving and pausing game...
-[16:26:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:26:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:26:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:26:49] [Server thread/INFO]: [MiningMark48: Given [Dragon-Infused Pearcel Staff] * 1 to MiningMark48]
-[16:26:49] [Client thread/INFO]: [CHAT] Given [Dragon-Infused Pearcel Staff] * 1 to MiningMark48
-[16:27:00] [Server thread/INFO]: [MiningMark48: Given [Pearcel Staff] * 1 to MiningMark48]
-[16:27:00] [Client thread/INFO]: [CHAT] Given [Pearcel Staff] * 1 to MiningMark48
-[16:27:14] [Server thread/INFO]: [MiningMark48: Given [Summoner] * 1 to MiningMark48]
-[16:27:14] [Client thread/INFO]: [CHAT] Given [Summoner] * 1 to MiningMark48
-[16:27:18] [Server thread/INFO]: Saving and pausing game...
-[16:27:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:27:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:27:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:27:21] [Server thread/INFO]: [MiningMark48: Given [Dragon-Infused Pearcel Block] * 1 to MiningMark48]
-[16:27:21] [Client thread/INFO]: [CHAT] Given [Dragon-Infused Pearcel Block] * 1 to MiningMark48
-[16:27:21] [Server thread/INFO]: [MiningMark48: Given [Ender-Infused Pearcel Block] * 1 to MiningMark48]
-[16:27:21] [Client thread/INFO]: [CHAT] Given [Ender-Infused Pearcel Block] * 1 to MiningMark48
-[16:27:34] [Server thread/INFO]: [MiningMark48: Teleported MiningMark48 to 138.26591004045315,4.0,-9999138.73359743]
-[16:27:35] [Client thread/INFO]: [CHAT] Teleported MiningMark48 to 138.26591004045315,4.0,-9999138.73359743
-[16:27:59] [Server thread/INFO]: [MiningMark48: Took all effects from MiningMark48]
-[16:27:59] [Client thread/INFO]: [CHAT] Took all effects from MiningMark48
-[16:28:04] [Server thread/INFO]: [MiningMark48: Given [Summoner's Activation Pearcel] * 1 to MiningMark48]
-[16:28:04] [Client thread/INFO]: [CHAT] Given [Summoner's Activation Pearcel] * 1 to MiningMark48
-[16:28:05] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:08] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:08] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:09] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:09] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:12] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:17] [Server thread/INFO]: Saving and pausing game...
-[16:28:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:28:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:28:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:28:24] [Server thread/INFO]: [MiningMark48: Given [tile.null.name] * 1 to MiningMark48]
-[16:28:24] [Client thread/INFO]: [CHAT] Given [tile.null.name] * 1 to MiningMark48
-[16:28:53] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:55] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:55] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:55] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:55] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:55] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:56] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:56] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:56] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:56] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:56] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:57] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:57] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:57] [Client thread/INFO]: [CHAT] §cWrong dimension! Must be summoned in The End!
-[16:28:58] [Server thread/INFO]: Saving and pausing game...
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:28:58] [Server thread/INFO]: Stopping server
-[16:28:58] [Server thread/INFO]: Saving players
-[16:28:58] [Server thread/INFO]: Saving worlds
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:28:58] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:29:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:29:06] [Server thread/INFO]: Generating keypair
-[16:29:06] [Server thread/INFO]: Preparing start region for level 0
-[16:29:06] [Server thread/INFO]: Changing view distance to 4, from 10
-[16:29:06] [Server thread/INFO]: MiningMark48[local:E:e61617e7] logged in with entity id 320659 at (89.30000001192093, 58.0, 17.25713181630122)
-[16:29:06] [Server thread/INFO]: MiningMark48 joined the game
-[16:29:12] [Server thread/INFO]: [MiningMark48: Given [Portal] * 1 to MiningMark48]
-[16:29:12] [Client thread/INFO]: [CHAT] Given [Portal] * 1 to MiningMark48
-[16:29:25] [Server thread/INFO]: MiningMark48 fell out of the world
-[16:29:25] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
-[16:29:25] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[16:29:31] [Server thread/INFO]: MiningMark48 fell out of the world
-[16:29:32] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
-[16:29:32] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
-[16:29:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2841ms behind, skipping 56 tick(s)
-[16:30:02] [Client thread/INFO]: [CHAT] §6Ender Dragon was successfully summoned.
-[16:30:17] [Server thread/INFO]: Saving and pausing game...
-[16:30:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:30:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:30:18] [Server thread/INFO]: Stopping server
-[16:30:18] [Server thread/INFO]: Saving players
-[16:30:18] [Server thread/INFO]: Saving worlds
-[16:30:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:30:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:30:19] [Client thread/INFO]: Stopping!
+[16:42:05] [main/INFO]: Setting user: MiningMark48
+[16:42:07] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:42:08] [Client thread/ERROR]: Couldn't initialize twitch stream
+[16:42:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[16:42:18] [Sound Library Loader/INFO]: Sound engine started
+[16:42:20] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:42:20] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:42:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod
+[16:42:21] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[16:42:24] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[16:42:25] [Sound Library Loader/INFO]: Sound engine started
+[16:43:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:43:15] [Server thread/INFO]: Generating keypair
+[16:43:15] [Server thread/INFO]: Preparing start region for level 0
+[16:43:16] [Server thread/INFO]: Changing view distance to 4, from 10
+[16:43:17] [Server thread/INFO]: MiningMark48[local:E:d89f7dce] logged in with entity id 655 at (11.12776989124155, 17.0, 93.81084937579189)
+[16:43:17] [Server thread/INFO]: MiningMark48 joined the game
+[16:43:21] [Server thread/INFO]: Saving and pausing game...
+[16:43:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:43:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:43:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:43:25] [Server thread/INFO]: Saving and pausing game...
+[16:43:25] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:43:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:43:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:43:26] [Server thread/INFO]: Stopping server
+[16:43:26] [Server thread/INFO]: Saving players
+[16:43:26] [Server thread/INFO]: Saving worlds
+[16:43:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:43:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:43:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:43:28] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:43:28] [Server thread/INFO]: Generating keypair
+[16:43:28] [Server thread/INFO]: Preparing start region for level 0
+[16:43:28] [Server thread/INFO]: Changing view distance to 4, from 10
+[16:43:28] [Server thread/INFO]: MiningMark48[local:E:046d4021] logged in with entity id 1565 at (11.12776989124155, 17.0, 93.81084937579189)
+[16:43:28] [Server thread/INFO]: MiningMark48 joined the game
+[16:43:32] [Server thread/INFO]: MiningMark48 fell out of the world
+[16:43:32] [Client thread/INFO]: [CHAT] MiningMark48 fell out of the world
+[16:43:32] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[16:44:21] [Server thread/INFO]: Saving and pausing game...
+[16:44:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:44:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:44:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:44:24] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:25] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:25] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:25] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:25] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:26] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:26] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:27] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:27] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled.
+[16:44:34] [Server thread/INFO]: [MiningMark48: Given [Pearcel Plush] * 1 to MiningMark48]
+[16:44:34] [Client thread/INFO]: [CHAT] Given [Pearcel Plush] * 1 to MiningMark48
+[16:44:46] [Server thread/INFO]: Saving and pausing game...
+[16:44:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:44:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:44:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:44:46] [Server thread/INFO]: Stopping server
+[16:44:46] [Server thread/INFO]: Saving players
+[16:44:46] [Server thread/INFO]: Saving worlds
+[16:44:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:44:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:44:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:44:47] [Client thread/INFO]: Stopping!

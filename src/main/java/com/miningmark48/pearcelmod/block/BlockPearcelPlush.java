@@ -46,17 +46,6 @@ public class BlockPearcelPlush extends BlockContainer{
     }
 
     @Override
-    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
-
-        if (entity == null){
-            return;
-        }
-        TileEntityPearcelPlush tile = (TileEntityPearcelPlush) world.getTileEntity(x, y, z);
-        tile.direction = MathHelper.floor_double((double) (entity.rotationYaw * 4.0F / 360) * 0.5D) & 3;
-
-    }
-
-    @Override
     public void onBlockDestroyedByExplosion(World world, int x, int y, int z, Explosion explosion) {
         EntityPearcelMob pearcelmob = new EntityPearcelMob(world);
         pearcelmob.setPosition(x, y + 1, z);
