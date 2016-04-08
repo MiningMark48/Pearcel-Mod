@@ -72,9 +72,10 @@ public class PearcelMod {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
         MinecraftForge.EVENT_BUS.register(new EventFillBucket());
-        FMLCommonHandler.instance().bus().register(new EventFlight());
+        MinecraftForge.EVENT_BUS.register(new EventFlight());
         MinecraftForge.EVENT_BUS.register(new EventCraftingTable());
-        FMLCommonHandler.instance().bus().register(new EventTroll());
+        MinecraftForge.EVENT_BUS.register(new EventTroll());
+        MinecraftForge.EVENT_BUS.register(new EventSaplingGrowthMultiplier());
 
         OreDict.init();
         Recipes.init();
@@ -86,7 +87,6 @@ public class PearcelMod {
 	public void postInit(FMLPostInitializationEvent event){
 
         ModFluidContainer.init();
-        FMLCommonHandler.instance().bus().register(new EventSaplingGrowthMultiplier());
 
         LogHelper.info(StatCollector.translateToLocal("log.info.postinit"));
 	}
