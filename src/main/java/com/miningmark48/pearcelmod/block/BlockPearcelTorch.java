@@ -1,11 +1,15 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.init.ModItems;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
@@ -19,6 +23,12 @@ public class BlockPearcelTorch extends BlockPearcelMod {
     {
         super();
         this.setTickRandomly(true);
+    }
+
+    public void onBlockHarvested(World world, int par2, int par3, int par4, int par5, EntityPlayer player) {
+        if (!player.capabilities.isCreativeMode) {
+            player.inventory.addItemStackToInventory(new ItemStack(ModBlocks.pearcelTorch));
+        }
     }
 
     /**
