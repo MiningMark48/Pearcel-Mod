@@ -172,12 +172,10 @@ config.minPearcelLightning.title=Min. Lightning Range
 config.minPearcelLightning.desc=Minimum range for the Charged Pearcel Sword's Lightning
 config.maxPearcelLightning.title=Max. Lightning Range
 config.maxPearcelLightning.desc=Maximum range for the Charged Pearcel Sword's Lightning
-config.craftingTables.title=Disable Crafting Tables
-config.craftingTables.desc=Prevents vanilla crafting tables and the Pearcel Workbench from working.
 config.doSpecialWorldGen.title=Do Special World Gen?
 config.doSpecialWorldGen.desc=Should there be special world gen like Pearcel Stone and Pearcel Sand?
-config.saplingGrowthMultiplier.title=Sapling Growth Multiplier
-config.saplingGrowthMultiplier.desc=Multiplier to increase time it takes for sapling to grow. (Normal = 0)
+config.craftingTables.title=Disable Pearcel Workbench
+config.craftingTables.desc=Prevents the pearcel workbench from working.
 
 gui.ivet.name=IVET
 gui.pearcelWorkbench.name=Pearcel Workbench
@@ -195,7 +193,7 @@ chat.oreChecker.success=Pearcel Ore detected.
 chat.oreChecker.fail=Fools Pearcel Ore detected.
 chat.oreChecker.null=Found block cannot be scanned.
 chat.flightItem.disable=Pearcel Cloud disabled in config.
-chat.event.noWorkbench=The Crafting Table has been disabled.
+chat.event.noWorkbench=The Pearcel Workbench has been disabled.
 chat.tpPearcel.location.notSet=Location not bound!
 chat.tpPearcel.location.set=Location has been bounded.
 chat.tpPearcel.tp=Teleportation successful.

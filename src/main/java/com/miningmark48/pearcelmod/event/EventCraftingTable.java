@@ -15,7 +15,7 @@ public class EventCraftingTable {
     public void playerInteract(PlayerInteractEvent event){
         if (ConfigurationHandler.craftingTables) {
             if (event.action.equals(PlayerInteractEvent.Action.RIGHT_CLICK_BLOCK)) {
-                if (event.world.getBlock(event.x, event.y, event.z).equals(Blocks.crafting_table) || event.world.getBlock(event.x, event.y, event.z).equals(ModBlocks.pearcelWorkbench)) {
+                if (event.world.getBlock(event.x, event.y, event.z).equals(ModBlocks.pearcelWorkbench)) {
                     event.setCanceled(true);
                     event.entityPlayer.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED  + StatCollector.translateToLocal("chat.event.noWorkbench")));
                 }

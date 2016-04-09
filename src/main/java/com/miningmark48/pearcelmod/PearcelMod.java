@@ -75,7 +75,6 @@ public class PearcelMod {
         MinecraftForge.EVENT_BUS.register(new EventFlight());
         MinecraftForge.EVENT_BUS.register(new EventCraftingTable());
         MinecraftForge.EVENT_BUS.register(new EventTroll());
-        MinecraftForge.EVENT_BUS.register(new EventSaplingGrowthMultiplier());
 
         OreDict.init();
         Recipes.init();
