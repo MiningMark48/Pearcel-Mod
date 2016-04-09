@@ -21,6 +21,7 @@ public class BlockPearcelPlush extends BlockContainer{
 
     public BlockPearcelPlush(Material material){
         super(material);
+        this.setBlockBounds(0.125F, 0.0F, 0.1875F, 0.8125F, 1.25F, 0.875F);
     }
 
     public int getRenderType(){
