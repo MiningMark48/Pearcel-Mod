@@ -19,6 +19,7 @@ public class ConfigurationHandler {
     public static boolean flightItemDisable;
     public static boolean craftingTables;
     public static boolean doSpecialWorldGen;
+    public static boolean doChatLoginMessage;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int sapDurability;
@@ -52,6 +53,7 @@ public class ConfigurationHandler {
         flightItemDisable = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemDisable.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemDisable.desc"));
         craftingTables = configuration.getBoolean(StatCollector.translateToLocal("config.craftingTables.title"), Configuration.CATEGORY_GENERAL, false, StatCollector.translateToLocal("config.craftingTables.desc"));
         doSpecialWorldGen = configuration.getBoolean(StatCollector.translateToLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.doSpecialWorldGen.desc"));
+        doChatLoginMessage = configuration.getBoolean(StatCollector.translateToLocal("config.doChatLoginMessage.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.doChatLoginMessage.desc"));
         torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, StatCollector.translateToLocal("config.torcherRange.desc"));
         torcherFrequency = configuration.getInt(StatCollector.translateToLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, StatCollector.translateToLocal("config.torcherFrequency.desc"));
         sapDurability = configuration.getInt(StatCollector.translateToLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 32, 1, Integer.MAX_VALUE, StatCollector.translateToLocal("config.sapDurability.desc"));

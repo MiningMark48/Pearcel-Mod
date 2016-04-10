@@ -74,7 +74,7 @@ public class PearcelMod {
         MinecraftForge.EVENT_BUS.register(new EventFillBucket());
         MinecraftForge.EVENT_BUS.register(new EventFlight());
         MinecraftForge.EVENT_BUS.register(new EventCraftingTable());
-        MinecraftForge.EVENT_BUS.register(new EventTroll());
+        FMLCommonHandler.instance().bus().register(new EventLogInChat());
 
         OreDict.init();
         Recipes.init();
