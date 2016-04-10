@@ -23,6 +23,7 @@ public class ItemPEPC extends ItemPearcelMod{
     {
         if (!player.isSneaking()){
             player.displayGUIChest(player.getInventoryEnderChest());
+            player.playSound("random.chestopen", 0.5F, world.rand.nextFloat() * 0.1F + 0.9F);
             return item;
         }else{
             return item;
