@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.biome.BiomeGen;
 import com.miningmark48.pearcelmod.client.gui.GuiHandler;
 import com.miningmark48.pearcelmod.entity.EntityPearcelPearl;
 import com.miningmark48.pearcelmod.event.*;
+import com.miningmark48.pearcelmod.fluid.FluidPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.TradeHandler;
 import com.miningmark48.pearcelmod.init.*;
@@ -26,6 +27,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class PearcelMod {
@@ -80,8 +83,9 @@ public class PearcelMod {
         Recipes.init();
         Achievements.init();
         LogHelper.info(StatCollector.translateToLocal( "log.info.init"));
+
 	}
-	
+
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
 
