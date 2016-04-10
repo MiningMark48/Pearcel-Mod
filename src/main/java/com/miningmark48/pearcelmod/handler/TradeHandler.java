@@ -33,6 +33,7 @@ public class TradeHandler implements VillagerRegistry.IVillageTradeHandler{
                 recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 1), new ItemStack(ModItems.pearcelSword, 1)));
                 recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 5), new ItemStack(ModItems.chargedPearcelSword, 1)));
                 recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 15), new ItemStack(ModItems.pearcelStaff, 1)));
+                recipeList.add(new MerchantRecipe(new ItemStack(Items.nether_star, 16), new ItemStack(ModItems.dragonInfusedStaff, 1)));
                 break;
             case 4: // BUTCHER
                 recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 2), new ItemStack(ModItems.pearcelSteak, 16)));
