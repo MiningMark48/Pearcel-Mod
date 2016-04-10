@@ -24,6 +24,8 @@ import java.util.Random;
 
 public class BlockTorcher extends BlockContainer{
 
+    int torcherFreq;
+
     public BlockTorcher(Material material){
         super(material);
         this.setBlockBounds(0.375F, 0.0F, 0.375F, 0.625F, 1.0F, 0.625F);
@@ -67,7 +69,12 @@ public class BlockTorcher extends BlockContainer{
             }else{
                 world.setBlock(x, y, z, Blocks.air);
             }
-            for (int i = 1; i <= rangeRand * ConfigurationHandler.torcherFrequency; i++){
+            if (ConfigurationHandler.torcherFrequency > 1){
+                torcherFreq = ConfigurationHandler.torcherFrequency;
+            }else{
+                torcherFreq = 2;
+            }
+            for (int i = 1; i <= rangeRand * torcherFreq; i++){
                 rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
                 int numRand = rand.nextInt(8) + 1;
                 int torchX = x;
