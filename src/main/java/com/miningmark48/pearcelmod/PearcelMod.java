@@ -50,6 +50,7 @@ public class PearcelMod {
         ModFluids.init();
         ModMaterials.init();
         ModBlocks.init();
+        ModTile.init();
 		ModItems.init();
         EntityPearcelMod.init();
         BiomeGen.init();

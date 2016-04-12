@@ -1,27 +1,53 @@
-[20:31:29] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[20:31:39] [Server thread/INFO]: Loading properties
-[20:31:39] [Server thread/INFO]: Default game type: SURVIVAL
-[20:31:39] [Server thread/INFO]: Generating keypair
-[20:31:39] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:31:39] [Server thread/INFO]: Preparing level "world"
-[20:31:40] [Server thread/INFO]: Preparing start region for level 0
-[20:31:41] [Server thread/INFO]: Preparing spawn area: 47%
-[20:31:42] [Server thread/INFO]: Done (2.377s)! For help, type "help" or "?"
-[20:32:49] [User Authenticator #1/INFO]: UUID of player MiningMark48 is 21ce20ed-aa76-4b45-b952-a15a579bd413
-[20:32:50] [Server thread/INFO]: MiningMark48[/127.0.0.1:61506] logged in with entity id 508 at (164.69889934337266, 82.0, 270.21855930851615)
-[20:32:50] [Server thread/INFO]: MiningMark48 joined the game
-[20:33:01] [Server thread/INFO]: [MiningMark48: Given [PEPC (Portable Ender Pearcel Chest)] * 1 to MiningMark48]
-[20:33:08] [Server thread/INFO]: [MiningMark48: Given [Pearcel and Steel] * 1 to MiningMark48]
-[20:33:14] [Server thread/INFO]: [MiningMark48: Given [Pearcel Plush] * 1 to MiningMark48]
-[20:33:37] [Server thread/INFO]: MiningMark48 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
-[20:33:37] [Server thread/INFO]: MiningMark48 left the game
-[20:33:42] [Server thread/INFO]: Stopping the server
-[20:33:42] [Server thread/INFO]: Stopping server
-[20:33:42] [Server thread/INFO]: Saving players
-[20:33:42] [Server thread/INFO]: Saving worlds
-[20:33:42] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
-[20:33:42] [Server thread/INFO]: Saving chunks for level 'world'/Nether
-[20:33:42] [Server thread/INFO]: Saving chunks for level 'world'/The End
-FO]: [CHAT] Given [Pearcel and Steel] * 1 to MiningMark48
-[20:33:14] [Client thread/INFO]: [CHAT] Given [Pearcel Plush] * 1 to MiningMark48
-[20:33:37] [Client thread/INFO]: Stopping!
+[17:56:27] [main/INFO]: Setting user: MiningMark48
+[17:56:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:56:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Misc Configs
+[17:56:42] [Sound Library Loader/INFO]: Sound engine started
+[17:56:44] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:56:44] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:56:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Misc Configs
+[17:56:45] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:56:49] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
+[17:56:49] [Sound Library Loader/INFO]: Sound engine started
+[17:57:01] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:57:01] [Server thread/INFO]: Generating keypair
+[17:57:02] [Server thread/INFO]: Preparing start region for level 0
+[17:57:03] [Server thread/INFO]: Changing view distance to 4, from 10
+[17:57:03] [Server thread/INFO]: MiningMark48[local:E:5d3394c2] logged in with entity id 624 at (-118.62498959616632, 4.0, 514.7390269362982)
+[17:57:03] [Server thread/INFO]: MiningMark48 joined the game
+[17:57:07] [Client thread/INFO]: [CHAT] §aThanks for using Pearcel Mod!
+[17:57:26] [Server thread/INFO]: Saving and pausing game...
+[17:57:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:57:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:57:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:57:54] [Server thread/INFO]: [MiningMark48: Given [Crafting Table] * 1 to MiningMark48]
+[17:57:54] [Client thread/INFO]: [CHAT] Given [Crafting Table] * 1 to MiningMark48
+[17:57:59] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled!
+[17:58:00] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled!
+[17:58:00] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled!
+[17:58:00] [Client thread/INFO]: [CHAT] §4The Crafting Table has been disabled!
+[17:58:04] [Server thread/INFO]: Saving and pausing game...
+[17:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:58:19] [Server thread/INFO]: [MiningMark48: Given [Torcher] * 1 to MiningMark48]
+[17:58:19] [Client thread/INFO]: [CHAT] Given [Torcher] * 1 to MiningMark48
+[17:58:21] [Client thread/INFO]: [CHAT] §6Let there be light!
+[17:58:27] [Client thread/INFO]: [CHAT] §6Let there be light!
+[17:58:50] [Client thread/INFO]: [CHAT] §6Let there be light!
+[17:59:38] [Server thread/INFO]: [MiningMark48: Given [Summoner] * 1 to MiningMark48]
+[17:59:38] [Client thread/INFO]: [CHAT] Given [Summoner] * 1 to MiningMark48
+[17:59:39] [Server thread/INFO]: [MiningMark48: Given [IVET (Item Value Exchanger Table)] * 1 to MiningMark48]
+[17:59:39] [Client thread/INFO]: [CHAT] Given [IVET (Item Value Exchanger Table)] * 1 to MiningMark48
+[17:59:43] [Server thread/INFO]: [MiningMark48: Given [Pearcel Plush] * 1 to MiningMark48]
+[17:59:43] [Client thread/INFO]: [CHAT] Given [Pearcel Plush] * 1 to MiningMark48
+[17:59:59] [Server thread/INFO]: Saving and pausing game...
+[17:59:59] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:59:59] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:59:59] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:00:00] [Server thread/INFO]: Stopping server
+[18:00:00] [Server thread/INFO]: Saving players
+[18:00:00] [Server thread/INFO]: Saving worlds
+[18:00:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:00:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:00:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:00:01] [Client thread/INFO]: Stopping!

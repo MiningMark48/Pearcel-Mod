@@ -1,17 +1,10 @@
 package com.miningmark48.pearcelmod.renderer;
 
-import com.miningmark48.pearcelmod.model.ModelPearcelPainting;
 import com.miningmark48.pearcelmod.model.ModelPearcelPlush;
-import com.miningmark48.pearcelmod.model.ModelPearcelStaff;
-import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPainting;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelPlush;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
-import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 
