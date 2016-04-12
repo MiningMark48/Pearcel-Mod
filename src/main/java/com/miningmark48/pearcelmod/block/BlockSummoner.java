@@ -17,6 +17,7 @@ import net.minecraft.entity.item.EntityEnderCrystal;
 import net.minecraft.entity.monster.*;
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntitySheep;
+import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.tileentity.TileEntity;
@@ -87,6 +88,10 @@ public class BlockSummoner extends BlockContainer{
         endcrystal.setPosition(x + spawnRand, y + 2, z + spawnRand);
         EntityHorse horse = new EntityHorse(world);
         horse.setPosition(x + spawnRand, y + 2, z + spawnRand);
+        EntityIronGolem ironGolem = new EntityIronGolem(world);
+        ironGolem.setPosition(x + spawnRand, y + 2, z + spawnRand);
+        EntityVillager villager = new EntityVillager(world);
+        villager.setPosition(x + spawnRand, y + 2, z + spawnRand);
 
         if(player.getHeldItem() != null){
             if (!player.isSneaking() && player.getHeldItem().getItem() == ModItems.sap) {
@@ -105,7 +110,7 @@ public class BlockSummoner extends BlockContainer{
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearcelmob") + " " + StatCollector.translateToLocal("summoner.summoned")));
                     }
                     //Pearson
-                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelEndStone) { //TODO: Change this to something else
+                    else if (world.getBlock(x, y + 1, z) == ModBlocks.pearcelEndStone) {
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(pearson);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.pearson") + " " + StatCollector.translateToLocal("summoner.summoned")));
@@ -199,7 +204,19 @@ public class BlockSummoner extends BlockContainer{
                         world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                         world.spawnEntityInWorld(horse);
                         player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.horse") + " " + StatCollector.translateToLocal("summoner.summoned")));
-                    } else {
+                    }
+                    //Iron Golem
+                    else if (world.getBlock(x, y + 1, z) == Blocks.iron_block) {
+                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                        world.spawnEntityInWorld(ironGolem);
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.ironGolem") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                    }
+                    //Villager
+                    else if (world.getBlock(x, y + 1, z) == Blocks.emerald_block) {
+                        world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
+                        world.spawnEntityInWorld(villager);
+                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mobSummon.villager") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                    }else {
                         if (!world.isRemote) {
                             world.setBlock(x, y + 1, z, ModBlocks.corruptedPearcelBlock);
                             player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("summoner.error.incorrectBlock")));

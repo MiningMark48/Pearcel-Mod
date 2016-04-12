@@ -7,7 +7,7 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 public class Entities {
 
     public static void init(){
-        EntityRegistry.registerModEntity(EntityPearcelPearl.class, "PearcelPearl", 10, PearcelMod.class, 350, 5, false);
+        EntityRegistry.registerModEntity(EntityPearcelPearl.class, "PearcelPearl", 10, PearcelMod.instance, 350, 5, false);
     }
 
 }
