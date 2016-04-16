@@ -61,6 +61,8 @@ public class ModBlocks {
         public static final Block pearcelSand = new BlockPearcelSand().setBlockName("pearcelSand").setBlockTextureName(Reference.MOD_ID + ":pearcelSand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(0.5F).setHardness(1.0F);
         public static final Block pearcelSandstone = new BlockPearcelSandstone().setBlockName("pearcelSandstone").setBlockTextureName(Reference.MOD_ID + ":pearcelSandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(1.0F).setHardness(1.8F);
         public static final Block pearcelFire = new BlockPearcelFire().setBlockName("pearcelFire").setBlockTextureName(Reference.MOD_ID + ":pearcelFire").setLightLevel(1.0F);
+        public static final Block packedPearcelStonebricks = new BlockPearcelMod(Material.rock).setBlockName("packedPearcelStonebricks").setBlockTextureName(Reference.MOD_ID + ":packedPearcelStonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.2F).setResistance(2.3F);
+        public static final Block chiseledPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("chiseledPearcelStone").setBlockTextureName(Reference.MOD_ID + ":chiseledPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(1.5F);
     //Fluids
         public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
 
@@ -93,6 +95,8 @@ public class ModBlocks {
             GameRegistry.registerBlock(pearcelSand, "pearcelSand");
             GameRegistry.registerBlock(pearcelSandstone, "pearcelSandstone");
             GameRegistry.registerBlock(pearcelFire, "pearcelFire");
+            GameRegistry.registerBlock(packedPearcelStonebricks, "packedPearcelStonebricks");
+            GameRegistry.registerBlock(chiseledPearcelStone, "chiseledPearcelStone");
         //Ores
             GameRegistry.registerBlock(pearcelOre, "pearcelOre");
             GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
