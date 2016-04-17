@@ -91,15 +91,21 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.summoner), "xyx", "yzy", "aba", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(Items.emerald), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Items.gold_ingot), 'b', new ItemStack(ModItems.pearcelIngot));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.enderInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.ender_pearl), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.end_stone));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.netherInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcelBlock), 'y', new ItemStack(Items.lava_bucket), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.netherrack));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelStonebricks, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelStonebricks, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.polishedPearcelStone));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelFence, 2), "yxy", "yxy", 'x', new ItemStack(ModItems.pearcelStick), 'y', new ItemStack(ModBlocks.pearcelPlanks));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelGlassPane, 16), "xxx", "xxx", 'x', new ItemStack(ModBlocks.pearcelGlass));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelStairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelBlock));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelWoodStairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelPlanks));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelPlush), " x ", "xyx", "z z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.pearcelBlock), 'z', new ItemStack(ModItems.pearcelStick));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.foolsPearcelOre, 4), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcelIngot), 'y', new ItemStack(Items.gunpowder), 'z', new ItemStack(ModItems.tier2Craft));
-        //GameRegistry.addRecipe(new ItemStack(ModBlocks.packedPearcelStonebricks, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelStonebricks));
-        //GameRegistry.addRecipe(new ItemStack(ModBlocks.chiseledPearcelStone, 6), "xy", "yx", 'x', new ItemStack(ModBlocks.pearcelStonebricks), 'y', new ItemStack(ModBlocks.pearcelStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.polishedPearcelStone, 8), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.packedPearcelStonebricks, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelStonebricks));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.chiseledPearcelStone, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.packedPearcelStonebricks));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.distressedPearcelStone, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.chiseledPearcelStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcelBricks, 16), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcelBlock));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.irradiatedPearcelBlock, 8), " x ", "xyx", " x ", 'x', new ItemStack(Items.glowstone_dust), 'y', new ItemStack(ModBlocks.pearcelBlock));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.taintedPearcel, 16), " x ", "xyx", " x ", 'x', new ItemStack(ModBlocks.corruptedPearcelBlock), 'y', new ItemStack(ModBlocks.pearcelStone));
+
 
         //Compressed Blocks/Items
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.blockSapling, 1, 0), new ItemStack(ModItems.pearcel), new ItemStack(Blocks.sapling));
