@@ -63,6 +63,9 @@ public class ModBlocks {
         public static final Block pearcelFire = new BlockPearcelFire().setBlockName("pearcelFire").setBlockTextureName(Reference.MOD_ID + ":pearcelFire").setLightLevel(1.0F);
         public static final Block packedPearcelStonebricks = new BlockPearcelMod(Material.rock).setBlockName("packedPearcelStonebricks").setBlockTextureName(Reference.MOD_ID + ":packedPearcelStonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.2F).setResistance(2.3F);
         public static final Block chiseledPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("chiseledPearcelStone").setBlockTextureName(Reference.MOD_ID + ":chiseledPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(1.5F);
+        public static final Block polishedPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("polishedPearcelStone").setBlockTextureName(Reference.MOD_ID + ":polishedPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.9F).setResistance(1.7F);
+        public static final Block distressedPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("distressedPearcelStone").setBlockTextureName(Reference.MOD_ID + ":distressedPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(0.8F);
+
     //Fluids
         public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
 
@@ -97,6 +100,8 @@ public class ModBlocks {
             GameRegistry.registerBlock(pearcelFire, "pearcelFire");
             GameRegistry.registerBlock(packedPearcelStonebricks, "packedPearcelStonebricks");
             GameRegistry.registerBlock(chiseledPearcelStone, "chiseledPearcelStone");
+            GameRegistry.registerBlock(polishedPearcelStone, "polishedPearcelStone");
+            GameRegistry.registerBlock(distressedPearcelStone, "distressedPearcelStone");
         //Ores
             GameRegistry.registerBlock(pearcelOre, "pearcelOre");
             GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
