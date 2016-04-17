@@ -65,6 +65,9 @@ public class ModBlocks {
     public static final Block chiseledPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("chiseledPearcelStone").setBlockTextureName(Reference.MOD_ID + ":chiseledPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(1.5F);
     public static final Block polishedPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("polishedPearcelStone").setBlockTextureName(Reference.MOD_ID + ":polishedPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.9F).setResistance(1.7F);
     public static final Block distressedPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("distressedPearcelStone").setBlockTextureName(Reference.MOD_ID + ":distressedPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(0.8F);
+    public static final Block irradiatedPearcelBlock = new BlockPearcelMod(Material.glass).setBlockName("irradiatedPearcelBlock").setBlockTextureName(Reference.MOD_ID + ":irradiatedPearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.5F).setResistance(0.125F).setLightLevel(1.0F);
+    public static final Block pearcelBricks = new BlockPearcelMod(Material.rock).setBlockName("pearcelBricks").setBlockTextureName(Reference.MOD_ID + ":pearcelBricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.3F).setResistance(2.5F);
+    public static final Block taintedPearcel = new BlockPearcelMod(Material.rock).setBlockName("taintedPearcel").setBlockTextureName(Reference.MOD_ID + ":taintedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.5F).setResistance(0.125F);
 
     //Fluids
     public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
@@ -101,6 +104,9 @@ public class ModBlocks {
         GameRegistry.registerBlock(chiseledPearcelStone, "chiseledPearcelStone");
         GameRegistry.registerBlock(polishedPearcelStone, "polishedPearcelStone");
         GameRegistry.registerBlock(distressedPearcelStone, "distressedPearcelStone");
+        GameRegistry.registerBlock(irradiatedPearcelBlock, "irradiatedPearcelBlock");
+        GameRegistry.registerBlock(pearcelBricks, "pearcelBricks");
+        GameRegistry.registerBlock(taintedPearcel, "taintedPearcel");
         //Ores
         GameRegistry.registerBlock(pearcelOre, "pearcelOre");
         GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
