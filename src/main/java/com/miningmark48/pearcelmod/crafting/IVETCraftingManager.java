@@ -102,6 +102,8 @@ public class IVETCraftingManager
         this.addShapelessRecipe(new ItemStack(ModItems.pearcelPearl), Items.ender_pearl);
         this.addShapelessRecipe(new ItemStack(Items.ender_pearl), ModItems.pearcelPearl);
         this.addShapelessRecipe(new ItemStack(ModItems.pearcelAndSteel), Items.flint_and_steel);
+        this.addShapelessRecipe(new ItemStack(ModBlocks.pearcelStonebricks), Blocks.stonebrick);
+        this.addShapelessRecipe(new ItemStack(Blocks.stonebrick), ModBlocks.pearcelStonebricks);
 
         Collections.sort(this.recipes, new IVETRecipeSorter(this));
     }
