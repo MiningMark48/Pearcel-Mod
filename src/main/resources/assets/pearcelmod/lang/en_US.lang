@@ -55,6 +55,7 @@ item.tpPearcel.name.bound=Teleportation Pearcel [Bound]
 item.pearcelAndSteel.name=Pearcel and Steel
 item.dragonInfusedStaff.name=Dragon-Infused Pearcel Staff
 item.pepc.name=PEPC (Portable Ender Pearcel Chest)
+item.experiencePearcel.name=Experience Pearcel
 
 tile.pearcelPlant.name=Pearcel Plant
 tile.pearcelGlass.name=Pearcel Glass
@@ -258,6 +259,9 @@ tooltip.item.dragonInfusedStaff.line2=Right Click = Resistance
 tooltip.item.dragonInfusedStaff.line3=Sneak + Right Click = Regen
 tooltip.item.pepc.line1=A portable inventory from the drake pearcel magic.
 tooltip.item.pepc.line2=Portable ender chest.
+tooltip.item.experiencePearcel.line1=XP is awesome.
+tooltip.item.experiencePearcel.line2.noXP=No XP stored!
+tooltip.item.experiencePearcel.line2.XP=XP Stored:
 
 
 
