@@ -125,7 +125,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(Items.emerald, 8), " xx", " x ", 'x', new ItemStack(ModItems.pearcelMatter));
         GameRegistry.addRecipe(new ItemStack(Items.redstone, 32), "x x", "x x", 'x', new ItemStack(ModItems.pearcelMatter));
         GameRegistry.addRecipe(new ItemStack(Items.quartz, 32), "x x", "x x", " x ", 'x', new ItemStack(ModItems.pearcelMatter));
-        GameRegistry.addRecipe(new ItemStack(Items.blaze_rod, 8), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.pearcelMatter));
+        GameRegistry.addRecipe(new ItemStack(Items.blaze_rod, 16), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.pearcelMatter));
         GameRegistry.addRecipe(new ItemStack(Items.slime_ball, 32), " x ", "x x", " x ", 'x', new ItemStack(ModItems.pearcelMatter));
         GameRegistry.addRecipe(new ItemStack(Items.experience_bottle, 32), "xx ", "x  ", 'x', new ItemStack(ModItems.pearcelMatter));
         GameRegistry.addRecipe(new ItemStack(Items.glowstone_dust, 32), "xx ", "  x", 'x', new ItemStack(ModItems.pearcelMatter));
