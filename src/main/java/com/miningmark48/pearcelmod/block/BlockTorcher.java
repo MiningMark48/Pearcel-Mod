@@ -113,7 +113,7 @@ public class BlockTorcher extends BlockContainer{
                     torchY = y;
                     torchZ = z + rangeRand;
                 }
-                if (world.getBlock(torchX, torchY, torchZ) == Blocks.air || world.getBlock(torchX, torchY, torchZ) == Blocks.tallgrass){
+                if (world.getBlock(torchX, torchY, torchZ).isReplaceable(world, torchX, torchY, torchZ)){
                     if (world.getBlock(torchX, torchY - 1, torchZ).getMaterial().isSolid()){
                         world.setBlock(torchX, torchY, torchZ, ModBlocks.pearcelTorch);
                     }
