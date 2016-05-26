@@ -35,9 +35,8 @@ public class WorldGen implements IWorldGenerator{
 
     private void generateNether(World world, Random rand, int x, int z)
     {
-    	if(!ConfigurationHandler.disableOreGen){
         generateOre(ModBlocks.netherPearcelOre, world, rand, x, z, 3, 6, 10, 0, 60, Blocks.netherrack);
-    	}
+
         if (ConfigurationHandler.doSpecialWorldGen) {
             generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 20, 0, 60, Blocks.netherrack);
         }
@@ -45,14 +44,12 @@ public class WorldGen implements IWorldGenerator{
 
     private void generateSurface(World world, Random rand, int x, int z)
     {
-    	if(!ConfigurationHandler.disableOreGen){
         generateOre(ModBlocks.pearcelOre, world, rand, x, z, 3, 12, 25, 10, 70, Blocks.stone);
         generateOre(ModBlocks.foolsPearcelOre, world, rand, x, z, 3, 5, 10, 10, 50, ModBlocks.pearcelOre);
         generateOre(ModBlocks.pearcelMatterOre, world, rand, x, z, 1, 2, 15, 10, 40, Blocks.stone);
         generateOre(ModBlocks.densePearcelOre, world, rand, x, z, 5, 20, 15, 5, 70, Blocks.stone);
         generateOre(ModBlocks.densePearcelMatterOre, world, rand, x, z, 5, 20, 10, 5, 70, Blocks.stone);
-    	}
-    	
+
         if (ConfigurationHandler.doSpecialWorldGen){
             generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 10, 3, 60, Blocks.stone);
             generateOre(ModBlocks.pearcelStone, world, rand, x, z, 1, 15, 20, 10, 64, Blocks.stone);
@@ -63,10 +60,9 @@ public class WorldGen implements IWorldGenerator{
 
     private void generateEnd(World world, Random rand, int x, int z)
     {
-    	if(!ConfigurationHandler.disableOreGen){
         generateOre(ModBlocks.pearcelEndStone, world, rand, x, z, 2, 10, 15, 0, 60, Blocks.end_stone);
         generateOre(ModBlocks.enderPearcelOre, world, rand, x, z, 3, 12, 10, 0, 60, Blocks.end_stone);
-    	}
+
         if (ConfigurationHandler.doSpecialWorldGen){
             generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 20, 0, 60, Blocks.end_stone);
         }
