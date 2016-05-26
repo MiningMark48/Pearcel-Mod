@@ -181,6 +181,8 @@ config.doSpecialWorldGen.title=Do Special World Gen?
 config.doSpecialWorldGen.desc=Should there be special world gen like Pearcel Stone and Pearcel Sand?
 config.craftingTables.title=Disable Pearcel Workbench
 config.craftingTables.desc=Prevents the pearcel workbench from working.
+config.disableOreGen.title=Disable Ore Generation
+config.disableOreGen.desc=Disable all ore generation like Pearcel Ore and Pearcel Matter Ore
 
 gui.ivet.name=IVET
 gui.pearcelWorkbench.name=Pearcel Workbench
