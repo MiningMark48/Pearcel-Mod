@@ -39,6 +39,7 @@ public class WorldGen implements IWorldGenerator{
 
         if (ConfigurationHandler.doSpecialWorldGen) {
             generateOre(ModBlocks.pearcelFluid, world, rand, x, z, 1, 2, 20, 0, 60, Blocks.netherrack);
+            generateOre(ModBlocks.taintedPearcel, world, rand, x, z, 3, 15, 20, 0, 60, Blocks.netherrack);
         }
     }
 
