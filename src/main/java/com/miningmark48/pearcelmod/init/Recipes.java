@@ -91,7 +91,7 @@ public class Recipes {
         //GameRegistry.addRecipe(new ItemStack(ModBlocks.netherInfusedPearcel), "xax", "yzy", "xax", 'x', new ItemStack(ModBlocks.pearcel_block), 'y', new ItemStack(Items.lava_bucket), 'z', new ItemStack(ModItems.tier3Craft), 'a', new ItemStack(Blocks.netherrack));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_stonebricks, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.polished_pearcel_stone));
         //GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_fence, 2), "yxy", "yxy", 'x', new ItemStack(ModItems.pearcelStick), 'y', new ItemStack(ModBlocks.pearcelPlanks));
-        //GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_glass_pane, 16), "xxx", "xxx", 'x', new ItemStack(ModBlocks.pearcelGlass));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_glass_pane, 16), "xxx", "xxx", 'x', new ItemStack(ModBlocks.pearcel_glass));
         //GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_stairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcel_block));
         //GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_wood_stairs, 4), "x  ", "xx ", "xxx", 'x', new ItemStack(ModBlocks.pearcelPlanks));
         //GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_plush), " x ", "xyx", "z z", 'x', new ItemStack(ModItems.pearcel), 'y', new ItemStack(ModBlocks.pearcel_block), 'z', new ItemStack(ModItems.pearcelStick));
