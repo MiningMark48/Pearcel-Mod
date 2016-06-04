@@ -1,185 +1,71 @@
-[17:07:00] [main/INFO]: Setting user: Player62
-[17:07:02] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:07:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Misc Configs
-[17:07:18] [Sound Library Loader/INFO]: Sound engine started
-[17:07:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[17:07:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[17:07:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Misc Configs
-[17:07:30] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[17:07:34] [Client thread/INFO]: Created: 4096x2048 textures/blocks-atlas
-[17:07:35] [Sound Library Loader/INFO]: Sound engine started
-[17:09:07] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:09:07] [Server thread/INFO]: Generating keypair
-[17:09:08] [Server thread/INFO]: Preparing start region for level 0
-[17:09:08] [Server thread/INFO]: Changing view distance to 4, from 10
-[17:09:09] [Server thread/INFO]: Player62[local:E:d6cac5aa] logged in with entity id 839 at (135.8854047845636, 26.649403270035318, 845.0782791771633)
-[17:09:09] [Server thread/INFO]: Player62 joined the game
-[17:09:13] [Client thread/INFO]: [CHAT] codechickencore.update
-[17:09:54] [Server thread/INFO]: Saving and pausing game...
-[17:09:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:09:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:09:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:09:56] [Server thread/INFO]: Player62 has just earned the achievement [Taking Inventory]
-[17:09:56] [Client thread/INFO]: [CHAT] Player62 has just earned the achievement [Taking Inventory]
-[17:11:04] [Server thread/INFO]: Player62 has just earned the achievement [Experience the Torcher!]
-[17:11:04] [Client thread/INFO]: [CHAT] Player62 has just earned the achievement [Experience the Torcher!]
-[17:11:04] [Client thread/INFO]: [CHAT] §6Let there be light!
-[17:11:11] [Client thread/INFO]: [CHAT] §6Let there be light!
-[17:11:16] [Client thread/INFO]: [CHAT] §6Let there be light!
-[17:11:27] [Server thread/INFO]: Saving and pausing game...
-[17:11:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:11:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:11:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:12:31] [Server thread/INFO]: [Player62: Given [Emerald] * 64 to Player62]
-[17:12:31] [Client thread/INFO]: [CHAT] Given [Emerald] * 64 to Player62
-[17:13:59] [Server thread/INFO]: Saving and pausing game...
-[17:13:59] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:14:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:14:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:14:00] [Server thread/INFO]: [@: Block placed]
-[17:14:00] [Server thread/INFO]: [@: Block placed]
-[17:14:00] [Server thread/INFO]: [@: Block placed]
-[17:14:01] [Server thread/INFO]: [@: Block placed]
-[17:14:01] [Server thread/INFO]: [@: Block placed]
-[17:14:01] [Server thread/INFO]: [@: Block placed]
-[17:14:01] [Server thread/INFO]: [@: Block placed]
-[17:14:01] [Server thread/INFO]: [@: Block placed]
-[17:14:02] [Server thread/INFO]: [@: Block placed]
-[17:14:02] [Server thread/INFO]: [@: Block placed]
-[17:14:02] [Server thread/INFO]: [@: Block placed]
-[17:14:02] [Server thread/INFO]: [@: Block placed]
-[17:14:02] [Server thread/INFO]: [@: Block placed]
-[17:14:03] [Server thread/INFO]: [@: Block placed]
-[17:14:03] [Server thread/INFO]: [@: Block placed]
-[17:14:03] [Server thread/INFO]: [@: Block placed]
-[17:14:03] [Server thread/INFO]: [@: Block placed]
-[17:14:03] [Server thread/INFO]: [@: Block placed]
-[17:14:04] [Server thread/INFO]: [@: Block placed]
-[17:14:04] [Server thread/INFO]: [@: Block placed]
-[17:14:04] [Server thread/INFO]: [@: Block placed]
-[17:14:04] [Server thread/INFO]: [@: Block placed]
-[17:14:04] [Server thread/INFO]: [@: Block placed]
-[17:14:05] [Server thread/INFO]: [@: Block placed]
-[17:14:05] [Server thread/INFO]: [@: Block placed]
-[17:14:05] [Server thread/INFO]: [@: Block placed]
-[17:14:05] [Server thread/INFO]: [@: Block placed]
-[17:14:05] [Server thread/INFO]: [@: Block placed]
-[17:14:06] [Server thread/INFO]: [@: Block placed]
-[17:14:06] [Server thread/INFO]: [@: Block placed]
-[17:14:06] [Server thread/INFO]: [@: Block placed]
-[17:14:06] [Server thread/INFO]: [@: Block placed]
-[17:14:06] [Server thread/INFO]: [@: Block placed]
-[17:14:07] [Server thread/INFO]: [@: Block placed]
-[17:14:07] [Server thread/INFO]: [@: Block placed]
-[17:14:07] [Server thread/INFO]: [@: Block placed]
-[17:14:07] [Server thread/INFO]: [@: Block placed]
-[17:14:07] [Server thread/INFO]: [@: Block placed]
-[17:14:08] [Server thread/INFO]: [@: Block placed]
-[17:14:08] [Server thread/INFO]: [@: Block placed]
-[17:14:08] [Server thread/INFO]: [@: Block placed]
-[17:14:08] [Server thread/INFO]: [@: Block placed]
-[17:14:08] [Server thread/INFO]: [@: Block placed]
-[17:14:09] [Server thread/INFO]: [@: Block placed]
-[17:14:09] [Server thread/INFO]: [@: Block placed]
-[17:14:09] [Server thread/INFO]: [@: Block placed]
-[17:14:09] [Server thread/INFO]: [@: Block placed]
-[17:14:09] [Server thread/INFO]: [@: Block placed]
-[17:14:10] [Server thread/INFO]: [@: Block placed]
-[17:14:10] [Server thread/INFO]: [@: Block placed]
-[17:14:10] [Server thread/INFO]: [@: Block placed]
-[17:14:10] [Server thread/INFO]: [@: Block placed]
-[17:14:10] [Server thread/INFO]: [@: Block placed]
-[17:14:11] [Server thread/INFO]: [@: Block placed]
-[17:14:11] [Server thread/INFO]: [@: Block placed]
-[17:14:11] [Server thread/INFO]: [@: Block placed]
-[17:14:11] [Server thread/INFO]: [@: Block placed]
-[17:14:11] [Server thread/INFO]: [@: Block placed]
-[17:14:12] [Server thread/INFO]: [@: Block placed]
-[17:14:12] [Server thread/INFO]: [@: Block placed]
-[17:14:12] [Server thread/INFO]: [@: Block placed]
-[17:14:12] [Server thread/INFO]: [@: Block placed]
-[17:14:12] [Server thread/INFO]: [@: Block placed]
-[17:14:13] [Server thread/INFO]: [@: Block placed]
-[17:14:13] [Server thread/INFO]: [@: Block placed]
-[17:14:13] [Server thread/INFO]: [@: Block placed]
-[17:14:13] [Server thread/INFO]: [@: Block placed]
-[17:14:13] [Server thread/INFO]: [@: Block placed]
-[17:14:14] [Server thread/INFO]: [@: Block placed]
-[17:14:14] [Server thread/INFO]: [@: Block placed]
-[17:14:14] [Server thread/INFO]: [@: Block placed]
-[17:14:14] [Server thread/INFO]: [@: Block placed]
-[17:14:14] [Server thread/INFO]: [@: Block placed]
-[17:14:15] [Server thread/INFO]: [@: Block placed]
-[17:14:15] [Server thread/INFO]: [@: Block placed]
-[17:14:15] [Server thread/INFO]: [@: Block placed]
-[17:14:15] [Server thread/INFO]: [@: Block placed]
-[17:14:15] [Server thread/INFO]: [@: Block placed]
-[17:14:16] [Server thread/INFO]: [@: Block placed]
-[17:14:16] [Server thread/INFO]: [@: Block placed]
-[17:14:16] [Server thread/INFO]: [@: Block placed]
-[17:14:16] [Server thread/INFO]: [@: Block placed]
-[17:14:16] [Server thread/INFO]: [@: Block placed]
-[17:14:17] [Server thread/INFO]: [@: Block placed]
-[17:14:17] [Server thread/INFO]: [@: Block placed]
-[17:14:17] [Server thread/INFO]: [@: Block placed]
-[17:14:17] [Server thread/INFO]: [@: Block placed]
-[17:14:17] [Server thread/INFO]: [@: Block placed]
-[17:14:18] [Server thread/INFO]: [@: Block placed]
-[17:14:18] [Server thread/INFO]: [@: Block placed]
-[17:14:18] [Server thread/INFO]: [@: Block placed]
-[17:14:18] [Server thread/INFO]: [@: Block placed]
-[17:14:18] [Server thread/INFO]: [@: Block placed]
-[17:14:19] [Server thread/INFO]: [@: Block placed]
-[17:14:19] [Server thread/INFO]: [@: Block placed]
-[17:14:19] [Server thread/INFO]: [@: Block placed]
-[17:14:19] [Server thread/INFO]: [@: Block placed]
-[17:14:19] [Server thread/INFO]: [@: Block placed]
-[17:14:20] [Server thread/INFO]: [@: Block placed]
-[17:14:20] [Server thread/INFO]: [@: Block placed]
-[17:14:20] [Server thread/INFO]: [@: Block placed]
-[17:14:20] [Server thread/INFO]: [@: Block placed]
-[17:14:20] [Server thread/INFO]: [@: Block placed]
-[17:14:21] [Server thread/INFO]: [@: Block placed]
-[17:14:21] [Server thread/INFO]: [@: Block placed]
-[17:14:21] [Server thread/INFO]: [@: Block placed]
-[17:14:21] [Server thread/INFO]: [@: Block placed]
-[17:14:21] [Server thread/INFO]: [@: Block placed]
-[17:14:22] [Server thread/INFO]: [@: Block placed]
-[17:14:22] [Server thread/INFO]: [@: Block placed]
-[17:14:22] [Server thread/INFO]: [@: Block placed]
-[17:14:22] [Server thread/INFO]: [@: Block placed]
-[17:14:22] [Server thread/INFO]: [@: Block placed]
-[17:14:23] [Server thread/INFO]: [@: Block placed]
-[17:14:23] [Server thread/INFO]: [@: Block placed]
-[17:14:23] [Server thread/INFO]: [@: Block placed]
-[17:14:23] [Server thread/INFO]: [@: Block placed]
-[17:14:23] [Server thread/INFO]: [@: Block placed]
-[17:14:24] [Server thread/INFO]: [@: Block placed]
-[17:14:24] [Server thread/INFO]: [@: Block placed]
-[17:14:24] [Server thread/INFO]: [@: Block placed]
-[17:14:24] [Server thread/INFO]: [@: Block placed]
-[17:14:24] [Server thread/INFO]: [@: Block placed]
-[17:14:25] [Server thread/INFO]: [@: Block placed]
-[17:14:25] [Server thread/INFO]: [@: Block placed]
-[17:14:25] [Server thread/INFO]: [@: Block placed]
-[17:14:25] [Server thread/INFO]: [@: Block placed]
-[17:14:25] [Server thread/INFO]: [@: Block placed]
-[17:14:26] [Server thread/INFO]: [@: Block placed]
-[17:14:26] [Server thread/INFO]: [@: Block placed]
-[17:14:26] [Server thread/INFO]: [@: Block placed]
-[17:14:26] [Server thread/INFO]: [@: Block placed]
-[17:14:26] [Server thread/INFO]: [@: Block placed]
-[17:14:27] [Server thread/INFO]: [@: Block placed]
-[17:15:00] [Server thread/INFO]: [Player62: Given [Emerald] * 1 to Player62]
-[17:15:00] [Client thread/INFO]: [CHAT] Given [Emerald] * 1 to Player62
-[17:16:14] [Server thread/INFO]: Saving and pausing game...
-[17:16:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:16:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:16:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:16:15] [Server thread/INFO]: Stopping server
-[17:16:15] [Server thread/INFO]: Saving players
-[17:16:15] [Server thread/INFO]: Saving worlds
-[17:16:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:16:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:16:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:16:16] [Client thread/INFO]: Stopping!
+[00:19:36] [Client thread/INFO]: Setting user: MiningMark48
+[00:19:39] [Client thread/INFO]: LWJGL Version: 2.9.4
+[00:19:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[00:19:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:19:44] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[00:19:44] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:19:44] [Thread-9/INFO]: OpenAL initialized.
+[00:19:44] [Sound Library Loader/INFO]: Sound engine started
+[00:19:51] [Client thread/INFO]: Created: 16x16 textures-atlas
+[00:19:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[00:19:53] [Client thread/INFO]: SoundSystem shutting down...
+[00:19:53] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[00:19:53] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[00:19:53] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[00:19:53] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[00:19:53] [Thread-11/INFO]: OpenAL initialized.
+[00:19:53] [Sound Library Loader/INFO]: Sound engine started
+[00:20:03] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[00:20:03] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:20:11] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:20:11] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[00:20:11] [Server thread/INFO]: Generating keypair
+[00:20:11] [Server thread/INFO]: Preparing start region for level 0
+[00:20:12] [Server thread/INFO]: Changing view distance to 12, from 10
+[00:20:12] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:20:13] [Server thread/INFO]: MiningMark48[local:E:5254c7b3] logged in with entity id 4 at (-75.68619703243682, 56.0, 37.51530274937888)
+[00:20:13] [Server thread/INFO]: MiningMark48 joined the game
+[00:20:14] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@5ae6c6c8[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.func_181037_M(Minecraft.java:2915) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:130) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [?:1.7.0_79]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [?:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_79]
+[00:20:16] [Server thread/INFO]: Saving and pausing game...
+[00:20:16] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:20:16] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:20:16] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:20:20] [Server thread/INFO]: Saving and pausing game...
+[00:20:20] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:20:20] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:20:20] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:20:26] [Server thread/INFO]: Saving and pausing game...
+[00:20:26] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:20:26] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:20:26] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:20:27] [Server thread/INFO]: Stopping server
+[00:20:27] [Server thread/INFO]: Saving players
+[00:20:27] [Server thread/INFO]: Saving worlds
+[00:20:27] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:20:27] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:20:27] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:20:27] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:20:28] [Client thread/INFO]: Stopping!
+[00:20:28] [Client thread/INFO]: SoundSystem shutting down...
+[00:20:28] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

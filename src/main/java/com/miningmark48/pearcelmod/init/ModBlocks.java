@@ -1,130 +1,172 @@
 package com.miningmark48.pearcelmod.init;
 
-import com.miningmark48.pearcelmod.biome.PMLeaf;
-import com.miningmark48.pearcelmod.biome.PMLog;
-import com.miningmark48.pearcelmod.biome.PMSapling;
 import com.miningmark48.pearcelmod.block.*;
-import com.miningmark48.pearcelmod.creativetab.CreativeTabPearcelMod;
-import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
-import com.miningmark48.pearcelmod.item.ItemLeafBlocks;
-import com.miningmark48.pearcelmod.item.ItemLogBlocks;
-import com.miningmark48.pearcelmod.item.ItemSaplingBlocks;
+import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFence;
-import net.minecraft.block.material.Material;
-
-import java.sql.Ref;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 
-    //Plants
-    public static final Block pearcelPlant = new BlockPearcelPlant().setBlockName("pearcelPlant").setBlockTextureName(Reference.MOD_ID + ":pearcelPlant");
-    public static final Block blockLog = new PMLog().setBlockName("blockLog").setBlockTextureName(Reference.MOD_ID + ":blockLog").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Block blockLeaf = new PMLeaf().setBlockName("blockLeaf").setBlockTextureName(Reference.MOD_ID + ":blockLeaf").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Block blockSapling = new PMSapling().setBlockName("blockSapling").setBlockTextureName(Reference.MOD_ID + ":blockSapling").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+    //General
+    public static Block pearcel_block;
+    public static Block pearcel_sand;
+    public static Block pearcel_sandstone;
+    public static Block pearcel_matter_block;
+    public static Block pearcel_bricks;
+    public static Block packed_pearcel_bricks;
+    public static Block pearcel_stone;
+    public static Block pearcel_glass;
+    public static Block distressed_pearcel_stone;
+    public static Block irradiated_pearcel_block;
+    public static Block polished_pearcel_stone;
+    public static Block pearcel_stonebricks;
+    public static Block tainted_pearcel;
+    public static Block pearcel_torch;
+    public static Block pearcel_planks;
+    public static Block pearcel_end_stone;
+    public static Block pearcel_charcoal_block;
 
-    //Ore
-    public static final Block pearcelOre = new BlockPearcelOre().setBlockName("pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setHardness(1.2F).setResistance(1.0F);
-    public static final Block foolsPearcelOre = new BlockFoolsPearcelOre().setBlockName("foolsPearcelOre").setBlockTextureName(Reference.MOD_ID + ":pearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
-    public static final Block netherPearcelOre = new BlockPearcelOre().setBlockName("netherPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherPearcelOre").setHardness(1.0F).setResistance(1.0F);
-    public static final Block pearcelMatterOre = new BlockPearcelMatterOre().setBlockName("pearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":pearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.5F).setResistance(1.2F);;
-    public static final Block enderPearcelOre = new BlockEnderPearcelOre().setBlockName("enderPearcelOre").setBlockTextureName(Reference.MOD_ID + ":enderPearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.2F).setResistance(1.2F);
-    public static final Block densePearcelOre = new BlockDensePearcelOre().setBlockName("densePearcelOre").setBlockTextureName(Reference.MOD_ID + ":densePearcelOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.4F).setResistance(1.5F);
-    public static final Block densePearcelMatterOre = new BlockDensePearcelMatterOre().setBlockName("densePearcelMatterOre").setBlockTextureName(Reference.MOD_ID + ":densePearcelMatterOre").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.4F).setResistance(1.5F);
+    //Ores
+    public static Block pearcel_ore;
+    public static Block nether_pearcel_ore;
+    public static Block ender_pearcel_ore;
+    public static Block pearcel_matter_ore;
+    public static Block dense_pearcel_ore;
+    public static Block dense_pearcel_matter_ore;
+    public static Block fools_pearcel_ore;
 
-    //General blocks
-    public static final Block pearcelGlass = new BlockPearcelGlass().setBlockName("pearcelGlass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setLightLevel(0.2f).setBlockTextureName(Reference.MOD_ID + ":pearcelGlass").setHardness(0.5F).setResistance(99999.9F);
-    public static final Block pearcelWorkbench = new BlockPearcelWorkbench().setBlockName("pearcelWorkbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWorkbench").setHardness(2.5F).setResistance(5.0F);
-    public static final Block ivet = new BlockIVET(Material.wood).setBlockName("ivet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.0F).setResistance(1000.0F);
-    public static final Block pearcelTorch = new BlockPearcelTorch().setBlockName("pearcelTorch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelTorch").setHardness(0.0F).setResistance(10.0F).setLightLevel(1.0F);
-    public static final Block pearcelBlock = new BlockPearcelBlock().setBlockName("pearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelBlock").setHardness(1.5F).setResistance(10.0F);
-    public static final Block pearcelMatterBlock = new BlockPearcelMatter().setBlockName("pearcelMatterBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelMatterBlock").setHardness(0.6F).setResistance(1.0F);
-    public static final Block pearcelEndStone = new BlockPearcelEndStone().setBlockName("pearcelEndStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelEndStone");
-    public static final Block torcher = new BlockTorcher(Material.wood).setBlockName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.5F).setResistance(10.0F);
-    public static final Block summoner = new BlockSummoner().setBlockName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Block dragonInfusedPearcel = new BlockDragonInfusedPearcel().setBlockName("dragonInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":dragonInfusedPearcel").setResistance(5.0F);
-    public static final Block enderInfusedPearcel = new BlockPearcelMod(Material.rock).setBlockName("enderInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":enderInfusedPearcel");
-    public static final Block corruptedPearcelBlock = new BlockCorruptedPearcelBlock().setBlockName("corruptedPearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":corruptedPearcelBlock").setResistance(2.0F);
-    public static final Block netherInfusedPearcel = new BlockPearcelMod(Material.rock).setBlockName("netherInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":netherInfusedPearcel");
-    public static final Block witherInfusedPearcel = new BlockWitherInfusedPearcel().setBlockName("witherInfusedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":witherInfusedPearcel").setResistance(5.0F);
-    public static final Block pearcelStone = new BlockPearcelMod().setBlockName("pearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStone");
-    public static final Block pearcelStonebricks = new BlockPearcelMod().setBlockName("pearcelStonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStonebricks");
-    public static final Block pearcelPlanks = new BlockPlanks().setBlockName("pearcelPlanks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelPlanks");
-    public static final Block pearcelCharcoalBlock = new BlockPearcelMod().setBlockName("pearcelCharcoalBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelCharcoalBlock");
-    public static final Block pearcelFence = new BlockFence(Reference.MOD_ID + ":pearcelPlanks", Material.wood).setHardness(2.0F).setResistance(5.5F).setBlockName("pearcelFence").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-    public static final Block pearcelGlassPane = new BlockPearcelPane(Reference.MOD_ID + ":pearcelGlass", Reference.MOD_ID + ":pearcelGlass", Material.glass, true).setBlockName("pearcelGlassPane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(9999.9F).setStepSound(Block.soundTypeGlass);
-    public static final Block pearcelStairs = new BlockPStairs(ModBlocks.pearcelBlock, 0).setBlockName("pearcelStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelStairs");
-    public static final Block pearcelWoodStairs = new BlockPStairs(ModBlocks.pearcelPlanks, 1).setBlockName("pearcelWoodStairs").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setBlockTextureName(Reference.MOD_ID + ":pearcelWoodStairs");
-    public static final Block pearcelPlush = new BlockPearcelPlush(Material.carpet).setBlockName("pearcelPlush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.5F).setResistance(0.1F);
-    public static final Block pearcelSand = new BlockPearcelSand().setBlockName("pearcelSand").setBlockTextureName(Reference.MOD_ID + ":pearcelSand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(0.5F).setHardness(1.0F);
-    public static final Block pearcelSandstone = new BlockPearcelSandstone().setBlockName("pearcelSandstone").setBlockTextureName(Reference.MOD_ID + ":pearcelSandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setResistance(1.0F).setHardness(1.8F);
-    public static final Block pearcelFire = new BlockPearcelFire().setBlockName("pearcelFire").setBlockTextureName(Reference.MOD_ID + ":pearcelFire").setLightLevel(1.0F);
-    public static final Block packedPearcelStonebricks = new BlockPearcelMod(Material.rock).setBlockName("packedPearcelStonebricks").setBlockTextureName(Reference.MOD_ID + ":packedPearcelStonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.2F).setResistance(2.3F);
-    public static final Block chiseledPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("chiseledPearcelStone").setBlockTextureName(Reference.MOD_ID + ":chiseledPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(1.5F);
-    public static final Block polishedPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("polishedPearcelStone").setBlockTextureName(Reference.MOD_ID + ":polishedPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.9F).setResistance(1.7F);
-    public static final Block distressedPearcelStone = new BlockPearcelMod(Material.rock).setBlockName("distressedPearcelStone").setBlockTextureName(Reference.MOD_ID + ":distressedPearcelStone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(1.8F).setResistance(0.8F);
-    public static final Block irradiatedPearcelBlock = new BlockPearcelMod(Material.glass).setBlockName("irradiatedPearcelBlock").setBlockTextureName(Reference.MOD_ID + ":irradiatedPearcelBlock").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.5F).setResistance(0.125F).setLightLevel(1.0F);
-    public static final Block pearcelBricks = new BlockPearcelMod(Material.rock).setBlockName("pearcelBricks").setBlockTextureName(Reference.MOD_ID + ":pearcelBricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(2.3F).setResistance(2.5F);
-    public static final Block taintedPearcel = new BlockPearcelMod(Material.rock).setBlockName("taintedPearcel").setBlockTextureName(Reference.MOD_ID + ":taintedPearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setHardness(0.5F).setResistance(0.125F);
+    //Functional
+    public static Block pearcel_workbench;
+    public static Block torcher;
+    public static Block summoner;
 
-    //Fluids
-    public static final Block pearcelFluid = new BlockPearcelFluid().setBlockName("pearcelFluid").setBlockTextureName(Reference.MOD_ID + ":pearcelFluid");
+    //Crops
+    public static Block pearcel_crops;
 
     public static void init(){
+        //General
+        pearcel_block = new BlockPearcelMod().setUnlocalizedName("pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sand = new BlockPearcelModGravity().setUnlocalizedName("pearcel_sand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sandstone = new BlockPearcelMod().setUnlocalizedName("pearcel_sandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_matter_block = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        packed_pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("packed_pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_glass = new BlockPearcelModTransparent().setUnlocalizedName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        distressed_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("distressed_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        irradiated_pearcel_block = new BlockPearcelModLightEmit(5.0F).setUnlocalizedName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        polished_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("polished_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stonebricks = new BlockPearcelMod().setUnlocalizedName("pearcel_stonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tainted_pearcel = new BlockPearcelMod().setUnlocalizedName("tainted_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_torch = new BlockPearcelTorch().setUnlocalizedName("pearcel_torch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_planks = new BlockPearcelModWood().setUnlocalizedName("pearcel_planks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_end_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_end_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_charcoal_block = new BlockPearcelMod().setUnlocalizedName("pearcel_charcoal_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
-        //General Blocks
-        GameRegistry.registerBlock(pearcelBlock, "pearcelBlock");
-        GameRegistry.registerBlock(pearcelGlass, "pearcelGlass");
-        GameRegistry.registerBlock(pearcelWorkbench, "pearcelWorkbench");
-        GameRegistry.registerBlock(ivet, "ivet");
-        GameRegistry.registerBlock(pearcelTorch, "pearcelTorch");
-        GameRegistry.registerBlock(pearcelMatterBlock, "pearcelMatterBlock");
-        GameRegistry.registerBlock(pearcelEndStone, "pearcelEndStone");
-        GameRegistry.registerBlock(torcher, "torcher");
-        GameRegistry.registerBlock(summoner, "summoner");
-        GameRegistry.registerBlock(dragonInfusedPearcel, "dragonInfusedPearcel");
-        GameRegistry.registerBlock(enderInfusedPearcel, "enderInfusedPearcel");
-        GameRegistry.registerBlock(corruptedPearcelBlock, "corruptedPearcelBlock");
-        GameRegistry.registerBlock(netherInfusedPearcel, "netherInfusedPearcel");
-        GameRegistry.registerBlock(witherInfusedPearcel, "witherInfusedPearcel");
-        GameRegistry.registerBlock(pearcelStone, "pearcelStone");
-        GameRegistry.registerBlock(pearcelStonebricks, "pearcelStonebricks");
-        GameRegistry.registerBlock(pearcelPlanks, "pearcelPlanks");
-        GameRegistry.registerBlock(pearcelCharcoalBlock, "pearcelCharcoalBlock");
-        GameRegistry.registerBlock(pearcelFence, "pearcelFence");
-        GameRegistry.registerBlock(pearcelGlassPane, "pearcelGlassPane");
-        GameRegistry.registerBlock(pearcelStairs, "pearcelStairs");
-        GameRegistry.registerBlock(pearcelWoodStairs, "pearcelWoodStairs");
-        GameRegistry.registerBlock(pearcelSand, "pearcelSand");
-        GameRegistry.registerBlock(pearcelSandstone, "pearcelSandstone");
-        GameRegistry.registerBlock(pearcelFire, "pearcelFire");
-        GameRegistry.registerBlock(packedPearcelStonebricks, "packedPearcelStonebricks");
-        GameRegistry.registerBlock(chiseledPearcelStone, "chiseledPearcelStone");
-        GameRegistry.registerBlock(polishedPearcelStone, "polishedPearcelStone");
-        GameRegistry.registerBlock(distressedPearcelStone, "distressedPearcelStone");
-        GameRegistry.registerBlock(irradiatedPearcelBlock, "irradiatedPearcelBlock");
-        GameRegistry.registerBlock(pearcelBricks, "pearcelBricks");
-        GameRegistry.registerBlock(taintedPearcel, "taintedPearcel");
         //Ores
-        GameRegistry.registerBlock(pearcelOre, "pearcelOre");
-        GameRegistry.registerBlock(foolsPearcelOre, "foolsPearcelOre");
-        GameRegistry.registerBlock(netherPearcelOre, "netherPearcelOre");
-        GameRegistry.registerBlock(pearcelMatterOre, "pearcelMatterOre");
-        GameRegistry.registerBlock(enderPearcelOre, "enderPearceOre");
-        GameRegistry.registerBlock(densePearcelOre, "densePearcelOre");
-        GameRegistry.registerBlock(densePearcelMatterOre, "densePearcelMatterOre");
-        //Plants
-        GameRegistry.registerBlock(pearcelPlant, "pearcelPlant");
-        GameRegistry.registerBlock(blockLog, ItemLogBlocks.class, blockLog.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(blockLeaf, ItemLeafBlocks.class, blockLeaf.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(blockSapling, ItemSaplingBlocks.class, blockSapling.getUnlocalizedName().substring(5));
-        //Models
-        GameRegistry.registerBlock(pearcelPlush, "pearcelPlush");
-        //Fluid
-        GameRegistry.registerBlock(pearcelFluid, "pearcelFluid");
+        pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        nether_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("nether_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        ender_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dense_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dense_pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        fools_pearcel_ore = new BlockFoolsPearcelOre().setUnlocalizedName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
+        //Functional
+        pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        torcher = new BlockTorcher().setUnlocalizedName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        summoner = new BlockSummoner().setUnlocalizedName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+
+        //Plants
+        pearcel_crops = new BlockPearcelCrops().setUnlocalizedName("pearcel_crops");
+
+    }
+
+    public static void register(){
+        //General
+        GameRegistry.registerBlock(pearcel_block, pearcel_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_sand, pearcel_sand.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_sandstone, pearcel_sandstone.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_matter_block, pearcel_matter_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_bricks, pearcel_bricks.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(packed_pearcel_bricks, packed_pearcel_bricks.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_stone, pearcel_stone.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_glass, pearcel_glass.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(distressed_pearcel_stone, distressed_pearcel_stone.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(irradiated_pearcel_block, irradiated_pearcel_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(polished_pearcel_stone, polished_pearcel_stone.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_stonebricks, pearcel_stonebricks.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(tainted_pearcel, tainted_pearcel.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_torch, pearcel_torch.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_planks, pearcel_planks.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_end_stone, pearcel_end_stone.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_charcoal_block, pearcel_charcoal_block.getUnlocalizedName().substring(5));
+
+        //Ores
+        GameRegistry.registerBlock(pearcel_ore, pearcel_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(nether_pearcel_ore, nether_pearcel_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(ender_pearcel_ore, ender_pearcel_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_matter_ore, pearcel_matter_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(dense_pearcel_ore, dense_pearcel_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(dense_pearcel_matter_ore, dense_pearcel_matter_ore.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(fools_pearcel_ore, fools_pearcel_ore.getUnlocalizedName().substring(5));
+
+        //Functional
+        GameRegistry.registerBlock(pearcel_workbench, pearcel_workbench.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(torcher, torcher.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(summoner, summoner.getUnlocalizedName().substring(5));
+
+        //Plant
+        GameRegistry.registerBlock(pearcel_crops, pearcel_crops.getUnlocalizedName().substring(5));
+
+    }
+
+    public static void registerRenders(){
+        //General
+        registerRender(pearcel_block);
+        registerRender(pearcel_sand);
+        registerRender(pearcel_sandstone);
+        registerRender(pearcel_matter_block);
+        registerRender(pearcel_bricks);
+        registerRender(packed_pearcel_bricks);
+        registerRender(pearcel_stone);
+        registerRender(pearcel_glass);
+        registerRender(distressed_pearcel_stone);
+        registerRender(irradiated_pearcel_block);
+        registerRender(polished_pearcel_stone);
+        registerRender(pearcel_stonebricks);
+        registerRender(tainted_pearcel);
+        registerRender(pearcel_torch);
+        registerRender(pearcel_planks);
+        registerRender(pearcel_end_stone);
+        registerRender(pearcel_charcoal_block);
+
+        //Ores
+        registerRender(pearcel_ore);
+        registerRender(nether_pearcel_ore);
+        registerRender(ender_pearcel_ore);
+        registerRender(pearcel_matter_ore);
+        registerRender(dense_pearcel_ore);
+        registerRender(dense_pearcel_matter_ore);
+        registerRender(fools_pearcel_ore);
+
+        //Functional
+        registerRender(pearcel_workbench);
+        registerRender(torcher);
+        registerRender(summoner);
+
+        //Plants
+        registerRender(pearcel_crops);
+
+    }
+
+    public static void registerRender(Block block){
+        Item item = Item.getItemFromBlock(block);
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 
 }

@@ -1,17 +1,10 @@
 package com.miningmark48.pearcelmod.item;
 
-import java.util.List;
-
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.monster.EntityWitch;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
@@ -19,21 +12,10 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
-public class ItemPearcelStaff extends ItemSword{
+public class ItemPearcelStaff extends ItemPearcelSword{
 
-    Float entDamageBy;
-
-    public ItemPearcelStaff(ToolMaterial material)
-    {
+    public ItemPearcelStaff(ToolMaterial material) {
         super(material);
-        this.setFull3D();
-    }
-
-    @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add(EnumChatFormatting.AQUA + StatCollector.translateToLocal("tooltip.item.pearcelStaff.line1"));
-        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line2"));
-        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelStaff.line3"));
     }
 
     @Override
@@ -59,7 +41,7 @@ public class ItemPearcelStaff extends ItemSword{
                 player.addVelocity(0, 0.5, 0);
             }else{
                 if (!world.isRemote) {
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("chat.pearcelStaff.weaken")));
+                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("chat.pearcel_staff.weaken")));
                     item.damageItem(10, player);
                 }
             }
@@ -74,5 +56,4 @@ public class ItemPearcelStaff extends ItemSword{
         hitEntity.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 5000, 2));
         return true;
     }
-
 }
