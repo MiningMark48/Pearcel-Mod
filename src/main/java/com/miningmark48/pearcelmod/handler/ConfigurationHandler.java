@@ -18,8 +18,6 @@ public class ConfigurationHandler {
     public static int torcherFrequency;
     public static int sapDurability;
     public static int maxStaffFlyHeight;
-    public static int minPearcelLightning;
-    public static int maxPearcelLightning;
 
     public static void init(File configFile){
 

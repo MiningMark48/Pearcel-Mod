@@ -4,6 +4,7 @@ import com.miningmark48.pearcelmod.block.*;
 import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -29,6 +30,7 @@ public class ModBlocks {
     public static Block pearcel_planks;
     public static Block pearcel_end_stone;
     public static Block pearcel_charcoal_block;
+    public static Block pearcel_glass_pane;
 
     //Ores
     public static Block pearcel_ore;
@@ -66,6 +68,7 @@ public class ModBlocks {
         pearcel_planks = new BlockPearcelModWood().setUnlocalizedName("pearcel_planks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_end_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_end_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_charcoal_block = new BlockPearcelMod().setUnlocalizedName("pearcel_charcoal_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_glass_pane = new BlockPearcelPane(Material.glass, true).setUnlocalizedName("pearcel_glass_pane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
         pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -105,6 +108,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(pearcel_planks, pearcel_planks.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(pearcel_end_stone, pearcel_end_stone.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(pearcel_charcoal_block, pearcel_charcoal_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pearcel_glass_pane, pearcel_glass_pane.getUnlocalizedName().substring(5));
 
         //Ores
         GameRegistry.registerBlock(pearcel_ore, pearcel_ore.getUnlocalizedName().substring(5));
@@ -144,6 +148,7 @@ public class ModBlocks {
         registerRender(pearcel_planks);
         registerRender(pearcel_end_stone);
         registerRender(pearcel_charcoal_block);
+        registerRender(pearcel_glass_pane);
 
         //Ores
         registerRender(pearcel_ore);
