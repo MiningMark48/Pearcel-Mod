@@ -25,7 +25,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_sandwich), new ItemStack(ModItems.pearcel_item), new ItemStack(ModItems.pearcel_bread), new ItemStack(Items.sugar));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_item, 9), new ItemStack(ModBlocks.pearcel_block));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_seeds, 1), new ItemStack(ModItems.pearcel_item));
-        //GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_juice_bottle), new ItemStack(Items.glass_bottle), new ItemStack(ModItems.pearcelJuice));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_juice_bottle), new ItemStack(Items.glass_bottle), new ItemStack(ModItems.pearcel_item), new ItemStack(Items.sugar));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_seeds, 4), new ItemStack(ModItems.pearcel_ingot), new ItemStack(Items.wheat_seeds));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_ingot), new ItemStack(ModItems.pearcel_item), new ItemStack(Items.iron_ingot));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_cookie, 12), new ItemStack(Items.egg), new ItemStack(ModItems.pearcel_flour), new ItemStack(Items.sugar), new ItemStack(Items.milk_bucket));

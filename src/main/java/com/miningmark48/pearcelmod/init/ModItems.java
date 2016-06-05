@@ -39,6 +39,7 @@ public class ModItems {
     public static Item pearcel_steak;
     public static Item pearcel_cookie;
     public static Item pearcel_sandwich;
+    public static Item pearcel_juice_bottle;
 
     //Tools and Armor
     public static Item pearcel_sword;
@@ -82,6 +83,7 @@ public class ModItems {
         pearcel_steak = new ItemPearcelFood(9, 1.5F, true).setUnlocalizedName("pearcel_steak").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_cookie = new ItemPearcelFood(2, 0.1F, true).setUnlocalizedName("pearcel_cookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_sandwich = new ItemPearcelFood(9, 1.1F, true).setUnlocalizedName("pearcel_sandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_juice_bottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcel_juice_bottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
         //Tools and Armor
@@ -127,6 +129,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcel_steak, pearcel_steak.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_cookie, pearcel_cookie.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_sandwich, pearcel_sandwich.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(pearcel_juice_bottle, pearcel_juice_bottle.getUnlocalizedName().substring(5));
 
         //Tools and Armor
         GameRegistry.registerItem(pearcel_sword, pearcel_sword.getUnlocalizedName().substring(5));
@@ -171,6 +174,7 @@ public class ModItems {
         registerRender(pearcel_steak);
         registerRender(pearcel_cookie);
         registerRender(pearcel_sandwich);
+        registerRender(pearcel_juice_bottle);
 
         //Tools and Armor
         registerRender(pearcel_sword);
