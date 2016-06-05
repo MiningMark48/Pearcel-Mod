@@ -11,7 +11,7 @@ import java.util.List;
 public class ItemEnderPearcel extends ItemPearcelMod{
 
     public ItemEnderPearcel(){
-
+        setMaxDamage(128);
     }
 
     @Override
