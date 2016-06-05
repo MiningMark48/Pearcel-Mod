@@ -57,6 +57,7 @@ public class ModItems {
     public static Item pearcel_boots;
     public static Item pearcel_staff;
     public static Item dragon_pearcel_staff;
+    public static Item pcp;
 
     public static void init(){
         //General Items
@@ -100,6 +101,7 @@ public class ModItems {
         pearcel_boots = new ItemPearcelArmor(matPearcel, 3).setUnlocalizedName("pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).setUnlocalizedName("pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         dragon_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -143,6 +145,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcel_boots, pearcel_boots.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_staff, pearcel_staff.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(dragon_pearcel_staff, dragon_pearcel_staff.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(pcp, pcp.getUnlocalizedName().substring(5));
     }
 
     public static void registerRenders(){
@@ -186,6 +189,7 @@ public class ModItems {
         registerRender(pearcel_boots);
         registerRender(pearcel_staff);
         registerRender(dragon_pearcel_staff);
+        registerRender(pcp);
     }
 
     public static void registerRender(Item item){

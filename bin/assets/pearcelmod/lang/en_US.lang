@@ -35,6 +35,7 @@ item.pearcel_leggings.name=Pearcel Leggings
 item.pearcel_boots.name=Pearcel Boots
 item.pearcel_staff.name=Pearcel Staff
 item.dragon_pearcel_staff.name=Dragon-Infused Pearcel Staff
+item.pcp.name=Portable Crafting Pearcel
 
 tile.pearcel_block.name=Pearcel Block
 tile.pearcel_sand.name=Pearcel Sand
@@ -71,7 +72,7 @@ tooltip.item.experiencePearcel.line2.XP=XP Stored:
 tooltip.item.tpPearcel.line1=It defies the laws of Pearcel!
 tooltip.item.tpPearcel.line2.bound=Bound To:
 tooltip.item.tpPearcel.line2.notBound=Not Bound!
-
+tooltip.item.pcp.line1=A crafting table in your hand!
 chat.tpPearcel.location.notSet=Location not bound!
 chat.tpPearcel.location.set=Location has been bounded.
 chat.tpPearcel.tp=Teleportation successful.
@@ -80,6 +81,7 @@ chat.torcher.lit=Let there be light!
 chat.pearcel_staff.weaken=The Pearcel Staff weakens...
 
 gui.pearcel_workbench.name=Pearcel Workbench
+gui.pcp.name=PCP
 
 config.doWorldGen.title=Do World Gen?
 config.doWorldGen.desc=Should Pearcel Mod world gen occur?
