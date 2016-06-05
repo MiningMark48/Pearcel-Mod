@@ -1,11 +1,9 @@
 package com.miningmark48.pearcelmod;
 
+import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.GuiHandler;
-import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.init.Recipes;
-import com.miningmark48.pearcelmod.init.WorldGen;
+import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -19,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -40,6 +39,9 @@ public class PearcelMod {
 		ModItems.register();
 		ModBlocks.init();
 		ModBlocks.register();
+		ModEntities.init();
+
+		EntityRegistry.registerModEntity(EntityEnderPearcel.class, "EnderPearcel", 10, this, 350, 50, true);
 
 		GameRegistry.registerFuelHandler(new ItemPearcelFuel());
 

@@ -59,6 +59,7 @@ public class ModItems {
     public static Item pearcel_staff;
     public static Item dragon_pearcel_staff;
     public static Item pcp;
+    public static Item ender_pearcel;
 
     public static void init(){
         //General Items
@@ -104,6 +105,7 @@ public class ModItems {
         pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).setUnlocalizedName("pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         dragon_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -115,7 +117,7 @@ public class ModItems {
         GameRegistry.registerItem(tier_4_crafting_component, tier_4_crafting_component.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(armor_plating, armor_plating.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_flour, pearcel_flour.getUnlocalizedName().substring(5));
-        GameRegistry.registerItem(pearcel_stick, pearcel_stick.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(pearcel_stick,pearcel_stick.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_charcoal, pearcel_charcoal.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_seeds, pearcel_seeds.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_matter, pearcel_matter.getUnlocalizedName().substring(5));
@@ -149,6 +151,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcel_staff, pearcel_staff.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(dragon_pearcel_staff, dragon_pearcel_staff.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pcp, pcp.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(ender_pearcel, ender_pearcel.getUnlocalizedName().substring(5));
     }
 
     public static void registerRenders(){
@@ -194,6 +197,7 @@ public class ModItems {
         registerRender(pearcel_staff);
         registerRender(dragon_pearcel_staff);
         registerRender(pcp);
+        registerRender(ender_pearcel);
     }
 
     public static void registerRender(Item item){
