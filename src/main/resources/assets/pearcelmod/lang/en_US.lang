@@ -81,6 +81,22 @@ chat.tpPearcel.wrongDim=Incorrect dimension!
 chat.torcher.lit=Let there be light!
 chat.pearcel_staff.weaken=The Pearcel Staff weakens...
 
+summoner.error.missingBlock=Missing block required for summoning activation!
+summoner.error.incorrectBlock=Incorrect block was used for summoning, block was tainted.
+summoner.error.incorrectItem=Incorrect item was used for summoning.
+summoner.summoned=was successfully summoned.
+summoner.mob_summon.wither=Wither
+summoner.mob_summon.sheep=Sheep
+summoner.mob_summon.enderman=Enderman
+summoner.mob_summon.blaze=Blaze
+summoner.mob_summon.ghast=Ghast
+summoner.mob_summon.skeleton=Skeleton
+summoner.mob_summon.creeper=Creeper
+summoner.mob_summon.endercrystal=Ender Crystal
+summoner.mob_summon.horse=Horse
+summoner.mob_summon.iron_golem=Iron Golem
+summoner.mob_summon.villager=Villager
+
 gui.pearcel_workbench.name=Pearcel Workbench
 gui.pcp.name=Portable Crafting Pearcel
 
