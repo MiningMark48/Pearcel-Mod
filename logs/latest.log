@@ -1,31 +1,31 @@
-[09:53:19] [Client thread/INFO]: Setting user: MiningMark48
-[09:53:21] [Client thread/INFO]: LWJGL Version: 2.9.4
-[09:53:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
-[09:53:26] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[09:53:26] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[09:53:26] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[09:53:26] [Thread-9/INFO]: OpenAL initialized.
-[09:53:26] [Sound Library Loader/INFO]: Sound engine started
-[09:53:32] [Client thread/INFO]: Created: 16x16 textures-atlas
-[09:53:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
-[09:53:33] [Client thread/INFO]: SoundSystem shutting down...
-[09:53:34] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[09:53:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[09:53:34] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[09:53:34] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[09:53:34] [Thread-11/INFO]: OpenAL initialized.
-[09:53:34] [Sound Library Loader/INFO]: Sound engine started
-[09:53:43] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[09:53:43] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[09:54:53] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[09:54:53] [Server thread/INFO]: Generating keypair
-[09:54:53] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[09:54:53] [Server thread/INFO]: Preparing start region for level 0
-[09:54:53] [Server thread/INFO]: Changing view distance to 12, from 10
-[09:54:53] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[09:54:54] [Server thread/INFO]: MiningMark48[local:E:01d90259] logged in with entity id 5 at (-77.64315011721285, 56.0, -26.894265644162957)
-[09:54:54] [Server thread/INFO]: MiningMark48 joined the game
-[09:54:55] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@204658e4[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
+[10:08:27] [Client thread/INFO]: Setting user: MiningMark48
+[10:08:30] [Client thread/INFO]: LWJGL Version: 2.9.4
+[10:08:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[10:08:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[10:08:35] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[10:08:35] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[10:08:35] [Thread-9/INFO]: OpenAL initialized.
+[10:08:35] [Sound Library Loader/INFO]: Sound engine started
+[10:08:42] [Client thread/INFO]: Created: 16x16 textures-atlas
+[10:08:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[10:08:43] [Client thread/INFO]: SoundSystem shutting down...
+[10:08:43] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[10:08:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[10:08:43] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[10:08:43] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[10:08:43] [Thread-11/INFO]: OpenAL initialized.
+[10:08:44] [Sound Library Loader/INFO]: Sound engine started
+[10:08:52] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[10:08:53] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[10:09:02] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[10:09:02] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[10:09:02] [Server thread/INFO]: Generating keypair
+[10:09:02] [Server thread/INFO]: Preparing start region for level 0
+[10:09:03] [Server thread/INFO]: Changing view distance to 12, from 10
+[10:09:03] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[10:09:04] [Server thread/INFO]: MiningMark48[local:E:7eb827e0] logged in with entity id 3 at (-79.81155035974653, 56.0, -21.26050338673774)
+[10:09:04] [Server thread/INFO]: MiningMark48 joined the game
+[10:09:05] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3d3ac1cc[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
@@ -47,117 +47,15 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_79]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_79]
 	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_79]
-[09:54:57] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:54:59] [Server thread/INFO]: Saving and pausing game...
-[09:54:59] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[09:54:59] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[09:54:59] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[09:55:10] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:10] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:12] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:12] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:12] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:15] [Client thread/INFO]: [CHAT] §6Iron Golem was successfully summoned.
-[09:55:15] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:16] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:21] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:29] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:31] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:33] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
-[09:55:33] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[09:55:35] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:38] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:38] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:38] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:39] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:39] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:39] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:39] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:39] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:40] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:40] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:40] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:40] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:40] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:41] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:41] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:41] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:41] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:41] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:43] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:43] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:43] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:44] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:44] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:44] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:44] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:45] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:46] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:46] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:46] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:47] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:49] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:49] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:50] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:50] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:51] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:55:51] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:53] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:55] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:55:55] [Server thread/INFO]: [MiningMark48: Given [Iron Trapdoor] * 64 to MiningMark48]
-[09:55:55] [Client thread/INFO]: [CHAT] Given [Iron Trapdoor] * 64 to MiningMark48
-[09:55:58] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:00] [Server thread/INFO]: [MiningMark48: Given [Summoner's Activation Pearcel] * 1 to MiningMark48]
-[09:56:00] [Client thread/INFO]: [CHAT] Given [Summoner's Activation Pearcel] * 1 to MiningMark48
-[09:56:01] [Client thread/INFO]: [CHAT] §4Incorrect block was used for summoning, block was tainted.
-[09:56:02] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:04] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:11] [Server thread/INFO]: [MiningMark48: Given [Pearcel Pickaxe] * 1 to MiningMark48]
-[09:56:11] [Client thread/INFO]: [CHAT] Given [Pearcel Pickaxe] * 1 to MiningMark48
-[09:56:12] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:14] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:16] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:19] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:21] [Server thread/INFO]: [MiningMark48: Given [Pearcel Sword] * 1 to MiningMark48]
-[09:56:21] [Client thread/INFO]: [CHAT] Given [Pearcel Sword] * 1 to MiningMark48
-[09:56:22] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:23] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:25] [Server thread/INFO]: [MiningMark48: Given [Dragon-Infused Pearcel Staff] * 1 to MiningMark48]
-[09:56:25] [Client thread/INFO]: [CHAT] Given [Dragon-Infused Pearcel Staff] * 1 to MiningMark48
-[09:56:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:30] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:33] [Server thread/INFO]: Saving and pausing game...
-[09:56:33] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[09:56:33] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[09:56:33] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[09:56:42] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[09:56:50] [Server thread/INFO]: [MiningMark48: Cleared the inventory of MiningMark48, removing 6 items]
-[09:56:50] [Client thread/INFO]: [CHAT] Cleared the inventory of MiningMark48, removing 6 items
-[09:56:54] [Server thread/INFO]: [MiningMark48: Set own game mode to Creative Mode]
-[09:56:54] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[09:57:57] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[09:57:58] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[09:57:58] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[09:57:58] [Client thread/INFO]: [CHAT] §4Incorrect item was used for summoning.
-[09:58:10] [Server thread/INFO]: Saving and pausing game...
-[09:58:10] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[09:58:10] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[09:58:10] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[09:58:11] [Server thread/INFO]: Stopping server
-[09:58:11] [Server thread/INFO]: Saving players
-[09:58:11] [Server thread/INFO]: Saving worlds
-[09:58:11] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[09:58:11] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[09:58:11] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[09:58:12] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[09:58:12] [Client thread/INFO]: Stopping!
-[09:58:12] [Client thread/INFO]: SoundSystem shutting down...
-[09:58:12] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[10:09:09] [Server thread/INFO]: Saving and pausing game...
+[10:09:09] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[10:09:09] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[10:09:09] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[10:09:30] [Server thread/INFO]: [MiningMark48: Given [Summoner's Activation Pearcel] * 1 to MiningMark48]
+[10:09:30] [Client thread/INFO]: [CHAT] Given [Summoner's Activation Pearcel] * 1 to MiningMark48
+[10:11:33] [Server thread/INFO]: [MiningMark48: Set own game mode to Survival Mode]
+[10:11:33] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[10:11:34] [Server thread/INFO]: Saving and pausing game...
+[10:11:34] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[10:11:34] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[10:11:34] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
