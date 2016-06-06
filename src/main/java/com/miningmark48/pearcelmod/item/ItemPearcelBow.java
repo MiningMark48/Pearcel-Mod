@@ -165,7 +165,6 @@ public class ItemPearcelBow extends ItemBow{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add(StatCollector.translateToLocal("tooltip.item.pearcelBow.line1"));
         if (!par1ItemStack.isItemEnchanted()){
             par1ItemStack.addEnchantment(Enchantment.infinity, 1);
             par1ItemStack.addEnchantment(Enchantment.power, 1);

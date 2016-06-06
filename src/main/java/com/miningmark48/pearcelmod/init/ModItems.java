@@ -4,12 +4,17 @@ import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.item.*;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemModelMesher;
+import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems {
 
@@ -155,6 +160,7 @@ public class ModItems {
         GameRegistry.registerItem(pcp, pcp.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(ender_pearcel, ender_pearcel.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_bow, pearcel_bow.getUnlocalizedName().substring(5));
+
     }
 
     public static void registerRenders(){
@@ -202,10 +208,21 @@ public class ModItems {
         registerRender(pcp);
         registerRender(ender_pearcel);
         registerRender(pearcel_bow);
+        registerRender(pearcel_bow, 1, "pearcel_bow_pulling_1");
+        registerRender(pearcel_bow, 2, "pearcel_bow_pulling_2");
+        registerRender(pearcel_bow, 3, "pearcel_bow_pulling_3");
+
+        ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
+
 
     public static void registerRender(Item item){
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
+
+    public static void registerRender(Item item, int meta, String name){
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, new ModelResourceLocation(Reference.MOD_ID + ":" + name, "inventory"));
+    }
+
 
 }
