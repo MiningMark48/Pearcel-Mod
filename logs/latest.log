@@ -1,31 +1,31 @@
-[15:46:52] [Client thread/INFO]: Setting user: MiningMark48
-[15:46:55] [Client thread/INFO]: LWJGL Version: 2.9.4
-[15:46:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
-[15:47:01] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:47:01] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[15:47:01] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:47:01] [Thread-9/INFO]: OpenAL initialized.
-[15:47:01] [Sound Library Loader/INFO]: Sound engine started
-[15:47:10] [Client thread/INFO]: Created: 16x16 textures-atlas
-[15:47:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
-[15:47:11] [Client thread/INFO]: SoundSystem shutting down...
-[15:47:11] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[15:47:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:47:11] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[15:47:11] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:47:11] [Thread-11/INFO]: OpenAL initialized.
-[15:47:12] [Sound Library Loader/INFO]: Sound engine started
-[15:47:22] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[15:47:23] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[15:47:32] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[15:47:32] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[15:47:32] [Server thread/INFO]: Generating keypair
-[15:47:32] [Server thread/INFO]: Preparing start region for level 0
-[15:47:33] [Server thread/INFO]: Changing view distance to 12, from 10
-[15:47:33] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[15:47:34] [Server thread/INFO]: MiningMark48[local:E:8c2ed0b6] logged in with entity id 3 at (-76.59300516811564, 66.9712561192156, -33.02304176097428)
-[15:47:34] [Server thread/INFO]: MiningMark48 joined the game
-[15:47:35] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@2fd45c7a[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
+[21:57:33] [Client thread/INFO]: Setting user: MiningMark48
+[21:57:36] [Client thread/INFO]: LWJGL Version: 2.9.4
+[21:57:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[21:57:40] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:57:41] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[21:57:41] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:57:41] [Thread-9/INFO]: OpenAL initialized.
+[21:57:41] [Sound Library Loader/INFO]: Sound engine started
+[21:57:48] [Client thread/INFO]: Created: 16x16 textures-atlas
+[21:57:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[21:57:49] [Client thread/INFO]: SoundSystem shutting down...
+[21:57:50] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[21:57:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:57:50] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[21:57:50] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:57:50] [Thread-11/INFO]: OpenAL initialized.
+[21:57:50] [Sound Library Loader/INFO]: Sound engine started
+[21:57:59] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[21:58:00] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[21:58:09] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[21:58:10] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[21:58:10] [Server thread/INFO]: Generating keypair
+[21:58:10] [Server thread/INFO]: Preparing start region for level 0
+[21:58:10] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:58:10] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[21:58:12] [Server thread/INFO]: MiningMark48[local:E:305a78b0] logged in with entity id 3 at (-78.21559330852939, 64.0, -50.55693167706373)
+[21:58:12] [Server thread/INFO]: MiningMark48 joined the game
+[21:58:14] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@679d5ddf[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
@@ -47,35 +47,17 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_79]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_79]
 	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_79]
-[15:48:15] [Client thread/INFO]: [CHAT] §2Location has been bounded.
-[15:48:17] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:17] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:18] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:18] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:24] [Client thread/INFO]: [CHAT] §2Location has been bounded.
-[15:48:31] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:31] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:32] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:32] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:32] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:32] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:33] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:33] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:33] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:35] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:48:36] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:49:06] [Client thread/INFO]: [CHAT] §6Teleportation successful.
-[15:49:09] [Server thread/INFO]: Saving and pausing game...
-[15:49:09] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:49:09] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:49:09] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:49:10] [Server thread/INFO]: Stopping server
-[15:49:10] [Server thread/INFO]: Saving players
-[15:49:10] [Server thread/INFO]: Saving worlds
-[15:49:10] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:49:10] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:49:10] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:49:10] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[15:49:11] [Client thread/INFO]: Stopping!
-[15:49:11] [Client thread/INFO]: SoundSystem shutting down...
-[15:49:11] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[21:58:26] [Server thread/INFO]: Saving and pausing game...
+[21:58:26] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[21:58:26] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[21:58:26] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[21:58:26] [Server thread/INFO]: Stopping server
+[21:58:26] [Server thread/INFO]: Saving players
+[21:58:26] [Server thread/INFO]: Saving worlds
+[21:58:26] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[21:58:26] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[21:58:26] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[21:58:27] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[21:58:27] [Client thread/INFO]: Stopping!
+[21:58:27] [Client thread/INFO]: SoundSystem shutting down...
+[21:58:27] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
