@@ -124,6 +124,9 @@ public class ItemPearcelBow extends ItemBow{
                                 p_77615_3_.inventory.removeStackFromSlot(i);
                             }
                         }
+                        if (p_77615_3_.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")){
+                            entityarrow.setDamage(entityarrow.getDamage() + 1.0D);
+                        }
                     }else{
                         p_77615_3_.inventory.getStackInSlot(i).damageItem(1, p_77615_3_);
                         if (p_77615_3_.inventory.getStackInSlot(i).getItemDamage() == 0) {

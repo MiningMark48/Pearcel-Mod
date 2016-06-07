@@ -1,14 +1,31 @@
-[00:00:08] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[00:00:09] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[00:00:15] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[00:00:15] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[00:00:15] [Server thread/INFO]: Generating keypair
-[00:00:16] [Server thread/INFO]: Preparing start region for level 0
-[00:00:16] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:00:16] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[00:00:17] [Server thread/INFO]: MiningMark48[local:E:bd37714a] logged in with entity id 3 at (-102.05184382432797, 56.0, -10.585084330667215)
-[00:00:17] [Server thread/INFO]: MiningMark48 joined the game
-[00:00:19] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3258dc4f[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
+[16:15:26] [Client thread/INFO]: Setting user: MiningMark48
+[16:15:29] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:15:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[16:15:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:15:34] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[16:15:34] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:15:34] [Thread-9/INFO]: OpenAL initialized.
+[16:15:34] [Sound Library Loader/INFO]: Sound engine started
+[16:15:41] [Client thread/INFO]: Created: 16x16 textures-atlas
+[16:15:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
+[16:15:42] [Client thread/INFO]: SoundSystem shutting down...
+[16:15:43] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:15:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:15:43] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[16:15:43] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:15:43] [Thread-11/INFO]: OpenAL initialized.
+[16:15:43] [Sound Library Loader/INFO]: Sound engine started
+[16:15:52] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[16:15:54] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[16:16:58] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[16:16:58] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[16:16:58] [Server thread/INFO]: Generating keypair
+[16:16:58] [Server thread/INFO]: Preparing start region for level 0
+[16:16:59] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:16:59] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[16:17:00] [Server thread/INFO]: MiningMark48[local:E:8b60eb5f] logged in with entity id 5 at (-78.74332029034146, 56.0, -10.484482440914068)
+[16:17:00] [Server thread/INFO]: MiningMark48 joined the game
+[16:17:02] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@1012d622[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
@@ -30,27 +47,38 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_79]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_79]
 	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_79]
-[00:00:51] [Server thread/INFO]: [MiningMark48: Given [Diamond] * 1 to MiningMark48]
-[00:00:51] [Client thread/INFO]: [CHAT] Given [Diamond] * 1 to MiningMark48
-[00:01:18] [Server thread/INFO]: [MiningMark48: Given [Tier 3 Crafting Component] * 1 to MiningMark48]
-[00:01:18] [Client thread/INFO]: [CHAT] Given [Tier 3 Crafting Component] * 1 to MiningMark48
-[00:05:35] [Server thread/INFO]: [MiningMark48: Given [Enchantment Table] * 1 to MiningMark48]
-[00:05:35] [Client thread/INFO]: [CHAT] Given [Enchantment Table] * 1 to MiningMark48
-[00:05:46] [Server thread/INFO]: [MiningMark48: Given [Lapis Lazuli] * 64 to MiningMark48]
-[00:05:46] [Client thread/INFO]: [CHAT] Given [Lapis Lazuli] * 64 to MiningMark48
-[00:05:56] [Server thread/INFO]: [MiningMark48: Given [Pearcel Staff] * 1 to MiningMark48]
-[00:05:56] [Client thread/INFO]: [CHAT] Given [Pearcel Staff] * 1 to MiningMark48
-[00:05:59] [Server thread/INFO]: Saving and pausing game...
-[00:05:59] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[00:05:59] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[00:05:59] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[00:05:59] [Server thread/INFO]: Stopping server
-[00:05:59] [Server thread/INFO]: Saving players
-[00:05:59] [Server thread/INFO]: Saving worlds
-[00:05:59] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[00:05:59] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[00:05:59] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[00:06:00] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[00:06:00] [Client thread/INFO]: Stopping!
-[00:06:00] [Client thread/INFO]: SoundSystem shutting down...
-[00:06:00] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:17:09] [Server thread/INFO]: [MiningMark48: Given [Pearcel Arrow] * 1 to MiningMark48]
+[16:17:09] [Client thread/INFO]: [CHAT] Given [Pearcel Arrow] * 1 to MiningMark48
+[16:17:10] [Server thread/INFO]: [MiningMark48: Given [Block of Diamond] * 1 to MiningMark48]
+[16:17:10] [Client thread/INFO]: [CHAT] Given [Block of Diamond] * 1 to MiningMark48
+[16:17:14] [Server thread/INFO]: [MiningMark48: Given [Diamond Sword] * 1 to MiningMark48]
+[16:17:15] [Client thread/INFO]: [CHAT] Given [Diamond Sword] * 1 to MiningMark48
+[16:17:19] [Client thread/INFO]: [CHAT] §6Infinity upgrade applied!
+[16:17:19] [Client thread/INFO]: [CHAT] §6Power upgrade applied!
+[16:17:23] [Server thread/INFO]: [MiningMark48: Given [Pearcel Arrow] * 1 to MiningMark48]
+[16:17:23] [Client thread/INFO]: [CHAT] Given [Pearcel Arrow] * 1 to MiningMark48
+[16:17:25] [Server thread/INFO]: [MiningMark48: Given [Block of Diamond] * 1 to MiningMark48]
+[16:17:25] [Client thread/INFO]: [CHAT] Given [Block of Diamond] * 1 to MiningMark48
+[16:17:26] [Client thread/INFO]: [CHAT] §6Infinity upgrade applied!
+[16:17:28] [Server thread/INFO]: [MiningMark48: Given [Pearcel Arrow] * 1 to MiningMark48]
+[16:17:28] [Client thread/INFO]: [CHAT] Given [Pearcel Arrow] * 1 to MiningMark48
+[16:17:29] [Server thread/INFO]: [MiningMark48: Given [Diamond Sword] * 1 to MiningMark48]
+[16:17:29] [Client thread/INFO]: [CHAT] Given [Diamond Sword] * 1 to MiningMark48
+[16:17:32] [Client thread/INFO]: [CHAT] §6Power upgrade applied!
+[16:18:11] [Server thread/INFO]: [MiningMark48: Given [Block of Diamond] * 1 to MiningMark48]
+[16:18:11] [Client thread/INFO]: [CHAT] Given [Block of Diamond] * 1 to MiningMark48
+[16:18:11] [Client thread/INFO]: [CHAT] §6Infinity upgrade applied!
+[16:19:36] [Server thread/INFO]: Saving and pausing game...
+[16:19:36] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[16:19:36] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[16:19:36] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[16:19:36] [Server thread/INFO]: Stopping server
+[16:19:36] [Server thread/INFO]: Saving players
+[16:19:36] [Server thread/INFO]: Saving worlds
+[16:19:36] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[16:19:36] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[16:19:36] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[16:19:37] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[16:19:37] [Client thread/INFO]: Stopping!
+[16:19:37] [Client thread/INFO]: SoundSystem shutting down...
+[16:19:37] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

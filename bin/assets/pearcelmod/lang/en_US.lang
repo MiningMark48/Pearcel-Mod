@@ -83,9 +83,12 @@ tooltip.item.sap.line3=to activate the dark Pearcel magic,
 tooltip.item.sap.line4=in which a creature will spawn
 tooltip.item.sap.line5=from the depths of the surrounding summoner blocks.
 tooltip.item.pearcelPearl.line1=I can't believe it's not an ender pearl!
-tooltip.item.pearcel_arrow.line1.no_upgrade=Right click to upgrade with
-tooltip.item.pearcel_arrow.line2.no_upgrade=a tier 3 crafting component.
+tooltip.item.pearcel_arrow.line1.no_upgrade=Right click to upgrade!
+tooltip.item.pearcel_arrow.line2.no_upgrade.inf=for infinity.
+tooltip.item.pearcel_arrow.line2.no_upgrade.pow=for power.
 tooltip.item.pearcel_arrow.line1.upgrade=Upgraded!
+tooltip.item.pearcel_arrow.line2.upgrade.inf=Infinite
+tooltip.item.pearcel_arrow.line2.upgrade.pow=Power
 
 chat.tpPearcel.location.notSet=Location not bound!
 chat.tpPearcel.location.set=Location has been bounded.
@@ -93,6 +96,8 @@ chat.tpPearcel.tp=Teleportation successful.
 chat.tpPearcel.wrongDim=Incorrect dimension!
 chat.torcher.lit=Let there be light!
 chat.pearcel_staff.weaken=The Pearcel Staff weakens...
+chat.item.pearcel_arrow.upgraded.inf=Infinity upgrade applied!
+chat.item.pearcel_arrow.upgraded.pow=Power upgrade applied!
 
 summoner.error.missingBlock=Missing block required for summoning activation!
 summoner.error.incorrectBlock=Incorrect block was used for summoning, block was tainted.
