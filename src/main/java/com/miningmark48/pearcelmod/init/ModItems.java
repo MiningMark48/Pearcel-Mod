@@ -35,6 +35,7 @@ public class ModItems {
     public static Item pearcel_seeds;
     public static Item pearcel_matter;
     public static Item neutral_pearcel_matter;
+    public static Item pearcel_arrow;
 
     //Food
     public static Item pearcel_item;
@@ -81,6 +82,7 @@ public class ModItems {
         pearcel_seeds = new ItemPearcelSeeds(ModBlocks.pearcel_crops, Blocks.farmland).setUnlocalizedName("pearcel_seeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_matter = new ItemPearcelMod().setUnlocalizedName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_arrow = new ItemPearcelMod().setUnlocalizedName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Food
         pearcel_item = new ItemPearcelFood(4, 0.5F, false).setUnlocalizedName("pearcel_item").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -129,6 +131,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcel_seeds, pearcel_seeds.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(pearcel_matter, pearcel_matter.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(neutral_pearcel_matter, neutral_pearcel_matter.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(pearcel_arrow, pearcel_arrow.getUnlocalizedName().substring(5));
 
         //Food
         GameRegistry.registerItem(pearcel_item, pearcel_item.getUnlocalizedName().substring(5));
@@ -177,6 +180,7 @@ public class ModItems {
         registerRender(pearcel_seeds);
         registerRender(pearcel_matter);
         registerRender(neutral_pearcel_matter);
+        registerRender(pearcel_arrow);
 
         //Food
         registerRender(pearcel_item);

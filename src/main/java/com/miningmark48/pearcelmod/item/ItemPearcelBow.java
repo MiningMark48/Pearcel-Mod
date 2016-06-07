@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.enchantment.Enchantment;
@@ -64,7 +65,7 @@ public class ItemPearcelBow extends ItemBow{
 
         boolean flag = p_77615_3_.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, p_77615_1_) > 0;
 
-        if (flag || p_77615_3_.inventory.hasItem(Items.arrow)) //Todo: change to pearcel arrow
+        if (flag || p_77615_3_.inventory.hasItem(ModItems.pearcel_arrow))
         {
             float f = (float)j / 20.0F;
             f = (f * f + f * 2.0F) / 3.0F;
@@ -114,7 +115,7 @@ public class ItemPearcelBow extends ItemBow{
             }
             else
             {
-                p_77615_3_.inventory.consumeInventoryItem(Items.arrow); //Todo: change to pearcel arrow
+                p_77615_3_.inventory.consumeInventoryItem(ModItems.pearcel_arrow);
             }
 
             if (!p_77615_2_.isRemote)
@@ -131,7 +132,7 @@ public class ItemPearcelBow extends ItemBow{
 
     public int getMaxItemUseDuration(ItemStack p_77626_1_)
     {
-        return 72000;
+        return 36000;
     }
 
     public EnumAction getItemUseAction(ItemStack p_77661_1_)
@@ -148,7 +149,7 @@ public class ItemPearcelBow extends ItemBow{
             return event.result;
         }
 
-        if (p_77659_3_.capabilities.isCreativeMode || p_77659_3_.inventory.hasItem(Items.arrow)) //Todo: change to pearcel arrow
+        if (p_77659_3_.capabilities.isCreativeMode || p_77659_3_.inventory.hasItem(ModItems.pearcel_arrow))
         {
             p_77659_3_.setItemInUse(p_77659_1_, this.getMaxItemUseDuration(p_77659_1_));
         }
