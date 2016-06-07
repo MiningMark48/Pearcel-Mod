@@ -10,9 +10,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
@@ -25,7 +25,7 @@ public class ItemPearcelBow extends ItemBow{
     public static final String[] bowPullIconNameArray = new String[] {"pulling_0", "pulling_1", "pulling_2"};
 
     public ItemPearcelBow(){
-
+        setMaxDamage(-1);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class ItemPearcelBow extends ItemBow{
 
         boolean flag = p_77615_3_.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, p_77615_1_) > 0;
 
-        if (flag || p_77615_3_.inventory.hasItem(ModItems.pearcel_arrow))
+        if (flag || (p_77615_3_.inventory.hasItem(ModItems.pearcel_arrow) || p_77615_3_.inventory.hasItem(Items.arrow)))
         {
             float f = (float)j / 20.0F;
             f = (f * f + f * 2.0F) / 3.0F;
@@ -115,7 +115,26 @@ public class ItemPearcelBow extends ItemBow{
             }
             else
             {
-                p_77615_3_.inventory.consumeInventoryItem(ModItems.pearcel_arrow);
+                if (p_77615_3_.inventory.hasItem(ModItems.pearcel_arrow)){
+                    int i = getInventorySlotContainItem(ModItems.pearcel_arrow, p_77615_3_);
+                    if (p_77615_3_.inventory.getStackInSlot(i).hasTagCompound()) {
+                        if (!p_77615_3_.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
+                            p_77615_3_.inventory.getStackInSlot(i).damageItem(1, p_77615_3_);
+                            if (p_77615_3_.inventory.getStackInSlot(i).getItemDamage() == 0) {
+                                p_77615_3_.inventory.removeStackFromSlot(i);
+                            }
+                        }
+                    }else{
+                        p_77615_3_.inventory.getStackInSlot(i).damageItem(1, p_77615_3_);
+                        if (p_77615_3_.inventory.getStackInSlot(i).getItemDamage() == 0) {
+                            p_77615_3_.inventory.removeStackFromSlot(i);
+                        }
+                    }
+                    entityarrow.canBePickedUp = 2;
+                }else{
+                    p_77615_3_.inventory.consumeInventoryItem(Items.arrow);
+                }
+
             }
 
             if (!p_77615_2_.isRemote)
@@ -123,6 +142,19 @@ public class ItemPearcelBow extends ItemBow{
                 p_77615_2_.spawnEntityInWorld(entityarrow);
             }
         }
+    }
+
+    public int getInventorySlotContainItem(Item itemIn, EntityPlayer player)
+    {
+        for (int i = 0; i < player.inventory.mainInventory.length; ++i)
+        {
+            if (player.inventory.mainInventory[i] != null && player.inventory.mainInventory[i].getItem() == itemIn)
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityPlayer playerIn)
@@ -149,7 +181,7 @@ public class ItemPearcelBow extends ItemBow{
             return event.result;
         }
 
-        if (p_77659_3_.capabilities.isCreativeMode || p_77659_3_.inventory.hasItem(ModItems.pearcel_arrow))
+        if (p_77659_3_.capabilities.isCreativeMode || (p_77659_3_.inventory.hasItem(ModItems.pearcel_arrow) || p_77659_3_.inventory.hasItem(Items.arrow)))
         {
             p_77659_3_.setItemInUse(p_77659_1_, this.getMaxItemUseDuration(p_77659_1_));
         }
@@ -161,15 +193,12 @@ public class ItemPearcelBow extends ItemBow{
 
     public int getItemEnchantability()
     {
-        return 2;
+        return 1;
     }
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        if (!par1ItemStack.isItemEnchanted()){
-            par1ItemStack.addEnchantment(Enchantment.infinity, 1);
-            par1ItemStack.addEnchantment(Enchantment.power, 1);
-        }
+
     }
 
     @Override

@@ -82,7 +82,7 @@ public class ModItems {
         pearcel_seeds = new ItemPearcelSeeds(ModBlocks.pearcel_crops, Blocks.farmland).setUnlocalizedName("pearcel_seeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_matter = new ItemPearcelMod().setUnlocalizedName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_arrow = new ItemPearcelMod().setUnlocalizedName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Food
         pearcel_item = new ItemPearcelFood(4, 0.5F, false).setUnlocalizedName("pearcel_item").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
