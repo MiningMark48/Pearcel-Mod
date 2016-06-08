@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -21,7 +22,6 @@ import net.minecraftforge.event.entity.player.ArrowNockEvent;
 import java.util.List;
 
 public class ItemPearcelBow extends ItemBow{
-
     public static final String[] bowPullIconNameArray = new String[] {"pulling_0", "pulling_1", "pulling_2"};
 
     public ItemPearcelBow(){
@@ -51,11 +51,17 @@ public class ItemPearcelBow extends ItemBow{
         return modelresourcelocation;
     }
 
-    public void onPlayerStoppedUsing(ItemStack p_77615_1_, World p_77615_2_, EntityPlayer p_77615_3_, int p_77615_4_)
+    public void onPlayerStoppedUsing(ItemStack stack, World world, EntityPlayer player, int timeLeft)
     {
-        int j = this.getMaxItemUseDuration(p_77615_1_) - p_77615_4_;
+        int i = getInventorySlotContainItem(ModItems.pearcel_arrow, player);
+        if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
+                zoomOut();
+            }
+        }
+        int j = this.getMaxItemUseDuration(stack) - timeLeft;
 
-        ArrowLooseEvent event = new ArrowLooseEvent(p_77615_3_, p_77615_1_, j);
+        ArrowLooseEvent event = new ArrowLooseEvent(player, stack, j);
         MinecraftForge.EVENT_BUS.post(event);
         if (event.isCanceled())
         {
@@ -63,9 +69,9 @@ public class ItemPearcelBow extends ItemBow{
         }
         j = event.charge;
 
-        boolean flag = p_77615_3_.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, p_77615_1_) > 0;
+        boolean flag = player.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, stack) > 0;
 
-        if (flag || (p_77615_3_.inventory.hasItem(ModItems.pearcel_arrow) || p_77615_3_.inventory.hasItem(Items.arrow)))
+        if (flag || (player.inventory.hasItem(ModItems.pearcel_arrow) || player.inventory.hasItem(Items.arrow)))
         {
             float f = (float)j / 20.0F;
             f = (f * f + f * 2.0F) / 3.0F;
@@ -80,34 +86,34 @@ public class ItemPearcelBow extends ItemBow{
                 f = 1.0F;
             }
 
-            EntityArrow entityarrow = new EntityArrow(p_77615_2_, p_77615_3_, f * 2.0F);
+            EntityArrow entityarrow = new EntityArrow(world, player, f * 2.0F);
 
             if (f == 1.0F)
             {
                 entityarrow.setIsCritical(true);
             }
 
-            int k = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, p_77615_1_);
+            int k = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, stack);
 
             if (k > 0)
             {
                 entityarrow.setDamage(entityarrow.getDamage() + (double)k * 0.5D + 0.5D);
             }
 
-            int l = EnchantmentHelper.getEnchantmentLevel(Enchantment.punch.effectId, p_77615_1_);
+            int l = EnchantmentHelper.getEnchantmentLevel(Enchantment.punch.effectId, stack);
 
             if (l > 0)
             {
                 entityarrow.setKnockbackStrength(l);
             }
 
-            if (EnchantmentHelper.getEnchantmentLevel(Enchantment.flame.effectId, p_77615_1_) > 0)
+            if (EnchantmentHelper.getEnchantmentLevel(Enchantment.flame.effectId, stack) > 0)
             {
                 entityarrow.setFire(100);
             }
 
-            p_77615_1_.damageItem(1, p_77615_3_);
-            p_77615_2_.playSoundAtEntity(p_77615_3_, "random.bow", 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+            stack.damageItem(1, player);
+            world.playSoundAtEntity(player, "random.bow", 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
 
             if (flag)
             {
@@ -115,36 +121,39 @@ public class ItemPearcelBow extends ItemBow{
             }
             else
             {
-                if (p_77615_3_.inventory.hasItem(ModItems.pearcel_arrow)){
-                    int i = getInventorySlotContainItem(ModItems.pearcel_arrow, p_77615_3_);
-                    if (p_77615_3_.inventory.getStackInSlot(i).hasTagCompound()) {
-                        if (!p_77615_3_.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
-                            p_77615_3_.inventory.getStackInSlot(i).damageItem(1, p_77615_3_);
-                            if (p_77615_3_.inventory.getStackInSlot(i).getItemDamage() == 0) {
-                                p_77615_3_.inventory.removeStackFromSlot(i);
+                if (player.inventory.hasItem(ModItems.pearcel_arrow)){
+                    if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+                        if (!player.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
+                            player.inventory.getStackInSlot(i).damageItem(1, player);
+                            if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
+                                player.inventory.removeStackFromSlot(i);
                             }
                         }
-                        if (p_77615_3_.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")){
+                        if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")){
                             entityarrow.setDamage(entityarrow.getDamage() + 2.0D);
                         }
+                        if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("knock")){
+                            entityarrow.setKnockbackStrength(2);
+                        }
                     }else{
-                        p_77615_3_.inventory.getStackInSlot(i).damageItem(1, p_77615_3_);
-                        if (p_77615_3_.inventory.getStackInSlot(i).getItemDamage() == 0) {
-                            p_77615_3_.inventory.removeStackFromSlot(i);
+                        player.inventory.getStackInSlot(i).damageItem(1, player);
+                        if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
+                            player.inventory.removeStackFromSlot(i);
                         }
                     }
                     entityarrow.canBePickedUp = 2;
                 }else{
-                    p_77615_3_.inventory.consumeInventoryItem(Items.arrow);
+                    player.inventory.consumeInventoryItem(Items.arrow);
                 }
 
             }
 
-            if (!p_77615_2_.isRemote)
+            if (!world.isRemote)
             {
-                p_77615_2_.spawnEntityInWorld(entityarrow);
+                world.spawnEntityInWorld(entityarrow);
             }
         }
+
     }
 
     public int getInventorySlotContainItem(Item itemIn, EntityPlayer player)
@@ -160,14 +169,14 @@ public class ItemPearcelBow extends ItemBow{
         return -1;
     }
 
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityPlayer playerIn)
+    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityPlayer player)
     {
         return stack;
     }
 
     public int getMaxItemUseDuration(ItemStack p_77626_1_)
     {
-        return 36000;
+        return 72000;
     }
 
     public EnumAction getItemUseAction(ItemStack p_77661_1_)
@@ -175,21 +184,29 @@ public class ItemPearcelBow extends ItemBow{
         return EnumAction.BOW;
     }
 
-    public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_)
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
     {
-        ArrowNockEvent event = new ArrowNockEvent(p_77659_3_, p_77659_1_);
+
+        int i = getInventorySlotContainItem(ModItems.pearcel_arrow, player);
+        if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
+                zoomIn();
+            }
+        }
+
+        ArrowNockEvent event = new ArrowNockEvent(player, stack);
         MinecraftForge.EVENT_BUS.post(event);
         if (event.isCanceled())
         {
             return event.result;
         }
 
-        if (p_77659_3_.capabilities.isCreativeMode || (p_77659_3_.inventory.hasItem(ModItems.pearcel_arrow) || p_77659_3_.inventory.hasItem(Items.arrow)))
+        if (player.capabilities.isCreativeMode || (player.inventory.hasItem(ModItems.pearcel_arrow) || player.inventory.hasItem(Items.arrow)))
         {
-            p_77659_3_.setItemInUse(p_77659_1_, this.getMaxItemUseDuration(p_77659_1_));
+            player.setItemInUse(stack, this.getMaxItemUseDuration(stack));
         }
 
-        return p_77659_1_;
+        return stack;
 
     }
 
@@ -214,6 +231,14 @@ public class ItemPearcelBow extends ItemBow{
                 //TODO
             }
         }
+    }
+
+    private static void zoomIn(){
+        Minecraft.getMinecraft().gameSettings.fovSetting = 25F;
+    }
+
+    private static void zoomOut(){
+        Minecraft.getMinecraft().gameSettings.fovSetting = 70F;
     }
 
 }
