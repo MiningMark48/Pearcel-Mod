@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.block;
 
 import com.google.common.base.Predicate;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
@@ -49,22 +50,18 @@ public class BlockTorcher extends BlockPearcelMod{
             //player.addStat(Achievements.achievementTorcher, 1);
 
             Random rand = new Random();
-            //int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
-            int rangeRand = (rand.nextInt(50) + 1) * 2;
-
+            int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
             if (world.func_180495_p(new BlockPos(pos.func_177958_n(), pos.func_177956_o() - 1, pos.func_177952_p())).func_177230_c().func_149688_o().func_76220_a()){
                 world.func_175656_a(pos, ModBlocks.pearcel_torch.func_176223_P());
             }else{
                 world.func_175698_g(pos);
             }
 
-            /*if (ConfigurationHandler.torcherFrequency > 1){
+            if (ConfigurationHandler.torcherFrequency > 1){
                 torcherFreq = ConfigurationHandler.torcherFrequency;
             }else{
                 torcherFreq = 2;
-            }*/
-
-            torcherFreq = 2;
+            }
 
             for (int i = 1; i <= rangeRand * torcherFreq; i++){
                 rangeRand = (rand.nextInt(50) + 1) * 2;

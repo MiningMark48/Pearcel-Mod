@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -36,7 +37,7 @@ public class ItemPearcelStaff extends ItemPearcelSword{
             item.damageItem(50, player);
             return item;
         }else{
-            if (player.posY <= 256 || player.capabilities.isCreativeMode){ //TODO: Change back to config for staff height
+            if (player.posY <= ConfigurationHandler.maxStaffFlyHeight || player.capabilities.isCreativeMode){
                 player.addVelocity(0, 0.5, 0);
             }else{
                 if (!world.isRemote) {

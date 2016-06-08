@@ -4,11 +4,17 @@ import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.item.*;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemModelMesher;
+import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems {
 
@@ -29,6 +35,7 @@ public class ModItems {
     public static Item pearcel_seeds;
     public static Item pearcel_matter;
     public static Item neutral_pearcel_matter;
+    public static Item pearcel_arrow;
 
     //Food
     public static Item pearcel_item;
@@ -38,6 +45,7 @@ public class ModItems {
     public static Item pearcel_steak;
     public static Item pearcel_cookie;
     public static Item pearcel_sandwich;
+    public static Item pearcel_juice_bottle;
 
     //Tools and Armor
     public static Item pearcel_sword;
@@ -56,6 +64,9 @@ public class ModItems {
     public static Item pearcel_boots;
     public static Item pearcel_staff;
     public static Item dragon_pearcel_staff;
+    public static Item pcp;
+    public static Item ender_pearcel;
+    public static Item pearcel_bow;
 
     public static void init(){
         //General Items
@@ -68,9 +79,10 @@ public class ModItems {
         pearcel_flour = new ItemPearcelMod().func_77655_b("pearcel_flour").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_stick = new ItemPearcelMod().func_77655_b("pearcel_stick").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_charcoal = new ItemPearcelFuel().func_77655_b("pearcel_charcoal").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_seeds = new ItemPearcelMod().func_77655_b("pearcel_seeds").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_seeds = new ItemPearcelSeeds(ModBlocks.pearcel_crops, Blocks.field_150458_ak).func_77655_b("pearcel_seeds").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_matter = new ItemPearcelMod().func_77655_b("pearcel_matter").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         neutral_pearcel_matter = new ItemPearcelMod().func_77655_b("neutral_pearcel_matter").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_arrow = new ItemPearcelArrow().func_77655_b("pearcel_arrow").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Food
         pearcel_item = new ItemPearcelFood(4, 0.5F, false).func_77655_b("pearcel_item").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -80,6 +92,7 @@ public class ModItems {
         pearcel_steak = new ItemPearcelFood(9, 1.5F, true).func_77655_b("pearcel_steak").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_cookie = new ItemPearcelFood(2, 0.1F, true).func_77655_b("pearcel_cookie").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_sandwich = new ItemPearcelFood(9, 1.1F, true).func_77655_b("pearcel_sandwich").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_juice_bottle = new ItemPearcelJuiceBottle().func_77655_b("pearcel_juice_bottle").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
         //Tools and Armor
@@ -99,6 +112,9 @@ public class ModItems {
         pearcel_boots = new ItemPearcelArmor(matPearcel, 3).func_77655_b("pearcel_boots").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).func_77655_b("pearcel_staff").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
         dragon_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).func_77655_b("dragon_pearcel_staff").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
+        pcp = new ItemPCP().func_77655_b("pcp").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
+        ender_pearcel = new ItemEnderPearcel().func_77655_b("ender_pearcel").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_bow = new ItemPearcelBow().func_77655_b("pearcel_bow").func_77637_a(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -110,11 +126,12 @@ public class ModItems {
         GameRegistry.registerItem(tier_4_crafting_component, tier_4_crafting_component.func_77658_a().substring(5));
         GameRegistry.registerItem(armor_plating, armor_plating.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_flour, pearcel_flour.func_77658_a().substring(5));
-        GameRegistry.registerItem(pearcel_stick, pearcel_stick.func_77658_a().substring(5));
+        GameRegistry.registerItem(pearcel_stick,pearcel_stick.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_charcoal, pearcel_charcoal.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_seeds, pearcel_seeds.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_matter, pearcel_matter.func_77658_a().substring(5));
         GameRegistry.registerItem(neutral_pearcel_matter, neutral_pearcel_matter.func_77658_a().substring(5));
+        GameRegistry.registerItem(pearcel_arrow, pearcel_arrow.func_77658_a().substring(5));
 
         //Food
         GameRegistry.registerItem(pearcel_item, pearcel_item.func_77658_a().substring(5));
@@ -124,6 +141,7 @@ public class ModItems {
         GameRegistry.registerItem(pearcel_steak, pearcel_steak.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_cookie, pearcel_cookie.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_sandwich, pearcel_sandwich.func_77658_a().substring(5));
+        GameRegistry.registerItem(pearcel_juice_bottle, pearcel_juice_bottle.func_77658_a().substring(5));
 
         //Tools and Armor
         GameRegistry.registerItem(pearcel_sword, pearcel_sword.func_77658_a().substring(5));
@@ -142,6 +160,10 @@ public class ModItems {
         GameRegistry.registerItem(pearcel_boots, pearcel_boots.func_77658_a().substring(5));
         GameRegistry.registerItem(pearcel_staff, pearcel_staff.func_77658_a().substring(5));
         GameRegistry.registerItem(dragon_pearcel_staff, dragon_pearcel_staff.func_77658_a().substring(5));
+        GameRegistry.registerItem(pcp, pcp.func_77658_a().substring(5));
+        GameRegistry.registerItem(ender_pearcel, ender_pearcel.func_77658_a().substring(5));
+        GameRegistry.registerItem(pearcel_bow, pearcel_bow.func_77658_a().substring(5));
+
     }
 
     public static void registerRenders(){
@@ -158,6 +180,7 @@ public class ModItems {
         registerRender(pearcel_seeds);
         registerRender(pearcel_matter);
         registerRender(neutral_pearcel_matter);
+        registerRender(pearcel_arrow);
 
         //Food
         registerRender(pearcel_item);
@@ -167,6 +190,7 @@ public class ModItems {
         registerRender(pearcel_steak);
         registerRender(pearcel_cookie);
         registerRender(pearcel_sandwich);
+        registerRender(pearcel_juice_bottle);
 
         //Tools and Armor
         registerRender(pearcel_sword);
@@ -185,10 +209,24 @@ public class ModItems {
         registerRender(pearcel_boots);
         registerRender(pearcel_staff);
         registerRender(dragon_pearcel_staff);
+        registerRender(pcp);
+        registerRender(ender_pearcel);
+        registerRender(pearcel_bow);
+        registerRender(pearcel_bow, 1, "pearcel_bow_pulling_1");
+        registerRender(pearcel_bow, 2, "pearcel_bow_pulling_2");
+        registerRender(pearcel_bow, 3, "pearcel_bow_pulling_3");
+
+        ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
+
 
     public static void registerRender(Item item){
         Minecraft.func_71410_x().func_175599_af().func_175037_a().func_178086_a(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.func_77658_a().substring(5), "inventory"));
     }
+
+    public static void registerRender(Item item, int meta, String name){
+        Minecraft.func_71410_x().func_175599_af().func_175037_a().func_178086_a(item, meta, new ModelResourceLocation(Reference.MOD_ID + ":" + name, "inventory"));
+    }
+
 
 }

@@ -11,20 +11,24 @@ This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This m
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava
+:sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
 :sourceMainJava
-:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+:compileJava
+Download https://libraries.minecraft.net/com/mojang/netty/1.6/netty-1.6.pom
+Download https://libraries.minecraft.net/com/mojang/netty/1.6/netty-1.6.jar
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Minecraft 1.8\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\renderer\RenderEnderPearcel.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
-
 :processResources
 :classes
 :jar
-:sourceTestJava
+:sourceTestJava UP-TO-DATE
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
@@ -46,4 +50,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 40.158 secs
+Total time: 45.419 secs
