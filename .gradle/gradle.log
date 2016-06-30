@@ -1,7 +1,5 @@
-This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.
-
 #################################################
-         ForgeGradle 2.1-SNAPSHOT-da90449        
+         ForgeGradle 2.2-SNAPSHOT-59f33ec        
   https://github.com/MinecraftForge/ForgeGradle  
 #################################################
                Powered by MCP unknown               
@@ -11,43 +9,127 @@ This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This m
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava UP-TO-DATE
-:compileApiJava UP-TO-DATE
-:processApiResources UP-TO-DATE
-:apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJava
-Download https://libraries.minecraft.net/com/mojang/netty/1.6/netty-1.6.pom
-Download https://libraries.minecraft.net/com/mojang/netty/1.6/netty-1.6.jar
-warning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Minecraft 1.8\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\renderer\RenderEnderPearcel.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 warning
-:processResources
-:classes
-:jar
-:sourceTestJava UP-TO-DATE
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
-:extractMcpData SKIPPED
-:extractMcpMappings SKIPPED
 :getVersionJson
-:extractUserdev UP-TO-DATE
-:genSrgs SKIPPED
-:reobfJar
-:extractRangemapReplacedMain
-C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Minecraft 1.8\Pearcel-Mod\build\sources\main\java
-:retromapReplacedMain
-remapping source...
-:sourceJar
-:assemble
-:check UP-TO-DATE
-:build
+:extractUserdev
+:extractDependencyATs SKIPPED
+:extractMcpData
+:extractMcpMappings
+:genSrgs
+:downloadClient
+:downloadServer
+:splitServerJar
+:mergeJars
+:deobfMcSRG
+Applying SpecialSource...
+Applying Exceptor...
+:decompileMc
+:fixMcSources
+:applySourcePatches
+:remapMcSources
+:recompileMc
+:extractNatives
+:getAssetIndex
+:getAssets
+Current status: 9/1049   0%
+Current status: 9/1049   0%
+Current status: 9/1049   0%
+Current status: 9/1049   0%
+Current status: 9/1049   0%
+Current status: 9/1049   0%
+Current status: 9/1049   0%
+Current status: 11/1049   1%
+Current status: 23/1049   2%
+Current status: 23/1049   2%
+Current status: 29/1049   2%
+Current status: 30/1049   2%
+Current status: 41/1049   3%
+Current status: 46/1049   4%
+Current status: 58/1049   5%
+Current status: 65/1049   6%
+Current status: 73/1049   6%
+Current status: 83/1049   7%
+Current status: 83/1049   7%
+Current status: 86/1049   8%
+Current status: 90/1049   8%
+Current status: 93/1049   8%
+Current status: 95/1049   9%
+Current status: 99/1049   9%
+Current status: 100/1049   9%
+Current status: 108/1049   10%
+Current status: 126/1049   12%
+Current status: 134/1049   12%
+Current status: 153/1049   14%
+Current status: 160/1049   15%
+Current status: 160/1049   15%
+Current status: 164/1049   15%
+Current status: 170/1049   16%
+Current status: 196/1049   18%
+Current status: 199/1049   18%
+Current status: 219/1049   20%
+Current status: 230/1049   21%
+Current status: 241/1049   22%
+Current status: 246/1049   23%
+Current status: 246/1049   23%
+Current status: 247/1049   23%
+Current status: 247/1049   23%
+Current status: 247/1049   23%
+Current status: 262/1049   24%
+Current status: 262/1049   24%
+Current status: 265/1049   25%
+Current status: 290/1049   27%
+Current status: 301/1049   28%
+Current status: 307/1049   29%
+Current status: 329/1049   31%
+Current status: 337/1049   32%
+Current status: 374/1049   35%
+Current status: 384/1049   36%
+Current status: 393/1049   37%
+Current status: 399/1049   38%
+Current status: 446/1049   42%
+Current status: 453/1049   43%
+Current status: 485/1049   46%
+Current status: 495/1049   47%
+Current status: 513/1049   48%
+Current status: 521/1049   49%
+Current status: 543/1049   51%
+Current status: 551/1049   52%
+Current status: 580/1049   55%
+Current status: 593/1049   56%
+Current status: 602/1049   57%
+Current status: 618/1049   58%
+Current status: 634/1049   60%
+Current status: 642/1049   61%
+Current status: 655/1049   62%
+Current status: 662/1049   63%
+Current status: 669/1049   63%
+Current status: 688/1049   65%
+Current status: 713/1049   67%
+Current status: 733/1049   69%
+Current status: 775/1049   73%
+Current status: 806/1049   76%
+Current status: 806/1049   76%
+Current status: 808/1049   77%
+Current status: 837/1049   79%
+Current status: 837/1049   79%
+Current status: 858/1049   81%
+Current status: 883/1049   84%
+Current status: 932/1049   88%
+Current status: 950/1049   90%
+Current status: 962/1049   91%
+Current status: 970/1049   92%
+Current status: 977/1049   93%
+Current status: 985/1049   93%
+Current status: 985/1049   93%
+Current status: 991/1049   94%
+Current status: 1020/1049   97%
+Current status: 1020/1049   97%
+Current status: 1036/1049   98%
+Current status: 1045/1049   99%
+Current status: 1046/1049   99%
+Current status: 1047/1049   99%
+:makeStart
+:setupDecompWorkspace
 
 BUILD SUCCESSFUL
 
-Total time: 45.419 secs
+Total time: 8 mins 57.386 secs

@@ -1,128 +1,24 @@
-[14:52:41] [Client thread/INFO]: Setting user: MiningMark48
-[14:52:44] [Client thread/INFO]: LWJGL Version: 2.9.4
-[14:52:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
-[14:52:48] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[14:52:48] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[14:52:48] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[14:52:48] [Thread-9/INFO]: OpenAL initialized.
-[14:52:49] [Sound Library Loader/INFO]: Sound engine started
-[14:52:55] [Client thread/INFO]: Created: 16x16 textures-atlas
-[14:52:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Pearcel Mod, FMLFileResourcePack:Developer World, FMLFileResourcePack:Just Enough Items
-[14:52:56] [Client thread/INFO]: SoundSystem shutting down...
-[14:52:56] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[14:52:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[14:52:56] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[14:52:56] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[14:52:56] [Thread-11/INFO]: OpenAL initialized.
-[14:52:57] [Sound Library Loader/INFO]: Sound engine started
-[14:53:06] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[14:53:07] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[14:54:21] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[14:54:21] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[14:54:21] [Server thread/INFO]: Generating keypair
-[14:54:42] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[14:54:43] [Server thread/INFO]: Preparing start region for level 0
-[14:54:44] [Server thread/INFO]: Changing view distance to 12, from 10
-[14:54:44] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[14:54:45] [Server thread/INFO]: MiningMark48[local:E:091c15d9] logged in with entity id 6 at (-79.51882216690933, 56.0, -10.641132018211154)
-[14:54:45] [Server thread/INFO]: MiningMark48 joined the game
-[14:54:45] [Server thread/INFO]: Saving and pausing game...
-[14:54:45] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[14:54:45] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[14:54:45] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[14:54:46] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6c22e333[id=a500574d-29ab-3de0-aeea-a0c1c98dfb89,name=MiningMark48,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.func_181037_M(Minecraft.java:2915) [Minecraft.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:130) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [?:1.7.0_79]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [?:1.7.0_79]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_79]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_79]
-	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_79]
-[14:54:46] [Server thread/INFO]: Saving and pausing game...
-[14:54:46] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[14:54:46] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[14:54:46] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[14:55:21] [Server thread/INFO]: [MiningMark48: Given [Block of Diamond] * 1 to MiningMark48]
-[14:55:21] [Client thread/INFO]: [CHAT] Given [Block of Diamond] * 1 to MiningMark48
-[14:55:22] [Server thread/INFO]: [MiningMark48: Given [Diamond Sword] * 1 to MiningMark48]
-[14:55:22] [Client thread/INFO]: [CHAT] Given [Diamond Sword] * 1 to MiningMark48
-[14:55:26] [Server thread/INFO]: [MiningMark48: Given [Glass Pane] * 1 to MiningMark48]
-[14:55:26] [Client thread/INFO]: [CHAT] Given [Glass Pane] * 1 to MiningMark48
-[14:55:34] [Server thread/INFO]: [MiningMark48: Given [Piston] * 1 to MiningMark48]
-[14:55:34] [Client thread/INFO]: [CHAT] Given [Piston] * 1 to MiningMark48
-[14:55:42] [Server thread/INFO]: [MiningMark48: Given [Chest] * 1 to MiningMark48]
-[14:55:42] [Client thread/INFO]: [CHAT] Given [Chest] * 1 to MiningMark48
-[14:55:47] [Server thread/INFO]: [MiningMark48: Set own game mode to Creative Mode]
-[14:55:47] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:56:07] [Client thread/INFO]: [CHAT] §6Infinity upgrade applied!
-[14:56:07] [Client thread/INFO]: [CHAT] §6Power upgrade applied!
-[14:56:07] [Client thread/INFO]: [CHAT] §6Knockback upgrade applied!
-[14:56:07] [Client thread/INFO]: [CHAT] §6Zoom upgrade applied!
-[14:56:37] [Server thread/INFO]: Saving and pausing game...
-[14:56:37] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[14:56:37] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[14:56:37] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[14:57:56] [Client thread/INFO]: [CHAT] §6Infinity upgrade applied!
-[14:57:56] [Client thread/INFO]: [CHAT] §6Power upgrade applied!
-[14:57:56] [Client thread/INFO]: [CHAT] §6Knockback upgrade applied!
-[14:57:56] [Client thread/INFO]: [CHAT] §6Zoom upgrade applied!
-[14:58:00] [Client thread/INFO]: [CHAT] §6Infinity upgrade applied!
-[14:58:00] [Client thread/INFO]: [CHAT] §6Power upgrade applied!
-[14:58:00] [Client thread/INFO]: [CHAT] §6Knockback upgrade applied!
-[14:58:00] [Client thread/INFO]: [CHAT] §6Zoom upgrade applied!
-[14:58:12] [Server thread/INFO]: Saving and pausing game...
-[14:58:12] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[14:58:12] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[14:58:12] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[14:58:23] [Server thread/INFO]: [MiningMark48: Given [Lapis Lazuli] * 64 to MiningMark48]
-[14:58:23] [Client thread/INFO]: [CHAT] Given [Lapis Lazuli] * 64 to MiningMark48
-[14:58:30] [Server thread/INFO]: [MiningMark48: Given [Stone Sword] * 1 to MiningMark48]
-[14:58:30] [Client thread/INFO]: [CHAT] Given [Stone Sword] * 1 to MiningMark48
-[14:58:36] [Server thread/INFO]: [MiningMark48: Given [Pearcel Sword] * 1 to MiningMark48]
-[14:58:36] [Client thread/INFO]: [CHAT] Given [Pearcel Sword] * 1 to MiningMark48
-[14:58:50] [Server thread/INFO]: [MiningMark48: Given [Pearcel Sword] * 1 to MiningMark48]
-[14:58:50] [Client thread/INFO]: [CHAT] Given [Pearcel Sword] * 1 to MiningMark48
-[14:59:08] [Server thread/INFO]: Saving and pausing game...
-[14:59:08] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[14:59:08] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[14:59:08] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:02:32] [Server thread/INFO]: Saving and pausing game...
-[15:02:32] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:02:32] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:02:32] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:02:45] [Server thread/INFO]: Saving and pausing game...
-[15:02:45] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:02:45] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:02:45] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:03:15] [Server thread/INFO]: Saving and pausing game...
-[15:03:15] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:03:15] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:03:15] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:09:28] [Server thread/INFO]: Saving and pausing game...
-[15:09:28] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:09:28] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:09:28] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:09:28] [Server thread/INFO]: Stopping server
-[15:09:28] [Server thread/INFO]: Saving players
-[15:09:28] [Server thread/INFO]: Saving worlds
-[15:09:28] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
-[15:09:28] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
-[15:09:28] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
-[15:09:29] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[15:09:29] [Client thread/INFO]: Stopping!
-[15:09:29] [Client thread/INFO]: SoundSystem shutting down...
-[15:09:29] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[00:04:50] [Server thread/INFO]: [MiningMark48: Given [Spawn Cow] * 1 to MiningMark48]
+[00:04:50] [Client thread/INFO]: [CHAT] Given [Spawn Cow] * 1 to MiningMark48
+[00:05:14] [Server thread/INFO]: Saving and pausing game...
+[00:05:14] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:05:14] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:05:14] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:05:24] [Server thread/INFO]: Saving and pausing game...
+[00:05:24] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:05:24] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:05:24] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:07:10] [Server thread/INFO]: Saving and pausing game...
+[00:07:10] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:07:10] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:07:10] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:07:11] [Server thread/INFO]: Stopping server
+[00:07:11] [Server thread/INFO]: Saving players
+[00:07:11] [Server thread/INFO]: Saving worlds
+[00:07:11] [Server thread/INFO]: Saving chunks for level 'Development World'/Overworld
+[00:07:11] [Server thread/INFO]: Saving chunks for level 'Development World'/Nether
+[00:07:11] [Server thread/INFO]: Saving chunks for level 'Development World'/The End
+[00:07:12] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:07:12] [Client thread/INFO]: Stopping!
+[00:07:12] [Client thread/INFO]: SoundSystem shutting down...
+[00:07:12] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
