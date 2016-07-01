@@ -26,8 +26,9 @@ public class ItemPearcelStaff extends ItemPearcelSword{
         super.onUpdate(stack, world, entity, par4, par5);
         {
             EntityPlayer player = (EntityPlayer) entity;
-            ItemStack equipped = player.getHeldItem(EnumHand.MAIN_HAND);
-            if (equipped == stack){
+            ItemStack equippedMain = player.getHeldItemMainhand();
+            ItemStack equippedOffhand = player.getHeldItemOffhand();
+            if (equippedMain == stack || equippedOffhand == stack){
                 player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2));
             }
         }

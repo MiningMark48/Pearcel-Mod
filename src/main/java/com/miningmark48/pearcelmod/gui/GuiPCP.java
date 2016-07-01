@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.gui;
 
 import com.miningmark48.pearcelmod.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -26,7 +27,7 @@ public class GuiPCP extends GuiContainer{
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
-        this.fontRendererObj.drawString(new TextComponentString("gui.pcp.name").toString(), 23, 5, 0x404040);
+        this.fontRendererObj.drawString(Translate.toLocal("gui.pcp.name").toString(), 23, 5, 0x404040);
     }
 
     @Override

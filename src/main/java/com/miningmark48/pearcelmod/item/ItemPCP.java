@@ -5,6 +5,9 @@ import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 
@@ -20,13 +23,14 @@ public class ItemPCP extends ItemPearcelMod{
         par3List.add(Translate.toLocal("tooltip.item.pcp.line1"));
     }
 
-    public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
+    @Override
+    public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
     {
         if (!player.isSneaking()){
             player.openGui(PearcelMod.instance, GUIs.gui_id_pcp, player.worldObj, (int) player.posX, (int) player.posY, (int) player.posZ);
-            return item;
+            return new ActionResult(EnumActionResult.PASS, stack);
         }else{
-            return item;
+            return new ActionResult(EnumActionResult.PASS, stack);
         }
     }
 
