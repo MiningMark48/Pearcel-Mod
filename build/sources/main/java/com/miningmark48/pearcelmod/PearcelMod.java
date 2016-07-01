@@ -8,7 +8,8 @@ import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
-import net.minecraft.util.StatCollector;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -47,7 +48,7 @@ public class PearcelMod {
 
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
-		LogHelper.info(StatCollector.translateToLocal("log.info.preinit"));
+		LogHelper.info(new TextComponentString("log.info.preinit"));
 	}
 	
 	@Mod.EventHandler
@@ -59,13 +60,13 @@ public class PearcelMod {
 
 		Recipes.init();
 
-        LogHelper.info(StatCollector.translateToLocal( "log.info.init"));
+        LogHelper.info(new TextComponentString("log.info.init"));
 
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
-        LogHelper.info(StatCollector.translateToLocal("log.info.postinit"));
+		LogHelper.info(new TextComponentString("log.info.postinit"));
 	}
 
 

@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
@@ -13,8 +14,12 @@ import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -60,85 +65,85 @@ public class BlockSummoner extends BlockPearcelMod{
         EntityVillager villager = new EntityVillager(world);
         villager.setPosition(x + spawnRand, y + 2, z + spawnRand);
 
-        if(player.getHeldItem() != null){
-            if (!player.isSneaking() && player.getHeldItem().getItem() == ModItems.sap) {
+        if(player.getHeldItem(EnumHand.MAIN_HAND) != null){
+            if (!player.isSneaking() && player.getHeldItem(EnumHand.MAIN_HAND).getItem() == ModItems.sap) {
                 if (!world.isRemote) {
                     //Missing Block
-                    if (world.getBlockState(pos.up()).getBlock() == Blocks.air) {
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("summoner.error.missingBlock")));
+                    if (world.getBlockState(pos.up()).getBlock() == Blocks.AIR) {
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + new TextComponentString("summoner.error.missingBlock").toString()));
                         if (world.isRemote) {
-                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
                         }
                     }
                     //Sheep
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.wool) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.WOOL) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(sheep);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.sheep") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.sheep").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Enderman
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.end_stone) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.END_STONE) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(enderman);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.enderman") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.enderman").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Blaze
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.fire) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.FIRE) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(blaze);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.blaze") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.blaze").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Ghast
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.cobblestone) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.COBBLESTONE) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(ghast);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.ghast") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.ghast").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Skeleton
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.planks) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.PLANKS) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(skeleton);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.skeleton") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.skeleton").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Creeper
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.tnt) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.TNT) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(creeper);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.creeper") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.creeper").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Horse
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.hay_block) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.HAY_BLOCK) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(horse);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.horse") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.horse").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Iron Golem
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.iron_block) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.IRON_BLOCK) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(iron_golem);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.iron_golem") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.iron_golem").toString() + " " + new TextComponentString("summoner.summoned")));
                     }
                     //Villager
-                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.emerald_block) {
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.EMERALD_BLOCK) {
                         world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
                         world.spawnEntityInWorld(villager);
-                        player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("summoner.mob_summon.villager") + " " + StatCollector.translateToLocal("summoner.summoned")));
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("summoner.mob_summon.villager").toString() + " " + new TextComponentString("summoner.summoned")));
                     }else {
                         if (!world.isRemote) {
                             world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
-                            player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("summoner.error.incorrectBlock")));
+                            player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + new TextComponentString("summoner.error.incorrectBlock").toString()));
                         }
                         if (world.isRemote) {
-                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ));
+                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
                         }
                     }
                 }
-                player.playSound("random.explode", 1.0F, 0.5F);
+                player.playSound(SoundEvents.ENTITY_GENERIC_EXPLODE, 1.0F, 0.5F);
                 world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, x, y, z, 1.0D, 0.0D, 0.0D);
-                player.getHeldItem().damageItem(1, player);
+                player.getHeldItem(EnumHand.MAIN_HAND).damageItem(1, player);
             } else {
                 if (!world.isRemote) {
-                    player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.DARK_RED + StatCollector.translateToLocal("summoner.error.incorrectItem")));
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + new TextComponentString("summoner.error.incorrectItem").toString()));
                 }
             }
         }

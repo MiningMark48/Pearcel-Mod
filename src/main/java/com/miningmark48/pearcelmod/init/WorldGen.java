@@ -4,10 +4,11 @@ import java.util.Random;
 
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.block.Block;
-import net.minecraft.block.state.pattern.BlockHelper;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
@@ -15,7 +16,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class WorldGen implements IWorldGenerator {
 
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-        switch(world.provider.getDimensionId()){
+        switch(world.provider.getDimension()){
             case -1: //Nether
                 generateNether(world, random, chunkX, chunkZ);
                 break;
@@ -32,20 +33,20 @@ public class WorldGen implements IWorldGenerator {
     private void generateNether(World world, Random rand, int x, int z)
     {
         if (ConfigurationHandler.doWorldGen) {
-            generateOre(ModBlocks.nether_pearcel_ore, world, rand, x, z, 3, 6, 10, 0, 60, Blocks.netherrack);
+            generateOre(ModBlocks.nether_pearcel_ore, world, rand, x, z, 3, 6, 10, 0, 60, Blocks.NETHERRACK);
         }
     }
 
     private void generateSurface(World world, Random rand, int x, int z)
     {
         if (ConfigurationHandler.doWorldGen) {
-            generateOre(ModBlocks.pearcel_ore, world, rand, x, z, 3, 12, 25, 10, 70, Blocks.stone);
+            generateOre(ModBlocks.pearcel_ore, world, rand, x, z, 3, 12, 25, 10, 70, Blocks.STONE);
             generateOre(ModBlocks.fools_pearcel_ore, world, rand, x, z, 3, 5, 10, 10, 50, ModBlocks.pearcel_ore);
-            generateOre(ModBlocks.pearcel_matter_ore, world, rand, x, z, 1, 2, 15, 10, 40, Blocks.stone);
-            generateOre(ModBlocks.dense_pearcel_ore, world, rand, x, z, 5, 20, 15, 5, 70, Blocks.stone);
-            generateOre(ModBlocks.dense_pearcel_matter_ore, world, rand, x, z, 5, 20, 10, 5, 70, Blocks.stone);
-            generateOre(ModBlocks.pearcel_stone, world, rand, x, z, 1, 15, 20, 10, 64, Blocks.stone);
-            generateOre(ModBlocks.pearcel_sand, world, rand, x, z, 1, 15, 25, 10, 64, Blocks.sand);
+            generateOre(ModBlocks.pearcel_matter_ore, world, rand, x, z, 1, 2, 15, 10, 40, Blocks.STONE);
+            generateOre(ModBlocks.dense_pearcel_ore, world, rand, x, z, 5, 20, 15, 5, 70, Blocks.STONE);
+            generateOre(ModBlocks.dense_pearcel_matter_ore, world, rand, x, z, 5, 20, 10, 5, 70, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_stone, world, rand, x, z, 1, 15, 20, 10, 64, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_sand, world, rand, x, z, 1, 15, 25, 10, 64, Blocks.SAND);
         }
 
     }
@@ -55,7 +56,7 @@ public class WorldGen implements IWorldGenerator {
     {
         if (ConfigurationHandler.doWorldGen) {
             //generateOre(ModBlocks.pearcelEndStone, world, rand, x, z, 2, 10, 15, 0, 60, Blocks.end_stone);
-            generateOre(ModBlocks.ender_pearcel_ore, world, rand, x, z, 3, 12, 10, 0, 60, Blocks.end_stone);
+            generateOre(ModBlocks.ender_pearcel_ore, world, rand, x, z, 3, 12, 10, 0, 60, Blocks.END_STONE);
         }
     }
 
@@ -78,7 +79,7 @@ public class WorldGen implements IWorldGenerator {
     {
         int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);
         int heightRange = maxY - minY;
-        WorldGenMinable gen = new WorldGenMinable(block.getDefaultState(), veinSize, BlockHelper.forBlock(generateIn));
+        WorldGenMinable gen = new WorldGenMinable(block.getDefaultState(), veinSize, BlockMatcher.forBlock(generateIn));
         for (int i = 0; i < chance; i++){
             int xRand = chunkX * 16 + random.nextInt(16);
             int yRand = random.nextInt(heightRange) + minY;
@@ -89,4 +90,8 @@ public class WorldGen implements IWorldGenerator {
     }
 
 
+    @Override
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+
+    }
 }

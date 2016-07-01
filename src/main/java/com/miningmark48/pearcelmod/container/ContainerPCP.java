@@ -67,7 +67,7 @@ public class ContainerPCP extends Container{
 
                 if (itemstack != null)
                 {
-                    player.dropPlayerItemWithRandomChoice(itemstack, false);
+                    player.dropItem(itemstack, false);
                 }
             }
         }

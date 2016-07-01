@@ -6,8 +6,9 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
@@ -51,81 +52,81 @@ public class ModBlocks {
 
     public static void init(){
         //General
-        pearcel_block = new BlockPearcelMod().setUnlocalizedName("pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_sand = new BlockPearcelModGravity().setUnlocalizedName("pearcel_sand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_sandstone = new BlockPearcelMod().setUnlocalizedName("pearcel_sandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_matter_block = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        packed_pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("packed_pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_glass = new BlockPearcelModTransparent().setUnlocalizedName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        distressed_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("distressed_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        irradiated_pearcel_block = new BlockPearcelModLightEmit(5.0F).setUnlocalizedName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        polished_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("polished_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_stonebricks = new BlockPearcelMod().setUnlocalizedName("pearcel_stonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tainted_pearcel = new BlockPearcelMod().setUnlocalizedName("tainted_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_torch = new BlockPearcelTorch().setUnlocalizedName("pearcel_torch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_planks = new BlockPearcelModWood().setUnlocalizedName("pearcel_planks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_end_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_end_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_charcoal_block = new BlockPearcelMod().setUnlocalizedName("pearcel_charcoal_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_glass_pane = new BlockPearcelPane(Material.glass, true).setUnlocalizedName("pearcel_glass_pane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_block = new BlockPearcelMod().setUnlocalizedName("pearcel_block").setRegistryName("pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sand = new BlockPearcelModGravity().setUnlocalizedName("pearcel_sand").setRegistryName("pearcel_sand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sandstone = new BlockPearcelMod().setUnlocalizedName("pearcel_sandstone").setRegistryName("pearcel_sandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_matter_block = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_block").setRegistryName("pearcel_matter_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("pearcel_bricks").setRegistryName("pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        packed_pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("packed_pearcel_bricks").setRegistryName("packed_pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_stone").setRegistryName("pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_glass = new BlockPearcelModTransparent().setUnlocalizedName("pearcel_glass").setRegistryName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        distressed_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("distressed_pearcel_stone").setRegistryName("distressed_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        irradiated_pearcel_block = new BlockPearcelModLightEmit(5.0F).setUnlocalizedName("irradiated_pearcel_block").setRegistryName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        polished_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("polished_pearcel_stone").setRegistryName("polished_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stonebricks = new BlockPearcelMod().setUnlocalizedName("pearcel_stonebricks").setRegistryName("pearcel_stonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tainted_pearcel = new BlockPearcelMod().setUnlocalizedName("tainted_pearcel").setRegistryName("tainted_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_torch = new BlockPearcelTorch().setUnlocalizedName("pearcel_torch").setRegistryName("pearcel_torch").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_planks = new BlockPearcelModWood().setUnlocalizedName("pearcel_planks").setRegistryName("pearcel_planks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_end_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_end_stone").setRegistryName("pearcel_end_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_charcoal_block = new BlockPearcelMod().setUnlocalizedName("pearcel_charcoal_block").setRegistryName("pearcel_charcoal_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_glass_pane = new BlockPearcelPane(Material.GLASS, true).setUnlocalizedName("pearcel_glass_pane").setRegistryName("pearcel_glass_pane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
-        pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        nether_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("nether_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        ender_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        dense_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        dense_pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        fools_pearcel_ore = new BlockFoolsPearcelOre().setUnlocalizedName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setRegistryName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        nether_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("nether_pearcel_ore").setRegistryName("nether_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        ender_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_ore").setRegistryName("ender_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_ore").setRegistryName("pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dense_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_ore").setRegistryName("dense_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dense_pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_matter_ore").setRegistryName("dense_pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        fools_pearcel_ore = new BlockFoolsPearcelOre().setUnlocalizedName("fools_pearcel_ore").setRegistryName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Functional
-        pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        torcher = new BlockTorcher().setUnlocalizedName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        summoner = new BlockSummoner().setUnlocalizedName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setRegistryName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        torcher = new BlockTorcher().setUnlocalizedName("torcher").setRegistryName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        summoner = new BlockSummoner().setUnlocalizedName("summoner").setRegistryName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Plants
-        pearcel_crops = new BlockPearcelCrops().setUnlocalizedName("pearcel_crops");
+        pearcel_crops = new BlockPearcelCrops().setUnlocalizedName("pearcel_crops").setRegistryName("pearcel_crops");
 
     }
 
     public static void register(){
         //General
-        GameRegistry.registerBlock(pearcel_block, pearcel_block.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_sand, pearcel_sand.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_sandstone, pearcel_sandstone.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_matter_block, pearcel_matter_block.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_bricks, pearcel_bricks.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(packed_pearcel_bricks, packed_pearcel_bricks.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_stone, pearcel_stone.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_glass, pearcel_glass.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(distressed_pearcel_stone, distressed_pearcel_stone.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(irradiated_pearcel_block, irradiated_pearcel_block.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(polished_pearcel_stone, polished_pearcel_stone.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_stonebricks, pearcel_stonebricks.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(tainted_pearcel, tainted_pearcel.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_torch, pearcel_torch.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_planks, pearcel_planks.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_end_stone, pearcel_end_stone.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_charcoal_block, pearcel_charcoal_block.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_glass_pane, pearcel_glass_pane.getUnlocalizedName().substring(5));
+        registerBlock(pearcel_block);
+        registerBlock(pearcel_sand);
+        registerBlock(pearcel_sandstone);
+        registerBlock(pearcel_matter_block);
+        registerBlock(pearcel_bricks);
+        registerBlock(packed_pearcel_bricks);
+        registerBlock(pearcel_stone);
+        registerBlock(pearcel_glass);
+        registerBlock(distressed_pearcel_stone);
+        registerBlock(irradiated_pearcel_block);
+        registerBlock(polished_pearcel_stone);
+        registerBlock(pearcel_stonebricks);
+        registerBlock(tainted_pearcel);
+        registerBlock(pearcel_torch);
+        registerBlock(pearcel_planks);
+        registerBlock(pearcel_end_stone);
+        registerBlock(pearcel_charcoal_block);
+        registerBlock(pearcel_glass_pane);
 
         //Ores
-        GameRegistry.registerBlock(pearcel_ore, pearcel_ore.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(nether_pearcel_ore, nether_pearcel_ore.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(ender_pearcel_ore, ender_pearcel_ore.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(pearcel_matter_ore, pearcel_matter_ore.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(dense_pearcel_ore, dense_pearcel_ore.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(dense_pearcel_matter_ore, dense_pearcel_matter_ore.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(fools_pearcel_ore, fools_pearcel_ore.getUnlocalizedName().substring(5));
+        registerBlock(pearcel_ore);
+        registerBlock(nether_pearcel_ore);
+        registerBlock(ender_pearcel_ore);
+        registerBlock(pearcel_matter_ore);
+        registerBlock(dense_pearcel_ore);
+        registerBlock(dense_pearcel_matter_ore);
+        registerBlock(fools_pearcel_ore);
 
         //Functional
-        GameRegistry.registerBlock(pearcel_workbench, pearcel_workbench.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(torcher, torcher.getUnlocalizedName().substring(5));
-        GameRegistry.registerBlock(summoner, summoner.getUnlocalizedName().substring(5));
+        registerBlock(pearcel_workbench);
+        registerBlock(torcher);
+        registerBlock(summoner);
 
         //Plant
-        GameRegistry.registerBlock(pearcel_crops, pearcel_crops.getUnlocalizedName().substring(5));
+        //registerBlock(pearcel_crops);
 
     }
 
@@ -168,10 +169,17 @@ public class ModBlocks {
         registerRender(pearcel_crops);
 
     }
+    
+    private static void registerBlock(Block block){
+        GameRegistry.register(block);
+        ItemBlock item = new ItemBlock(block);
+        item.setRegistryName(block.getRegistryName());
+        GameRegistry.register(item);
+    }
 
     public static void registerRender(Block block){
         Item item = Item.getItemFromBlock(block);
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
     }
 
 }

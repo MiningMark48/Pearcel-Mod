@@ -3,17 +3,19 @@ package com.miningmark48.pearcelmod.item;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.init.Enchantments;
 import net.minecraft.init.Items;
-import net.minecraft.item.EnumAction;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBow;
-import net.minecraft.item.ItemStack;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.item.*;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
@@ -28,12 +30,11 @@ public class ItemPearcelBow extends ItemBow{
         setMaxDamage(-1);
     }
 
-    @Override
     public ModelResourceLocation getModel(ItemStack stack, EntityPlayer player, int useRemaining)
     {
         ModelResourceLocation modelresourcelocation = new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory");
 
-        if(stack.getItem() == this && player.getItemInUse() != null)
+        if(stack.getItem() == this && player.getHeldItem(EnumHand.MAIN_HAND) != null)
         {
             if(useRemaining >= 18)
             {
@@ -51,108 +52,106 @@ public class ItemPearcelBow extends ItemBow{
         return modelresourcelocation;
     }
 
-    public void onPlayerStoppedUsing(ItemStack stack, World world, EntityPlayer player, int timeLeft)
+    public ItemStack onItemUseFinish(ItemStack stack, World world, EntityLivingBase entityLiving)
     {
-        int i = getInventorySlotContainItem(ModItems.pearcel_arrow, player);
-        if (player.inventory.getStackInSlot(i).hasTagCompound()) {
-            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
-                zoomOut();
+        if (entityLiving instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) entityLiving;
+
+
+            int i = getInventorySlotContainItem(ModItems.pearcel_arrow, player);
+            ItemStack itemstack = new ItemStack(ModItems.pearcel_arrow);
+            if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+                if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
+                    zoomOut();
+                }
             }
-        }
-        int j = this.getMaxItemUseDuration(stack) - timeLeft;
+            int j = this.getMaxItemUseDuration(stack);
 
-        ArrowLooseEvent event = new ArrowLooseEvent(player, stack, j);
-        MinecraftForge.EVENT_BUS.post(event);
-        if (event.isCanceled())
-        {
-            return;
-        }
-        j = event.charge;
-
-        boolean flag = player.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, stack) > 0;
-
-        if (flag || (player.inventory.hasItem(ModItems.pearcel_arrow) || player.inventory.hasItem(Items.arrow)))
-        {
-            float f = (float)j / 20.0F;
-            f = (f * f + f * 2.0F) / 3.0F;
-
-            if ((double)f < 0.1D)
-            {
-                return;
+            ArrowLooseEvent event = new ArrowLooseEvent(player, stack, world, j, true);
+            MinecraftForge.EVENT_BUS.post(event);
+            if (event.isCanceled()) {
+                return null;
             }
+            j = event.getCharge();
 
-            if (f > 1.0F)
-            {
-                f = 1.0F;
-            }
+            boolean flag = player.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, stack) > 0;
 
-            EntityArrow entityarrow = new EntityArrow(world, player, f * 2.0F);
+            if (flag || (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow)))) {
+                float f = (float) j / 20.0F;
+                f = (f * f + f * 2.0F) / 3.0F;
 
-            if (f == 1.0F)
-            {
-                entityarrow.setIsCritical(true);
-            }
+                if ((double) f < 0.1D) {
+                    return null;
+                }
 
-            int k = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, stack);
+                if (f > 1.0F) {
+                    f = 1.0F;
+                }
 
-            if (k > 0)
-            {
-                entityarrow.setDamage(entityarrow.getDamage() + (double)k * 0.5D + 0.5D);
-            }
+                ItemArrow itemarrow = (ItemArrow) ((ItemArrow) (itemstack.getItem() instanceof ItemArrow ? itemstack.getItem() : ModItems.pearcel_arrow ));
+                EntityArrow entityarrow = itemarrow.createArrow(world, itemstack, player);
+                entityarrow.setAim(player, player.rotationPitch, player.rotationYaw, 0.0F, f * 3.0F, 1.0F);
 
-            int l = EnchantmentHelper.getEnchantmentLevel(Enchantment.punch.effectId, stack);
+                if (f == 1.0F) {
+                    entityarrow.setIsCritical(true);
+                }
 
-            if (l > 0)
-            {
-                entityarrow.setKnockbackStrength(l);
-            }
+                int k = EnchantmentHelper.getEnchantmentLevel(Enchantments.POWER, stack);
 
-            if (EnchantmentHelper.getEnchantmentLevel(Enchantment.flame.effectId, stack) > 0)
-            {
-                entityarrow.setFire(100);
-            }
+                if (k > 0) {
+                    entityarrow.setDamage(entityarrow.getDamage() + (double) k * 0.5D + 0.5D);
+                }
 
-            stack.damageItem(1, player);
-            world.playSoundAtEntity(player, "random.bow", 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+                int l = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, stack);
 
-            if (flag)
-            {
-                entityarrow.canBePickedUp = 2;
-            }
-            else
-            {
-                if (player.inventory.hasItem(ModItems.pearcel_arrow)){
-                    if (player.inventory.getStackInSlot(i).hasTagCompound()) {
-                        if (!player.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
+                if (l > 0) {
+                    entityarrow.setKnockbackStrength(l);
+                }
+
+                if (EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack) > 0) {
+                    entityarrow.setFire(100);
+                }
+
+                stack.damageItem(1, player);
+                world.playSound(player, player.getPosition(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+
+                if (flag) {
+                    entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
+                } else {
+                    if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow))) {
+                        if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+                            if (!player.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
+                                player.inventory.getStackInSlot(i).damageItem(1, player);
+                                if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
+                                    player.inventory.removeStackFromSlot(i);
+                                }
+                            }
+                            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")) {
+                                entityarrow.setDamage(entityarrow.getDamage() + 2.0D);
+                            }
+                            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("knock")) {
+                                entityarrow.setKnockbackStrength(2);
+                            }
+                        } else {
                             player.inventory.getStackInSlot(i).damageItem(1, player);
                             if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
                                 player.inventory.removeStackFromSlot(i);
                             }
                         }
-                        if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")){
-                            entityarrow.setDamage(entityarrow.getDamage() + 2.0D);
-                        }
-                        if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("knock")){
-                            entityarrow.setKnockbackStrength(2);
-                        }
-                    }else{
-                        player.inventory.getStackInSlot(i).damageItem(1, player);
-                        if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
-                            player.inventory.removeStackFromSlot(i);
-                        }
+                        entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
+                    } else {
+                        player.inventory.deleteStack(new ItemStack(Items.ARROW, 1));
                     }
-                    entityarrow.canBePickedUp = 2;
-                }else{
-                    player.inventory.consumeInventoryItem(Items.arrow);
+
                 }
 
-            }
-
-            if (!world.isRemote)
-            {
-                world.spawnEntityInWorld(entityarrow);
+                if (!world.isRemote) {
+                    world.spawnEntityInWorld(entityarrow);
+                }
             }
         }
+
+        return null;
 
     }
 
@@ -194,17 +193,17 @@ public class ItemPearcelBow extends ItemBow{
             }
         }
 
-        ArrowNockEvent event = new ArrowNockEvent(player, stack);
+        ArrowNockEvent event = new ArrowNockEvent(player, stack, EnumHand.MAIN_HAND, world, true);
         MinecraftForge.EVENT_BUS.post(event);
-        if (event.isCanceled())
-        {
-            return event.result;
-        }
+//        if (event.isCanceled())
+//        {
+//            return event.result;
+//        }
 
-        if (player.capabilities.isCreativeMode || (player.inventory.hasItem(ModItems.pearcel_arrow) || player.inventory.hasItem(Items.arrow)))
-        {
-            player.setItemInUse(stack, this.getMaxItemUseDuration(stack));
-        }
+//        if (player.capabilities.isCreativeMode || (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow)) || player.inventory.hasItemStack(new ItemStack((Items.ARROW)))))
+//        {
+//            player.setItemStackToSlot(stack, this.getMaxItemUseDuration(stack));
+//        }
 
         return stack;
 
@@ -226,7 +225,7 @@ public class ItemPearcelBow extends ItemBow{
         super.onUpdate(stack, world, entity, par4, par5);
         {
             EntityPlayer player = (EntityPlayer) entity;
-            ItemStack equipped = player.getCurrentEquippedItem();
+            ItemStack equipped = player.getHeldItem(EnumHand.MAIN_HAND);
             if (equipped == stack){
                 //TODO
             }

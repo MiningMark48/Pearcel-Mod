@@ -7,7 +7,11 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.util.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -22,7 +26,7 @@ public class BlockTorcher extends BlockPearcelMod{
         setHardness(0.5F);
         setResistance(2.5F);
         setLightLevel(1.0F);
-        setBlockBounds(0.375F, 0.0F, 0.375F, 0.625F, 1.0F, 0.625F);
+        //setBlockBounds(0.375F, 0.0F, 0.375F, 0.625F, 1.0F, 0.625F);
     }
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", new Predicate<EnumFacing>()
@@ -33,16 +37,16 @@ public class BlockTorcher extends BlockPearcelMod{
         }
     });
 
-    @Override
-    public boolean isOpaqueCube(){
-        return false;
-    }
-
-    @SideOnly(Side.CLIENT)
-    public EnumWorldBlockLayer getBlockLayer()
-    {
-        return EnumWorldBlockLayer.CUTOUT;
-    }
+//    @Override
+//    public boolean isOpaqueCube(){
+//        return false;
+//    }
+//
+//    @SideOnly(Side.CLIENT)
+//    public EnumWorldBlockLayer getBlockLayer()
+//    {
+//        return EnumWorldBlockLayer.CUTOUT;
+//    }
 
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing side, float hitX, float hitY, float hitZ){
         if (!player.isSneaking()){
@@ -51,7 +55,7 @@ public class BlockTorcher extends BlockPearcelMod{
 
             Random rand = new Random();
             int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
-            if (world.getBlockState(new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ())).getBlock().getMaterial().isSolid()){
+            if (world.getBlockState(new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ())).getBlock().isBlockSolid(world, pos, null)){
                 world.setBlockState(pos, ModBlocks.pearcel_torch.getDefaultState());
             }else{
                 world.setBlockToAir(pos);
@@ -103,16 +107,16 @@ public class BlockTorcher extends BlockPearcelMod{
                     torchZ = pos.getZ() + rangeRand;
                 }
                 if (world.getBlockState(new BlockPos(torchX, torchY, torchZ)).getBlock().isReplaceable(world, new BlockPos(torchX, torchY, torchZ))){
-                    if (world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ)).getBlock().getMaterial().isSolid()){
+                    if (world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ)).getBlock().isBlockSolid(world, pos, null)){
                         world.setBlockState(new BlockPos(torchX, torchY, torchZ), ModBlocks.pearcel_torch.getDefaultState());
                     }
                 }
             }
-            player.playSound("random.explode", 1.0F, 0.5F);
+            player.playSound(SoundEvents.ENTITY_GENERIC_EXPLODE, 1.0F, 0.5F);
             world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, pos.getX(), pos.getY(), pos.getZ(), 1.0D, 0.0D, 0.0D);
-            world.spawnEntityInWorld(new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ()));
+            world.spawnEntityInWorld(new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ(), true));
             if (!world.isRemote){
-                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.GOLD + StatCollector.translateToLocal("chat.torcher.lit")));
+                player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("chat.torcher.lit").toString()));
             }
 
             return true;

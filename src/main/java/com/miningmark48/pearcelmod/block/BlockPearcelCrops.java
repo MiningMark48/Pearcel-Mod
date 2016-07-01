@@ -1,27 +1,28 @@
 package com.miningmark48.pearcelmod.block;
 
+
 import com.miningmark48.pearcelmod.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.IGrowable;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
-import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockPos;
-import net.minecraft.util.MathHelper;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class BlockPearcelCrops extends BlockCrops implements IGrowable{
+public class BlockPearcelCrops extends BlockCrops implements IGrowable {
 
     public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 7);
 
@@ -30,9 +31,9 @@ public class BlockPearcelCrops extends BlockCrops implements IGrowable{
         this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
         this.setTickRandomly(true);
         float f = 0.5F;
-        this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, 0.25F, 0.5F + f);
-        this.setHardness(0.0F);
-        this.setStepSound(soundTypeGrass);
+        //setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, 0.25F, 0.5F + f);
+        setHardness(0.0F);
+        setSoundType(SoundType.PLANT);
         this.disableStats();
     }
 
@@ -41,7 +42,7 @@ public class BlockPearcelCrops extends BlockCrops implements IGrowable{
      */
     protected boolean canPlaceBlockOn(Block ground)
     {
-        return ground == Blocks.farmland;
+        return ground == Blocks.FARMLAND;
     }
 
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
@@ -88,7 +89,7 @@ public class BlockPearcelCrops extends BlockCrops implements IGrowable{
                 float f1 = 0.0F;
                 IBlockState iblockstate = worldIn.getBlockState(blockpos.add(i, 0, j));
 
-                if (iblockstate.getBlock().canSustainPlant(worldIn, blockpos.add(i, 0, j), net.minecraft.util.EnumFacing.UP, (net.minecraftforge.common.IPlantable)blockIn))
+                if (iblockstate.getBlock().canSustainPlant(iblockstate, worldIn, pos, EnumFacing.UP, (IPlantable)blockIn))
                 {
                     f1 = 1.0F;
 
@@ -133,7 +134,7 @@ public class BlockPearcelCrops extends BlockCrops implements IGrowable{
 
     public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state)
     {
-        return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && worldIn.getBlockState(pos.down()).getBlock().canSustainPlant(worldIn, pos.down(), net.minecraft.util.EnumFacing.UP, this);
+        return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && worldIn.getBlockState(pos.down()).getBlock().canSustainPlant(state, worldIn, pos.down(), EnumFacing.UP, this);
     }
 
     protected Item getSeed()
@@ -200,11 +201,6 @@ public class BlockPearcelCrops extends BlockCrops implements IGrowable{
     public int getMetaFromState(IBlockState state)
     {
         return ((Integer)state.getValue(AGE)).intValue();
-    }
-
-    protected BlockState createBlockState()
-    {
-        return new BlockState(this, new IProperty[] {AGE});
     }
 
     @Override

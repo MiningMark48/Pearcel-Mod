@@ -6,7 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.StatCollector;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
@@ -27,7 +27,7 @@ public class GuiPearcelWorkbench extends GuiContainer{
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
-        this.fontRendererObj.drawString(StatCollector.translateToLocal("gui.pearcel_workbench.name"), 40, 5, 0x404040);
+        this.fontRendererObj.drawString(new TextComponentString("gui.pearcel_workbench.name").toString(), 40, 5, 0x404040);
     }
 
     @Override

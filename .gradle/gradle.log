@@ -9,127 +9,136 @@
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:getVersionJson
-:extractUserdev
-:extractDependencyATs SKIPPED
-:extractMcpData
-:extractMcpMappings
-:genSrgs
-:downloadClient
-:downloadServer
-:splitServerJar
-:mergeJars
-:deobfMcSRG
-Applying SpecialSource...
-Applying Exceptor...
-:decompileMc
-:fixMcSources
-:applySourcePatches
-:remapMcSources
-:recompileMc
-:extractNatives
-:getAssetIndex
-:getAssets
-Current status: 9/1049   0%
-Current status: 9/1049   0%
-Current status: 9/1049   0%
-Current status: 9/1049   0%
-Current status: 9/1049   0%
-Current status: 9/1049   0%
-Current status: 9/1049   0%
-Current status: 11/1049   1%
-Current status: 23/1049   2%
-Current status: 23/1049   2%
-Current status: 29/1049   2%
-Current status: 30/1049   2%
-Current status: 41/1049   3%
-Current status: 46/1049   4%
-Current status: 58/1049   5%
-Current status: 65/1049   6%
-Current status: 73/1049   6%
-Current status: 83/1049   7%
-Current status: 83/1049   7%
-Current status: 86/1049   8%
-Current status: 90/1049   8%
-Current status: 93/1049   8%
-Current status: 95/1049   9%
-Current status: 99/1049   9%
-Current status: 100/1049   9%
-Current status: 108/1049   10%
-Current status: 126/1049   12%
-Current status: 134/1049   12%
-Current status: 153/1049   14%
-Current status: 160/1049   15%
-Current status: 160/1049   15%
-Current status: 164/1049   15%
-Current status: 170/1049   16%
-Current status: 196/1049   18%
-Current status: 199/1049   18%
-Current status: 219/1049   20%
-Current status: 230/1049   21%
-Current status: 241/1049   22%
-Current status: 246/1049   23%
-Current status: 246/1049   23%
-Current status: 247/1049   23%
-Current status: 247/1049   23%
-Current status: 247/1049   23%
-Current status: 262/1049   24%
-Current status: 262/1049   24%
-Current status: 265/1049   25%
-Current status: 290/1049   27%
-Current status: 301/1049   28%
-Current status: 307/1049   29%
-Current status: 329/1049   31%
-Current status: 337/1049   32%
-Current status: 374/1049   35%
-Current status: 384/1049   36%
-Current status: 393/1049   37%
-Current status: 399/1049   38%
-Current status: 446/1049   42%
-Current status: 453/1049   43%
-Current status: 485/1049   46%
-Current status: 495/1049   47%
-Current status: 513/1049   48%
-Current status: 521/1049   49%
-Current status: 543/1049   51%
-Current status: 551/1049   52%
-Current status: 580/1049   55%
-Current status: 593/1049   56%
-Current status: 602/1049   57%
-Current status: 618/1049   58%
-Current status: 634/1049   60%
-Current status: 642/1049   61%
-Current status: 655/1049   62%
-Current status: 662/1049   63%
-Current status: 669/1049   63%
-Current status: 688/1049   65%
-Current status: 713/1049   67%
-Current status: 733/1049   69%
-Current status: 775/1049   73%
-Current status: 806/1049   76%
-Current status: 806/1049   76%
-Current status: 808/1049   77%
-Current status: 837/1049   79%
-Current status: 837/1049   79%
-Current status: 858/1049   81%
-Current status: 883/1049   84%
-Current status: 932/1049   88%
-Current status: 950/1049   90%
-Current status: 962/1049   91%
-Current status: 970/1049   92%
-Current status: 977/1049   93%
-Current status: 985/1049   93%
-Current status: 985/1049   93%
-Current status: 991/1049   94%
-Current status: 1020/1049   97%
-Current status: 1020/1049   97%
-Current status: 1036/1049   98%
-Current status: 1045/1049   99%
-Current status: 1046/1049   99%
-Current status: 1047/1049   99%
-:makeStart
-:setupDecompWorkspace
+:sourceApiJava UP-TO-DATE
+:compileApiJava UP-TO-DATE
+:processApiResources UP-TO-DATE
+:apiClasses UP-TO-DATE
+:sourceMainJava UP-TO-DATE
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\block\BlockPearcelWorkbench.java:7: error: cannot find symbol
+import net.minecraft.util.BlockPos;
+                         ^
+  symbol:   class BlockPos
+  location: package net.minecraft.util
+C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\block\BlockPearcelWorkbench.java:18: error: cannot find symbol
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing side, float hitX, float hitY, float hitZ){
+                                                 ^
+  symbol:   class BlockPos
+  location: class BlockPearcelWorkbench
+C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\init\ModItems.java:110: error: incompatible types: int cannot be converted to EntityEquipmentSlot
+        pearcel_helmet = new ItemPearcelArmor(matPearcel, 0).setUnlocalizedName("pearcel_helmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+                                                          ^
+C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\init\ModItems.java:111: error: incompatible types: int cannot be converted to EntityEquipmentSlot
+        pearcel_chestplate = new ItemPearcelArmor(matPearcel, 1).setUnlocalizedName("pearcel_chestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+                                                              ^
+C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\init\ModItems.java:112: error: incompatible types: int cannot be converted to EntityEquipmentSlot
+        pearcel_leggings = new ItemPearcelArmor(matPearcel, 2).setUnlocalizedName("pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+                                                            ^
+C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\init\ModItems.java:113: error: incompatible types: int cannot be converted to EntityEquipmentSlot
+        pearcel_boots = new ItemPearcelArmor(matPearcel, 3).setUnlocalizedName("pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+                                                         ^
+Note: C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\build\sources\main\java\com\miningmark48\pearcelmod\block\BlockPearcelTorch.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+6 errors
+1 warning
+ FAILED
 
-BUILD SUCCESSFUL
+FAILURE: Build failed with an exception.
 
-Total time: 8 mins 57.386 secs
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:62)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:155)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:152)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:100)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:94)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:94)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:83)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:139)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:243)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:230)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+
+
+BUILD FAILED
+
+Total time: 5.863 secs
