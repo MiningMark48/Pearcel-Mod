@@ -13,14 +13,17 @@ import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Enchantments;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.SoundCategory;
+import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemPearcelBow extends ItemBow{
@@ -28,6 +31,30 @@ public class ItemPearcelBow extends ItemBow{
 
     public ItemPearcelBow(){
         setMaxDamage(-1);
+        this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
+        {
+            @SideOnly(Side.CLIENT)
+            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+            {
+                if (entityIn == null)
+                {
+                    return 0.0F;
+                }
+                else
+                {
+                    ItemStack itemstack = entityIn.getActiveItemStack();
+                    return itemstack != null && itemstack.getItem() == Items.BOW ? (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 20.0F : 0.0F;
+                }
+            }
+        });
+        this.addPropertyOverride(new ResourceLocation("pulling"), new IItemPropertyGetter()
+        {
+            @SideOnly(Side.CLIENT)
+            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+            {
+                return entityIn != null && entityIn.isHandActive() && entityIn.getActiveItemStack() == stack ? 1.0F : 0.0F;
+            }
+        });
     }
 
     public ModelResourceLocation getModel(ItemStack stack, EntityPlayer player, int useRemaining)
@@ -52,7 +79,8 @@ public class ItemPearcelBow extends ItemBow{
         return modelresourcelocation;
     }
 
-    public ItemStack onItemUseFinish(ItemStack stack, World world, EntityLivingBase entityLiving)
+    @Override
+    public void onPlayerStoppedUsing(ItemStack stack, World world, EntityLivingBase entityLiving, int timeLeft)
     {
         if (entityLiving instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) entityLiving;
@@ -70,7 +98,7 @@ public class ItemPearcelBow extends ItemBow{
             ArrowLooseEvent event = new ArrowLooseEvent(player, stack, world, j, true);
             MinecraftForge.EVENT_BUS.post(event);
             if (event.isCanceled()) {
-                return null;
+                return;
             }
             j = event.getCharge();
 
@@ -81,14 +109,14 @@ public class ItemPearcelBow extends ItemBow{
                 f = (f * f + f * 2.0F) / 3.0F;
 
                 if ((double) f < 0.1D) {
-                    return null;
+                    return;
                 }
 
                 if (f > 1.0F) {
                     f = 1.0F;
                 }
 
-                ItemArrow itemarrow = (ItemArrow) ((ItemArrow) (itemstack.getItem() instanceof ItemArrow ? itemstack.getItem() : ModItems.pearcel_arrow ));
+                ItemPearcelArrow itemarrow = (ItemPearcelArrow) ((ItemPearcelArrow) (itemstack.getItem() instanceof ItemPearcelArrow ? itemstack.getItem() : ModItems.pearcel_arrow ));
                 EntityArrow entityarrow = itemarrow.createArrow(world, itemstack, player);
                 entityarrow.setAim(player, player.rotationPitch, player.rotationYaw, 0.0F, f * 3.0F, 1.0F);
 
@@ -139,8 +167,6 @@ public class ItemPearcelBow extends ItemBow{
                             }
                         }
                         entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
-                    } else {
-                        player.inventory.deleteStack(new ItemStack(Items.ARROW, 1));
                     }
 
                 }
@@ -151,7 +177,7 @@ public class ItemPearcelBow extends ItemBow{
             }
         }
 
-        return null;
+        return;
 
     }
 
@@ -183,29 +209,32 @@ public class ItemPearcelBow extends ItemBow{
         return EnumAction.BOW;
     }
 
-    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
+    @Override
+    public ActionResult<ItemStack> onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
     {
-
-        int i = getInventorySlotContainItem(ModItems.pearcel_arrow, player);
-        if (player.inventory.getStackInSlot(i).hasTagCompound()) {
-            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
-                zoomIn();
+        if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow))) {
+            int i = this.getInventorySlotContainItem(ModItems.pearcel_arrow, player);
+            if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+                if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
+                    zoomIn();
+                }
             }
         }
 
-        ArrowNockEvent event = new ArrowNockEvent(player, stack, EnumHand.MAIN_HAND, world, true);
-        MinecraftForge.EVENT_BUS.post(event);
-//        if (event.isCanceled())
-//        {
-//            return event.result;
-//        }
+        boolean flag = this.findAmmo(player) != null;
 
-//        if (player.capabilities.isCreativeMode || (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow)) || player.inventory.hasItemStack(new ItemStack((Items.ARROW)))))
-//        {
-//            player.setItemStackToSlot(stack, this.getMaxItemUseDuration(stack));
-//        }
+        ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(stack, world, player, hand, flag);
+        if (ret != null) return ret;
 
-        return stack;
+        if (!player.capabilities.isCreativeMode && !flag)
+        {
+            return !flag ? new ActionResult(EnumActionResult.FAIL, stack) : new ActionResult(EnumActionResult.PASS, stack);
+        }
+        else
+        {
+            player.setActiveHand(hand);
+            return new ActionResult(EnumActionResult.SUCCESS, stack);
+        }
 
     }
 
@@ -238,6 +267,37 @@ public class ItemPearcelBow extends ItemBow{
 
     private static void zoomOut(){
         Minecraft.getMinecraft().gameSettings.fovSetting = 70F;
+    }
+
+    private ItemStack findAmmo(EntityPlayer player)
+    {
+        if (this.isArrow(player.getHeldItem(EnumHand.OFF_HAND)))
+        {
+            return player.getHeldItem(EnumHand.OFF_HAND);
+        }
+        else if (this.isArrow(player.getHeldItem(EnumHand.MAIN_HAND)))
+        {
+            return player.getHeldItem(EnumHand.MAIN_HAND);
+        }
+        else
+        {
+            for (int i = 0; i < player.inventory.getSizeInventory(); ++i)
+            {
+                ItemStack itemstack = player.inventory.getStackInSlot(i);
+
+                if (this.isArrow(itemstack))
+                {
+                    return itemstack;
+                }
+            }
+
+            return null;
+        }
+    }
+
+    protected boolean isArrow(@Nullable ItemStack stack)
+    {
+        return stack != null && stack.getItem() instanceof ItemPearcelArrow;
     }
 
 }

@@ -5,6 +5,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
@@ -39,7 +42,8 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
 
     }
 
-    public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
+    @Override
+    public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
     {
         if(!item.hasTagCompound()){
             item.setTagCompound(new NBTTagCompound());
@@ -50,13 +54,13 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
             player.experienceLevel = xpToGather;
             item.getTagCompound().setInteger("playerXP", 0);
             player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.2F, rand.nextFloat() * 2.5F);
-            return item;
+            return new ActionResult(EnumActionResult.PASS, item);
         }else{
             int xpToStore = player.experienceLevel + item.getTagCompound().getInteger("playerXP");
             item.getTagCompound().setInteger("playerXP", xpToStore);
             player.experienceLevel = 0;
             player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.2F, rand.nextFloat() * 2.5F);
-            return item;
+            return new ActionResult(EnumActionResult.PASS, item);
         }
     }
 

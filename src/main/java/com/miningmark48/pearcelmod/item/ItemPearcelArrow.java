@@ -1,7 +1,10 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.utility.Translate;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.entity.projectile.EntityTippedArrow;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
@@ -162,6 +165,13 @@ public class ItemPearcelArrow extends ItemPearcelMod{
             list.add(TextFormatting.DARK_AQUA + zoomItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.zoom"));
         }
 
+    }
+
+    public EntityArrow createArrow(World worldIn, ItemStack stack, EntityLivingBase shooter)
+    {
+        EntityTippedArrow entitytippedarrow = new EntityTippedArrow(worldIn, shooter);
+        entitytippedarrow.setPotionEffect(stack);
+        return entitytippedarrow;
     }
 
 }

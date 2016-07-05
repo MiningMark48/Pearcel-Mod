@@ -1,5 +1,7 @@
+#Creative Tab
 itemGroup.pearcelmod=Pearcel Mod
 
+#Items
 item.pearcel_ingot.name=Pearcel Ingot
 item.tier_1_crafting_component.name=Tier 1 Crafting Component
 item.tier_2_crafting_component.name=Tier 2 Crafting Component
@@ -45,6 +47,7 @@ item.pcp.name=Portable Crafting Pearcel
 item.ender_pearcel.name=Ender Pearcel
 item.pearcel_bow.name=Pearcel Bow
 
+#Blocks
 tile.pearcel_block.name=Pearcel Block
 tile.pearcel_sand.name=Pearcel Sand
 tile.pearcel_sandstone.name=Pearcel Sandstone
@@ -74,6 +77,7 @@ tile.torcher.name=Torcher
 tile.summoner.name=Summoner [WIP]
 tile.pearcel_glass_pane.name=Pearcel Glass Pane
 
+#Tooltips
 tooltip.item.experiencePearcel.line1=Store my XP!
 tooltip.item.experiencePearcel.line2.noXP=No XP stored!
 tooltip.item.experiencePearcel.line2.XP=XP Stored:
@@ -98,6 +102,7 @@ tooltip.item.pearcel_arrow.line2.upgrade.pow=Power
 tooltip.item.pearcel_arrow.line2.upgrade.knock=Knockback
 tooltip.item.pearcel_arrow.line2.upgrade.zoom=Zoom
 
+#Chat Messages
 chat.tpPearcel.location.notSet=Location not bound!
 chat.tpPearcel.location.set=Location has been bounded.
 chat.tpPearcel.tp=Teleportation successful.
@@ -109,6 +114,7 @@ chat.item.pearcel_arrow.upgraded.pow=Power upgrade applied!
 chat.item.pearcel_arrow.upgraded.knock=Knockback upgrade applied!
 chat.item.pearcel_arrow.upgraded.zoom=Zoom upgrade applied!
 
+#Chat messages - Summoner
 summoner.error.missingBlock=Missing block required for summoning activation!
 summoner.error.incorrectBlock=Incorrect block was used for summoning, block was tainted.
 summoner.error.incorrectItem=Incorrect item was used for summoning.
@@ -125,9 +131,11 @@ summoner.mob_summon.horse=Horse
 summoner.mob_summon.iron_golem=Iron Golem
 summoner.mob_summon.villager=Villager
 
+#Gui Titles
 gui.pearcel_workbench.name=Pearcel Workbench
 gui.pcp.name=Portable Crafting Pearcel
 
+#Configuration Settings
 config.doWorldGen.title=Do World Gen?
 config.doWorldGen.desc=Should Pearcel Mod world gen occur?
 config.doSpecialWorldGen.title=Do Special World Gen?
@@ -144,3 +152,9 @@ config.maxStaffFlyHeight.title=Max height for Pearcel Staff boost
 config.maxStaffFlyHeight.desc=What is the max height the Pearcel Staff will give you a boost?
 config.craftingTables.title=Disable Pearcel Workbench
 config.craftingTables.desc=Prevents the pearcel workbench from working.
+config.enderPearcelVelocity.title=Ender Pearcel Velocity
+config.enderPearcelVelocity.desc=The velocity an Ender Pearcel travels.
+config.doEnderPearcelCooldown.title=Do Ender Pearcel Cooldown?
+config.doEnderPearcelCooldown.desc=Cooldown for Ender Pearcel use
+config.enderPearcelCooldownTime.title=Cooldown Time
+config.enderPearcelCooldownTime.desc=The amount of time the cooldown lasts (in seconds)

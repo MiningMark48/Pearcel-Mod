@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.handler;
 
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -14,10 +15,13 @@ public class ConfigurationHandler {
 
     public static boolean doWorldGen;
     public static boolean doSpecialWorldGen;
+    public static boolean doEnderPearcelCooldown;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int sapDurability;
     public static int maxStaffFlyHeight;
+    public static int enderPearcelCooldownTime;
+    public static float enderPearcelVelocity;
 
     public static void init(File configFile){
 
@@ -40,12 +44,15 @@ public class ConfigurationHandler {
 
     private static void loadConfiguration(){
 
-        doWorldGen = configuration.getBoolean(new TextComponentString("config.doWorldGen.title").toString(), Configuration.CATEGORY_GENERAL, true, new TextComponentString("config.doWorldGen.desc").toString());
-        doSpecialWorldGen = configuration.getBoolean(new TextComponentString("config.doSpecialWorldGen.title").toString(), Configuration.CATEGORY_GENERAL, true, new TextComponentString("config.doSpecialWorldGen.desc").toString());
-        torcherRange = configuration.getInt(new TextComponentString("config.torcherRange.title").toString(), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, new TextComponentString("config.torcherRange.desc").toString());
-        torcherFrequency = configuration.getInt(new TextComponentString("config.torcherFrequency.title").toString(), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, new TextComponentString("config.torcherFrequency.desc").toString());
-        sapDurability = configuration.getInt(new TextComponentString("config.sapDurability.title").toString(), Configuration.CATEGORY_GENERAL, 32, 1, Integer.MAX_VALUE, new TextComponentString("config.sapDurability.desc").toString());
-        maxStaffFlyHeight = configuration.getInt(new TextComponentString("config.maxStaffFlyHeight.title").toString(), Configuration.CATEGORY_GENERAL, 150, 1, 256, new TextComponentString("config.maxStaffFlyHeight.desc").toString());
+        doWorldGen = configuration.getBoolean(Translate.toLocal("config.doWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doWorldGen.desc"));
+        doSpecialWorldGen = configuration.getBoolean(Translate.toLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doSpecialWorldGen.desc"));
+        torcherRange = configuration.getInt(Translate.toLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.torcherRange.desc"));
+        torcherFrequency = configuration.getInt(Translate.toLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, Translate.toLocal("config.torcherFrequency.desc"));
+        sapDurability = configuration.getInt(Translate.toLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 32, 1, Integer.MAX_VALUE, Translate.toLocal("config.sapDurability.desc"));
+        maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
+        enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Configuration.CATEGORY_GENERAL, 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));
+        doEnderPearcelCooldown = configuration.getBoolean(Translate.toLocal("config.doEnderPearcelCooldown.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doEnderPearcelCooldown.desc"));
+        enderPearcelCooldownTime = configuration.getInt(Translate.toLocal("config.enderPearcelCooldownTime.title"), Configuration.CATEGORY_GENERAL, 1, 1, Integer.MAX_VALUE, Translate.toLocal("config.enderPearcelCooldownTime.desc"));
 
         if (configuration.hasChanged()){
             configuration.save();

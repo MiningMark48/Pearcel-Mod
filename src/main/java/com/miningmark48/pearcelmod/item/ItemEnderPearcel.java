@@ -1,10 +1,14 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
@@ -23,18 +27,26 @@ public class ItemEnderPearcel extends ItemPearcelMod{
 
     }
 
-    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
+    @Override
+    public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
     {
-        stack.damageItem(1, player);
+        float velocity = ConfigurationHandler.enderPearcelVelocity;
+
+        if (!player.isCreative()) {
+            stack.damageItem(1, player);
+        }
+
+        if (ConfigurationHandler.doEnderPearcelCooldown) {
+            player.getCooldownTracker().setCooldown(this, ConfigurationHandler.enderPearcelCooldownTime * 20);
+        }
+
         world.playSound(player, player.getPosition(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 0.5F, 0.4F);
         if (!world.isRemote) {
             EntityEnderPearcel pearl = new EntityEnderPearcel(world, player);
-            pearl.motionX *= 2;
-            pearl.motionY *= 2;
-            pearl.motionZ *= 2;
+            pearl.setHeadingFromThrower(player, player.rotationPitch, player.rotationYaw, 0.0F, velocity, 0.0F);
             world.spawnEntityInWorld(pearl);
         }
-        return stack;
+        return new ActionResult(EnumActionResult.SUCCESS, stack);
     }
 
 }
