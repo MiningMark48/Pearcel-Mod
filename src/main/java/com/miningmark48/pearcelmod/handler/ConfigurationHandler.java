@@ -18,7 +18,6 @@ public class ConfigurationHandler {
     public static boolean doEnderPearcelCooldown;
     public static int torcherRange;
     public static int torcherFrequency;
-    public static int sapDurability;
     public static int maxStaffFlyHeight;
     public static int enderPearcelCooldownTime;
     public static float enderPearcelVelocity;
@@ -48,7 +47,6 @@ public class ConfigurationHandler {
         doSpecialWorldGen = configuration.getBoolean(Translate.toLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doSpecialWorldGen.desc"));
         torcherRange = configuration.getInt(Translate.toLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.torcherRange.desc"));
         torcherFrequency = configuration.getInt(Translate.toLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, Translate.toLocal("config.torcherFrequency.desc"));
-        sapDurability = configuration.getInt(Translate.toLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 32, 1, Integer.MAX_VALUE, Translate.toLocal("config.sapDurability.desc"));
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
         enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Configuration.CATEGORY_GENERAL, 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));
         doEnderPearcelCooldown = configuration.getBoolean(Translate.toLocal("config.doEnderPearcelCooldown.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doEnderPearcelCooldown.desc"));

@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 public class ItemPEPC extends ItemPearcelMod{
 
     public ItemPEPC(){
+        setMaxStackSize(1);
     }
 
     @Override

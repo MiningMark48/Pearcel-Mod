@@ -3,30 +3,49 @@ package com.miningmark48.pearcelmod.block;
 import com.google.common.base.Predicate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
+import java.util.List;
 import java.util.Random;
 
 public class BlockTorcher extends BlockPearcelMod{
 
     int torcherFreq;
 
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.375D, 0.0D, 0.375D, 0.625D, 1.0D, 0.625D);
+
     public BlockTorcher(){
         setHardness(0.5F);
         setResistance(2.5F);
         setLightLevel(1.0F);
         //setBlockBounds(0.375F, 0.0F, 0.375F, 0.625F, 1.0F, 0.625F);
+    }
+
+    @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos){
+        return BOUNDING_BOX;
+    }
+
+    @Override
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn) {
+        super.addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", new Predicate<EnumFacing>()
@@ -37,18 +56,22 @@ public class BlockTorcher extends BlockPearcelMod{
         }
     });
 
-//    @Override
-//    public boolean isOpaqueCube(){
-//        return false;
-//    }
-//
-//    @SideOnly(Side.CLIENT)
-//    public EnumWorldBlockLayer getBlockLayer()
-//    {
-//        return EnumWorldBlockLayer.CUTOUT;
-//    }
+    @Override
+    public boolean isFullCube(IBlockState state){
+        return false;
+    }
 
-    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing side, float hitX, float hitY, float hitZ){
+    @Override
+    public boolean isOpaqueCube(IBlockState state){
+        return false;
+    }
+
+    @Override
+    public BlockRenderLayer getBlockLayer(){
+        return BlockRenderLayer.CUTOUT;
+    }
+
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ){
         if (!player.isSneaking()){
 
             //player.addStat(Achievements.achievementTorcher, 1);
@@ -116,7 +139,7 @@ public class BlockTorcher extends BlockPearcelMod{
             world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, pos.getX(), pos.getY(), pos.getZ(), 1.0D, 0.0D, 0.0D);
             world.spawnEntityInWorld(new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ(), true));
             if (!world.isRemote){
-                player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + new TextComponentString("chat.torcher.lit").toString()));
+                player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.torcher.lit")));
             }
 
             return true;
@@ -127,7 +150,7 @@ public class BlockTorcher extends BlockPearcelMod{
     }
 
     @SideOnly(Side.CLIENT)
-    public void randomDisplayTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
+    public void randomTick(World worldIn, BlockPos pos, IBlockState state, Random random)
     {
         EnumFacing enumfacing = EnumFacing.DOWN;
         double d0 = (double)pos.getX() + 0.5D;

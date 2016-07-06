@@ -59,7 +59,7 @@ public class PearcelMod {
 
 		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 
-//		Recipes.init();
+		Recipes.init();
 
         LogHelper.info(Translate.toLocal("log.info.init"));
 

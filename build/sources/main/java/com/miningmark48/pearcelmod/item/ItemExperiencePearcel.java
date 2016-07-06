@@ -1,10 +1,15 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
@@ -22,22 +27,23 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        list.add(new TextComponentString("tooltip.item.experiencePearcel.line1"));
+        list.add(Translate.toLocal("tooltip.item.experiencePearcel.line1"));
         list.add("");
 
         if (stack.hasTagCompound()) {
             if (stack.getTagCompound().getInteger("playerXP") == 0) {
-                list.add(TextFormatting.RED + new TextComponentString("tooltip.item.experiencePearcel.line2.noXP").toString());
+                list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
             }else{
-                list.add(TextFormatting.GOLD + new TextComponentString("tooltip.item.experiencePearcel.line2.XP").toString() + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("playerXP"));
+                list.add(TextFormatting.GOLD + Translate.toLocal("tooltip.item.experiencePearcel.line2.XP") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("playerXP"));
             }
         }else{
-            list.add(TextFormatting.RED + new TextComponentString("tooltip.item.experiencePearcel.line2.noXP").toString());
+            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
         }
 
     }
 
-    public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
+    @Override
+    public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
     {
         if(!item.hasTagCompound()){
             item.setTagCompound(new NBTTagCompound());
@@ -48,13 +54,13 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
             player.experienceLevel = xpToGather;
             item.getTagCompound().setInteger("playerXP", 0);
             player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.2F, rand.nextFloat() * 2.5F);
-            return item;
+            return new ActionResult(EnumActionResult.PASS, item);
         }else{
             int xpToStore = player.experienceLevel + item.getTagCompound().getInteger("playerXP");
             item.getTagCompound().setInteger("playerXP", xpToStore);
             player.experienceLevel = 0;
             player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.2F, rand.nextFloat() * 2.5F);
-            return item;
+            return new ActionResult(EnumActionResult.PASS, item);
         }
     }
 

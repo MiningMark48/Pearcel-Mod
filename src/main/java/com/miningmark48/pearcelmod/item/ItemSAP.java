@@ -12,7 +12,8 @@ import java.util.List;
 public class ItemSAP extends ItemPearcelMod{
 
     public ItemSAP(){
-        setMaxDamage(ConfigurationHandler.sapDurability);
+        setMaxDamage(32);
+        setMaxStackSize(1);
     }
 
     @Override

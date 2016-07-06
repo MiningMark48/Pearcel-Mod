@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.util.ResourceLocation;
@@ -19,8 +20,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems {
 
-    public static Item.ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("PearcelTools", 3, 1000, 15.0F, 5.0F, 20);
-    public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 10.0F, 30);
+    public static Item.ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("PearcelTools", 3, 1000, 15.0F, 10.0F, 20);
+    public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 15.0F, 30);
     public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", Reference.MOD_ID + ":" + "pearcel", 100, new int[]{3, 6, 5, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
 
     //General Items
@@ -71,51 +72,51 @@ public class ModItems {
 
     public static void init(){
         //General Items
-        pearcel_ingot = new ItemPearcelMod().setUnlocalizedName("pearcel_ingot").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tier_1_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_1_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tier_2_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_2_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tier_3_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_3_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tier_4_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_4_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        armor_plating = new ItemPearcelMod().setUnlocalizedName("armor_plating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_flour = new ItemPearcelMod().setUnlocalizedName("pearcel_flour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_stick = new ItemPearcelMod().setUnlocalizedName("pearcel_stick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_charcoal = new ItemPearcelFuel().setUnlocalizedName("pearcel_charcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_seeds = new ItemPearcelSeeds(ModBlocks.pearcel_crops, Blocks.FARMLAND).setUnlocalizedName("pearcel_seeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_matter = new ItemPearcelMod().setUnlocalizedName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_ingot = new ItemPearcelMod().setUnlocalizedName("pearcel_ingot").setRegistryName("pearcel_ingot").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tier_1_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_1_crafting_component").setRegistryName("tier_1_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tier_2_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_2_crafting_component").setRegistryName("tier_2_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tier_3_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_3_crafting_component").setRegistryName("tier_3_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tier_4_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_4_crafting_component").setRegistryName("tier_4_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        armor_plating = new ItemPearcelMod().setUnlocalizedName("armor_plating").setRegistryName("armor_plating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_flour = new ItemPearcelMod().setUnlocalizedName("pearcel_flour").setRegistryName("pearcel_flour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stick = new ItemPearcelMod().setUnlocalizedName("pearcel_stick").setRegistryName("pearcel_stick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_charcoal = new ItemPearcelFuel().setUnlocalizedName("pearcel_charcoal").setRegistryName("pearcel_charcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_seeds = new ItemPearcelSeeds(ModBlocks.pearcel_crops, Blocks.FARMLAND).setUnlocalizedName("pearcel_seeds").setRegistryName("pearcel_seeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_matter = new ItemPearcelMod().setUnlocalizedName("pearcel_matter").setRegistryName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setRegistryName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setRegistryName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Food
-        pearcel_item = new ItemPearcelFood(4, 0.5F, false).setUnlocalizedName("pearcel_item").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_bread = new ItemPearcelFood(8, 0.8F, false).setUnlocalizedName("pearcel_bread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_pie = new ItemPearcelFood(6, 0.3F, false).setUnlocalizedName("pearcel_pie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_beef = new ItemPearcelFood(1, 0.7F, true).setUnlocalizedName("pearcel_beef").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_steak = new ItemPearcelFood(9, 1.5F, true).setUnlocalizedName("pearcel_steak").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_cookie = new ItemPearcelFood(2, 0.1F, true).setUnlocalizedName("pearcel_cookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_sandwich = new ItemPearcelFood(9, 1.1F, true).setUnlocalizedName("pearcel_sandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_juice_bottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcel_juice_bottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_item = new ItemPearcelFood(4, 0.5F, false).setUnlocalizedName("pearcel_item").setRegistryName("pearcel_item").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_bread = new ItemPearcelFood(8, 0.8F, false).setUnlocalizedName("pearcel_bread").setRegistryName("pearcel_bread").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_pie = new ItemPearcelFood(6, 0.3F, false).setUnlocalizedName("pearcel_pie").setRegistryName("pearcel_pie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_beef = new ItemPearcelFood(1, 0.7F, true).setUnlocalizedName("pearcel_beef").setRegistryName("pearcel_beef").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_steak = new ItemPearcelFood(9, 1.5F, true).setUnlocalizedName("pearcel_steak").setRegistryName("pearcel_steak").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_cookie = new ItemPearcelFood(2, 0.1F, true).setUnlocalizedName("pearcel_cookie").setRegistryName("pearcel_cookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sandwich = new ItemPearcelFood(9, 1.1F, true).setUnlocalizedName("pearcel_sandwich").setRegistryName("pearcel_sandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_juice_bottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcel_juice_bottle").setRegistryName("pearcel_juice_bottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
         //Tools and Armor
-        pearcel_sword = new ItemPearcelSword(matToolPearcel).setUnlocalizedName("pearcel_sword").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_pickaxe = new ItemPearcelPickaxe(matToolPearcel).setUnlocalizedName("pearcel_pickaxe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_axe = new ItemPearcelAxe(matToolPearcel).setUnlocalizedName("pearcel_axe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_shovel = new ItemPearcelShovel(matToolPearcel).setUnlocalizedName("pearcel_shovel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_hoe = new ItemPearcelHoe(matToolPearcel).setUnlocalizedName("pearcel_hoe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_shears = new ItemPearcelShears().setUnlocalizedName("pearcel_shears").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        experience_pearcel = new ItemExperiencePearcel().setUnlocalizedName("experience_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tp_pearcel = new ItemTPPearcel().setUnlocalizedName("tp_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        sap = new ItemSAP().setUnlocalizedName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pepc = new ItemPEPC().setUnlocalizedName("pepc").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_helmet = new ItemPearcelArmor(matPearcel, 0).setUnlocalizedName("pearcel_helmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_chestplate = new ItemPearcelArmor(matPearcel, 1).setUnlocalizedName("pearcel_chestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_leggings = new ItemPearcelArmor(matPearcel, 2).setUnlocalizedName("pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_boots = new ItemPearcelArmor(matPearcel, 3).setUnlocalizedName("pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).setUnlocalizedName("pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        dragon_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pcp = new ItemPCP().setUnlocalizedName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sword = new ItemPearcelSword(matToolPearcel).setUnlocalizedName("pearcel_sword").setRegistryName("pearcel_sword").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_pickaxe = new ItemPearcelPickaxe(matToolPearcel).setUnlocalizedName("pearcel_pickaxe").setRegistryName("pearcel_pickaxe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_axe = new ItemPearcelAxe(Item.ToolMaterial.DIAMOND).setUnlocalizedName("pearcel_axe").setRegistryName("pearcel_axe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_shovel = new ItemPearcelShovel(matToolPearcel).setUnlocalizedName("pearcel_shovel").setRegistryName("pearcel_shovel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_hoe = new ItemPearcelHoe(matToolPearcel).setUnlocalizedName("pearcel_hoe").setRegistryName("pearcel_hoe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_shears = new ItemPearcelShears().setUnlocalizedName("pearcel_shears").setRegistryName("pearcel_shears").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        experience_pearcel = new ItemExperiencePearcel().setUnlocalizedName("experience_pearcel").setRegistryName("experience_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tp_pearcel = new ItemTPPearcel().setUnlocalizedName("tp_pearcel").setRegistryName("tp_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        sap = new ItemSAP().setUnlocalizedName("sap").setRegistryName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pepc = new ItemPEPC().setUnlocalizedName("pepc").setRegistryName("pepc").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_helmet = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.HEAD).setUnlocalizedName("pearcel_helmet").setRegistryName("pearcel_helmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_chestplate = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.CHEST).setUnlocalizedName("pearcel_chestplate").setRegistryName("pearcel_chestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_leggings = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.LEGS).setUnlocalizedName("pearcel_leggings").setRegistryName("pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_boots = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.FEET).setUnlocalizedName("pearcel_boots").setRegistryName("pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).setUnlocalizedName("pearcel_staff").setRegistryName("pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dragon_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setRegistryName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pcp = new ItemPCP().setUnlocalizedName("pcp").setRegistryName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setRegistryName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setRegistryName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -222,7 +223,7 @@ public class ModItems {
 
 
     public static void registerRender(Item item){
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item, "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 
     public static void registerRender(Item item, int meta, String name){
