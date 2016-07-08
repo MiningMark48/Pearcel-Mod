@@ -128,7 +128,7 @@ public class ItemPearcelArrow extends ItemPearcelMod{
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
         if (stack.hasTagCompound()) {
-            if (!stack.getTagCompound().getBoolean("inf") && !stack.getTagCompound().getBoolean("pow")) {
+            if (!stack.getTagCompound().getBoolean("inf") && !stack.getTagCompound().getBoolean("pow") && !stack.getTagCompound().getBoolean("knock") && !stack.getTagCompound().getBoolean("zoom") ) {
                 list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pearcel_arrow.line1.no_upgrade"));
                 list.add(TextFormatting.DARK_AQUA + infItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.inf"));
                 list.add(TextFormatting.DARK_AQUA + powItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.pow"));
