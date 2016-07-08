@@ -32,9 +32,9 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_seeds, 4), new ItemStack(ModItems.pearcel_ingot), new ItemStack(Items.WHEAT_SEEDS));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_seeds, 4), new ItemStack(ModItems.pearcel_ingot), new ItemStack(Items.PUMPKIN_SEEDS));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_seeds, 4), new ItemStack(ModItems.pearcel_ingot), new ItemStack(Items.MELON_SEEDS));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_ingot), new ItemStack(ModItems.pearcel_item), new ItemStack(Items.IRON_INGOT));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_cookie, 12), new ItemStack(Items.EGG), new ItemStack(ModItems.pearcel_flour), new ItemStack(Items.SUGAR), new ItemStack(Items.MILK_BUCKET));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_beef, 2), new ItemStack(ModItems.pearcel_item), new ItemStack(Items.BEEF));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_item, 16), new ItemStack(ModItems.pearcel_ingot));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_stick, 6), "x", "x", 'x', new ItemStack(ModItems.pearcel_item));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_stick, 4), "x", "x", 'x', new ItemStack(ModBlocks.pearcel_planks));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_flour, 6), "xyx", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(Items.BREAD));

@@ -1,8 +1,7 @@
 package com.miningmark48.pearcelmod.init;
 
-import java.util.Random;
-
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
@@ -13,9 +12,12 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class WorldGen implements IWorldGenerator {
+import java.util.Random;
 
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
+public class WorldGen implements IWorldGenerator{
+
+    @Override
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         switch(world.provider.getDimension()){
             case -1: //Nether
                 generateNether(world, random, chunkX, chunkZ);
@@ -85,13 +87,7 @@ public class WorldGen implements IWorldGenerator {
             int yRand = random.nextInt(heightRange) + minY;
             int zRand = chunkZ * 16 + random.nextInt(16);
             gen.generate(world, random, new BlockPos(xRand, yRand, zRand));
-            //LogHelper.info("Pearcel Ore at " + xRand + " " + yRand + " " + zRand);
+            LogHelper.info("Ore at " + xRand + " " + yRand + " " + zRand);
         }
-    }
-
-
-    @Override
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-
     }
 }

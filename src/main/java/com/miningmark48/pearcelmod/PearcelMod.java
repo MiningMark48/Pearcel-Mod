@@ -9,10 +9,7 @@ import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
-import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -67,6 +64,7 @@ public class PearcelMod {
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
+
 		LogHelper.info(Translate.toLocal("log.info.postinit"));
 	}
 
