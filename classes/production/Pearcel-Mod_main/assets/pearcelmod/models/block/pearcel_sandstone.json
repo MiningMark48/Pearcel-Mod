@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"down": "pearcelmod:blocks/pearcel_sandstone_bottom",
+		"up": "pearcelmod:blocks/pearcel_sandstone_top",
+		"north": "pearcelmod:blocks/pearcel_sandstone_side",
+		"south": "pearcelmod:blocks/pearcel_sandstone_side",
+		"east": "pearcelmod:blocks/pearcel_sandstone_side",
+		"west": "pearcelmod:blocks/pearcel_sandstone_side",
+		"particle": "pearcelmod:blocks/pearcel_sandstone_side"
+	}
+}

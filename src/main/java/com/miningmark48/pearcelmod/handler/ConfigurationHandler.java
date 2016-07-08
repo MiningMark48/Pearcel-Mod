@@ -1,30 +1,26 @@
 package com.miningmark48.pearcelmod.handler;
 
-import java.io.File;
-import java.util.concurrent.locks.Condition;
-
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import cpw.mods.fml.client.event.ConfigChangedEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.util.StatCollector;
+import com.miningmark48.pearcelmod.utility.Translate;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+import java.io.File;
 
 public class ConfigurationHandler {
 
     public static Configuration configuration;
 
-    public static boolean useFlightItemParticle;
-    public static boolean specialDice;
-    public static boolean flightItemDisable;
-    public static boolean craftingTables;
+    public static boolean doWorldGen;
     public static boolean doSpecialWorldGen;
+    public static boolean doEnderPearcelCooldown;
     public static int torcherRange;
     public static int torcherFrequency;
-    public static int sapDurability;
     public static int maxStaffFlyHeight;
-    public static int minPearcelLightning;
-    public static int maxPearcelLightning;
+    public static int enderPearcelCooldownTime;
+    public static float enderPearcelVelocity;
 
     public static void init(File configFile){
 
@@ -39,7 +35,7 @@ public class ConfigurationHandler {
     @SubscribeEvent
     public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event){
 
-        if (event.modID.equalsIgnoreCase(Reference.MOD_ID)){
+        if (event.getModID().equalsIgnoreCase(Reference.MOD_ID)){
             loadConfiguration();
         }
 
@@ -47,22 +43,19 @@ public class ConfigurationHandler {
 
     private static void loadConfiguration(){
 
-        useFlightItemParticle = configuration.getBoolean(StatCollector.translateToLocal("config.useFlightItemParticle.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.useFlightItemParticle.desc"));
-        specialDice = configuration.getBoolean(StatCollector.translateToLocal("config.specialDice.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.specialDice.desc"));
-        flightItemDisable = configuration.getBoolean(StatCollector.translateToLocal("config.flightItemDisable.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.flightItemDisable.desc"));
-        craftingTables = configuration.getBoolean(StatCollector.translateToLocal("config.craftingTables.title"), Configuration.CATEGORY_GENERAL, false, StatCollector.translateToLocal("config.craftingTables.desc"));
-        doSpecialWorldGen = configuration.getBoolean(StatCollector.translateToLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, StatCollector.translateToLocal("config.doSpecialWorldGen.desc"));
-        torcherRange = configuration.getInt(StatCollector.translateToLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, StatCollector.translateToLocal("config.torcherRange.desc"));
-        torcherFrequency = configuration.getInt(StatCollector.translateToLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, StatCollector.translateToLocal("config.torcherFrequency.desc"));
-        sapDurability = configuration.getInt(StatCollector.translateToLocal("config.sapDurability.title"), Configuration.CATEGORY_GENERAL, 32, 1, Integer.MAX_VALUE, StatCollector.translateToLocal("config.sapDurability.desc"));
-        maxStaffFlyHeight = configuration.getInt(StatCollector.translateToLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, StatCollector.translateToLocal("config.maxStaffFlyHeight.desc"));
-        minPearcelLightning = configuration.getInt(StatCollector.translateToLocal("config.minPearcelLightning.title"), Configuration.CATEGORY_GENERAL, 2, 0, 99, StatCollector.translateToLocal("config.minPearcelLightning.desc"));
-        maxPearcelLightning = configuration.getInt(StatCollector.translateToLocal("config.maxPearcelLightning.title"), Configuration.CATEGORY_GENERAL, 5, 1, 100, StatCollector.translateToLocal("config.maxPearcelLightning.desc"));
+        doWorldGen = configuration.getBoolean(Translate.toLocal("config.doWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doWorldGen.desc"));
+        doSpecialWorldGen = configuration.getBoolean(Translate.toLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doSpecialWorldGen.desc"));
+        torcherRange = configuration.getInt(Translate.toLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.torcherRange.desc"));
+        torcherFrequency = configuration.getInt(Translate.toLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, Translate.toLocal("config.torcherFrequency.desc"));
+        maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
+        enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Configuration.CATEGORY_GENERAL, 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));
+        doEnderPearcelCooldown = configuration.getBoolean(Translate.toLocal("config.doEnderPearcelCooldown.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doEnderPearcelCooldown.desc"));
+        enderPearcelCooldownTime = configuration.getInt(Translate.toLocal("config.enderPearcelCooldownTime.title"), Configuration.CATEGORY_GENERAL, 1, 1, Integer.MAX_VALUE, Translate.toLocal("config.enderPearcelCooldownTime.desc"));
 
         if (configuration.hasChanged()){
             configuration.save();
         }
 
     }
-	
+
 }
