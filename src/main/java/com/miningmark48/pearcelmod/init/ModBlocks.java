@@ -126,7 +126,7 @@ public class ModBlocks {
         registerBlock(summoner);
 
         //Plant
-        //registerBlock(pearcel_crops);
+        registerBlock(pearcel_crops);
 
     }
 

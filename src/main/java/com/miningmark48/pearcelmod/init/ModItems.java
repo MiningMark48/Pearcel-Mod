@@ -130,7 +130,7 @@ public class ModItems {
         GameRegistry.register(pearcel_flour);
         GameRegistry.register(pearcel_stick);
         GameRegistry.register(pearcel_charcoal);
-        GameRegistry.register(pearcel_seeds);
+        //GameRegistry.register(pearcel_seeds); //TODO: Not Working Yet
         GameRegistry.register(pearcel_matter);
         GameRegistry.register(neutral_pearcel_matter);
         GameRegistry.register(pearcel_arrow);
