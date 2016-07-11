@@ -20,6 +20,7 @@ public class ConfigurationHandler {
     public static int torcherFrequency;
     public static int maxStaffFlyHeight;
     public static int enderPearcelCooldownTime;
+    public static int pearcelDropChance;
     public static float enderPearcelVelocity;
 
     public static void init(File configFile){
@@ -43,14 +44,25 @@ public class ConfigurationHandler {
 
     private static void loadConfiguration(){
 
-        doWorldGen = configuration.getBoolean(Translate.toLocal("config.doWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doWorldGen.desc"));
-        doSpecialWorldGen = configuration.getBoolean(Translate.toLocal("config.doSpecialWorldGen.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doSpecialWorldGen.desc"));
-        torcherRange = configuration.getInt(Translate.toLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.torcherRange.desc"));
-        torcherFrequency = configuration.getInt(Translate.toLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, Translate.toLocal("config.torcherFrequency.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.enderPearcel.title"), Translate.toLocal("config.category.enderPearcel.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.torcher.title"), Translate.toLocal("config.category.torcher.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.worldGen.title"), Translate.toLocal("config.category.worldGen.desc"));
+
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
-        enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Configuration.CATEGORY_GENERAL, 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));
-        doEnderPearcelCooldown = configuration.getBoolean(Translate.toLocal("config.doEnderPearcelCooldown.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doEnderPearcelCooldown.desc"));
-        enderPearcelCooldownTime = configuration.getInt(Translate.toLocal("config.enderPearcelCooldownTime.title"), Configuration.CATEGORY_GENERAL, 1, 1, Integer.MAX_VALUE, Translate.toLocal("config.enderPearcelCooldownTime.desc"));
+        pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 10, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
+
+        //Ender Pearcel
+        enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Translate.toLocal("config.category.enderPearcel.title"), 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));
+        doEnderPearcelCooldown = configuration.getBoolean(Translate.toLocal("config.doEnderPearcelCooldown.title"), Translate.toLocal("config.category.enderPearcel.title"), true, Translate.toLocal("config.doEnderPearcelCooldown.desc"));
+        enderPearcelCooldownTime = configuration.getInt(Translate.toLocal("config.enderPearcelCooldownTime.title"), Translate.toLocal("config.category.enderPearcel.title"), 1, 1, Integer.MAX_VALUE, Translate.toLocal("config.enderPearcelCooldownTime.desc"));
+
+        //Torcher
+        torcherRange = configuration.getInt(Translate.toLocal("config.torcherRange.title"), Translate.toLocal("config.category.torcher.title"), 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.torcherRange.desc"));
+        torcherFrequency = configuration.getInt(Translate.toLocal("config.torcherFrequency.title"), Translate.toLocal("config.category.torcher.title"), 2, 2, Integer.MAX_VALUE, Translate.toLocal("config.torcherFrequency.desc"));
+
+        //World Gen
+        doWorldGen = configuration.getBoolean(Translate.toLocal("config.doWorldGen.title"), Translate.toLocal("config.category.worldGen.title"), true, Translate.toLocal("config.doWorldGen.desc"));
+        doSpecialWorldGen = configuration.getBoolean(Translate.toLocal("config.doSpecialWorldGen.title"), Translate.toLocal("config.category.worldGen.title"), true, Translate.toLocal("config.doSpecialWorldGen.desc"));
 
         if (configuration.hasChanged()){
             configuration.save();

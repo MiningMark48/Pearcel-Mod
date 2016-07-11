@@ -27,23 +27,4 @@ public class ItemPearcelArmor extends ItemArmor{
         }
     }
 
-//    @Override
-//    public void onArmorTick(World world, EntityPlayer player, ItemStack stack){
-//        /*
-//            3 = Helmet
-//            2 = Chestplate
-//            1 = Leggings
-//            0 = Boots
-//        */
-//        if(player.getCurrentArmor(3) != null && player.getCurrentArmor(2) != null && player.getCurrentArmor(1) != null && player.getCurrentArmor(0) != null){
-//            ItemStack helmet = player.getCurrentArmor(3);
-//            ItemStack chestplate = player.getCurrentArmor(2);
-//            ItemStack leggings = player.getCurrentArmor(1);
-//            ItemStack boots = player.getCurrentArmor(0);
-//            if (helmet.getItem() == ModItems.pearcel_helmet && chestplate.getItem() == ModItems.pearcel_chestplate && leggings.getItem() == ModItems.pearcel_leggings && boots.getItem() == ModItems.pearcel_boots ){
-//                player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 20));
-//            }
-//        }
-//    }
-
 }
