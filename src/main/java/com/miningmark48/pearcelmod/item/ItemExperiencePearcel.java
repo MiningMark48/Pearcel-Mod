@@ -12,6 +12,8 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 import java.util.Random;
@@ -40,6 +42,12 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
             list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
         }
 
+    }
+
+    @SideOnly(Side.CLIENT)
+    public boolean hasEffect(ItemStack stack)
+    {
+        return true;
     }
 
     @Override
