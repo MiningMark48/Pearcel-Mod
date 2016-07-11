@@ -135,6 +135,14 @@ summoner.mob_summon.villager=Villager
 gui.pearcel_workbench.name=Pearcel Workbench
 gui.pcp.name=Portable Crafting Pearcel
 
+#Configuration Categories
+config.category.enderPearcel.title=Ender Pearcel
+config.category.enderPearcel.desc=Ender Pearcel configuration.
+config.category.torcher.title=Torcher
+config.category.torcher.desc=Torcher configuration.
+config.category.worldGen.title=World Gen
+config.category.worldGen.desc=Configure Pearcel Mod world gen.
+
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
 config.doWorldGen.desc=Should Pearcel Mod world gen occur?
