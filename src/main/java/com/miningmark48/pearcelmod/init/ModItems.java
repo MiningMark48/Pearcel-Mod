@@ -75,12 +75,12 @@ public class ModItems {
         tier_1_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_1_crafting_component").setRegistryName("tier_1_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         tier_2_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_2_crafting_component").setRegistryName("tier_2_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         tier_3_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_3_crafting_component").setRegistryName("tier_3_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tier_4_crafting_component = new ItemPearcelMod().setUnlocalizedName("tier_4_crafting_component").setRegistryName("tier_4_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tier_4_crafting_component = new ItemPearcelModEffect().setUnlocalizedName("tier_4_crafting_component").setRegistryName("tier_4_crafting_component").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         armor_plating = new ItemPearcelMod().setUnlocalizedName("armor_plating").setRegistryName("armor_plating").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_flour = new ItemPearcelMod().setUnlocalizedName("pearcel_flour").setRegistryName("pearcel_flour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_stick = new ItemPearcelMod().setUnlocalizedName("pearcel_stick").setRegistryName("pearcel_stick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_charcoal = new ItemPearcelFuel().setUnlocalizedName("pearcel_charcoal").setRegistryName("pearcel_charcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_matter = new ItemPearcelMod().setUnlocalizedName("pearcel_matter").setRegistryName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_matter = new ItemPearcelModEffect().setUnlocalizedName("pearcel_matter").setRegistryName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setRegistryName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setRegistryName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
