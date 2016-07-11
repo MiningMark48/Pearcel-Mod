@@ -158,3 +158,5 @@ config.doEnderPearcelCooldown.title=Do Ender Pearcel Cooldown?
 config.doEnderPearcelCooldown.desc=Cooldown for Ender Pearcel use
 config.enderPearcelCooldownTime.title=Ender Pearcel Cooldown Time
 config.enderPearcelCooldownTime.desc=The amount of time the cooldown for the Ender Pearcel lasts (in seconds)
+config.pearcelDropChance.title=Pearcel Drop Chance from leaves
+config.pearcelDropChance.desc=The chance a pearcel has to drop from leaves.

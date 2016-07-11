@@ -34,7 +34,6 @@ public class ModItems {
     public static Item pearcel_flour;
     public static Item pearcel_stick;
     public static Item pearcel_charcoal;
-    public static Item pearcel_seeds;
     public static Item pearcel_matter;
     public static Item neutral_pearcel_matter;
     public static Item pearcel_arrow;
@@ -81,7 +80,6 @@ public class ModItems {
         pearcel_flour = new ItemPearcelMod().setUnlocalizedName("pearcel_flour").setRegistryName("pearcel_flour").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_stick = new ItemPearcelMod().setUnlocalizedName("pearcel_stick").setRegistryName("pearcel_stick").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_charcoal = new ItemPearcelFuel().setUnlocalizedName("pearcel_charcoal").setRegistryName("pearcel_charcoal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_seeds = new ItemPearcelSeeds(ModBlocks.pearcel_crops, Blocks.FARMLAND).setUnlocalizedName("pearcel_seeds").setRegistryName("pearcel_seeds").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_matter = new ItemPearcelMod().setUnlocalizedName("pearcel_matter").setRegistryName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setRegistryName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setRegistryName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -179,7 +177,6 @@ public class ModItems {
         registerRender(pearcel_flour);
         registerRender(pearcel_stick);
         registerRender(pearcel_charcoal);
-        registerRender(pearcel_seeds);
         registerRender(pearcel_matter);
         registerRender(neutral_pearcel_matter);
         registerRender(pearcel_arrow);

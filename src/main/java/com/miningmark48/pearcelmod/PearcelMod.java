@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
+import com.miningmark48.pearcelmod.event.EventBreakForPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.GuiHandler;
 import com.miningmark48.pearcelmod.init.*;
@@ -55,6 +56,8 @@ public class PearcelMod {
 		proxy.registerRenders();
 
 		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+
+		MinecraftForge.EVENT_BUS.register(new EventBreakForPearcel());
 
 		Recipes.init();
 

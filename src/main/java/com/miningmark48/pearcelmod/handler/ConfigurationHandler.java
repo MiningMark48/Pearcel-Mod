@@ -20,6 +20,7 @@ public class ConfigurationHandler {
     public static int torcherFrequency;
     public static int maxStaffFlyHeight;
     public static int enderPearcelCooldownTime;
+    public static int pearcelDropChance;
     public static float enderPearcelVelocity;
 
     public static void init(File configFile){
@@ -48,6 +49,7 @@ public class ConfigurationHandler {
         torcherRange = configuration.getInt(Translate.toLocal("config.torcherRange.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.torcherRange.desc"));
         torcherFrequency = configuration.getInt(Translate.toLocal("config.torcherFrequency.title"), Configuration.CATEGORY_GENERAL, 2, 2, Integer.MAX_VALUE, Translate.toLocal("config.torcherFrequency.desc"));
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
+        pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 10, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
         enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Configuration.CATEGORY_GENERAL, 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));
         doEnderPearcelCooldown = configuration.getBoolean(Translate.toLocal("config.doEnderPearcelCooldown.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doEnderPearcelCooldown.desc"));
         enderPearcelCooldownTime = configuration.getInt(Translate.toLocal("config.enderPearcelCooldownTime.title"), Configuration.CATEGORY_GENERAL, 1, 1, Integer.MAX_VALUE, Translate.toLocal("config.enderPearcelCooldownTime.desc"));

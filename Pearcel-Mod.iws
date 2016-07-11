@@ -1,52 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6e7ac22-0946-4865-a2f6-07388e20a500" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_noside_alt.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_post.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_side.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_side_alt.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_n.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_ne.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_new.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_ns.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_nse.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_nsew.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_nsw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_nw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_s.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_se.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_sew.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/models/block/pearcel_glass_pane_sw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_n.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_ne.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_new.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_ns.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_nse.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_nsew.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_nsw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_nw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_s.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_se.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_sew.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_sw.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/block/BlockPearcelCrops.class" afterPath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/block/BlockPearcelCrops.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/init/ModBlocks.class" afterPath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/init/ModBlocks.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/init/ModItems.class" afterPath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/init/ModItems.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.class" afterPath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.class" />
+    <list default="true" id="2e3fd74d-3272-430d-94ae-df975249fc8b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockFoolsPearcelOre.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelCrops.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/blockstates/pearcel_crops.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/textures/items/pearcel_seeds.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/gradle.log" afterPath="$PROJECT_DIR$/.gradle/gradle.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.iml" afterPath="$PROJECT_DIR$/Pearcel-Mod.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.ipr" afterPath="$PROJECT_DIR$/Pearcel-Mod.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.iws" afterPath="$PROJECT_DIR$/Pearcel-Mod.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/blockstates/pearcel_glass_pane.json" afterPath="$PROJECT_DIR$/classes/production/Pearcel-Mod_main/assets/pearcelmod/blockstates/pearcel_glass_pane.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelCrops.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelCrops.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPane.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/GradleStart.java" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/GradleStart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/GradleStartServer.java" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/GradleStartServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleForgeHacks.java" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleForgeHacks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleStartCommon.java" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleStartCommon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/AccessTransformerTweaker.java" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/AccessTransformerTweaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/CoremodTweaker.java" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/CoremodTweaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/blockstates/pearcel_glass_pane.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/blockstates/pearcel_glass_pane.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
     </list>
     <ignored path="Pearcel-Mod.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,21 +82,26 @@
     <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="Pearcel-Mod" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlockPearcelPane.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPane.java">
+      <file leaf-file-name="PearcelMod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="187">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventBreakForPearcel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventBreakForPearcel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,11 +109,51 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Recipes.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockEvent.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraftforge/event/world/BlockEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigurationHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ModBlocks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModItems.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="206" column="34" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -140,506 +172,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="Pearcel-Mod" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="Pearcel-Mod" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="availableTasks">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="reobfJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'Pearcel-Mod'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="sourceMainJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="deobfProvidedDummyTask" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="retromapReplacedTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'api'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="apiClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse classpath file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="eclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the Minecraft Server" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="runServer" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'Pearcel-Mod'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="applyBinaryPatches" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="deobfMcMCP" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractMcpMappings" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes JVM resources 'api:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processApiResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes JVM resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'Pearcel-Mod'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="deobfCompileDummyTask" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractUserdev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractRangemapReplacedTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Sets up the bare minimum to build a minecraft mod. Ideally for CI servers" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="setupCiWorkspace" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="makeEclipseCleanRunClient" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="retromapTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="DevWorkspace + the deobfuscated Minecraft source linked as a source jar." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="setupDecompWorkspace" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="sourceApiJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="retromapReplacedMain" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractMcpData" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="deobfMcSRG" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractNatives" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'Pearcel-Mod'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="eclipse" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'api:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileApiJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes JVM resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse JDT settings file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="eclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="retromapReplacedApi" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractRangemapReplacedMain" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse project file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="eclipseProject" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="remapMcSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="decompileMc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="getAssetIndex" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'Pearcel-Mod'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="retromapMain" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractRangemapReplacedApi" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="retromapApi" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="sourceJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="makeStart" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Cleans all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipse" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipseProject" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="genSrgs" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="fixMcSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="getVersionJson" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Cleares the ForgeGradle cache. DONT RUN THIS unless you want a fresh start, or the dev tells you to." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanCache" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="sourceTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="CIWorkspace + natives and assets to run and test Minecraft" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="setupDevWorkspace" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="recompileMc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the ForgeGradle run configurations for intellij Idea" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="genIntellijRuns" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractRangemapMain" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="getAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="downloadClient" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="makeEclipseCleanRunServer" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeJars" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractDependencyATs" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'Pearcel-Mod'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="applySourcePatches" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="downloadServer" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractRangemapTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="splitServerJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractRangemapApi" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'Pearcel-Mod'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the Minecraft client" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="runClient" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="projectBuildClasspath">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <ExternalProjectBuildClasspathPojo>
-              <option name="modulesBuildClasspath">
-                <map>
-                  <entry key="$PROJECT_DIR$">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="name" value="Pearcel-Mod" />
-              <option name="projectBuildClasspath">
-                <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/ant-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-base-services-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-base-services-groovy-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-cli-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-core-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-docs-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-launcher-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-messaging-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-model-core-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-model-groovy-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-native-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-open-api-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-resources-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-tooling-api-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-ui-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/gradle-wrapper-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/groovy-all-2.3.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-announce-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-antlr-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-build-comparison-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-build-init-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-code-quality-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-dependency-management-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-diagnostics-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-ear-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-ide-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-ide-native-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-ivy-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-jacoco-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-javascript-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-jetty-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-language-groovy-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-language-java-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-language-jvm-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-language-native-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-language-scala-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-maven-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-osgi-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-platform-base-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-platform-jvm-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-platform-native-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-platform-play-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-plugin-development-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-plugin-use-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-plugins-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-publish-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-reporting-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-resources-http-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-resources-s3-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-resources-sftp-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-scala-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-signing-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-sonar-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-test-kit-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-testing-native-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/gradle-tooling-api-builders-2.7.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.7-bin/4s0fcuuppw3tjb1sxpzh16mne/gradle-2.7/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
-                </list>
-              </option>
-            </ExternalProjectBuildClasspathPojo>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -647,65 +179,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pepc.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/sap.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/tier_1_crafting_component.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/tier_2_crafting_component.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/tier_3_crafting_component.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/tier_4_crafting_component.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/tp_pearcel.json" />
-        <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar!/scala/util/parsing/json/JSON.class" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelWorkbench.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/GuiPearcelWorkbench.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/GuiPCP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPCP.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/torcher.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/torcher.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelStaff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemDragonPearcelStaff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelJuiceBottle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemExperiencePearcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/entity/EntityEnderPearcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemEnderPearcel.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_bow.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_bow_pulling_0.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_bow_pulling_2.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_bow_pulling_1.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelBow.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemSAP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPEPC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockSummoner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelPickaxe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventHarvestDragonEgg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGenOldClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java" />
+        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraftforge/event/world/BlockEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArrow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelCrops.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/blockstates/pearcel_glass_pane.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_noside.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_noside_alt.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_post.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_side.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_side_alt.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventBreakForPearcel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ModuleEditorState">
@@ -751,10 +232,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -764,20 +245,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -792,10 +259,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -803,7 +266,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minecraftforge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -814,10 +281,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -825,11 +288,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="net" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
+              <option name="myItemId" value="minecraftforge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -840,10 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -851,19 +314,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="net" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
+              <option name="myItemId" value="minecraftforge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="event" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="item" />
+              <option name="myItemId" value="world" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,10 +337,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -885,19 +344,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="block" />
+              <option name="myItemId" value="net" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -908,10 +355,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -922,10 +365,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -940,10 +379,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
+              <option name="myItemId" value="com.miningmark48.pearcelmod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="item" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pearcel-Mod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pearcel-Mod" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -962,10 +415,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
+              <option name="myItemId" value="com.miningmark48.pearcelmod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pearcel-Mod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pearcel-Mod" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -984,10 +451,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1002,10 +465,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod_main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1013,23 +472,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="lang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1039,16 +488,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_91" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/block/BlockPane.java&#10;BlockPane&#9;PSI&#9;JAVA://net.minecraft.block.BlockPane&#10;Elytr&#9;PSI&#9;JAVA://net.minecraft.item.ItemElytra&#10;shield&#9;PSI&#9;JAVA://net.minecraft.item.ItemShield&#10;seeds&#9;PSI&#9;JAVA://net.minecraft.item.ItemSeeds&#10;dragon egg&#9;PSI&#9;JAVA://net.minecraft.block.BlockDragonEgg&#10;helmet&#9;PSI&#9;JAVA://net.minecraft.init.Items#DIAMOND_HELMET&#10;bow&#9;PSI&#9;JAVA://net.minecraft.item.ItemBow&#10;bow_pulling&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/assets/minecraft/models/item/bow_pulling_1.json&#10;ItemEnderPear&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/net/minecraft/item/ItemEnderPearl.class&#10;EnderPearl&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/net/minecraft/entity/item/EntityEnderPearl.class&#10;json&#9;PSI&#9;JAVA://scala.util.parsing.json.JSON&#10;iron_in&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/assets/minecraft/models/item/iron_ingot.json&#10;Block&#9;PSI&#9;JAVA://net.minecraft.block.Block&#10;generat&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/assets/minecraft/models/item/generated.json&#10;iron_ing&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/assets/minecraft/models/item/iron_ingot.json&#10;ItemBow&#9;PSI&#9;JAVA://net.minecraft.item.ItemBow&#10;torch&#9;PSI&#9;JAVA://net.minecraft.block.BlockTorch" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mark\Desktop\Mark's Stuff\Minecraft Mods\Pearcel-Mod\src\main\resources\assets\pearcelmod\models\block" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1300,11 +740,11 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/run" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.8.0_91/jre" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jre1.8.0_91" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Pearcel-Mod_main" />
+      <module name="Pearcel-Mod" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -1344,11 +784,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e6e7ac22-0946-4865-a2f6-07388e20a500" name="Default" comment="" />
-      <created>1467128089596</created>
+      <changelist id="2e3fd74d-3272-430d-94ae-df975249fc8b" name="Default" comment="" />
+      <created>1468199867065</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1467128089596</updated>
+      <updated>1468199867065</updated>
     </task>
     <servers />
   </component>
@@ -1364,22 +804,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31853786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1398,9 +837,7 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="6" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1408,441 +845,95 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/entity/item/EntityItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/crafting/IVETCraftingManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventHarvestDragonEgg.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/block/BlockDragonEgg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraftforge/fml/common/IWorldGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGenOldClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mcmod.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemTPPearcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/reference/Reference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="993">
-          <caret line="131" column="67" selection-start-line="131" selection-start-column="67" selection-end-line="131" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArrow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="130" column="55" selection-start-line="130" selection-start-column="55" selection-end-line="130" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelPickaxe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemSeeds.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="263">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/init/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4675">
-          <caret line="285" column="49" selection-start-line="285" selection-start-column="49" selection-end-line="285" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemShield.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemElytra.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraftforge/event/world/BlockEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelCrops.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="214" column="5" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/block/BlockCrops.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/pane_side_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/pane_side.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/pane_post.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/pane_noside_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/pane_noside.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/glass_pane_side_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_side_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_side.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_post.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_noside.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_noside_alt.json">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraftforge/event/world/BlockEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="425">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_post.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_side_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/block/BlockPane.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_bricks.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_ore.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/fools_pearcel_ore.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pane_noside_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/blockstates/cyan_stained_glass_pane.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/blockstates/pearcel_glass_pane.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/blockstates/glass_pane.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/glass_pane_noside.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/glass_pane_noside_alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/glass_pane_post.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/assets/minecraft/models/block/glass_pane_side.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/pearcel_glass_pane_side.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="333">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPane.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="180">
+          <caret line="206" column="34" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventBreakForPearcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Pearcel-Mod_main|Pearcel-Mod</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: com.google.code.findbugs:jsr305:3.0.1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
