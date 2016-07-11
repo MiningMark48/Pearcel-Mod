@@ -35,20 +35,20 @@ public class WorldGen implements IWorldGenerator{
     private void generateNether(World world, Random rand, int x, int z)
     {
         if (ConfigurationHandler.doWorldGen) {
-            generateOre(ModBlocks.nether_pearcel_ore, world, rand, x, z, 3, 6, 10, 0, 60, Blocks.NETHERRACK);
+            generateOre(ModBlocks.nether_pearcel_ore, world, rand, x, z, 3, 6, 15, 10, 60, Blocks.NETHERRACK);
         }
     }
 
     private void generateSurface(World world, Random rand, int x, int z)
     {
         if (ConfigurationHandler.doWorldGen) {
-            generateOre(ModBlocks.pearcel_ore, world, rand, x, z, 3, 12, 25, 10, 70, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_ore, world, rand, x, z, 3, 12, 15, 10, 70, Blocks.STONE);
             generateOre(ModBlocks.fools_pearcel_ore, world, rand, x, z, 3, 5, 10, 10, 50, ModBlocks.pearcel_ore);
-            generateOre(ModBlocks.pearcel_matter_ore, world, rand, x, z, 1, 2, 15, 10, 40, Blocks.STONE);
-            generateOre(ModBlocks.dense_pearcel_ore, world, rand, x, z, 5, 20, 15, 5, 70, Blocks.STONE);
-            generateOre(ModBlocks.dense_pearcel_matter_ore, world, rand, x, z, 5, 20, 10, 5, 70, Blocks.STONE);
-            generateOre(ModBlocks.pearcel_stone, world, rand, x, z, 1, 15, 20, 10, 64, Blocks.STONE);
-            generateOre(ModBlocks.pearcel_sand, world, rand, x, z, 1, 15, 25, 10, 64, Blocks.SAND);
+            generateOre(ModBlocks.pearcel_matter_ore, world, rand, x, z, 1, 2, 10, 10, 40, Blocks.STONE);
+            generateOre(ModBlocks.dense_pearcel_ore, world, rand, x, z, 5, 20, 5, 5, 70, Blocks.STONE);
+            generateOre(ModBlocks.dense_pearcel_matter_ore, world, rand, x, z, 5, 20, 5, 5, 70, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_stone, world, rand, x, z, 1, 50, 30, 10, 64, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_sand, world, rand, x, z, 1, 50, 30, 10, 64, Blocks.SAND);
         }
 
     }
@@ -58,7 +58,7 @@ public class WorldGen implements IWorldGenerator{
     {
         if (ConfigurationHandler.doWorldGen) {
             //generateOre(ModBlocks.pearcelEndStone, world, rand, x, z, 2, 10, 15, 0, 60, Blocks.end_stone);
-            generateOre(ModBlocks.ender_pearcel_ore, world, rand, x, z, 3, 12, 10, 0, 60, Blocks.END_STONE);
+            generateOre(ModBlocks.ender_pearcel_ore, world, rand, x, z, 3, 12, 10, 10, 60, Blocks.END_STONE);
         }
     }
 
