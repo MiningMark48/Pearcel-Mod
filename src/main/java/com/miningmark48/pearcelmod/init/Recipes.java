@@ -92,10 +92,10 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_charcoal_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_charcoal));
 
         //Pearcel Matter Recipes
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 2), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_1_crafting_component));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 4), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_2_crafting_component));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 6), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_3_crafting_component));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 8), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_4_crafting_component));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 4), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_1_crafting_component));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 8), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_2_crafting_component));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 16), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_3_crafting_component));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 32), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_4_crafting_component));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 9), new ItemStack(ModBlocks.pearcel_matter_block));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_matter_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_matter));
 
@@ -105,12 +105,16 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(Items.GOLD_INGOT, 16), "x  ", "x  ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.DIAMOND, 8), "x  ", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.EMERALD, 4), " xx", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.REDSTONE, 16), "x x", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.QUARTZ, 16), "x x", "x x", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.BLAZE_ROD, 16), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.REDSTONE, 32), "x x", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.QUARTZ, 32), "x x", "x x", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.BLAZE_ROD, 8), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.SLIME_BALL, 32), " x ", "x x", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.EXPERIENCE_BOTTLE, 32), "xx ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.GLOWSTONE_DUST, 32), "xx ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.LEATHER, 16), "x x", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.REEDS, 64), "xx ", "   ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
+
+        GameRegistry.addRecipe(new ItemStack(Blocks.DRAGON_EGG), "xxx", "xyx", "xxx", 'x', new ItemStack(ModBlocks.pearcel_matter_block), 'y', new ItemStack(Items.END_CRYSTAL));
 
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COAL_ORE, 8), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.SLIME_BALL), new ItemStack(Blocks.COAL_BLOCK));
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.IRON_ORE, 8), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.SLIME_BALL), new ItemStack(Blocks.IRON_BLOCK));
