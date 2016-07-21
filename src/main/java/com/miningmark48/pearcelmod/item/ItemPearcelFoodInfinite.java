@@ -21,6 +21,7 @@ public class ItemPearcelFoodInfinite extends ItemFood {
 
     public ItemPearcelFoodInfinite(int amount, float saturation, boolean isWolfFood) {
         super(amount, saturation, isWolfFood);
+        setMaxStackSize(1);
     }
 
     @Override
