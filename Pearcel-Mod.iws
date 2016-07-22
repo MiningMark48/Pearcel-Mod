@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e3fd74d-3272-430d-94ae-df975249fc8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/textures/model/armor/pearcel_layer_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/textures/model/armor/pearcel_layer_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/textures/model/dragon_pearcel_staff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/textures/model/pearcel_staff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/textures/model/torcher.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/torcher.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/torcher.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/dragon_pearcel_staff.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/dragon_pearcel_staff.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_staff.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_staff.json" />
     </list>
     <ignored path="Pearcel-Mod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,208 +71,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemArmor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemArmor.java">
+      <file leaf-file-name="ModItems.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="96" column="41" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#5437#5438#0" expanded="false" />
-                <element signature="e#5493#5494#0" expanded="false" />
-                <element signature="e#5624#5625#0" expanded="false" />
-                <element signature="e#5660#5661#0" expanded="false" />
-                <element signature="e#12563#12564#0" expanded="false" />
-                <element signature="e#12613#12614#0" expanded="false" />
-                <element signature="e#12666#12667#0" expanded="false" />
-                <element signature="e#12712#12713#0" expanded="false" />
-                <element signature="e#13345#13346#0" expanded="false" />
-                <element signature="e#13385#13386#0" expanded="false" />
-                <element signature="e#13432#13433#0" expanded="false" />
-                <element signature="e#13477#13478#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/init/Items.java">
+      <file leaf-file-name="torcher.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/torcher.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4930">
-              <caret line="300" column="34" selection-start-line="300" selection-start-column="34" selection-end-line="300" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/Item.java">
+      <file leaf-file-name="pearcel_staff.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_staff.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19448">
-              <caret line="1458" column="92" selection-start-line="1458" selection-start-column="92" selection-end-line="1458" selection-end-column="92" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2791#3041#0" expanded="false" />
-                <element signature="e#3040#3041#0" expanded="false" />
-                <element signature="e#3104#3413#0" expanded="false" />
-                <element signature="e#3412#3413#0" expanded="false" />
-                <element signature="e#3480#3776#0" expanded="false" />
-                <element signature="e#3775#3776#0" expanded="false" />
-                <element signature="e#3841#4178#0" expanded="false" />
-                <element signature="e#4177#4178#0" expanded="false" />
-                <element signature="e#5213#5214#0" expanded="false" />
-                <element signature="e#5288#5289#0" expanded="false" />
-                <element signature="e#5338#5339#0" expanded="false" />
-                <element signature="e#5393#5394#0" expanded="false" />
-                <element signature="e#5469#5470#0" expanded="false" />
-                <element signature="e#5524#5525#0" expanded="false" />
-                <element signature="e#6719#6720#0" expanded="false" />
-                <element signature="e#6747#6748#0" expanded="false" />
-                <element signature="e#6822#6823#0" expanded="false" />
-                <element signature="e#6881#6882#0" expanded="false" />
-                <element signature="e#7589#7590#0" expanded="false" />
-                <element signature="e#7616#7617#0" expanded="false" />
-                <element signature="e#8129#8130#0" expanded="false" />
-                <element signature="e#8157#8158#0" expanded="false" />
-                <element signature="e#8375#8376#0" expanded="false" />
-                <element signature="e#8415#8416#0" expanded="false" />
-                <element signature="e#8648#8649#0" expanded="false" />
-                <element signature="e#8672#8673#0" expanded="false" />
-                <element signature="e#8715#8716#0" expanded="false" />
-                <element signature="e#8754#8755#0" expanded="false" />
-                <element signature="e#8985#8986#0" expanded="false" />
-                <element signature="e#9022#9023#0" expanded="false" />
-                <element signature="e#9453#9454#0" expanded="false" />
-                <element signature="e#9543#9544#0" expanded="false" />
-                <element signature="e#9816#9817#0" expanded="false" />
-                <element signature="e#9844#9845#0" expanded="false" />
-                <element signature="e#10271#10272#0" expanded="false" />
-                <element signature="e#10299#10300#0" expanded="false" />
-                <element signature="e#10865#10866#0" expanded="false" />
-                <element signature="e#10900#10901#0" expanded="false" />
-                <element signature="e#11132#11133#0" expanded="false" />
-                <element signature="e#11160#11161#0" expanded="false" />
-                <element signature="e#11899#11900#0" expanded="false" />
-                <element signature="e#11952#11953#0" expanded="false" />
-                <element signature="e#12195#12196#0" expanded="false" />
-                <element signature="e#12248#12249#0" expanded="false" />
-                <element signature="e#12553#12554#0" expanded="false" />
-                <element signature="e#12580#12581#0" expanded="false" />
-                <element signature="e#12622#12623#0" expanded="false" />
-                <element signature="e#12663#12664#0" expanded="false" />
-                <element signature="e#12853#12854#0" expanded="false" />
-                <element signature="e#12902#12903#0" expanded="false" />
-                <element signature="e#13475#13476#0" expanded="false" />
-                <element signature="e#13503#13504#0" expanded="false" />
-                <element signature="e#13675#13676#0" expanded="false" />
-                <element signature="e#13713#13714#0" expanded="false" />
-                <element signature="e#13841#13842#0" expanded="false" />
-                <element signature="e#13865#13866#0" expanded="false" />
-                <element signature="e#14608#14609#0" expanded="false" />
-                <element signature="e#14654#14655#0" expanded="false" />
-                <element signature="e#14979#14980#0" expanded="false" />
-                <element signature="e#15059#15060#0" expanded="false" />
-                <element signature="e#16313#16314#0" expanded="false" />
-                <element signature="e#16337#16338#0" expanded="false" />
-                <element signature="e#16918#16919#0" expanded="false" />
-                <element signature="e#16960#16961#0" expanded="false" />
-                <element signature="e#17171#17172#0" expanded="false" />
-                <element signature="e#17199#17200#0" expanded="false" />
-                <element signature="e#17354#17355#0" expanded="false" />
-                <element signature="e#17382#17383#0" expanded="false" />
-                <element signature="e#17585#17612#0" expanded="false" />
-                <element signature="e#18405#18406#0" expanded="false" />
-                <element signature="e#18432#18433#0" expanded="false" />
-                <element signature="e#18893#18894#0" expanded="false" />
-                <element signature="e#18927#18928#0" expanded="false" />
-                <element signature="e#19793#19794#0" expanded="false" />
-                <element signature="e#19843#19844#0" expanded="false" />
-                <element signature="e#20538#20539#0" expanded="false" />
-                <element signature="e#20566#20567#0" expanded="false" />
-                <element signature="e#21408#21409#0" expanded="false" />
-                <element signature="e#21436#21437#0" expanded="false" />
-                <element signature="e#22628#22629#0" expanded="false" />
-                <element signature="e#22655#22656#0" expanded="false" />
-                <element signature="e#23166#23167#0" expanded="false" />
-                <element signature="e#23194#23195#0" expanded="false" />
-                <element signature="e#23757#23758#0" expanded="false" />
-                <element signature="e#23784#23785#0" expanded="false" />
-                <element signature="e#24178#24179#0" expanded="false" />
-                <element signature="e#24206#24207#0" expanded="false" />
-                <element signature="e#24545#24546#0" expanded="false" />
-                <element signature="e#24606#24607#0" expanded="false" />
-                <element signature="e#25048#25049#0" expanded="false" />
-                <element signature="e#25111#25112#0" expanded="false" />
-                <element signature="e#26550#26551#0" expanded="false" />
-                <element signature="e#26577#26578#0" expanded="false" />
-                <element signature="e#27668#27669#0" expanded="false" />
-                <element signature="e#27695#27696#0" expanded="false" />
-                <element signature="e#28691#28692#0" expanded="false" />
-                <element signature="e#28719#28720#0" expanded="false" />
-                <element signature="e#29704#29705#0" expanded="false" />
-                <element signature="e#29743#29744#0" expanded="false" />
-                <element signature="e#29978#29979#0" expanded="false" />
-                <element signature="e#30017#30018#0" expanded="false" />
-                <element signature="e#30389#30390#0" expanded="false" />
-                <element signature="e#30433#30434#0" expanded="false" />
-                <element signature="e#31428#31429#0" expanded="false" />
-                <element signature="e#31471#31472#0" expanded="false" />
-                <element signature="e#32644#32645#0" expanded="false" />
-                <element signature="e#32691#32692#0" expanded="false" />
-                <element signature="e#32772#32789#0" expanded="false" />
-                <element signature="e#33331#33332#0" expanded="false" />
-                <element signature="e#33374#33375#0" expanded="false" />
-                <element signature="e#36731#36961#0" expanded="false" />
-                <element signature="e#36960#36961#0" expanded="false" />
-                <element signature="e#37249#37518#0" expanded="false" />
-                <element signature="e#37517#37518#0" expanded="false" />
-                <element signature="e#37717#37985#0" expanded="false" />
-                <element signature="e#37984#37985#0" expanded="false" />
-                <element signature="e#38157#38427#0" expanded="false" />
-                <element signature="e#38426#38427#0" expanded="false" />
-                <element signature="e#38555#38825#0" expanded="false" />
-                <element signature="e#38824#38825#0" expanded="false" />
-                <element signature="e#38990#39258#0" expanded="false" />
-                <element signature="e#39257#39258#0" expanded="false" />
-                <element signature="e#39548#39818#0" expanded="false" />
-                <element signature="e#39817#39818#0" expanded="false" />
-                <element signature="e#39936#40210#0" expanded="false" />
-                <element signature="e#40209#40210#0" expanded="false" />
-                <element signature="e#40544#40787#0" expanded="false" />
-                <element signature="e#40786#40787#0" expanded="false" />
-                <element signature="e#41101#41374#0" expanded="false" />
-                <element signature="e#41373#41374#0" expanded="false" />
-                <element signature="e#42152#42461#0" expanded="false" />
-                <element signature="e#42460#42461#0" expanded="false" />
-                <element signature="e#42600#42906#0" expanded="false" />
-                <element signature="e#42905#42906#0" expanded="false" />
-                <element signature="e#45748#46022#0" expanded="false" />
-                <element signature="e#46021#46022#0" expanded="false" />
-                <element signature="e#46170#46444#0" expanded="false" />
-                <element signature="e#46443#46444#0" expanded="false" />
-                <element signature="e#48567#48835#0" expanded="false" />
-                <element signature="e#48834#48835#0" expanded="false" />
-                <element signature="e#50569#50849#0" expanded="false" />
-                <element signature="e#50848#50849#0" expanded="false" />
-                <element signature="e#51253#51527#0" expanded="false" />
-                <element signature="e#51526#51527#0" expanded="false" />
-                <element signature="e#51726#52002#0" expanded="false" />
-                <element signature="e#52001#52002#0" expanded="false" />
-                <element signature="e#77448#77449#0" expanded="false" />
-                <element signature="e#77514#77515#0" expanded="false" />
-                <element signature="e#79794#79795#0" expanded="false" />
-                <element signature="e#79837#79838#0" expanded="false" />
-                <element signature="e#80017#80018#0" expanded="false" />
-                <element signature="e#80079#80080#0" expanded="false" />
-                <element signature="e#80209#80210#0" expanded="false" />
-                <element signature="e#80259#80260#0" expanded="false" />
-                <element signature="e#80436#80437#0" expanded="false" />
-                <element signature="e#80484#80485#0" expanded="false" />
-                <element signature="e#80627#80628#0" expanded="false" />
-                <element signature="e#80677#80678#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dragon_pearcel_staff.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/dragon_pearcel_staff.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="torcher.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/torcher.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -272,59 +124,12 @@
       <file leaf-file-name="ItemPearcelArmor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pearcel_infinifood.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_infinifood.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModItems.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en_US.lang" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="116" column="91" selection-start-line="116" selection-start-column="91" selection-end-line="116" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorldGen.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -349,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraftforge/event/world/BlockEvent.java" />
         <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemElytra.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventBreakForPearcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/GuiModConfig.java" />
@@ -392,12 +196,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelFoodInfinite.java" />
         <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/init/Items.java" />
         <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_infinifood.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_staff.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/dragon_pearcel_staff.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/torcher.json" />
       </list>
     </option>
   </component>
@@ -1221,7 +1028,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2689295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1775457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28198433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1262,34 +1069,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemShield.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelSword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemSword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/potion/Potion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/net/minecraft/item/ItemPotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-374">
@@ -1912,30 +1691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_infinifood.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1954,8 +1709,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state relative-caret-position="294">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_infinifood.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelArmor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_staff.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/dragon_pearcel_staff.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/torcher.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/block/torcher.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding />
         </state>
       </provider>

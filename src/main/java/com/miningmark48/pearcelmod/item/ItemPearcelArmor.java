@@ -15,27 +15,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemPearcelArmor extends ItemArmor{
 
-    public final EntityEquipmentSlot armorType;
-
     public ItemPearcelArmor(ItemArmor.ArmorMaterial material, EntityEquipmentSlot type){
         super(material, 0, type);
-        this.armorType = type;
-    }
-
-//    public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-//        if (stack.getItem() == ModItems.pearcel_helmet || stack.getItem() == ModItems.pearcel_chestplate || stack.getItem() == ModItems.pearcel_boots){
-//            return Reference.MOD_ID + ":textures/model/armor/pearcel_layer_1.png";
-//        }else if (stack.getItem() == ModItems.pearcel_leggings){
-//            return Reference.MOD_ID + ":textures/model/armor/pearcel_layer_2.png";
-//        }else{
-//            return null;
-//        }
-//    }
-
-    @SideOnly(Side.CLIENT)
-    public EntityEquipmentSlot getEquipmentSlot()
-    {
-        return this.armorType;
     }
 
 }

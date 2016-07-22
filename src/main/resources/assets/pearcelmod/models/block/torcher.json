@@ -1,8 +1,8 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "0": "pearcelmod:model/torcher",
-        "particle": "pearcelmod:model/torcher"
+        "0": "pearcelmod:models/torcher",
+        "particle": "pearcelmod:models/torcher"
     },
     "elements": [
         {
