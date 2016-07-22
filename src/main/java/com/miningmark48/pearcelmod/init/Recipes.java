@@ -101,20 +101,20 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_matter_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_matter));
 
         GameRegistry.addRecipe(new ItemStack(Items.NETHER_STAR), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel_matter), 'y', new ItemStack(ModBlocks.pearcel_matter_block));
-        GameRegistry.addRecipe(new ItemStack(Items.COAL, 32), "x  ", " x ", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.IRON_INGOT, 24), " x ", "x  ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.GOLD_INGOT, 16), "x  ", "x  ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.DIAMOND, 8), "x  ", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.EMERALD, 4), " xx", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.REDSTONE, 32), "x x", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.COAL, 16), "x  ", " x ", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.IRON_INGOT, 12), " x ", "x  ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.GOLD_INGOT, 8), "x  ", "x  ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.DIAMOND, 4), "x  ", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.EMERALD, 2), " xx", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.REDSTONE, 16), "x x", "x x", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.QUARTZ, 32), "x x", "x x", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.BLAZE_ROD, 8), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.SLIME_BALL, 32), " x ", "x x", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.EXPERIENCE_BOTTLE, 32), "xx ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.GLOWSTONE_DUST, 32), "xx ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.LEATHER, 16), "x x", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.REEDS, 64), "xx ", "   ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
-        GameRegistry.addRecipe(new ItemStack(Items.GHAST_TEAR, 8), "x x", " x ", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.BLAZE_ROD, 10), "x  ", " x ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.SLIME_BALL, 16), " x ", "x x", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.EXPERIENCE_BOTTLE, 16), "xx ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.GLOWSTONE_DUST, 16), "xx ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.LEATHER, 18), "x x", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.REEDS, 48), "xx ", "   ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
+        GameRegistry.addRecipe(new ItemStack(Items.GHAST_TEAR, 4), "x x", " x ", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
 
         GameRegistry.addRecipe(new ItemStack(Blocks.DRAGON_EGG), "xxx", "xyx", "xxx", 'x', new ItemStack(ModBlocks.pearcel_matter_block), 'y', new ItemStack(Items.END_CRYSTAL));
 
