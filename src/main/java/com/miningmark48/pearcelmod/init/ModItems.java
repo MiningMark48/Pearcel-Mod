@@ -6,6 +6,7 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -65,6 +66,7 @@ public class ModItems {
     public static Item pcp;
     public static Item ender_pearcel;
     public static Item pearcel_bow;
+    public static Item pearcel_stone_placer;
 
     public static void init(){
         //General Items
@@ -112,6 +114,7 @@ public class ModItems {
         pcp = new ItemPCP().setUnlocalizedName("pcp").setRegistryName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setRegistryName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setRegistryName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stone_placer = new ItemPearcelBlockPlacer().setUnlocalizedName("pearcel_stone_placer").setRegistryName("pearcel_stone_placer").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -161,6 +164,7 @@ public class ModItems {
         GameRegistry.register(pcp);
         GameRegistry.register(ender_pearcel);
         GameRegistry.register(pearcel_bow);
+        GameRegistry.register(pearcel_stone_placer);
 
     }
 
@@ -213,6 +217,7 @@ public class ModItems {
         registerRender(pearcel_bow, 1, "pearcel_bow_pulling_1");
         registerRender(pearcel_bow, 2, "pearcel_bow_pulling_2");
         registerRender(pearcel_bow, 3, "pearcel_bow_pulling_3");
+        registerRender(pearcel_stone_placer);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

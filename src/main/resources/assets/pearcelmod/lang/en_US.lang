@@ -47,6 +47,7 @@ item.dragon_pearcel_staff.name=Dragon-Infused Pearcel Staff
 item.pcp.name=Portable Crafting Pearcel
 item.ender_pearcel.name=Ender Pearcel
 item.pearcel_bow.name=Pearcel Bow
+item.pearcel_stone_placer.name=Pearcel Block Placer
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -103,6 +104,8 @@ tooltip.item.pearcel_arrow.line2.upgrade.pow=Power
 tooltip.item.pearcel_arrow.line2.upgrade.knock=Knockback
 tooltip.item.pearcel_arrow.line2.upgrade.zoom=Zoom
 tooltip.item.pearcel_infinifood.line1=Infinite Food! ...at a cost.
+tooltip.item.pbp.line1=Mode:
+tooltip.item.pbp.line2=Sneak + Right Click to change modes.
 
 #Chat Messages
 chat.tpPearcel.location.notSet=Location not bound!
@@ -115,6 +118,7 @@ chat.item.pearcel_arrow.upgraded.inf=Infinity upgrade applied!
 chat.item.pearcel_arrow.upgraded.pow=Power upgrade applied!
 chat.item.pearcel_arrow.upgraded.knock=Knockback upgrade applied!
 chat.item.pearcel_arrow.upgraded.zoom=Zoom upgrade applied!
+chat.item.pbp.modeChange=Mode changed.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing block required for summoning activation!
