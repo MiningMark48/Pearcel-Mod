@@ -16,6 +16,10 @@ public class ItemPearcelFuel extends Item implements IFuelHandler{
             return 2500;
         }else if(fuel.isItemEqual(new ItemStack(ModBlocks.pearcel_charcoal_block))){
             return 22500;
+        }else if(item == ModItems.pearcel_matter){
+            return 30000;
+        }else if(fuel.isItemEqual(new ItemStack(ModBlocks.pearcel_matter_block))){
+            return 270000;
         }
         else{
             return 0;

@@ -11,6 +11,8 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
@@ -53,12 +55,14 @@ public class ItemTPPearcel extends ItemPearcelMod{
             stack.getTagCompound().setDouble("tpY", 0D);
             stack.getTagCompound().setDouble("tpZ", 0D);
             stack.getTagCompound().setInteger("dim", 0);
+            stack.getTagCompound().setBoolean("set", false);
         }
         if (player.isSneaking()) {
             stack.getTagCompound().setDouble("tpX", player.posX);
             stack.getTagCompound().setDouble("tpY", player.posY);
             stack.getTagCompound().setDouble("tpZ", player.posZ);
             stack.getTagCompound().setInteger("dim", player.dimension);
+            stack.getTagCompound().setBoolean("set", true);
             if(!world.isRemote) {
                 player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.DARK_GREEN + (Translate.toLocal("chat.tpPearcel.location.set"))));
             }
@@ -92,6 +96,20 @@ public class ItemTPPearcel extends ItemPearcelMod{
             }
         }
         return new ActionResult(EnumActionResult.PASS, stack);
+    }
+
+    @SideOnly(Side.CLIENT)
+    public boolean hasEffect(ItemStack stack)
+    {
+        if (stack.hasTagCompound()){
+            if (stack.getTagCompound().getBoolean("set")){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
     }
 
 }
