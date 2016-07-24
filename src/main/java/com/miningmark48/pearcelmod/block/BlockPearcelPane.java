@@ -37,6 +37,7 @@ public class BlockPearcelPane extends BlockPane{
         super(materialIn, canDrop);
         this.canDrop = canDrop;
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
+        setHardness(1.5F);
     }
 
     @Override
