@@ -12,7 +12,7 @@ import java.util.List;
 public class ItemSAP extends ItemPearcelMod{
 
     public ItemSAP(){
-        setMaxDamage(32);
+        setMaxDamage(64);
         setMaxStackSize(1);
     }
 

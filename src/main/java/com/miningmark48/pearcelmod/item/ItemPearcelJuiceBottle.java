@@ -39,9 +39,9 @@ public class ItemPearcelJuiceBottle extends ItemPearcelMod{
             }
 
             if (!world.isRemote) {
-                player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 1500, 2));
-                player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 1500, 1));
-                player.heal(3.0F);
+                player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 1500, 3));
+                player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 1500, 2));
+                player.heal(5.0F);
             }
         }
         return item.stackSize <= 0 ? new ItemStack((Items.GLASS_BOTTLE)) : item;

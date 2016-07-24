@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.block.BlockPane;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -36,8 +37,10 @@ public class BlockPearcelPane extends BlockPane{
         super(materialIn, canDrop);
         this.canDrop = canDrop;
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
+        setHardness(1.5F);
     }
 
+    @Override
     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn)
     {
         state = this.getActualState(state, worldIn, pos);
@@ -102,6 +105,7 @@ public class BlockPearcelPane extends BlockPane{
         return i;
     }
 
+    @Override
     public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
     {
         return state.withProperty(NORTH, canPaneConnectTo(worldIn, pos, EnumFacing.NORTH))
@@ -183,6 +187,6 @@ public class BlockPearcelPane extends BlockPane{
     {
         BlockPos off = pos.offset(dir);
         IBlockState state = world.getBlockState(off);
-        return canPaneConnectToBlock(state.getBlock()) || state.isSideSolid(world, off, dir.getOpposite());
+        return canPaneConnectToBlock(state.getBlock()) || state.isSideSolid(world, off, dir.getOpposite()) || state.getBlock() == ModBlocks.pearcel_glass;
     }
 }
