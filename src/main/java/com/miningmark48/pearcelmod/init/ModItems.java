@@ -67,6 +67,7 @@ public class ModItems {
     public static Item ender_pearcel;
     public static Item pearcel_bow;
     public static Item pearcel_stone_placer;
+    public static Item experienced_pearcel_torch;
 
     public static void init(){
         //General Items
@@ -128,7 +129,6 @@ public class ModItems {
         GameRegistry.register(pearcel_flour);
         GameRegistry.register(pearcel_stick);
         GameRegistry.register(pearcel_charcoal);
-        //GameRegistry.register(pearcel_seeds); //TODO: Not Working Yet
         GameRegistry.register(pearcel_matter);
         GameRegistry.register(neutral_pearcel_matter);
         GameRegistry.register(pearcel_arrow);
