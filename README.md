@@ -7,11 +7,14 @@
 * [License](#license)
 * [Issues](#issues)
 * [Credits](#credits)
+* [Links](#links)
+* [Thank You](#thank you)
 
 ***
 
 ## About
-Pearcel Mod is mainly just a random mod that started out as a joke in a stream and then it became the awesome mod that it is today.
+Pearcel Mod is a mod made by MiningMark48 and Codyrule040 that is designed to add items and blocks designed around the Pearcel item for a fun, joyful time in Minecraft.   
+
 
 ***
 
@@ -36,12 +39,28 @@ This project is under a custom license.
 ***
 
 ## Issues
-If any issues are found within this mod, they can be posted on the Github issues page, which can be found [here](https://github.com/MiningMark48/Pearcel-Mod/issues).
+If any issues are found within this mod, they can be posted on the Github issue tracker, which can be found [here](https://github.com/MiningMark48/Pearcel-Mod/issues).
 
 ***
 
 ## Credits
-MiningMark48 for code, textures.
-Codyrule040 for textures.
+* MiningMark48 for code, textures.
+* Codyrule040 for textures.
+* SomewhatInfinite for textures.
+* Community for support.
+
+***
+
+## Links
+* [CurseForge](http://minecraft.curseforge.com/projects/pearcel-mod)
+* [Curse](http://mods.curse.com/mc-mods/minecraft/227627-pearcel-mod)
+* [GitHub](https://github.com/MiningMark48/Pearcel-Mod/tree/master)
+* [Issues](https://github.com/MiningMark48/Pearcel-Mod/issues)
+
+***
+## Thank You
+Thank you to the community for making Pearcel Mod what it is today. I never expected so many people to enjoy it and like it for what it is. The joy it brings you will never match the joy that is brought when I hear someone say they enjoy this mod. I truly appreciate how far everyone has brought this mod.  
+  
+Thanks Again, MiningMark48.
 
 ***
