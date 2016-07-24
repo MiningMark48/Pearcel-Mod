@@ -4,10 +4,9 @@ import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.item.*;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.init.Blocks;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -15,14 +14,12 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems {
 
     public static Item.ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("PearcelTools", 3, 1000, 15.0F, 10.0F, 20);
     public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 15.0F, 30);
-    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("PearcelArmor", Reference.MOD_ID + ":" + "pearcel", 100, new int[]{3, 6, 5, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
+    public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("pearcel", Reference.MOD_ID + ":" + "pearcel_armor", 100, new int[]{4, 7, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
 
     //General Items
     public static Item pearcel_ingot;
@@ -47,6 +44,7 @@ public class ModItems {
     public static Item pearcel_cookie;
     public static Item pearcel_sandwich;
     public static Item pearcel_juice_bottle;
+    public static Item pearcel_infinifood;
 
     //Tools and Armor
     public static Item pearcel_sword;
@@ -68,6 +66,8 @@ public class ModItems {
     public static Item pcp;
     public static Item ender_pearcel;
     public static Item pearcel_bow;
+    public static Item pearcel_stone_placer;
+    public static Item experienced_pearcel_torch;
 
     public static void init(){
         //General Items
@@ -93,7 +93,7 @@ public class ModItems {
         pearcel_cookie = new ItemPearcelFood(2, 0.1F, true).setUnlocalizedName("pearcel_cookie").setRegistryName("pearcel_cookie").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_sandwich = new ItemPearcelFood(9, 1.1F, true).setUnlocalizedName("pearcel_sandwich").setRegistryName("pearcel_sandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_juice_bottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcel_juice_bottle").setRegistryName("pearcel_juice_bottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-
+        pearcel_infinifood = new ItemPearcelFoodInfinite(7, 1.5F, false).setUnlocalizedName("pearcel_infinifood").setRegistryName("pearcel_infinifood").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Tools and Armor
         pearcel_sword = new ItemPearcelSword(matToolPearcel).setUnlocalizedName("pearcel_sword").setRegistryName("pearcel_sword").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -115,6 +115,7 @@ public class ModItems {
         pcp = new ItemPCP().setUnlocalizedName("pcp").setRegistryName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setRegistryName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setRegistryName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stone_placer = new ItemPearcelBlockPlacer().setUnlocalizedName("pearcel_stone_placer").setRegistryName("pearcel_stone_placer").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -128,7 +129,6 @@ public class ModItems {
         GameRegistry.register(pearcel_flour);
         GameRegistry.register(pearcel_stick);
         GameRegistry.register(pearcel_charcoal);
-        //GameRegistry.register(pearcel_seeds); //TODO: Not Working Yet
         GameRegistry.register(pearcel_matter);
         GameRegistry.register(neutral_pearcel_matter);
         GameRegistry.register(pearcel_arrow);
@@ -142,6 +142,7 @@ public class ModItems {
         GameRegistry.register(pearcel_cookie);
         GameRegistry.register(pearcel_sandwich);
         GameRegistry.register(pearcel_juice_bottle);
+        GameRegistry.register(pearcel_infinifood);
 
         //Tools and Armor
         GameRegistry.register(pearcel_sword);
@@ -163,6 +164,7 @@ public class ModItems {
         GameRegistry.register(pcp);
         GameRegistry.register(ender_pearcel);
         GameRegistry.register(pearcel_bow);
+        GameRegistry.register(pearcel_stone_placer);
 
     }
 
@@ -190,6 +192,7 @@ public class ModItems {
         registerRender(pearcel_cookie);
         registerRender(pearcel_sandwich);
         registerRender(pearcel_juice_bottle);
+        registerRender(pearcel_infinifood);
 
         //Tools and Armor
         registerRender(pearcel_sword);
@@ -214,6 +217,7 @@ public class ModItems {
         registerRender(pearcel_bow, 1, "pearcel_bow_pulling_1");
         registerRender(pearcel_bow, 2, "pearcel_bow_pulling_2");
         registerRender(pearcel_bow, 3, "pearcel_bow_pulling_3");
+        registerRender(pearcel_stone_placer);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
