@@ -39,7 +39,7 @@ This project is under a custom license.
 ***
 
 ## Issues
-If any issues are found within this mod, they can be posted on the Github issue tracker, which can be found [here](https://github.com/MiningMark48/Pearcel-Mod/issues).
+If any issues are found within this mod, they can be posted on the issue tracker, which can be found [here](https://waffle.io/MiningMark48/Pearcel-Mod).
 
 ***
 
@@ -55,7 +55,7 @@ If any issues are found within this mod, they can be posted on the Github issue 
 * [CurseForge](http://minecraft.curseforge.com/projects/pearcel-mod)
 * [Curse](http://mods.curse.com/mc-mods/minecraft/227627-pearcel-mod)
 * [GitHub](https://github.com/MiningMark48/Pearcel-Mod/tree/master)
-* [Issues](https://github.com/MiningMark48/Pearcel-Mod/issues)
+* [Issues](https://waffle.io/MiningMark48/Pearcel-Mod)
 
 ***
 ## Thank You
