@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/MiningMark48/Pearcel-Mod.png?label=ready&title=Ready)](https://waffle.io/MiningMark48/Pearcel-Mod)
 # Pearcel Mod
 
 ***
