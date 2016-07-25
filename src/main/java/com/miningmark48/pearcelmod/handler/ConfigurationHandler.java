@@ -49,7 +49,7 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.worldGen.title"), Translate.toLocal("config.category.worldGen.desc"));
 
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
-        pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 10, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
+        pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
 
         //Ender Pearcel
         enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Translate.toLocal("config.category.enderPearcel.title"), 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));

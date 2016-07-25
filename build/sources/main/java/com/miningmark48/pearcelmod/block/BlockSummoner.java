@@ -67,6 +67,11 @@ public class BlockSummoner extends BlockPearcelMod{
         EntityVillager villager = new EntityVillager(world);
         villager.setPosition(x + spawnRand, y + 2, z + spawnRand);
 
+        EntityDragon dragon = new EntityDragon(world);
+        dragon.setPosition(x + spawnRand, y + 2, z + spawnRand);
+        EntityWither wither = new EntityWither(world);
+        wither.setPosition(x + spawnRand, y + 2, z + spawnRand);
+
         if(player.getHeldItem(EnumHand.MAIN_HAND) != null){
             if (!player.isSneaking() && player.getHeldItem(EnumHand.MAIN_HAND).getItem() == ModItems.sap) {
                 if (!world.isRemote) {
@@ -76,6 +81,16 @@ public class BlockSummoner extends BlockPearcelMod{
                         if (world.isRemote) {
                             world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
                         }
+                    }//Dragon
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.DRAGON_EGG) {
+                        world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
+                        world.spawnEntityInWorld(dragon);
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.dragon") + " " + Translate.toLocal("summoner.summoned")));
+                    }//Wither
+                    else if (world.getBlockState(pos.up()).getBlock() == Blocks.SKULL) {
+                        world.setBlockState(pos.up(), ModBlocks.tainted_pearcel.getDefaultState());
+                        world.spawnEntityInWorld(wither);
+                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.wither") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Sheep
                     else if (world.getBlockState(pos.up()).getBlock() == Blocks.WOOL) {

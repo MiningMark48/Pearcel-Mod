@@ -47,9 +47,6 @@ public class ModBlocks {
     public static Block torcher;
     public static Block summoner;
 
-    //Crops
-    public static Block pearcel_crops;
-
     public static void init(){
         //General
         pearcel_block = new BlockPearcelMod().setUnlocalizedName("pearcel_block").setRegistryName("pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -85,8 +82,6 @@ public class ModBlocks {
         torcher = new BlockTorcher().setUnlocalizedName("torcher").setRegistryName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         summoner = new BlockSummoner().setUnlocalizedName("summoner").setRegistryName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
-        //Plants
-        pearcel_crops = new BlockPearcelCrops().setUnlocalizedName("pearcel_crops").setRegistryName("pearcel_crops");
 
     }
 
@@ -125,9 +120,6 @@ public class ModBlocks {
         registerBlock(torcher);
         registerBlock(summoner);
 
-        //Plant
-        //registerBlock(pearcel_crops);
-
     }
 
     public static void registerRenders(){
@@ -164,9 +156,6 @@ public class ModBlocks {
         registerRender(pearcel_workbench);
         registerRender(torcher);
         registerRender(summoner);
-
-        //Plants
-        registerRender(pearcel_crops);
 
     }
     
