@@ -9,7 +9,7 @@
 * [Issues](#issues)
 * [Credits](#credits)
 * [Links](#links)
-* [Thank You](#thank you)
+* [Thank You](#thank-you)
 
 ***
 
