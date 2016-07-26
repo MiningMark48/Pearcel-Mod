@@ -174,3 +174,27 @@ config.enderPearcelCooldownTime.title=Ender Pearcel Cooldown Time
 config.enderPearcelCooldownTime.desc=The amount of time the cooldown for the Ender Pearcel lasts (in seconds)
 config.pearcelDropChance.title=Pearcel Drop Chance from leaves
 config.pearcelDropChance.desc=The chance a pearcel has to drop from leaves.
+
+#Achievements
+achievement.get_pearcel=Odd Green Pears?
+achievement.get_pearcel.desc=Get Pearcels by breaking leaves.
+achievement.craft_pearcel_ingot=It's Green!
+achievement.craft_pearcel_ingot.desc=Make a Pearcel Ingot.
+achievement.craft_tier1_cc=Crafting Component?
+achievement.craft_tier1_cc.desc=Craft a Tier 1 Crafting Component.
+achievement.craft_tier2_cc=Another One?
+achievement.craft_tier2_cc.desc=Craft a Tier 2 Crafting Component.
+achievement.craft_tier3_cc=Wait, what?
+achievement.craft_tier3_cc.desc=Craft a Tier 3 Crafting Component.
+achievement.craft_tier4_cc=Nether Stars?!
+achievement.craft_tier4_cc.desc=Craft a Tier 4 Crafting Component.
+achievement.craft_pcp=Portable Crafting what now?
+achievement.craft_pcp.desc=Craft a Portable Crafting Pearcel
+achievement.craft_pearcel_tools=Strong Tools!
+achievement.craft_pearcel_tools.desc=Craft a Pearcel Weapon or Tool
+achievement.craft_pearcel_armor_plating=Strong Armor! ...plating
+achievement.craft_pearcel_armor_plating.desc=Craft armor plating for Pearcel Armor.
+achievement.craft_pearcel_armor=Strong Armor!
+achievement.craft_pearcel_armor.desc=Craft Pearcel Armor.
+achievement.craft_pearcel_bread=Mmmm... bread. Pearcel Bread.
+achievement.craft_pearcel_bread.desc=Craft Pearcel Bread.

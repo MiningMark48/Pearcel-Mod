@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.event.EventBreakForPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
@@ -60,6 +61,8 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new EventBreakForPearcel());
 
 		Recipes.init();
+
+		Achievements.init();
 
         LogHelper.info(Translate.toLocal("log.info.init"));
 
