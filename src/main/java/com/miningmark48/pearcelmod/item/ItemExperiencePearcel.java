@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
@@ -68,6 +69,7 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
             item.getTagCompound().setInteger("playerXP", xpToStore);
             player.experienceLevel = 0;
             player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.2F, rand.nextFloat() * 2.5F);
+            player.addStat(Achievements.achievement_use_experience_pearcel);
             return new ActionResult(EnumActionResult.PASS, item);
         }
     }

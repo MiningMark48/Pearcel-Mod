@@ -73,6 +73,9 @@ public class ItemCraft {
         if(stack.isItemEqual(new ItemStack(ModItems.pearcel_bread))){
             player.addStat(Achievements.achievement_craft_pearcel_bread);
         }
+        if(stack.isItemEqual(new ItemStack(ModItems.ender_pearcel))){
+            player.addStat(Achievements.achievement_craft_ender_pearcel);
+        }
 
     }
 

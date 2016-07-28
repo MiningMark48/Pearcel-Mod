@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
@@ -78,6 +79,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
             } else {
                 if (player.dimension == dim) {
                     player.setPositionAndUpdate(tpX, tpY, tpZ);
+                    player.addStat(Achievements.achievement_use_tp_pearcel);
                     if (!world.isRemote) {
                         player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.tpPearcel.tp"))));
                     }

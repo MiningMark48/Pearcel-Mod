@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.achievements.Achievements;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,7 @@ public class ItemPEPC extends ItemPearcelMod{
     {
         if (!player.isSneaking()){
             player.displayGUIChest(player.getInventoryEnderChest());
+            player.addStat(Achievements.achievement_use_pepc);
             player.playSound(SoundEvents.BLOCK_CHEST_OPEN, 0.5F, world.rand.nextFloat() * 0.1F + 0.9F);
             return new ActionResult(EnumActionResult.PASS, stack);
         }else{
