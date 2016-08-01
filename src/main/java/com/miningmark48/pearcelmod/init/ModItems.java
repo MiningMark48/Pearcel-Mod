@@ -18,6 +18,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
     public static Item.ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("PearcelTools", 3, 1000, 15.0F, 10.0F, 20);
+    public static Item.ToolMaterial matToolPearcelReinforced = EnumHelper.addToolMaterial("PearcelToolsRIF", 3, 5000, 20.0F, 10.0F, 15);
     public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 15.0F, 30);
     public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("pearcel", Reference.MOD_ID + ":" + "pearcel_armor", 100, new int[]{4, 7, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
 
@@ -67,7 +68,7 @@ public class ModItems {
     public static Item ender_pearcel;
     public static Item pearcel_bow;
     public static Item pearcel_stone_placer;
-    public static Item experienced_pearcel_torch;
+    public static Item reinforced_pearcel_pickaxe;
 
     public static void init(){
         //General Items
@@ -116,6 +117,7 @@ public class ModItems {
         ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setRegistryName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setRegistryName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_stone_placer = new ItemPearcelBlockPlacer().setUnlocalizedName("pearcel_stone_placer").setRegistryName("pearcel_stone_placer").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        reinforced_pearcel_pickaxe = new ItemReinforcedPearcelPickaxe(matToolPearcelReinforced).setUnlocalizedName("reinforced_pearcel_pickaxe").setRegistryName("reinforced_pearcel_pickaxe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -165,6 +167,7 @@ public class ModItems {
         GameRegistry.register(ender_pearcel);
         GameRegistry.register(pearcel_bow);
         GameRegistry.register(pearcel_stone_placer);
+        GameRegistry.register(reinforced_pearcel_pickaxe);
 
     }
 
@@ -218,6 +221,7 @@ public class ModItems {
         registerRender(pearcel_bow, 2, "pearcel_bow_pulling_2");
         registerRender(pearcel_bow, 3, "pearcel_bow_pulling_3");
         registerRender(pearcel_stone_placer);
+        registerRender(reinforced_pearcel_pickaxe);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
