@@ -3,14 +3,11 @@ package com.miningmark48.pearcelmod.item;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
-import java.util.Random;
 
 public class ItemReinforcedPearcelPickaxe extends ItemPickaxe {
     public ItemReinforcedPearcelPickaxe(ToolMaterial material) {
