@@ -17,8 +17,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-    public static Item.ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("PearcelTools", 3, 1000, 15.0F, 10.0F, 20);
-    public static Item.ToolMaterial matToolPearcelReinforced = EnumHelper.addToolMaterial("PearcelToolsRIF", 3, 5000, 20.0F, 10.0F, 15);
+    public static Item.ToolMaterial matToolPearcel = EnumHelper.addToolMaterial("PearcelTools", 3, 1048, 15.0F, 10.0F, 20);
+    public static Item.ToolMaterial matToolPearcelReinforced = EnumHelper.addToolMaterial("RIFPearcelTools", 3, 4096, 20.0F, 10.0F, 15);
     public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 15.0F, 30);
     public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("pearcel", Reference.MOD_ID + ":" + "pearcel_armor", 100, new int[]{4, 7, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
 

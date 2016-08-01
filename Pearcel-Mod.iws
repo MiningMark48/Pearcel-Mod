@@ -15,14 +15,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/level.dat" afterPath="$PROJECT_DIR$/saves/Development World/level.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/level.dat_old" afterPath="$PROJECT_DIR$/saves/Development World/level.dat_old" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/playerdata/a500574d-29ab-3de0-aeea-a0c1c98dfb89.dat" afterPath="$PROJECT_DIR$/saves/Development World/playerdata/a500574d-29ab-3de0-aeea-a0c1c98dfb89.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/region/r.-1.-1.mca" afterPath="$PROJECT_DIR$/saves/Development World/region/r.-1.-1.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/saves/Development World/region/r.-1.0.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/region/r.0.-1.mca" afterPath="$PROJECT_DIR$/saves/Development World/region/r.0.-1.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/region/r.0.0.mca" afterPath="$PROJECT_DIR$/saves/Development World/region/r.0.0.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/session.lock" afterPath="$PROJECT_DIR$/saves/Development World/session.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.iws" afterPath="$PROJECT_DIR$/Pearcel-Mod.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/splash.properties" afterPath="$PROJECT_DIR$/config/splash.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/options.txt" afterPath="$PROJECT_DIR$/options.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saves/Development World/stats/a500574d-29ab-3de0-aeea-a0c1c98dfb89.json" afterPath="$PROJECT_DIR$/saves/Development World/stats/a500574d-29ab-3de0-aeea-a0c1c98dfb89.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/reinforced_pearcel_pickaxe.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/reinforced_pearcel_pickaxe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usercache.json" afterPath="$PROJECT_DIR$/usercache.json" />
     </list>
     <ignored path="Pearcel-Mod.iws" />
@@ -50,21 +52,11 @@
       <file leaf-file-name="ItemReinforcedPearcelPickaxe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemReinforcedPearcelPickaxe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reinforced_pearcel_pickaxe.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/reinforced_pearcel_pickaxe.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -132,14 +124,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModItems.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModItems.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="125" column="57" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,13 +154,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/GuiModConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemReinforcedPearcelPickaxe.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/reinforced_pearcel_pickaxe.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java" />
       </list>
     </option>
   </component>
@@ -1083,6 +1073,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,16 +1099,6 @@
         <state relative-caret-position="1003">
           <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="125" column="57" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,20 +1201,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/reinforced_pearcel_pickaxe.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemReinforcedPearcelPickaxe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/reinforced_pearcel_pickaxe.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding />
         </state>
       </provider>
