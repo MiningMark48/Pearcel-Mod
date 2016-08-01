@@ -46,6 +46,7 @@ public class ModItems {
     public static Item pearcel_sandwich;
     public static Item pearcel_juice_bottle;
     public static Item pearcel_infinifood;
+    public static Item golden_pearcel;
 
     //Tools and Armor
     public static Item pearcel_sword;
@@ -95,6 +96,7 @@ public class ModItems {
         pearcel_sandwich = new ItemPearcelFood(9, 1.1F, true).setUnlocalizedName("pearcel_sandwich").setRegistryName("pearcel_sandwich").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_juice_bottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcel_juice_bottle").setRegistryName("pearcel_juice_bottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_infinifood = new ItemPearcelFoodInfinite(7, 1.5F, false).setUnlocalizedName("pearcel_infinifood").setRegistryName("pearcel_infinifood").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        golden_pearcel = new ItemGoldenPearcel().setUnlocalizedName("golden_pearcel").setRegistryName("golden_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Tools and Armor
         pearcel_sword = new ItemPearcelSword(matToolPearcel).setUnlocalizedName("pearcel_sword").setRegistryName("pearcel_sword").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -145,6 +147,7 @@ public class ModItems {
         GameRegistry.register(pearcel_sandwich);
         GameRegistry.register(pearcel_juice_bottle);
         GameRegistry.register(pearcel_infinifood);
+        GameRegistry.register(golden_pearcel);
 
         //Tools and Armor
         GameRegistry.register(pearcel_sword);
@@ -196,6 +199,7 @@ public class ModItems {
         registerRender(pearcel_sandwich);
         registerRender(pearcel_juice_bottle);
         registerRender(pearcel_infinifood);
+        registerRender(golden_pearcel);
 
         //Tools and Armor
         registerRender(pearcel_sword);
