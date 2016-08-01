@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.handler;
 
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.Translate;
+import net.minecraft.util.IntegerCache;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -22,6 +23,7 @@ public class ConfigurationHandler {
     public static int enderPearcelCooldownTime;
     public static int pearcelDropChance;
     public static float enderPearcelVelocity;
+    public static float rifPPickBaseHardness;
 
     public static void init(File configFile){
 
@@ -63,6 +65,9 @@ public class ConfigurationHandler {
         //World Gen
         doWorldGen = configuration.getBoolean(Translate.toLocal("config.doWorldGen.title"), Translate.toLocal("config.category.worldGen.title"), true, Translate.toLocal("config.doWorldGen.desc"));
         doSpecialWorldGen = configuration.getBoolean(Translate.toLocal("config.doSpecialWorldGen.title"), Translate.toLocal("config.category.worldGen.title"), true, Translate.toLocal("config.doSpecialWorldGen.desc"));
+
+        //RIF Pearcel Pickaxe
+        rifPPickBaseHardness = configuration.getFloat(Translate.toLocal("config.rifPPickBaseHardness.title"), Translate.toLocal("config.category.rifPearcelPickaxe.title"), 50.0F, 0.25F, Float.MAX_VALUE, Translate.toLocal("config.rifPPickBaseHardness.desc"));
 
         if (configuration.hasChanged()){
             configuration.save();

@@ -149,6 +149,8 @@ config.category.torcher.title=Torcher
 config.category.torcher.desc=Torcher configuration.
 config.category.worldGen.title=World Gen
 config.category.worldGen.desc=Configure Pearcel Mod world gen.
+config.category.rifPearcelPickaxe.title=Reinforced Pearcel Pickaxe
+config.categoty.rifPearcelPickaxe.desc=Configuration options for the RIF Pearcel Pickaxe.
 
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
@@ -175,6 +177,8 @@ config.enderPearcelCooldownTime.title=Ender Pearcel Cooldown Time
 config.enderPearcelCooldownTime.desc=The amount of time the cooldown for the Ender Pearcel lasts (in seconds)
 config.pearcelDropChance.title=Pearcel Drop Chance from leaves
 config.pearcelDropChance.desc=The chance a pearcel has to drop from leaves.
+config.rifPPickBaseHardness.title=Reinforced Pearcel Pickaxe Hardness
+config.rifPPickBaseHardness.desc=Base hardness for fortune level to be applied.
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?
