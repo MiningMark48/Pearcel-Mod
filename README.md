@@ -6,16 +6,18 @@
 ## Table of Contents
 * [About](#about)
 * [License](#license)
+* [Mod Packs](#mod-packs)
 * [Issues](#issues)
 * [Credits](#credits)
-* [Links](#links)
+* [CurseForge](http://minecraft.curseforge.com/projects/pearcel-mod)
+* [GitHub](https://github.com/MiningMark48/Pearcel-Mod/tree/master)
+* [Wiki](https://github.com/MiningMark48/Pearcel-Mod/wiki)
 * [Thank You](#thank-you)
 
 ***
 
 ## About
-Pearcel Mod is a mod made by MiningMark48 and Codyrule040 that is designed to add items and blocks designed around the Pearcel item for a fun, joyful time in Minecraft.   
-
+Pearcel Mod is a mod made by MiningMark48 and Codyrule040 that is designed to add items and blocks designed around the Pearcel item for a fun, joyful time in Minecraft.
 
 ***
 
@@ -39,6 +41,13 @@ This project is under a custom license.
 
 ***
 
+## Mod Packs
+You are welcome to use this mod in your mod pack as long as credit is provided. Doing so, please review our [license](#license). 
+
+Example of giving credit: `Pearcel Mod by MiningMark48`
+
+***
+
 ## Issues
 If any issues are found within this mod, they can be posted on the issue tracker, which can be found [here](https://waffle.io/MiningMark48/Pearcel-Mod).
 
@@ -48,15 +57,7 @@ If any issues are found within this mod, they can be posted on the issue tracker
 * MiningMark48 for code, textures.
 * Codyrule040 for textures.
 * SomewhatInfinite for textures.
-* Community for support.
-
-***
-
-## Links
-* [CurseForge](http://minecraft.curseforge.com/projects/pearcel-mod)
-* [Curse](http://mods.curse.com/mc-mods/minecraft/227627-pearcel-mod)
-* [GitHub](https://github.com/MiningMark48/Pearcel-Mod/tree/master)
-* [Issues](https://waffle.io/MiningMark48/Pearcel-Mod)
+* Community for support and ideas.
 
 ***
 ## Thank You
