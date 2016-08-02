@@ -1,16 +1,26 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.stats.AchievementList;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.List;
 
 public class ItemGoldenPearcel extends ItemPearcelFood{
 
     public ItemGoldenPearcel() {
         super(8, 5.0F, false);
+        setAlwaysEdible();
+    }
+
+    @Override
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+        par3List.add(Translate.toLocal("tooltip.item.golden_pearcel.line1"));
     }
 
     public void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player)
@@ -18,10 +28,16 @@ public class ItemGoldenPearcel extends ItemPearcelFood{
         if (!worldIn.isRemote)
         {
             player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 4000, 2));
-            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 6000, 1));
+            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 4000, 1));
             player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
-            player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 8000, 4));
+            player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 6000, 4));
         }
+    }
+
+    @SideOnly(Side.CLIENT)
+    public boolean hasEffect(ItemStack stack)
+    {
+        return true;
     }
 
 }

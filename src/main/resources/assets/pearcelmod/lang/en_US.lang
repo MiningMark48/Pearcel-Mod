@@ -49,6 +49,7 @@ item.ender_pearcel.name=Ender Pearcel
 item.pearcel_bow.name=Pearcel Bow
 item.pearcel_stone_placer.name=Pearcel Block Placer
 item.reinforced_pearcel_pickaxe.name=Reinforced Pearcel Pickaxe
+item.golden_pearcel.name=Golden Pearcel
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -107,6 +108,7 @@ tooltip.item.pearcel_arrow.line2.upgrade.zoom=Zoom
 tooltip.item.pearcel_infinifood.line1=Infinite Food! ...at a cost.
 tooltip.item.pbp.line1=Mode:
 tooltip.item.pbp.line2=Sneak + Right Click to change modes.
+tooltip.item.golden_pearcel.line1=Better than the apple.
 
 #Chat Messages
 chat.tpPearcel.location.notSet=Location not bound!
