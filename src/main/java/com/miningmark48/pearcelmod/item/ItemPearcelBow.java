@@ -15,6 +15,7 @@ import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.*;
+import net.minecraft.stats.StatList;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
@@ -88,11 +89,6 @@ public class ItemPearcelBow extends ItemBow{
 
             int i = getInventorySlotContainItem(ModItems.pearcel_arrow, player);
             ItemStack itemstack = new ItemStack(ModItems.pearcel_arrow);
-            if (player.inventory.getStackInSlot(i).hasTagCompound()) {
-                if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("zoom")) {
-                    zoomOut();
-                }
-            }
             int j = this.getMaxItemUseDuration(stack);
 
             ArrowLooseEvent event = new ArrowLooseEvent(player, stack, world, j, true);
@@ -104,7 +100,7 @@ public class ItemPearcelBow extends ItemBow{
 
             boolean flag = player.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, stack) > 0;
 
-            if (flag || (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow)))) {
+            if (flag || (i != -1)) {
                 float f = (float) j / 20.0F;
                 f = (f * f + f * 2.0F) / 3.0F;
 
@@ -115,65 +111,69 @@ public class ItemPearcelBow extends ItemBow{
                 if (f > 1.0F) {
                     f = 1.0F;
                 }
+                if (!world.isRemote) {
+                    ItemPearcelArrow itemarrow = (ItemPearcelArrow) ((ItemPearcelArrow) (itemstack.getItem() instanceof ItemPearcelArrow ? itemstack.getItem() : ModItems.pearcel_arrow));
+                    EntityArrow entityarrow = itemarrow.createArrow(world, itemstack, player);
+                    entityarrow.setAim(player, player.rotationPitch, player.rotationYaw, 0.0F, f * 3.0F, 1.0F);
 
-                ItemPearcelArrow itemarrow = (ItemPearcelArrow) ((ItemPearcelArrow) (itemstack.getItem() instanceof ItemPearcelArrow ? itemstack.getItem() : ModItems.pearcel_arrow ));
-                EntityArrow entityarrow = itemarrow.createArrow(world, itemstack, player);
-                entityarrow.setAim(player, player.rotationPitch, player.rotationYaw, 0.0F, f * 3.0F, 1.0F);
+                    if (f == 1.0F) {
+                        entityarrow.setIsCritical(true);
+                    }
 
-                if (f == 1.0F) {
-                    entityarrow.setIsCritical(true);
-                }
+                    int k = EnchantmentHelper.getEnchantmentLevel(Enchantments.POWER, stack);
 
-                int k = EnchantmentHelper.getEnchantmentLevel(Enchantments.POWER, stack);
+                    if (k > 0) {
+                        entityarrow.setDamage(entityarrow.getDamage() + (double) k * 0.5D + 0.5D);
+                    }
 
-                if (k > 0) {
-                    entityarrow.setDamage(entityarrow.getDamage() + (double) k * 0.5D + 0.5D);
-                }
+                    int l = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, stack);
 
-                int l = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, stack);
+                    if (l > 0) {
+                        entityarrow.setKnockbackStrength(l);
+                    }
 
-                if (l > 0) {
-                    entityarrow.setKnockbackStrength(l);
-                }
+                    if (EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack) > 0) {
+                        entityarrow.setFire(100);
+                    }
 
-                if (EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack) > 0) {
-                    entityarrow.setFire(100);
-                }
+                    stack.damageItem(1, player);
+                    world.playSound(player, player.getPosition(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
 
-                stack.damageItem(1, player);
-                world.playSound(player, player.getPosition(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-
-                if (flag) {
-                    entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
-                } else {
-                    if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow))) {
-                        if (player.inventory.getStackInSlot(i).hasTagCompound()) {
-                            if (!player.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
+                    if (flag) {
+                        entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
+                    } else {
+                        if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow))) {
+                            if (player.inventory.getStackInSlot(i).hasTagCompound()) {
+                                if (!player.inventory.getStackInSlot(i).getTagCompound().getBoolean("inf")) {
+                                    player.inventory.getStackInSlot(i).damageItem(1, player);
+                                    if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
+                                        player.inventory.removeStackFromSlot(i);
+                                    }
+                                }
+                                if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")) {
+                                    entityarrow.setDamage(entityarrow.getDamage() + 2.0D);
+                                }
+                                if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("knock")) {
+                                    entityarrow.setKnockbackStrength(2);
+                                }
+                            }else{
                                 player.inventory.getStackInSlot(i).damageItem(1, player);
+
                                 if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
                                     player.inventory.removeStackFromSlot(i);
                                 }
                             }
-                            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("pow")) {
-                                entityarrow.setDamage(entityarrow.getDamage() + 2.0D);
-                            }
-                            if (player.inventory.getStackInSlot(i).getTagCompound().getBoolean("knock")) {
-                                entityarrow.setKnockbackStrength(2);
-                            }
-                        } else {
-                            player.inventory.getStackInSlot(i).damageItem(1, player);
-                            if (player.inventory.getStackInSlot(i).getItemDamage() == 0) {
-                                player.inventory.removeStackFromSlot(i);
-                            }
+                            entityarrow.pickupStatus = EntityArrow.PickupStatus.DISALLOWED;
                         }
-                        entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
+
                     }
 
+                    world.spawnEntityInWorld(entityarrow);
+                    zoomOut();
+                    entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
+
                 }
 
-                if (!world.isRemote) {
-                    world.spawnEntityInWorld(entityarrow);
-                }
             }
         }
 
@@ -238,15 +238,9 @@ public class ItemPearcelBow extends ItemBow{
 
     }
 
-
     public int getItemEnchantability()
     {
         return 1;
-    }
-
-    @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-
     }
 
     @Override

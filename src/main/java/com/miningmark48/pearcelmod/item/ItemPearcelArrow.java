@@ -8,6 +8,7 @@ import net.minecraft.entity.projectile.EntityTippedArrow;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
@@ -123,6 +124,19 @@ public class ItemPearcelArrow extends ItemPearcelMod{
 
         return new ActionResult(EnumActionResult.PASS, stack);
     }
+
+//    public boolean isInfinite(ItemStack stack, ItemStack bow, net.minecraft.entity.player.EntityPlayer player)
+//    {
+//        if (stack.hasTagCompound()){
+//            if (stack.getTagCompound().getBoolean("inf")){
+//                return true;
+//            }else{
+//                return false;
+//            }
+//        }else{
+//            return false;
+//        }
+//    }
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
