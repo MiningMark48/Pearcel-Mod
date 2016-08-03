@@ -39,16 +39,6 @@ public class BlockTorcher extends BlockPearcelMod{
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            list.add(Translate.toLocal("tooltip." + stack.getUnlocalizedName().substring(0, stack.getUnlocalizedName().length() - 5) + ".line1"));
-        }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
-        }
-
-    }
-
-    @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos){
         return BOUNDING_BOX;
     }
