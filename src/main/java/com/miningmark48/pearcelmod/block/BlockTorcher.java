@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.block;
 import com.google.common.base.Predicate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
@@ -34,8 +35,17 @@ public class BlockTorcher extends BlockPearcelMod{
     public BlockTorcher(){
         setHardness(0.5F);
         setResistance(2.5F);
-        setLightLevel(1.0F);
-        //setBlockBounds(0.375F, 0.0F, 0.375F, 0.625F, 1.0F, 0.625F);
+        setLightLevel(1.25F);
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+        if (KeyCheck.isHoldingShift()) {
+            list.add(Translate.toLocal("tooltip." + stack.getUnlocalizedName().substring(0, stack.getUnlocalizedName().length() - 5) + ".line1"));
+        }else{
+            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+        }
+
     }
 
     @Override
@@ -73,8 +83,6 @@ public class BlockTorcher extends BlockPearcelMod{
 
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ){
         if (!player.isSneaking()){
-
-            //player.addStat(Achievements.achievementTorcher, 1);
 
             Random rand = new Random();
             int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
