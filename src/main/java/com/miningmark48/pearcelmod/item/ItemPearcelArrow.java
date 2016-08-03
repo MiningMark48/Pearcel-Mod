@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -141,42 +142,47 @@ public class ItemPearcelArrow extends ItemPearcelMod{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (stack.hasTagCompound()) {
-            if (!stack.getTagCompound().getBoolean("inf") && !stack.getTagCompound().getBoolean("pow") && !stack.getTagCompound().getBoolean("knock") && !stack.getTagCompound().getBoolean("zoom") ) {
+        if (KeyCheck.isHoldingShift()) {
+
+            if (stack.hasTagCompound()) {
+                if (!stack.getTagCompound().getBoolean("inf") && !stack.getTagCompound().getBoolean("pow") && !stack.getTagCompound().getBoolean("knock") && !stack.getTagCompound().getBoolean("zoom")) {
+                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pearcel_arrow.line1.no_upgrade"));
+                    list.add(TextFormatting.DARK_AQUA + infItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.inf"));
+                    list.add(TextFormatting.DARK_AQUA + powItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.pow"));
+                    list.add(TextFormatting.DARK_AQUA + knockItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.knock"));
+                    list.add(TextFormatting.DARK_AQUA + zoomItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.zoom"));
+                } else {
+                    list.add(TextFormatting.GOLD + Translate.toLocal("tooltip.item.pearcel_arrow.line1.upgrade"));
+                    if (stack.getTagCompound().getBoolean("inf")) {
+                        list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.inf"));
+                    } else {
+                        list.add(TextFormatting.DARK_AQUA + infItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.inf"));
+                    }
+                    if (stack.getTagCompound().getBoolean("pow")) {
+                        list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.pow"));
+                    } else {
+                        list.add(TextFormatting.DARK_AQUA + powItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.pow"));
+                    }
+                    if (stack.getTagCompound().getBoolean("knock")) {
+                        list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.knock"));
+                    } else {
+                        list.add(TextFormatting.DARK_AQUA + knockItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.knock"));
+                    }
+                    if (stack.getTagCompound().getBoolean("zoom")) {
+                        list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.zoom"));
+                    } else {
+                        list.add(TextFormatting.DARK_AQUA + zoomItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.zoom"));
+                    }
+                }
+            } else {
                 list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pearcel_arrow.line1.no_upgrade"));
                 list.add(TextFormatting.DARK_AQUA + infItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.inf"));
                 list.add(TextFormatting.DARK_AQUA + powItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.pow"));
                 list.add(TextFormatting.DARK_AQUA + knockItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.knock"));
                 list.add(TextFormatting.DARK_AQUA + zoomItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.zoom"));
-            }else{
-                list.add(TextFormatting.GOLD + Translate.toLocal("tooltip.item.pearcel_arrow.line1.upgrade"));
-                if(stack.getTagCompound().getBoolean("inf")) {
-                    list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.inf"));
-                }else{
-                    list.add(TextFormatting.DARK_AQUA + infItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.inf"));
-                }
-                if(stack.getTagCompound().getBoolean("pow")) {
-                    list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.pow"));
-                }else{
-                    list.add(TextFormatting.DARK_AQUA + powItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.pow"));
-                }
-                if(stack.getTagCompound().getBoolean("knock")) {
-                    list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.knock"));
-                }else{
-                    list.add(TextFormatting.DARK_AQUA + knockItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.knock"));
-                }
-                if(stack.getTagCompound().getBoolean("zoom")) {
-                    list.add(TextFormatting.GRAY + Translate.toLocal("tooltip.item.pearcel_arrow.line2.upgrade.zoom"));
-                }else{
-                    list.add(TextFormatting.DARK_AQUA + zoomItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.zoom"));
-                }
             }
         }else{
-            list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pearcel_arrow.line1.no_upgrade"));
-            list.add(TextFormatting.DARK_AQUA + infItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.inf"));
-            list.add(TextFormatting.DARK_AQUA + powItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.pow"));
-            list.add(TextFormatting.DARK_AQUA + knockItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.knock"));
-            list.add(TextFormatting.DARK_AQUA + zoomItemName + " " + Translate.toLocal("tooltip.item.pearcel_arrow.line2.no_upgrade.zoom"));
+            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
 
     }

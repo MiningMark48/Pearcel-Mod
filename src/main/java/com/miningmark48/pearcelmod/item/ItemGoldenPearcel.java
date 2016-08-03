@@ -1,10 +1,12 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -20,7 +22,11 @@ public class ItemGoldenPearcel extends ItemPearcelFood{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add(Translate.toLocal("tooltip.item.golden_pearcel.line1"));
+        if (KeyCheck.isHoldingShift()) {
+            par3List.add(Translate.toLocal("tooltip.item.golden_pearcel.line1"));
+        }else{
+            par3List.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+        }
     }
 
     public void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player)

@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -26,15 +27,20 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (stack.hasTagCompound()) {
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
-        }else{
-            stack.setTagCompound(new NBTTagCompound());
-            stack.getTagCompound().setInteger("mode", 1);
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
-        }
+        if (KeyCheck.isHoldingShift()) {
 
-        list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pbp.line2"));
+            if (stack.hasTagCompound()) {
+                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
+            } else {
+                stack.setTagCompound(new NBTTagCompound());
+                stack.getTagCompound().setInteger("mode", 1);
+                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
+            }
+
+            list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pbp.line2"));
+        }else{
+            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+        }
 
     }
 
