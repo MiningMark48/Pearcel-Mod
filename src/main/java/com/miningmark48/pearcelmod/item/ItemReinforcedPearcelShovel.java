@@ -8,6 +8,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
@@ -29,6 +31,12 @@ public class ItemReinforcedPearcelShovel extends ItemSpade{
             par1ItemStack.addEnchantment(Enchantments.SILK_TOUCH, 1);
         }
 
+    }
+
+    @SideOnly(Side.CLIENT)
+    public boolean hasEffect(ItemStack stack)
+    {
+        return false;
     }
 
 }
