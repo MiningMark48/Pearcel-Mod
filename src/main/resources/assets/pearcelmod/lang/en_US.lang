@@ -50,6 +50,7 @@ item.pearcel_bow.name=Pearcel Bow
 item.pearcel_stone_placer.name=Pearcel Block Placer
 item.reinforced_pearcel_pickaxe.name=Reinforced Pearcel Pickaxe
 item.golden_pearcel.name=Golden Pearcel
+item.reinforced_pearcel_shovel.name=Reinforced Pearcel Shovel
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -113,6 +114,7 @@ tooltip.item.pbp.line2=Sneak + Right Click to change modes.
 tooltip.item.golden_pearcel.line1=Better than the apple.
 tooltip.item.reinforced_pearcel_pickaxe.line1=Strength is key.
 tooltip.item.reinforced_pearcel_pickaxe.line2=Applies fortune on harder materials.
+tooltip.item.reinforced_pearcel_shovel.line1=Better. Faster. Stronger.
 
 #Chat Messages
 chat.tpPearcel.location.notSet=Location not bound!
