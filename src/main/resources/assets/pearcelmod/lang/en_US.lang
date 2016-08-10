@@ -81,6 +81,7 @@ tile.pearcel_charcoal_block.name=Block of Pearcel Charcoal
 tile.torcher.name=Torcher
 tile.summoner.name=Summoner
 tile.pearcel_glass_pane.name=Pearcel Glass Pane
+tile.pedestal.name=Pedestal
 
 #Tooltips
 tooltip.item.hold=Hold
@@ -130,8 +131,8 @@ chat.item.pearcel_arrow.upgraded.zoom=Zoom upgrade applied!
 chat.item.pbp.modeChange=Mode changed.
 
 #Chat messages - Summoner
-summoner.error.missingBlock=Missing block required for summoning activation!
-summoner.error.incorrectBlock=Incorrect block was used for summoning, block was tainted.
+summoner.error.missingBlock=Missing blocks required for summoning activation!
+summoner.error.incorrectBlock=Incorrect blocks were used for summoning, blocks were tainted.
 summoner.error.incorrectItem=Incorrect item was used for summoning.
 summoner.summoned=was successfully summoned.
 summoner.mob_summon.wither=Wither

@@ -32,6 +32,7 @@ public class ModBlocks {
     public static Block pearcel_end_stone;
     public static Block pearcel_charcoal_block;
     public static Block pearcel_glass_pane;
+    public static Block pedestal;
 
     //Ores
     public static Block pearcel_ore;
@@ -67,6 +68,7 @@ public class ModBlocks {
         pearcel_end_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_end_stone").setRegistryName("pearcel_end_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_charcoal_block = new BlockPearcelMod().setUnlocalizedName("pearcel_charcoal_block").setRegistryName("pearcel_charcoal_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_glass_pane = new BlockPearcelPane(Material.GLASS, true).setUnlocalizedName("pearcel_glass_pane").setRegistryName("pearcel_glass_pane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pedestal = new BlockPedestal().setUnlocalizedName("pedestal").setRegistryName("pedestal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
         pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setRegistryName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -105,6 +107,7 @@ public class ModBlocks {
         registerBlock(pearcel_end_stone);
         registerBlock(pearcel_charcoal_block);
         registerBlock(pearcel_glass_pane);
+        registerBlock(pedestal);
 
         //Ores
         registerBlock(pearcel_ore);
@@ -142,6 +145,7 @@ public class ModBlocks {
         registerRender(pearcel_end_stone);
         registerRender(pearcel_charcoal_block);
         registerRender(pearcel_glass_pane);
+        registerRender(pedestal);
 
         //Ores
         registerRender(pearcel_ore);
