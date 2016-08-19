@@ -116,9 +116,13 @@ public class BlockSummoner extends BlockPearcelMod{
                         }
                     }//Dragon
                     else if (isCorrectSetup(pos, world, Blocks.DRAGON_EGG, Blocks.DIAMOND_BLOCK)) {
-                        setTainted(pos, world);
-                        world.spawnEntityInWorld(dragon);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.dragon") + " " + Translate.toLocal("summoner.summoned")));
+                        if(player.dimension == 1) {
+                            setTainted(pos, world);
+                            world.spawnEntityInWorld(dragon);
+                            player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.dragon") + " " + Translate.toLocal("summoner.summoned")));
+                        }else{
+                            player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.wrongDimension")));
+                        }
                     }//Wither
                     else if (isCorrectSetup(pos, world, Blocks.SKULL, Blocks.DIAMOND_BLOCK)) {
                         setTainted(pos, world);
