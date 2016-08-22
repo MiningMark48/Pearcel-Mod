@@ -41,6 +41,7 @@ public class PearcelMod {
 		ModBlocks.init();
 		ModBlocks.register();
 		ModEntities.init();
+		ModSoundEvents.registerSounds();
 
 		EntityRegistry.registerModEntity(EntityEnderPearcel.class, "EnderPearcel", 10, this, 350, 50, true);
 

@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
+import com.miningmark48.pearcelmod.init.ModSoundEvents;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -192,7 +193,7 @@ public class BlockSummoner extends BlockPearcelMod{
                         }
                     }
                 }
-                player.playSound(SoundEvents.ENTITY_GENERIC_EXPLODE, 1.0F, 0.5F);
+                player.playSound(ModSoundEvents.BLOCK_SUMMONER_LAUGH, 5.0F, 1.0F);
                 world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, x, y, z, 1.0D, 0.0D, 0.0D);
                 if (!player.isCreative()){
                     player.getHeldItem(EnumHand.MAIN_HAND).damageItem(1, player);
