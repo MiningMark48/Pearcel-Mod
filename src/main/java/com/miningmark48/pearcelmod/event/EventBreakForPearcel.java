@@ -24,13 +24,23 @@ public class EventBreakForPearcel {
         Block block = world.getBlockState(pos).getBlock();
 
         if (!player.isCreative()) {
-            if (block == Blocks.LEAVES) {
+            if (block == Blocks.LEAVES || block == Blocks.TALLGRASS) {
                 EntityItem entityItem = new EntityItem(world);
                 entityItem.setEntityItemStack(new ItemStack(ModItems.pearcel_item));
                 entityItem.setPosition(pos.getX(), pos.getY(), pos.getZ());
 
                 Random rand = new Random();
-                int r = rand.nextInt(100 / ConfigurationHandler.pearcelDropChance) + 1;
+                int r;
+
+                if(player.getHeldItemMainhand() != null) {
+                    if (player.getHeldItemMainhand().getItem() == ModItems.pearcel_crook) {
+                        r = 1;
+                    }else {
+                        r = rand.nextInt(100 / ConfigurationHandler.pearcelDropChance) + 1;
+                    }
+                }else {
+                    r = rand.nextInt(100 / ConfigurationHandler.pearcelDropChance) + 1;
+                }
 
                 if (r == 1){
                     world.spawnEntityInWorld(entityItem);
