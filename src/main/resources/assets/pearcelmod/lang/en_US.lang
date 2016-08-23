@@ -19,7 +19,7 @@ item.infinity_upgrade.name=Infinity Upgrade
 item.power_upgrade.name=Power Upgrade
 item.knockback_upgrade.name=Knockback Upgrade
 item.zoom_upgrade.name=Zoom Upgrade
-item.pearcel_item.name=Pearcel
+item.pearcel_item.name=§aPearcel§r
 item.pearcel_bread.name=Pearcel Bread
 item.pearcel_pie.name=Pearcel Pie
 item.pearcel_beef.name=Pearcel Beef
@@ -119,6 +119,8 @@ tooltip.item.reinforced_pearcel_pickaxe.line1=Strength is key.
 tooltip.item.reinforced_pearcel_pickaxe.line2=Applies fortune on harder materials.
 tooltip.item.reinforced_pearcel_shovel.line1=Better. Faster. Stronger.
 tooltip.item.pearcel_crook.line1=Guarantees a pearcel with the swift break of leaves.
+tooltip.item.pearcel_item.line1=The basis of everything.
+tooltip.item.pearcel_item.line2=Drops from leaves.
 
 #Chat Messages
 chat.tpPearcel.location.notSet=Location not bound!
