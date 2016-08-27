@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
@@ -59,6 +60,9 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
                 world.setBlockState(pos.offset(side), Blocks.COBBLESTONE.getDefaultState());
             }
         }
+
+        player.playSound(SoundEvents.BLOCK_STONE_PLACE, 1.0F, 1.0F);
+
         return EnumActionResult.SUCCESS;
     }
 
