@@ -52,6 +52,7 @@ item.reinforced_pearcel_pickaxe.name=Reinforced Pearcel Pickaxe
 item.golden_pearcel.name=Golden Pearcel
 item.reinforced_pearcel_shovel.name=Reinforced Pearcel Shovel
 item.pearcel_crook.name=Pearcel Crook
+item.matter_fabricator.name=Matter Fabrication Hammer
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -121,6 +122,10 @@ tooltip.item.reinforced_pearcel_shovel.line1=Better. Faster. Stronger.
 tooltip.item.pearcel_crook.line1=Guarantees a pearcel with the swift break of leaves.
 tooltip.item.pearcel_item.line1=The basis of everything.
 tooltip.item.pearcel_item.line2=Drops from leaves.
+tooltip.item.mf.line1=Mode:
+tooltip.item.mf.line2=Mattered Pearcel:
+tooltip.item.mf.line3=Shift + Right Click to change modes.
+tooltip.item.mf.line4=Turn the blocks you break into Mattered Pearcels.
 
 #Chat Messages
 chat.tpPearcel.location.notSet=Location not bound!
@@ -134,6 +139,7 @@ chat.item.pearcel_arrow.upgraded.pow=Power upgrade applied!
 chat.item.pearcel_arrow.upgraded.knock=Knockback upgrade applied!
 chat.item.pearcel_arrow.upgraded.zoom=Zoom upgrade applied!
 chat.item.pbp.modeChange=Mode changed.
+chat.item.mf.modeChange=Mode changed.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!
@@ -195,6 +201,8 @@ config.pearcelDropChance.title=Pearcel Drop Chance from leaves
 config.pearcelDropChance.desc=The chance a pearcel has to drop from leaves.
 config.rifPPickBaseHardness.title=Reinforced Pearcel Pickaxe Hardness
 config.rifPPickBaseHardness.desc=Base hardness for fortune level to be applied.
+config.matterFabricatorMPAmount.title=Matter Fabrication Hammer Mattered Pearcel Amount
+config.matterFabricatorMPAmount.desc=Amount at which you receive Neutral Pearcel Matter.
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?

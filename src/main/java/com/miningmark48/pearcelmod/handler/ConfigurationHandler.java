@@ -22,6 +22,7 @@ public class ConfigurationHandler {
     public static int maxStaffFlyHeight;
     public static int enderPearcelCooldownTime;
     public static int pearcelDropChance;
+    public static int matterFabricatorMPAmount;
     public static float enderPearcelVelocity;
     public static float rifPPickBaseHardness;
 
@@ -52,6 +53,7 @@ public class ConfigurationHandler {
 
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
         pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
+        matterFabricatorMPAmount = configuration.getInt(Translate.toLocal("config.matterFabricatorMPAmount.title"), Configuration.CATEGORY_GENERAL, 128, 1, Integer.MAX_VALUE, Translate.toLocal("config.matterFabricatorMPAmount.desc"));
 
         //Ender Pearcel
         enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Translate.toLocal("config.category.enderPearcel.title"), 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));

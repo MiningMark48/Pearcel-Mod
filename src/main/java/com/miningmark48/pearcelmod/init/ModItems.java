@@ -72,6 +72,7 @@ public class ModItems {
     public static Item reinforced_pearcel_pickaxe;
     public static Item reinforced_pearcel_shovel;
     public static Item pearcel_crook;
+    public static Item matter_fabricator;
 
     public static void init(){
         //General Items
@@ -124,6 +125,7 @@ public class ModItems {
         reinforced_pearcel_pickaxe = new ItemReinforcedPearcelPickaxe(matToolPearcelReinforced).setUnlocalizedName("reinforced_pearcel_pickaxe").setRegistryName("reinforced_pearcel_pickaxe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         reinforced_pearcel_shovel = new ItemReinforcedPearcelShovel(matToolPearcelReinforced).setUnlocalizedName("reinforced_pearcel_shovel").setRegistryName("reinforced_pearcel_shovel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_crook = new ItemPearcelCrook(Item.ToolMaterial.WOOD).setUnlocalizedName("pearcel_crook").setRegistryName("pearcel_crook").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        matter_fabricator = new ItemMatterFabricator(matToolPearcel).setUnlocalizedName("matter_fabricator").setRegistryName("matter_fabricator").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
     }
 
     public static void register(){
@@ -177,6 +179,7 @@ public class ModItems {
         GameRegistry.register(reinforced_pearcel_pickaxe);
         GameRegistry.register(reinforced_pearcel_shovel);
         GameRegistry.register(pearcel_crook);
+        GameRegistry.register(matter_fabricator);
 
     }
 
@@ -234,6 +237,7 @@ public class ModItems {
         registerRender(reinforced_pearcel_pickaxe);
         registerRender(reinforced_pearcel_shovel);
         registerRender(pearcel_crook);
+        registerRender(matter_fabricator);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
