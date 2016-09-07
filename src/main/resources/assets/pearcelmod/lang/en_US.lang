@@ -53,6 +53,7 @@ item.golden_pearcel.name=Golden Pearcel
 item.reinforced_pearcel_shovel.name=Reinforced Pearcel Shovel
 item.pearcel_crook.name=Pearcel Crook
 item.matter_fabricator.name=Matter Fabrication Hammer
+item.stimulation_pearcel.name=Stimulation Pearcel
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -126,6 +127,7 @@ tooltip.item.mf.line1=Mode:
 tooltip.item.mf.line2=Mattered Pearcel:
 tooltip.item.mf.line3=Shift + Right Click to change modes.
 tooltip.item.mf.line4=Turn the blocks you break into Mattered Pearcels.
+tooltip.item.stimulation_pearcel.line1=Speeds up the tick speed of blocks.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
@@ -204,6 +206,8 @@ config.rifPPickBaseHardness.title=Reinforced Pearcel Pickaxe Hardness
 config.rifPPickBaseHardness.desc=Base hardness for fortune level to be applied.
 config.matterFabricatorMPAmount.title=Matter Fabrication Hammer Mattered Pearcel Amount
 config.matterFabricatorMPAmount.desc=Amount at which you receive Neutral Pearcel Matter.
+config.stimulationPearcelTickAmount.title=Stimulation Pearcel Tick Amount
+config.stimulationPearcelTickAmount.desc=Amount in which the Stimulation Pearcel applies block tick updates.
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?

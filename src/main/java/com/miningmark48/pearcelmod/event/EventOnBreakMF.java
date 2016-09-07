@@ -20,38 +20,42 @@ public class EventOnBreakMF {
     public static Block[] trash = new Block[]{Blocks.SANDSTONE, Blocks.SAND, Blocks.SANDSTONE_STAIRS, Blocks.GLASS, Blocks.DIRT, Blocks.COBBLESTONE, Blocks.STONE, Blocks.GRAVEL, Blocks.PLANKS, Blocks.LOG, ModBlocks.pearcel_stone};
 
     @SubscribeEvent
-    public void onBreak(BlockEvent.HarvestDropsEvent e){
-        Block block = e.getState().getBlock();
-        EntityPlayer player = e.getHarvester();
-        ItemStack helditem = player.getHeldItemMainhand();
+    public void onBreak(BlockEvent.HarvestDropsEvent e) {
 
-        if(helditem != null) {
-            if (helditem.getItem() == ModItems.matter_fabricator) {
-                if (!helditem.hasTagCompound()) {
-                    helditem.setTagCompound(new NBTTagCompound());
-                    helditem.getTagCompound().setInteger("mode", 1);
-                    helditem.getTagCompound().setInteger("mp", 0);
-                }
+        if (e.getHarvester() instanceof EntityPlayer) {
 
-                if (helditem.getTagCompound().getInteger("mode") == 1) {
-                    if(Arrays.asList(trash).contains(block)){
+            Block block = e.getState().getBlock();
+            EntityPlayer player = e.getHarvester();
+            ItemStack helditem = player.getHeldItemMainhand();
+
+            if (helditem != null) {
+                if (helditem.getItem() == ModItems.matter_fabricator) {
+                    if (!helditem.hasTagCompound()) {
+                        helditem.setTagCompound(new NBTTagCompound());
+                        helditem.getTagCompound().setInteger("mode", 1);
+                        helditem.getTagCompound().setInteger("mp", 0);
+                    }
+
+                    if (helditem.getTagCompound().getInteger("mode") == 1) {
+                        if (Arrays.asList(trash).contains(block)) {
+                            e.getDrops().clear();
+                            helditem.getTagCompound().setInteger("mp", helditem.getTagCompound().getInteger("mp") + 1);
+                        }
+                    } else {
+                        if (Arrays.asList(special).contains(block)) {
+                            helditem.getTagCompound().setInteger("mp", helditem.getTagCompound().getInteger("mp") + 8);
+                        } else {
+                            helditem.getTagCompound().setInteger("mp", helditem.getTagCompound().getInteger("mp") + 1);
+                        }
                         e.getDrops().clear();
-                        helditem.getTagCompound().setInteger("mp", helditem.getTagCompound().getInteger("mp") + 1);
                     }
-                }else{
-                    if(Arrays.asList(special).contains(block)) {
-                        helditem.getTagCompound().setInteger("mp", helditem.getTagCompound().getInteger("mp") + 8);
-                    }else{
-                        helditem.getTagCompound().setInteger("mp", helditem.getTagCompound().getInteger("mp") + 1);
+
+                    if (helditem.getTagCompound().getInteger("mp") >= ConfigurationHandler.matterFabricatorMPAmount) {
+                        player.inventory.addItemStackToInventory(new ItemStack(ModItems.neutral_pearcel_matter));
+                        helditem.getTagCompound().setInteger("mp", 0);
                     }
-                    e.getDrops().clear();
-                }
 
-                if(helditem.getTagCompound().getInteger("mp") >= ConfigurationHandler.matterFabricatorMPAmount){
-                    player.inventory.addItemStackToInventory(new ItemStack(ModItems.neutral_pearcel_matter));
-                    helditem.getTagCompound().setInteger("mp", 0);
                 }
-
             }
         }
     }
