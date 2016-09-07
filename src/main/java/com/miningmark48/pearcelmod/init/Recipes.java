@@ -70,6 +70,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.reinforced_pearcel_shovel), " x ", " y ", " z ", 'x', new ItemStack(Items.DIAMOND), 'y', new ItemStack(ModItems.tier_3_crafting_component), 'z', new ItemStack(ModItems.pearcel_shovel));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_crook), "xx", " x", " x", 'x', new ItemStack(ModItems.pearcel_stick));
         GameRegistry.addRecipe(new ItemStack(ModItems.matter_fabricator), "ayx", " z ", " z ", 'x', new ItemStack(ModBlocks.pearcel_block), 'y', new ItemStack(ModItems.pearcel_pickaxe), 'z', new ItemStack(ModItems.pearcel_stick), 'a', new ItemStack(ModItems.tier_3_crafting_component));
+        GameRegistry.addRecipe(new ItemStack(ModItems.stimulation_pearcel), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModItems.tier_3_crafting_component), 'z', new ItemStack(Items.CLOCK));
 
         //Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcel_sand), new ItemStack(ModBlocks.pearcel_glass), 5F);
