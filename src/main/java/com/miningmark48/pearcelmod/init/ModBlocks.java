@@ -34,6 +34,8 @@ public class ModBlocks {
     public static Block pearcel_glass_pane;
     public static Block pedestal;
     public static Block pearcel_ladder;
+    public static Block pearcel_lamp;
+    public static Block lit_pearcel_lamp;
 
     //Ores
     public static Block pearcel_ore;
@@ -71,6 +73,8 @@ public class ModBlocks {
         pearcel_glass_pane = new BlockPearcelPane(Material.GLASS, true).setUnlocalizedName("pearcel_glass_pane").setRegistryName("pearcel_glass_pane").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pedestal = new BlockPedestal().setUnlocalizedName("pedestal").setRegistryName("pedestal").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_ladder = new BlockPearceLadder().setUnlocalizedName("pearcel_ladder").setRegistryName("pearcel_ladder").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_lamp = new BlockPearcelLamp(false).setUnlocalizedName("pearcel_lamp").setRegistryName("pearcel_lamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        lit_pearcel_lamp = new BlockPearcelLamp(true).setUnlocalizedName("lit_pearcel_lamp").setRegistryName("lit_pearcel_lamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
         pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setRegistryName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -111,6 +115,8 @@ public class ModBlocks {
         registerBlock(pearcel_glass_pane);
         registerBlock(pedestal);
         registerBlock(pearcel_ladder);
+        registerBlock(pearcel_lamp);
+        registerBlock(lit_pearcel_lamp);
 
         //Ores
         registerBlock(pearcel_ore);
@@ -150,6 +156,8 @@ public class ModBlocks {
         registerRender(pearcel_glass_pane);
         registerRender(pedestal);
         registerRender(pearcel_ladder);
+        registerRender(pearcel_lamp);
+        registerRender(lit_pearcel_lamp);
 
         //Ores
         registerRender(pearcel_ore);
