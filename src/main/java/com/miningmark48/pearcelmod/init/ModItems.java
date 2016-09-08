@@ -21,6 +21,7 @@ public class ModItems {
     public static Item.ToolMaterial matToolPearcelReinforced = EnumHelper.addToolMaterial("RIFPearcelTools", 3, 4096, 20.0F, 10.0F, 15);
     public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 15.0F, 30);
     public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("pearcel", Reference.MOD_ID + ":" + "pearcel_armor", 100, new int[]{4, 7, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
+    public static ItemArmor.ArmorMaterial matRIFPearcel = EnumHelper.addArmorMaterial("riPearcel", Reference.MOD_ID + ":" + "rif_pearcel_armor", 150, new int[]{6, 9, 8, 5}, 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 15);
 
     //General Items
     public static Item pearcel_ingot;
@@ -74,6 +75,10 @@ public class ModItems {
     public static Item pearcel_crook;
     public static Item matter_fabricator;
     public static Item stimulation_pearcel;
+    public static Item rif_pearcel_helmet;
+    public static Item rif_pearcel_chestplate;
+    public static Item rif_pearcel_leggings;
+    public static Item rif_pearcel_boots;
 
     public static void init(){
         //General Items
@@ -128,6 +133,10 @@ public class ModItems {
         pearcel_crook = new ItemPearcelCrook(Item.ToolMaterial.WOOD).setUnlocalizedName("pearcel_crook").setRegistryName("pearcel_crook").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         matter_fabricator = new ItemMatterFabricator(matToolPearcel).setUnlocalizedName("matter_fabricator").setRegistryName("matter_fabricator").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         stimulation_pearcel = new ItemStimulationPearcel().setUnlocalizedName("stimulation_pearcel").setRegistryName("stimulation_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        rif_pearcel_helmet = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.HEAD).setUnlocalizedName("rif_pearcel_helmet").setRegistryName("rif_pearcel_helmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        rif_pearcel_chestplate = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.CHEST).setUnlocalizedName("rif_pearcel_chestplate").setRegistryName("rif_pearcel_chestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        rif_pearcel_leggings = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.LEGS).setUnlocalizedName("rif_pearcel_leggings").setRegistryName("rif_pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        rif_pearcel_boots = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.FEET).setUnlocalizedName("rif_pearcel_boots").setRegistryName("rif_pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -184,6 +193,10 @@ public class ModItems {
         GameRegistry.register(pearcel_crook);
         GameRegistry.register(matter_fabricator);
         GameRegistry.register(stimulation_pearcel);
+        GameRegistry.register(rif_pearcel_helmet);
+        GameRegistry.register(rif_pearcel_chestplate);
+        GameRegistry.register(rif_pearcel_leggings);
+        GameRegistry.register(rif_pearcel_boots);
 
     }
 
@@ -243,6 +256,10 @@ public class ModItems {
         registerRender(pearcel_crook);
         registerRender(matter_fabricator);
         registerRender(stimulation_pearcel);
+        registerRender(rif_pearcel_helmet);
+        registerRender(rif_pearcel_chestplate);
+        registerRender(rif_pearcel_leggings);
+        registerRender(rif_pearcel_boots);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

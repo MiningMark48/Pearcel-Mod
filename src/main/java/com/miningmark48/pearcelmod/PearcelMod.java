@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
+import com.miningmark48.pearcelmod.event.EventArmorFly;
 import com.miningmark48.pearcelmod.event.EventBreakForPearcel;
 import com.miningmark48.pearcelmod.event.EventOnBreakMF;
 import com.miningmark48.pearcelmod.event.EventOnJoin;
@@ -69,6 +70,7 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new EventBreakForPearcel());
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakMF());
 		MinecraftForge.EVENT_BUS.register(new EventOnJoin());
+		MinecraftForge.EVENT_BUS.register(new EventArmorFly());
 
 		Recipes.init();
 

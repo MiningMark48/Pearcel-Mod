@@ -71,6 +71,10 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_crook), "xx", " x", " x", 'x', new ItemStack(ModItems.pearcel_stick));
         GameRegistry.addRecipe(new ItemStack(ModItems.matter_fabricator), "ayx", " z ", " z ", 'x', new ItemStack(ModBlocks.pearcel_block), 'y', new ItemStack(ModItems.pearcel_pickaxe), 'z', new ItemStack(ModItems.pearcel_stick), 'a', new ItemStack(ModItems.tier_3_crafting_component));
         GameRegistry.addRecipe(new ItemStack(ModItems.stimulation_pearcel), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModItems.tier_3_crafting_component), 'z', new ItemStack(Items.CLOCK));
+        GameRegistry.addRecipe(new ItemStack(ModItems.rif_pearcel_helmet), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.tier_3_crafting_component), 'y', new ItemStack(ModItems.pearcel_helmet));
+        GameRegistry.addRecipe(new ItemStack(ModItems.rif_pearcel_chestplate), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.tier_3_crafting_component), 'y', new ItemStack(ModItems.pearcel_chestplate));
+        GameRegistry.addRecipe(new ItemStack(ModItems.rif_pearcel_leggings), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.tier_3_crafting_component), 'y', new ItemStack(ModItems.pearcel_leggings));
+        GameRegistry.addRecipe(new ItemStack(ModItems.rif_pearcel_boots), "xxx", "xyx", "xxx", 'x', new ItemStack(ModItems.tier_3_crafting_component), 'y', new ItemStack(ModItems.pearcel_boots));
 
         //Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcel_sand), new ItemStack(ModBlocks.pearcel_glass), 5F);
