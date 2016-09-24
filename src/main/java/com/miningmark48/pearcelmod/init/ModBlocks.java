@@ -50,6 +50,7 @@ public class ModBlocks {
     public static Block pearcel_workbench;
     public static Block torcher;
     public static Block summoner;
+    public static Block pearcel_furnace;
 
     public static void init(){
         //General
@@ -89,6 +90,7 @@ public class ModBlocks {
         pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setRegistryName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         torcher = new BlockTorcher().setUnlocalizedName("torcher").setRegistryName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         summoner = new BlockSummoner().setUnlocalizedName("summoner").setRegistryName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_furnace = new BlockPearcelFurnace().setUnlocalizedName("pearcel_furnace").setRegistryName("pearcel_furnace").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
     }
@@ -131,6 +133,7 @@ public class ModBlocks {
         registerBlock(pearcel_workbench);
         registerBlock(torcher);
         registerBlock(summoner);
+        registerBlock(pearcel_furnace);
 
     }
 
@@ -172,6 +175,7 @@ public class ModBlocks {
         registerRender(pearcel_workbench);
         registerRender(torcher);
         registerRender(summoner);
+        registerRender(pearcel_furnace);
 
     }
     

@@ -12,6 +12,7 @@ import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelFurnace;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.utility.VersionChecker;
@@ -51,6 +52,8 @@ public class PearcelMod {
 		ModBlocks.register();
 		ModEntities.init();
 		ModSoundEvents.registerSounds();
+
+		GameRegistry.registerTileEntity(TileEntityPearcelFurnace.class, "Pearcel Furnace");
 
 		EntityRegistry.registerModEntity(EntityEnderPearcel.class, "EnderPearcel", 10, this, 350, 50, true);
 

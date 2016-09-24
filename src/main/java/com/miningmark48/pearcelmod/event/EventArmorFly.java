@@ -19,6 +19,8 @@ public class EventArmorFly {
     Item flyLeggings = ModItems.rif_pearcel_leggings;
     Item flyBoots = ModItems.rif_pearcel_boots;
 
+    //TODO: Add config setting to disable flight
+
     @SubscribeEvent
     public void armorTick(TickEvent.PlayerTickEvent e){
         EntityPlayer player = e.player;
