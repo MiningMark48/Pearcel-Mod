@@ -11,6 +11,7 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -79,6 +80,7 @@ public class ModItems {
     public static Item rif_pearcel_chestplate;
     public static Item rif_pearcel_leggings;
     public static Item rif_pearcel_boots;
+    public static Item pearcel_backpack;
 
     public static void init(){
         //General Items
@@ -137,6 +139,7 @@ public class ModItems {
         rif_pearcel_chestplate = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.CHEST).setUnlocalizedName("rif_pearcel_chestplate").setRegistryName("rif_pearcel_chestplate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         rif_pearcel_leggings = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.LEGS).setUnlocalizedName("rif_pearcel_leggings").setRegistryName("rif_pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         rif_pearcel_boots = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.FEET).setUnlocalizedName("rif_pearcel_boots").setRegistryName("rif_pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_backpack = new ItemPearcelBackpack().setUnlocalizedName("pearcel_backpack").setRegistryName("pearcel_backpack").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -197,6 +200,7 @@ public class ModItems {
         GameRegistry.register(rif_pearcel_chestplate);
         GameRegistry.register(rif_pearcel_leggings);
         GameRegistry.register(rif_pearcel_boots);
+        GameRegistry.register(pearcel_backpack);
 
     }
 
@@ -260,6 +264,7 @@ public class ModItems {
         registerRender(rif_pearcel_chestplate);
         registerRender(rif_pearcel_leggings);
         registerRender(rif_pearcel_boots);
+        registerRender(pearcel_backpack);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

@@ -58,6 +58,7 @@ item.rif_pearcel_helmet.name=Reinforced Pearcel Helmet
 item.rif_pearcel_chestplate.name=Reinforced Pearcel Chestplate
 item.rif_pearcel_leggings.name=Reinforced Pearcel Leggings
 item.rif_pearcel_boots.name=Reinforced Pearcel Boots
+item.pearcel_backpack.name=Pearcel Backpack
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -135,6 +136,7 @@ tooltip.item.mf.line3=Shift + Right Click to change modes.
 tooltip.item.mf.line4=Turn the blocks you break into Mattered Pearcels.
 tooltip.item.stimulation_pearcel.line1=Speeds up the tick speed of blocks.
 tooltip.item.rif_pearcel_armor.line1=Allows creative flight when worn as a set.
+tooltip.item.pearcel_backpack.line1=slots of portable storage.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
