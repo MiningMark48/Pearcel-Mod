@@ -19,7 +19,7 @@ public class ContainerPearcelBackpack extends Container {
 
         int i;
         for (i = 0; i < InventoryPearcelBackpack.INV_SIZE; i++){
-            this.addSlotToContainer(new Slot(this.inventory, i, 8 + (18 * (int)(i%9)), 8 + (18*(i/9))));
+            this.addSlotToContainer(new Slot(this.inventory, i, 8 + (18 * (int)(i%9)), 8 + (18 * (int)(i/9))));
         }
 
         for (i = 0; i < 3; i++){
