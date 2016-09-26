@@ -1,32 +1,29 @@
 package com.miningmark48.pearcelmod.gui;
 
+import com.miningmark48.pearcelmod.container.ContainerEnlargedPearcelBackpack;
 import com.miningmark48.pearcelmod.container.ContainerPearcelBackpack;
-import com.miningmark48.pearcelmod.container.ContainerPearcelWorkbench;
+import com.miningmark48.pearcelmod.inventory.InventoryEnlargedPearcelBackpack;
 import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
-import com.miningmark48.pearcelmod.item.ItemPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.GuiUtils;
 import com.miningmark48.pearcelmod.utility.Translate;
-import com.sun.javafx.tk.FontMetrics;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
-public class GuiPearcelBackpack extends GuiContainer{
+public class GuiEnlargedPearcelBackpack extends GuiContainer{
 
-    private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pearcel_backpack.png");
+    private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_enlarged_pearcel_backpack.png");
 
-    private final InventoryPearcelBackpack inventory;
+    private final InventoryEnlargedPearcelBackpack inventory;
 
-    public GuiPearcelBackpack(ContainerPearcelBackpack containerItem){
+    public GuiEnlargedPearcelBackpack(ContainerEnlargedPearcelBackpack containerItem){
         super(containerItem);
         this.inventory = containerItem.inventory;
 
         this.xSize = 176;
-        this.ySize = 174;
+        this.ySize = 246;
     }
 
     public void onGuiClosed(){
@@ -34,7 +31,7 @@ public class GuiPearcelBackpack extends GuiContainer{
     }
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
-        String text = Translate.toLocal("gui.pearcel_backpack.name");
+        String text = Translate.toLocal("gui.enlarged_pearcel_backpack.name");
         int x = GuiUtils.getXCenter(text, this.fontRendererObj, xSize);
         this.fontRendererObj.drawString(text, x, 5, 0x404040);
     }
@@ -48,4 +45,5 @@ public class GuiPearcelBackpack extends GuiContainer{
         drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 
     }
+
 }

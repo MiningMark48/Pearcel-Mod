@@ -1,6 +1,6 @@
 package com.miningmark48.pearcelmod.container;
 
-import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
+import com.miningmark48.pearcelmod.inventory.InventoryEnlargedPearcelBackpack;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
@@ -9,27 +9,28 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;
 
-public class ContainerPearcelBackpack extends Container {
 
-    public final InventoryPearcelBackpack inventory;
-    private static final int INV_START = InventoryPearcelBackpack.INV_SIZE, INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
+public class ContainerEnlargedPearcelBackpack extends Container {
 
-    public ContainerPearcelBackpack(EntityPlayer player, InventoryPlayer invPlayer, InventoryPearcelBackpack item){
+    public final InventoryEnlargedPearcelBackpack inventory;
+    private static final int INV_START = InventoryEnlargedPearcelBackpack.INV_SIZE, INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
+
+    public ContainerEnlargedPearcelBackpack(EntityPlayer player, InventoryPlayer invPlayer, InventoryEnlargedPearcelBackpack item){
         this.inventory = item;
 
         int i;
-        for (i = 0; i < InventoryPearcelBackpack.INV_SIZE; i++){
+        for (i = 0; i < InventoryEnlargedPearcelBackpack.INV_SIZE; i++){
             this.addSlotToContainer(new Slot(this.inventory, i, 8 + (18 * (int)(i%9)), 17 + (18 * (int)(i/9))));
         }
 
         for (i = 0; i < 3; i++){
             for (int j = 0; j < 9; j++){
-                this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 8 + j * 18, 93 + i * 18));
+                this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 8 + j * 18, 165 + i * 18));
             }
         }
 
         for (i = 0; i < 9; i++){
-            this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 151));
+            this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 223));
         }
     }
 

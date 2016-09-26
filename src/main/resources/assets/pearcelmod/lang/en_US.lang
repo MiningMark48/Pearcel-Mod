@@ -59,6 +59,7 @@ item.rif_pearcel_chestplate.name=Reinforced Pearcel Chestplate
 item.rif_pearcel_leggings.name=Reinforced Pearcel Leggings
 item.rif_pearcel_boots.name=Reinforced Pearcel Boots
 item.pearcel_backpack.name=Pearcel Backpack
+item.enlarged_pearcel_backpack.name=Enlarged Pearcel Backpack
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -175,6 +176,8 @@ summoner.mob_summon.villager=Villager
 #Gui Titles
 gui.pearcel_workbench.name=Pearcel Workbench
 gui.pcp.name=Portable Crafting Pearcel
+gui.pearcel_backpack.name=Pearcel Backpack
+gui.enlarged_pearcel_backpack.name=Enlarged Pearcel Backpack
 
 #Configuration Categories
 config.category.enderPearcel.title=Ender Pearcel
