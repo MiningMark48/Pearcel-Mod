@@ -40,7 +40,7 @@ public class ItemBindle extends ItemPearcelMod{
     @Override
     public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand){
         if(!world.isRemote){
-            if(!player.isSneaking()){
+            if(!player.isSneaking() && hand == EnumHand.MAIN_HAND){
                 player.openGui(Reference.MOD_ID, GUIs.gui_id_bindle, world, 0, 0, 0);
             }
         }

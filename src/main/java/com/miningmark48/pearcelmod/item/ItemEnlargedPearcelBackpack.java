@@ -40,7 +40,7 @@ public class ItemEnlargedPearcelBackpack extends ItemPearcelMod{
     @Override
     public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand){
         if(!world.isRemote){
-            if(!player.isSneaking()){
+            if(!player.isSneaking() && hand == EnumHand.MAIN_HAND){
                 player.openGui(Reference.MOD_ID, GUIs.gui_id_enlarged_pearcel_backpack, world, 0, 0, 0);
             }
         }
