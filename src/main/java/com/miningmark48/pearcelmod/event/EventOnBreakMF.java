@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class EventOnBreakMF {
 
     public static Block[] special = new Block[]{Blocks.GOLD_ORE, Blocks.COAL_ORE, Blocks.DIAMOND_ORE, Blocks.IRON_ORE, Blocks.REDSTONE_ORE, Blocks.EMERALD_ORE, Blocks.QUARTZ_ORE, Blocks.LAPIS_ORE, ModBlocks.pearcel_matter_block};
-    public static Block[] trash = new Block[]{Blocks.SANDSTONE, Blocks.SAND, Blocks.SANDSTONE_STAIRS, Blocks.GLASS, Blocks.DIRT, Blocks.COBBLESTONE, Blocks.STONE, Blocks.GRAVEL, Blocks.PLANKS, Blocks.LOG, ModBlocks.pearcel_stone};
+    public static Block[] trash = new Block[]{Blocks.NETHERRACK, Blocks.SANDSTONE, Blocks.SAND, Blocks.SANDSTONE_STAIRS, Blocks.GLASS, Blocks.DIRT, Blocks.COBBLESTONE, Blocks.STONE, Blocks.GRAVEL, Blocks.PLANKS, Blocks.LOG, ModBlocks.pearcel_stone};
 
     @SubscribeEvent
     public void onBreak(BlockEvent.HarvestDropsEvent e) {
