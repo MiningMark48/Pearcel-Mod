@@ -1,14 +1,9 @@
 package com.miningmark48.pearcelmod.handler;
 
-import com.miningmark48.pearcelmod.container.ContainerEnlargedPearcelBackpack;
-import com.miningmark48.pearcelmod.container.ContainerPCP;
-import com.miningmark48.pearcelmod.container.ContainerPearcelBackpack;
-import com.miningmark48.pearcelmod.container.ContainerPearcelWorkbench;
-import com.miningmark48.pearcelmod.gui.GuiEnlargedPearcelBackpack;
-import com.miningmark48.pearcelmod.gui.GuiPCP;
-import com.miningmark48.pearcelmod.gui.GuiPearcelBackpack;
-import com.miningmark48.pearcelmod.gui.GuiPearcelWorkbench;
+import com.miningmark48.pearcelmod.container.*;
+import com.miningmark48.pearcelmod.gui.*;
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.inventory.InventoryBindle;
 import com.miningmark48.pearcelmod.inventory.InventoryEnlargedPearcelBackpack;
 import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.GUIs;
@@ -37,6 +32,9 @@ public class GuiHandler implements IGuiHandler{
         if (ID == GUIs.gui_id_enlarged_pearcel_backpack){
             return new ContainerEnlargedPearcelBackpack(player, player.inventory, new InventoryEnlargedPearcelBackpack(player.getHeldItem(EnumHand.MAIN_HAND)));
         }
+        if (ID == GUIs.gui_id_bindle){
+            return new ContainerBindle(player, player.inventory, new InventoryBindle(player.getHeldItem(EnumHand.MAIN_HAND)));
+        }
         return null;
     }
 
@@ -54,6 +52,9 @@ public class GuiHandler implements IGuiHandler{
         }
         if (ID == GUIs.gui_id_enlarged_pearcel_backpack){
             return new GuiEnlargedPearcelBackpack((ContainerEnlargedPearcelBackpack) new ContainerEnlargedPearcelBackpack(player, player.inventory, new InventoryEnlargedPearcelBackpack(player.getHeldItem(EnumHand.MAIN_HAND))));
+        }
+        if (ID == GUIs.gui_id_bindle){
+            return new GuiBindle((ContainerBindle) new ContainerBindle(player, player.inventory, new InventoryBindle(player.getHeldItem(EnumHand.MAIN_HAND))));
         }
         return null;
     }

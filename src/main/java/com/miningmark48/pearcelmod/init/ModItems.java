@@ -82,6 +82,7 @@ public class ModItems {
     public static Item rif_pearcel_boots;
     public static Item pearcel_backpack;
     public static Item enlarged_pearcel_backpack;
+    public static Item bindle;
 
     public static void init(){
         //General Items
@@ -142,6 +143,7 @@ public class ModItems {
         rif_pearcel_boots = new ItemRIFPearcelArmor(matRIFPearcel, EntityEquipmentSlot.FEET).setUnlocalizedName("rif_pearcel_boots").setRegistryName("rif_pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_backpack = new ItemPearcelBackpack().setUnlocalizedName("pearcel_backpack").setRegistryName("pearcel_backpack").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         enlarged_pearcel_backpack = new ItemEnlargedPearcelBackpack().setUnlocalizedName("enlarged_pearcel_backpack").setRegistryName("enlarged_pearcel_backpack").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        bindle = new ItemBindle().setUnlocalizedName("bindle").setRegistryName("bindle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -204,6 +206,7 @@ public class ModItems {
         GameRegistry.register(rif_pearcel_boots);
         GameRegistry.register(pearcel_backpack);
         GameRegistry.register(enlarged_pearcel_backpack);
+        GameRegistry.register(bindle);
 
     }
 
@@ -269,6 +272,7 @@ public class ModItems {
         registerRender(rif_pearcel_boots);
         registerRender(pearcel_backpack);
         registerRender(enlarged_pearcel_backpack);
+        registerRender(bindle);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
