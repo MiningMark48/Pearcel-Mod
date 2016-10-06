@@ -1,0 +1,20 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "variants": {
+    "facing=north": {
+      "model": "pearcelmod:pearcel_furnace_lit"
+    },
+    "facing=south": {
+      "model": "pearcelmod:pearcel_furnace_lit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pearcelmod:pearcel_furnace_lit",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "pearcelmod:pearcel_furnace_lit",
+      "y": 90
+    }
+  }
+}

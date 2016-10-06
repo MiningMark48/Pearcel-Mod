@@ -21,6 +21,7 @@ public class ModBlocks {
     public static Block pearcel_bricks;
     public static Block packed_pearcel_bricks;
     public static Block pearcel_stone;
+    public static Block pearcel_cobblestone;
     public static Block pearcel_glass;
     public static Block distressed_pearcel_stone;
     public static Block irradiated_pearcel_block;
@@ -50,6 +51,8 @@ public class ModBlocks {
     public static Block pearcel_workbench;
     public static Block torcher;
     public static Block summoner;
+    public static Block pearcel_furnace;
+    public static Block pearcel_furnace_lit;
 
     public static void init(){
         //General
@@ -59,7 +62,8 @@ public class ModBlocks {
         pearcel_matter_block = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_block").setRegistryName("pearcel_matter_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("pearcel_bricks").setRegistryName("pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         packed_pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("packed_pearcel_bricks").setRegistryName("packed_pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_stone = new BlockPearcelMod().setUnlocalizedName("pearcel_stone").setRegistryName("pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_stone = new BlockPearcelStone().setUnlocalizedName("pearcel_stone").setRegistryName("pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_cobblestone = new BlockPearcelStone().setUnlocalizedName("pearcel_cobblestone").setRegistryName("pearcel_cobblestone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_glass = new BlockPearcelModTransparent().setUnlocalizedName("pearcel_glass").setRegistryName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         distressed_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("distressed_pearcel_stone").setRegistryName("distressed_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         irradiated_pearcel_block = new BlockPearcelModLightEmit(5.0F).setUnlocalizedName("irradiated_pearcel_block").setRegistryName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -89,6 +93,8 @@ public class ModBlocks {
         pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setRegistryName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         torcher = new BlockTorcher().setUnlocalizedName("torcher").setRegistryName("torcher").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         summoner = new BlockSummoner().setUnlocalizedName("summoner").setRegistryName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_furnace = new BlockPearcelFurnace(false).setUnlocalizedName("pearcel_furnace").setRegistryName("pearcel_furnace");
+        pearcel_furnace_lit = new BlockPearcelFurnace(true).setUnlocalizedName("pearcel_furnace_lit").setRegistryName("pearcel_furnace_lit");
 
 
     }
@@ -102,6 +108,7 @@ public class ModBlocks {
         registerBlock(pearcel_bricks);
         registerBlock(packed_pearcel_bricks);
         registerBlock(pearcel_stone);
+        registerBlock(pearcel_cobblestone);
         registerBlock(pearcel_glass);
         registerBlock(distressed_pearcel_stone);
         registerBlock(irradiated_pearcel_block);
@@ -131,6 +138,8 @@ public class ModBlocks {
         registerBlock(pearcel_workbench);
         registerBlock(torcher);
         registerBlock(summoner);
+        //registerBlock(pearcel_furnace);
+        //registerBlock(pearcel_furnace_lit);
 
     }
 
@@ -142,6 +151,7 @@ public class ModBlocks {
         registerRender(pearcel_matter_block);
         registerRender(pearcel_bricks);
         registerRender(packed_pearcel_bricks);
+        registerRender(pearcel_cobblestone);
         registerRender(pearcel_stone);
         registerRender(pearcel_glass);
         registerRender(distressed_pearcel_stone);
@@ -172,6 +182,8 @@ public class ModBlocks {
         registerRender(pearcel_workbench);
         registerRender(torcher);
         registerRender(summoner);
+        registerRender(pearcel_furnace);
+        registerRender(pearcel_furnace_lit);
 
     }
     
