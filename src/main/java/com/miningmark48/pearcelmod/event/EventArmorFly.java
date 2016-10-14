@@ -20,30 +20,33 @@ public class EventArmorFly {
     Item flyBoots = ModItems.rif_pearcel_boots;
 
     //TODO: Add config setting to disable flight
+    //TODO: PROPER FIX (NOT JUST DISABLE)
 
-    @SubscribeEvent
-    public void armorTick(TickEvent.PlayerTickEvent e){
-        EntityPlayer player = e.player;
-
-        if(!player.isCreative()) {
-            if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(0) != null) {
-                helmet = player.inventory.armorItemInSlot(3);
-                chestplate = player.inventory.armorItemInSlot(2);
-                leggings = player.inventory.armorItemInSlot(1);
-                boots = player.inventory.armorItemInSlot(0);
-
-                if (helmet.getItem() == flyHelmet && chestplate.getItem() == flyChestplate && leggings.getItem() == flyLeggings && boots.getItem() == flyBoots) {
-                    player.capabilities.allowFlying = true;
-                    player.fallDistance = 0.0f;
-                } else {
-                    player.capabilities.allowFlying = false;
-                    player.capabilities.isFlying = false;
-                }
-            } else {
-                player.capabilities.allowFlying = false;
-                player.capabilities.isFlying = false;
-            }
-        }
-    }
+//    @SubscribeEvent
+//    public void armorTick(TickEvent.PlayerTickEvent e){
+//        EntityPlayer player = e.player;
+//
+//        if (!player.worldObj.isRemote) {
+//            if (!player.isCreative()) {
+//                if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(0) != null) {
+//                    helmet = player.inventory.armorItemInSlot(3);
+//                    chestplate = player.inventory.armorItemInSlot(2);
+//                    leggings = player.inventory.armorItemInSlot(1);
+//                    boots = player.inventory.armorItemInSlot(0);
+//
+//                    if (helmet.getItem() == flyHelmet && chestplate.getItem() == flyChestplate && leggings.getItem() == flyLeggings && boots.getItem() == flyBoots) {
+//                        player.capabilities.allowFlying = true;
+//                        player.fallDistance = 0.0f;
+//                    } else {
+//                        player.capabilities.allowFlying = false;
+//                        player.capabilities.isFlying = false;
+//                    }
+//                } else {
+//                    player.capabilities.allowFlying = false;
+//                    player.capabilities.isFlying = false;
+//                }
+//            }
+//        }
+//    }
 
 }
