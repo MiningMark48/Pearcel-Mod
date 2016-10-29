@@ -57,7 +57,7 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
             if (item.getTagCompound().getInteger("mode") == 1){
                 world.setBlockState(pos.offset(side), ModBlocks.pearcel_stone.getDefaultState());
             }else{
-                world.setBlockState(pos.offset(side), Blocks.COBBLESTONE.getDefaultState());
+                world.setBlockState(pos.offset(side), ModBlocks.pearcel_cobblestone.getDefaultState());
             }
         }
 
