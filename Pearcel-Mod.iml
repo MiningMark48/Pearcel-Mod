@@ -10,7 +10,8 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false"/>
     <orderEntry type="inheritedJdk"/>
-    <orderEntry type="library" name="modules-2" level="project"/>
+    <orderEntry type="library" name="jei_1.10.2-3.13.0.330-api" level="project"/>
+    <orderEntry type="library" name="1.10.2-12.18.2" level="project"/>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -24,6 +25,15 @@
       <library>
         <CLASSES>
           <root url="jar://C:/Users/Mark/.gradle/caches/minecraft/deobfedDeps/providedDummy.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jei_1.10.2-3.13.0.330-api.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
@@ -211,7 +221,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/Mark/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.8.19/f7469a9307b962d1097e44713eb1baa087c06e43/realms-1.8.19.jar!/"/>
+          <root url="jar://C:/Users/Mark/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.9.8/c9609760e050cd7c369292252552c0cc81c54331/realms-1.9.8.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
@@ -680,18 +690,18 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976.jar!/"/>
+          <root url="jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/snapshot/20160518/forgeSrc-1.9.4-12.17.0.1976-sources.jar!/"/>
+          <root url="jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="file://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.9.4-12.17.0.1976/start"/>
+          <root url="file://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/start"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
