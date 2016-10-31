@@ -234,6 +234,8 @@ config.matterFabricatorMPAmount.title=Matter Fabrication Hammer Mattered Pearcel
 config.matterFabricatorMPAmount.desc=Amount at which you receive Neutral Pearcel Matter.
 config.stimulationPearcelTickAmount.title=Stimulation Pearcel Tick Amount
 config.stimulationPearcelTickAmount.desc=Amount in which the Stimulation Pearcel applies block tick updates.
+config.doRIFArmorFlight.title=Allow Reinforced Armor Flight
+config.doRIFArmorFlight.desc=Should you be able to fly with Reinforced Pearcel Armor?
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?

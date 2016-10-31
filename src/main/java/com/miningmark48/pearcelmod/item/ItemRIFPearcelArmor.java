@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.LogHelper;
@@ -21,11 +22,6 @@ public class ItemRIFPearcelArmor extends ItemArmor{
     ItemStack leggings;
     ItemStack boots;
 
-    Item flyHelmet = ModItems.rif_pearcel_helmet;
-    Item flyChestplate = ModItems.rif_pearcel_chestplate;
-    Item flyLeggings = ModItems.rif_pearcel_leggings;
-    Item flyBoots = ModItems.rif_pearcel_boots;
-
     public ItemRIFPearcelArmor(ArmorMaterial material, EntityEquipmentSlot type){
         super(material, 0, type);
     }
@@ -41,24 +37,29 @@ public class ItemRIFPearcelArmor extends ItemArmor{
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack stack){
-        //TODO: Add config setting to disable
-        if (!player.isCreative()) {
-            if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD) != null && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST) != null && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS) != null && player.getItemStackFromSlot(EntityEquipmentSlot.FEET) != null) {
+        if (ConfigurationHandler.doRIFArmorFlight) {
+            if (!player.isCreative()) {
+                if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD) != null && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST) != null && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS) != null && player.getItemStackFromSlot(EntityEquipmentSlot.FEET) != null) {
 
-                helmet = player.getItemStackFromSlot(EntityEquipmentSlot.HEAD);
-                chestplate = player.getItemStackFromSlot(EntityEquipmentSlot.CHEST);
-                leggings = player.getItemStackFromSlot(EntityEquipmentSlot.LEGS);
-                boots = player.getItemStackFromSlot(EntityEquipmentSlot.FEET);
+                    helmet = player.getItemStackFromSlot(EntityEquipmentSlot.HEAD);
+                    chestplate = player.getItemStackFromSlot(EntityEquipmentSlot.CHEST);
+                    leggings = player.getItemStackFromSlot(EntityEquipmentSlot.LEGS);
+                    boots = player.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
-                if(player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof ItemRIFPearcelArmor) {
-                    player.capabilities.allowFlying = true;
-                    player.capabilities.setFlySpeed(0.065F);
+                    if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof ItemRIFPearcelArmor) {
+                        player.capabilities.allowFlying = true;
+                        player.capabilities.setFlySpeed(0.065F);
+                    }
+                } else {
+                    player.capabilities.allowFlying = false;
+                    player.capabilities.isFlying = false;
+                    player.capabilities.setFlySpeed(0.05F); //Normal fly speed
                 }
-            } else {
-                player.capabilities.allowFlying = false;
-                player.capabilities.isFlying = false;
-                player.capabilities.setFlySpeed(0.05F);
             }
+        }else{
+            player.capabilities.allowFlying = false;
+            player.capabilities.isFlying = false;
+            player.capabilities.setFlySpeed(0.05F); //Normal fly speed
         }
     }
 
