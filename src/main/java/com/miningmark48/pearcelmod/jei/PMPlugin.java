@@ -33,6 +33,11 @@ public class PMPlugin implements IModPlugin{
         backpacks.add(new ItemStack(ModItems.bindle));
         backpacks.add(new ItemStack(ModItems.pearcel_backpack));
         backpacks.add(new ItemStack(ModItems.enlarged_pearcel_backpack));
+        List<ItemStack> rif_armor = new ArrayList<ItemStack>();
+        rif_armor.add(new ItemStack(ModItems.rif_pearcel_helmet));
+        rif_armor.add(new ItemStack(ModItems.rif_pearcel_chestplate));
+        rif_armor.add(new ItemStack(ModItems.rif_pearcel_leggings));
+        rif_armor.add(new ItemStack(ModItems.rif_pearcel_boots));
 
         //Blacklist
         jeiHelpers.getItemBlacklist().addItemToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
@@ -48,6 +53,7 @@ public class PMPlugin implements IModPlugin{
 
             //Lists
         registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
+        registry.addDescription(rif_armor, Translate.toLocal("desc.item.rif_armor"));
 
         //Other
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_workbench), "minecraft.crafting");
