@@ -78,6 +78,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_backpack), "xax", "zyz", "axa", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModItems.tier_2_crafting_component), 'z', new ItemStack(Blocks.CHEST), 'a', new ItemStack(Blocks.WOOL));
         GameRegistry.addRecipe(new ItemStack(ModItems.enlarged_pearcel_backpack), "xax", "z z", "axa", 'x', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(ModItems.pearcel_backpack), 'a', new ItemStack(Blocks.WOOL));
         GameRegistry.addRecipe(new ItemStack(ModItems.bindle), " xy", " ax", "z  ", 'x', new ItemStack(Blocks.WOOL), 'y', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(ModItems.pearcel_stick), 'a', new ItemStack(Items.STRING));
+        GameRegistry.addRecipe(new ItemStack(ModItems.nullification_pearcel), "xyx", "y y", "zyz", 'x', new ItemStack(ModItems.tier_1_crafting_component), 'y', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(Blocks.COBBLESTONE));
 
         //Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcel_sand), new ItemStack(ModBlocks.pearcel_glass), 5F);
