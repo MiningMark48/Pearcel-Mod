@@ -40,9 +40,14 @@ public class PMPlugin implements IModPlugin{
         //Descriptions
         registry.addDescription(new ItemStack(ModItems.pearcel_item), Translate.toLocal("desc.item.pearcel_item"));
         registry.addDescription(new ItemStack(ModItems.matter_fabricator), Translate.toLocal("desc.item.matter_fabricator"));
-        registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
         registry.addDescription(new ItemStack(ModBlocks.torcher), Translate.toLocal("desc.item.torcher"));
         registry.addDescription(new ItemStack(ModItems.pearcel_bow), Translate.toLocal("desc.item.pearcel_bow"));
+        registry.addDescription(new ItemStack(ModItems.pcp), Translate.toLocal("desc.item.pcp"));
+        registry.addDescription(new ItemStack(ModItems.experience_pearcel), Translate.toLocal("desc.item.experience_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.stimulation_pearcel), Translate.toLocal("desc.item.stimulation_pearcel"));
+
+            //Lists
+        registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
 
         //Other
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_workbench), "minecraft.crafting");
@@ -54,4 +59,5 @@ public class PMPlugin implements IModPlugin{
     public void onRuntimeAvailable(IJeiRuntime iJeiRuntime) {
 
     }
+
 }

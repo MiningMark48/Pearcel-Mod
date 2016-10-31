@@ -138,15 +138,19 @@ tooltip.item.mf.line2=Mattered Pearcel:
 tooltip.item.mf.line3=Shift + Right Click to change modes.
 tooltip.item.mf.line4=Turn the blocks you break into Mattered Pearcels.
 tooltip.item.stimulation_pearcel.line1=Speeds up the tick speed of blocks.
-tooltip.item.rif_pearcel_armor.line1=[WIP]
+tooltip.item.rif_pearcel_armor.line1=I believe I can fly!
 tooltip.item.pearcel_backpack.line1=slots of portable storage.
 
 #JEI Descriptions
-desc.item.pearcel_item=The essence of the mod to everything. Drops from tall grass and leaves. When using a Pearcel Crook, you always get them. Also is a yummy food.
+desc.item.pearcel_item=The essence of everything in Pearcel Mod. Drops from tall grass and leaves. When using a Pearcel Crook, you always get them. Also is a yummy food.
 desc.item.matter_fabricator=After a certain amount of blocks are broken with this tool, Pearcel Matter is created. Mode 1 uses junk blocks like cobble, Mode 2 uses ALL blocks.
 desc.item.backpack=Portable item storage.
-desc.item.torcher=Right Click on the Torcher to make torches explode everywhere.
-desc.item.pearcel_bow=A bow that uses Pearcel Arrows that can be upgraded.
+desc.item.torcher=Right Click to make torches explode everywhere.
+desc.item.pearcel_bow=A bow that uses Pearcel Arrows that can be upgraded for better performace.
+desc.item.pcp=Portable crafting from an item, just right click while holding.
+desc.item.experience_pearcel=Store all your experience into this mystical device. Shift + Right click to store, Right click to release.
+desc.item.stimulation_pearcel=Right click on any block to speed up the tick rate. Works on tile entites and plants. Use with caution, some blocks might not like this.
+desc.item.rif_armor=Better version of Pearcel Armor. Allows a faster creative-type flight.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
