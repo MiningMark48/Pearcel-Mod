@@ -25,6 +25,8 @@ public class ConfigurationHandler {
     public static int pearcelDropChance;
     public static int matterFabricatorMPAmount;
     public static int stimulationPearcelTickAmount;
+    public static int pearcelMagnetRange;
+    public static float pearcelMagnetPullSpeed;
     public static float enderPearcelVelocity;
     public static float rifPPickBaseHardness;
 
@@ -52,6 +54,7 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.enderPearcel.title"), Translate.toLocal("config.category.enderPearcel.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.torcher.title"), Translate.toLocal("config.category.torcher.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.worldGen.title"), Translate.toLocal("config.category.worldGen.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelMagnet.title"), Translate.toLocal("config.category.pearcelMagnet.desc"));
 
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
         pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
@@ -74,6 +77,11 @@ public class ConfigurationHandler {
 
         //RIF Pearcel Pickaxe
         rifPPickBaseHardness = configuration.getFloat(Translate.toLocal("config.rifPPickBaseHardness.title"), Translate.toLocal("config.category.rifPearcelPickaxe.title"), 50.0F, 0.25F, Float.MAX_VALUE, Translate.toLocal("config.rifPPickBaseHardness.desc"));
+
+        //Pearcel Magnet
+        pearcelMagnetRange = configuration.getInt(Translate.toLocal("config.pearcelMagnetRange.title"), Translate.toLocal("config.category.pearcelMagnet.title"), 9, 1, Integer.MAX_VALUE, Translate.toLocal("config.pearcelMagnetRange.desc"));
+        pearcelMagnetPullSpeed = configuration.getFloat(Translate.toLocal("config.pearcelMagnetPullSpeed.title"), Translate.toLocal("config.category.pearcelMagnet.title"), 0.035F, 0, Float.MAX_VALUE, Translate.toLocal("config.pearcelMagnetPullSpeed.desc"));
+
 
         if (configuration.hasChanged()){
             configuration.save();

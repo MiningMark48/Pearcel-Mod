@@ -85,6 +85,7 @@ public class ModItems {
     public static Item bindle;
     public static Item nullification_pearcel;
     public static Item pearcel_magnet;
+    public static Item living_magnet;
 
     public static void init(){
         //General Items
@@ -148,6 +149,7 @@ public class ModItems {
         bindle = new ItemBindle().setUnlocalizedName("bindle").setRegistryName("bindle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         nullification_pearcel = new ItemNullificationPearcel().setUnlocalizedName("nullification_pearcel").setRegistryName("nullification_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_magnet = new ItemPearcelMagnet().setUnlocalizedName("pearcel_magnet").setRegistryName("pearcel_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        living_magnet = new ItemLivingMagnet().setUnlocalizedName("living_magnet").setRegistryName("living_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -213,6 +215,7 @@ public class ModItems {
         GameRegistry.register(bindle);
         GameRegistry.register(nullification_pearcel);
         GameRegistry.register(pearcel_magnet);
+        GameRegistry.register(living_magnet);
 
     }
 
@@ -281,6 +284,7 @@ public class ModItems {
         registerRender(bindle);
         registerRender(nullification_pearcel);
         registerRender(pearcel_magnet);
+        registerRender(living_magnet);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

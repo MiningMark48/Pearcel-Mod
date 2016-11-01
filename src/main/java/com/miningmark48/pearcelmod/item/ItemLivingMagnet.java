@@ -4,8 +4,9 @@ import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
@@ -19,9 +20,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemPearcelMagnet extends ItemPearcelMod{
+public class ItemLivingMagnet extends ItemPearcelMod{
 
-    public ItemPearcelMagnet(){
+    public ItemLivingMagnet(){
         setMaxStackSize(1);
     }
 
@@ -33,10 +34,10 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                 stack.getTagCompound().setBoolean("enabled", false);
                 stack.getTagCompound().setString("mode", "Attracts");
             }
-            list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.pearcel_magnet.line1") + " " + TextFormatting.AQUA + stack.getTagCompound().getBoolean("enabled"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pearcel_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
-            list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + Translate.toLocal("tooltip.item.pearcel_magnet.line2.p2"));
-            list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line3"));
+            list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.living_magnet.line1") + " " + TextFormatting.AQUA + stack.getTagCompound().getBoolean("enabled"));
+            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.living_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
+            list.add(Translate.toLocal("tooltip.item.living_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + Translate.toLocal("tooltip.item.living_magnet.line2.p2"));
+            list.add(Translate.toLocal("tooltip.item.living_magnet.line3"));
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
@@ -55,18 +56,18 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
             if(!player.isSneaking()) {
                 if (stack.getTagCompound().getBoolean("enabled")) {
                     stack.getTagCompound().setBoolean("enabled", false);
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("chat.item.pearcel_magnet.disabled")));
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("chat.item.living_magnet.disabled")));
                 } else {
                     stack.getTagCompound().setBoolean("enabled", true);
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_magnet.enabled")));
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.living_magnet.enabled")));
                 }
             }else{
                 if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
                     stack.getTagCompound().setString("mode", "Repels");
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("chat.item.pearcel_magnet.repels")));
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("chat.item.living_magnet.repels")));
                 } else {
                     stack.getTagCompound().setString("mode", "Attracts");
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.pearcel_magnet.attracts")));
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.living_magnet.attracts")));
                 }
             }
         }
@@ -95,8 +96,8 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                 double y = player.posY;
                 double z = player.posZ;
 
-                List<EntityItem> items = entity.worldObj.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
-                for (EntityItem e: items){
+                List<EntityLiving> entities = entity.worldObj.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+                for (EntityLiving e: entities){
                     if (!player.isSneaking()){
 
                         if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
@@ -109,7 +110,6 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
 
                     }
                 }
-
             }
 
         }

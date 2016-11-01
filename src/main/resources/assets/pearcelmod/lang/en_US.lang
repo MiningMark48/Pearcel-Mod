@@ -63,6 +63,7 @@ item.enlarged_pearcel_backpack.name=Enlarged Pearcel Backpack
 item.bindle.name=Bindle
 item.nullification_pearcel.name=Nullification Pearcel
 item.pearcel_magnet.name=Pearcel Magnet
+item.living_magnet.name=Living Magnet
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -150,6 +151,11 @@ tooltip.item.pearcel_magnet.line2.p1=Pulls and pushes items within a
 tooltip.item.pearcel_magnet.line2.p2=block range around the player.
 tooltip.item.pearcel_magnet.line3=Shift to not pull or push items.
 tooltip.item.pearcel_magnet.line4=Mode:
+tooltip.item.living_magnet.line1=Enabled:
+tooltip.item.living_magnet.line2.p1=Pulls and pushes living entities within a
+tooltip.item.living_magnet.line2.p2=block range around the player.
+tooltip.item.living_magnet.line3=Shift to not pull or push living entities.
+tooltip.item.living_magnet.line4=Mode:
 
 #JEI Descriptions
 desc.item.pearcel_item=The essence of everything in Pearcel Mod. Drops from tall grass and leaves. When using a Pearcel Crook, you always get them. Also is a yummy food.
@@ -163,6 +169,7 @@ desc.item.stimulation_pearcel=Right click on any block to speed up the tick rate
 desc.item.rif_armor=Better version of Pearcel Armor. Allows a creative-type flight.
 desc.item.nullification_pearcel=Will void a set block when the block is broken. Right click on any block to set as a null block. It must be on your hotbar.
 desc.item.pearcel_magnet=Will pull and push any items within a radius towards and away from the player. Right Click to enable/disable, Shift + Right Click to change mode, and hold Shift to not pull or push items.
+desc.item.living_magnet=Will pull and push anything living within a radius towards and away from the player. Right Click to enable/disable, Shift + Right Click to change mode, and hold Shift to not pull or push living entities.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
@@ -183,6 +190,10 @@ chat.item.pearcel_magnet.enabled=Pearcel Magnet enabled.
 chat.item.pearcel_magnet.disabled=Pearcel Magnet disabled.
 chat.item.pearcel_magnet.attracts=Pearcel Magnet will attract items.
 chat.item.pearcel_magnet.repels=Pearcel Magnet will repel items.
+chat.item.living_magnet.enabled=Living Magnet enabled.
+chat.item.living_magnet.disabled=Living Magnet disabled.
+chat.item.living_magnet.attracts=Living Magnet will attract living entities.
+chat.item.living_magnet.repels=Living Magnet will repel living entities.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!
@@ -218,7 +229,9 @@ config.category.torcher.desc=Torcher configuration.
 config.category.worldGen.title=World Gen
 config.category.worldGen.desc=Configure Pearcel Mod world gen.
 config.category.rifPearcelPickaxe.title=Reinforced Pearcel Pickaxe
-config.categoty.rifPearcelPickaxe.desc=Configuration options for the RIF Pearcel Pickaxe.
+config.category.rifPearcelPickaxe.desc=Configuration options for the RIF Pearcel Pickaxe.
+config.category.pearcelMagnet.title=Pearcel Magnet
+config.category.pearcelMagnet.desc=Configure how the Pearcel Magnet behaves.
 
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
@@ -253,6 +266,10 @@ config.stimulationPearcelTickAmount.title=Stimulation Pearcel Tick Amount
 config.stimulationPearcelTickAmount.desc=Amount in which the Stimulation Pearcel applies block tick updates.
 config.doRIFArmorFlight.title=Allow Reinforced Armor Flight
 config.doRIFArmorFlight.desc=Should you be able to fly with Reinforced Pearcel Armor?
+config.pearcelMagnetRange.title=Pearcel Magnet Range
+config.pearcelMagnetRange.desc=Block radius in which the magnet will pull or push items.
+config.pearcelMagnetPullSpeed.title=Pearcel Magnet Pull Speed
+config.pearcelMagnetPullSpeed.desc=How fast the magnet will pull and push items.
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?
