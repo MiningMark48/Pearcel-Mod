@@ -62,6 +62,7 @@ item.pearcel_backpack.name=Pearcel Backpack
 item.enlarged_pearcel_backpack.name=Enlarged Pearcel Backpack
 item.bindle.name=Bindle
 item.nullification_pearcel.name=Nullification Pearcel
+item.pearcel_magnet.name=Pearcel Magnet
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -144,6 +145,10 @@ tooltip.item.pearcel_backpack.line1=slots of portable storage.
 tooltip.item.nullification_pearcel.line1=Nulling:
 tooltip.item.nullification_pearcel.line2=Right click on a block to set a null!
 tooltip.item.nullification_pearcel.line3=Will void a set null block when mined.
+tooltip.item.pearcel_magnet.line1=Enabled:
+tooltip.item.pearcel_magnet.line2.p1=Pulls in items within a
+tooltip.item.pearcel_magnet.line2.p2=block range around the player.
+tooltip.item.pearcel_magnet.line3=Shift to not pull items towards you.
 
 #JEI Descriptions
 desc.item.pearcel_item=The essence of everything in Pearcel Mod. Drops from tall grass and leaves. When using a Pearcel Crook, you always get them. Also is a yummy food.
@@ -154,8 +159,9 @@ desc.item.pearcel_bow=A bow that uses Pearcel Arrows that can be upgraded for be
 desc.item.pcp=Portable crafting from an item, just right click while holding.
 desc.item.experience_pearcel=Store all your experience into this mystical device. Shift + Right click to store, Right click to release.
 desc.item.stimulation_pearcel=Right click on any block to speed up the tick rate. Works on tile entites and plants. Use with caution, some blocks might not like this.
-desc.item.rif_armor=Better version of Pearcel Armor. Allows a faster creative-type flight.
+desc.item.rif_armor=Better version of Pearcel Armor. Allows a creative-type flight.
 desc.item.nullification_pearcel=Will void a set block when the block is broken. Right click on any block to set as a null block. It must be on your hotbar.
+desc.item.pearcel_magnet=Will pull any items within a radius towards the player. Right Click to enable/disable, hold Shift to not pull items.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
@@ -172,6 +178,8 @@ chat.item.pearcel_arrow.upgraded.zoom=Zoom upgrade applied!
 chat.item.pbp.modeChange=Mode changed.
 chat.item.mf.modeChange=Mode changed.
 chat.item.nullification_pearcel.set=Now nulling:
+chat.item.pearcel_magnet.enabled=Pearcel Magnet enabled.
+chat.item.pearcel_magnet.disabled=Pearcel Magnet disabled.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!

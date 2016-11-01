@@ -84,6 +84,7 @@ public class ModItems {
     public static Item enlarged_pearcel_backpack;
     public static Item bindle;
     public static Item nullification_pearcel;
+    public static Item pearcel_magnet;
 
     public static void init(){
         //General Items
@@ -146,6 +147,7 @@ public class ModItems {
         enlarged_pearcel_backpack = new ItemEnlargedPearcelBackpack().setUnlocalizedName("enlarged_pearcel_backpack").setRegistryName("enlarged_pearcel_backpack").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         bindle = new ItemBindle().setUnlocalizedName("bindle").setRegistryName("bindle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         nullification_pearcel = new ItemNullificationPearcel().setUnlocalizedName("nullification_pearcel").setRegistryName("nullification_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_magnet = new ItemPearcelMagnet().setUnlocalizedName("pearcel_magnet").setRegistryName("pearcel_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -210,6 +212,7 @@ public class ModItems {
         GameRegistry.register(enlarged_pearcel_backpack);
         GameRegistry.register(bindle);
         GameRegistry.register(nullification_pearcel);
+        GameRegistry.register(pearcel_magnet);
 
     }
 
@@ -277,6 +280,7 @@ public class ModItems {
         registerRender(enlarged_pearcel_backpack);
         registerRender(bindle);
         registerRender(nullification_pearcel);
+        registerRender(pearcel_magnet);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

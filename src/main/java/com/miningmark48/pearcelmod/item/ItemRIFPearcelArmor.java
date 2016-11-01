@@ -48,18 +48,18 @@ public class ItemRIFPearcelArmor extends ItemArmor{
 
                     if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof ItemRIFPearcelArmor && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof ItemRIFPearcelArmor) {
                         player.capabilities.allowFlying = true;
-                        player.capabilities.setFlySpeed(0.065F);
+                        //player.capabilities.setFlySpeed(0.065F);
                     }
                 } else {
                     player.capabilities.allowFlying = false;
                     player.capabilities.isFlying = false;
-                    player.capabilities.setFlySpeed(0.05F); //Normal fly speed
+                    //player.capabilities.setFlySpeed(0.05F); //Normal fly speed
                 }
             }
         }else{
             player.capabilities.allowFlying = false;
             player.capabilities.isFlying = false;
-            player.capabilities.setFlySpeed(0.05F); //Normal fly speed
+            //player.capabilities.setFlySpeed(0.05F); //Normal fly speed
         }
     }
 
