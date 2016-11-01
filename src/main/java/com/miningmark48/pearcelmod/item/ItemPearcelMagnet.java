@@ -35,8 +35,10 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
             if (!stack.hasTagCompound()) {
                 stack.setTagCompound(new NBTTagCompound());
                 stack.getTagCompound().setBoolean("enabled", false);
+                stack.getTagCompound().setString("mode", "Attracts");
             }
             list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.pearcel_magnet.line1") + " " + TextFormatting.AQUA + stack.getTagCompound().getBoolean("enabled"));
+            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pearcel_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
             list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line2.p1") + " " + range + " " + Translate.toLocal("tooltip.item.pearcel_magnet.line2.p2"));
             list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line3"));
         }else{
@@ -50,15 +52,26 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
         if (!stack.hasTagCompound()){
             stack.setTagCompound(new NBTTagCompound());
             stack.getTagCompound().setBoolean("enabled", false);
+            stack.getTagCompound().setString("mode", "Attracts");
         }
 
         if (!world.isRemote) {
-            if (stack.getTagCompound().getBoolean("enabled")) {
-                stack.getTagCompound().setBoolean("enabled", false);
-                player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_magnet.disabled")));
-            } else {
-                stack.getTagCompound().setBoolean("enabled", true);
-                player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_magnet.enabled")));
+            if(!player.isSneaking()) {
+                if (stack.getTagCompound().getBoolean("enabled")) {
+                    stack.getTagCompound().setBoolean("enabled", false);
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("chat.item.pearcel_magnet.disabled")));
+                } else {
+                    stack.getTagCompound().setBoolean("enabled", true);
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_magnet.enabled")));
+                }
+            }else{
+                if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
+                    stack.getTagCompound().setString("mode", "Repels");
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("chat.item.pearcel_magnet.repels")));
+                } else {
+                    stack.getTagCompound().setString("mode", "Attracts");
+                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.pearcel_magnet.attracts")));
+                }
             }
         }
 
@@ -71,6 +84,7 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
         if (!stack.hasTagCompound()){
             stack.setTagCompound(new NBTTagCompound());
             stack.getTagCompound().setBoolean("enabled", false);
+            stack.getTagCompound().setString("mode", "Attracts");
         }
 
         if(entity instanceof EntityPlayer){
@@ -84,8 +98,12 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                 List<EntityItem> items = entity.worldObj.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
                 for (EntityItem e: items){
                     if (!player.isSneaking()){
-                        e.addVelocity((x - e.posX) * pullSpeed, (y - e.posY) * pullSpeed, (z - e.posZ) * pullSpeed); //Attracts
-                        //e.addVelocity((e.posX - x) * pullSpeed, (e.posY - y) * pullSpeed, (e.posZ - z) * pullSpeed); //Repels
+
+                        if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
+                            e.addVelocity((x - e.posX) * pullSpeed, (y - e.posY) * pullSpeed, (z - e.posZ) * pullSpeed); //Attracts
+                        }else {
+                            e.addVelocity((e.posX - x) * pullSpeed, (e.posY - y) * pullSpeed, (e.posZ - z) * pullSpeed); //Repels
+                        }
 
                         world.spawnParticle(EnumParticleTypes.SPELL_INSTANT, e.posX, e.posY + 0.3, e.posZ, 0.0D, 0.0D, 0.0D);
 

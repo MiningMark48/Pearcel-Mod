@@ -146,9 +146,10 @@ tooltip.item.nullification_pearcel.line1=Nulling:
 tooltip.item.nullification_pearcel.line2=Right click on a block to set a null!
 tooltip.item.nullification_pearcel.line3=Will void a set null block when mined.
 tooltip.item.pearcel_magnet.line1=Enabled:
-tooltip.item.pearcel_magnet.line2.p1=Pulls in items within a
+tooltip.item.pearcel_magnet.line2.p1=Pulls and pushes items within a
 tooltip.item.pearcel_magnet.line2.p2=block range around the player.
-tooltip.item.pearcel_magnet.line3=Shift to not pull items towards you.
+tooltip.item.pearcel_magnet.line3=Shift to not pull or push items.
+tooltip.item.pearcel_magnet.line4=Mode:
 
 #JEI Descriptions
 desc.item.pearcel_item=The essence of everything in Pearcel Mod. Drops from tall grass and leaves. When using a Pearcel Crook, you always get them. Also is a yummy food.
@@ -161,7 +162,7 @@ desc.item.experience_pearcel=Store all your experience into this mystical device
 desc.item.stimulation_pearcel=Right click on any block to speed up the tick rate. Works on tile entites and plants. Use with caution, some blocks might not like this.
 desc.item.rif_armor=Better version of Pearcel Armor. Allows a creative-type flight.
 desc.item.nullification_pearcel=Will void a set block when the block is broken. Right click on any block to set as a null block. It must be on your hotbar.
-desc.item.pearcel_magnet=Will pull any items within a radius towards the player. Right Click to enable/disable, hold Shift to not pull items.
+desc.item.pearcel_magnet=Will pull and push any items within a radius towards and away from the player. Right Click to enable/disable, Shift + Right Click to change mode, and hold Shift to not pull or push items.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
@@ -180,6 +181,8 @@ chat.item.mf.modeChange=Mode changed.
 chat.item.nullification_pearcel.set=Now nulling:
 chat.item.pearcel_magnet.enabled=Pearcel Magnet enabled.
 chat.item.pearcel_magnet.disabled=Pearcel Magnet disabled.
+chat.item.pearcel_magnet.attracts=Pearcel Magnet will attract items.
+chat.item.pearcel_magnet.repels=Pearcel Magnet will repel items.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!
