@@ -39,10 +39,6 @@ public class ItemPearcelFoodInfinite extends ItemFood {
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
     {
 
-        entityLiving.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 100));
-        entityLiving.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 50));
-        entityLiving.attackEntityFrom(DamageSource.causeIndirectMagicDamage(entityLiving, null), 1);
-
         if (entityLiving instanceof EntityPlayer)
         {
             EntityPlayer entityplayer = (EntityPlayer)entityLiving;

@@ -53,6 +53,7 @@ public class PMPlugin implements IModPlugin{
         registry.addDescription(new ItemStack(ModItems.nullification_pearcel), Translate.toLocal("desc.item.nullification_pearcel"));
         registry.addDescription(new ItemStack(ModItems.pearcel_magnet), Translate.toLocal("desc.item.pearcel_magnet"));
         registry.addDescription(new ItemStack(ModItems.glowing_pearcel), Translate.toLocal("desc.item.glowing_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_infinifood), Translate.toLocal("desc.item.pearcel_infinifood"));
 
             //Lists
         registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
