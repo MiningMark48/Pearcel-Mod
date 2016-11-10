@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -32,11 +33,11 @@ public class ItemGlowingPearcel extends ItemPearcelFood{
         double y = entityLiving.posY;
         double z = entityLiving.posZ;
 
-        int range = 25;
+        int range = ConfigurationHandler.glowingPearcelRange;
 
         List<EntityLiving> items = entityLiving.worldObj.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
         for (EntityLiving e: items){
-            e.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 1500, 1));
+            e.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 1500, 0));
         }
 
         if (entityLiving instanceof EntityPlayer)
@@ -46,9 +47,14 @@ public class ItemGlowingPearcel extends ItemPearcelFood{
             worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
             this.onFoodEaten(stack, worldIn, entityplayer);
             entityplayer.addStat(StatList.getObjectUseStats(this));
-        }
 
-        --stack.stackSize;
+            entityplayer.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 1500, 0));
+
+            if(!entityplayer.isCreative()) {
+                --stack.stackSize;
+            }
+
+        }
 
         return stack;
     }

@@ -105,7 +105,9 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                             e.addVelocity((e.posX - x) * pullSpeed, (e.posY - y) * pullSpeed, (e.posZ - z) * pullSpeed); //Repels
                         }
 
-                        world.spawnParticle(EnumParticleTypes.SPELL_INSTANT, e.posX, e.posY + 0.3, e.posZ, 0.0D, 0.0D, 0.0D);
+                        if (ConfigurationHandler.pearcelMagnetParticles) {
+                            world.spawnParticle(EnumParticleTypes.SPELL_INSTANT, e.posX, e.posY + 0.3, e.posZ, 0.0D, 0.0D, 0.0D);
+                        }
 
                     }
                 }
