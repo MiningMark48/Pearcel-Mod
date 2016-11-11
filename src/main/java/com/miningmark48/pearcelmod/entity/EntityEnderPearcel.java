@@ -1,12 +1,9 @@
 package com.miningmark48.pearcelmod.entity;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityEnderPearl;
 import net.minecraft.entity.monster.EntityEndermite;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityEndGateway;
 import net.minecraft.util.DamageSource;

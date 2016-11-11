@@ -2,8 +2,6 @@ package com.miningmark48.pearcelmod.handler;
 
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.Translate;
-import net.minecraft.util.IntegerCache;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

@@ -1,7 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.inventory.InventoryBindle;
-import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.KeyCheck;

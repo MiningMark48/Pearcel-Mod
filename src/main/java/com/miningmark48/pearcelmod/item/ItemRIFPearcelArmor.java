@@ -1,13 +1,10 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
-import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextFormatting;

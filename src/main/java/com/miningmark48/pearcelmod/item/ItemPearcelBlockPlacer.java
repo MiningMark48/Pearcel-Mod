@@ -4,7 +4,6 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

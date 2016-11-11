@@ -1,7 +1,6 @@
 package com.miningmark48.pearcelmod.init;
 
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;

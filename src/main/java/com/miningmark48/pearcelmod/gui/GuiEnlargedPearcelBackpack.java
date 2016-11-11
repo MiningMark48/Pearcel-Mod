@@ -1,9 +1,7 @@
 package com.miningmark48.pearcelmod.gui;
 
 import com.miningmark48.pearcelmod.container.ContainerEnlargedPearcelBackpack;
-import com.miningmark48.pearcelmod.container.ContainerPearcelBackpack;
 import com.miningmark48.pearcelmod.inventory.InventoryEnlargedPearcelBackpack;
-import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.GuiUtils;
 import com.miningmark48.pearcelmod.utility.Translate;

@@ -3,7 +3,6 @@ package com.miningmark48.pearcelmod.block;
 import com.google.common.base.Predicate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
