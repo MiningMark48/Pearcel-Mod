@@ -49,6 +49,7 @@ public class PearcelMod {
 		ModItems.register();
 		ModBlocks.init();
 		ModBlocks.register();
+		ModTileEntities.init();
 		ModEntities.init();
 		ModSoundEvents.registerSounds();
 

@@ -100,6 +100,7 @@ tile.pedestal.name=Pedestal
 tile.pearcel_ladder.name=Pearcel Ladder
 tile.pearcel_lamp.name=Pearcel Lamp
 tile.lit_pearcel_lamp.name=Pearcel Lamp
+tile.ender_pearcel_block.name=Block of Ender Pearcels
 
 #Tooltips
 tooltip.item.hold=Hold
@@ -184,6 +185,7 @@ desc.item.pearcel_juice=Speed and a jump boost in a bottle. This pearcel stuff i
 desc.block.torcher=Right Click to make torches explode everywhere.
 desc.block.pearcel_torch=Brighter than a regular torch, doesn't break when liquids hit it, and is also more blast resistant.
 desc.block.summoner=Can be used to summon mobs by arranging blocks on pedestals around the summoner. Requires the Summoner's Activation Pearcel to use.
+desc.block.pedestal=Used for summoning. If you place a Block of Ender Pearcels on top, it'll act as a magnet.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
