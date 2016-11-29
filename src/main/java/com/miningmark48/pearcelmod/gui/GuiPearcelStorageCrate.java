@@ -5,17 +5,20 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.inventory.Container;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
+import org.lwjgl.opengl.GL11;
 
 public class GuiPearcelStorageCrate extends GuiContainer{
 
     private IInventory playerInv;
     private TileEntityPearcelStorageCrate te;
 
-    public GuiPearcelStorageCrate(IInventory playerInv, TileEntityPearcelStorageCrate te) {
-        super(new ContainerPearcelStorageCrate(playerInv, te));
+    private static String texture = Reference.MOD_ID + ":textures/gui/gui_pearcel_backpack.png";
+
+    public GuiPearcelStorageCrate(IInventory playerInv, TileEntityPearcelStorageCrate te, EntityPlayer player) {
+        super(new ContainerPearcelStorageCrate(playerInv, te, player));
 
         this.playerInv = playerInv;
         this.te = te;
@@ -27,13 +30,16 @@ public class GuiPearcelStorageCrate extends GuiContainer{
 
     @Override
     protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
-        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-        this.mc.getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pearcel_backpack.png"));
+        GL11.glColor4f(1F, 1F, 1F, 1F);
+        this.mc.getTextureManager().bindTexture(new ResourceLocation(texture));
         this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize);
     }
 
     @Override
     protected  void drawGuiContainerForegroundLayer(int mouseX, int mouseY){
+        this.mc.getTextureManager().bindTexture(new ResourceLocation(texture));
+        this.drawTexturedModalRect(-24, 12, 0, 176, 27, 79);
+
         String s = this.te.getDisplayName().getUnformattedComponentText();
         this.fontRendererObj.drawString(s, 88 - this.fontRendererObj.getStringWidth(s) / 2, 6, 4210752);
     }

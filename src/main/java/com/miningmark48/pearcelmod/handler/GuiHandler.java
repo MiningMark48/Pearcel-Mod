@@ -36,7 +36,7 @@ public class GuiHandler implements IGuiHandler{
             return new ContainerBindle(player, player.inventory, new InventoryBindle(player.getHeldItem(EnumHand.MAIN_HAND)));
         }
         if (ID == GUIs.gui_id_pearcel_storage_crate){
-            return new ContainerPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos));
+            return new ContainerPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos), player);
         }
         return null;
     }
@@ -60,7 +60,7 @@ public class GuiHandler implements IGuiHandler{
             return new GuiBindle((ContainerBindle) new ContainerBindle(player, player.inventory, new InventoryBindle(player.getHeldItem(EnumHand.MAIN_HAND))));
         }
         if (ID == GUIs.gui_id_pearcel_storage_crate){
-            return new GuiPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos));
+            return new GuiPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos), player);
         }
         return null;
     }

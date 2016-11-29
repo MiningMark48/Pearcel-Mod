@@ -53,9 +53,10 @@ public class BlockPearcelStorageCrate extends BlockContainer{
 
     @Override
     public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack){
-        if (stack.hasDisplayName()){
-            ((TileEntityPearcelStorageCrate) world.getBlockState(pos)).setCustomName(stack.getDisplayName());
-        }
+//        Disabled because of bug
+//        if (stack.hasDisplayName()){
+//            ((TileEntityPearcelStorageCrate) world.getBlockState(pos)).setCustomName(stack.getDisplayName());
+//        }
     }
 
     @Override
