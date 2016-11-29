@@ -190,6 +190,7 @@ desc.block.pearcel_torch=Brighter than a regular torch, doesn't break when liqui
 desc.block.summoner=Can be used to summon mobs by arranging blocks on pedestals around the summoner. Requires the Summoner's Activation Pearcel to use.
 desc.block.pedestal=Used for summoning. If you place a Block of Ender Pearcels on top, it'll act as a magnet and pull items and XP towards it.
 desc.block.pearcel_beacon=Better than a beacon. Gives Speed II, Haste II, Jump Boost II, Fire Resistance, Regeneration, Strength, and Resistance to the player within a radius. Also damages hostile mobs as a player. Can be turned off with a redstone signal.
+desc.block.pearcel_storage_crate=Like a chest, but with 9 more slots. Doesn't matter if a block is above it or not.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:

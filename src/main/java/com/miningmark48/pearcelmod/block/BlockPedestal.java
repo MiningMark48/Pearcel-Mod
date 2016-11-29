@@ -12,8 +12,8 @@ import net.minecraft.world.World;
 public class BlockPedestal extends BlockContainer{
 
     public BlockPedestal(){
-        super(Material.ROCK);
-        setHardness(2.0F);
+        super(Material.WOOD);
+        setHardness(1.0F);
         setResistance(2.0F);
     }
 

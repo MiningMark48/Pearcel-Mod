@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.block;
 
-import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate;
@@ -8,12 +7,10 @@ import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
@@ -25,6 +22,8 @@ public class BlockPearcelStorageCrate extends BlockContainer{
 
     public BlockPearcelStorageCrate() {
         super(Material.WOOD);
+        setHardness(1.5F);
+        setResistance(3.0F);
     }
 
     public EnumBlockRenderType getRenderType(IBlockState state)

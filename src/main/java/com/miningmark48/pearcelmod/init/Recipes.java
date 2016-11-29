@@ -110,6 +110,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.ender_pearcel_block, 2), "xx ", "xx ", 'x', new ItemStack(ModItems.ender_pearcel));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_charcoal_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_charcoal));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_beacon), "zxz", "aza", "xyx", 'x', new ItemStack(ModBlocks.polished_pearcel_stone), 'y', new ItemStack(ModItems.pearcel_star), 'z', new ItemStack(ModBlocks.ender_pearcel_block), 'a', new ItemStack(ModItems.tier_3_crafting_component));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_storage_crate), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(Blocks.CHEST, 1, OreDictionary.WILDCARD_VALUE));
 
         //Pearcel Matter Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 2), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_1_crafting_component));

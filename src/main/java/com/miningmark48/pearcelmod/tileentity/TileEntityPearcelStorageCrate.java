@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.tileentity;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -38,7 +39,7 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
     @Nullable
     @Override
     public ITextComponent getDisplayName() {
-        return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
+        return new TextComponentString(ModBlocks.pearcel_storage_crate.getLocalizedName());
     }
 
     @Override
