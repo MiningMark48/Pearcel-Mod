@@ -26,8 +26,8 @@ public class ItemDragonPearcelStaff extends ItemPearcelSword{
             ItemStack equippedMain = player.getHeldItemMainhand();
             ItemStack equippedOffhand = player.getHeldItemOffhand();
             if (equippedMain == stack || equippedOffhand == stack){
-                player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2));
-                player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 0));
+                player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2, true, false));
+                player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 0, true, false));
             }
         }
     }
@@ -36,10 +36,10 @@ public class ItemDragonPearcelStaff extends ItemPearcelSword{
     public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
     {
         if (player.isSneaking()){
-            player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 5000, 1));
+            player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 5000, 1, true, false));
             return new ActionResult(EnumActionResult.PASS, item);
         }else{
-            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 2500, 1));
+            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 2500, 1, true, false));
             return new ActionResult(EnumActionResult.PASS, item);
         }
     }

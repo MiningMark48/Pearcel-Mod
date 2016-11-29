@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.tileentity;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.entity.EntityCreature;
@@ -36,8 +37,8 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
         int x = pos.getX();
         int y = pos.getY();
         int z = pos.getZ();
-        int range = 25; //TODO: Config
-        float damage = 2.0F; //TODO: Config
+        int range = ConfigurationHandler.pearcelBeaconRange;
+        float damage = ConfigurationHandler.pearcelBeaconDamage;
 
 
         if (!world.isBlockPowered(pos)) {
