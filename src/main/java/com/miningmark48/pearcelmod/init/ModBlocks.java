@@ -55,6 +55,7 @@ public class ModBlocks {
     public static Block pearcel_furnace;
     public static Block pearcel_furnace_lit;
     public static Block pearcel_beacon;
+    public static Block pearcel_storage_crate;
 
     public static void init(){
         //General
@@ -99,6 +100,7 @@ public class ModBlocks {
         pearcel_furnace = new BlockPearcelFurnace(false).setUnlocalizedName("pearcel_furnace").setRegistryName("pearcel_furnace");
         pearcel_furnace_lit = new BlockPearcelFurnace(true).setUnlocalizedName("pearcel_furnace_lit").setRegistryName("pearcel_furnace_lit");
         pearcel_beacon = new BlockPearcelBeacon().setUnlocalizedName("pearcel_beacon").setRegistryName("pearcel_beacon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_storage_crate = new BlockPearcelStorageCrate().setUnlocalizedName("pearcel_storage_crate").setRegistryName("pearcel_storage_crate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
     }
@@ -146,6 +148,7 @@ public class ModBlocks {
         //registerBlock(pearcel_furnace);
         //registerBlock(pearcel_furnace_lit);
         registerBlock(pearcel_beacon);
+        registerBlock(pearcel_storage_crate);
 
     }
 
@@ -192,6 +195,7 @@ public class ModBlocks {
         registerRender(pearcel_furnace);
         registerRender(pearcel_furnace_lit);
         registerRender(pearcel_beacon);
+        registerRender(pearcel_storage_crate);
 
     }
     
