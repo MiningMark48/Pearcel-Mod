@@ -26,6 +26,8 @@ public class ConfigurationHandler {
     public static int stimulationPearcelTickAmount;
     public static int pearcelMagnetRange;
     public static int glowingPearcelRange;
+    public static int pearcelBeaconRange;
+    public static float pearcelBeaconDamage;
     public static float pearcelMagnetPullSpeed;
     public static float enderPearcelVelocity;
     public static float rifPPickBaseHardness;
@@ -55,6 +57,7 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.torcher.title"), Translate.toLocal("config.category.torcher.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.worldGen.title"), Translate.toLocal("config.category.worldGen.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelMagnet.title"), Translate.toLocal("config.category.pearcelMagnet.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelBeacon.title"), Translate.toLocal("config.categoty.pearcelBeacon.desc"));;
 
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
         pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
@@ -83,6 +86,10 @@ public class ConfigurationHandler {
         pearcelMagnetRange = configuration.getInt(Translate.toLocal("config.pearcelMagnetRange.title"), Translate.toLocal("config.category.pearcelMagnet.title"), 9, 1, Integer.MAX_VALUE, Translate.toLocal("config.pearcelMagnetRange.desc"));
         pearcelMagnetPullSpeed = configuration.getFloat(Translate.toLocal("config.pearcelMagnetPullSpeed.title"), Translate.toLocal("config.category.pearcelMagnet.title"), 0.035F, 0, Float.MAX_VALUE, Translate.toLocal("config.pearcelMagnetPullSpeed.desc"));
         pearcelMagnetParticles = configuration.getBoolean(Translate.toLocal("config.pearcelMagnetParticles.title"), Translate.toLocal("config.category.pearcelMagnet.title"), true, Translate.toLocal("config.pearcelMagnetParticles.desc"));
+
+        //Pearcel Beacon
+        pearcelBeaconRange = configuration.getInt(Translate.toLocal("config.pearcelBeaconRange.title"), Translate.toLocal("config.category.pearcelBeacon.title"), 55, 1, Integer.MAX_VALUE, Translate.toLocal("config.pearcelBeaconRange.desc"));
+        pearcelBeaconDamage = configuration.getFloat(Translate.toLocal("config.pearcelBeaconDamage.title"), Translate.toLocal("config.category.pearcelBeacon.title"), 2.0F, 0.0F, Float.MAX_VALUE, Translate.toLocal("config.pearcelBeaconDamage.desc"));
 
 
         if (configuration.hasChanged()){

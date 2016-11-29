@@ -65,6 +65,7 @@ item.bindle.name=Bindle
 item.nullification_pearcel.name=Nullification Pearcel
 item.pearcel_magnet.name=Pearcel Magnet
 item.living_magnet.name=Living Magnet
+item.pearcel_star.name=Pearcel Star
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -101,6 +102,7 @@ tile.pearcel_ladder.name=Pearcel Ladder
 tile.pearcel_lamp.name=Pearcel Lamp
 tile.lit_pearcel_lamp.name=Pearcel Lamp
 tile.ender_pearcel_block.name=Block of Ender Pearcels
+tile.pearcel_beacon.name=Ender Pearcel Effect Transmitter
 
 #Tooltips
 tooltip.item.hold=Hold
@@ -185,7 +187,8 @@ desc.item.pearcel_juice=Speed and a jump boost in a bottle. This pearcel stuff i
 desc.block.torcher=Right Click to make torches explode everywhere.
 desc.block.pearcel_torch=Brighter than a regular torch, doesn't break when liquids hit it, and is also more blast resistant.
 desc.block.summoner=Can be used to summon mobs by arranging blocks on pedestals around the summoner. Requires the Summoner's Activation Pearcel to use.
-desc.block.pedestal=Used for summoning. If you place a Block of Ender Pearcels on top, it'll act as a magnet.
+desc.block.pedestal=Used for summoning. If you place a Block of Ender Pearcels on top, it'll act as a magnet and pull items and XP towards it.
+desc.block.pearcel_beacon=Better than a beacon. Gives Speed II, Haste II, Jump Boost II, Fire Resistance, Regeneration, Strength, and Resistance to the player within a radius. Also damages hostile mobs as a player. Can be turned off with a redstone signal.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
@@ -248,6 +251,8 @@ config.category.rifPearcelPickaxe.title=Reinforced Pearcel Pickaxe
 config.category.rifPearcelPickaxe.desc=Configuration options for the RIF Pearcel Pickaxe.
 config.category.pearcelMagnet.title=Pearcel Magnet
 config.category.pearcelMagnet.desc=Configure how the Pearcel Magnet and the Living Magnet behaves.
+config.category.pearcelBeacon.title=Ender Pearcel Effect Transmitter
+config.category.pearcelBeacon.desc=Configure how the EPET functions.
 
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
@@ -290,6 +295,10 @@ config.pearcelMagnetParticles.title=Pearcel Magnet particles
 config.pearcelMagnetParticles.desc=Should the Pearcel Magnet have particles?
 config.glowingPearcelRange.title=Glowing Pearcel Range
 config.glowingPearcelRange.desc=Range in which the Glowing Pearcel will highlight mobs when eaten.
+config.pearcelBeaconRange.title=EPET Range
+config.pearcelBeaconRange.desc=What is the AOE for the EPET?
+config.pearcelBeaconDamage.title=EPET Damage
+config.pearcelBeaconDamage.desc=How much damage does the EPET do to hostile mobs per hit?
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?

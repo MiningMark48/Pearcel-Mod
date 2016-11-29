@@ -19,7 +19,8 @@ public class GuiModConfig extends GuiConfig {
                         new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.torcher.title").toLowerCase())),
                         new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.worldGen.title").toLowerCase())),
                         new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.rifPearcelPickaxe.title").toLowerCase())),
-                        new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.pearcelMagnet.title").toLowerCase()))
+                        new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.pearcelMagnet.title").toLowerCase())),
+                        new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.pearcelBeacon.title").toLowerCase()))
                 }),
                 Reference.MOD_ID,
                 false,

@@ -54,6 +54,7 @@ public class ModBlocks {
     public static Block summoner;
     public static Block pearcel_furnace;
     public static Block pearcel_furnace_lit;
+    public static Block pearcel_beacon;
 
     public static void init(){
         //General
@@ -80,7 +81,7 @@ public class ModBlocks {
         pearcel_ladder = new BlockPearceLadder().setUnlocalizedName("pearcel_ladder").setRegistryName("pearcel_ladder").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_lamp = new BlockPearcelLamp(false).setUnlocalizedName("pearcel_lamp").setRegistryName("pearcel_lamp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         lit_pearcel_lamp = new BlockPearcelLamp(true).setUnlocalizedName("lit_pearcel_lamp").setRegistryName("lit_pearcel_lamp");
-        ender_pearcel_block = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_block").setRegistryName("ender_pearcel_block");
+        ender_pearcel_block = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_block").setRegistryName("ender_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
         pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setRegistryName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -97,6 +98,7 @@ public class ModBlocks {
         summoner = new BlockSummoner().setUnlocalizedName("summoner").setRegistryName("summoner").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_furnace = new BlockPearcelFurnace(false).setUnlocalizedName("pearcel_furnace").setRegistryName("pearcel_furnace");
         pearcel_furnace_lit = new BlockPearcelFurnace(true).setUnlocalizedName("pearcel_furnace_lit").setRegistryName("pearcel_furnace_lit");
+        pearcel_beacon = new BlockPearcelBeacon().setUnlocalizedName("pearcel_beacon").setRegistryName("pearcel_beacon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
 
     }
@@ -143,6 +145,7 @@ public class ModBlocks {
         registerBlock(summoner);
         //registerBlock(pearcel_furnace);
         //registerBlock(pearcel_furnace_lit);
+        registerBlock(pearcel_beacon);
 
     }
 
@@ -188,6 +191,7 @@ public class ModBlocks {
         registerRender(summoner);
         registerRender(pearcel_furnace);
         registerRender(pearcel_furnace_lit);
+        registerRender(pearcel_beacon);
 
     }
     

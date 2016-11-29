@@ -13,6 +13,8 @@ public class BlockPedestal extends BlockContainer{
 
     public BlockPedestal(){
         super(Material.ROCK);
+        setHardness(2.0F);
+        setResistance(2.0F);
     }
 
     public EnumBlockRenderType getRenderType(IBlockState state)

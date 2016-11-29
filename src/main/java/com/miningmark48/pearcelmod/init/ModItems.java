@@ -35,6 +35,7 @@ public class ModItems {
     public static Item pearcel_matter;
     public static Item neutral_pearcel_matter;
     public static Item pearcel_arrow;
+    public static Item pearcel_star;
 
     //Food
     public static Item pearcel_item;
@@ -100,6 +101,7 @@ public class ModItems {
         pearcel_matter = new ItemPearcelModEffect().setUnlocalizedName("pearcel_matter").setRegistryName("pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setRegistryName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setRegistryName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_star = new ItemPearcelModEffect().setUnlocalizedName("pearcel_star").setRegistryName("pearcel_star").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Food
         pearcel_item = new ItemPearcelFood(4, 0.5F, false).setUnlocalizedName("pearcel_item").setRegistryName("pearcel_item").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -167,6 +169,7 @@ public class ModItems {
         GameRegistry.register(pearcel_matter);
         GameRegistry.register(neutral_pearcel_matter);
         GameRegistry.register(pearcel_arrow);
+        GameRegistry.register(pearcel_star);
 
         //Food
         GameRegistry.register(pearcel_item);
@@ -234,6 +237,7 @@ public class ModItems {
         registerRender(pearcel_matter);
         registerRender(neutral_pearcel_matter);
         registerRender(pearcel_arrow);
+        registerRender(pearcel_star);
 
         //Food
         registerRender(pearcel_item);
