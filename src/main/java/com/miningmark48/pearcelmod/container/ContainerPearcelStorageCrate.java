@@ -17,14 +17,11 @@ import javax.annotation.Nullable;
 public class ContainerPearcelStorageCrate extends Container {
 
     private TileEntityPearcelStorageCrate te;
-    private static int INV_START = 0;
-    private static int INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
+    private static final int INV_START = TileEntityPearcelStorageCrate.INV_SIZE, INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
     private static final EntityEquipmentSlot[] VALID_EQUIPMENT_SLOTS = new EntityEquipmentSlot[] {EntityEquipmentSlot.HEAD, EntityEquipmentSlot.CHEST, EntityEquipmentSlot.LEGS, EntityEquipmentSlot.FEET};
 
     public ContainerPearcelStorageCrate(final IInventory playerInv, TileEntityPearcelStorageCrate te, final EntityPlayer player){
         this.te = te;
-
-        INV_START = te.getSizeInventory();
 
         //Tile Entity
         int i;
@@ -88,6 +85,7 @@ public class ContainerPearcelStorageCrate extends Container {
                 return "minecraft:items/empty_armor_slot_shield";
             }
         });
+
 
         //TODO: Add support for Baubles?
     }

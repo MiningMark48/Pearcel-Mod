@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.gui;
 import com.miningmark48.pearcelmod.container.ContainerPearcelStorageCrate;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate;
+import com.miningmark48.pearcelmod.utility.GuiUtils;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
@@ -43,7 +44,9 @@ public class GuiPearcelStorageCrate extends GuiContainer{
         this.drawTexturedModalRect(-24, 146, 31, 176, 27, 25);
 
         String s = this.te.getDisplayName().getUnformattedComponentText();
-        this.fontRendererObj.drawString(s, 88 - this.fontRendererObj.getStringWidth(s) / 2, 6, 4210752);
+        //this.fontRendererObj.drawString(s, 88 - this.fontRendererObj.getStringWidth(s) / 2, 6, 4210752);
+        int x = GuiUtils.getXCenter(s, this.fontRendererObj, xSize);
+        this.fontRendererObj.drawString(s, x, 5, 0x404040);
     }
 
 

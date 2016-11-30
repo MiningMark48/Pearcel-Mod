@@ -18,6 +18,8 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
     private ItemStack[] inventory;
     private String custom_name;
 
+    public static int INV_SIZE = 36;
+
     public TileEntityPearcelStorageCrate(){
         this.inventory = new ItemStack[this.getSizeInventory()];
     }
@@ -44,7 +46,7 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
 
     @Override
     public int getSizeInventory(){
-        return 36;
+        return INV_SIZE;
     }
 
     @Override
@@ -69,8 +71,6 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
                 itemStack = this.getStackInSlot(index).splitStack(count);
                 if (this.getStackInSlot(index).stackSize <= 0){
                     this.setInventorySlotContents(index, null);
-                }else{
-                    this.setInventorySlotContents(index, this.getStackInSlot(index)); //Temp
                 }
 
                 this.markDirty();
@@ -83,7 +83,9 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
 
     @Override
     public ItemStack removeStackFromSlot(int index) {
-        return null;
+        ItemStack stack = getStackInSlot(index);
+        setInventorySlotContents(index, null);
+        return stack;
     }
 
     @Override
