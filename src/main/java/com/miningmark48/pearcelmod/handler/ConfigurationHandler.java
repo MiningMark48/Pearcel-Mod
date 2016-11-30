@@ -17,6 +17,7 @@ public class ConfigurationHandler {
     public static boolean doEnderPearcelCooldown;
     public static boolean doRIFArmorFlight;
     public static boolean pearcelMagnetParticles;
+    public static boolean creativeTabSearchBar;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int maxStaffFlyHeight;
@@ -65,6 +66,7 @@ public class ConfigurationHandler {
         stimulationPearcelTickAmount = configuration.getInt(Translate.toLocal("config.stimulationPearcelTickAmount.title"), Configuration.CATEGORY_GENERAL, 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.stimulationPearcelTickAmount.desc"));
         glowingPearcelRange = configuration.getInt(Translate.toLocal("config.glowingPearcelRange.title"), Configuration.CATEGORY_GENERAL, 35, 1, Integer.MAX_VALUE, Translate.toLocal("config.glowingPearcelRange.desc"));
         doRIFArmorFlight = configuration.getBoolean(Translate.toLocal("config.doRIFArmorFlight.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doRIFArmorFlight.desc"));
+        creativeTabSearchBar = configuration.getBoolean(Translate.toLocal("config.creativeTabSearchBar.title"), Configuration.CATEGORY_GENERAL, false, Translate.toLocal("config.creativeTabSearchBar.desc"));
 
         //Ender Pearcel
         enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Translate.toLocal("config.category.enderPearcel.title"), 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));

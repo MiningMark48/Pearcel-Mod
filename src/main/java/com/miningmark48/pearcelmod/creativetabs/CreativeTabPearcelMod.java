@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.creativetabs;
 
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
@@ -16,7 +17,7 @@ public class CreativeTabPearcelMod{
 
         @Override
         public boolean hasSearchBar() {
-            return true;
+            return ConfigurationHandler.creativeTabSearchBar;
         }
     };
 
