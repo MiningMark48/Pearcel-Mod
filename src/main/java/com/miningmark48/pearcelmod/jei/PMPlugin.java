@@ -28,6 +28,8 @@ public class PMPlugin implements IModPlugin{
     public void register(IModRegistry registry) {
         jeiHelpers = registry.getJeiHelpers();
 
+        jeiHelpers.getGuiHelper().
+
         List<ItemStack> backpacks = new ArrayList<ItemStack>();
         backpacks.add(new ItemStack(ModItems.bindle));
         backpacks.add(new ItemStack(ModItems.pearcel_backpack));
@@ -74,6 +76,7 @@ public class PMPlugin implements IModPlugin{
         registry.addDescription(new ItemStack(ModBlocks.pedestal), Translate.toLocal("desc.block.pedestal"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_beacon), Translate.toLocal("desc.block.pearcel_beacon"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_storage_crate), Translate.toLocal("desc.block.pearcel_storage_crate"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_workbench), Translate.toLocal("desc.block.pearcel_workbench"));
 
         //Descriptions - Lists
         registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));

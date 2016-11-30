@@ -1,6 +1,8 @@
 package com.miningmark48.pearcelmod.container;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.inventory.InventoryCraftingHolding;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelWorkbench;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.*;
@@ -18,8 +20,8 @@ public class ContainerPearcelWorkbench extends Container {
     private int posY;
     private int posZ;
 
-    public ContainerPearcelWorkbench(InventoryPlayer player, World world, int x, int y, int z){
-        craftMatrix = new InventoryCrafting(this, 3, 3);
+    public ContainerPearcelWorkbench(InventoryPlayer player, World world, int x, int y, int z, TileEntityPearcelWorkbench tile){
+        craftMatrix = new InventoryCraftingHolding(this, tile, 3, 3);
         craftResult = new InventoryCraftResult();
         worldObj = world;
         this.posX = x;
@@ -61,23 +63,23 @@ public class ContainerPearcelWorkbench extends Container {
         }
     }
 
-    public void onContainerClosed(EntityPlayer player)
-    {
-        super.onContainerClosed(player);
-
-        if (!this.worldObj.isRemote)
-        {
-            for (int i = 0; i < 9; ++i)
-            {
-                ItemStack itemstack = this.craftMatrix.getStackInSlot(i);
-
-                if (itemstack != null)
-                {
-                    player.dropItem(itemstack, false);
-                }
-            }
-        }
-    }
+//    public void onContainerClosed(EntityPlayer player)
+//    {
+//        super.onContainerClosed(player);
+//
+//        if (!this.worldObj.isRemote)
+//        {
+//            for (int i = 0; i < 9; ++i)
+//            {
+//                ItemStack itemstack = this.craftMatrix.getStackInSlot(i);
+//
+//                if (itemstack != null)
+//                {
+//                    player.dropItem(itemstack, false);
+//                }
+//            }
+//        }
+//    }
 
     public ItemStack transferStackInSlot(EntityPlayer p_82846_1_, int p_82846_2_)
     {

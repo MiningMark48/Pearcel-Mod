@@ -2,6 +2,8 @@ package com.miningmark48.pearcelmod.gui;
 
 import com.miningmark48.pearcelmod.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelWorkbench;
 import com.miningmark48.pearcelmod.utility.GuiUtils;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.client.Minecraft;
@@ -16,8 +18,8 @@ public class GuiPearcelWorkbench extends GuiContainer{
     private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pearcel_workbench.png");
     public static final int GUI_ID = 153;
 
-    public GuiPearcelWorkbench(InventoryPlayer player, World world, int x, int y, int z){
-        super(new ContainerPearcelWorkbench(player, world, x, y, z));
+    public GuiPearcelWorkbench(InventoryPlayer player, World world, int x, int y, int z, TileEntityPearcelWorkbench tile){
+        super(new ContainerPearcelWorkbench(player, world, x, y, z, tile));
 
         this.xSize = 176;
         this.ySize = 166;

@@ -9,6 +9,7 @@ import com.miningmark48.pearcelmod.inventory.InventoryEnlargedPearcelBackpack;
 import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelWorkbench;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
@@ -21,7 +22,7 @@ public class GuiHandler implements IGuiHandler{
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         BlockPos pos = new BlockPos(x, y, z);
         if (ID == GUIs.gui_id_pearcel_workbench){
-            return ID == GUIs.gui_id_pearcel_workbench && world.getBlockState(new BlockPos(x, y, z)).getBlock() == ModBlocks.pearcel_workbench ? new ContainerPearcelWorkbench(player.inventory, world, x, y, z) : null;
+            return ID == GUIs.gui_id_pearcel_workbench && world.getBlockState(new BlockPos(x, y, z)).getBlock() == ModBlocks.pearcel_workbench ? new ContainerPearcelWorkbench(player.inventory, world, x, y, z, (TileEntityPearcelWorkbench) world.getTileEntity(pos)) : null;
         }
         if (ID == GUIs.gui_id_pcp){
             return new ContainerPCP(player.inventory, world, x, y, z);
@@ -45,7 +46,7 @@ public class GuiHandler implements IGuiHandler{
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         BlockPos pos = new BlockPos(x, y, z);
         if (ID == GUIs.gui_id_pearcel_workbench){
-            return ID == GUIs.gui_id_pearcel_workbench && world.getBlockState(new BlockPos(x, y, z)).getBlock() == ModBlocks.pearcel_workbench ? new GuiPearcelWorkbench(player.inventory, world, x, y, z) : null;
+            return ID == GUIs.gui_id_pearcel_workbench && world.getBlockState(new BlockPos(x, y, z)).getBlock() == ModBlocks.pearcel_workbench ? new GuiPearcelWorkbench(player.inventory, world, x, y, z, (TileEntityPearcelWorkbench) world.getTileEntity(pos)) : null;
         }
         if (ID == GUIs.gui_id_pcp){
             return new GuiPCP(player.inventory, world, x, y, z);

@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.gui;
 
+import com.miningmark48.pearcelmod.container.ContainerPCP;
 import com.miningmark48.pearcelmod.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.GuiUtils;
@@ -16,7 +17,7 @@ public class GuiPCP extends GuiContainer{
     private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pearcel_workbench.png");
 
     public GuiPCP(InventoryPlayer player, World world, int x, int y, int z){
-        super(new ContainerPearcelWorkbench(player, world, x, y, z));
+        super(new ContainerPCP(player, world, x, y, z));
 
         this.xSize = 176;
         this.ySize = 166;
