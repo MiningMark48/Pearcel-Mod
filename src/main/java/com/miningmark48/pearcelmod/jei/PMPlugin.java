@@ -1,10 +1,13 @@
 package com.miningmark48.pearcelmod.jei;
 
+import com.miningmark48.pearcelmod.gui.GuiPCP;
+import com.miningmark48.pearcelmod.gui.GuiPearcelWorkbench;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.Translate;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IModIngredientRegistration;
+import net.minecraft.inventory.ContainerWorkbench;
 import net.minecraft.item.ItemStack;
 
 import java.util.*;
@@ -27,8 +30,6 @@ public class PMPlugin implements IModPlugin{
     @Override
     public void register(IModRegistry registry) {
         jeiHelpers = registry.getJeiHelpers();
-
-        jeiHelpers.getGuiHelper().
 
         List<ItemStack> backpacks = new ArrayList<ItemStack>();
         backpacks.add(new ItemStack(ModItems.bindle));
@@ -83,9 +84,13 @@ public class PMPlugin implements IModPlugin{
         registry.addDescription(rif_armor, Translate.toLocal("desc.item.rif_armor"));
         registry.addDescription(pearcel_tools, Translate.toLocal("desc.item.pearcel_tools"));
 
-        //Other
+        //Categories
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_workbench), "minecraft.crafting");
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModItems.pcp), "minecraft.crafting");
+
+        //Recipe Click Areas
+        registry.addRecipeClickArea(GuiPearcelWorkbench.class, 90, 35, 20, 20, "minecraft.crafting");
+        registry.addRecipeClickArea(GuiPCP.class, 90, 35, 20, 20, "minecraft.crafting");
 
     }
 
