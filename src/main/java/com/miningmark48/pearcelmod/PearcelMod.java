@@ -8,6 +8,7 @@ import com.miningmark48.pearcelmod.event.EventOnBreakNP;
 import com.miningmark48.pearcelmod.event.EventOnJoin;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.GuiHandler;
+import com.miningmark48.pearcelmod.handler.KeyHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
@@ -74,6 +75,7 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakMF());
 		MinecraftForge.EVENT_BUS.register(new EventOnJoin());
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakNP());
+		MinecraftForge.EVENT_BUS.register(new KeyHandler());
 
 		Recipes.init();
 
