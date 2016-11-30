@@ -74,6 +74,21 @@ public class ContainerPearcelStorageCrate extends Container {
             });
         }
 
+        //Offhand
+        this.addSlotToContainer(new Slot(playerInv, 40, -16, 151)
+        {
+            public boolean isItemValid(@Nullable ItemStack stack)
+            {
+                return super.isItemValid(stack);
+            }
+            @Nullable
+            @SideOnly(Side.CLIENT)
+            public String getSlotTexture()
+            {
+                return "minecraft:items/empty_armor_slot_shield";
+            }
+        });
+
         //TODO: Add support for Baubles?
     }
 

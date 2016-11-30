@@ -39,6 +39,8 @@ public class GuiPearcelStorageCrate extends GuiContainer{
     protected  void drawGuiContainerForegroundLayer(int mouseX, int mouseY){
         this.mc.getTextureManager().bindTexture(new ResourceLocation(texture));
         this.drawTexturedModalRect(-24, 12, 0, 176, 27, 79);
+        this.mc.getTextureManager().bindTexture(new ResourceLocation(texture));
+        this.drawTexturedModalRect(-24, 146, 31, 176, 27, 25);
 
         String s = this.te.getDisplayName().getUnformattedComponentText();
         this.fontRendererObj.drawString(s, 88 - this.fontRendererObj.getStringWidth(s) / 2, 6, 4210752);
