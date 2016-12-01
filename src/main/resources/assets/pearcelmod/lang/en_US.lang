@@ -162,6 +162,11 @@ tooltip.item.living_magnet.line2.p2=block range around the player.
 tooltip.item.living_magnet.line3=Shift to not pull or push living entities.
 tooltip.item.living_magnet.line4=Mode:
 
+#Key Bindings
+key.categories.pearcelmod=Pearcel Mod
+key.item.pcp.1=PCP Crafting GUI [WIP]
+key.item.pepc.1=PEPC GUI [WIP]
+
 #JEI Descriptions
 desc.item.pearcel_item=The essence of everything in Pearcel Mod. Drops from tall grass and leaves. When using a Pearcel Crook, you always get them. Also is a yummy food.
 desc.item.matter_fabricator=After a certain amount of blocks are broken with this tool, Pearcel Matter is created. Mode 1 uses junk blocks like cobble, Mode 2 uses ALL blocks.

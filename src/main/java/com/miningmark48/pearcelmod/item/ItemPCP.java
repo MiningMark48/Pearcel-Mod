@@ -1,9 +1,12 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.PearcelMod;
+import com.miningmark48.pearcelmod.handler.KeyHandler;
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
