@@ -14,8 +14,6 @@ import javax.annotation.Nullable;
 
 public class TileEntityPearcelWorkbench extends TileEntity implements IInventory{
 
-
-
     private ItemStack[] inventory;
     private String custom_name;
 
