@@ -20,18 +20,12 @@ public class ModEntities {
     }
 
     private static void registerEntities() {
-        createEntity(EntityPearcelBoss.class, "Pearcel Boss", entId++, 5882444, 4959550);
+        createEntity(EntityPearcelBoss.class, "pearcel_boss", entId++, 5882444, 4959550);
         //addSpawns(EntityPearcelBoss.class, 2, 0, 1, EnumCreatureType.MONSTER, new Biome[]{Biomes.PLAINS});
     }
 
     private static void createEntity(Class entityClass, String entityName, int id, int solidColor, int spotColor){
-        EntityRegistry.registerModEntity(entityClass, entityName, id, PearcelMod.instance, 64, 1, true);
-
-        createEgg(entityName, solidColor, spotColor);
-    }
-
-    private static void createEgg(String entityName, int solidColor, int spotColor) {
-        EntityList.ENTITY_EGGS.put(entityName, new EntityList.EntityEggInfo(entityName, solidColor, spotColor));
+        EntityRegistry.registerModEntity(entityClass, entityName, id, PearcelMod.instance, 64, 1, true, solidColor, spotColor);
     }
 
     private static void addSpawns(Class entityClass, int i, int j, int k, EnumCreatureType type, Biome[] biome){

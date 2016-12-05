@@ -81,10 +81,10 @@ public class ModelPearcelBoss extends ModelBase{
     public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
     {
         this.Head.rotationPointX = (f3 / 57.295776F);
-        this.Head.rotationPointY = (f4 / 57.295776F);
-        this.Leg1.rotationPointY = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1);
-        this.Leg2.rotationPointY = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1 * -1.0F);
-        this.Arm1.rotationPointY = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1);
+        this.Head.rotationPointZ = (f4 / 57.295776F);
+        this.Leg1.rotationPointZ = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1);
+        this.Leg2.rotationPointZ = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1 * -1.0F);
+        this.Arm1.rotationPointZ = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1);
         this.Arm2.rotationPointY = (MathHelper.floor_float(f * 0.5F + 3.1415927F) * 1.5F * f1 * -1.0F);
     }
 
