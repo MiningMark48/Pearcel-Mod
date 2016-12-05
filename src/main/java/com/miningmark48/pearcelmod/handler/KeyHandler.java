@@ -13,14 +13,19 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.input.Keyboard;
+
+import javax.swing.plaf.basic.BasicSplitPaneUI;
 
 public class KeyHandler{
 
@@ -41,22 +46,24 @@ public class KeyHandler{
         }
         if (event.phase == TickEvent.Phase.START){
             Minecraft mc = Minecraft.getMinecraft();
-            EntityPlayer player = mc.thePlayer;
-            int x = (int) mc.thePlayer.posX;
-            int y = (int) mc.thePlayer.posY;
-            int z = (int) mc.thePlayer.posZ;
+            EntityPlayer player = event.player;
+            World world = player.getEntityWorld();
+            int x = (int) event.player.posX;
+            int y = (int) event.player.posY;
+            int z = (int) event.player.posZ;
 
             //PCP GUI
             if (item_pcp.isPressed()){
                 if (player.inventory.hasItemStack(new ItemStack(ModItems.pcp))){
-                    player.addChatComponentMessage(new TextComponentString("This is a WIP!"));
-                    //player.openGui(PearcelMod.instance, GUIs.gui_id_pcp, mc.theWorld, x, y, z);
+                    player.addChatComponentMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
+                    //player.openGui(PearcelMod.instance, GUIs.gui_id_pcp, world, x, y, z);
+
                 }
             }
             //PEPC GUI
             if (item_pepc.isPressed()){
                 if (player.inventory.hasItemStack(new ItemStack(ModItems.pepc))) {
-                    player.addChatComponentMessage(new TextComponentString("This is a WIP!"));
+                    player.addChatComponentMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
                     //player.displayGUIChest(player.getInventoryEnderChest());
                 }
             }

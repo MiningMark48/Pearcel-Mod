@@ -8,16 +8,13 @@ import com.miningmark48.pearcelmod.event.EventOnBreakNP;
 import com.miningmark48.pearcelmod.event.EventOnJoin;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.GuiHandler;
-import com.miningmark48.pearcelmod.handler.KeyHandler;
 import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelFurnace;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.utility.VersionChecker;
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -53,6 +50,7 @@ public class PearcelMod {
 		ModBlocks.register();
 		ModTileEntities.init();
 		ModEntities.init();
+		ModLoots.init();
 		ModSoundEvents.registerSounds();
 
 		EntityRegistry.registerModEntity(EntityEnderPearcel.class, "EnderPearcel", 10, this, 350, 50, true);
