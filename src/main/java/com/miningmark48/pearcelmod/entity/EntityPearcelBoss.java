@@ -35,7 +35,7 @@ public class EntityPearcelBoss extends EntityMob{
 
     public EntityPearcelBoss(World world) {
         super(world);
-        setSize(0.6F, 2.0F);
+        setSize(0.6F, 3.0F);
         this.isCreatureType(EnumCreatureType.MONSTER, true);
         this.initEntityAI();
     }
@@ -125,8 +125,9 @@ public class EntityPearcelBoss extends EntityMob{
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(500.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.35D);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(10.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(20.0D);
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(50.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.125D);
     }
 
     @Override
@@ -179,7 +180,7 @@ public class EntityPearcelBoss extends EntityMob{
                 entityplayer.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 40, 1, false, true));
                 entityplayer.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 0, false, true));
                 entityplayer.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 40, 0, false, true));
-                entityplayer.addPotionEffect(new PotionEffect(MobEffects.WITHER, 100, 0, false, true));
+                entityplayer.addPotionEffect(new PotionEffect(MobEffects.WITHER, 200, 1, false, true));
                 entityplayer.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 100, 0, false, true));
 
             }

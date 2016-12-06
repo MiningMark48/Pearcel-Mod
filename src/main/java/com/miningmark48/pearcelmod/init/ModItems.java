@@ -20,7 +20,7 @@ public class ModItems {
     public static Item.ToolMaterial matToolPearcelReinforced = EnumHelper.addToolMaterial("RIFPearcelTools", 3, 4096, 20.0F, 10.0F, 15);
     public static Item.ToolMaterial matToolPearcelStaff = EnumHelper.addToolMaterial("PearcelStaff", 3, 1500, 15.0F, 15.0F, 30);
     public static ItemArmor.ArmorMaterial matPearcel = EnumHelper.addArmorMaterial("pearcel", Reference.MOD_ID + ":" + "pearcel_armor", 100, new int[]{4, 7, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10);
-    public static ItemArmor.ArmorMaterial matRIFPearcel = EnumHelper.addArmorMaterial("riPearcel", Reference.MOD_ID + ":" + "rif_pearcel_armor", 150, new int[]{6, 9, 8, 5}, 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 15);
+    public static ItemArmor.ArmorMaterial matRIFPearcel = EnumHelper.addArmorMaterial("riPearcel", Reference.MOD_ID + ":" + "rif_pearcel_armor", 150, new int[]{5, 8, 7, 4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 12);
 
     //General Items
     public static Item pearcel_ingot;
@@ -49,6 +49,7 @@ public class ModItems {
     public static Item pearcel_infinifood;
     public static Item golden_pearcel;
     public static Item glowing_pearcel;
+    public static Item guardian_food;
 
     //Tools and Armor
     public static Item pearcel_sword;
@@ -115,6 +116,7 @@ public class ModItems {
         pearcel_infinifood = new ItemPearcelFoodInfinite(10, 10.0F, false).setUnlocalizedName("pearcel_infinifood").setRegistryName("pearcel_infinifood").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         golden_pearcel = new ItemGoldenPearcel().setUnlocalizedName("golden_pearcel").setRegistryName("golden_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         glowing_pearcel = new ItemGlowingPearcel().setUnlocalizedName("glowing_pearcel").setRegistryName("glowing_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        guardian_food = new ItemGuardianFood().setUnlocalizedName("guardian_food").setRegistryName("guardian_food").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Tools and Armor
         pearcel_sword = new ItemPearcelSword(matToolPearcel).setUnlocalizedName("pearcel_sword").setRegistryName("pearcel_sword").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -183,6 +185,7 @@ public class ModItems {
         GameRegistry.register(pearcel_infinifood);
         GameRegistry.register(golden_pearcel);
         GameRegistry.register(glowing_pearcel);
+        GameRegistry.register(guardian_food);
 
         //Tools and Armor
         GameRegistry.register(pearcel_sword);
@@ -251,6 +254,7 @@ public class ModItems {
         registerRender(pearcel_infinifood);
         registerRender(golden_pearcel);
         registerRender(glowing_pearcel);
+        registerRender(guardian_food);
 
         //Tools and Armor
         registerRender(pearcel_sword);

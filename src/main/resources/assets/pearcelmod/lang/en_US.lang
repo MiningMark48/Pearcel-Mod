@@ -29,6 +29,7 @@ item.pearcel_sandwich.name=Pearcel Sandwich
 item.pearcel_juice_bottle.name=Bottle of Pearcel Juice
 item.pearcel_infinifood.name=Pearcel Infinifood
 item.glowing_pearcel.name=Glowing Pearcel
+item.guardian_food.name=Food of the Guardian
 item.pearcel_sword.name=Pearcel Sword
 item.pearcel_pickaxe.name=Pearcel Pickaxe
 item.pearcel_axe.name=Pearcel Axe
@@ -106,7 +107,7 @@ tile.pearcel_beacon.name=Ender Pearcel Effect Transmitter
 tile.pearcel_storage_crate.name=Pearcel Storage Crate
 
 #Entities
-entity.pearcelmod.pearcel_boss.name=Pearcel Boss
+entity.pearcelmod.pearcel_boss.name=Pearcel Guardian
 
 #Tooltips
 tooltip.item.hold=Hold
@@ -164,6 +165,7 @@ tooltip.item.living_magnet.line2.p1=Pulls and pushes living entities within a
 tooltip.item.living_magnet.line2.p2=block range around the player.
 tooltip.item.living_magnet.line3=Shift to not pull or push living entities.
 tooltip.item.living_magnet.line4=Mode:
+tooltip.item.guardian_food.line1=Eat thy and thee will spawn.
 
 #Key Bindings
 key.categories.pearcelmod=Pearcel Mod
@@ -192,6 +194,8 @@ desc.item.pearcel_crook=Guarantees a Pearcel when used to break leaves.
 desc.item.tp_pearcel=Use to teleport to any location within the same dimension. Shift + Right Click will set coordinates, Right Click will take you to the set coordinates. Will use any Pearcels in the player's inventory if they are found, otherwise it will take damage.
 desc.item.pbp=A cobble generator in your hand, will place infinite Pearcel Stone and Pearcel Cobblestone.
 desc.item.pearcel_juice=Speed and a jump boost in a bottle. This pearcel stuff is good.
+desc.item.guardian_food=When eaten the Pearcel Guardian will summon at the player. Drops the Pearcel Star. Be warned, the Guardian has no mercy.
+desc.item.pearcel_star=Dropped from the Pearcel Guardian which is summoned when eating his food.
 
 desc.block.torcher=Right Click to make torches explode everywhere.
 desc.block.pearcel_torch=Brighter than a regular torch, doesn't break when liquids hit it, and is also more blast resistant.
@@ -224,6 +228,7 @@ chat.item.living_magnet.enabled=Living Magnet enabled.
 chat.item.living_magnet.disabled=Living Magnet disabled.
 chat.item.living_magnet.attracts=Living Magnet will attract living entities.
 chat.item.living_magnet.repels=Living Magnet will repel living entities.
+chat.item.guardian_food.summoned=The Guardian has been summoned to the lands.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!

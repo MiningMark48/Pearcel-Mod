@@ -35,13 +35,10 @@ public class ItemGoldenPearcel extends ItemPearcelFood{
 
     public void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player)
     {
-        if (!worldIn.isRemote)
-        {
-            player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 4000, 2));
-            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 4000, 1));
-            player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
-            player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 6000, 4));
-        }
+        player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 4000, 2));
+        player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 4000, 1));
+        player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
+        player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 6000, 4));
 
     }
 
