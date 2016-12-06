@@ -25,7 +25,7 @@ public class ModEntities {
     }
 
     private static void createEntity(Class entityClass, String entityName, int id, int solidColor, int spotColor){
-        EntityRegistry.registerModEntity(entityClass, entityName, id, PearcelMod.instance, 64, 1, true, solidColor, spotColor);
+        EntityRegistry.registerModEntity(entityClass, entityName, id, PearcelMod.instance, 64, 3, true, solidColor, spotColor);
     }
 
     private static void addSpawns(Class entityClass, int i, int j, int k, EnumCreatureType type, Biome[] biome){

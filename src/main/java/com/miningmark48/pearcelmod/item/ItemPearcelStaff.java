@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
@@ -57,8 +58,12 @@ public class ItemPearcelStaff extends ItemPearcelSword{
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
-        hitEntity.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 2000, 2, true, false));
-        hitEntity.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 5000, 2, true, false));
-        return true;
+        if (hitEntity instanceof EntityPearcelBoss) {
+            return false;
+        }else{
+            hitEntity.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 2000, 2, true, false));
+            hitEntity.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 5000, 2, true, false));
+            return true;
+        }
     }
 }

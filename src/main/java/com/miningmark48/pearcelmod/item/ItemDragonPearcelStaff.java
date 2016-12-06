@@ -7,6 +7,7 @@ import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
@@ -46,7 +47,11 @@ public class ItemDragonPearcelStaff extends ItemPearcelSword{
 
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
-        hitEntity.setHealth(0);
-        return true;
+        if (attackEntity instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) attackEntity;
+            hitEntity.attackEntityFrom(DamageSource.causePlayerDamage(player), Float.MAX_VALUE);
+            return true;
+        }
+        return false;
     }
 }

@@ -1,24 +1,24 @@
 package com.miningmark48.pearcelmod.entity;
 
-import com.miningmark48.pearcelmod.init.ModEntities;
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.*;
-import net.minecraft.entity.monster.EntityIronGolem;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.entity.monster.EntityPigZombie;
-import net.minecraft.entity.passive.EntityPig;
-import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.stats.AchievementList;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
@@ -26,8 +26,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.BossInfo;
 import net.minecraft.world.BossInfoServer;
 import net.minecraft.world.World;
-import net.minecraft.world.chunk.Chunk;
-import net.minecraft.world.storage.loot.LootTableList;
 
 public class EntityPearcelBoss extends EntityMob{
 
@@ -38,14 +36,26 @@ public class EntityPearcelBoss extends EntityMob{
     public EntityPearcelBoss(World world) {
         super(world);
         setSize(0.6F, 2.0F);
-        //this.isCreatureType(EnumCreatureType.MONSTER, true);
+        this.isCreatureType(EnumCreatureType.MONSTER, true);
         this.initEntityAI();
-        this.setNoAI(false);
     }
 
-    @Override
-    public boolean isAIDisabled() {
-        return false;
+    protected void dropFewItems(boolean wasRecentlyHit, int lootingModifier)
+    {
+        EntityItem entityitem = this.dropItem(ModItems.pearcel_star, 1);
+
+        if (entityitem != null)
+        {
+            entityitem.setNoDespawn();
+        }
+
+        if (!this.worldObj.isRemote)
+        {
+            for (EntityPlayer entityplayer : this.worldObj.getEntitiesWithinAABB(EntityPlayer.class, this.getEntityBoundingBox().expand(50.0D, 100.0D, 50.0D)))
+            {
+                //entityplayer.addStat(AchievementList.KILL_WITHER);
+            }
+        }
     }
 
     @Override
@@ -63,7 +73,7 @@ public class EntityPearcelBoss extends EntityMob{
     protected void applyEntityAI()
     {
         this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true));
-        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPig.class, true));
+        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityEnderman.class, true));
     }
 
     @Override
@@ -113,10 +123,10 @@ public class EntityPearcelBoss extends EntityMob{
     @Override
     protected void applyEntityAttributes() {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(50.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25D);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(500.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.35D);
+        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(10.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(50.0D);
     }
 
     @Override
@@ -137,7 +147,7 @@ public class EntityPearcelBoss extends EntityMob{
         {
             if (i > 0 && entityIn instanceof EntityLivingBase)
             {
-                ((EntityLivingBase)entityIn).knockBack(this, (float)i * 0.5F, (double)MathHelper.sin(this.rotationYaw * 0.017453292F), (double)(-MathHelper.cos(this.rotationYaw * 0.017453292F)));
+                ((EntityLivingBase)entityIn).knockBack(this, (float)i * 0.5F, (double) MathHelper.sin(this.rotationYaw * 0.017453292F), (double)(-MathHelper.cos(this.rotationYaw * 0.017453292F)));
                 this.motionX *= 0.6D;
                 this.motionZ *= 0.6D;
             }
@@ -157,7 +167,7 @@ public class EntityPearcelBoss extends EntityMob{
 
                 if (itemstack != null && itemstack1 != null && itemstack.getItem() instanceof ItemAxe && itemstack1.getItem() == Items.SHIELD)
                 {
-                    float f1 = 0.25F + (float)EnchantmentHelper.getEfficiencyModifier(this) * 0.05F;
+                    float f1 = 0.25F + (float) EnchantmentHelper.getEfficiencyModifier(this) * 0.05F;
 
                     if (this.rand.nextFloat() < f1)
                     {
@@ -166,8 +176,11 @@ public class EntityPearcelBoss extends EntityMob{
                     }
                 }
 
-                entityplayer.addPotionEffect(new PotionEffect(MobEffects.POISON, 0, 30));
-                entityplayer.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 0, 15));
+                entityplayer.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 40, 1, false, true));
+                entityplayer.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60, 0, false, true));
+                entityplayer.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 40, 0, false, true));
+                entityplayer.addPotionEffect(new PotionEffect(MobEffects.WITHER, 100, 0, false, true));
+                entityplayer.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 100, 0, false, true));
 
             }
 
@@ -177,11 +190,11 @@ public class EntityPearcelBoss extends EntityMob{
         return flag;
     }
 
-    @Override
-    protected ResourceLocation getLootTable()
-    {
-        return loot_tabel;
-    }
+//    @Override
+//    protected ResourceLocation getLootTable()
+//    {
+//        return loot_tabel;
+//    }
 
     protected void playStepSound(BlockPos pos, Block blockIn)
     {
