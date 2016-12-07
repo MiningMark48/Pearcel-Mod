@@ -1,12 +1,14 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
+import com.miningmark48.pearcelmod.init.ModSoundEvents;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
@@ -39,19 +41,25 @@ public class ItemGuardianFood extends ItemPearcelFood{
         int y = pos.getY();
         int z = pos.getZ();
         Random rand = new Random();
-        int num = rand.nextInt(5) + 1;
+        int num = rand.nextInt(5) + 10;
         int range = 25;
+
+        List<EntityPlayer> players = world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 
         if (!world.isRemote) {
             EntityPearcelBoss pb = new EntityPearcelBoss(world);
-            pb.setPosition(x, y + 10 + num, z);
+            pb.setPosition(x, y + num, z);
             world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z, true));
             world.spawnEntityInWorld(pb);
 
-            List<EntityPlayer> players = world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
             for (EntityPlayer e : players) {
                 e.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.guardian_food.summoned")));
             }
+        }
+
+        world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, x + 0.5, y + num + 0.5, z + 0.5, 1.0D, 0.0D, 0.0D);
+        for (EntityPlayer e : players) {
+            e.playSound(ModSoundEvents.BLOCK_SUMMONER_LAUGH, 5.0F, 1.0F);
         }
 
     }
