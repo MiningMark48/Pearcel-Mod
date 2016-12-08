@@ -4,12 +4,15 @@ import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.model.ModelPearcelBoss;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelBoss;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModEntities {
 
@@ -32,6 +35,8 @@ public class ModEntities {
         EntityRegistry.addSpawn(entityClass, i, j, k, type, biome);
     }
 
+    @SideOnly(Side.CLIENT)
+    @SuppressWarnings("deprecation")
     public static void registerRenders(){
         RenderingRegistry.registerEntityRenderingHandler(EntityPearcelBoss.class, new RenderPearcelBoss(new ModelPearcelBoss(), 0.5F));
     }
