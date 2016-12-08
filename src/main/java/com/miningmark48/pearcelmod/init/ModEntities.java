@@ -31,6 +31,10 @@ public class ModEntities {
         EntityRegistry.registerModEntity(entityClass, entityName, id, PearcelMod.instance, 64, 3, true, solidColor, spotColor);
     }
 
+    private static void createEntity(Class entityClass, String entityName, int id, int trackindRange, int updateFreq, int solidColor, int spotColor){
+        EntityRegistry.registerModEntity(entityClass, entityName, id, PearcelMod.instance, trackindRange, updateFreq, true, solidColor, spotColor);
+    }
+
     private static void addSpawns(Class entityClass, int i, int j, int k, EnumCreatureType type, Biome[] biome){
         EntityRegistry.addSpawn(entityClass, i, j, k, type, biome);
     }
