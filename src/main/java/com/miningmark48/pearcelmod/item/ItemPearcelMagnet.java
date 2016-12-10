@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -96,6 +97,7 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                 double z = player.posZ;
 
                 List<EntityItem> items = entity.worldObj.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+                List<EntityXPOrb> xp = entity.worldObj.getEntitiesWithinAABB(EntityXPOrb.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
                 for (EntityItem e: items){
                     if (!player.isSneaking()){
 
@@ -109,6 +111,15 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                             world.spawnParticle(EnumParticleTypes.SPELL_INSTANT, e.posX, e.posY + 0.3, e.posZ, 0.0D, 0.0D, 0.0D);
                         }
 
+                    }
+                }
+                for (EntityXPOrb e: xp){
+                    if (!player.isSneaking()){
+                        if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
+                            e.addVelocity((x - e.posX) * pullSpeed, (y - e.posY) * pullSpeed, (z - e.posZ) * pullSpeed); //Attracts
+                        }else {
+                            e.addVelocity((e.posX - x) * pullSpeed, (e.posY - y) * pullSpeed, (e.posZ - z) * pullSpeed); //Repels
+                        }
                     }
                 }
 
