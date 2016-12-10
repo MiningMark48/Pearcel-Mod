@@ -67,6 +67,8 @@ item.nullification_pearcel.name=Nullification Pearcel
 item.pearcel_magnet.name=Pearcel Magnet
 item.living_magnet.name=Living Magnet
 item.pearcel_star.name=Pearcel Star
+item.sacrificial_pearcel.name=Sacrificial Pearcel
+item.blood_drop.name=Drop of Blood
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -196,6 +198,8 @@ desc.item.pbp=A cobble generator in your hand, will place infinite Pearcel Stone
 desc.item.pearcel_juice=Speed and a jump boost in a bottle. This pearcel stuff is good.
 desc.item.guardian_food=When eaten the Pearcel Guardian will summon at the player. Drops the Pearcel Star. Be warned, the Guardian has no mercy. Also, the Guardian is not friends with the Ender Dragon.
 desc.item.pearcel_star=Dropped from the Pearcel Guardian which is summoned when eating his food.
+desc.item.sacrificial_pearcel=Upon death, with the item in your inventory, your life will be spared and you will not die. The item is destroyed.
+desc.item.blood_drop=Made with the blood of the player. When crafted, the player takes damage.
 
 desc.block.torcher=Right Click to make torches explode everywhere.
 desc.block.pearcel_torch=Brighter than a regular torch, doesn't break when liquids hit it, and is also more blast resistant.
@@ -229,6 +233,7 @@ chat.item.living_magnet.disabled=Living Magnet disabled.
 chat.item.living_magnet.attracts=Living Magnet will attract living entities.
 chat.item.living_magnet.repels=Living Magnet will repel living entities.
 chat.item.guardian_food.summoned=The Guardian has been summoned to the lands.
+chat.event.onDie.1=Your life was spared by the Sacrificial Pearcel.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!

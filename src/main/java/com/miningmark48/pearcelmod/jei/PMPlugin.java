@@ -72,6 +72,8 @@ public class PMPlugin implements IModPlugin{
         registry.addDescription(new ItemStack(ModItems.pearcel_juice_bottle), Translate.toLocal("desc.item.pearcel_juice"));
         registry.addDescription(new ItemStack(ModItems.guardian_food), Translate.toLocal("desc.item.guardian_food"));
         registry.addDescription(new ItemStack(ModItems.pearcel_star), Translate.toLocal("desc.item.pearcel_star"));
+        registry.addDescription(new ItemStack(ModItems.sacrificial_pearcel), Translate.toLocal("desc.item.sacrificial_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.blood_drop), Translate.toLocal("desc.item.blood_drop"));
 
         registry.addDescription(new ItemStack(ModBlocks.torcher), Translate.toLocal("desc.block.torcher"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_torch), Translate.toLocal("desc.block.pearcel_torch"));

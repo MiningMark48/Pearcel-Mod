@@ -2,10 +2,7 @@ package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
-import com.miningmark48.pearcelmod.event.EventBreakForPearcel;
-import com.miningmark48.pearcelmod.event.EventOnBreakMF;
-import com.miningmark48.pearcelmod.event.EventOnBreakNP;
-import com.miningmark48.pearcelmod.event.EventOnJoin;
+import com.miningmark48.pearcelmod.event.*;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.GuiHandler;
 import com.miningmark48.pearcelmod.init.*;
@@ -15,6 +12,7 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.utility.VersionChecker;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -73,6 +71,8 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakMF());
 		MinecraftForge.EVENT_BUS.register(new EventOnJoin());
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakNP());
+		MinecraftForge.EVENT_BUS.register(new EventOnDie());
+		MinecraftForge.EVENT_BUS.register(new EventOnCraftBlood());
 
 		Recipes.init();
 

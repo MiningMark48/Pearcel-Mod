@@ -36,6 +36,7 @@ public class ModItems {
     public static Item neutral_pearcel_matter;
     public static Item pearcel_arrow;
     public static Item pearcel_star;
+    public static Item blood_drop;
 
     //Food
     public static Item pearcel_item;
@@ -87,6 +88,7 @@ public class ModItems {
     public static Item nullification_pearcel;
     public static Item pearcel_magnet;
     public static Item living_magnet;
+    public static Item sacrificial_pearcel;
 
     public static void init(){
         //General Items
@@ -103,6 +105,7 @@ public class ModItems {
         neutral_pearcel_matter = new ItemPearcelMod().setUnlocalizedName("neutral_pearcel_matter").setRegistryName("neutral_pearcel_matter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_arrow = new ItemPearcelArrow().setUnlocalizedName("pearcel_arrow").setRegistryName("pearcel_arrow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_star = new ItemPearcelModEffect().setUnlocalizedName("pearcel_star").setRegistryName("pearcel_star").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        blood_drop = new ItemPearcelMod().setUnlocalizedName("blood_drop").setRegistryName("blood_drop").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Food
         pearcel_item = new ItemPearcelFood(4, 0.5F, false).setUnlocalizedName("pearcel_item").setRegistryName("pearcel_item").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -154,6 +157,7 @@ public class ModItems {
         nullification_pearcel = new ItemNullificationPearcel().setUnlocalizedName("nullification_pearcel").setRegistryName("nullification_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_magnet = new ItemPearcelMagnet().setUnlocalizedName("pearcel_magnet").setRegistryName("pearcel_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         living_magnet = new ItemLivingMagnet().setUnlocalizedName("living_magnet").setRegistryName("living_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        sacrificial_pearcel = new ItemPearcelMod().setUnlocalizedName("sacrificial_pearcel").setRegistryName("sacrificial_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
 
     }
 
@@ -172,6 +176,7 @@ public class ModItems {
         GameRegistry.register(neutral_pearcel_matter);
         GameRegistry.register(pearcel_arrow);
         GameRegistry.register(pearcel_star);
+        GameRegistry.register(blood_drop);
 
         //Food
         GameRegistry.register(pearcel_item);
@@ -223,6 +228,7 @@ public class ModItems {
         GameRegistry.register(nullification_pearcel);
         GameRegistry.register(pearcel_magnet);
         GameRegistry.register(living_magnet);
+        GameRegistry.register(sacrificial_pearcel);
 
     }
 
@@ -241,6 +247,7 @@ public class ModItems {
         registerRender(neutral_pearcel_matter);
         registerRender(pearcel_arrow);
         registerRender(pearcel_star);
+        registerRender(blood_drop);
 
         //Food
         registerRender(pearcel_item);
@@ -295,6 +302,7 @@ public class ModItems {
         registerRender(nullification_pearcel);
         registerRender(pearcel_magnet);
         registerRender(living_magnet);
+        registerRender(sacrificial_pearcel);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
