@@ -3,7 +3,9 @@ package com.miningmark48.pearcelmod.event;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -25,7 +27,7 @@ public class EventOnDie {
                         player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.event.onDie.1")));
                     }
 
-                    player.forceSpawn = true;
+                    player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 60, 0));
 
                     e.setCanceled(true);
 

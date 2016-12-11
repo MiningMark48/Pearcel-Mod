@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "pearcelmod:items/pearcel_blood_dagger"
+    },
+    "overrides": [
+        { "predicate": { "level": 0 }, "model": "pearcelmod:item/pearcel_blood_dagger" },
+        { "predicate": { "level": 1 }, "model": "pearcelmod:item/pearcel_blood_dagger_01" },
+        { "predicate": { "level": 2 }, "model": "pearcelmod:item/pearcel_blood_dagger_02" },
+        { "predicate": { "level": 3 }, "model": "pearcelmod:item/pearcel_blood_dagger_03" },
+        { "predicate": { "level": 4 }, "model": "pearcelmod:item/pearcel_blood_dagger_04" },
+        { "predicate": { "level": 5 }, "model": "pearcelmod:item/pearcel_blood_dagger_05" },
+        { "predicate": { "level": 6 }, "model": "pearcelmod:item/pearcel_blood_dagger_06" },
+        { "predicate": { "level": 7 }, "model": "pearcelmod:item/pearcel_blood_dagger_07" },
+        { "predicate": { "level": 8 }, "model": "pearcelmod:item/pearcel_blood_dagger_08" },
+        { "predicate": { "level": 9 }, "model": "pearcelmod:item/pearcel_blood_dagger_09" }
+        
+    ]
+}
