@@ -16,6 +16,7 @@ public class ItemBloodSword extends ItemPearcelSword{
     public ItemBloodSword(ToolMaterial material){
         super(material);
         setMaxStackSize(1);
+        //setMaxDamage(-1);
 
         this.addPropertyOverride(new ResourceLocation("level"), new IItemPropertyGetter()
         {

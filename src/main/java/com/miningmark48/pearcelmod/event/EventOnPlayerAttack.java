@@ -18,7 +18,7 @@ public class EventOnPlayerAttack {
         if (e.getSource().getEntity() instanceof EntityPlayer){
             if (e.getEntityLiving().getHealth() - e.getAmount() <= 0){
                 EntityPlayer player = (EntityPlayer) e.getSource().getEntity();
-                if (player.getHeldItemMainhand().isItemEqual(new ItemStack(ModItems.pearcel_blood_dagger))){
+                if (player.getHeldItemMainhand().getItem() == ModItems.pearcel_blood_dagger){
                     ItemStack stack = player.getHeldItemMainhand();
                     if (!stack.hasTagCompound()){
                         stack.setTagCompound(new NBTTagCompound());
