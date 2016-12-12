@@ -69,6 +69,7 @@ item.living_magnet.name=Living Magnet
 item.pearcel_star.name=Pearcel Star
 item.sacrificial_pearcel.name=Sacrificial Pearcel
 item.blood_drop.name=Drop of Blood
+item.pearce4l_blood_dagger.name=Pearcel Blood Dagger
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -199,7 +200,8 @@ desc.item.pearcel_juice=Speed and a jump boost in a bottle. This pearcel stuff i
 desc.item.guardian_food=When eaten the Pearcel Guardian will summon at the player. Drops the Pearcel Star. Be warned, the Guardian has no mercy. Also, the Guardian is not friends with the Ender Dragon.
 desc.item.pearcel_star=Dropped from the Pearcel Guardian which is summoned when eating his food.
 desc.item.sacrificial_pearcel=Upon death, with the item in your inventory, your life will be spared and you will not die. The item is destroyed.
-desc.item.blood_drop=Made with the blood of the player. When crafted, the player takes damage.
+desc.item.blood_drop=Made by killing mobs with the Pearcel Blood Dagger.
+desc.item.pearcel_blood_dagger=Used for getting blood drops. Once 9 mobs have been killed, a blood drop is put on the ground.
 
 desc.block.torcher=Right Click to make torches explode everywhere.
 desc.block.pearcel_torch=Brighter than a regular torch, doesn't break when liquids hit it, and is also more blast resistant.

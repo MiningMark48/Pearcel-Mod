@@ -159,7 +159,7 @@ public class ModItems {
         pearcel_magnet = new ItemPearcelMagnet().setUnlocalizedName("pearcel_magnet").setRegistryName("pearcel_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         living_magnet = new ItemLivingMagnet().setUnlocalizedName("living_magnet").setRegistryName("living_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         sacrificial_pearcel = new ItemPearcelMod().setUnlocalizedName("sacrificial_pearcel").setRegistryName("sacrificial_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
-        pearcel_blood_dagger = new ItemBloodSword().setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_blood_dagger = new ItemBloodSword(matToolPearcel).setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 

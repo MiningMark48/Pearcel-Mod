@@ -12,7 +12,6 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.utility.VersionChecker;
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -71,8 +70,8 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakMF());
 		MinecraftForge.EVENT_BUS.register(new EventOnJoin());
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakNP());
-		MinecraftForge.EVENT_BUS.register(new EventOnDie());
-		MinecraftForge.EVENT_BUS.register(new EventOnCraftBlood());
+		MinecraftForge.EVENT_BUS.register(new EventOnHurt());
+		MinecraftForge.EVENT_BUS.register(new EventOnPlayerAttack());
 
 		Recipes.init();
 

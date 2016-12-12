@@ -11,10 +11,10 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class EventOnDie {
+public class EventOnHurt {
 
     @SubscribeEvent
-    public void onDie(LivingHurtEvent e){
+    public void onPlayerHurt(LivingHurtEvent e){
 
         if (e.getEntity() instanceof EntityPlayer){
             EntityPlayer player = (EntityPlayer) e.getEntity();
