@@ -8,9 +8,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModSoundEvents {
 
     public static SoundEvent BLOCK_SUMMONER_LAUGH;
+    public static SoundEvent MOB_PEARCEL_BOSS_LAUGH;
 
     public static void registerSounds(){
-        BLOCK_SUMMONER_LAUGH = registerSound("summoner.laugh");
+        BLOCK_SUMMONER_LAUGH = registerSound("block.summoner.laugh");
+        MOB_PEARCEL_BOSS_LAUGH = registerSound("mob.pearcel_boss.laugh");
     }
 
     private static SoundEvent registerSound(String soundName){

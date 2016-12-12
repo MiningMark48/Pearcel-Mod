@@ -59,7 +59,7 @@ public class ItemGuardianFood extends ItemPearcelFood{
 
         world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, x + 0.5, y + num + 0.5, z + 0.5, 1.0D, 0.0D, 0.0D);
         for (EntityPlayer e : players) {
-            e.playSound(ModSoundEvents.BLOCK_SUMMONER_LAUGH, 5.0F, 1.0F);
+            e.playSound(ModSoundEvents.MOB_PEARCEL_BOSS_LAUGH, 5.0F, 1.0F);
         }
 
     }

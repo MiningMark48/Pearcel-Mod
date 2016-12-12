@@ -1,6 +1,12 @@
 {
-	"summoner.laugh": {
+	"block.summoner.laugh": {
 		"category": "block",
+		"subtitle": "subtitles.block.summoner.laugh",
+		"sounds": ["pearcelmod:summoner/laugh"]
+	},
+	"mob.pearcel_boss.laugh": {
+		"category": "hostile",
+		"subtitle": "subtitles.mob.pearcel_boss.laugh",
 		"sounds": ["pearcelmod:summoner/laugh"]
 	}
 }
