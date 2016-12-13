@@ -115,7 +115,7 @@ public class GuiManual extends GuiScreen{
 
     @Override
     public boolean doesGuiPauseGame(){
-        return false;
+        return true;
     }
 
     @SideOnly(Side.CLIENT)
