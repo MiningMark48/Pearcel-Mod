@@ -25,11 +25,10 @@ public class ItemManual extends ItemPearcelMod{
         if (!player.isSneaking()){
             if (!world.isRemote){
                 PearcelMod.proxy.openMyGuiClient(new GuiManual());
-                return new ActionResult(EnumActionResult.PASS, stack);
             }
-            return new ActionResult(EnumActionResult.FAIL, stack);
+            return new ActionResult(EnumActionResult.PASS, stack);
         }else{
-            return new ActionResult(EnumActionResult.FAIL, stack);
+            return new ActionResult(EnumActionResult.PASS, stack);
         }
     }
 
