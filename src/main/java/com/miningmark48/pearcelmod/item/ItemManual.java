@@ -5,6 +5,8 @@ import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.gui.GuiManual;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreenBook;
+import net.minecraft.client.gui.GuiScreenDemo;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
@@ -12,6 +14,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemManual extends ItemPearcelMod{
 
@@ -23,9 +27,8 @@ public class ItemManual extends ItemPearcelMod{
     public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
     {
         if (!player.isSneaking()){
-            if (!world.isRemote){
+            if (world.isRemote){
                 PearcelMod.proxy.openMyGuiClient(new GuiManual());
-                //player.openGui(PearcelMod.instance, GUIs.gui_id_manual, playerIn.worldObj, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
             }
         }
 
