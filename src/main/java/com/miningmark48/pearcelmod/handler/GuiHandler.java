@@ -63,6 +63,9 @@ public class GuiHandler implements IGuiHandler{
         if (ID == GUIs.gui_id_pearcel_storage_crate){
             return new GuiPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos), player);
         }
+        if (ID == GUIs.gui_id_manual){
+            return new GuiManual();
+        }
         return null;
     }
 

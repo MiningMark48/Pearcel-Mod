@@ -45,10 +45,12 @@ public class GuiManual extends GuiScreen{
     @Override
     public void onGuiClosed(){
         super.onGuiClosed();
+        Keyboard.enableRepeatEvents(false);
     }
 
     @Override
     public void initGui(){
+        super.initGui();
         //Debug
         LogHelper.info("Gui Initialized!");
         buttonList.clear();
@@ -59,19 +61,19 @@ public class GuiManual extends GuiScreen{
         int offsetFromScreenLeft = (width - textureWidth) / 2;
         buttonList.add(buttonNextPage = new NextPageButton(1, offsetFromScreenLeft + 120, 156, true));
         buttonList.add(buttonPreviousPage = new NextPageButton(1, offsetFromScreenLeft + 38, 156, false));
-        super.initGui();
     }
 
     @Override
     public void updateScreen(){
+        super.updateScreen();
         buttonDone.visible = (currentPage == bookTotalPages - 1);
         buttonNextPage.visible = (currentPage < bookTotalPages - 1);
         buttonPreviousPage.visible = currentPage > 0;
-        super.updateScreen();
     }
 
     @Override
     public void drawScreen(int parWidth, int parHeight, float par3){
+        super.drawScreen(parWidth, parHeight, par3);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
         if (currentPage == 0){
             mc.getTextureManager().bindTexture(bookPageTextures[0]);
@@ -85,7 +87,6 @@ public class GuiManual extends GuiScreen{
         widthOfString = fontRendererObj.getStringWidth(stringPageIndicator);
         fontRendererObj.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);
         fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 34, 116, 0);
-        super.drawScreen(parWidth, parHeight, par3);
     }
 
     @Override
@@ -95,6 +96,11 @@ public class GuiManual extends GuiScreen{
 
     @Override
     protected void actionPerformed(GuiButton parButton){
+        try {
+            super.actionPerformed(parButton);
+        } catch (IOException e) {
+            LogHelper.error(e.getStackTrace().toString());
+        }
         if (parButton == buttonDone){
             //Can send packet here to server
             mc.displayGuiScreen((GuiScreen)null);
@@ -106,11 +112,6 @@ public class GuiManual extends GuiScreen{
             if (currentPage > 0){
                 --currentPage;
             }
-        }
-        try {
-            super.actionPerformed(parButton);
-        } catch (IOException e) {
-            LogHelper.error(e.getStackTrace().toString());
         }
     }
 
