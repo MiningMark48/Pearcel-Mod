@@ -90,6 +90,7 @@ public class ModItems {
     public static Item living_magnet;
     public static Item sacrificial_pearcel;
     public static Item pearcel_blood_dagger;
+    public static Item pearcel_manual;
 
     public static void init(){
         //General Items
@@ -160,6 +161,7 @@ public class ModItems {
         living_magnet = new ItemLivingMagnet().setUnlocalizedName("living_magnet").setRegistryName("living_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         sacrificial_pearcel = new ItemPearcelMod().setUnlocalizedName("sacrificial_pearcel").setRegistryName("sacrificial_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
         pearcel_blood_dagger = new ItemBloodSword(matToolPearcel).setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_manual = new ItemManual().setUnlocalizedName("pearcel_manual").setRegistryName("pearcel_manual").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -232,6 +234,7 @@ public class ModItems {
         GameRegistry.register(living_magnet);
         GameRegistry.register(sacrificial_pearcel);
         GameRegistry.register(pearcel_blood_dagger);
+        GameRegistry.register(pearcel_manual);
 
     }
 
@@ -316,6 +319,7 @@ public class ModItems {
         registerRender(pearcel_blood_dagger, 7, "pearcel_blood_dagger_07");
         registerRender(pearcel_blood_dagger, 8, "pearcel_blood_dagger_08");
         registerRender(pearcel_blood_dagger, 9, "pearcel_blood_dagger_09");
+        registerRender(pearcel_manual);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
