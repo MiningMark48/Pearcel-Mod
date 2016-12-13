@@ -1,33 +1,36 @@
-package com.miningmark48.pearcelmod.gui;
+package com.miningmark48.pearcelmod.gui.manual;
 
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
-import com.sun.glass.ui.Window;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.util.MouseHelper;
+import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.event.MouseEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.commons.lang3.StringEscapeUtils;
-import org.lwjgl.LWJGLException;
-import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
+import scala.Predef;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class GuiManual extends GuiScreen{
 
     private final int textureHeight = 192;
     private final int textureWidth = 192;
     private int currentPage = 0;
-    private static final int bookTotalPages = 11;
-    private static ResourceLocation[] bookPageTextures = new ResourceLocation[bookTotalPages];
+    public static final int bookTotalPages = 51;
+    public static ResourceLocation[] bookPageTextures = new ResourceLocation[bookTotalPages];
     private static String[] stringPageText = new String[bookTotalPages];
-    private NextPageButton buttonNextPage;
-    private NextPageButton buttonPreviousPage;
+    private ComponentNextPageButton buttonNextPage;
+    private ComponentNextPageButton buttonPreviousPage;
+    private GuiButton buttonHome;
+    private GuiButton buttonIntro;
+    private GuiButton buttonTools;
+    private GuiButton buttonArmor;
+    private GuiButton buttonItems;
+    private GuiButton buttonBlocks;
+    private GuiTextField textFieldGoToPage;
 
     public GuiManual(){
 
@@ -48,8 +51,28 @@ public class GuiManual extends GuiScreen{
         buttonList.clear();
 
         int offsetFromScreenLeft = (width - textureWidth) / 2;
-        buttonList.add(buttonNextPage = new NextPageButton(1, offsetFromScreenLeft + 120, 156, true));
-        buttonList.add(buttonPreviousPage = new NextPageButton(1, offsetFromScreenLeft + 38, 156, false));
+        buttonList.add(buttonNextPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 120, 156, true));
+        buttonList.add(buttonPreviousPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 38, 156, false));
+
+        buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, Translate.toLocal("gui.manual.button.home"));
+        buttonList.add(buttonHome);
+
+        //Glossary
+        buttonIntro = new GuiButton(3, width / 2 - 140, 2 + 30, 60, 20, Translate.toLocal("gui.manual.button.glossary.intro"));
+        buttonTools = new GuiButton(3, width / 2 - 140, 2 + 55, 60, 20, Translate.toLocal("gui.manual.button.glossary.tools"));
+        buttonArmor = new GuiButton(3, width / 2 - 140, 2 + 80, 60, 20, Translate.toLocal("gui.manual.button.glossary.armor"));
+        buttonItems = new GuiButton(3, width / 2 - 140, 2 + 105, 60, 20, Translate.toLocal("gui.manual.button.glossary.items"));
+        buttonBlocks = new GuiButton(3, width / 2 - 140, 2 + 130, 60, 20, Translate.toLocal("gui.manual.button.glossary.blocks"));
+
+        buttonList.add(buttonIntro);
+        buttonList.add(buttonTools);
+        buttonList.add(buttonArmor);
+        buttonList.add(buttonItems);
+        buttonList.add(buttonBlocks);
+
+        //Text Fields
+        //textFieldGoToPage = new GuiTextField(4, fontRendererObj, width / 2 - 20, textureHeight + 15, 60, 20);
+
     }
 
     @Override
@@ -57,12 +80,20 @@ public class GuiManual extends GuiScreen{
         super.updateScreen();
         buttonNextPage.visible = (currentPage < bookTotalPages - 1);
         buttonPreviousPage.visible = currentPage > 0;
+        buttonHome.visible = currentPage > 0;
+        buttonIntro.visible = currentPage >= 1;
+        buttonTools.visible = currentPage >= 1;
+        buttonArmor.visible = currentPage >= 1;
+        buttonItems.visible = currentPage >= 1;
+        buttonBlocks.visible = currentPage >= 1;
+        textFieldGoToPage.setVisible(currentPage >= 1);
     }
 
     @Override
     public void drawScreen(int parWidth, int parHeight, float par3){
-        super.drawScreen(parWidth, parHeight, par3);
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+        //Textures
         switch (currentPage){
             case 0:
                 mc.getTextureManager().bindTexture(bookPageTextures[0]);
@@ -80,13 +111,18 @@ public class GuiManual extends GuiScreen{
         String stringPageIndicator = Translate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage) + "/" + (bookTotalPages - 1);
         widthOfString = fontRendererObj.getStringWidth(stringPageIndicator);
 
+        //Pages
         if (currentPage >= 1) {
             fontRendererObj.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);
             fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 34, 116, 0);
-        }else{
+        }else if (currentPage == 1){
+            fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 24, 116, 0);
+        }else if (currentPage == 0){
             fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 24, 116, 0);
         }
+
         super.drawScreen(parWidth, parHeight, par3);
+
     }
 
     @Override
@@ -104,6 +140,10 @@ public class GuiManual extends GuiScreen{
             if (currentPage > 0){
                 --currentPage;
             }
+        }else if (parButton == buttonHome){
+               currentPage = 0;
+        }else if (parButton == buttonIntro){
+            currentPage = 1;
         }
     }
 
@@ -116,36 +156,6 @@ public class GuiManual extends GuiScreen{
     @Override
     public boolean doesGuiPauseGame(){
         return true;
-    }
-
-    @SideOnly(Side.CLIENT)
-    static class NextPageButton extends GuiButton{
-        private final boolean isNextButton;
-
-        public NextPageButton(int parButtonId, int parPosX, int parPosY, boolean parIsNextButton){
-            super(parButtonId, parPosX, parPosY, 23, 13, "");
-            isNextButton = parIsNextButton;
-        }
-
-        @Override
-        public void drawButton(Minecraft mc, int parX, int parY){
-            if (visible){
-                boolean isButtonPressed = (parX >= xPosition && parY >= yPosition && parX < xPosition + width && parY < yPosition + height);
-                GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-                mc.getTextureManager().bindTexture(bookPageTextures[1]);
-                int textureX = 0;
-                int textureY = 192;
-
-                if (isButtonPressed){
-                    textureX += 23;
-                }
-                if (!isNextButton){
-                    textureY +=13;
-                }
-
-                drawTexturedModalRect(xPosition, yPosition, textureX, textureY, 23, 13);
-            }
-        }
     }
 
 }

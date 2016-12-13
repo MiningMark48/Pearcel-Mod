@@ -1,21 +1,13 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.PearcelMod;
-import com.miningmark48.pearcelmod.achievements.Achievements;
-import com.miningmark48.pearcelmod.gui.GuiManual;
-import com.miningmark48.pearcelmod.reference.GUIs;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiScreenBook;
-import net.minecraft.client.gui.GuiScreenDemo;
+import com.miningmark48.pearcelmod.gui.manual.GuiManual;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemManual extends ItemPearcelMod{
 
