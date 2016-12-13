@@ -51,8 +51,8 @@ public class GuiManual extends GuiScreen{
         buttonList.clear();
 
         int offsetFromScreenLeft = (width - textureWidth) / 2;
-        buttonList.add(buttonNextPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 120, 156, true));
-        buttonList.add(buttonPreviousPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 38, 156, false));
+        buttonList.add(buttonNextPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 120, 158, true));
+        buttonList.add(buttonPreviousPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 38, 158, false));
 
         buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, Translate.toLocal("gui.manual.button.home"));
         buttonList.add(buttonHome);
@@ -73,6 +73,10 @@ public class GuiManual extends GuiScreen{
         //Text Fields
         //textFieldGoToPage = new GuiTextField(4, fontRendererObj, width / 2 - 20, textureHeight + 15, 60, 20);
 
+        for (GuiButton e : buttonList){
+            e.visible = false;
+        }
+
     }
 
     @Override
@@ -86,7 +90,7 @@ public class GuiManual extends GuiScreen{
         buttonArmor.visible = currentPage >= 1;
         buttonItems.visible = currentPage >= 1;
         buttonBlocks.visible = currentPage >= 1;
-        textFieldGoToPage.setVisible(currentPage >= 1);
+        //textFieldGoToPage.setVisible(currentPage >= 1);
     }
 
     @Override
@@ -144,6 +148,8 @@ public class GuiManual extends GuiScreen{
                currentPage = 0;
         }else if (parButton == buttonIntro){
             currentPage = 1;
+        }else if (parButton == buttonTools){
+            currentPage = 4;
         }
     }
 
