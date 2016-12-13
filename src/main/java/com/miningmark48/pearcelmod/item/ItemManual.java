@@ -25,7 +25,6 @@ public class ItemManual extends ItemPearcelMod{
         if (!player.isSneaking()){
             if (!world.isRemote){
                 PearcelMod.proxy.openMyGuiClient(new GuiManual());
-                Minecraft.getMinecraft().mouseHelper.ungrabMouseCursor();
                 //player.openGui(PearcelMod.instance, GUIs.gui_id_manual, playerIn.worldObj, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
             }
         }

@@ -58,7 +58,6 @@ public class GuiManual extends GuiScreen{
     @Override
     public void drawScreen(int parWidth, int parHeight, float par3){
         super.drawScreen(parWidth, parHeight, par3);
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
         switch (currentPage){
             case 0:
                 mc.getTextureManager().bindTexture(bookPageTextures[0]);
@@ -124,7 +123,6 @@ public class GuiManual extends GuiScreen{
         public void drawButton(Minecraft mc, int parX, int parY){
             if (visible){
                 boolean isButtonPressed = (parX >= xPosition && parY >= yPosition && parX < xPosition + width && parY < yPosition + height);
-                GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
                 mc.getTextureManager().bindTexture(bookPageTextures[1]);
                 int textureX = 0;
                 int textureY = 192;
