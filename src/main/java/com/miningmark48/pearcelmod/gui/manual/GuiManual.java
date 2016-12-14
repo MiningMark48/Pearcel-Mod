@@ -90,6 +90,9 @@ public class GuiManual extends GuiScreen{
         buttonArmor.visible = currentPage >= 1;
         buttonItems.visible = currentPage >= 1;
         buttonBlocks.visible = currentPage >= 1;
+        buttonItems.enabled = false;
+        buttonBlocks.enabled = false;
+
         //textFieldGoToPage.setVisible(currentPage >= 1);
     }
 
@@ -150,6 +153,8 @@ public class GuiManual extends GuiScreen{
             currentPage = 1;
         }else if (parButton == buttonTools){
             currentPage = 4;
+        }else if (parButton == buttonArmor){
+            currentPage = 8;
         }
     }
 
