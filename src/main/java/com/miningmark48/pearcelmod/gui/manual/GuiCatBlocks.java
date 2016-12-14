@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.gui.manual;
 
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -9,24 +8,24 @@ import net.minecraft.util.ResourceLocation;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.lwjgl.opengl.GL11;
 
-public class GuiCatTools extends GuiScreen{
+public class GuiCatBlocks extends GuiScreen{
 
     private final int textureHeight = 192;
     private final int textureWidth = 192;
     private int currentPage = 0;
-    public static final int bookTotalPages = 4;
+    public static final int bookTotalPages = 1;
     public static ResourceLocation[] bookPageTextures = new ResourceLocation[bookTotalPages];
     private static String[] stringPageText = new String[bookTotalPages];
     private ComponentNextPageButton buttonNextPage;
     private ComponentNextPageButton buttonPreviousPage;
     private GuiButton buttonHome;
 
-    public GuiCatTools(){
+    public GuiCatBlocks(){
 
         bookPageTextures[0] = GuiReference.manual_page;
 
         for (int i = 0; i < bookTotalPages; i++){
-            stringPageText[i] = StringEscapeUtils.unescapeJava(Translate.toLocal("gui.manual.tools.text." + Integer.valueOf(i)));
+            stringPageText[i] = StringEscapeUtils.unescapeJava(Translate.toLocal("gui.manual.blocks.text." + Integer.valueOf(i)));
         }
 
     }

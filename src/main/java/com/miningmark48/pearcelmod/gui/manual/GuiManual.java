@@ -1,11 +1,13 @@
 package com.miningmark48.pearcelmod.gui.manual;
 
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.lwjgl.opengl.GL11;
@@ -81,8 +83,6 @@ public class GuiManual extends GuiScreen{
         buttonArmor.visible = currentPage >= 1;
         buttonItems.visible = currentPage >= 1;
         buttonBlocks.visible = currentPage >= 1;
-        buttonItems.enabled = false;
-        buttonBlocks.enabled = false;
     }
 
     @Override
@@ -141,6 +141,10 @@ public class GuiManual extends GuiScreen{
             Minecraft.getMinecraft().displayGuiScreen(new GuiCatTools());
         }else if (parButton == buttonArmor){
             Minecraft.getMinecraft().displayGuiScreen(new GuiCatArmor());
+        }else if (parButton == buttonItems){
+            Minecraft.getMinecraft().displayGuiScreen(new GuiCatItems());
+        }else if (parButton == buttonBlocks){
+            Minecraft.getMinecraft().displayGuiScreen(new GuiCatBlocks());
         }
     }
 

@@ -34,8 +34,6 @@ public class GuiCatArmor extends GuiScreen{
     @Override
     public void initGui(){
         super.initGui();
-        //Debug
-        LogHelper.info("Gui Tools Initialized!");
         buttonList.clear();
 
         int offsetFromScreenLeft = (width - textureWidth) / 2;
