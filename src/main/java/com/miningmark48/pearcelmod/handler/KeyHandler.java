@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.handler;
 
 import com.miningmark48.pearcelmod.PearcelMod;
+import com.miningmark48.pearcelmod.gui.manual.GuiManual;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -31,10 +32,12 @@ public class KeyHandler{
 
     public static KeyBinding item_pcp = new KeyBinding(Translate.toLocal("key.item.pcp.1"), Keyboard.CHAR_NONE, "key.categories." + Reference.MOD_ID);
     public static KeyBinding item_pepc = new KeyBinding(Translate.toLocal("key.item.pepc.1"), Keyboard.CHAR_NONE, "key.categories." + Reference.MOD_ID);
+    public static KeyBinding gui_manual = new KeyBinding(Translate.toLocal("key.gui.manual.1"), Keyboard.KEY_B, "key.categories." + Reference.MOD_ID);
 
     public KeyHandler(){
         ClientRegistry.registerKeyBinding(item_pcp);
         ClientRegistry.registerKeyBinding(item_pepc);
+        ClientRegistry.registerKeyBinding(gui_manual);
     }
 
     @SideOnly(Side.CLIENT)
@@ -65,6 +68,12 @@ public class KeyHandler{
                 if (player.inventory.hasItemStack(new ItemStack(ModItems.pepc))) {
                     player.addChatComponentMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
                     //player.displayGUIChest(player.getInventoryEnderChest());
+                }
+            }
+            //Manual Gui
+            if (gui_manual.isPressed()){
+                if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_manual))) {
+                    Minecraft.getMinecraft().displayGuiScreen(new GuiManual(0));
                 }
             }
         }

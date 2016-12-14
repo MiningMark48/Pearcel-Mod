@@ -1,6 +1,5 @@
 package com.miningmark48.pearcelmod.gui.manual;
 
-import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.client.Minecraft;
@@ -10,32 +9,24 @@ import net.minecraft.util.ResourceLocation;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.lwjgl.opengl.GL11;
 
-public class GuiManual extends GuiScreen{
+public class GuiCatArmor extends GuiScreen{
 
     private final int textureHeight = 192;
     private final int textureWidth = 192;
     private int currentPage = 0;
-    public static final int bookTotalPages = 4;
+    public static final int bookTotalPages = 2;
     public static ResourceLocation[] bookPageTextures = new ResourceLocation[bookTotalPages];
     private static String[] stringPageText = new String[bookTotalPages];
     private ComponentNextPageButton buttonNextPage;
     private ComponentNextPageButton buttonPreviousPage;
-    public static GuiButton buttonHome;
-    public static GuiButton buttonIntro;
-    public static GuiButton buttonTools;
-    public static GuiButton buttonArmor;
-    public static GuiButton buttonItems;
-    public static GuiButton buttonBlocks;
+    private GuiButton buttonHome;
 
-    public GuiManual(int page){
+    public GuiCatArmor(){
 
-        bookPageTextures[0] = GuiReference.manual_cover;
-        bookPageTextures[1] = GuiReference.manual_page;
-
-        currentPage = page;
+        bookPageTextures[0] = GuiReference.manual_page;
 
         for (int i = 0; i < bookTotalPages; i++){
-            stringPageText[i] = StringEscapeUtils.unescapeJava(Translate.toLocal("gui.manual.intro.text." + Integer.valueOf(i)));
+            stringPageText[i] = StringEscapeUtils.unescapeJava(Translate.toLocal("gui.manual.armor.text." + Integer.valueOf(i)));
         }
 
     }
@@ -44,7 +35,7 @@ public class GuiManual extends GuiScreen{
     public void initGui(){
         super.initGui();
         //Debug
-        LogHelper.info("Gui Initialized!");
+        LogHelper.info("Gui Tools Initialized!");
         buttonList.clear();
 
         int offsetFromScreenLeft = (width - textureWidth) / 2;
@@ -53,17 +44,6 @@ public class GuiManual extends GuiScreen{
 
         buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, Translate.toLocal("gui.manual.button.home"));
         buttonList.add(buttonHome);
-
-        //Glossary
-        buttonTools = new GuiButton(3, width / 2 - 140, 2 + 30, 60, 20, Translate.toLocal("gui.manual.button.glossary.tools"));
-        buttonArmor = new GuiButton(3, width / 2 - 140, 2 + 55, 60, 20, Translate.toLocal("gui.manual.button.glossary.armor"));
-        buttonItems = new GuiButton(3, width / 2 - 140, 2 + 80, 60, 20, Translate.toLocal("gui.manual.button.glossary.items"));
-        buttonBlocks = new GuiButton(3, width / 2 - 140, 2 + 105, 60, 20, Translate.toLocal("gui.manual.button.glossary.blocks"));
-
-        buttonList.add(buttonTools);
-        buttonList.add(buttonArmor);
-        buttonList.add(buttonItems);
-        buttonList.add(buttonBlocks);
 
         for (GuiButton e : buttonList){
             e.visible = false;
@@ -76,13 +56,7 @@ public class GuiManual extends GuiScreen{
         super.updateScreen();
         buttonNextPage.visible = (currentPage < bookTotalPages - 1);
         buttonPreviousPage.visible = currentPage > 0;
-        buttonHome.visible = currentPage > 0;
-        buttonTools.visible = currentPage >= 1;
-        buttonArmor.visible = currentPage >= 1;
-        buttonItems.visible = currentPage >= 1;
-        buttonBlocks.visible = currentPage >= 1;
-        buttonItems.enabled = false;
-        buttonBlocks.enabled = false;
+        buttonHome.visible = true;
     }
 
     @Override
@@ -91,11 +65,8 @@ public class GuiManual extends GuiScreen{
 
         //Textures
         switch (currentPage){
-            case 0:
-                mc.getTextureManager().bindTexture(bookPageTextures[0]);
-                break;
             default:
-                mc.getTextureManager().bindTexture(bookPageTextures[1]);
+                mc.getTextureManager().bindTexture(bookPageTextures[0]);
                 break;
         }
 
@@ -103,18 +74,11 @@ public class GuiManual extends GuiScreen{
         drawTexturedModalRect(offsetFromScreenLeft, 2, 0, 0, textureWidth, textureHeight);
 
         int widthOfString;
-        String stringPageIndicator = Translate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage) + "/" + (bookTotalPages - 1);
+        String stringPageIndicator = Translate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage + 1) + "/" + (bookTotalPages);
         widthOfString = fontRendererObj.getStringWidth(stringPageIndicator);
 
-        //Pages
-        if (currentPage >= 1) {
-            fontRendererObj.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);
-            fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 34, 116, 0);
-        }else if (currentPage == 1){
-            fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 24, 116, 0);
-        }else if (currentPage == 0){
-            fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 24, 116, 0);
-        }
+        fontRendererObj.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);
+        fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 34, 116, 0);
 
         super.drawScreen(parWidth, parHeight, par3);
 
@@ -136,11 +100,7 @@ public class GuiManual extends GuiScreen{
                 --currentPage;
             }
         }else if (parButton == buttonHome){
-            Minecraft.getMinecraft().displayGuiScreen(new GuiManual(0));
-        }else if (parButton == buttonTools){
-            Minecraft.getMinecraft().displayGuiScreen(new GuiCatTools());
-        }else if (parButton == buttonArmor){
-            Minecraft.getMinecraft().displayGuiScreen(new GuiCatArmor());
+               Minecraft.getMinecraft().displayGuiScreen(new GuiManual(1));
         }
     }
 

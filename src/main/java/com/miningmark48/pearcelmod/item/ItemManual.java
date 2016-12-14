@@ -20,7 +20,7 @@ public class ItemManual extends ItemPearcelMod{
     {
         if (!player.isSneaking()){
             if (world.isRemote){
-                PearcelMod.proxy.openMyGuiClient(new GuiManual());
+                PearcelMod.proxy.openMyGuiClient(new GuiManual(0));
             }
         }
 
