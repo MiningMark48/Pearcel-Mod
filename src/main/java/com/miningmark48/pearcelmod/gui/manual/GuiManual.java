@@ -23,11 +23,13 @@ public class GuiManual extends GuiScreen{
     private ComponentNextPageButton buttonNextPage;
     private ComponentNextPageButton buttonPreviousPage;
     public static GuiButton buttonHome;
-    public static GuiButton buttonIntro;
     public static GuiButton buttonTools;
     public static GuiButton buttonArmor;
     public static GuiButton buttonItems;
     public static GuiButton buttonBlocks;
+    public static GuiButton buttonSummoning;
+    public static GuiButton buttonMobs;
+    public static GuiButton buttonCredits;
 
     public GuiManual(int page){
 
@@ -57,15 +59,21 @@ public class GuiManual extends GuiScreen{
         buttonList.add(buttonHome);
 
         //Glossary
-        buttonTools = new GuiButton(3, width / 2 - 140, 2 + 30, 60, 20, Translate.toLocal("gui.manual.button.glossary.tools"));
-        buttonArmor = new GuiButton(3, width / 2 - 140, 2 + 55, 60, 20, Translate.toLocal("gui.manual.button.glossary.armor"));
-        buttonItems = new GuiButton(3, width / 2 - 140, 2 + 80, 60, 20, Translate.toLocal("gui.manual.button.glossary.items"));
-        buttonBlocks = new GuiButton(3, width / 2 - 140, 2 + 105, 60, 20, Translate.toLocal("gui.manual.button.glossary.blocks"));
+        buttonTools = new GuiButton(3, width / 2 - 145, 2 + 30, 65, 20, Translate.toLocal("gui.manual.button.glossary.tools"));
+        buttonArmor = new GuiButton(3, width / 2 - 145, 2 + 55, 65, 20, Translate.toLocal("gui.manual.button.glossary.armor"));
+        buttonItems = new GuiButton(3, width / 2 - 145, 2 + 80, 65, 20, Translate.toLocal("gui.manual.button.glossary.items"));
+        buttonBlocks = new GuiButton(3, width / 2 - 145, 2 + 105, 65, 20, Translate.toLocal("gui.manual.button.glossary.blocks"));
+        buttonSummoning = new GuiButton(3, width / 2 - 145, 2 + 130, 65, 20, Translate.toLocal("gui.manual.button.glossary.summoning"));
+        buttonMobs = new GuiButton(3, width / 2 + 75, 2 + 30, 65, 20, Translate.toLocal("gui.manual.button.glossary.mobs"));
+        buttonCredits = new GuiButton(3, width / 2 + 75, 2 + 55, 65, 20, Translate.toLocal("gui.manual.button.glossary.credits"));
 
         buttonList.add(buttonTools);
         buttonList.add(buttonArmor);
         buttonList.add(buttonItems);
         buttonList.add(buttonBlocks);
+        buttonList.add(buttonSummoning);
+        buttonList.add(buttonMobs);
+        buttonList.add(buttonCredits);
 
         for (GuiButton e : buttonList){
             e.visible = false;
@@ -83,6 +91,14 @@ public class GuiManual extends GuiScreen{
         buttonArmor.visible = currentPage >= 1;
         buttonItems.visible = currentPage >= 1;
         buttonBlocks.visible = currentPage >= 1;
+        buttonSummoning.visible = currentPage >= 1;
+        buttonMobs.visible = currentPage >= 1;
+        buttonCredits.visible = currentPage >= 1;
+
+        buttonBlocks.enabled = false;
+        buttonSummoning.enabled = false;
+        buttonMobs.enabled = false;
+        buttonCredits.enabled = false;
     }
 
     @Override

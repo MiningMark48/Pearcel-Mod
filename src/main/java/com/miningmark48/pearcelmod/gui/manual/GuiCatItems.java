@@ -14,7 +14,7 @@ public class GuiCatItems extends GuiScreen{
     private final int textureHeight = 192;
     private final int textureWidth = 192;
     private int currentPage = 0;
-    public static final int bookTotalPages = 20;
+    public static final int bookTotalPages = 12;
     public static ResourceLocation[] bookPageTextures = new ResourceLocation[bookTotalPages];
     private static String[] stringPageText = new String[bookTotalPages];
     private ComponentNextPageButton buttonNextPage;
