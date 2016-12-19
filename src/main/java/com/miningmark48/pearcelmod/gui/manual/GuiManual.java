@@ -95,10 +95,10 @@ public class GuiManual extends GuiScreen{
         buttonMobs.visible = currentPage >= 1;
         buttonCredits.visible = currentPage >= 1;
 
-        buttonBlocks.enabled = false;
         buttonSummoning.enabled = false;
         buttonMobs.enabled = false;
         buttonCredits.enabled = false;
+        buttonBlocks.enabled = false;
     }
 
     @Override
