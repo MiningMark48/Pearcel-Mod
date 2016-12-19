@@ -32,6 +32,8 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_flour), new ItemStack(ModItems.pearcel_item));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ender_pearcel, 2), new ItemStack(ModBlocks.ender_pearcel_block));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_star), new ItemStack(Items.NETHER_STAR), new ItemStack(ModItems.pearcel_item), new ItemStack(ModItems.pearcel_matter), new ItemStack(ModItems.pearcel_ingot));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_manual), new ItemStack(Items.BOOK), new ItemStack(ModItems.pearcel_item));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_manual), new ItemStack(Items.BOOK), new ItemStack(ModItems.pearcel_ingot));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_stick, 6), "x", "x", 'x', new ItemStack(ModItems.pearcel_item));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_stick, 4), "x", "x", 'x', new ItemStack(ModBlocks.pearcel_planks));
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_cookie, 4), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(Items.COOKIE));
