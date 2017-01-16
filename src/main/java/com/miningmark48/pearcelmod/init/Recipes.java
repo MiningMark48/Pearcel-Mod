@@ -4,6 +4,8 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fluids.capability.templates.FluidHandlerItemStackSimple;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
@@ -92,7 +94,36 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.guardian_food), "xyx", "xzx", "xax", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModItems.tier_1_crafting_component), 'z', new ItemStack(ModItems.tier_2_crafting_component), 'a', new ItemStack(ModItems.tier_3_crafting_component));
         GameRegistry.addRecipe(new ItemStack(ModItems.guardian_food), "xax", "xzx", "xyx", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModItems.tier_1_crafting_component), 'z', new ItemStack(ModItems.tier_2_crafting_component), 'a', new ItemStack(ModItems.tier_3_crafting_component));
         GameRegistry.addRecipe(new ItemStack(ModItems.sacrificial_pearcel), "xzx", "zyz", "xzx", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModItems.tier_3_crafting_component), 'z', new ItemStack(ModItems.blood_drop));
-        GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_blood_dagger), " zz", "axz", "ya ", 'x', new ItemStack(ModItems.pearcel_sword), 'y', new ItemStack(ModItems.tier_2_crafting_component), 'z', new ItemStack(ModItems.pearcel_ingot), 'a', new ItemStack(ModItems.pearcel_item));
+        GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_blood_dagger), " zz", "axz", "ya ", 'x', new ItemStack(ModItems.pearcel_sword), 'y', new ItemStack(ModItems.tier_3_crafting_component), 'z', new ItemStack(ModItems.pearcel_ingot), 'a', new ItemStack(ModItems.pearcel_item));
+
+        //Charmed Pearcel
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_item), new ItemStack(ModItems.tier_4_crafting_component), new ItemStack(ModItems.blood_drop), new ItemStack(ModItems.pearcel_matter));
+            //Setup
+        ItemStack charmed_pearcel_fire = new ItemStack(ModItems.charmed_pearcel);
+        ItemStack charmed_pearcel_water = new ItemStack(ModItems.charmed_pearcel);
+        ItemStack charmed_pearcel_saturation = new ItemStack(ModItems.charmed_pearcel);
+        ItemStack charmed_pearcel_step_assist = new ItemStack(ModItems.charmed_pearcel);
+        if (!charmed_pearcel_fire.hasTagCompound()){
+            charmed_pearcel_fire.setTagCompound(new NBTTagCompound());
+        }
+        if (!charmed_pearcel_water.hasTagCompound()){
+            charmed_pearcel_water.setTagCompound(new NBTTagCompound());
+        }
+        if (!charmed_pearcel_saturation.hasTagCompound()){
+            charmed_pearcel_saturation.setTagCompound(new NBTTagCompound());
+        }
+        if (!charmed_pearcel_step_assist.hasTagCompound()){
+            charmed_pearcel_step_assist.setTagCompound(new NBTTagCompound());
+        }
+        charmed_pearcel_fire.getTagCompound().setString("type", "fire");
+        charmed_pearcel_water.getTagCompound().setString("type", "water");
+        charmed_pearcel_saturation.getTagCompound().setString("type", "saturation");
+        charmed_pearcel_step_assist.getTagCompound().setString("type", "step_assist");
+
+        GameRegistry.addShapelessRecipe(charmed_pearcel_fire, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.MAGMA_CREAM));
+        GameRegistry.addShapelessRecipe(charmed_pearcel_water, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.WATER_BUCKET));
+        GameRegistry.addShapelessRecipe(charmed_pearcel_saturation, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(ModItems.pearcel_infinifood));
+        GameRegistry.addShapelessRecipe(charmed_pearcel_step_assist, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.RABBIT_FOOT));
 
         //Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcel_sand), new ItemStack(ModBlocks.pearcel_glass), 5F);

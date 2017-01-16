@@ -91,6 +91,7 @@ public class ModItems {
     public static Item sacrificial_pearcel;
     public static Item pearcel_blood_dagger;
     public static Item pearcel_manual;
+    public static Item charmed_pearcel;
 
     public static void init(){
         //General Items
@@ -162,6 +163,7 @@ public class ModItems {
         sacrificial_pearcel = new ItemPearcelMod().setUnlocalizedName("sacrificial_pearcel").setRegistryName("sacrificial_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
         pearcel_blood_dagger = new ItemBloodSword(matToolPearcel).setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_manual = new ItemManual().setUnlocalizedName("pearcel_manual").setRegistryName("pearcel_manual").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        charmed_pearcel = new ItemCharmedPearcel().setUnlocalizedName("charmed_pearcel").setRegistryName("charmed_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -235,6 +237,7 @@ public class ModItems {
         GameRegistry.register(sacrificial_pearcel);
         GameRegistry.register(pearcel_blood_dagger);
         GameRegistry.register(pearcel_manual);
+        GameRegistry.register(charmed_pearcel);
 
     }
 
@@ -310,16 +313,8 @@ public class ModItems {
         registerRender(living_magnet);
         registerRender(sacrificial_pearcel);
         registerRender(pearcel_blood_dagger);
-        registerRender(pearcel_blood_dagger, 1, "pearcel_blood_dagger_01");
-        registerRender(pearcel_blood_dagger, 2, "pearcel_blood_dagger_02");
-        registerRender(pearcel_blood_dagger, 3, "pearcel_blood_dagger_03");
-        registerRender(pearcel_blood_dagger, 4, "pearcel_blood_dagger_04");
-        registerRender(pearcel_blood_dagger, 5, "pearcel_blood_dagger_05");
-        registerRender(pearcel_blood_dagger, 6, "pearcel_blood_dagger_06");
-        registerRender(pearcel_blood_dagger, 7, "pearcel_blood_dagger_07");
-        registerRender(pearcel_blood_dagger, 8, "pearcel_blood_dagger_08");
-        registerRender(pearcel_blood_dagger, 9, "pearcel_blood_dagger_09");
         registerRender(pearcel_manual);
+        registerRender(charmed_pearcel);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

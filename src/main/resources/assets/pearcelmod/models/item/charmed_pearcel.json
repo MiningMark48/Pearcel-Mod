@@ -1,0 +1,13 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "pearcelmod:items/charmed_pearcel"
+    },
+    "overrides": [
+        { "predicate": { "type": 0 }, "model": "pearcelmod:item/charmed_pearcel" },
+        { "predicate": { "type": 1 }, "model": "pearcelmod:item/charmed_pearcel_1" },
+        { "predicate": { "type": 2 }, "model": "pearcelmod:item/charmed_pearcel_2" },
+        { "predicate": { "type": 3 }, "model": "pearcelmod:item/charmed_pearcel_3" },
+        { "predicate": { "type": 4 }, "model": "pearcelmod:item/charmed_pearcel_4" }
+    ]
+}

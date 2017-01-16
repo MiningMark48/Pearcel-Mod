@@ -29,6 +29,7 @@ public class PMPlugin implements IModPlugin{
 
     @Override
     public void register(IModRegistry registry) {
+
         jeiHelpers = registry.getJeiHelpers();
 
         List<ItemStack> backpacks = new ArrayList<ItemStack>();

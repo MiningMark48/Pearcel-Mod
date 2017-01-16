@@ -71,6 +71,7 @@ item.sacrificial_pearcel.name=Sacrificial Pearcel
 item.blood_drop.name=Drop of Blood
 item.pearcel_blood_dagger.name=Pearcel Blood Dagger
 item.pearcel_manual.name=Pearcel Manual [WIP]
+item.charmed_pearcel.name=Charmed Pearcel
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -170,6 +171,11 @@ tooltip.item.living_magnet.line2.p2=block range around the player.
 tooltip.item.living_magnet.line3=Shift to not pull or push living entities.
 tooltip.item.living_magnet.line4=Mode:
 tooltip.item.guardian_food.line1=Eat thy and thee will spawn.
+tooltip.item.charmed_pearcel.line1.no_charm=There is no charm on this!
+tooltip.item.charmed_pearcel.line1.type.fire=Fire Resistance
+tooltip.item.charmed_pearcel.line1.type.water=Water Breathing
+tooltip.item.charmed_pearcel.line1.type.saturation=Saturation
+tooltip.item.charmed_pearcel.line1.type.step_assist=Step Assist
 
 #Key Bindings
 key.categories.pearcelmod=Pearcel Mod
