@@ -44,6 +44,16 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                     return 3;
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("step_assist")){
                     return 4;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("fall")){
+                    return 5;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("gravity")){
+                    return 6;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("adrenaline")){
+                    return 7;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("cloaking")){
+                    return 8;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("hearty")){
+                    return 9;
                 }else{
                     return 0;
                 }
@@ -67,6 +77,16 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                     list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.saturation"));
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("step_assist")){
                     list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.step_assist"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("fall")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.fall"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("gravity")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.gravity"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("adrenaline")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.adrenaline"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("cloaking")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.cloaking"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("hearty")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.hearty"));
                 }else {
                     list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
                 }
@@ -108,6 +128,25 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                         player.stepHeight = 1.25F;
                     }
                 }
+                if (stack.getTagCompound().getString("type").equalsIgnoreCase("gravity")){
+                    if (player.isSneaking()) {
+                        player.addVelocity(0D, -0.125D, 0D);
+                    }
+                }
+                if (stack.getTagCompound().getString("type").equalsIgnoreCase("adrenaline")){
+                    player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25, 1, true, false));
+                    player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25, 0, true, false));
+                    player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25, 1, true, false));
+                }
+                if (stack.getTagCompound().getString("type").equalsIgnoreCase("cloaking")){
+                    player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 25, 0, true, false));
+                }
+                if (stack.getTagCompound().getString("type").equalsIgnoreCase("hearty")){
+                    player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 25, 0, true, false));
+                    player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25, 0, true, false));
+                }
+
+                //EventCharms - Fall
             }
         }
 

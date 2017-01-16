@@ -172,10 +172,15 @@ tooltip.item.living_magnet.line3=Shift to not pull or push living entities.
 tooltip.item.living_magnet.line4=Mode:
 tooltip.item.guardian_food.line1=Eat thy and thee will spawn.
 tooltip.item.charmed_pearcel.line1.no_charm=There is no charm on this!
-tooltip.item.charmed_pearcel.line1.type.fire=Fire Resistance
-tooltip.item.charmed_pearcel.line1.type.water=Water Breathing
+tooltip.item.charmed_pearcel.line1.type.fire=Heat Shielding
+tooltip.item.charmed_pearcel.line1.type.water=Gills
 tooltip.item.charmed_pearcel.line1.type.saturation=Saturation
 tooltip.item.charmed_pearcel.line1.type.step_assist=Step Assist
+tooltip.item.charmed_pearcel.line1.type.fall=Lightweight
+tooltip.item.charmed_pearcel.line1.type.gravity=Gravity
+tooltip.item.charmed_pearcel.line1.type.adrenaline=Adrenaline
+tooltip.item.charmed_pearcel.line1.type.cloaking=Cloaking
+tooltip.item.charmed_pearcel.line1.type.hearty=Hearty
 
 #Key Bindings
 key.categories.pearcelmod=Pearcel Mod

@@ -72,6 +72,7 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakNP());
 		MinecraftForge.EVENT_BUS.register(new EventOnHurt());
 		MinecraftForge.EVENT_BUS.register(new EventOnPlayerAttack());
+		MinecraftForge.EVENT_BUS.register(new EventCharms());
 
 		Recipes.init();
 
