@@ -16,11 +16,13 @@ out
 # gradle
 build
 .gradle
+build.gradle
 gradle
+gradlew
+gradlew.bat
 
 # other
 eclipse
 run
 classes
-gradlew
 lib
