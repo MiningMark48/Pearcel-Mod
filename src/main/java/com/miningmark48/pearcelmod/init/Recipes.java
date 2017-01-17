@@ -108,30 +108,16 @@ public class Recipes {
         ItemStack charmed_pearcel_gravity = new ItemStack(ModItems.charmed_pearcel);
         ItemStack charmed_pearcel_adrenaline = new ItemStack(ModItems.charmed_pearcel);
         ItemStack charmed_pearcel_cloaking = new ItemStack(ModItems.charmed_pearcel);
-        if (!charmed_pearcel_fire.hasTagCompound()){
-            charmed_pearcel_fire.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_water.hasTagCompound()){
-            charmed_pearcel_water.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_saturation.hasTagCompound()){
-            charmed_pearcel_saturation.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_step_assist.hasTagCompound()){
-            charmed_pearcel_step_assist.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_fall.hasTagCompound()){
-            charmed_pearcel_fall.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_gravity.hasTagCompound()){
-            charmed_pearcel_gravity.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_adrenaline.hasTagCompound()){
-            charmed_pearcel_adrenaline.setTagCompound(new NBTTagCompound());
-        }
-        if (!charmed_pearcel_cloaking.hasTagCompound()){
-            charmed_pearcel_cloaking.setTagCompound(new NBTTagCompound());
-        }
+
+        if (!charmed_pearcel_fire.hasTagCompound())charmed_pearcel_fire.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_water.hasTagCompound())charmed_pearcel_water.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_saturation.hasTagCompound()) charmed_pearcel_saturation.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_step_assist.hasTagCompound())charmed_pearcel_step_assist.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_fall.hasTagCompound()) charmed_pearcel_fall.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_gravity.hasTagCompound()) charmed_pearcel_gravity.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_adrenaline.hasTagCompound()) charmed_pearcel_adrenaline.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_cloaking.hasTagCompound()) charmed_pearcel_cloaking.setTagCompound(new NBTTagCompound());
+
         charmed_pearcel_fire.getTagCompound().setString("type", "fire");
         charmed_pearcel_water.getTagCompound().setString("type", "water");
         charmed_pearcel_saturation.getTagCompound().setString("type", "saturation");
