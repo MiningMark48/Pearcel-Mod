@@ -175,14 +175,25 @@ tooltip.item.guardian_food.line1=Eat thy and thee will spawn.
 tooltip.item.charm_bag.line1=Hold all your charms in one place!
 tooltip.item.charmed_pearcel.line1.no_charm=There is no charm on this!
 tooltip.item.charmed_pearcel.line1.type.fire=Heat Shielding
+tooltip.item.charmed_pearcel.line1.type.fire.desc=Protects against fire.
 tooltip.item.charmed_pearcel.line1.type.water=Gills
+tooltip.item.charmed_pearcel.line1.type.water.desc=Breath underwater.
 tooltip.item.charmed_pearcel.line1.type.saturation=Saturation
+tooltip.item.charmed_pearcel.line1.type.saturation.desc=Never eat again.
 tooltip.item.charmed_pearcel.line1.type.step_assist=Step Assist
+tooltip.item.charmed_pearcel.line1.type.step_assist.desc=Move up a one block space automatically.
 tooltip.item.charmed_pearcel.line1.type.fall=Lightweight
+tooltip.item.charmed_pearcel.line1.type.fall.desc=No fall damage.
 tooltip.item.charmed_pearcel.line1.type.gravity=Gravity
+tooltip.item.charmed_pearcel.line1.type.gravity.desc=Sneak to fall faster.
 tooltip.item.charmed_pearcel.line1.type.adrenaline=Adrenaline
+tooltip.item.charmed_pearcel.line1.type.adrenaline.desc=Run, dig, and jump... fast.
 tooltip.item.charmed_pearcel.line1.type.cloaking=Cloaking
+tooltip.item.charmed_pearcel.line1.type.cloaking.desc=Go invisible.
 tooltip.item.charmed_pearcel.line1.type.hearty=Hearty
+tooltip.item.charmed_pearcel.line1.type.hearty.desc=More health and regen.
+tooltip.item.charmed_pearcel.line1.type.repair=Repair
+tooltip.item.charmed_pearcel.line1.type.repair.desc=Repairs held items at random.
 
 #Key Bindings
 key.categories.pearcelmod=Pearcel Mod
