@@ -90,6 +90,7 @@ public class PearcelMod {
 		versionChecker = new VersionChecker();
 		Thread versionCheckThread = new Thread(versionChecker, "Pearcel Mod Version Check");
 		versionCheckThread.start();
+
 	}
 
 

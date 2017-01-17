@@ -108,47 +108,49 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
             if (entityIn instanceof EntityPlayer){
                 EntityPlayer player = (EntityPlayer) entityIn;
                 player.stepHeight = 0.6F;
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("fire")){
-                    player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 25, 0, true, false));
-                    player.extinguish();
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("water")){
-                    player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 25, 5, true, false));
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("saturation")){
-                    player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 25, 5, true, false));
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("step_assist")){
-                    ItemStack s = new ItemStack(ModItems.charmed_pearcel);
-                    if (!s.hasTagCompound()){
-                        s.setTagCompound(new NBTTagCompound());
-                    }
-                    s.getTagCompound().setString("type", "step_assist");
-                    if (player.inventory.hasItemStack(s)){
-                        player.stepHeight = 1.25F;
-                    }
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("gravity")){
-                    if (player.isSneaking()) {
-                        player.addVelocity(0D, -0.125D, 0D);
-                    }
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("adrenaline")){
-                    player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25, 1, true, false));
-                    player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25, 0, true, false));
-                    player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25, 1, true, false));
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("cloaking")){
-                    player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 25, 0, true, false));
-                }
-                if (stack.getTagCompound().getString("type").equalsIgnoreCase("hearty")){
-                    player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 25, 0, true, false));
-                    player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25, 0, true, false));
-                }
-
-                //EventCharms - Fall
+                doEffects(player, stack);
             }
         }
-
     }
+
+    public static void doEffects(EntityPlayer player, ItemStack stack){
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("fire")){
+            player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 25, 0, true, false));
+            player.extinguish();
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("water")){
+            player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 25, 5, true, false));
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("saturation")){
+            player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 25, 5, true, false));
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("step_assist")){
+            ItemStack s = new ItemStack(ModItems.charmed_pearcel);
+            if (!s.hasTagCompound()){
+                s.setTagCompound(new NBTTagCompound());
+            }
+            s.getTagCompound().setString("type", "step_assist");
+            if (player.inventory.hasItemStack(s)){
+                player.stepHeight = 1.25F;
+            }
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("gravity")){
+            if (player.isSneaking()) {
+                player.addVelocity(0D, -0.125D, 0D);
+            }
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("adrenaline")){
+            player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 25, 1, true, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 25, 0, true, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 25, 1, true, false));
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("cloaking")){
+            player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 25, 0, true, false));
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("hearty")){
+            player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 25, 0, true, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 25, 0, true, false));
+        }
+    }
+
 }

@@ -72,6 +72,7 @@ item.blood_drop.name=Drop of Blood
 item.pearcel_blood_dagger.name=Pearcel Blood Dagger
 item.pearcel_manual.name=Pearcel Manual [WIP]
 item.charmed_pearcel.name=Charmed Pearcel
+item.charm_bag.name=Charm Bag
 
 #Blocks
 tile.pearcel_block.name=Pearcel Block
@@ -171,6 +172,7 @@ tooltip.item.living_magnet.line2.p2=block range around the player.
 tooltip.item.living_magnet.line3=Shift to not pull or push living entities.
 tooltip.item.living_magnet.line4=Mode:
 tooltip.item.guardian_food.line1=Eat thy and thee will spawn.
+tooltip.item.charm_bag.line1=Hold all your charms in one place!
 tooltip.item.charmed_pearcel.line1.no_charm=There is no charm on this!
 tooltip.item.charmed_pearcel.line1.type.fire=Heat Shielding
 tooltip.item.charmed_pearcel.line1.type.water=Gills
@@ -275,6 +277,7 @@ gui.pcp.name=Portable Crafting Pearcel
 gui.pearcel_backpack.name=Pearcel Backpack
 gui.enlarged_pearcel_backpack.name=Enlarged Pearcel Backpack
 gui.bindle.name=Bindle
+gui.charm_bag.name=Charm Bag
 
 #Manual
 gui.manual.button.home=Home

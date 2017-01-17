@@ -92,6 +92,7 @@ public class ModItems {
     public static Item pearcel_blood_dagger;
     public static Item pearcel_manual;
     public static Item charmed_pearcel;
+    public static Item charm_bag;
 
     public static void init(){
         //General Items
@@ -164,6 +165,7 @@ public class ModItems {
         pearcel_blood_dagger = new ItemBloodSword(matToolPearcel).setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_manual = new ItemManual().setUnlocalizedName("pearcel_manual").setRegistryName("pearcel_manual").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         charmed_pearcel = new ItemCharmedPearcel().setUnlocalizedName("charmed_pearcel").setRegistryName("charmed_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        charm_bag = new ItemCharmBag().setUnlocalizedName("charm_bag").setRegistryName("charm_bag").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -238,6 +240,7 @@ public class ModItems {
         GameRegistry.register(pearcel_blood_dagger);
         GameRegistry.register(pearcel_manual);
         GameRegistry.register(charmed_pearcel);
+        GameRegistry.register(charm_bag);
 
     }
 
@@ -315,6 +318,7 @@ public class ModItems {
         registerRender(pearcel_blood_dagger);
         registerRender(pearcel_manual);
         registerRender(charmed_pearcel);
+        registerRender(charm_bag);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.gui.*;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModTileEntities;
 import com.miningmark48.pearcelmod.inventory.InventoryBindle;
+import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
 import com.miningmark48.pearcelmod.inventory.InventoryEnlargedPearcelBackpack;
 import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.GUIs;
@@ -39,6 +40,9 @@ public class GuiHandler implements IGuiHandler{
         if (ID == GUIs.gui_id_pearcel_storage_crate){
             return new ContainerPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos), player);
         }
+        if (ID == GUIs.gui_id_charm_bag){
+            return new ContainerCharmBag(player, player.inventory, new InventoryCharmBag(player.getHeldItem(EnumHand.MAIN_HAND)));
+        }
         return null;
     }
 
@@ -62,6 +66,9 @@ public class GuiHandler implements IGuiHandler{
         }
         if (ID == GUIs.gui_id_pearcel_storage_crate){
             return new GuiPearcelStorageCrate(player.inventory, (TileEntityPearcelStorageCrate) world.getTileEntity(pos), player);
+        }
+        if (ID == GUIs.gui_id_charm_bag){
+            return new GuiCharmBag((ContainerCharmBag) new ContainerCharmBag(player, player.inventory, new InventoryCharmBag(player.getHeldItem(EnumHand.MAIN_HAND))));
         }
         return null;
     }
