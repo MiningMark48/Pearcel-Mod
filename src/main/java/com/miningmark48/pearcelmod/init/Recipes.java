@@ -108,6 +108,7 @@ public class Recipes {
         ItemStack charmed_pearcel_gravity = new ItemStack(ModItems.charmed_pearcel);
         ItemStack charmed_pearcel_adrenaline = new ItemStack(ModItems.charmed_pearcel);
         ItemStack charmed_pearcel_cloaking = new ItemStack(ModItems.charmed_pearcel);
+        ItemStack charmed_pearcel_repair = new ItemStack(ModItems.charmed_pearcel);
 
         if (!charmed_pearcel_fire.hasTagCompound())charmed_pearcel_fire.setTagCompound(new NBTTagCompound());
         if (!charmed_pearcel_water.hasTagCompound())charmed_pearcel_water.setTagCompound(new NBTTagCompound());
@@ -117,6 +118,7 @@ public class Recipes {
         if (!charmed_pearcel_gravity.hasTagCompound()) charmed_pearcel_gravity.setTagCompound(new NBTTagCompound());
         if (!charmed_pearcel_adrenaline.hasTagCompound()) charmed_pearcel_adrenaline.setTagCompound(new NBTTagCompound());
         if (!charmed_pearcel_cloaking.hasTagCompound()) charmed_pearcel_cloaking.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_repair.hasTagCompound()) charmed_pearcel_repair.setTagCompound(new NBTTagCompound());
 
         charmed_pearcel_fire.getTagCompound().setString("type", "fire");
         charmed_pearcel_water.getTagCompound().setString("type", "water");
@@ -126,6 +128,7 @@ public class Recipes {
         charmed_pearcel_gravity.getTagCompound().setString("type", "gravity");
         charmed_pearcel_adrenaline.getTagCompound().setString("type", "adrenaline");
         charmed_pearcel_cloaking.getTagCompound().setString("type", "cloaking");
+        charmed_pearcel_repair.getTagCompound().setString("type", "repair");
 
         GameRegistry.addShapelessRecipe(charmed_pearcel_fire, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.MAGMA_CREAM));
         GameRegistry.addShapelessRecipe(charmed_pearcel_water, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.WATER_BUCKET));
@@ -135,6 +138,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(charmed_pearcel_gravity, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Blocks.ANVIL));
         GameRegistry.addShapelessRecipe(charmed_pearcel_adrenaline, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.SUGAR), new ItemStack(ModItems.pearcel_pickaxe), new ItemStack(Items.RABBIT_FOOT));
         GameRegistry.addShapelessRecipe(charmed_pearcel_cloaking, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.ENDER_EYE), new ItemStack(Items.GOLDEN_CARROT));
+        GameRegistry.addShapelessRecipe(charmed_pearcel_repair, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Blocks.ANVIL), new ItemStack(Items.IRON_PICKAXE));
 
         //Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcel_sand), new ItemStack(ModBlocks.pearcel_glass), 5F);
