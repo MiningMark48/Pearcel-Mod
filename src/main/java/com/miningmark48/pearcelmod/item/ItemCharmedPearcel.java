@@ -3,16 +3,21 @@ package com.miningmark48.pearcelmod.item;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.*;
+import net.minecraft.entity.ai.EntityAIAttackMelee;
+import net.minecraft.entity.ai.EntityAIAttackRangedBow;
+import net.minecraft.entity.ai.EntityAITasks;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -58,6 +63,10 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                     return 9;
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("repair")){
                     return 10;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("physco")){
+                    return 11;
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("third_eye")){
+                    return 12;
                 }else{
                     return 0;
                 }
@@ -103,6 +112,12 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("repair")){
                     list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.repair"));
                     list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.repair.desc"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("physco")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.physco"));
+                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.physco.desc"));
+                }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("third_eye")){
+                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.third_eye"));
+                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.third_eye.desc"));
                 }else {
                     list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
                 }
@@ -177,6 +192,32 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                     }
                 }
             }
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("physco")){
+            int x = (int) player.posX;
+            int y = (int) player.posY;
+            int z = (int) player.posZ;
+            int range = 15;
+            List<EntityCreature> creatureList = player.worldObj.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            for (EntityCreature creature : creatureList){
+                if (creature.isCreatureType(EnumCreatureType.MONSTER, false)) {
+                    List<EntityCreature> creatureList2 = creature.worldObj.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+                    for (EntityCreature creature2 : creatureList2) {
+                        creature.setAttackTarget(creature2);
+                    }
+                }
+            }
+        }
+        if (stack.getTagCompound().getString("type").equalsIgnoreCase("third_eye")){
+            int x = (int) player.posX;
+            int y = (int) player.posY;
+            int z = (int) player.posZ;
+            int range = 15;
+            List<EntityLiving> entities = player.worldObj.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            for (EntityLiving e : entities){
+                e.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 25, 0, true, false));
+            }
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 25, 0, true, false));
         }
     }
 
