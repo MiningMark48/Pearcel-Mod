@@ -245,7 +245,7 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                 player.addChatComponentMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
             } else {
                 stack.getTagCompound().setBoolean("active", false);
-                player.addChatComponentMessage(new TextComponentString(ChatFormatting.DARK_RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
+                player.addChatComponentMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
             }
         }
 
