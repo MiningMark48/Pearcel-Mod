@@ -174,6 +174,9 @@ tooltip.item.living_magnet.line4=Mode:
 tooltip.item.guardian_food.line1=Eat thy and thee will spawn.
 tooltip.item.charm_bag.line1=Hold all your charms in one place!
 tooltip.item.charmed_pearcel.line1.no_charm=There is no charm on this!
+tooltip.item.charmed_pearcel.line2.mode=Mode:
+tooltip.item.charmed_pearcel.line2.mode.active=Active
+tooltip.item.charmed_pearcel.line2.mode.not_active=Not Active
 tooltip.item.charmed_pearcel.line1.type.fire=Heat Shielding
 tooltip.item.charmed_pearcel.line1.type.fire.desc=Protects against fire.
 tooltip.item.charmed_pearcel.line1.type.water=Gills
@@ -266,6 +269,8 @@ chat.item.living_magnet.attracts=Living Magnet will attract living entities.
 chat.item.living_magnet.repels=Living Magnet will repel living entities.
 chat.item.guardian_food.summoned=The Guardian has been summoned to the lands.
 chat.event.onDie.1=Your life was spared by the Sacrificial Pearcel.
+chat.item.charmed_pearcel.activated=Charmed Pearcel activated.
+chat.item.charmed_pearcel.deactivated=Charmed Pearcel deactivated.
 
 #Chat messages - Summoner
 summoner.error.missingBlock=Missing blocks required for summoning activation!

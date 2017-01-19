@@ -70,8 +70,10 @@ public class ItemCharmBag extends ItemPearcelMod{
                 NBTTagCompound item = (NBTTagCompound) items.getCompoundTagAt(i);
                 int slot = item.getInteger("Slot");
 
-                if(slot >= 0 && slot < InventoryCharmBag.INV_SIZE){
-                    ItemCharmedPearcel.doEffects(player, ItemStack.loadItemStackFromNBT(item));
+                if (slot >= 0 && slot < InventoryCharmBag.INV_SIZE){
+                    if (ItemStack.loadItemStackFromNBT(item).getTagCompound().getBoolean("active")) {
+                        ItemCharmedPearcel.doEffects(player, ItemStack.loadItemStackFromNBT(item));
+                    }
                 }
 
             }

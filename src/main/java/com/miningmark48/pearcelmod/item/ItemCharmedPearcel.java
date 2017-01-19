@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.item;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
+import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.ai.EntityAIAttackRangedBow;
@@ -16,6 +17,9 @@ import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.text.TextComponentString;
@@ -41,6 +45,7 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                 if (!stack.hasTagCompound()){
                     stack.setTagCompound(new NBTTagCompound());
                     stack.getTagCompound().setString("type", "none");
+                    stack.getTagCompound().setBoolean("active", true);
                 }
 
                 if (stack.getTagCompound().getString("type").equalsIgnoreCase("fire")){
@@ -122,6 +127,10 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
                     list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
                 }
 
+                if (!stack.getTagCompound().getString("type").equalsIgnoreCase("none")) {
+                    list.add(TextFormatting.DARK_AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line2.mode") + " " + (stack.getTagCompound().getBoolean("active") ? TextFormatting.GREEN + Translate.toLocal("tooltip.item.charmed_pearcel.line2.mode.active") : TextFormatting.RED + Translate.toLocal("tooltip.item.charmed_pearcel.line2.mode.not_active")));
+                }
+
 
             } else {
                 list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
@@ -139,7 +148,9 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
             if (entityIn instanceof EntityPlayer){
                 EntityPlayer player = (EntityPlayer) entityIn;
                 player.stepHeight = 0.6F;
-                doEffects(player, stack);
+                if (stack.getTagCompound().getBoolean("active")) {
+                    doEffects(player, stack);
+                }
             }
         }
     }
@@ -221,4 +232,23 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
         }
     }
 
+    @Override
+    public ActionResult<ItemStack> onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand) {
+
+        if (!stack.hasTagCompound()){
+            stack.setTagCompound(new NBTTagCompound());
+        }
+
+        if (player.isSneaking() && !world.isRemote) {
+            if (!stack.getTagCompound().getBoolean("active")) {
+                stack.getTagCompound().setBoolean("active", true);
+                player.addChatComponentMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
+            } else {
+                stack.getTagCompound().setBoolean("active", false);
+                player.addChatComponentMessage(new TextComponentString(ChatFormatting.DARK_RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
+            }
+        }
+
+        return new ActionResult(EnumActionResult.SUCCESS, stack);
+    }
 }
