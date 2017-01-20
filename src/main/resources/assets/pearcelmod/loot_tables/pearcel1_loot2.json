@@ -1,0 +1,274 @@
+{
+  "pools": [
+    {
+      "name": "pearcelmod: pearcel1_loots",
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "bonus_rolls": {
+        "min": 3,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_sword",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "sharpness"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_pickaxe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "efficiency",
+                "unbreaking",
+                "silk_touch"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_shovel",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "efficiency",
+                "unbreaking"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_axe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "efficiency",
+                "unbreaking",
+                "sharpness",
+                "silk_touch"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_hoe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "unbreaking"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_shears",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "unbreaking"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_bow",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_arrow",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:charmed_pearcel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_beacon",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 0
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_staff",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:dragon_pearcel_staff",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tp_pearcel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pcp",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:sap",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:charm_bag",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_crook",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pepc",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:bindle",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_backpack",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:enlarged_pearcel_backpack",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:rif_pearcel_helmet",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:rif_pearcel_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:rif_pearcel_leggings",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:rif_pearcel_boots",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_helmet",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_chestplate",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_leggings",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_boots",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:nullification_pearcel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_magnet",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:living_magnet",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:ender_pearcel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:experience_pearcel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:reinforced_pearcel_pickaxe",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:reinforced_pearcel_shovel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:stimulation_pearcel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:matter_fabricator",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

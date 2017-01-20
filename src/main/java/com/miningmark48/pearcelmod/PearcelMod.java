@@ -12,6 +12,7 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.utility.VersionChecker;
+import com.miningmark48.pearcelmod.world.StructureGenPearcel1;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -65,6 +66,7 @@ public class PearcelMod {
 		proxy.init();
 
 		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+		GameRegistry.registerWorldGenerator(new StructureGenPearcel1(), 1);
 
 		MinecraftForge.EVENT_BUS.register(new EventBreakForPearcel());
 		MinecraftForge.EVENT_BUS.register(new EventOnBreakMF());
