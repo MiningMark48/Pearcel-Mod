@@ -31,6 +31,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_cookie, 12), new ItemStack(Items.EGG), new ItemStack(ModItems.pearcel_flour), new ItemStack(Items.SUGAR), new ItemStack(Items.MILK_BUCKET));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_beef, 2), new ItemStack(ModItems.pearcel_item), new ItemStack(Items.BEEF));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_ingot), new ItemStack(ModItems.pearcel_item), new ItemStack(Items.IRON_INGOT));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_ingot, 9), new ItemStack(ModBlocks.pearcel_ingot_block));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_flour), new ItemStack(ModItems.pearcel_item));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ender_pearcel, 2), new ItemStack(ModBlocks.ender_pearcel_block));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_star), new ItemStack(Items.NETHER_STAR), new ItemStack(ModItems.pearcel_item), new ItemStack(ModItems.pearcel_matter), new ItemStack(ModItems.pearcel_ingot));
@@ -176,6 +177,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_charcoal_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_charcoal));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_beacon), "zxz", "aya", "xzx", 'x', new ItemStack(ModBlocks.polished_pearcel_stone), 'y', new ItemStack(ModItems.pearcel_star), 'z', new ItemStack(ModBlocks.ender_pearcel_block), 'a', new ItemStack(ModItems.tier_3_crafting_component));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_storage_crate), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(Blocks.CHEST, 1, OreDictionary.WILDCARD_VALUE));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_ingot_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_ingot));
 
         //Pearcel Matter Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 2), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_1_crafting_component));
