@@ -1,16 +1,10 @@
 package com.miningmark48.pearcelmod.world;
 
-import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.WorldGenTools;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
-import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.monster.EntityGuardian;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
@@ -28,14 +22,13 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.structure.template.PlacementSettings;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import org.lwjgl.Sys;
 
 import java.util.Map;
 import java.util.Random;
 
-public class StructureGenPearcel1 implements IWorldGenerator{
+public class StructureGenPearcel2 implements IWorldGenerator{
 
-    public static final ResourceLocation STRUCTURE = new ResourceLocation(Reference.MOD_ID, "Pearcel1");
+    public static final ResourceLocation STRUCTURE = new ResourceLocation(Reference.MOD_ID, "Pearcel2");
     public static final ResourceLocation LOOT = new ResourceLocation(Reference.MOD_ID, "pearcel1_loot");
     public static final ResourceLocation LOOT2 = new ResourceLocation(Reference.MOD_ID, "pearcel1_loot2");
 
@@ -53,8 +46,8 @@ public class StructureGenPearcel1 implements IWorldGenerator{
         Biome biome = world.getBiomeForCoordsBody(xzPos);
 
         if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.HELL) {
-            if (random.nextInt(ConfigurationHandler.structureRarity2) == 0) { //Rarity
-                BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z), z);
+            if (random.nextInt(ConfigurationHandler.structureRarity2) == 1) { //Rarity
+                BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z) + 1, z);
                 generateStructure(serverworld, pos, random);
             }
         }

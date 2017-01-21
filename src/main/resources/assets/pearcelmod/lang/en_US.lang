@@ -356,6 +356,8 @@ config.category.pearcelMagnet.title=Pearcel Magnet
 config.category.pearcelMagnet.desc=Configure how the Pearcel Magnet and the Living Magnet behaves.
 config.category.pearcelBeacon.title=Ender Pearcel Effect Transmitter
 config.category.pearcelBeacon.desc=Configure how the EPET functions.
+config.category.structureRarity.title=Structure Rarity
+config.category.structureRarity.desc=Rarity for world generation structures.
 
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
@@ -404,6 +406,10 @@ config.pearcelBeaconDamage.title=EPET Damage
 config.pearcelBeaconDamage.desc=How much damage does the EPET do to hostile mobs per hit?
 config.creativeTabSearchBar.title=Creative Tab Search Bar
 config.creativeTabSearchBar.desc=Should there be a search bar on the creative tab?
+config.structureRarity1.title=9x9 Pearcel House Rarity
+config.structureRarity1.desc=Higher the number, the more rare the structure will be.
+config.structureRarity2.title=Pearcel Tower Rarity
+config.structureRarity2.desc=Higher the number, the more rare the structure will be.
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?

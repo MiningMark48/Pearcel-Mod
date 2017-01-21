@@ -28,6 +28,8 @@ public class ConfigurationHandler {
     public static int pearcelMagnetRange;
     public static int glowingPearcelRange;
     public static int pearcelBeaconRange;
+    public static int structureRarity1;
+    public static int structureRarity2;
     public static float pearcelBeaconDamage;
     public static float pearcelMagnetPullSpeed;
     public static float enderPearcelVelocity;
@@ -58,7 +60,8 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.torcher.title"), Translate.toLocal("config.category.torcher.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.worldGen.title"), Translate.toLocal("config.category.worldGen.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelMagnet.title"), Translate.toLocal("config.category.pearcelMagnet.desc"));
-        configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelBeacon.title"), Translate.toLocal("config.categoty.pearcelBeacon.desc"));;
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelBeacon.title"), Translate.toLocal("config.category.pearcelBeacon.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.structureRarity.title"), Translate.toLocal("config.category.structureRarity.desc"));;
 
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
         pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
@@ -92,6 +95,10 @@ public class ConfigurationHandler {
         //Pearcel Beacon
         pearcelBeaconRange = configuration.getInt(Translate.toLocal("config.pearcelBeaconRange.title"), Translate.toLocal("config.category.pearcelBeacon.title"), 55, 1, Integer.MAX_VALUE, Translate.toLocal("config.pearcelBeaconRange.desc"));
         pearcelBeaconDamage = configuration.getFloat(Translate.toLocal("config.pearcelBeaconDamage.title"), Translate.toLocal("config.category.pearcelBeacon.title"), 2.0F, 0.0F, Float.MAX_VALUE, Translate.toLocal("config.pearcelBeaconDamage.desc"));
+
+        //Structures
+        structureRarity1 = configuration.getInt(Translate.toLocal("config.structureRarity1.title"), Translate.toLocal("config.category.structureRarity.title"), 550, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity1.desc"));
+        structureRarity2 = configuration.getInt(Translate.toLocal("config.structureRarity2.title"), Translate.toLocal("config.category.structureRarity.title"), 1500, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity2.desc"));
 
 
         if (configuration.hasChanged()){
