@@ -112,6 +112,7 @@ tile.ender_pearcel_block.name=Block of Ender Pearcels
 tile.pearcel_beacon.name=Ender Pearcel Effect Transmitter
 tile.pearcel_storage_crate.name=Pearcel Storage Crate
 tile.pearcel_ingot_block.name=Block of Pearcel Ingots
+tile.pearcel_spring.name=Pearcel Spring
 
 #Entities
 entity.pearcelmod.pearcel_boss.name=Pearcel Guardian
@@ -356,8 +357,8 @@ config.category.pearcelMagnet.title=Pearcel Magnet
 config.category.pearcelMagnet.desc=Configure how the Pearcel Magnet and the Living Magnet behaves.
 config.category.pearcelBeacon.title=Ender Pearcel Effect Transmitter
 config.category.pearcelBeacon.desc=Configure how the EPET functions.
-config.category.structureRarity.title=Structure Rarity
-config.category.structureRarity.desc=Rarity for world generation structures.
+config.category.structures.title=Structure Configs
+config.category.structures.desc=Configs for world generation structures.
 
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
@@ -410,6 +411,14 @@ config.structureRarity1.title=9x9 Pearcel House Rarity
 config.structureRarity1.desc=Higher the number, the more rare the structure will be.
 config.structureRarity2.title=Pearcel Tower Rarity
 config.structureRarity2.desc=Higher the number, the more rare the structure will be.
+config.structureRarity3.title=Pearcel Fountain Rarity
+config.structureRarity3.desc=Higher the number, the more rare the structure will be.
+config.enableStructure1.title=Enable Pearcel House
+config.enableStructure1.desc=If false, structure won't spawn.
+config.enableStructure2.title=Enable Pearcel Tower
+config.enableStructure2.desc=If false, structure won't spawn.
+config.enableStructure3.title=Enable Pearcel Fountain
+config.enableStructure3.desc=If false, structure won't spawn.
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?

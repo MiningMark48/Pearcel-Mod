@@ -1,16 +1,11 @@
 package com.miningmark48.pearcelmod.world;
 
-import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import com.miningmark48.pearcelmod.utility.WorldGenTools;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
-import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.monster.EntityGuardian;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
@@ -28,15 +23,13 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.structure.template.PlacementSettings;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import org.lwjgl.Sys;
 
 import java.util.Map;
 import java.util.Random;
 
-public class StructureGenPearcel1 implements IWorldGenerator{
+public class StructureGenPearcel3 implements IWorldGenerator{
 
-    public static final ResourceLocation STRUCTURE = new ResourceLocation(Reference.MOD_ID, "Pearcel1");
-    public static final ResourceLocation LOOT = new ResourceLocation(Reference.MOD_ID, "pearcel1_loot");
+    public static final ResourceLocation STRUCTURE = new ResourceLocation(Reference.MOD_ID, "Pearcel3");
     public static final ResourceLocation LOOT2 = new ResourceLocation(Reference.MOD_ID, "pearcel1_loot2");
 
     @Override
@@ -44,7 +37,7 @@ public class StructureGenPearcel1 implements IWorldGenerator{
         if (!(world instanceof WorldServer))
             return;
 
-        if (!ConfigurationHandler.enableStructure1){
+        if (!ConfigurationHandler.enableStructure3){
             return;
         }
 
@@ -56,9 +49,9 @@ public class StructureGenPearcel1 implements IWorldGenerator{
         BlockPos xzPos = new BlockPos(x, 1, z);
         Biome biome = world.getBiomeForCoordsBody(xzPos);
 
-        if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.ICE_PLAINS) {
-            if (random.nextInt(ConfigurationHandler.structureRarity2) == 0) { //Rarity
-                BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z), z);
+        if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS) {
+            if (random.nextInt(ConfigurationHandler.structureRarity1) == 2) { //Rarity
+                BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z) + 1, z);
                 generateStructure(serverworld, pos, random);
             }
         }
@@ -83,18 +76,7 @@ public class StructureGenPearcel1 implements IWorldGenerator{
             BlockPos dataPos = entry.getKey();
 
             String s = tokens[0].toLowerCase();
-            if (s.equals("lootchest")) {
-
-                String chestOrientation = tokens[1];
-                EnumFacing chestFacing = settings.getRotation().rotate(EnumFacing.byName(chestOrientation));
-                IBlockState chestState = Blocks.CHEST.getDefaultState().withProperty(BlockChest.FACING, chestFacing);
-                world.setBlockState(dataPos, chestState);
-
-                TileEntity tile = world.getTileEntity(dataPos);
-                if (tile != null && tile instanceof TileEntityLockableLoot)
-                    ((TileEntityLockableLoot) tile).setLootTable(LOOT, random.nextLong());
-
-            }else if (s.equals("lootchest2")) {
+            if (s.equals("lootchest2")) {
 
                 String chestOrientation = tokens[1];
                 EnumFacing chestFacing = settings.getRotation().rotate(EnumFacing.byName(chestOrientation));

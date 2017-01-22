@@ -18,6 +18,9 @@ public class ConfigurationHandler {
     public static boolean doRIFArmorFlight;
     public static boolean pearcelMagnetParticles;
     public static boolean creativeTabSearchBar;
+    public static boolean enableStructure1;
+    public static boolean enableStructure2;
+    public static boolean enableStructure3;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int maxStaffFlyHeight;
@@ -30,6 +33,7 @@ public class ConfigurationHandler {
     public static int pearcelBeaconRange;
     public static int structureRarity1;
     public static int structureRarity2;
+    public static int structureRarity3;
     public static float pearcelBeaconDamage;
     public static float pearcelMagnetPullSpeed;
     public static float enderPearcelVelocity;
@@ -61,7 +65,9 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.worldGen.title"), Translate.toLocal("config.category.worldGen.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelMagnet.title"), Translate.toLocal("config.category.pearcelMagnet.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelBeacon.title"), Translate.toLocal("config.category.pearcelBeacon.desc"));
-        configuration.addCustomCategoryComment(Translate.toLocal("config.category.structureRarity.title"), Translate.toLocal("config.category.structureRarity.desc"));;
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.structures.title"), Translate.toLocal("config.category.structures.desc"));
+        configuration.setCategoryRequiresWorldRestart(Translate.toLocal("config.category.structures.title"), true);
+
 
         maxStaffFlyHeight = configuration.getInt(Translate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, Translate.toLocal("config.maxStaffFlyHeight.desc"));
         pearcelDropChance = configuration.getInt(Translate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, Translate.toLocal("config.pearcelDropChance.desc"));
@@ -97,8 +103,12 @@ public class ConfigurationHandler {
         pearcelBeaconDamage = configuration.getFloat(Translate.toLocal("config.pearcelBeaconDamage.title"), Translate.toLocal("config.category.pearcelBeacon.title"), 2.0F, 0.0F, Float.MAX_VALUE, Translate.toLocal("config.pearcelBeaconDamage.desc"));
 
         //Structures
-        structureRarity1 = configuration.getInt(Translate.toLocal("config.structureRarity1.title"), Translate.toLocal("config.category.structureRarity.title"), 500, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity1.desc"));
-        structureRarity2 = configuration.getInt(Translate.toLocal("config.structureRarity2.title"), Translate.toLocal("config.category.structureRarity.title"), 1400, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity2.desc"));
+        structureRarity1 = configuration.getInt(Translate.toLocal("config.structureRarity1.title"), Translate.toLocal("config.category.structures.title"), 500, 50, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity1.desc"));
+        structureRarity2 = configuration.getInt(Translate.toLocal("config.structureRarity2.title"), Translate.toLocal("config.category.structures.title"), 1400, 50, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity2.desc"));
+        structureRarity3 = configuration.getInt(Translate.toLocal("config.structureRarity3.title"), Translate.toLocal("config.category.structures.title"), 1000, 50, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity3.desc"));
+        enableStructure1 = configuration.getBoolean(Translate.toLocal("config.enableStructure1.title"), Translate.toLocal("config.category.structures.title"), true, Translate.toLocal("config.enableStructure1.desc"));
+        enableStructure2 = configuration.getBoolean(Translate.toLocal("config.enableStructure2.title"), Translate.toLocal("config.category.structures.title"), true, Translate.toLocal("config.enableStructure2.desc"));
+        enableStructure3 = configuration.getBoolean(Translate.toLocal("config.enableStructure3.title"), Translate.toLocal("config.category.structures.title"), true, Translate.toLocal("config.enableStructure3.desc"));
 
 
         if (configuration.hasChanged()){

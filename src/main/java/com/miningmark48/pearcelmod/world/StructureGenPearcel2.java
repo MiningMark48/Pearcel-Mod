@@ -38,6 +38,10 @@ public class StructureGenPearcel2 implements IWorldGenerator{
         if (!(world instanceof WorldServer))
             return;
 
+        if (!ConfigurationHandler.enableStructure2){
+            return;
+        }
+
         WorldServer serverworld = (WorldServer) world;
 
         int x = chunkX * 16 + random.nextInt(16);

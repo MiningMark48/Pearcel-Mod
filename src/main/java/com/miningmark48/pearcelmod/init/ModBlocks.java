@@ -104,7 +104,6 @@ public class ModBlocks {
         pearcel_beacon = new BlockPearcelBeacon().setUnlocalizedName("pearcel_beacon").setRegistryName("pearcel_beacon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_storage_crate = new BlockPearcelStorageCrate().setUnlocalizedName("pearcel_storage_crate").setRegistryName("pearcel_storage_crate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
-
     }
 
     public static void register(){
@@ -148,8 +147,6 @@ public class ModBlocks {
         registerBlock(pearcel_workbench);
         registerBlock(torcher);
         registerBlock(summoner);
-        //registerBlock(pearcel_furnace);
-        //registerBlock(pearcel_furnace_lit);
         registerBlock(pearcel_beacon);
         registerBlock(pearcel_storage_crate);
 

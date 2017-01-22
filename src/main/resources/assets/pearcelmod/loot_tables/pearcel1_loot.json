@@ -513,6 +513,62 @@
               }
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_1_crafting_component",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_2_crafting_component",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_3_crafting_component",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_manual",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 0
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 0
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
         }
       ]
     }

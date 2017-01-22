@@ -16,24 +16,26 @@ public class EventOnPlayerAttack {
     @SubscribeEvent
     public void onPlayerAttack(LivingHurtEvent e){
         if (e.getSource().getEntity() instanceof EntityPlayer){
-            if (e.getEntityLiving().getHealth() - e.getAmount() <= 0){
-                EntityPlayer player = (EntityPlayer) e.getSource().getEntity();
-                if (player.getHeldItemMainhand().getItem() == ModItems.pearcel_blood_dagger){
-                    ItemStack stack = player.getHeldItemMainhand();
-                    if (!stack.hasTagCompound()){
-                        stack.setTagCompound(new NBTTagCompound());
-                        stack.getTagCompound().setInteger("level", 1);
-                    }else{
-                        if (stack.getTagCompound().getInteger("level") <= 8) {
-                            stack.getTagCompound().setInteger("level", stack.getTagCompound().getInteger("level") + 1);
-                        }else{
-                            stack.getTagCompound().setInteger("level", 0);
-                            EntityItem item = new EntityItem(player.getEntityWorld(), player.posX, player.posY + 0.5, player.posZ);
-                            item.setEntityItemStack(new ItemStack(ModItems.blood_drop));
-                            Random rand = new Random();
-                            int num = rand.nextInt(2) + 1;
-                            for (int i = 0; i <= num; i++) {
-                                player.getEntityWorld().spawnEntityInWorld(item);
+            EntityPlayer player = (EntityPlayer) e.getSource().getEntity();
+            if (!player.isCreative()) {
+                if (e.getEntityLiving().getHealth() - e.getAmount() <= 0) {
+                    if (player.getHeldItemMainhand().getItem() == ModItems.pearcel_blood_dagger) {
+                        ItemStack stack = player.getHeldItemMainhand();
+                        if (!stack.hasTagCompound()) {
+                            stack.setTagCompound(new NBTTagCompound());
+                            stack.getTagCompound().setInteger("level", 1);
+                        } else {
+                            if (stack.getTagCompound().getInteger("level") <= 8) {
+                                stack.getTagCompound().setInteger("level", stack.getTagCompound().getInteger("level") + 1);
+                            } else {
+                                stack.getTagCompound().setInteger("level", 0);
+                                EntityItem item = new EntityItem(player.getEntityWorld(), player.posX, player.posY + 0.5, player.posZ);
+                                item.setEntityItemStack(new ItemStack(ModItems.blood_drop));
+                                Random rand = new Random();
+                                int num = rand.nextInt(2) + 1;
+                                for (int i = 0; i <= num; i++) {
+                                    player.getEntityWorld().spawnEntityInWorld(item);
+                                }
                             }
                         }
                     }

@@ -267,6 +267,31 @@
           "type": "item",
           "name": "pearcelmod:matter_fabricator",
           "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_1_crafting_component",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_2_crafting_component",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_3_crafting_component",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:tier_4_crafting_component",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "pearcelmod:pearcel_manual",
+          "weight": 4
         }
       ]
     }

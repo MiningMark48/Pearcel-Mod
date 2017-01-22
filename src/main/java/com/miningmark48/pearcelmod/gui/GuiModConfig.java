@@ -21,7 +21,7 @@ public class GuiModConfig extends GuiConfig {
                         new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.rifPearcelPickaxe.title").toLowerCase())),
                         new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.pearcelMagnet.title").toLowerCase())),
                         new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.pearcelBeacon.title").toLowerCase())),
-                        new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.structureRarity.title").toLowerCase()))
+                        new ConfigElement(ConfigurationHandler.configuration.getCategory(Translate.toLocal("config.category.structures.title").toLowerCase()))
                 }),
                 Reference.MOD_ID,
                 false,
