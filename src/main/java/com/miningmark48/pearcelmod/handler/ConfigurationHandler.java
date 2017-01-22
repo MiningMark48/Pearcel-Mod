@@ -97,8 +97,8 @@ public class ConfigurationHandler {
         pearcelBeaconDamage = configuration.getFloat(Translate.toLocal("config.pearcelBeaconDamage.title"), Translate.toLocal("config.category.pearcelBeacon.title"), 2.0F, 0.0F, Float.MAX_VALUE, Translate.toLocal("config.pearcelBeaconDamage.desc"));
 
         //Structures
-        structureRarity1 = configuration.getInt(Translate.toLocal("config.structureRarity1.title"), Translate.toLocal("config.category.structureRarity.title"), 550, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity1.desc"));
-        structureRarity2 = configuration.getInt(Translate.toLocal("config.structureRarity2.title"), Translate.toLocal("config.category.structureRarity.title"), 1500, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity2.desc"));
+        structureRarity1 = configuration.getInt(Translate.toLocal("config.structureRarity1.title"), Translate.toLocal("config.category.structureRarity.title"), 500, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity1.desc"));
+        structureRarity2 = configuration.getInt(Translate.toLocal("config.structureRarity2.title"), Translate.toLocal("config.category.structureRarity.title"), 1400, 1, Integer.MAX_VALUE, Translate.toLocal("config.structureRarity2.desc"));
 
 
         if (configuration.hasChanged()){

@@ -52,7 +52,7 @@ public class StructureGenPearcel1 implements IWorldGenerator{
         BlockPos xzPos = new BlockPos(x, 1, z);
         Biome biome = world.getBiomeForCoordsBody(xzPos);
 
-        if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.HELL) {
+        if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.ICE_PLAINS) {
             if (random.nextInt(ConfigurationHandler.structureRarity2) == 0) { //Rarity
                 BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z), z);
                 generateStructure(serverworld, pos, random);

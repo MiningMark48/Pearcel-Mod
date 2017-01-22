@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.world;
 
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.WorldGenTools;
 import net.minecraft.block.BlockChest;
@@ -45,7 +46,7 @@ public class StructureGenPearcel2 implements IWorldGenerator{
         BlockPos xzPos = new BlockPos(x, 1, z);
         Biome biome = world.getBiomeForCoordsBody(xzPos);
 
-        if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.HELL) {
+        if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.ICE_PLAINS) {
             if (random.nextInt(ConfigurationHandler.structureRarity2) == 1) { //Rarity
                 BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z) + 1, z);
                 generateStructure(serverworld, pos, random);
@@ -94,6 +95,27 @@ public class StructureGenPearcel2 implements IWorldGenerator{
                 if (tile != null && tile instanceof TileEntityLockableLoot)
                     ((TileEntityLockableLoot) tile).setLootTable(LOOT2, random.nextLong());
 
+            }else if (s.equals("epet")){
+                int epetChance = random.nextInt(1000);
+                int topChance = random.nextInt(500);
+                IBlockState epetState = ModBlocks.pearcel_beacon.getDefaultState();
+                if (epetChance == 0) {
+                    world.setBlockState(dataPos, epetState);
+                }else if(topChance == 0){
+                    world.setBlockState(dataPos, Blocks.OBSIDIAN.getDefaultState());
+                    for (int i = 0; i <= 3; i++){
+                        world.setBlockState(dataPos.add(0, i + 1, 0), Blocks.GOLD_BLOCK.getDefaultState());
+                    }
+                }else{
+                    String chestOrientation = tokens[1];
+                    EnumFacing chestFacing = settings.getRotation().rotate(EnumFacing.byName(chestOrientation));
+                    IBlockState chestState = Blocks.CHEST.getDefaultState().withProperty(BlockChest.FACING, chestFacing);
+                    world.setBlockState(dataPos, chestState);
+
+                    TileEntity tile = world.getTileEntity(dataPos);
+                    if (tile != null && tile instanceof TileEntityLockableLoot)
+                        ((TileEntityLockableLoot) tile).setLootTable(LOOT, random.nextLong());
+                }
             }
 
         }

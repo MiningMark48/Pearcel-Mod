@@ -20,7 +20,7 @@ public class WorldGenTools {
         Block block = world.getBlockState(new BlockPos(x, y + 1, z)).getBlock();
         while (block.getMaterial(block.getDefaultState()).isLiquid()) {
             y++;
-            if (y > world.getHeight()-10) {
+            if (y > world.getHeight() - 10) {
                 return -1;
             }
             block = world.getBlockState(new BlockPos(x, y + 1, z)).getBlock();
