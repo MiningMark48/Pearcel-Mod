@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e3fd74d-3272-430d-94ae-df975249fc8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_sandwich.json" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/models/item/pearcel_sandwich.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemGoldenPearcel.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemGoldenPearcel.java" />
     </list>
     <ignored path="Pearcel-Mod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,55 +33,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlockPearcelPlush.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPlush.java">
+      <file leaf-file-name="ItemPearcelJuiceBottle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelJuiceBottle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1587#1588#0" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
-                <element signature="e#1728#1729#0" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="e#1823#1824#0" expanded="true" />
-                <element signature="e#1883#1884#0" expanded="true" />
-                <element signature="e#1929#1930#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-                <element signature="e#2058#2059#0" expanded="true" />
-                <element signature="e#2721#2722#0" expanded="true" />
-                <element signature="e#2779#2780#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="173" column="61" selection-start-line="173" selection-start-column="61" selection-end-line="173" selection-end-column="61" />
+            <state relative-caret-position="289">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en_US.lang" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
+      <file leaf-file-name="ItemGoldenPearcel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemGoldenPearcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockTorcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockTorcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="410">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/KeyHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/manual/GuiCatArmor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/manual/GuiCatBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/manual/GuiCatTools.java" />
@@ -161,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPlush.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemGoldenPearcel.java" />
       </list>
     </option>
   </component>
@@ -338,7 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="block" />
+              <option name="myItemId" value="item" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,43 +415,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="item" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pearcel-Mod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pearcel-Mod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.miningmark48.pearcelmod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.miningmark48.pearcelmod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pearcel-Mod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.miningmark48.pearcelmod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,7 +481,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Misc-Configs" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="ladder&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockPearceLadder&#10;torch&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockPearcelTorch&#10;VillageGen&#9;PSI&#9;JAVA://net.minecraft.world.gen.ChunkProviderOverworld#villageGenerator&#10;Villa&#9;PSI&#9;JAVA://net.minecraft.village.Village&#10;Village&#9;PSI&#9;JAVA://net.minecraft.world.gen.structure.StructureVillagePieces.Village&#10;TileEntity&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate&#10;TileEntityChes&#9;PSI&#9;JAVA://net.minecraft.tileentity.TileEntityChest&#10;Bow&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelBow&#10;ItemBow&#9;PSI&#9;JAVA://net.minecraft.item.ItemBow&#10;Elytra&#9;PSI&#9;JAVA://net.minecraft.entity.EntityLivingBase#updateElytra&#10;elytra&#9;PSI&#9;JAVA://net.minecraft.item.ItemElytra&#10;Hay&#9;PSI&#9;JAVA://net.minecraft.block.BlockHay&#10;Feather&#9;PSI&#9;JAVA://net.minecraft.init.Enchantments#FEATHER_FALLING&#10;GuiScreen&#9;PSI&#9;JAVA://net.minecraft.client.gui.GuiScreenDemo&#10;ItemWr&#9;PSI&#9;JAVA://net.minecraft.item.ItemWritableBook&#10;ItemBook&#9;PSI&#9;JAVA://net.minecraft.item.ItemBook&#10;Gui&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/GuiScreenBook.java&#10;GuiScree&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/GuiScreenBook.java&#10;GuiBook&#9;PSI&#9;JAVA://net.minecraft.client.gui.GuiScreenBook&#10;GuiContainer&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiContainer&#10;BlockChe&#9;PSI&#9;JAVA://net.minecraft.block.BlockChest&#10;Clock&#9;PSI&#9;JAVA://net.minecraft.init.Items#CLOCK&#10;GameReg&#9;PSI&#9;JAVA://net.minecraftforge.fml.common.registry.GameRegistry&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemClock&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock&#10;Wither&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/entity/boss/EntityWither.java&#10;Enderman&#9;PSI&#9;JAVA://net.minecraft.client.renderer.entity.RenderEnderman&#10;EntityZom&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/entity/monster/EntityZombie.java&#10;Boss&#9;PSI&#9;JAVA://net.minecraftforge.client.event.RenderGameOverlayEvent.BossInfo&#10;RenderCow&#9;PSI&#9;JAVA://net.minecraft.client.renderer.entity.RenderCow&#10;ContainerCreat&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiContainerCreative.ContainerCreative&#10;ContainerCre&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/inventory/GuiContainerCreative.java&#10;ContainerPla&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/inventory/ContainerPlayer.java&#10;ContainerChes&#9;PSI&#9;JAVA://net.minecraft.inventory.ContainerChest&#10;GuiIn&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/inventory/GuiInventory.java&#10;GuiInven&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiInventory&#10;GuiCre&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/inventory/GuiContainerCreative.java&#10;BlockChes&#9;PSI&#9;JAVA://net.minecraft.block.BlockChest&#10;TileEntityChe&#9;PSI&#9;JAVA://net.minecraft.tileentity.TileEntityChest&#10;portal&#9;PSI&#9;JAVA://net.minecraft.block.BlockPortal&#10;EntityLivingBas&#9;PSI&#9;JAVA://net.minecraft.entity.EntityLivingBase&#10;BlockBeacon&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/block/BlockBeacon.java&#10;beacon&#9;PSI&#9;JAVA://net.minecraft.init.Blocks#BEACON&#10;Pickaxe&#9;PSI&#9;JAVA://net.minecraft.item.ItemPickaxe&#10;Speed&#9;PSI&#9;JAVA://net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed" />
+    <property name="SearchEverywhereHistoryKey" value="GoldenApple&#9;PSI&#9;JAVA://net.minecraft.init.Items#GOLDEN_APPLE&#10;ladder&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockPearceLadder&#10;torch&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockPearcelTorch&#10;VillageGen&#9;PSI&#9;JAVA://net.minecraft.world.gen.ChunkProviderOverworld#villageGenerator&#10;Villa&#9;PSI&#9;JAVA://net.minecraft.village.Village&#10;Village&#9;PSI&#9;JAVA://net.minecraft.world.gen.structure.StructureVillagePieces.Village&#10;TileEntity&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate&#10;TileEntityChes&#9;PSI&#9;JAVA://net.minecraft.tileentity.TileEntityChest&#10;Bow&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelBow&#10;ItemBow&#9;PSI&#9;JAVA://net.minecraft.item.ItemBow&#10;Elytra&#9;PSI&#9;JAVA://net.minecraft.entity.EntityLivingBase#updateElytra&#10;elytra&#9;PSI&#9;JAVA://net.minecraft.item.ItemElytra&#10;Hay&#9;PSI&#9;JAVA://net.minecraft.block.BlockHay&#10;Feather&#9;PSI&#9;JAVA://net.minecraft.init.Enchantments#FEATHER_FALLING&#10;GuiScreen&#9;PSI&#9;JAVA://net.minecraft.client.gui.GuiScreenDemo&#10;ItemWr&#9;PSI&#9;JAVA://net.minecraft.item.ItemWritableBook&#10;ItemBook&#9;PSI&#9;JAVA://net.minecraft.item.ItemBook&#10;Gui&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/GuiScreenBook.java&#10;GuiScree&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/GuiScreenBook.java&#10;GuiBook&#9;PSI&#9;JAVA://net.minecraft.client.gui.GuiScreenBook&#10;GuiContainer&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiContainer&#10;BlockChe&#9;PSI&#9;JAVA://net.minecraft.block.BlockChest&#10;Clock&#9;PSI&#9;JAVA://net.minecraft.init.Items#CLOCK&#10;GameReg&#9;PSI&#9;JAVA://net.minecraftforge.fml.common.registry.GameRegistry&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemClock&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock&#10;Wither&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/entity/boss/EntityWither.java&#10;Enderman&#9;PSI&#9;JAVA://net.minecraft.client.renderer.entity.RenderEnderman&#10;EntityZom&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/entity/monster/EntityZombie.java&#10;Boss&#9;PSI&#9;JAVA://net.minecraftforge.client.event.RenderGameOverlayEvent.BossInfo&#10;RenderCow&#9;PSI&#9;JAVA://net.minecraft.client.renderer.entity.RenderCow&#10;ContainerCreat&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiContainerCreative.ContainerCreative&#10;ContainerCre&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/inventory/GuiContainerCreative.java&#10;ContainerPla&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/inventory/ContainerPlayer.java&#10;ContainerChes&#9;PSI&#9;JAVA://net.minecraft.inventory.ContainerChest&#10;GuiIn&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/inventory/GuiInventory.java&#10;GuiInven&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiInventory&#10;GuiCre&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/inventory/GuiContainerCreative.java&#10;BlockChes&#9;PSI&#9;JAVA://net.minecraft.block.BlockChest&#10;TileEntityChe&#9;PSI&#9;JAVA://net.minecraft.tileentity.TileEntityChest&#10;portal&#9;PSI&#9;JAVA://net.minecraft.block.BlockPortal&#10;EntityLivingBas&#9;PSI&#9;JAVA://net.minecraft.entity.EntityLivingBase&#10;BlockBeacon&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/block/BlockBeacon.java&#10;beacon&#9;PSI&#9;JAVA://net.minecraft.init.Blocks#BEACON&#10;Pickaxe&#9;PSI&#9;JAVA://net.minecraft.item.ItemPickaxe&#10;Speed&#9;PSI&#9;JAVA://net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -867,7 +812,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25841185" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938303" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18059126" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11632391" sideWeight="0.48013818" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -908,23 +853,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelSpring.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/tileentity/TileEntityPearcelSpring.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/gui/GuiModConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/handler/ConfigurationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="68" column="113" selection-start-line="68" selection-start-column="113" selection-end-line="68" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventOnPlayerAttack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1316,6 +1244,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelJuiceBottle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/init/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/item/ItemSoup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemGoldenPearcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>

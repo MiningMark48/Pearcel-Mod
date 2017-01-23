@@ -33,15 +33,6 @@ public class ItemGoldenPearcel extends ItemPearcelFood{
         }
     }
 
-    public void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player)
-    {
-        player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 4000, 2));
-        player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 4000, 1));
-        player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
-        player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 6000, 4));
-
-    }
-
     @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
     {
@@ -51,6 +42,12 @@ public class ItemGoldenPearcel extends ItemPearcelFood{
             if(!entityplayer.isCreative()) {
                 --stack.stackSize;
             }
+
+            entityplayer.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 4000, 2));
+            entityplayer.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 4000, 1));
+            entityplayer.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 6000, 0));
+            entityplayer.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 6000, 4));
+
         }
         return stack;
     }
