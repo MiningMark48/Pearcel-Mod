@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.proxy;
 
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
+import com.miningmark48.pearcelmod.gui.manual.GuiManual;
 import com.miningmark48.pearcelmod.handler.KeyHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModEntities;
@@ -31,7 +32,7 @@ public class ClientProxy extends CommonProxy{
     }
 
     @Override
-    public void openMyGuiClient(GuiScreen screen){
-        Minecraft.getMinecraft().displayGuiScreen(screen);
+    public void openManualGuiClient(){
+        Minecraft.getMinecraft().displayGuiScreen(new GuiManual(0));
     }
 }
