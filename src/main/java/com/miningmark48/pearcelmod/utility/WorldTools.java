@@ -3,8 +3,9 @@ package com.miningmark48.pearcelmod.utility;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.Chunk;
 
-public class WorldGenTools {
+public class WorldTools {
 
     public static int findEmptySpot(World world, int x, int z) {
         int y = world.getTopSolidOrLiquidBlock(new BlockPos(x, 0, z)).getY();
@@ -27,6 +28,11 @@ public class WorldGenTools {
         }
 
         return y;
+    }
+
+    public static boolean isSlimeChunk(World world, int x, int z){
+        Chunk chunk = world.getChunkFromBlockCoords(new BlockPos(x, 0, z));
+        return chunk.getRandomWithSeed(987234911L).nextInt(10) == 0;
     }
 
 }

@@ -1,16 +1,10 @@
 package com.miningmark48.pearcelmod.world;
 
-import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import com.miningmark48.pearcelmod.utility.WorldGenTools;
-import net.minecraft.block.Block;
+import com.miningmark48.pearcelmod.utility.WorldTools;
 import net.minecraft.block.BlockChest;
-import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.monster.EntityGuardian;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
@@ -28,7 +22,6 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.structure.template.PlacementSettings;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import org.lwjgl.Sys;
 
 import java.util.Map;
 import java.util.Random;
@@ -58,7 +51,7 @@ public class StructureGenPearcel1 implements IWorldGenerator{
 
         if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.ICE_PLAINS) {
             if (random.nextInt(ConfigurationHandler.structureRarity2) == 0) { //Rarity
-                BlockPos pos = new BlockPos(x, WorldGenTools.findEmptySpot(world, x, z), z);
+                BlockPos pos = new BlockPos(x, WorldTools.findEmptySpot(world, x, z), z);
                 generateStructure(serverworld, pos, random);
             }
         }

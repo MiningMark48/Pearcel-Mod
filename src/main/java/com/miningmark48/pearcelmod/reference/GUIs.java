@@ -9,5 +9,6 @@ public class GUIs {
     public static final int gui_id_bindle = 5;
     public static final int gui_id_pearcel_storage_crate = 6;
     public static final int gui_id_charm_bag = 7;
+    public static final int gui_id_slimey_pearcel = 8;
 
 }
