@@ -152,7 +152,7 @@ tooltip.item.golden_pearcel.line1=Better than the apple.
 tooltip.item.reinforced_pearcel_pickaxe.line1=Strength is key.
 tooltip.item.reinforced_pearcel_pickaxe.line2=Applies fortune on harder materials.
 tooltip.item.reinforced_pearcel_shovel.line1=Better. Faster. Stronger.
-tooltip.item.pearcel_crook.line1=Guarantees a pearcel with the swift break of leaves.
+tooltip.item.pearcel_crook.line1=50/50 chance of getting a pearcel when breaking leaves or tall grass.
 tooltip.item.pearcel_item.line1=The basis of everything.
 tooltip.item.pearcel_item.line2=Drops from leaves and grass.
 tooltip.item.mf.line1=Mode:
@@ -231,7 +231,7 @@ desc.item.pearcel_staff=Stronger than a sword, empowering to the player. Right c
 desc.item.dragon_pearcel_staff=Better version of the Pearcel Staff. One-hit kill to everything, do Right Click for regen and Shift + Right Click for resistance.
 desc.item.pearcel_tools=Stronger than diamond. High durability, attack damage, and efficiency.
 desc.item.pepc=Portable ender chest.
-desc.item.pearcel_crook=Guarantees a Pearcel when used to break leaves.
+desc.item.pearcel_crook=50% chance of getting a Pearcel when used to break leaves or tall grass.
 desc.item.tp_pearcel=Use to teleport to any location within the same dimension. Shift + Right Click will set coordinates, Right Click will take you to the set coordinates. Will use any Pearcels in the player's inventory if they are found, otherwise it will take damage.
 desc.item.pbp=A cobble generator in your hand, will place infinite Pearcel Stone and Pearcel Cobblestone.
 desc.item.pearcel_juice=Speed and a jump boost in a bottle. This pearcel stuff is good.
@@ -320,7 +320,7 @@ gui.manual.button.glossary.credits=Credits
 gui.manual.text.pageIndicator=Page:
 
 gui.manual.intro.text.0=§l Pearcel Mod
-gui.manual.intro.text.1=§l Intro\§0 \n------ \nPearcel Mod is a mod focused around the\§6 Pearcel\§0.\n\n The Pearcel can be found by breaking\§6 tall grass\§0 or\§6 leaves\§0 in which they will drop. Use a\§6 Pearcel Crook\§0 to ensure you always get a Pearcel.
+gui.manual.intro.text.1=§l Intro\§0 \n------ \nPearcel Mod is a mod focused around the\§6 Pearcel\§0.\n\n The Pearcel can be found by breaking\§6 tall grass\§0 or\§6 leaves\§0 in which they will drop. Use a\§6 Pearcel Crook\§0 to have a better chance of getting a pearcel.
 gui.manual.intro.text.2=Not only are Pearcels required for certain crafting recipes, but\§6 Pearcel Ingots\§0 are as well. Get them by smelting\§6 Pearcel Ore\§0 in a furnace, which can be found in the overworld, nether, and the end.
 gui.manual.intro.text.3=Using Pearcels and Pearcel Ingots, you can make\§6 Crafting Disks\§0. Crafting disks can be used for a variety of items and blocks within the mod. One use for them is tools.
 

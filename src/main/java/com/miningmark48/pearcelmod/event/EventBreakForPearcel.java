@@ -34,7 +34,7 @@ public class EventBreakForPearcel {
 
                 if(player.getHeldItemMainhand() != null) {
                     if (player.getHeldItemMainhand().getItem() == ModItems.pearcel_crook) {
-                        r = 1;
+                        r = rand.nextInt(2) + 1;
                     }else {
                         r = rand.nextInt(100 / ConfigurationHandler.pearcelDropChance) + 1;
                     }
