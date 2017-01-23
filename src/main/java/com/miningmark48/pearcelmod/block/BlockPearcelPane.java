@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.block.BlockPane;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
@@ -38,6 +39,7 @@ public class BlockPearcelPane extends BlockPane{
         this.canDrop = canDrop;
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
         setHardness(1.5F);
+        setSoundType(SoundType.GLASS);
     }
 
     @Override
