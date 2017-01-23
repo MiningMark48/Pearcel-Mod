@@ -57,7 +57,7 @@ public class StructureGenPearcel3 implements IWorldGenerator{
 
     }
 
-    public void generateStructure(WorldServer world, BlockPos pos, Random random) {
+    public static void generateStructure(WorldServer world, BlockPos pos, Random random) {
 
         MinecraftServer server = world.getMinecraftServer();
         Template template = world.getStructureTemplateManager().getTemplate(server, STRUCTURE);

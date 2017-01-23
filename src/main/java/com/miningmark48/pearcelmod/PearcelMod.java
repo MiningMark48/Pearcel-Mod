@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod;
 
 import com.miningmark48.pearcelmod.achievements.Achievements;
+import com.miningmark48.pearcelmod.commands.CommandSpawnStructure;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.event.*;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
@@ -21,6 +22,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -97,6 +99,11 @@ public class PearcelMod {
 		Thread versionCheckThread = new Thread(versionChecker, "Pearcel Mod Version Check");
 		versionCheckThread.start();
 
+	}
+
+	@Mod.EventHandler
+	public void serverLoad(FMLServerStartingEvent event){
+		event.registerServerCommand(new CommandSpawnStructure());
 	}
 
 
