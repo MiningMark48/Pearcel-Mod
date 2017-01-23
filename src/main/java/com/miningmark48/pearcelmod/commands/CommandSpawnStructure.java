@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.commands;
 
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.world.*;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -10,6 +11,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 
@@ -56,28 +58,31 @@ public class CommandSpawnStructure extends CommandBase{
 
         if (!world.isRemote){
             if (args.length == 0){
-                sender.addChatMessage(new TextComponentString("Missing args!"));
+                sender.addChatMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.no_args")));
                 return;
             }
-
-            sender.addChatMessage(new TextComponentString("Structure Spawned!"));
 
             Random rand = new Random();
             if (!(world instanceof WorldServer))
                 return;
             WorldServer worldServer = (WorldServer) world;
 
-            switch (Integer.valueOf(args[0])){
-                default:
-                case 1:
-                    StructureGenPearcel1.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
-                    break;
-                case 2:
-                    StructureGenPearcel2.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
-                    break;
-                case 3:
-                    StructureGenPearcel3.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
-                    break;
+            try {
+                switch (Integer.valueOf(args[0])) {
+                    default:
+                    case 1:
+                        StructureGenPearcel1.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
+                        break;
+                    case 2:
+                        StructureGenPearcel2.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
+                        break;
+                    case 3:
+                        StructureGenPearcel3.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
+                        break;
+                }
+                sender.addChatMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("command.spawn_structure.spawned")));
+            }catch (NumberFormatException e){
+                sender.addChatMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.invalid")));
             }
 
         }

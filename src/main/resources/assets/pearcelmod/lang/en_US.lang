@@ -460,3 +460,8 @@ achievement.use_pepc.desc=Use the PEPC.
 #Subtitles
 subtitles.block.summoner.laugh=Summoner Laughs
 subtitles.mob.pearcel_boss.laugh=Pearcel Guardian Laughs
+
+#Commands
+command.spawn_structure.no_args=Missing arguments!
+command.spawn_structure.invalid=Invalid argument!
+command.spawn_structure.spawned=Structure Spawned!
