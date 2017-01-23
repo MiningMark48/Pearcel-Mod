@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pearcelmod:pearcel_plush"
+    },
+    "facing=south": {
+      "model": "pearcelmod:pearcel_plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pearcelmod:pearcel_plush",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "pearcelmod:pearcel_plush",
+      "y": 90
+    }
+  }
+}

@@ -39,6 +39,7 @@ public class ModBlocks {
     public static Block lit_pearcel_lamp;
     public static Block ender_pearcel_block;
     public static Block pearcel_ingot_block;
+    public static Block pearcel_plush;
 
     //Ores
     public static Block pearcel_ore;
@@ -85,6 +86,7 @@ public class ModBlocks {
         lit_pearcel_lamp = new BlockPearcelLamp(true).setUnlocalizedName("lit_pearcel_lamp").setRegistryName("lit_pearcel_lamp");
         ender_pearcel_block = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_block").setRegistryName("ender_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_ingot_block = new BlockPearcelMod().setUnlocalizedName("pearcel_ingot_block").setRegistryName("pearcel_ingot_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_plush = new BlockPearcelPlush().setUnlocalizedName("pearcel_plush").setRegistryName("pearcel_plush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
         pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setRegistryName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -133,6 +135,7 @@ public class ModBlocks {
         registerBlock(lit_pearcel_lamp);
         registerBlock(ender_pearcel_block);
         registerBlock(pearcel_ingot_block);
+        registerBlock(pearcel_plush);
 
         //Ores
         registerBlock(pearcel_ore);
@@ -179,6 +182,7 @@ public class ModBlocks {
         registerRender(lit_pearcel_lamp);
         registerRender(ender_pearcel_block);
         registerRender(pearcel_ingot_block);
+        registerRender(pearcel_plush);
 
         //Ores
         registerRender(pearcel_ore);
