@@ -1,6 +1,8 @@
 package com.miningmark48.pearcelmod.block;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -17,13 +19,14 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class BlockPearcelPlush extends BlockPearcelMod{
+public class BlockPearcelPlush extends Block {
 
     public static PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1875D, 0.0D, 0.125D, 0.875D, 1.0D, 0.8125D);
 
     public BlockPearcelPlush(){
+        super(Material.CLOTH);
         setHardness(0.2F);
         setResistance(0.15F);
         setSoundType(SoundType.CLOTH);
