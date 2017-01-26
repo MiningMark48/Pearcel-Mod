@@ -11,13 +11,17 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Random;
 
 public class BlockPearcelPlush extends Block {
 
@@ -33,26 +37,31 @@ public class BlockPearcelPlush extends Block {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos){
         return BOUNDING_BOX;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn) {
         super.addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
+    @SuppressWarnings("deprecation")
     public EnumBlockRenderType getRenderType(IBlockState state)
     {
         return EnumBlockRenderType.MODEL;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean isFullCube(IBlockState state){
         return false;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean isOpaqueCube(IBlockState state){
         return false;
     }
@@ -73,6 +82,7 @@ public class BlockPearcelPlush extends Block {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public IBlockState getStateFromMeta(int meta){
         EnumFacing enumFacing = EnumFacing.getFront(meta);
         if (enumFacing.getAxis() == EnumFacing.Axis.Y){
@@ -86,4 +96,5 @@ public class BlockPearcelPlush extends Block {
     public int getMetaFromState(IBlockState state){
         return (state.getValue(FACING)).getIndex();
     }
+
 }

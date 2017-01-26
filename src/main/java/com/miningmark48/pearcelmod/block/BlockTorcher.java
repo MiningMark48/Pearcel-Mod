@@ -1,10 +1,8 @@
 package com.miningmark48.pearcelmod.block;
 
-import com.google.common.base.Predicate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.utility.Translate;
-import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -38,29 +36,25 @@ public class BlockTorcher extends BlockPearcelMod{
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos){
         return BOUNDING_BOX;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn) {
         super.addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
-    public static final PropertyDirection FACING = PropertyDirection.create("facing", new Predicate<EnumFacing>()
-    {
-        public boolean apply(EnumFacing p_apply_1_)
-        {
-            return p_apply_1_ != EnumFacing.DOWN;
-        }
-    });
-
     @Override
+    @SuppressWarnings("deprecation")
     public boolean isFullCube(IBlockState state){
         return false;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean isOpaqueCube(IBlockState state){
         return false;
     }
@@ -90,41 +84,51 @@ public class BlockTorcher extends BlockPearcelMod{
             for (int i = 1; i <= rangeRand * torcherFreq; i++){
                 rangeRand = (rand.nextInt(50) + 1) * 2;
                 int numRand = rand.nextInt(8) + 1;
-                int torchX = pos.getX();
-                int torchY = pos.getY();
-                int torchZ = pos.getZ();
-                if (numRand == 1){
-                    torchX = pos.getX() + rangeRand;
-                    torchY = pos.getY();
-                    torchZ = pos.getZ() + rangeRand;
-                }else if(numRand == 2){
-                    torchX = pos.getX() - rangeRand;
-                    torchY = pos.getY();
-                    torchZ = pos.getZ() - rangeRand;
-                }else if(numRand == 3){
-                    torchX = pos.getX() + rangeRand;
-                    torchY = pos.getY();
-                    torchZ = pos.getZ() - rangeRand;
-                }else if(numRand == 4){
-                    torchX = pos.getX() - rangeRand;
-                    torchY = pos.getY();
-                    torchZ = pos.getZ() + rangeRand;
-                }else if(numRand == 5){
-                    torchX = pos.getX() - rangeRand;
-                    torchY = pos.getY();
-                    torchZ = pos.getZ();
-                }else if(numRand == 6){
-                    torchX = pos.getX() + rangeRand;
-                    torchY = pos.getY();
-                    torchZ = pos.getZ();
-                }else if(numRand == 7){
-                    torchX = pos.getX();
-                    torchY = pos.getY();
-                    torchZ = pos.getZ() - rangeRand;
-                }else if(numRand == 8){
-                    torchX = pos.getX();
-                    torchY = pos.getY();
-                    torchZ = pos.getZ() + rangeRand;
+                int torchX;
+                int torchY;
+                int torchZ;
+                switch (numRand){
+                    default:
+                    case 1:
+                        torchX = pos.getX() + rangeRand;
+                        torchY = pos.getY();
+                        torchZ = pos.getZ() + rangeRand;
+                        break;
+                    case 2:
+                        torchX = pos.getX() - rangeRand;
+                        torchY = pos.getY();
+                        torchZ = pos.getZ() - rangeRand;
+                        break;
+                    case 3:
+                        torchX = pos.getX() + rangeRand;
+                        torchY = pos.getY();
+                        torchZ = pos.getZ() - rangeRand;
+                        break;
+                    case 4:
+                        torchX = pos.getX() - rangeRand;
+                        torchY = pos.getY();
+                        torchZ = pos.getZ() + rangeRand;
+                        break;
+                    case 5:
+                        torchX = pos.getX() - rangeRand;
+                        torchY = pos.getY();
+                        torchZ = pos.getZ();
+                        break;
+                    case 6:
+                        torchX = pos.getX() + rangeRand;
+                        torchY = pos.getY();
+                        torchZ = pos.getZ();
+                        break;
+                    case 7:
+                        torchX = pos.getX();
+                        torchY = pos.getY();
+                        torchZ = pos.getZ() - rangeRand;
+                        break;
+                    case 8:
+                        torchX = pos.getX();
+                        torchY = pos.getY();
+                        torchZ = pos.getZ() + rangeRand;
+                        break;
                 }
                 if (world.getBlockState(new BlockPos(torchX, torchY, torchZ)).getBlock().isReplaceable(world, new BlockPos(torchX, torchY, torchZ))){
                     if (world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ)).getBlock().isBlockSolid(world, pos, null)){
@@ -147,11 +151,11 @@ public class BlockTorcher extends BlockPearcelMod{
     }
 
     @SideOnly(Side.CLIENT)
-    public void randomTick(World worldIn, BlockPos pos, IBlockState state, Random random)
+    public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
     {
         EnumFacing enumfacing = EnumFacing.DOWN;
         double d0 = (double)pos.getX() + 0.5D;
-        double d1 = (double)pos.getY() + 1.1D;
+        double d1 = (double)pos.getY() + 1.125D;
         double d2 = (double)pos.getZ() + 0.5D;
         double d3 = 0.22D;
         double d4 = 0.27D;
