@@ -4,6 +4,8 @@ import com.miningmark48.pearcelmod.block.*;
 import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFence;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -40,6 +42,7 @@ public class ModBlocks {
     public static Block ender_pearcel_block;
     public static Block pearcel_ingot_block;
     public static Block pearcel_plush;
+    public static Block pearcel_fence;
 
     //Ores
     public static Block pearcel_ore;
@@ -87,6 +90,7 @@ public class ModBlocks {
         ender_pearcel_block = new BlockPearcelMod().setUnlocalizedName("ender_pearcel_block").setRegistryName("ender_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_ingot_block = new BlockPearcelMod().setUnlocalizedName("pearcel_ingot_block").setRegistryName("pearcel_ingot_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_plush = new BlockPearcelPlush().setUnlocalizedName("pearcel_plush").setRegistryName("pearcel_plush").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_fence = new BlockFence(Material.WOOD, MapColor.GREEN).setUnlocalizedName("pearcel_fence").setRegistryName("pearcel_fence").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Ores
         pearcel_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_ore").setRegistryName("pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -136,6 +140,7 @@ public class ModBlocks {
         registerBlock(ender_pearcel_block);
         registerBlock(pearcel_ingot_block);
         registerBlock(pearcel_plush);
+        registerBlock(pearcel_fence);
 
         //Ores
         registerBlock(pearcel_ore);
@@ -183,6 +188,7 @@ public class ModBlocks {
         registerRender(ender_pearcel_block);
         registerRender(pearcel_ingot_block);
         registerRender(pearcel_plush);
+        registerRender(pearcel_fence);
 
         //Ores
         registerRender(pearcel_ore);
