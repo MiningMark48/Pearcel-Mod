@@ -1,0 +1,20 @@
+{   "parent": "block/thin_block",
+    "textures": {
+        "texture": "pearcelmod:blocks/pearcel_stone",
+    	"texture_top": "pearcelmod:blocks/pearcel_pressure_plate_items_top",
+        "particle": "pearcelmod:blocks/pearcel_stone"
+    },
+    "elements": [
+        {   "from": [ 1, 0, 1 ],
+            "to": [ 15, 1, 15 ],
+            "faces": {
+                "down":  { "uv": [ 1,  1, 15, 15 ], "texture": "texture", "cullface": "down" },
+                "up":    { "uv": [ 1,  1, 15, 15 ], "texture": "texture_top" },
+                "north": { "uv": [ 1, 15, 15, 16 ], "texture": "texture" },
+                "south": { "uv": [ 1, 15, 15, 16 ], "texture": "texture" },
+                "west":  { "uv": [ 1, 15, 15, 16 ], "texture": "texture" },
+                "east":  { "uv": [ 1, 15, 15, 16 ], "texture": "texture" }
+            }
+        }
+    ]
+}

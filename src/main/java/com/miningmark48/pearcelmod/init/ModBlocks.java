@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
+import net.minecraft.block.BlockPressurePlate;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -62,6 +63,7 @@ public class ModBlocks {
     public static Block pearcel_furnace_lit;
     public static Block pearcel_beacon;
     public static Block pearcel_storage_crate;
+    public static Block pearcel_pressure_plate;
 
     public static void init(){
         //General
@@ -111,6 +113,7 @@ public class ModBlocks {
         pearcel_furnace_lit = new BlockPearcelFurnace(true).setUnlocalizedName("pearcel_furnace_lit").setRegistryName("pearcel_furnace_lit");
         pearcel_beacon = new BlockPearcelBeacon().setUnlocalizedName("pearcel_beacon").setRegistryName("pearcel_beacon").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_storage_crate = new BlockPearcelStorageCrate().setUnlocalizedName("pearcel_storage_crate").setRegistryName("pearcel_storage_crate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_pressure_plate = new BlockPearcelPressurePlate().setUnlocalizedName("pearcel_pressure_plate").setRegistryName("pearcel_pressure_plate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -160,6 +163,7 @@ public class ModBlocks {
         registerBlock(summoner);
         registerBlock(pearcel_beacon);
         registerBlock(pearcel_storage_crate);
+        registerBlock(pearcel_pressure_plate);
 
     }
 
@@ -211,6 +215,7 @@ public class ModBlocks {
         registerRender(pearcel_furnace_lit);
         registerRender(pearcel_beacon);
         registerRender(pearcel_storage_crate);
+        registerRender(pearcel_pressure_plate);
 
     }
     

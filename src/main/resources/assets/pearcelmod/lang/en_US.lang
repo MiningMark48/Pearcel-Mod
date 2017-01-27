@@ -117,6 +117,7 @@ tile.pearcel_spring.name=Pearcel Spring
 tile.pearcel_plush.name=Pearcel Plush
 tile.pearcel_fence.name=Pearcel Planks Fence
 tile.pearcel_fence2.name=Pearcel Block Fence
+tile.pearcel_pressure_plate.name=Pearcel Pressure Plate
 
 #Entities
 entity.pearcelmod.pearcel_boss.name=Pearcel Guardian
@@ -253,6 +254,7 @@ desc.block.pedestal=Used for summoning. If you place a Block of Ender Pearcels o
 desc.block.pearcel_beacon=Better than a beacon. Gives Speed II, Haste II, Jump Boost II, Fire Resistance, Regeneration, Strength, and Resistance to the player within a radius. Also damages hostile mobs as a player. Can be turned off with a redstone signal.
 desc.block.pearcel_storage_crate=Like a chest, but with 9 more slots. Doesn't matter if a block is above it or not.
 desc.block.pearcel_workbench=Acts as a vanilla crafting table, but holds its inventory when crafting.
+desc.block.pearcel_pressure_plate=By default, the pressure plate will only work for players. Right click on the block with an arrow to set it to item-only mode. Right click with an empty hand to remove the arrow.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:

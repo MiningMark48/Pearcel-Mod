@@ -182,6 +182,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_plush, 2), " z ", " x ", "yxy", 'x', new ItemStack(ModBlocks.pearcel_block), 'y', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(Items.STICK));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_fence, 6), "xyx", "xyx", 'x', new ItemStack(ModBlocks.pearcel_planks), 'y', new ItemStack(ModItems.pearcel_stick));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_fence2, 6), "xyx", "xyx", 'x', new ItemStack(ModBlocks.pearcel_block), 'y', new ItemStack(ModItems.pearcel_stick));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_pressure_plate), "xx", 'x', new ItemStack(ModBlocks.pearcel_stone));
 
         //Pearcel Matter Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 2), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_1_crafting_component));
