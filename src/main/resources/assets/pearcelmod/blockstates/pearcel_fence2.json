@@ -1,0 +1,49 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "multipart": [
+    {
+      "apply": {
+        "model": "pearcelmod:pearcel_fence2_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "pearcelmod:pearcel_fence2_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "pearcelmod:pearcel_fence2_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "pearcelmod:pearcel_fence2_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "pearcelmod:pearcel_fence2_side",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
+}
