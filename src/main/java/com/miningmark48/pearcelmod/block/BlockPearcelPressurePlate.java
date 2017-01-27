@@ -66,18 +66,6 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
         return true;
     }
 
-//    @Override
-//    public void onBlockDestroyedByPlayer(World worldIn, BlockPos pos, IBlockState state) {
-//        if (state.getValue(MODE_ITEMS)){
-//            EntityItem mode_entity = new EntityItem(worldIn);
-//            mode_entity.setEntityItemStack(new ItemStack(mode_items_item));
-//            mode_entity.setPosition(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D);
-//            if (!worldIn.isRemote) {
-//                worldIn.spawnEntityInWorld(mode_entity);
-//            }
-//        }
-//    }
-
     @Override
     public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
         if (!player.isCreative()) {

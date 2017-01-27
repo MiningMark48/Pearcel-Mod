@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e3fd74d-3272-430d-94ae-df975249fc8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.iws" afterPath="$PROJECT_DIR$/Pearcel-Mod.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBlocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/Recipes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/jei/PMPlugin.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/jei/PMPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPressurePlate.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPressurePlate.java" />
     </list>
     <ignored path="Pearcel-Mod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,15 +56,15 @@
       <file leaf-file-name="BlockPearcelPressurePlate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPressurePlate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+            <state relative-caret-position="238">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4618#4619#0" expanded="true" />
-                <element signature="e#4683#4684#0" expanded="true" />
-                <element signature="e#5532#5546#0" expanded="true" />
-                <element signature="e#5699#5711#0" expanded="true" />
-                <element signature="e#6176#6208#0" expanded="true" />
+                <element signature="e#4093#4094#0" expanded="true" />
+                <element signature="e#4158#4159#0" expanded="true" />
+                <element signature="e#5007#5021#0" expanded="true" />
+                <element signature="e#5174#5186#0" expanded="true" />
+                <element signature="e#5651#5683#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1324,15 +1320,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelPressurePlate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        <state relative-caret-position="238">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4618#4619#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#5532#5546#0" expanded="true" />
-            <element signature="e#5699#5711#0" expanded="true" />
-            <element signature="e#6176#6208#0" expanded="true" />
+            <element signature="e#4093#4094#0" expanded="true" />
+            <element signature="e#4158#4159#0" expanded="true" />
+            <element signature="e#5007#5021#0" expanded="true" />
+            <element signature="e#5174#5186#0" expanded="true" />
+            <element signature="e#5651#5683#0" expanded="true" />
           </folding>
         </state>
       </provider>
