@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.proxy;
 
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
+import com.miningmark48.pearcelmod.entity.EntityThrowPearcel;
 import com.miningmark48.pearcelmod.gui.manual.GuiManual;
 import com.miningmark48.pearcelmod.handler.KeyHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
@@ -9,6 +10,7 @@ import com.miningmark48.pearcelmod.init.ModEntities;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.model.ModelPearcelBoss;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelBoss;
+import com.miningmark48.pearcelmod.renderer.RenderThrowPearcel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +30,8 @@ public class ClientProxy extends CommonProxy{
         ModEntities.registerRenders();
 
         //RenderingRegistry.registerEntityRenderingHandler(EntityEnderPearcel.class, new RenderEnderPearcel(Minecraft.getMinecraft().getRenderManager(), ModItems.ender_pearcel, null));
+
+        RenderingRegistry.registerEntityRenderingHandler(EntityThrowPearcel.class, RenderThrowPearcel.FACTORY);
 
     }
 

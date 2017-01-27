@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.init;
 
 import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
+import com.miningmark48.pearcelmod.entity.EntityThrowPearcel;
 import com.miningmark48.pearcelmod.model.ModelPearcelBoss;
 import com.miningmark48.pearcelmod.renderer.RenderPearcelBoss;
 import net.minecraft.client.Minecraft;
@@ -24,6 +25,7 @@ public class ModEntities {
 
     private static void registerEntities() {
         createEntity(EntityPearcelBoss.class, "pearcel_boss", entId++, 5882444, 4959550);
+        EntityRegistry.registerModEntity(EntityThrowPearcel.class, "throw_pearcel", entId++, PearcelMod.instance, 64, 1, false);
         //addSpawns(EntityPearcelBoss.class, 2, 0, 1, EnumCreatureType.MONSTER, new Biome[]{Biomes.PLAINS});
     }
 
