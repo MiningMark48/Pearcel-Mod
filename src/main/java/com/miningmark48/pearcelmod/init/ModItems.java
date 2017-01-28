@@ -96,6 +96,7 @@ public class ModItems {
     public static Item slimey_pearcel;
     public static Item throw_pearcel_explosive;
     public static Item throw_pearcel_entity_tp;
+    public static Item throw_pearcel_entity_firework;
 
     public static void init(){
         //General Items
@@ -170,8 +171,9 @@ public class ModItems {
         charmed_pearcel = new ItemCharmedPearcel().setUnlocalizedName("charmed_pearcel").setRegistryName("charmed_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         charm_bag = new ItemCharmBag().setUnlocalizedName("charm_bag").setRegistryName("charm_bag").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         slimey_pearcel = new ItemSlimeyPearcel().setUnlocalizedName("slimey_pearcel").setRegistryName("slimey_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        throw_pearcel_explosive = new ItemThrowPearcel(ItemThrowPearcel.TYPE.EXPLOSIVE, 16).setUnlocalizedName("throw_pearcel_explosive").setRegistryName("throw_pearcel_explosive").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        throw_pearcel_entity_tp = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_TP, 16).setUnlocalizedName("throw_pearcel_entity_tp").setRegistryName("throw_pearcel_entity_tp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        throw_pearcel_explosive = new ItemThrowPearcel(ItemThrowPearcel.TYPE.EXPLOSIVE, 32).setUnlocalizedName("throw_pearcel_explosive").setRegistryName("throw_pearcel_explosive").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        throw_pearcel_entity_tp = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_TP, 32).setUnlocalizedName("throw_pearcel_entity_tp").setRegistryName("throw_pearcel_entity_tp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        throw_pearcel_entity_firework = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_LAUNCH, 32).setUnlocalizedName("throw_pearcel_entity_firework").setRegistryName("throw_pearcel_entity_firework").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -250,6 +252,7 @@ public class ModItems {
         GameRegistry.register(slimey_pearcel);
         GameRegistry.register(throw_pearcel_explosive);
         GameRegistry.register(throw_pearcel_entity_tp);
+        GameRegistry.register(throw_pearcel_entity_firework);
 
     }
 
@@ -331,6 +334,7 @@ public class ModItems {
         registerRender(slimey_pearcel);
         registerRender(throw_pearcel_explosive);
         registerRender(throw_pearcel_entity_tp);
+        registerRender(throw_pearcel_entity_firework);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }

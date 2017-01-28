@@ -48,7 +48,8 @@ public class ItemThrowPearcel extends ItemSnowball{
 
     public enum TYPE{
         EXPLOSIVE,
-        ENTITY_TP
+        ENTITY_TP,
+        ENTITY_LAUNCH
     }
 
 }

@@ -5,14 +5,10 @@ import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nonnull;
 
@@ -20,6 +16,8 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
 
     public ItemThrowPearcel.TYPE type;
     private BlockPos originPos;
+
+    private int delayTimer = 0;
 
     public EntityThrowPearcel(World worldIn) {
         super(worldIn);
@@ -36,13 +34,6 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
     }
 
     @Override
-    public void onEntityUpdate() {
-        if (!worldObj.isRemote){
-            worldObj.spawnParticle(EnumParticleTypes.CLOUD, getPosition().getX() + 0.5, getPosition().getY() + 0.5, getPosition().getZ() + 0.5, 0, 0.0D, 0.0D);
-        }
-    }
-
-    @Override
     protected void onImpact(@Nonnull RayTraceResult result) {
         if (type != null){
             switch (type){
@@ -51,6 +42,9 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
                     break;
                 case ENTITY_TP:
                     doTP(result);
+                    break;
+                case ENTITY_LAUNCH:
+                    doLaunch(result, 2.25D);
                     break;
                 default:
                     break;
@@ -72,6 +66,14 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
         if(!getEntityWorld().isRemote) {
             if(result.entityHit != null) {
                 result.entityHit.setPosition((double) originPos.getX(), (double) originPos.getY(), (double) originPos.getZ());
+            }
+        }
+    }
+
+    private void doLaunch(RayTraceResult result, double velocity) {
+        if(!getEntityWorld().isRemote) {
+            if(result.entityHit != null) {
+                result.entityHit.addVelocity(0, velocity, 0);
             }
         }
     }

@@ -31,7 +31,7 @@ public class ClientProxy extends CommonProxy{
 
         //RenderingRegistry.registerEntityRenderingHandler(EntityEnderPearcel.class, new RenderEnderPearcel(Minecraft.getMinecraft().getRenderManager(), ModItems.ender_pearcel, null));
 
-        RenderingRegistry.registerEntityRenderingHandler(EntityThrowPearcel.class, RenderThrowPearcel.FACTORY);
+        RenderingRegistry.registerEntityRenderingHandler(EntityThrowPearcel.class, new RenderThrowPearcel(Minecraft.getMinecraft().getRenderManager(), ModItems.pearcel_item, Minecraft.getMinecraft().getRenderItem()));
 
     }
 

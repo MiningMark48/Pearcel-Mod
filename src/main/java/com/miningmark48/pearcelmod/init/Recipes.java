@@ -98,6 +98,9 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.pearcel_blood_dagger), " zz", "axz", "ya ", 'x', new ItemStack(ModItems.pearcel_sword), 'y', new ItemStack(ModItems.tier_3_crafting_component), 'z', new ItemStack(ModItems.pearcel_ingot), 'a', new ItemStack(ModItems.pearcel_item));
         GameRegistry.addRecipe(new ItemStack(ModItems.charm_bag), "xxx", "xyx", "xzx", 'x', new ItemStack(Blocks.WOOL, 1, OreDictionary.WILDCARD_VALUE), 'y', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(Blocks.CHEST));
         GameRegistry.addRecipe(new ItemStack(ModItems.slimey_pearcel), "zxz", "xyx", "zxz", 'x', new ItemStack(Items.SLIME_BALL), 'y', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(ModItems.tier_1_crafting_component));
+        GameRegistry.addRecipe(new ItemStack(ModItems.throw_pearcel_explosive, 2), " y ", "xxx", "xzx", 'y', new ItemStack(Items.SNOWBALL), 'x', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(Items.GUNPOWDER));
+        GameRegistry.addRecipe(new ItemStack(ModItems.throw_pearcel_entity_tp, 8), " y ", "xxx", "xzx", 'y', new ItemStack(Items.SNOWBALL), 'x', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(Items.ENDER_PEARL));
+        GameRegistry.addRecipe(new ItemStack(ModItems.throw_pearcel_entity_firework, 8), " y ", "xxx", "xzx", 'y', new ItemStack(Items.SNOWBALL), 'x', new ItemStack(ModItems.pearcel_item), 'z', new ItemStack(Items.FIREWORKS));
 
         //Charmed Pearcel
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_item), new ItemStack(ModItems.tier_4_crafting_component), new ItemStack(ModItems.blood_drop), new ItemStack(ModItems.pearcel_matter));
