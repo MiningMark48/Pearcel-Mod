@@ -34,13 +34,13 @@ public class ItemThrowPearcel extends ItemSnowball{
         worldIn.playSound(null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 
         if(!worldIn.isRemote) {
-            launchThrowball(worldIn, playerIn, hand);
+            launchThrowball(worldIn, playerIn);
         }
 
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemStackIn);
     }
 
-    public void launchThrowball(World world, EntityPlayer player, EnumHand hand) {
+    public void launchThrowball(World world, EntityPlayer player) {
         EntityThrowPearcel entity = new EntityThrowPearcel(world, player, type);
         entity.setHeadingFromThrower(player, player.rotationPitch, player.rotationYaw, 0.0F, 2.1F, 0.5F);
         world.spawnEntityInWorld(entity);
@@ -49,7 +49,8 @@ public class ItemThrowPearcel extends ItemSnowball{
     public enum TYPE{
         EXPLOSIVE,
         ENTITY_TP,
-        ENTITY_LAUNCH
+        ENTITY_LAUNCH,
+        ENTITY_MOUNT
     }
 
 }

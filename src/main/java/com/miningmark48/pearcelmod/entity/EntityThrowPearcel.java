@@ -16,8 +16,7 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
 
     public ItemThrowPearcel.TYPE type;
     private BlockPos originPos;
-
-    private int delayTimer = 0;
+    private EntityLivingBase thrower;
 
     public EntityThrowPearcel(World worldIn) {
         super(worldIn);
@@ -30,7 +29,8 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
     public EntityThrowPearcel(World worldIn, EntityLivingBase throwerIn, ItemThrowPearcel.TYPE type){
         super(worldIn, throwerIn);
         this.type = type;
-        originPos = throwerIn.getPosition();
+        this.originPos = throwerIn.getPosition();
+        this.thrower = throwerIn;
     }
 
     @Override
@@ -46,6 +46,8 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
                 case ENTITY_LAUNCH:
                     doLaunch(result, 2.25D);
                     break;
+                case ENTITY_MOUNT:
+                    doMount(result);
                 default:
                     break;
             }
@@ -74,6 +76,14 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
         if(!getEntityWorld().isRemote) {
             if(result.entityHit != null) {
                 result.entityHit.addVelocity(0, velocity, 0);
+            }
+        }
+    }
+
+    private void doMount(RayTraceResult result){
+        if(!getEntityWorld().isRemote) {
+            if(result.entityHit != null) {
+                thrower.startRiding(result.entityHit);
             }
         }
     }

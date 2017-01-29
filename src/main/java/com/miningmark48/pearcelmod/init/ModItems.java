@@ -97,6 +97,7 @@ public class ModItems {
     public static Item throw_pearcel_explosive;
     public static Item throw_pearcel_entity_tp;
     public static Item throw_pearcel_entity_firework;
+    public static Item throw_pearcel_entity_mount;
 
     public static void init(){
         //General Items
@@ -174,6 +175,7 @@ public class ModItems {
         throw_pearcel_explosive = new ItemThrowPearcel(ItemThrowPearcel.TYPE.EXPLOSIVE, 32).setUnlocalizedName("throw_pearcel_explosive").setRegistryName("throw_pearcel_explosive").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         throw_pearcel_entity_tp = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_TP, 32).setUnlocalizedName("throw_pearcel_entity_tp").setRegistryName("throw_pearcel_entity_tp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         throw_pearcel_entity_firework = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_LAUNCH, 32).setUnlocalizedName("throw_pearcel_entity_firework").setRegistryName("throw_pearcel_entity_firework").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        throw_pearcel_entity_mount = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_MOUNT, 32).setUnlocalizedName("throw_pearcel_entity_mount").setRegistryName("throw_pearcel_entity_mount").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
@@ -253,6 +255,7 @@ public class ModItems {
         GameRegistry.register(throw_pearcel_explosive);
         GameRegistry.register(throw_pearcel_entity_tp);
         GameRegistry.register(throw_pearcel_entity_firework);
+        GameRegistry.register(throw_pearcel_entity_mount);
 
     }
 
@@ -335,6 +338,7 @@ public class ModItems {
         registerRender(throw_pearcel_explosive);
         registerRender(throw_pearcel_entity_tp);
         registerRender(throw_pearcel_entity_firework);
+        registerRender(throw_pearcel_entity_mount);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
