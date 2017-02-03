@@ -261,6 +261,7 @@ desc.block.pearcel_beacon=Better than a beacon. Gives Speed II, Haste II, Jump B
 desc.block.pearcel_storage_crate=Like a chest, but with 9 more slots. Doesn't matter if a block is above it or not.
 desc.block.pearcel_workbench=Acts as a vanilla crafting table, but holds its inventory when crafting.
 desc.block.pearcel_pressure_plate=By default, the pressure plate will only work for players. Right click on the block with an arrow to set it to item-only mode. Right click with an empty hand to remove the arrow.
+desc.block.pearcel_spike=When a living entity stands on the block, they will take damage. Damage is dealt as a player.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
