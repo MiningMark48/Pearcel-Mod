@@ -48,6 +48,11 @@ public class PMPlugin implements IModPlugin{
         pearcel_tools.add(new ItemStack(ModItems.pearcel_shovel));
         pearcel_tools.add(new ItemStack(ModItems.pearcel_hoe));
         pearcel_tools.add(new ItemStack(ModItems.pearcel_shears));
+        List<ItemStack> throwing_pearcels = new ArrayList<ItemStack>();
+        throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_explosive));
+        throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_entity_mount));
+        throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_entity_firework));
+        throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_entity_tp));
 
         //Blacklist
         jeiHelpers.getItemBlacklist().addItemToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
@@ -93,6 +98,7 @@ public class PMPlugin implements IModPlugin{
         registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
         registry.addDescription(rif_armor, Translate.toLocal("desc.item.rif_armor"));
         registry.addDescription(pearcel_tools, Translate.toLocal("desc.item.pearcel_tools"));
+        registry.addDescription(throwing_pearcels, Translate.toLocal("desc.item.throwing_pearcel"));
 
         //Categories
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_workbench), "minecraft.crafting");
