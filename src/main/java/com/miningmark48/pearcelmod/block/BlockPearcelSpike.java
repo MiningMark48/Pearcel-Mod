@@ -42,6 +42,8 @@ public class BlockPearcelSpike extends BlockPearcelMod{
         super.onEntityWalk(worldIn, pos, entityIn);
     }
 
+    @Override
+    @SuppressWarnings("deprecation")
     public EnumBlockRenderType getRenderType(IBlockState state)
     {
         return EnumBlockRenderType.MODEL;
