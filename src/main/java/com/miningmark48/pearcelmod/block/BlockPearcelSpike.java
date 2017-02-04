@@ -3,7 +3,6 @@ package com.miningmark48.pearcelmod.block;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.BlockRenderLayer;
@@ -40,6 +39,7 @@ public class BlockPearcelSpike extends BlockPearcelMod{
         }
 
         super.onEntityWalk(worldIn, pos, entityIn);
+
     }
 
     @Override
