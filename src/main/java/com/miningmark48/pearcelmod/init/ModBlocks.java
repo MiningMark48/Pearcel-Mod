@@ -69,7 +69,7 @@ public class ModBlocks {
     public static void init(){
         //General
         pearcel_block = new BlockPearcelMod().setUnlocalizedName("pearcel_block").setRegistryName("pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_sand = new BlockPearcelModGravity().setUnlocalizedName("pearcel_sand").setRegistryName("pearcel_sand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_sand = new BlockPearcelModGravity(BlockPearcelModGravity.Type.SAND).setUnlocalizedName("pearcel_sand").setRegistryName("pearcel_sand").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_sandstone = new BlockPearcelMod().setUnlocalizedName("pearcel_sandstone").setRegistryName("pearcel_sandstone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_matter_block = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_block").setRegistryName("pearcel_matter_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("pearcel_bricks").setRegistryName("pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
