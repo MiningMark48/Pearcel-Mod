@@ -49,7 +49,7 @@ public class WorldGen implements IWorldGenerator{
         }
 
         if (ConfigurationHandler.doSpecialWorldGen){
-            generateOre(ModBlocks.pearcel_stone, world, rand, x, z, 1, 50, 30, 10, 64, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_stone, world, rand, x, z, 1, 15, 20, 10, 64, Blocks.STONE);
             generateOre(ModBlocks.pearcel_sand, world, rand, x, z, 1, 50, 30, 10, 64, Blocks.SAND);
         }
 

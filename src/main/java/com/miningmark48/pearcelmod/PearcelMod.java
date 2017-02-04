@@ -53,12 +53,11 @@ public class PearcelMod {
 		ModTileEntities.init();
 		ModEntities.init();
 		ModLoots.init();
+
 		ModSoundEvents.registerSounds();
 
 		EntityRegistry.registerModEntity(EntityEnderPearcel.class, "EnderPearcel", 10, this, 350, 50, true);
-
 		GameRegistry.registerFuelHandler(new ItemPearcelFuel());
-
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
 	}
