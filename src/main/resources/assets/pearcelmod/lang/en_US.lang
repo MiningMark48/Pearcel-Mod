@@ -123,6 +123,7 @@ tile.pearcel_fence.name=Pearcel Planks Fence
 tile.pearcel_fence2.name=Pearcel Block Fence
 tile.pearcel_pressure_plate.name=Pearcel Pressure Plate
 tile.pearcel_spike.name=Pearcel Spike
+tile.pearcel_spike_guardian.name=Spike of the Pearcel Guardian
 
 #Entities
 entity.pearcelmod.pearcel_boss.name=Pearcel Guardian
@@ -262,6 +263,7 @@ desc.block.pearcel_storage_crate=Like a chest, but with 9 more slots. Doesn't ma
 desc.block.pearcel_workbench=Acts as a vanilla crafting table, but holds its inventory when crafting.
 desc.block.pearcel_pressure_plate=By default, the pressure plate will only work for players. Right click on the block with an arrow to set it to item-only mode. Right click with an empty hand to remove the arrow.
 desc.block.pearcel_spike=When a living entity stands on the block, they will take damage. Damage is dealt as a player.
+desc.block.pearcel_spike_guardian=When a living entity stands on the block, they will be killed instantly. Damage is dealt as a player.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:

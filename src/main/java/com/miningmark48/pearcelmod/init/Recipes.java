@@ -188,6 +188,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_fence2, 6), "xyx", "xyx", 'x', new ItemStack(ModBlocks.pearcel_block), 'y', new ItemStack(ModItems.pearcel_stick));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_pressure_plate), "xx", 'x', new ItemStack(ModBlocks.pearcel_stone));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_spike, 4), "xxx", "yay", "zbz", 'x', new ItemStack(ModItems.pearcel_stick), 'y', new ItemStack(ModBlocks.pearcel_block), 'z', new ItemStack(ModBlocks.pearcel_planks), 'a', new ItemStack(ModItems.tier_2_crafting_component), 'b', new ItemStack(ModBlocks.pearcel_ingot_block));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_spike_guardian, 16), "xxx", "yay", "zbz", 'x', new ItemStack(ModBlocks.pearcel_spike), 'y', new ItemStack(ModBlocks.pearcel_block), 'z', new ItemStack(ModBlocks.tainted_pearcel), 'a', new ItemStack(ModItems.tier_4_crafting_component), 'b', new ItemStack(ModBlocks.pearcel_ingot_block));
 
         //Pearcel Matter Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 2), new ItemStack(ModItems.neutral_pearcel_matter), new ItemStack(ModItems.tier_1_crafting_component));

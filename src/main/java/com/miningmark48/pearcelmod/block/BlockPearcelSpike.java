@@ -5,6 +5,10 @@ import com.mojang.authlib.GameProfile;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumBlockRenderType;
@@ -18,12 +22,15 @@ import java.util.UUID;
 
 public class BlockPearcelSpike extends BlockPearcelMod{
 
-    FakePlayer fakePlayer;
+    private FakePlayer fakePlayer;
 
-    public BlockPearcelSpike(){
+    private float spike_damage;
+
+    public BlockPearcelSpike(Float damage){
         setResistance(2.5F);
         setHardness(1.5F);
         setTickRandomly(true);
+        spike_damage = damage;
     }
 
     @Override
@@ -35,11 +42,21 @@ public class BlockPearcelSpike extends BlockPearcelMod{
                     fakePlayer = FakePlayerFactory.get((WorldServer) worldIn, new GameProfile(UUID.randomUUID(), ModBlocks.pearcel_spike.getLocalizedName()));
                 }
             }
-            entityIn.attackEntityFrom(DamageSource.causePlayerDamage(fakePlayer), 2.5F);
+
+            ((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 1));
+            entityIn.attackEntityFrom(DamageSource.causePlayerDamage(fakePlayer), spike_damage);
+
         }
 
         super.onEntityWalk(worldIn, pos, entityIn);
 
+    }
+
+    @Override
+    public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
+        if (fakePlayer != null){
+            fakePlayer.setDead();
+        }
     }
 
     @Override
