@@ -1,11 +1,9 @@
 package com.miningmark48.pearcelmod.utility;
 
-import net.minecraft.client.resources.I18n;
-
 public class Translate {
 
     public static String toLocal(String key){
-        return I18n.format(key);
+        return net.minecraft.util.text.translation.I18n.translateToLocal(key);
     }
 
     public static String toLocal(){
