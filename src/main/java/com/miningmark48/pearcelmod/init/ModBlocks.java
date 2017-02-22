@@ -65,6 +65,7 @@ public class ModBlocks {
     public static Block pearcel_storage_crate;
     public static Block pearcel_pressure_plate;
     public static Block pearcel_spike;
+    public static Block pearcel_spike_ender;
     public static Block pearcel_spike_guardian;
 
     public static void init(){
@@ -117,6 +118,7 @@ public class ModBlocks {
         pearcel_storage_crate = new BlockPearcelStorageCrate().setUnlocalizedName("pearcel_storage_crate").setRegistryName("pearcel_storage_crate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_pressure_plate = new BlockPearcelPressurePlate().setUnlocalizedName("pearcel_pressure_plate").setRegistryName("pearcel_pressure_plate").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_spike = new BlockPearcelSpike(2.0F).setUnlocalizedName("pearcel_spike").setRegistryName("pearcel_spike").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_spike_ender = new BlockPearcelSpike(6.25F).setUnlocalizedName("pearcel_spike_ender").setRegistryName("pearcel_spike_ender").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_spike_guardian = new BlockPearcelSpike(Float.MAX_VALUE).setUnlocalizedName("pearcel_spike_guardian").setRegistryName("pearcel_spike_guardian").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
@@ -169,6 +171,7 @@ public class ModBlocks {
         registerBlock(pearcel_storage_crate);
         registerBlock(pearcel_pressure_plate);
         registerBlock(pearcel_spike);
+        registerBlock(pearcel_spike_ender);
         registerBlock(pearcel_spike_guardian);
 
     }
@@ -223,6 +226,7 @@ public class ModBlocks {
         registerRender(pearcel_storage_crate);
         registerRender(pearcel_pressure_plate);
         registerRender(pearcel_spike);
+        registerRender(pearcel_spike_ender);
         registerRender(pearcel_spike_guardian);
 
     }

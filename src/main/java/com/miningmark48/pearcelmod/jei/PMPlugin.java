@@ -53,6 +53,9 @@ public class PMPlugin implements IModPlugin{
         throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_entity_mount));
         throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_entity_firework));
         throwing_pearcels.add(new ItemStack(ModItems.throw_pearcel_entity_tp));
+        List<ItemStack> spikes = new ArrayList<ItemStack>();
+        spikes.add(new ItemStack(ModBlocks.pearcel_spike));
+        spikes.add(new ItemStack(ModBlocks.pearcel_spike_ender));
 
         //Blacklist
         jeiHelpers.getItemBlacklist().addItemToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
@@ -93,13 +96,13 @@ public class PMPlugin implements IModPlugin{
         registry.addDescription(new ItemStack(ModBlocks.pearcel_storage_crate), Translate.toLocal("desc.block.pearcel_storage_crate"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_workbench), Translate.toLocal("desc.block.pearcel_workbench"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_pressure_plate), Translate.toLocal("desc.block.pearcel_pressure_plate"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_spike), Translate.toLocal("desc.block.pearcel_spike"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_spike_guardian), Translate.toLocal("desc.block.pearcel_spike_guardian"));
 
         //Descriptions - Lists
         registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
         registry.addDescription(rif_armor, Translate.toLocal("desc.item.rif_armor"));
         registry.addDescription(pearcel_tools, Translate.toLocal("desc.item.pearcel_tools"));
+        registry.addDescription(spikes, Translate.toLocal("desc.block.pearcel_spike"));
         registry.addDescription(throwing_pearcels, Translate.toLocal("desc.item.throwing_pearcel"));
 
         //Categories
