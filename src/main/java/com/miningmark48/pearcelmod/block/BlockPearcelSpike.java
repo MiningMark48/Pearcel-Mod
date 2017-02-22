@@ -43,8 +43,10 @@ public class BlockPearcelSpike extends BlockPearcelMod{
                 }
             }
 
-            ((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 1));
-            entityIn.attackEntityFrom(DamageSource.causePlayerDamage(fakePlayer), spike_damage);
+            if (!(entityIn instanceof EntityPlayer)) {
+                ((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 1));
+                entityIn.attackEntityFrom(DamageSource.causePlayerDamage(fakePlayer), spike_damage);
+            }
 
         }
 
