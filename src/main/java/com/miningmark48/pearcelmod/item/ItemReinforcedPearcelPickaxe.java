@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.state.IBlockState;
@@ -46,4 +47,14 @@ public class ItemReinforcedPearcelPickaxe extends ItemPickaxe {
 
         return true;
     }
+
+    @Override
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        if (repair.isItemEqual(new ItemStack(ModItems.pearcel_ingot))){
+            return true;
+        }
+        return false;
+    }
+
 }

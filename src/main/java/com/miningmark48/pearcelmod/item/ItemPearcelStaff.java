@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -66,4 +67,14 @@ public class ItemPearcelStaff extends ItemPearcelSword{
             return true;
         }
     }
+
+    @Override
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        if (repair.isItemEqual(new ItemStack(ModItems.pearcel_ingot))){
+            return true;
+        }
+        return false;
+    }
+
 }

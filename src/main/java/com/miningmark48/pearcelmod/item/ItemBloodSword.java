@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.init.ModItems;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;
@@ -31,5 +32,15 @@ public class ItemBloodSword extends ItemPearcelSword{
         });
 
     }
+
+    @Override
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        if (repair.isItemEqual(new ItemStack(ModItems.blood_drop))){
+            return true;
+        }
+        return false;
+    }
+
 
 }
