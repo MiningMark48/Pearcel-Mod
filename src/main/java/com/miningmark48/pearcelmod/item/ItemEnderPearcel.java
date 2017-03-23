@@ -20,6 +20,7 @@ public class ItemEnderPearcel extends ItemPearcelMod{
 
     public ItemEnderPearcel(){
         setMaxDamage(128);
+        setMaxStackSize(1);
     }
 
     @Override
