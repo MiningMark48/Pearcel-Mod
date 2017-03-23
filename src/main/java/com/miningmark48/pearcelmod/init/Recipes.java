@@ -173,7 +173,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ItemStack(ModBlocks.irradiated_pearcel_block, 8), " x ", "xyx", " x ", 'x', new ItemStack(Items.GLOWSTONE_DUST), 'y', new ItemStack(ModBlocks.pearcel_block));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.tainted_pearcel, 32), "zxz", "xyx", "zxz", 'x', new ItemStack(Items.NETHER_WART), 'y', new ItemStack(ModBlocks.pearcel_stone), 'z', new ItemStack(Items.SPIDER_EYE));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_planks, 8), "xxx", "xyx", "xxx", 'x', new ItemStack(Blocks.PLANKS, 1, OreDictionary.WILDCARD_VALUE), 'y', new ItemStack(ModItems.pearcel_item));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_sand), " x ", "xyx", " x ", 'x', new ItemStack(Blocks.SAND, 4), 'y', new ItemStack(ModItems.pearcel_item));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_sand, 4), " x ", "xyx", " x ", 'x', new ItemStack(Blocks.SAND, 4), 'y', new ItemStack(ModItems.pearcel_item));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_sandstone, 4), "xx", "xx", 'x', new ItemStack(ModBlocks.pearcel_sand));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_ladder, 3), "xxx", " x ", "xxx", 'x', new ItemStack(ModItems.pearcel_stick));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_lamp, 8), "xyx", "yzy", "xyx", 'x', new ItemStack(ModItems.pearcel_item), 'y', new ItemStack(ModBlocks.irradiated_pearcel_block), 'z', new ItemStack(ModItems.tier_1_crafting_component));
