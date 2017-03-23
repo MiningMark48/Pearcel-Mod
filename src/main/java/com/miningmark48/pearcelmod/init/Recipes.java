@@ -199,7 +199,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pearcel_matter, 9), new ItemStack(ModBlocks.pearcel_matter_block));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pearcel_matter_block), "xxx", "xxx", "xxx", 'x', new ItemStack(ModItems.pearcel_matter));
 
-        GameRegistry.addRecipe(new ItemStack(Items.NETHER_STAR), " x ", "xyx", " x ", 'x', new ItemStack(ModItems.pearcel_matter), 'y', new ItemStack(ModBlocks.pearcel_matter_block));
+        GameRegistry.addRecipe(new ItemStack(Items.NETHER_STAR), "xxx", "xyx", "xxx", 'x', new ItemStack(ModBlocks.pearcel_matter_block), 'y', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.COAL, 16), "x  ", " x ", " x ", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.IRON_INGOT, 12), " x ", "x  ", "x  ", 'x', new ItemStack(ModItems.pearcel_matter));
         GameRegistry.addRecipe(new ItemStack(Items.GOLD_INGOT, 8), "x  ", "x  ", "  x", 'x', new ItemStack(ModItems.pearcel_matter));
