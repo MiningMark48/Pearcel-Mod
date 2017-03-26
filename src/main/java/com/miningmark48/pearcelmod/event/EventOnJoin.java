@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class EventOnJoin{
 
+    private Boolean JoinMessageWikiSent = false;
+
     @SubscribeEvent
     public void onJoin(TickEvent.PlayerTickEvent e){
 
@@ -22,6 +24,14 @@ public class EventOnJoin{
 
                 PearcelMod.haveWarnedVersionOutOfDate = true;
             }
+        }
+
+        if (!JoinMessageWikiSent && e.player.worldObj.isRemote){ //TODO: Make config setting for message
+            ClickEvent versionCheckClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "http://miningmark48.xyz/pearcelmod");
+
+            e.player.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.joinMessage.wiki")).setStyle(new Style().setClickEvent(versionCheckClickEvent)));
+
+            JoinMessageWikiSent = true;
 
         }
 
