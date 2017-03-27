@@ -183,7 +183,8 @@ public class ModItems {
     }
 
     public static void register(){
-        //General Items
+        GameRegistry.register(pearcel_manual);
+        GameRegistry.register(pearcel_item);
         GameRegistry.register(pearcel_ingot);
         GameRegistry.register(tier_1_crafting_component);
         GameRegistry.register(tier_2_crafting_component);
@@ -199,8 +200,6 @@ public class ModItems {
         GameRegistry.register(pearcel_star);
         GameRegistry.register(blood_drop);
 
-        //Food
-        GameRegistry.register(pearcel_item);
         GameRegistry.register(pearcel_bread);
         GameRegistry.register(pearcel_pie);
         GameRegistry.register(pearcel_beef);
@@ -214,7 +213,6 @@ public class ModItems {
         GameRegistry.register(glowing_pearcel);
         GameRegistry.register(guardian_food);
 
-        //Tools and Armor
         GameRegistry.register(pearcel_sword);
         GameRegistry.register(pearcel_pickaxe);
         GameRegistry.register(pearcel_axe);
@@ -252,7 +250,6 @@ public class ModItems {
         GameRegistry.register(living_magnet);
         GameRegistry.register(sacrificial_pearcel);
         GameRegistry.register(pearcel_blood_dagger);
-        GameRegistry.register(pearcel_manual);
         GameRegistry.register(charmed_pearcel);
         GameRegistry.register(charm_bag);
         GameRegistry.register(slimey_pearcel);
