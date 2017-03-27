@@ -50,6 +50,7 @@ public class ModItems {
     public static Item pearcel_juice_bottle;
     public static Item pearcel_infinifood;
     public static Item golden_pearcel;
+    public static Item jeweled_pearcel;
     public static Item glowing_pearcel;
     public static Item guardian_food;
 
@@ -128,6 +129,7 @@ public class ModItems {
         pearcel_juice_bottle = new ItemPearcelJuiceBottle().setUnlocalizedName("pearcel_juice_bottle").setRegistryName("pearcel_juice_bottle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_infinifood = new ItemPearcelFoodInfinite(10, 10.0F, false).setUnlocalizedName("pearcel_infinifood").setRegistryName("pearcel_infinifood").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         golden_pearcel = new ItemGoldenPearcel().setUnlocalizedName("golden_pearcel").setRegistryName("golden_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        jeweled_pearcel = new ItemJeweledPearcel().setUnlocalizedName("jeweled_pearcel").setRegistryName("jeweled_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         glowing_pearcel = new ItemGlowingPearcel().setUnlocalizedName("glowing_pearcel").setRegistryName("glowing_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         guardian_food = new ItemGuardianFood().setUnlocalizedName("guardian_food").setRegistryName("guardian_food").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
@@ -208,6 +210,7 @@ public class ModItems {
         GameRegistry.register(pearcel_juice_bottle);
         GameRegistry.register(pearcel_infinifood);
         GameRegistry.register(golden_pearcel);
+        GameRegistry.register(jeweled_pearcel);
         GameRegistry.register(glowing_pearcel);
         GameRegistry.register(guardian_food);
 
@@ -288,6 +291,7 @@ public class ModItems {
         registerRender(pearcel_juice_bottle);
         registerRender(pearcel_infinifood);
         registerRender(golden_pearcel);
+        registerRender(jeweled_pearcel);
         registerRender(glowing_pearcel);
         registerRender(guardian_food);
 
