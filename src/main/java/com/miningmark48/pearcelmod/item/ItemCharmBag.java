@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.inventory.InventoryBindle;
 import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
@@ -9,6 +11,7 @@ import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -23,7 +26,7 @@ import net.minecraftforge.common.util.Constants;
 
 import java.util.List;
 
-public class ItemCharmBag extends ItemPearcelMod{
+public class ItemCharmBag extends ItemPearcelMod implements IBauble{
 
     public ItemCharmBag(){
         setMaxStackSize(1);
@@ -93,6 +96,10 @@ public class ItemCharmBag extends ItemPearcelMod{
 
     @Override
     public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
+        doUpdate(stack, entityIn);
+    }
+
+    private void doUpdate(ItemStack stack, Entity entityIn){
         if (entityIn instanceof EntityPlayer){
             EntityPlayer player = (EntityPlayer) entityIn;
 
@@ -117,5 +124,15 @@ public class ItemCharmBag extends ItemPearcelMod{
 
 
         }
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack itemstack) {
+        return BaubleType.BODY;
+    }
+
+    @Override
+    public void onWornTick(ItemStack stack, EntityLivingBase entityIn) {
+        doUpdate(stack, entityIn);
     }
 }

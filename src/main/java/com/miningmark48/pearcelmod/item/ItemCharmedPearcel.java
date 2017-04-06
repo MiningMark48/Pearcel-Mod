@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
@@ -32,7 +34,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
-public class ItemCharmedPearcel extends ItemPearcelMod{
+public class ItemCharmedPearcel extends ItemPearcelMod implements IBauble{
 
     public ItemCharmedPearcel(){
         setMaxStackSize(1);
@@ -250,5 +252,23 @@ public class ItemCharmedPearcel extends ItemPearcelMod{
         }
 
         return new ActionResult(EnumActionResult.SUCCESS, stack);
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack itemstack) {
+        return BaubleType.CHARM;
+    }
+
+    @Override
+    public void onWornTick(ItemStack itemstack, EntityLivingBase entity) {
+        if (itemstack.hasTagCompound()){
+            if (entity instanceof EntityPlayer){
+                EntityPlayer player = (EntityPlayer) entity;
+                player.stepHeight = 0.6F;
+                if (itemstack.getTagCompound().getBoolean("active")) {
+                    doEffects(player, itemstack);
+                }
+            }
+        }
     }
 }

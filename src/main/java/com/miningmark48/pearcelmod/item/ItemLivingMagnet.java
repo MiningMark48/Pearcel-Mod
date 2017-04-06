@@ -1,10 +1,13 @@
 package com.miningmark48.pearcelmod.item;
 
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -19,7 +22,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemLivingMagnet extends ItemPearcelMod{
+public class ItemLivingMagnet extends ItemPearcelMod implements IBauble{
 
     public ItemLivingMagnet(){
         setMaxStackSize(1);
@@ -77,7 +80,10 @@ public class ItemLivingMagnet extends ItemPearcelMod{
 
     @Override
     public void onUpdate(ItemStack stack, World world, Entity entity, int itemSlot, boolean isSelected){
+        doUpdate(stack, world, entity);
+    }
 
+    private void doUpdate(ItemStack stack, World world, Entity entity){
         int range = ConfigurationHandler.pearcelMagnetRange;
         float pullSpeed = ConfigurationHandler.pearcelMagnetPullSpeed;
 
@@ -114,6 +120,16 @@ public class ItemLivingMagnet extends ItemPearcelMod{
             }
 
         }
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack itemstack) {
+        return BaubleType.RING;
+    }
+
+    @Override
+    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+        doUpdate(itemstack, player.getEntityWorld(), player);
     }
 
 }
