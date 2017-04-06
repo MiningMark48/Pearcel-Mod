@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e3fd74d-3272-430d-94ae-df975249fc8b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.iml" afterPath="$PROJECT_DIR$/Pearcel-Mod.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.ipr" afterPath="$PROJECT_DIR$/Pearcel-Mod.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pearcel-Mod.iws" afterPath="$PROJECT_DIR$/Pearcel-Mod.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmBag.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmBag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmedPearcel.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmedPearcel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemLivingMagnet.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemLivingMagnet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelMagnet.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelMagnet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemTPPearcel.java" afterPath="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemTPPearcel.java" />
     </list>
     <ignored path="Pearcel-Mod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,79 +32,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlockPearcelStone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelStone.java">
+      <file leaf-file-name="ItemTPPearcel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemTPPearcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemPearcelMagnet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelMagnet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1048#1049#0" expanded="false" />
-                <element signature="e#1082#1083#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemLivingMagnet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemLivingMagnet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-              <folding>
-                <element signature="e#5924#5925#0" expanded="true" />
-                <element signature="e#5962#5963#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en_US.lang" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="490" column="22" selection-start-line="490" selection-start-column="22" selection-end-line="490" selection-end-column="22" />
+            <state relative-caret-position="374">
+              <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemCharmedPearcel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmedPearcel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="267" column="42" selection-start-line="267" selection-start-column="42" selection-end-line="267" selection-end-column="42" />
-              <folding>
-                <element signature="e#15005#15006#0" expanded="true" />
-                <element signature="e#15044#15045#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemCharmBag.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmBag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
-              <folding>
-                <element signature="e#5084#5085#0" expanded="true" />
-                <element signature="e#5122#5123#0" expanded="true" />
-                <element signature="e#5210#5211#0" expanded="true" />
-                <element signature="e#5251#5252#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -134,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/world/biome/BiomePearcelPlains.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/ModBiomes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/PearcelMod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/init/WorldGen.java" />
@@ -185,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmedPearcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemCharmBag.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemTPPearcel.java" />
       </list>
     </option>
   </component>
@@ -387,7 +315,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/run/mods/Baubles-1.10.2-1.3.9.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jei_1.10.2-3.14.7.416-api.jar!/" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="Beacon&#9;PSI&#9;JAVA://net.minecraft.init.Blocks#BEACON&#10;Ju&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelJuiceBottle&#10;Juice&#9;null&#9;null&#10;IronHelm&#9;PSI&#9;JAVA://net.minecraft.init.Items#IRON_HELMET&#10;sword&#9;PSI&#9;JAVA://net.minecraft.item.ItemSword&#10;BlockCactus&#9;PSI&#9;JAVA://net.minecraft.block.BlockCactus&#10;BlockSand&#9;PSI&#9;JAVA://net.minecraft.block.BlockSand&#10;BiomeGen&#9;PSI&#9;JAVA://net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens&#10;Magma&#9;PSI&#9;JAVA://net.minecraft.block.BlockMagma&#10;EntityHorse&#9;PSI&#9;JAVA://net.minecraft.entity.passive.EntityHorse&#10;EntityFir&#9;PSI&#9;JAVA://net.minecraft.entity.item.EntityFireworkRocket&#10;EntityItem&#9;PSI&#9;JAVA://net.minecraft.entity.item.EntityItem&#10;press&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/block/BlockPressurePlate.java&#10;BlockPress&#9;PSI&#9;JAVA://net.minecraft.block.BlockPressurePlate&#10;BlockGate&#9;PSI&#9;JAVA://net.minecraft.block.BlockFenceGate&#10;BlockFence&#9;PSI&#9;JAVA://net.minecraft.block.BlockFence&#10;torch&#9;FILE&#9;file://F:/Minecraft Mods/Pearcel-Mod/src/main/java/com/miningmark48/pearcelmod/block/BlockPearcelTorch.java&#10;Enum&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/util/EnumFacing.java&#10;Wheat&#9;PSI&#9;JAVA://net.minecraft.init.Blocks#WHEAT&#10;GoldenApple&#9;PSI&#9;JAVA://net.minecraft.init.Items#GOLDEN_APPLE&#10;ladder&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.block.BlockPearceLadder&#10;VillageGen&#9;PSI&#9;JAVA://net.minecraft.world.gen.ChunkProviderOverworld#villageGenerator&#10;Villa&#9;PSI&#9;JAVA://net.minecraft.village.Village&#10;Village&#9;PSI&#9;JAVA://net.minecraft.world.gen.structure.StructureVillagePieces.Village&#10;TileEntity&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.tileentity.TileEntityPearcelStorageCrate&#10;TileEntityChes&#9;PSI&#9;JAVA://net.minecraft.tileentity.TileEntityChest&#10;Bow&#9;PSI&#9;JAVA://com.miningmark48.pearcelmod.item.ItemPearcelBow&#10;ItemBow&#9;PSI&#9;JAVA://net.minecraft.item.ItemBow&#10;Elytra&#9;PSI&#9;JAVA://net.minecraft.entity.EntityLivingBase#updateElytra&#10;elytra&#9;PSI&#9;JAVA://net.minecraft.item.ItemElytra&#10;Hay&#9;PSI&#9;JAVA://net.minecraft.block.BlockHay&#10;Feather&#9;PSI&#9;JAVA://net.minecraft.init.Enchantments#FEATHER_FALLING&#10;GuiScreen&#9;PSI&#9;JAVA://net.minecraft.client.gui.GuiScreenDemo&#10;ItemWr&#9;PSI&#9;JAVA://net.minecraft.item.ItemWritableBook&#10;ItemBook&#9;PSI&#9;JAVA://net.minecraft.item.ItemBook&#10;Gui&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/GuiScreenBook.java&#10;GuiScree&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/client/gui/GuiScreenBook.java&#10;GuiBook&#9;PSI&#9;JAVA://net.minecraft.client.gui.GuiScreenBook&#10;GuiContainer&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiContainer&#10;BlockChe&#9;PSI&#9;JAVA://net.minecraft.block.BlockChest&#10;Clock&#9;PSI&#9;JAVA://net.minecraft.init.Items#CLOCK&#10;GameReg&#9;PSI&#9;JAVA://net.minecraftforge.fml.common.registry.GameRegistry&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemClock&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock&#10;Wither&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/entity/boss/EntityWither.java&#10;Enderman&#9;PSI&#9;JAVA://net.minecraft.client.renderer.entity.RenderEnderman&#10;EntityZom&#9;FILE&#9;jar://C:/Users/Mark/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/entity/monster/EntityZombie.java&#10;Boss&#9;PSI&#9;JAVA://net.minecraftforge.client.event.RenderGameOverlayEvent.BossInfo&#10;RenderCow&#9;PSI&#9;JAVA://net.minecraft.client.renderer.entity.RenderCow&#10;ContainerCreat&#9;PSI&#9;JAVA://net.minecraft.client.gui.inventory.GuiContainerCreative.ContainerCreative" />
@@ -747,13 +675,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14670256" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15745501" sideWeight="0.75318474" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15745501" sideWeight="0.75367045" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30417228" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11439589" sideWeight="0.48013818" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15745501" sideWeight="0.2468153" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15477793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15745501" sideWeight="0.24632953" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17496635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -788,34 +716,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/init/Blocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="197" column="32" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/block/BlockBeacon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/tileentity/TileEntityBeacon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/event/EventOnJoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemPearcelMod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1130,14 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baubles/api/inv/BaublesInventoryWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/baubles/api/IBauble.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1154,17 +1046,6 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1048#1049#0" expanded="false" />
             <element signature="e#1082#1083#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemLivingMagnet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-          <folding>
-            <element signature="e#5924#5925#0" expanded="true" />
-            <element signature="e#5962#5963#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1203,8 +1084,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/pearcelmod/lang/en_US.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="490" column="22" selection-start-line="490" selection-start-column="22" selection-end-line="490" selection-end-column="22" />
+        <state relative-caret-position="498">
+          <caret line="491" column="20" selection-start-line="491" selection-start-column="20" selection-end-line="491" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baubles/api/cap/BaublesCapabilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baubles/api/render/IRenderBauble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1015">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baubles/api/inv/BaublesInventoryWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemLivingMagnet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <element signature="e#5924#5925#0" expanded="true" />
+            <element signature="e#5962#5963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2099/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2099-sources.jar!/net/minecraft/item/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="206" column="35" selection-start-line="206" selection-start-column="35" selection-end-line="206" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miningmark48/pearcelmod/item/ItemTPPearcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
           <folding />
         </state>
       </provider>

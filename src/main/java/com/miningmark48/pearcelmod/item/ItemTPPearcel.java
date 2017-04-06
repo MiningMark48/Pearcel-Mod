@@ -24,6 +24,8 @@ public class ItemTPPearcel extends ItemPearcelMod{
     double tpY = 0;
     double tpZ = 0;
     int dim = 0;
+    float yaw = 0;
+    float pitch = 0;
 
     public ItemTPPearcel(){
         setMaxStackSize(1);
@@ -58,17 +60,21 @@ public class ItemTPPearcel extends ItemPearcelMod{
     {
         if (!stack.hasTagCompound()){
             stack.setTagCompound(new NBTTagCompound());
-            stack.getTagCompound().setDouble("tpX", 0D);
-            stack.getTagCompound().setDouble("tpY", 0D);
-            stack.getTagCompound().setDouble("tpZ", 0D);
-            stack.getTagCompound().setInteger("dim", 0);
-            stack.getTagCompound().setBoolean("set", false);
+            stack.getTagCompound().setDouble("tpX", player.posX);
+            stack.getTagCompound().setDouble("tpY", player.posY);
+            stack.getTagCompound().setDouble("tpZ", player.posZ);
+            stack.getTagCompound().setInteger("dim", player.dimension);
+            stack.getTagCompound().setFloat("yaw", player.rotationYaw);
+            stack.getTagCompound().setFloat("pitch", player.rotationPitch);
+            stack.getTagCompound().setBoolean("set", true);
         }
         if (player.isSneaking()) {
             stack.getTagCompound().setDouble("tpX", player.posX);
             stack.getTagCompound().setDouble("tpY", player.posY);
             stack.getTagCompound().setDouble("tpZ", player.posZ);
             stack.getTagCompound().setInteger("dim", player.dimension);
+            stack.getTagCompound().setFloat("yaw", player.rotationYaw);
+            stack.getTagCompound().setFloat("pitch", player.rotationPitch);
             stack.getTagCompound().setBoolean("set", true);
             if(!world.isRemote) {
                 player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.DARK_GREEN + (Translate.toLocal("chat.tpPearcel.location.set"))));
@@ -78,13 +84,16 @@ public class ItemTPPearcel extends ItemPearcelMod{
             tpY = stack.getTagCompound().getDouble("tpY");
             tpZ = stack.getTagCompound().getDouble("tpZ");
             dim = stack.getTagCompound().getInteger("dim");
-            if (tpX == 0D && tpY == 0D && tpZ == 0D) {
+            yaw = stack.getTagCompound().getFloat("yaw");
+            pitch = stack.getTagCompound().getFloat("pitch");
+            if (!stack.getTagCompound().getBoolean("set")) {
                 if (!world.isRemote) {
                     player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.location.notSet"))));
                 }
             } else {
                 if (player.dimension == dim) {
-                    player.setPositionAndUpdate(tpX, tpY, tpZ);
+                    //player.setPositionAndUpdate(tpX, tpY, tpZ);
+                    player.setLocationAndAngles(tpX, tpY, tpZ, yaw, pitch);
                     player.addStat(Achievements.achievement_use_tp_pearcel);
                     if (!world.isRemote) {
                         player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.tpPearcel.tp"))));
