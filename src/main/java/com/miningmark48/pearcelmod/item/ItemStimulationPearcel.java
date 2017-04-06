@@ -62,7 +62,4 @@ public class ItemStimulationPearcel extends ItemPearcelMod{
         return EnumActionResult.SUCCESS;
     }
 
-
-
-
 }
