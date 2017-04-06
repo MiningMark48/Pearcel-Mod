@@ -705,5 +705,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/Chisel-MC1.10.2-0.0.9.15-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/Chisel-MC1.10.2-0.0.9.15-api.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -1,4 +1,4 @@
-package com.miningmark48.pearcelmod.jei;
+package com.miningmark48.pearcelmod.plugin.jei;
 
 import com.miningmark48.pearcelmod.gui.GuiPCP;
 import com.miningmark48.pearcelmod.gui.GuiPearcelWorkbench;
@@ -7,13 +7,12 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.Translate;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IModIngredientRegistration;
-import net.minecraft.inventory.ContainerWorkbench;
 import net.minecraft.item.ItemStack;
 
 import java.util.*;
 
 @JEIPlugin
-public class PMPlugin implements IModPlugin{
+public class PMJEIPlugin implements IModPlugin{
 
     public static IJeiHelpers jeiHelpers;
 
