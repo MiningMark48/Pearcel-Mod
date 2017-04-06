@@ -22,7 +22,7 @@ public class ItemStimulationPearcel extends ItemPearcelMod{
 
     public ItemStimulationPearcel(){
         setMaxStackSize(1);
-        setMaxDamage(2048);
+        setMaxDamage(4096); //TODO: Make Config
     }
 
     @Override
