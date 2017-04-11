@@ -16,6 +16,7 @@ import com.miningmark48.pearcelmod.utility.VersionChecker;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel1;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel2;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel3;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -42,6 +43,8 @@ public class PearcelMod {
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
+
+		OBJLoader.INSTANCE.addDomain(Reference.MOD_ID);
 
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		MinecraftForge.EVENT_BUS.register(new ConfigurationHandler());

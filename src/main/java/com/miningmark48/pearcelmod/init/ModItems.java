@@ -12,6 +12,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.model.ModelLoaderRegistry;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -307,7 +310,7 @@ public class ModItems {
         registerRender(pearcel_chestplate);
         registerRender(pearcel_leggings);
         registerRender(pearcel_boots);
-        registerRender(pearcel_staff);
+        //registerRender(pearcel_staff);
         registerRender(dragon_pearcel_staff);
         registerRender(pcp);
         registerRender(ender_pearcel);
@@ -343,6 +346,14 @@ public class ModItems {
         registerRender(throw_pearcel_entity_mount);
 
         ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
+    }
+
+    public static void registerModels(){
+        registerModel(pearcel_staff);
+    }
+
+    public static void registerModel(Item item){
+        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 
 

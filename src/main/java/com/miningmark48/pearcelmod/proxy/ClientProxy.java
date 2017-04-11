@@ -26,6 +26,7 @@ public class ClientProxy extends CommonProxy{
     @Override
     public void registerRenders(){
         ModItems.registerRenders();
+        ModItems.registerModels();
         ModBlocks.registerRenders();
         ModEntities.registerRenders();
 
