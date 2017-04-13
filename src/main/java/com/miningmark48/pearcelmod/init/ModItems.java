@@ -307,7 +307,7 @@ public class ModItems {
         registerRender(pearcel_chestplate);
         registerRender(pearcel_leggings);
         registerRender(pearcel_boots);
-        registerRender(pearcel_staff);
+        //registerRender(pearcel_staff);
         registerRender(dragon_pearcel_staff);
         registerRender(pcp);
         registerRender(ender_pearcel);

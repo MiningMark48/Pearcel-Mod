@@ -1,22 +1,35 @@
 package com.miningmark48.pearcelmod.proxy;
 
-import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
-import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.entity.EntityThrowPearcel;
 import com.miningmark48.pearcelmod.gui.manual.GuiManual;
 import com.miningmark48.pearcelmod.handler.KeyHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModEntities;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.model.ModelPearcelBoss;
-import com.miningmark48.pearcelmod.renderer.RenderPearcelBoss;
+import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.renderer.RenderThrowPearcel;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy extends CommonProxy{
+
+    @Override
+    public void preInit(FMLPreInitializationEvent event) {
+        OBJLoader.INSTANCE.addDomain(Reference.MOD_ID);
+
+        registerModel(ModItems.pearcel_staff);
+    }
+
+    @Override
+    public void registerModel(Item item) {
+        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+    }
 
     @Override
     public void init(){
