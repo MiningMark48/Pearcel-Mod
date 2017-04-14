@@ -72,7 +72,7 @@ public class PMJEIPlugin implements IModPlugin{
         registry.addDescription(new ItemStack(ModItems.glowing_pearcel), Translate.toLocal("desc.item.glowing_pearcel"));
         registry.addDescription(new ItemStack(ModItems.pearcel_infinifood), Translate.toLocal("desc.item.pearcel_infinifood"));
         registry.addDescription(new ItemStack(ModItems.pearcel_staff), Translate.toLocal("desc.item.pearcel_staff"));
-        registry.addDescription(new ItemStack(ModItems.dragon_pearcel_staff), Translate.toLocal("desc.item.dragon_pearcel_staff"));
+        registry.addDescription(new ItemStack(ModItems.guardian_pearcel_staff), Translate.toLocal("desc.item.guardian_pearcel_staff"));
         registry.addDescription(new ItemStack(ModItems.pepc), Translate.toLocal("desc.item.pepc"));
         registry.addDescription(new ItemStack(ModItems.pearcel_crook), Translate.toLocal("desc.item.pearcel_crook"));
         registry.addDescription(new ItemStack(ModItems.tp_pearcel), Translate.toLocal("desc.item.tp_pearcel"));

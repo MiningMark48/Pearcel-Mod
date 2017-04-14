@@ -70,7 +70,7 @@ public class ModItems {
     public static Item pearcel_leggings;
     public static Item pearcel_boots;
     public static Item pearcel_staff;
-    public static Item dragon_pearcel_staff;
+    public static Item guardian_pearcel_staff;
     public static Item pcp;
     public static Item ender_pearcel;
     public static Item pearcel_bow;
@@ -149,7 +149,7 @@ public class ModItems {
         pearcel_leggings = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.LEGS).setUnlocalizedName("pearcel_leggings").setRegistryName("pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_boots = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.FEET).setUnlocalizedName("pearcel_boots").setRegistryName("pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).setUnlocalizedName("pearcel_staff").setRegistryName("pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        dragon_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setRegistryName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        guardian_pearcel_staff = new ItemDragonPearcelStaff(matToolPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setRegistryName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pcp = new ItemPCP().setUnlocalizedName("pcp").setRegistryName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setRegistryName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setRegistryName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -228,7 +228,7 @@ public class ModItems {
         GameRegistry.register(pearcel_leggings);
         GameRegistry.register(pearcel_boots);
         GameRegistry.register(pearcel_staff);
-        GameRegistry.register(dragon_pearcel_staff);
+        GameRegistry.register(guardian_pearcel_staff);
         GameRegistry.register(pcp);
         GameRegistry.register(ender_pearcel);
         GameRegistry.register(pearcel_bow);
@@ -308,7 +308,7 @@ public class ModItems {
         registerRender(pearcel_leggings);
         registerRender(pearcel_boots);
         //registerRender(pearcel_staff);
-        registerRender(dragon_pearcel_staff);
+        //registerRender(dragon_pearcel_staff);
         registerRender(pcp);
         registerRender(ender_pearcel);
         registerRender(pearcel_bow);

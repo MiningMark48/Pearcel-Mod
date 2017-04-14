@@ -24,6 +24,7 @@ public class ClientProxy extends CommonProxy{
         OBJLoader.INSTANCE.addDomain(Reference.MOD_ID);
 
         registerModel(ModItems.pearcel_staff);
+        registerModel(ModItems.guardian_pearcel_staff);
     }
 
     @Override
