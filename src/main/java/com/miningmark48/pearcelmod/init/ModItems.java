@@ -307,8 +307,6 @@ public class ModItems {
         registerRender(pearcel_chestplate);
         registerRender(pearcel_leggings);
         registerRender(pearcel_boots);
-        //registerRender(pearcel_staff);
-        //registerRender(dragon_pearcel_staff);
         registerRender(pcp);
         registerRender(ender_pearcel);
         registerRender(pearcel_bow);
@@ -342,7 +340,7 @@ public class ModItems {
         registerRender(throw_pearcel_entity_firework);
         registerRender(throw_pearcel_entity_mount);
 
-        ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
+        //ModelBakery.registerItemVariants(pearcel_bow, new ResourceLocation[]{new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_1", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_2", "inventory"), new ModelResourceLocation(Reference.MOD_ID + ":pearcel_bow_pulling_3", "inventory")});
     }
 
 
