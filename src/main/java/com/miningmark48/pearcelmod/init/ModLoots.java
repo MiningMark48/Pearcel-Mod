@@ -6,7 +6,7 @@ import net.minecraft.world.storage.loot.LootTableList;
 public class ModLoots {
 
     public static void init(){
-        LootTableList.register(EntityPearcelBoss.loot_tabel);
+        LootTableList.register(EntityPearcelBoss.loot_table);
     }
 
 }

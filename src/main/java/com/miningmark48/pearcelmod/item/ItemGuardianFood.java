@@ -49,11 +49,11 @@ public class ItemGuardianFood extends ItemPearcelFood{
         if (!world.isRemote) {
             EntityPearcelBoss pb = new EntityPearcelBoss(world);
             pb.setPosition(x, y + num, z);
-            world.spawnEntityInWorld(new EntityLightningBolt(world, x, y, z, true));
-            world.spawnEntityInWorld(pb);
+            world.spawnEntity(new EntityLightningBolt(world, x, y, z, true));
+            world.spawnEntity(pb);
 
             for (EntityPlayer e : players) {
-                e.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.guardian_food.summoned")));
+                e.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.guardian_food.summoned")));
             }
         }
 

@@ -58,7 +58,7 @@ public class KeyHandler{
             //PCP GUI
             if (item_pcp.isPressed()){
                 if (player.inventory.hasItemStack(new ItemStack(ModItems.pcp))){
-                    player.addChatComponentMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
+                    player.sendMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
                     //player.openGui(PearcelMod.instance, GUIs.gui_id_pcp, world, x, y, z);
 
                 }
@@ -66,7 +66,7 @@ public class KeyHandler{
             //PEPC GUI
             if (item_pepc.isPressed()){
                 if (player.inventory.hasItemStack(new ItemStack(ModItems.pepc))) {
-                    player.addChatComponentMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
+                    player.sendMessage(new TextComponentString("This is a WIP, Coming Soon™!"));
                     //player.displayGUIChest(player.getInventoryEnderChest());
                 }
             }

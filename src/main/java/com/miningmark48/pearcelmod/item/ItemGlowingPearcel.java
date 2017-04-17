@@ -33,7 +33,7 @@ public class ItemGlowingPearcel extends ItemPearcelFood{
 
         int range = ConfigurationHandler.glowingPearcelRange;
 
-        List<EntityLiving> items = entityLiving.worldObj.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+        List<EntityLiving> items = entityLiving.world.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
         for (EntityLiving e: items){
             e.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 1500, 0));
         }

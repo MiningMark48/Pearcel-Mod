@@ -38,7 +38,7 @@ public class EventOnPlayerAttack {
                                     Random rand = new Random();
                                     int num = rand.nextInt(2) + 1;
                                     for (int i = 0; i <= num; i++) {
-                                        player.getEntityWorld().spawnEntityInWorld(item);
+                                        player.getEntityWorld().spawnEntity(item);
                                     }
                                 }
                             }

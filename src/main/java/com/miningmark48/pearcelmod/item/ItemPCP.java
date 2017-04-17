@@ -35,7 +35,7 @@ public class ItemPCP extends ItemPearcelMod{
     public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
     {
         if (!player.isSneaking()){
-            player.openGui(PearcelMod.instance, GUIs.gui_id_pcp, player.worldObj, (int) player.posX, (int) player.posY, (int) player.posZ);
+            player.openGui(PearcelMod.instance, GUIs.gui_id_pcp, player.world, (int) player.posX, (int) player.posY, (int) player.posZ);
             return new ActionResult(EnumActionResult.PASS, stack);
         }else{
             return new ActionResult(EnumActionResult.PASS, stack);

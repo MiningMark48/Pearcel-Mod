@@ -26,8 +26,8 @@ public class TileEntityPedestal extends TileEntity implements ITickable{
         float pullSpeed = ConfigurationHandler.pearcelMagnetPullSpeed;
 
         if(world.getBlockState(pos.up()).getBlock().equals(ModBlocks.ender_pearcel_block)) {
-            List<EntityItem> items = worldObj.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
-            List<EntityXPOrb> xp = worldObj.getEntitiesWithinAABB(EntityXPOrb.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            List<EntityItem> items = world.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            List<EntityXPOrb> xp = world.getEntitiesWithinAABB(EntityXPOrb.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
             for (EntityItem e : items) {
                 e.addVelocity((x - e.posX + 0.5) * pullSpeed, (y - e.posY + 0.5) * pullSpeed, (z - e.posZ + 0.5) * pullSpeed); //Attracts
                 if (ConfigurationHandler.pearcelMagnetParticles) {

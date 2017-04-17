@@ -108,85 +108,85 @@ public class BlockSummoner extends BlockPearcelMod{
                 if (!world.isRemote) {
                     //Missing Block
                     if (world.getBlockState(pos.up()).getBlock() == Blocks.AIR) {
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.missingBlock")));
+                        player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.missingBlock")));
                         if (world.isRemote) {
-                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
+                            world.spawnEntity(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
                         }
                     }//Dragon
                     else if (isCorrectSetup(pos, world, Blocks.DRAGON_EGG, Blocks.DIAMOND_BLOCK)) {
                         if(player.dimension == 1) {
                             setTainted(pos, world);
-                            world.spawnEntityInWorld(dragon);
-                            player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.dragon") + " " + Translate.toLocal("summoner.summoned")));
+                            world.spawnEntity(dragon);
+                            player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.dragon") + " " + Translate.toLocal("summoner.summoned")));
                         }else{
-                            player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.wrongDimension")));
+                            player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.wrongDimension")));
                         }
                     }//Wither
                     else if (isCorrectSetup(pos, world, Blocks.SKULL, Blocks.DIAMOND_BLOCK)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(wither);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.wither") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(wither);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.wither") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Sheep
                     else if (isCorrectSetup(pos, world, Blocks.WOOL, Blocks.WOOL)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(sheep);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.sheep") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(sheep);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.sheep") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Enderman
                     else if (isCorrectSetup(pos, world, Blocks.END_STONE, Blocks.END_STONE)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(enderman);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.enderman") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(enderman);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.enderman") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Blaze
                     else if (isCorrectSetup(pos, world, Blocks.GRAVEL, Blocks.NETHERRACK)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(blaze);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.blaze") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(blaze);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.blaze") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Ghast
                     else if (isCorrectSetup(pos, world, Blocks.COBBLESTONE, Blocks.SOUL_SAND)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(ghast);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.ghast") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(ghast);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.ghast") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Skeleton
                     else if (isCorrectSetup(pos, world, Blocks.PLANKS, Blocks.SAND)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(skeleton);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.skeleton") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(skeleton);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.skeleton") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Creeper
                     else if (isCorrectSetup(pos, world, Blocks.TNT, Blocks.TNT)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(creeper);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.creeper") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(creeper);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.creeper") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Horse
                     else if (isCorrectSetup(pos, world, Blocks.HAY_BLOCK, Blocks.HAY_BLOCK)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(horse);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.horse") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(horse);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.horse") + " " + Translate.toLocal("summoner.summoned")));
                     }
                     //Iron Golem
                     else if (isCorrectSetup(pos, world, Blocks.IRON_BLOCK, Blocks.IRON_BLOCK)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(iron_golem);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.iron_golem") + " " +Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(iron_golem);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.iron_golem") + " " +Translate.toLocal("summoner.summoned")));
                     }
                     //Villager
                     else if (isCorrectSetup(pos, world, Blocks.EMERALD_BLOCK, Blocks.SKULL)) {
                         setTainted(pos, world);
-                        world.spawnEntityInWorld(villager);
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.villager") + " " + Translate.toLocal("summoner.summoned")));
+                        world.spawnEntity(villager);
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.villager") + " " + Translate.toLocal("summoner.summoned")));
                     }else {
                         if (!world.isRemote) {
                             setTainted(pos, world);
-                            player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.incorrectBlock")));
+                            player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.incorrectBlock")));
                         }
                         if (world.isRemote) {
-                            world.spawnEntityInWorld(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
+                            world.spawnEntity(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
                         }
                     }
                 }
@@ -199,7 +199,7 @@ public class BlockSummoner extends BlockPearcelMod{
 
             } else {
                 if (!world.isRemote) {
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.incorrectItem")));
+                    player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.incorrectItem")));
                 }
             }
         }

@@ -1,19 +1,11 @@
 package com.miningmark48.pearcelmod.item;
 
-import baubles.api.BaubleType;
-import baubles.api.IBauble;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.*;
-import net.minecraft.entity.ai.EntityAIAttackMelee;
-import net.minecraft.entity.ai.EntityAIAttackRangedBow;
-import net.minecraft.entity.ai.EntityAITasks;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;
@@ -34,7 +26,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
-public class ItemCharmedPearcel extends ItemPearcelMod implements IBauble{
+public class ItemCharmedPearcel extends ItemPearcelMod{
 
     public ItemCharmedPearcel(){
         setMaxStackSize(1);
@@ -211,10 +203,10 @@ public class ItemCharmedPearcel extends ItemPearcelMod implements IBauble{
             int y = (int) player.posY;
             int z = (int) player.posZ;
             int range = 15;
-            List<EntityCreature> creatureList = player.worldObj.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            List<EntityCreature> creatureList = player.world.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
             for (EntityCreature creature : creatureList){
                 if (creature.isCreatureType(EnumCreatureType.MONSTER, false)) {
-                    List<EntityCreature> creatureList2 = creature.worldObj.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+                    List<EntityCreature> creatureList2 = creature.world.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
                     for (EntityCreature creature2 : creatureList2) {
                         creature.setAttackTarget(creature2);
                     }
@@ -226,7 +218,7 @@ public class ItemCharmedPearcel extends ItemPearcelMod implements IBauble{
             int y = (int) player.posY;
             int z = (int) player.posZ;
             int range = 15;
-            List<EntityLiving> entities = player.worldObj.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            List<EntityLiving> entities = player.world.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
             for (EntityLiving e : entities){
                 e.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 25, 0, true, false));
             }
@@ -244,31 +236,14 @@ public class ItemCharmedPearcel extends ItemPearcelMod implements IBauble{
         if (player.isSneaking() && !world.isRemote) {
             if (!stack.getTagCompound().getBoolean("active")) {
                 stack.getTagCompound().setBoolean("active", true);
-                player.addChatComponentMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
+                player.sendMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
             } else {
                 stack.getTagCompound().setBoolean("active", false);
-                player.addChatComponentMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
+                player.sendMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
             }
         }
 
         return new ActionResult(EnumActionResult.SUCCESS, stack);
     }
 
-    @Override
-    public BaubleType getBaubleType(ItemStack itemstack) {
-        return BaubleType.CHARM;
-    }
-
-    @Override
-    public void onWornTick(ItemStack itemstack, EntityLivingBase entity) {
-        if (itemstack.hasTagCompound()){
-            if (entity instanceof EntityPlayer){
-                EntityPlayer player = (EntityPlayer) entity;
-                player.stepHeight = 0.6F;
-                if (itemstack.getTagCompound().getBoolean("active")) {
-                    doEffects(player, itemstack);
-                }
-            }
-        }
-    }
 }

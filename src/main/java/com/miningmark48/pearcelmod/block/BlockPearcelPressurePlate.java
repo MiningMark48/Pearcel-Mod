@@ -56,7 +56,7 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
                     EntityItem entityItem = new EntityItem(worldIn);
                     entityItem.setEntityItemStack(new ItemStack(mode_items_item));
                     entityItem.setPosition(playerIn.posX + 0.5D, playerIn.posY + 0.5D, playerIn.posZ + 0.5D);
-                    worldIn.spawnEntityInWorld(entityItem);
+                    worldIn.spawnEntity(entityItem);
                 }
             }
         }
@@ -74,7 +74,7 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
                 mode_entity.setEntityItemStack(new ItemStack(mode_items_item));
                 mode_entity.setPosition(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D);
                 if (!worldIn.isRemote) {
-                    worldIn.spawnEntityInWorld(mode_entity);
+                    worldIn.spawnEntity(mode_entity);
                 }
             }
         }

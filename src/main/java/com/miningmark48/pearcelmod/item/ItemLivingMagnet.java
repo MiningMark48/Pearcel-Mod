@@ -1,7 +1,5 @@
 package com.miningmark48.pearcelmod.item;
 
-import baubles.api.BaubleType;
-import baubles.api.IBauble;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
@@ -22,7 +20,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemLivingMagnet extends ItemPearcelMod implements IBauble{
+public class ItemLivingMagnet extends ItemPearcelMod{
 
     public ItemLivingMagnet(){
         setMaxStackSize(1);
@@ -58,18 +56,18 @@ public class ItemLivingMagnet extends ItemPearcelMod implements IBauble{
             if(!player.isSneaking()) {
                 if (stack.getTagCompound().getBoolean("enabled")) {
                     stack.getTagCompound().setBoolean("enabled", false);
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("chat.item.living_magnet.disabled")));
+                    player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("chat.item.living_magnet.disabled")));
                 } else {
                     stack.getTagCompound().setBoolean("enabled", true);
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.living_magnet.enabled")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.living_magnet.enabled")));
                 }
             }else{
                 if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
                     stack.getTagCompound().setString("mode", "Repels");
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("chat.item.living_magnet.repels")));
+                    player.sendMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("chat.item.living_magnet.repels")));
                 } else {
                     stack.getTagCompound().setString("mode", "Attracts");
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.living_magnet.attracts")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.living_magnet.attracts")));
                 }
             }
         }
@@ -101,7 +99,7 @@ public class ItemLivingMagnet extends ItemPearcelMod implements IBauble{
                 double y = player.posY;
                 double z = player.posZ;
 
-                List<EntityLiving> entities = entity.worldObj.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+                List<EntityLiving> entities = entity.world.getEntitiesWithinAABB(EntityLiving.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
                 for (EntityLiving e: entities){
                     if (!player.isSneaking()){
 
@@ -120,16 +118,6 @@ public class ItemLivingMagnet extends ItemPearcelMod implements IBauble{
             }
 
         }
-    }
-
-    @Override
-    public BaubleType getBaubleType(ItemStack itemstack) {
-        return BaubleType.RING;
-    }
-
-    @Override
-    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-        doUpdate(itemstack, player.getEntityWorld(), player);
     }
 
 }

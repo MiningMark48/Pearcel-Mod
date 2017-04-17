@@ -52,8 +52,8 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
             }
 
 
-            List<EntityPlayer> players = worldObj.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
-            List<EntityCreature> mobs = worldObj.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            List<EntityPlayer> players = world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
+            List<EntityCreature> mobs = world.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 
             for (EntityPlayer e : players) {
                 e.addPotionEffect(new PotionEffect(MobEffects.SPEED, 200, 1, true, false));

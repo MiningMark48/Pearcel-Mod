@@ -81,10 +81,5 @@ public class BlockPearcelLamp extends Block{
         return new ItemStack(ModBlocks.pearcel_lamp);
     }
 
-    @Override
-    protected ItemStack createStackedBlock(IBlockState state)
-    {
-        return new ItemStack(ModBlocks.pearcel_lamp);
-    }
 
 }

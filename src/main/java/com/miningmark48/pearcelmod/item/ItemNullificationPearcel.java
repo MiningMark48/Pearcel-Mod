@@ -51,7 +51,7 @@ public class ItemNullificationPearcel extends ItemPearcelMod{
                 stack.setTagCompound(new NBTTagCompound());
             }
             stack.getTagCompound().setString("nullBlock", worldIn.getBlockState(pos).getBlock().toString());
-            playerIn.addChatComponentMessage(new TextComponentString(Translate.toLocal("chat.item.nullification_pearcel.set") + " " + TextFormatting.GOLD + new ItemStack(worldIn.getBlockState(pos).getBlock()).getDisplayName()));
+            playerIn.sendMessage(new TextComponentString(Translate.toLocal("chat.item.nullification_pearcel.set") + " " + TextFormatting.GOLD + new ItemStack(worldIn.getBlockState(pos).getBlock()).getDisplayName()));
         }
         return EnumActionResult.SUCCESS;
     }

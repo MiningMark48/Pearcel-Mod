@@ -77,7 +77,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
             stack.getTagCompound().setFloat("pitch", player.rotationPitch);
             stack.getTagCompound().setBoolean("set", true);
             if(!world.isRemote) {
-                player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.DARK_GREEN + (Translate.toLocal("chat.tpPearcel.location.set"))));
+                player.sendMessage(new TextComponentTranslation(TextFormatting.DARK_GREEN + (Translate.toLocal("chat.tpPearcel.location.set"))));
             }
         }else{
             tpX = stack.getTagCompound().getDouble("tpX");
@@ -88,7 +88,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
             pitch = stack.getTagCompound().getFloat("pitch");
             if (!stack.getTagCompound().getBoolean("set")) {
                 if (!world.isRemote) {
-                    player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.location.notSet"))));
+                    player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.location.notSet"))));
                 }
             } else {
                 if (player.dimension == dim) {
@@ -96,7 +96,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
                     player.setLocationAndAngles(tpX, tpY, tpZ, yaw, pitch);
                     player.addStat(Achievements.achievement_use_tp_pearcel);
                     if (!world.isRemote) {
-                        player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.tpPearcel.tp"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.tpPearcel.tp"))));
                     }
                     if (!player.capabilities.isCreativeMode) {
                         if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_item))) {
@@ -107,7 +107,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
                     }
                 }else{
                     if(!world.isRemote){
-                        player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.wrongDim"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.wrongDim"))));
                     }
                 }
             }

@@ -49,14 +49,14 @@ public class ItemPearcelArrow extends ItemPearcelMod{
                 player.inventory.clearMatchingItems(infItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.inf")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.inf")));
                 }
             } else {
                 stack.getTagCompound().setBoolean("inf", true);
                 player.inventory.clearMatchingItems(infItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.inf")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.inf")));
                 }
             }
 
@@ -68,14 +68,14 @@ public class ItemPearcelArrow extends ItemPearcelMod{
                 player.inventory.clearMatchingItems(powItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.pow")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.pow")));
                 }
             } else {
                 stack.getTagCompound().setBoolean("pow", true);
                 player.inventory.clearMatchingItems(powItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.pow")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.pow")));
                 }
             }
 
@@ -87,14 +87,14 @@ public class ItemPearcelArrow extends ItemPearcelMod{
                 player.inventory.clearMatchingItems(knockItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.knock")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.knock")));
                 }
             } else {
                 stack.getTagCompound().setBoolean("knock", true);
                 player.inventory.clearMatchingItems(knockItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.knock")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.knock")));
                 }
             }
 
@@ -106,14 +106,14 @@ public class ItemPearcelArrow extends ItemPearcelMod{
                 player.inventory.clearMatchingItems(zoomItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.zoom")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.zoom")));
                 }
             } else {
                 stack.getTagCompound().setBoolean("zoom", true);
                 player.inventory.clearMatchingItems(zoomItem.getItem(), 0, 1, null);
                 player.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 2.0F, rand.nextFloat() * 2.5F);
                 if(!world.isRemote){
-                    player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.zoom")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.pearcel_arrow.upgraded.zoom")));
                 }
             }
 

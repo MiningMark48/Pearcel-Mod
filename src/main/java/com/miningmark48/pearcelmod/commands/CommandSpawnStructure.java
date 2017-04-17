@@ -38,17 +38,19 @@ public class CommandSpawnStructure extends CommandBase{
     }
 
     @Override
-    public String getCommandName() {
+    public String getName() {
         return String.format("%s_structure", prefix);
     }
 
+
+
     @Override
-    public String getCommandUsage(ICommandSender sender) {
+    public String getUsage(ICommandSender sender) {
         return String.format("%s_structure <arg-int>", prefix);
     }
 
     @Override
-    public List<String> getCommandAliases() {
+    public List<String> getAliases() {
         return this.aliases;
     }
 
@@ -58,7 +60,7 @@ public class CommandSpawnStructure extends CommandBase{
 
         if (!world.isRemote){
             if (args.length == 0){
-                sender.addChatMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.no_args")));
+                sender.sendMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.no_args")));
                 return;
             }
 
@@ -80,9 +82,9 @@ public class CommandSpawnStructure extends CommandBase{
                         StructureGenPearcel3.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
                         break;
                 }
-                sender.addChatMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("command.spawn_structure.spawned")));
+                sender.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("command.spawn_structure.spawned")));
             }catch (NumberFormatException e){
-                sender.addChatMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.invalid")));
+                sender.sendMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.invalid")));
             }
 
         }
@@ -94,7 +96,7 @@ public class CommandSpawnStructure extends CommandBase{
     }
 
     @Override
-    public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos) {
+    public List<String> getTabCompletions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos) {
         return structures;
     }
 

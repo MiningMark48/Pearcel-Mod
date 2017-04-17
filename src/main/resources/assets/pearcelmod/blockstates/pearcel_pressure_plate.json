@@ -1,8 +1,28 @@
 {
     "variants": {
-        "mode_items=false,mode_players=true,powered=false": { "model": "pearcelmod:pearcel_pressure_plate_up" },
-        "mode_items=false,mode_players=true,powered=true": { "model": "pearcelmod:pearcel_pressure_plate_down" },
-        "mode_items=true,mode_players=false,powered=false": { "model": "pearcelmod:pearcel_pressure_plate_up_items" },
-        "mode_items=true,mode_players=false,powered=true": { "model": "pearcelmod:pearcel_pressure_plate_down_items" }
+        "mode_items=false,mode_players=true,powered=false": {
+            "model": "pearcelmod:pearcel_pressure_plate_up"
+        },
+        "mode_items=false,mode_players=true,powered=true": {
+            "model": "pearcelmod:pearcel_pressure_plate_down"
+        },
+        "mode_items=true,mode_players=false,powered=false": {
+            "model": "pearcelmod:pearcel_pressure_plate_up_items"
+        },
+        "mode_items=true,mode_players=false,powered=true": {
+            "model": "pearcelmod:pearcel_pressure_plate_down_items"
+        },
+        "mode_items=true,mode_players=true,powered=true": {
+            "model": "pearcelmod:pearcel_pressure_plate_up"
+        },
+        "mode_items=true,mode_players=ture,powered=false": {
+            "model": "pearcelmod:pearcel_pressure_plate_up"
+        },
+        "mode_items=false,mode_players=false,powered=true": {
+            "model": "pearcelmod:pearcel_pressure_plate_up"
+        },
+        "mode_items=false,mode_players=false,powered=false": {
+            "model": "pearcelmod:pearcel_pressure_plate_up"
+        }
     }
 }

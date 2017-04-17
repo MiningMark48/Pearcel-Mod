@@ -138,9 +138,9 @@ public class BlockTorcher extends BlockPearcelMod{
             }
             player.playSound(SoundEvents.ENTITY_GENERIC_EXPLODE, 1.0F, 0.5F);
             world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, pos.getX(), pos.getY(), pos.getZ(), 1.0D, 0.0D, 0.0D);
-            world.spawnEntityInWorld(new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ(), true));
+            world.spawnEntity(new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ(), true));
             if (!world.isRemote){
-                player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.torcher.lit")));
+                player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.torcher.lit")));
             }
 
             return true;

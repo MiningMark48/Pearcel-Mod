@@ -43,7 +43,7 @@ public class ItemThrowPearcel extends ItemSnowball{
     public void launchThrowball(World world, EntityPlayer player) {
         EntityThrowPearcel entity = new EntityThrowPearcel(world, player, type);
         entity.setHeadingFromThrower(player, player.rotationPitch, player.rotationYaw, 0.0F, 2.1F, 0.5F);
-        world.spawnEntityInWorld(entity);
+        world.spawnEntity(entity);
     }
 
     public enum TYPE{

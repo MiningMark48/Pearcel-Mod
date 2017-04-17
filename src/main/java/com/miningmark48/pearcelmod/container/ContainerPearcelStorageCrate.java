@@ -92,7 +92,7 @@ public class ContainerPearcelStorageCrate extends Container {
 
     @Override
     public boolean canInteractWith(EntityPlayer playerIn) {
-        return te.isUseableByPlayer(playerIn);
+        return te.isUsableByPlayer(playerIn);
     }
 
     @Override

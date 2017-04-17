@@ -47,7 +47,7 @@ public class EntityEnderPearcel extends EntityEnderPearl{
 
         if(result.typeOfHit == RayTraceResult.Type.BLOCK) {
             BlockPos entityplayermp = result.getBlockPos();
-            TileEntity event = this.worldObj.getTileEntity(entityplayermp);
+            TileEntity event = this.world.getTileEntity(entityplayermp);
             if(event instanceof TileEntityEndGateway) {
                 TileEntityEndGateway var9 = (TileEntityEndGateway)event;
                 if(entitylivingbase != null) {
@@ -62,20 +62,20 @@ public class EntityEnderPearcel extends EntityEnderPearl{
         }
 
         for(int var6 = 0; var6 < 32; ++var6) {
-            this.worldObj.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, this.posX, this.posY + this.rand.nextDouble() * 2.0D, this.posZ, this.rand.nextGaussian(), 0.0D, this.rand.nextGaussian(), new int[0]);
+            this.world.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, this.posX, this.posY + this.rand.nextDouble() * 2.0D, this.posZ, this.rand.nextGaussian(), 0.0D, this.rand.nextGaussian(), new int[0]);
         }
 
-        if(!this.worldObj.isRemote) {
+        if(!this.world.isRemote) {
             if(entitylivingbase instanceof EntityPlayerMP) {
                 EntityPlayerMP var7 = (EntityPlayerMP)entitylivingbase;
-                if(var7.connection.getNetworkManager().isChannelOpen() && var7.worldObj == this.worldObj && !var7.isPlayerSleeping()) {
+                if(var7.connection.getNetworkManager().isChannelOpen() && var7.world == this.world && !var7.isPlayerSleeping()) {
                     EnderTeleportEvent var8 = new EnderTeleportEvent(var7, this.posX, this.posY, this.posZ, 5.0F);
                     if(!MinecraftForge.EVENT_BUS.post(var8)) {
-                        if(this.rand.nextFloat() < 0.05F && this.worldObj.getGameRules().getBoolean("doMobSpawning")) {
-                            EntityEndermite entityendermite = new EntityEndermite(this.worldObj);
+                        if(this.rand.nextFloat() < 0.05F && this.world.getGameRules().getBoolean("doMobSpawning")) {
+                            EntityEndermite entityendermite = new EntityEndermite(this.world);
                             entityendermite.setSpawnedByPlayer(true);
                             entityendermite.setLocationAndAngles(entitylivingbase.posX, entitylivingbase.posY, entitylivingbase.posZ, entitylivingbase.rotationYaw, entitylivingbase.rotationPitch);
-                            this.worldObj.spawnEntityInWorld(entityendermite);
+                            this.world.spawnEntity(entityendermite);
                         }
 
                         if(entitylivingbase.isRiding()) {

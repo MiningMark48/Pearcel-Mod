@@ -66,12 +66,12 @@ public class ItemMatterFabricator extends ItemPickaxe{
                 if (item.getTagCompound().getInteger("mode") == 1){
                     item.getTagCompound().setInteger("mode", 2);
                     if (!world.isRemote) {
-                        player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.mf.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.mf.modeChange"))));
                     }
                 }else{
                     item.getTagCompound().setInteger("mode", 1);
                     if (!world.isRemote) {
-                        player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.mf.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.mf.modeChange"))));
                     }
                 }
             }

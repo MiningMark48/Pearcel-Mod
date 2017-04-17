@@ -50,7 +50,7 @@ public class ItemEnderPearcel extends ItemPearcelMod{
         if (!world.isRemote) {
             EntityEnderPearcel pearl = new EntityEnderPearcel(world, player);
             pearl.setHeadingFromThrower(player, player.rotationPitch, player.rotationYaw, 0.0F, velocity, 0.0F);
-            world.spawnEntityInWorld(pearl);
+            world.spawnEntity(pearl);
         }
 
         return new ActionResult(EnumActionResult.SUCCESS, stack);

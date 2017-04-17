@@ -60,7 +60,7 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
 
     private void doExplosion(float strength){
         if (!getEntityWorld().isRemote){
-            worldObj.createExplosion(null, posX, posY, posZ, strength, true);
+            world.createExplosion(null, posX, posY, posZ, strength, true);
         }
     }
 

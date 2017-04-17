@@ -71,7 +71,7 @@ public class ItemSlimeyPearcel extends ItemPearcelMod{
         }
 
         if (!worldIn.isRemote) {
-            if (WorldTools.isSlimeChunk(worldIn, MathHelper.floor_double(entityIn.posX), MathHelper.floor_double(entityIn.posZ))) {
+            if (WorldTools.isSlimeChunk(worldIn, MathHelper.floor(entityIn.posX), MathHelper.floor(entityIn.posZ))) {
                 stack.getTagCompound().setBoolean("isChunk", true);
                 stack.getTagCompound().setBoolean("playSound", false);
             } else {

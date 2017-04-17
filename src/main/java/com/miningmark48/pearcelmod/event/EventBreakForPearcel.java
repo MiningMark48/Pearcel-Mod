@@ -43,7 +43,7 @@ public class EventBreakForPearcel {
                 }
 
                 if (r == 1){
-                    world.spawnEntityInWorld(entityItem);
+                    world.spawnEntity(entityItem);
                 }
             }
         }

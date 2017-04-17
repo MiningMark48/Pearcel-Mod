@@ -24,7 +24,7 @@ public class EventOnHurt {
                     player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ModItems.sacrificial_pearcel)));
 
                     if (!player.getEntityWorld().isRemote){
-                        player.addChatComponentMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.event.onDie.1")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.event.onDie.1")));
                     }
 
                     player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 60, 0));

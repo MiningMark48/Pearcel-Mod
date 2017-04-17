@@ -76,12 +76,12 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
                 if (item.getTagCompound().getInteger("mode") == 1){
                     item.getTagCompound().setInteger("mode", 2);
                     if (!world.isRemote) {
-                        player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.pbp.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.pbp.modeChange"))));
                     }
                 }else{
                     item.getTagCompound().setInteger("mode", 1);
                     if (!world.isRemote) {
-                        player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.pbp.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.pbp.modeChange"))));
                     }
                 }
             }

@@ -1,9 +1,5 @@
 package com.miningmark48.pearcelmod.item;
 
-import baubles.api.BaubleType;
-import baubles.api.IBauble;
-import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.inventory.InventoryBindle;
 import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -26,7 +22,7 @@ import net.minecraftforge.common.util.Constants;
 
 import java.util.List;
 
-public class ItemCharmBag extends ItemPearcelMod implements IBauble{
+public class ItemCharmBag extends ItemPearcelMod{
 
     public ItemCharmBag(){
         setMaxStackSize(1);
@@ -81,10 +77,10 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
 
             if (!world.isRemote) {
                 if (stack.getTagCompound().getBoolean("active")) {
-                    player.addChatComponentMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
+                    player.sendMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
                     stack.getTagCompound().setBoolean("active", false);
                 } else {
-                    player.addChatComponentMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
+                    player.sendMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
                     stack.getTagCompound().setBoolean("active", true);
                 }
             }
@@ -124,15 +120,5 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
 
 
         }
-    }
-
-    @Override
-    public BaubleType getBaubleType(ItemStack itemstack) {
-        return BaubleType.BODY;
-    }
-
-    @Override
-    public void onWornTick(ItemStack stack, EntityLivingBase entityIn) {
-        doUpdate(stack, entityIn);
     }
 }

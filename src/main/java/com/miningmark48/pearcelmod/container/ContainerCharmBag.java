@@ -36,7 +36,7 @@ public class ContainerCharmBag extends Container {
 
     @Override
     public boolean canInteractWith(EntityPlayer playerIn) {
-        return inventory.isUseableByPlayer(playerIn);
+        return inventory.isUsableByPlayer(playerIn);
     }
 
     @Override

@@ -163,7 +163,7 @@ public class ItemPearcelBow extends ItemBow{
 
                     }
 
-                    world.spawnEntityInWorld(entityarrow);
+                    world.spawnEntity(entityarrow);
                     zoomOut();
                     entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
 

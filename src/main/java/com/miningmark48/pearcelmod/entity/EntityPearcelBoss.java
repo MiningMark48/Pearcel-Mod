@@ -31,7 +31,7 @@ public class EntityPearcelBoss extends EntityMob{
 
     private final BossInfoServer bossInfo = (BossInfoServer)(new BossInfoServer(this.getDisplayName(), BossInfo.Color.GREEN, BossInfo.Overlay.PROGRESS)).setDarkenSky(true);
 
-    public static ResourceLocation loot_tabel = new ResourceLocation(Reference.MOD_ID, "loot_tables/pearcel_boss");
+    public static ResourceLocation loot_table = new ResourceLocation(Reference.MOD_ID, "loot_tables/pearcel_boss.json");
 
     public EntityPearcelBoss(World world) {
         super(world);
@@ -49,9 +49,9 @@ public class EntityPearcelBoss extends EntityMob{
             entityitem.setNoDespawn();
         }
 
-        if (!this.worldObj.isRemote)
+        if (!this.world.isRemote)
         {
-            for (EntityPlayer entityplayer : this.worldObj.getEntitiesWithinAABB(EntityPlayer.class, this.getEntityBoundingBox().expand(50.0D, 100.0D, 50.0D)))
+            for (EntityPlayer entityplayer : this.world.getEntitiesWithinAABB(EntityPlayer.class, this.getEntityBoundingBox().expand(50.0D, 100.0D, 50.0D)))
             {
                 //entityplayer.addStat(AchievementList.KILL_WITHER);
             }
@@ -173,7 +173,7 @@ public class EntityPearcelBoss extends EntityMob{
                     if (this.rand.nextFloat() < f1)
                     {
                         entityplayer.getCooldownTracker().setCooldown(Items.SHIELD, 100);
-                        this.worldObj.setEntityState(entityplayer, (byte)30);
+                        this.world.setEntityState(entityplayer, (byte)30);
                     }
                 }
 

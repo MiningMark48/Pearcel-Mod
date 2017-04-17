@@ -48,7 +48,7 @@ public class ItemPearcelStaff extends ItemPearcelSword{
                 player.addVelocity(0, 0.5, 0);
             }else{
                 if (!world.isRemote) {
-                    player.addChatComponentMessage(new TextComponentTranslation(TextFormatting.DARK_RED + Translate.toLocal("chat.pearcel_staff.weaken")));
+                    player.sendMessage(new TextComponentTranslation(TextFormatting.DARK_RED + Translate.toLocal("chat.pearcel_staff.weaken")));
                     item.damageItem(10, player);
                 }
             }
