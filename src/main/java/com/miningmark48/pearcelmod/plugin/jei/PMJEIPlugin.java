@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.Translate;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IModIngredientRegistration;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import java.util.*;
@@ -57,7 +58,8 @@ public class PMJEIPlugin implements IModPlugin{
         spikes.add(new ItemStack(ModBlocks.pearcel_spike_ender));
 
         //Blacklist
-        jeiHelpers.getItemBlacklist().addItemToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
+        //jeiHelpers.getItemBlacklist().addItemToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
+        jeiHelpers.getIngredientBlacklist().addIngredientToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
 
         //Descriptions
         registry.addDescription(new ItemStack(ModItems.pearcel_item), Translate.toLocal("desc.item.pearcel_item"));
