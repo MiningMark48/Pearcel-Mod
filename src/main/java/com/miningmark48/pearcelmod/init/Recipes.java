@@ -117,6 +117,7 @@ public class Recipes {
         ItemStack charmed_pearcel_repair = new ItemStack(ModItems.charmed_pearcel);
         ItemStack charmed_pearcel_physco = new ItemStack(ModItems.charmed_pearcel);
         ItemStack charmed_pearcel_third_eye = new ItemStack(ModItems.charmed_pearcel);
+        ItemStack charmed_pearcel_hearty = new ItemStack(ModItems.charmed_pearcel);
 
         if (!charmed_pearcel_fire.hasTagCompound())charmed_pearcel_fire.setTagCompound(new NBTTagCompound());
         if (!charmed_pearcel_water.hasTagCompound())charmed_pearcel_water.setTagCompound(new NBTTagCompound());
@@ -129,6 +130,7 @@ public class Recipes {
         if (!charmed_pearcel_repair.hasTagCompound()) charmed_pearcel_repair.setTagCompound(new NBTTagCompound());
         if (!charmed_pearcel_physco.hasTagCompound()) charmed_pearcel_physco.setTagCompound(new NBTTagCompound());
         if (!charmed_pearcel_third_eye.hasTagCompound()) charmed_pearcel_third_eye.setTagCompound(new NBTTagCompound());
+        if (!charmed_pearcel_hearty.hasTagCompound()) charmed_pearcel_hearty.setTagCompound(new NBTTagCompound());
 
         charmed_pearcel_fire.getTagCompound().setString("type", "fire");
         charmed_pearcel_water.getTagCompound().setString("type", "water");
@@ -141,6 +143,7 @@ public class Recipes {
         charmed_pearcel_repair.getTagCompound().setString("type", "repair");
         charmed_pearcel_physco.getTagCompound().setString("type", "physco");
         charmed_pearcel_third_eye.getTagCompound().setString("type", "third_eye");
+        charmed_pearcel_hearty.getTagCompound().setString("type", "hearty");
 
         GameRegistry.addShapelessRecipe(charmed_pearcel_fire, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.MAGMA_CREAM));
         GameRegistry.addShapelessRecipe(charmed_pearcel_water, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.WATER_BUCKET));
@@ -153,6 +156,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(charmed_pearcel_repair, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Blocks.ANVIL));
         GameRegistry.addShapelessRecipe(charmed_pearcel_physco, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.SKULL, 1, OreDictionary.WILDCARD_VALUE));
         GameRegistry.addShapelessRecipe(charmed_pearcel_third_eye, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.ENDER_EYE, 3));
+        GameRegistry.addShapelessRecipe(charmed_pearcel_hearty, new ItemStack(ModItems.charmed_pearcel), new ItemStack(ModItems.pearcel_matter), new ItemStack(Items.SPECKLED_MELON));
 
         //Blocks
         GameRegistry.addSmelting(new ItemStack(ModBlocks.pearcel_sand), new ItemStack(ModBlocks.pearcel_glass), 5F);
