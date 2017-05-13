@@ -93,7 +93,7 @@ public class ModItems {
     public static Item sacrificial_pearcel;
     public static Item pearcel_blood_dagger;
     public static Item pearcel_manual;
-    public static Item charmed_pearcel;
+    public static ItemCharmedPearcel charmed_pearcel;
     public static Item charm_bag;
     public static Item slimey_pearcel;
     public static Item throw_pearcel_explosive;
@@ -172,7 +172,7 @@ public class ModItems {
         sacrificial_pearcel = new ItemPearcelMod().setUnlocalizedName("sacrificial_pearcel").setRegistryName("sacrificial_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
         pearcel_blood_dagger = new ItemBloodSword(matToolPearcel).setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_manual = new ItemManual().setUnlocalizedName("pearcel_manual").setRegistryName("pearcel_manual").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        charmed_pearcel = new ItemCharmedPearcel().setUnlocalizedName("charmed_pearcel").setRegistryName("charmed_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        charmed_pearcel = (ItemCharmedPearcel) new ItemCharmedPearcel().setUnlocalizedName("charmed_pearcel").setRegistryName("charmed_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         charm_bag = new ItemCharmBag().setUnlocalizedName("charm_bag").setRegistryName("charm_bag").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         slimey_pearcel = new ItemSlimeyPearcel().setUnlocalizedName("slimey_pearcel").setRegistryName("slimey_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         throw_pearcel_explosive = new ItemThrowPearcel(ItemThrowPearcel.TYPE.EXPLOSIVE, 32).setUnlocalizedName("throw_pearcel_explosive").setRegistryName("throw_pearcel_explosive").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);

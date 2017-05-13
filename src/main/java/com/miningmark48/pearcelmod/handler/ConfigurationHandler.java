@@ -39,6 +39,21 @@ public class ConfigurationHandler {
     public static float enderPearcelVelocity;
     public static float rifPPickBaseHardness;
 
+    public static int rfStorage_charmedPearcel;
+    public static int rfTransferPerTick_charmedPeacel;
+    public static int rfPerTick_charmedPearcel_fire;
+    public static int rfPerTick_charmedPearcel_water;
+    public static int rfPerTick_charmedPearcel_saturation;
+    public static int rfPerTick_charmedPearcel_stepAssist;
+    public static int rfPerTick_charmedPearcel_gravity;
+    public static int rfPerTick_charmedPearcel_adrenaline;
+    public static int rfPerTick_charmedPearcel_cloaking;
+    public static int rfPerTick_charmedPearcel_hearty;
+    public static int rfPerTick_charmedPearcel_repair;
+    public static int rfPerTick_charmedPearcel_physco;
+    public static int rfPerTick_charmedPearcel_thirdEye;
+    public static int rfPerTick_charmedPearcel_fall;
+
     public static void init(File configFile){
 
         //Create the configuration object from the given configuration file
@@ -66,6 +81,7 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelMagnet.title"), Translate.toLocal("config.category.pearcelMagnet.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.pearcelBeacon.title"), Translate.toLocal("config.category.pearcelBeacon.desc"));
         configuration.addCustomCategoryComment(Translate.toLocal("config.category.structures.title"), Translate.toLocal("config.category.structures.desc"));
+        configuration.addCustomCategoryComment(Translate.toLocal("config.category.powerUsage.title"), Translate.toLocal("config.category.powerUsage.desc"));
         configuration.setCategoryRequiresWorldRestart(Translate.toLocal("config.category.structures.title"), true);
 
 
@@ -110,6 +126,21 @@ public class ConfigurationHandler {
         enableStructure2 = configuration.getBoolean(Translate.toLocal("config.enableStructure2.title"), Translate.toLocal("config.category.structures.title"), true, Translate.toLocal("config.enableStructure2.desc"));
         enableStructure3 = configuration.getBoolean(Translate.toLocal("config.enableStructure3.title"), Translate.toLocal("config.category.structures.title"), true, Translate.toLocal("config.enableStructure3.desc"));
 
+        //Power Usage
+        rfStorage_charmedPearcel = configuration.getInt(Translate.toLocal("config.rfStorage_charmedPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 2500000, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfTransferPerTick_charmedPeacel = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_charmedPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 1000, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_fire = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_fire.title"), Translate.toLocal("config.category.powerUsage.title"), 50, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_water = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_water.title"), Translate.toLocal("config.category.powerUsage.title"), 50, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_saturation = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_saturation.title"), Translate.toLocal("config.category.powerUsage.title"), 100, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_stepAssist = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_stepAssist.title"), Translate.toLocal("config.category.powerUsage.title"), 5, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_gravity = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_gravity.title"), Translate.toLocal("config.category.powerUsage.title"), 10, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_adrenaline = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_adrenaline.title"), Translate.toLocal("config.category.powerUsage.title"), 150, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_cloaking = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_cloaking.title"), Translate.toLocal("config.category.powerUsage.title"), 300, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_hearty = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_hearty.title"), Translate.toLocal("config.category.powerUsage.title"), 500, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_repair = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_repair.title"), Translate.toLocal("config.category.powerUsage.title"), 500, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_physco = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_physco.title"), Translate.toLocal("config.category.powerUsage.title"), 300, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_thirdEye = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_thirdEye.title"), Translate.toLocal("config.category.powerUsage.title"), 200, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfPerTick_charmedPearcel_fall = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_fall.title"), Translate.toLocal("config.category.powerUsage.title"), 20, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
 
         if (configuration.hasChanged()){
             configuration.save();

@@ -95,7 +95,7 @@ public class ItemCharmBag extends ItemPearcelMod{
         doUpdate(stack, entityIn);
     }
 
-    private void doUpdate(ItemStack stack, Entity entityIn){
+    private static void doUpdate(ItemStack stack, Entity entityIn){
         if (entityIn instanceof EntityPlayer){
             EntityPlayer player = (EntityPlayer) entityIn;
 

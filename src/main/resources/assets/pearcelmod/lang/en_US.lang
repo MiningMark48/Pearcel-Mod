@@ -382,6 +382,8 @@ config.category.pearcelBeacon.title=Ender Pearcel Effect Transmitter
 config.category.pearcelBeacon.desc=Configure how the EPET functions.
 config.category.structures.title=Structure Configs
 config.category.structures.desc=Configs for world generation structures.
+config.category.powerUsage.title=Power usage (RF)
+config.category.powerUsage.desc=Settings for RF usage.
 
 #Configuration Settings
 config.doWorldGen.title=Do World Gen?
@@ -442,6 +444,22 @@ config.enableStructure2.title=Enable Pearcel Tower
 config.enableStructure2.desc=If false, structure won't spawn.
 config.enableStructure3.title=Enable Pearcel Fountain
 config.enableStructure3.desc=If false, structure won't spawn.
+config.rfPerTick.desc=RF/T Amount
+config.rfStorage_charmedPearcel.title=CRF Storage - Charmed Pearcel
+config.rfTransferPerTick.title=RF/T Transfer Rate - Charmed Pearcel
+config.rfPerTick_charmedPearcel_fire.title=RF/T - Charmed Pearcel - Fire Resistance
+config.rfPerTick_charmedPearcel_water.title=RF/T - Charmed Pearcel - Water Breathing
+config.rfPerTick_charmedPearcel_saturation.title=RF/T - Charmed Pearcel - Saturation
+config.rfPerTick_charmedPearcel_stepAssist.title=RF/T - Charmed Pearcel - Step Assist
+config.rfPerTick_charmedPearcel_gravity.title=RF/T - Charmed Pearcel - Gravity
+config.rfPerTick_charmedPearcel_adrenaline.title=RF/T - Charmed Pearcel - Adrenaline
+config.rfPerTick_charmedPearcel_cloaking.title=RF/T - Charmed Pearcel - Cloaking
+config.rfPerTick_charmedPearcel_hearty.title=RF/T - Charmed Pearcel - Hearty
+config.rfPerTick_charmedPearcel_repair.title=RF/T - Charmed Pearcel - Repair
+config.rfPerTick_charmedPearcel_physco.title=RF/T - Charmed Pearcel - Physco
+config.rfPerTick_charmedPearcel_thirdEye.title=RF/T - Charmed Pearcel - Third Eye
+config.rfPerTick_charmedPearcel_fall.title=RF/T - Charmed Pearcel - Fall Resistance
+
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?
