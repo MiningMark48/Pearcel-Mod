@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import cofh.api.energy.ItemEnergyContainer;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
@@ -21,9 +22,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemPearcelMagnet extends ItemPearcelMod{
+public class ItemPearcelMagnet extends ItemEnergyContainer{
 
     public ItemPearcelMagnet(){
+        super(ConfigurationHandler.rfStorage_magnet, ConfigurationHandler.rfTransferPerTick_magnet);
         setMaxStackSize(1);
     }
 
@@ -39,6 +41,9 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
             list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pearcel_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
             list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + Translate.toLocal("tooltip.item.pearcel_magnet.line2.p2"));
             list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line3"));
+            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_magnet + " RF/T");
+            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
@@ -98,7 +103,7 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
         if(entity instanceof EntityPlayer){
             EntityPlayer player = (EntityPlayer) entity;
 
-            if (stack.getTagCompound().getBoolean("enabled")){
+            if (stack.getTagCompound().getBoolean("enabled") && hasEnoughEnergy(stack, ConfigurationHandler.rfPerTick_magnet, player)){
                 double x = player.posX;
                 double y = player.posY;
                 double z = player.posZ;
@@ -118,6 +123,8 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                             world.spawnParticle(EnumParticleTypes.SPELL_INSTANT, e.posX, e.posY + 0.3, e.posZ, 0.0D, 0.0D, 0.0D);
                         }
 
+                        useEnergy(stack, ConfigurationHandler.rfPerTick_magnet, false, player);
+
                     }
                 }
                 for (EntityXPOrb e: xp){
@@ -127,6 +134,9 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
                         }else {
                             e.addVelocity((e.posX - x) * pullSpeed, (e.posY - y) * pullSpeed, (e.posZ - z) * pullSpeed); //Repels
                         }
+
+                        useEnergy(stack, ConfigurationHandler.rfPerTick_magnet, false, player);
+
                     }
                 }
 
@@ -134,5 +144,25 @@ public class ItemPearcelMagnet extends ItemPearcelMod{
 
         }
     }
+
+    private static boolean hasEnoughEnergy(ItemStack stack, int energyPerUse, EntityPlayer player){
+        if (!player.isCreative()) {
+            ItemPearcelMagnet stack1 = new ItemPearcelMagnet();
+            if (energyPerUse <= stack1.getEnergyStored(stack)) {
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+
+    public static void useEnergy(ItemStack stack, int useAmount, boolean simulate, EntityPlayer player){
+        if (!player.isCreative()) {
+            ItemPearcelMagnet stack1 = new ItemPearcelMagnet();
+            stack1.extractEnergy(stack, useAmount, simulate);
+        }
+    }
+
 
 }

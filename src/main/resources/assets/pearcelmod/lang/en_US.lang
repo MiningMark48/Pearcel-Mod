@@ -133,6 +133,8 @@ entity.pearcelmod.pearcel_boss.name=Pearcel Guardian
 #Tooltips
 tooltip.item.hold=Hold
 tooltip.item.shift=Shift
+tooltip.item.rf=RF:
+tooltip.item.rfUse=Uses
 tooltip.item.experiencePearcel.line1=Store my XP!
 tooltip.item.experiencePearcel.line2.noXP=No XP stored!
 tooltip.item.experiencePearcel.line2.XP=XP Stored:
@@ -445,8 +447,10 @@ config.enableStructure2.desc=If false, structure won't spawn.
 config.enableStructure3.title=Enable Pearcel Fountain
 config.enableStructure3.desc=If false, structure won't spawn.
 config.rfPerTick.desc=RF/T Amount
-config.rfStorage_charmedPearcel.title=CRF Storage - Charmed Pearcel
-config.rfTransferPerTick.title=RF/T Transfer Rate - Charmed Pearcel
+config.rfStorage.desc=Amount of RF item can hold
+config.rfTransferPerTick=Amount of RF item can transfer
+config.rfStorage_charmedPearcel.title=RF Storage - Charmed Pearcel
+config.rfTransferPerTick_charmedPearcel.title=RF/T Transfer Rate - Charmed Pearcel
 config.rfPerTick_charmedPearcel_fire.title=RF/T - Charmed Pearcel - Fire Resistance
 config.rfPerTick_charmedPearcel_water.title=RF/T - Charmed Pearcel - Water Breathing
 config.rfPerTick_charmedPearcel_saturation.title=RF/T - Charmed Pearcel - Saturation
@@ -459,6 +463,12 @@ config.rfPerTick_charmedPearcel_repair.title=RF/T - Charmed Pearcel - Repair
 config.rfPerTick_charmedPearcel_physco.title=RF/T - Charmed Pearcel - Physco
 config.rfPerTick_charmedPearcel_thirdEye.title=RF/T - Charmed Pearcel - Third Eye
 config.rfPerTick_charmedPearcel_fall.title=RF/T - Charmed Pearcel - Fall Resistance
+config.rfStorage_magnet.title=RF Storage - Pearcel Magnet
+config.rfTransferPerTick_magnet.title=RF/T Transfer Rate - Pearcel Magnet
+config.rfPerTick_livingMagnet.title=RF/T - Pearcel Magnet
+config.rfStorage_livingMagnet.title=RF Storage - Living Magnet
+config.rfTransferPerTick_livingMagnet.title=RF/T Transfer Rate - Living Magnet
+config.rfPerTick_magnet.title=RF/T - Living Magnet
 
 
 #Achievements

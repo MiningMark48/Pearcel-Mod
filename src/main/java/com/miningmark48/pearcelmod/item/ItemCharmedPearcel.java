@@ -34,7 +34,7 @@ import java.util.Random;
 public class ItemCharmedPearcel extends ItemEnergyContainer{
 
     public ItemCharmedPearcel(){
-        super(ConfigurationHandler.rfStorage_charmedPearcel, ConfigurationHandler.rfTransferPerTick_charmedPeacel); //TODO: Config
+        super(ConfigurationHandler.rfStorage_charmedPearcel, ConfigurationHandler.rfTransferPerTick_charmedPeacel);
         setMaxStackSize(1);
 
         this.addPropertyOverride(new ResourceLocation("type"), new IItemPropertyGetter()
@@ -84,7 +84,7 @@ public class ItemCharmedPearcel extends ItemEnergyContainer{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        //if (KeyCheck.isHoldingShift()) {
+        if (KeyCheck.isHoldingShift()) {
             if (stack.hasTagCompound()) {
 
                 if (!stack.getTagCompound().getString("type").equalsIgnoreCase("none")) {
@@ -143,16 +143,16 @@ public class ItemCharmedPearcel extends ItemEnergyContainer{
                     list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
                 }
 
-                list.add(TextFormatting.RED + "RF: " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+                list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
 
 
             } else {
                 list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
             }
 
-        //}else{
-        //    list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
-        //}
+        }else{
+            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+        }
     }
 
     @Override
