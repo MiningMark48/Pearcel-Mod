@@ -45,13 +45,4 @@ public class ItemDragonPearcelStaff extends ItemPearcelSword{
         }
     }
 
-    @Override
-    public boolean hitEntity(ItemStack stack, EntityLivingBase hitEntity, EntityLivingBase attackEntity){
-        if (attackEntity instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) attackEntity;
-            hitEntity.attackEntityFrom(DamageSource.causePlayerDamage(player), Float.MAX_VALUE);
-            return true;
-        }
-        return false;
-    }
 }
