@@ -5,8 +5,6 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
@@ -56,12 +54,9 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
             List<EntityCreature> mobs = world.getEntitiesWithinAABB(EntityCreature.class, new AxisAlignedBB(x - range, y - range, z - range, x + range, y + range, z + range));
 
             for (EntityPlayer e : players) {
-                e.addPotionEffect(new PotionEffect(MobEffects.SPEED, 200, 1, true, false));
-                e.addPotionEffect(new PotionEffect(MobEffects.HASTE, 200, 1, true, false));
-                e.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 200, 1, true, false));
-                e.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 200, 0, true, false));
-                e.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 200, 0, true, false));
-                e.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 200, 0, true, false));
+                e.addPotionEffect(new PotionEffect(MobEffects.SPEED, 200, 0, true, false));
+                e.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 200, 0, true, false));
+                e.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 200, 0, true, false));
                 e.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 200, 0, true, false));
             }
 
@@ -84,8 +79,10 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
                 }
 
             }
+
         }
 
     }
+
 
 }
