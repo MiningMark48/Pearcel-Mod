@@ -17,13 +17,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.common.config.Config;
 
 import java.util.List;
 
 public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
 
     public ItemPearcelBlockPlacer(){
-        super(10000, 100);
+        super(ConfigurationHandler.rfStorage_pbp, ConfigurationHandler.rfTransferPerTick_pbp);
         setMaxStackSize(1);
     }
 
@@ -41,7 +42,7 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
             }
 
             list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pbp.line2"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_livingMagnet + " RF/T");
+            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_pbp + " RF/Use");
             list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
@@ -54,7 +55,7 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
     {
         if (!world.isRemote)
         {
-            if (hasEnoughEnergy(item, 10, player)) {
+            if (hasEnoughEnergy(item, ConfigurationHandler.rfPerUse_pbp, player)) {
                 if (!item.hasTagCompound()) {
                     item.setTagCompound(new NBTTagCompound());
                     item.getTagCompound().setInteger("mode", 1);
@@ -66,7 +67,7 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
                 }
             }
 
-            useEnergy(item, 10, false, player);
+            useEnergy(item, ConfigurationHandler.rfPerUse_pbp, false, player);
 
         }
 

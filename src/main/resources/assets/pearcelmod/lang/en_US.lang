@@ -473,6 +473,9 @@ config.rfPerTick_magnet.title=RF/T - Living Magnet
 config.rfStorage_enderPearcel.title=RF Storage - Ender Pearcel
 config.rfTransferPerTick_enderPearcel.title=RF/T Transfer Rate - Ender Pearcel
 config.rfPerUse_enderPearcel.title=RF/Use - Ender Pearcel
+config.rfStorage_pbp.title=RF Storage - Pearcel Block Placer
+config.rfTransferPerTick_pbp.title=RF/T Transfer Rate - Pearcel Block Placer
+config.rfPerUse_pbp.title=RF/Use - Pearcel Block Placer
 
 #Achievements
 achievement.get_pearcel=Odd Green Pears?
