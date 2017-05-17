@@ -1,22 +1,33 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelBeacon;
+import mcp.mobius.waila.api.IWailaConfigHandler;
+import mcp.mobius.waila.api.IWailaDataAccessor;
+import mcp.mobius.waila.api.IWailaDataProvider;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class BlockPearcelBeacon extends BlockContainer{
+public class BlockPearcelBeacon extends BlockContainer implements IWailaDataProvider{
+
+    public boolean isActive;
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.9375D, 1.0D);
 
@@ -59,5 +70,37 @@ public class BlockPearcelBeacon extends BlockContainer{
     @Override
     public BlockRenderLayer getBlockLayer(){
         return BlockRenderLayer.CUTOUT;
+    }
+
+    @Nullable
+    @Override
+    public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        return new ItemStack(ModBlocks.pearcel_beacon);
+    }
+
+    @Nonnull
+    @Override
+    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        return currenttip;
+    }
+
+    @Nonnull
+    @Override
+    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        //currenttip.add(TextFormatting.YELLOW + "Active? " + (isActive ? TextFormatting.DARK_GREEN + "Yes" : TextFormatting.RED + "No"));
+        currenttip.add("WIP");
+        return currenttip;
+    }
+
+    @Nonnull
+    @Override
+    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        return currenttip;
+    }
+
+    @Nonnull
+    @Override
+    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
+        return tag;
     }
 }

@@ -1,5 +1,10 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.sun.javafx.binding.StringFormatter;
+import mcp.mobius.waila.api.IWailaConfigHandler;
+import mcp.mobius.waila.api.IWailaDataAccessor;
+import mcp.mobius.waila.api.IWailaDataProvider;
 import net.minecraft.block.BlockBasePressurePlate;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
@@ -9,22 +14,27 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
+public class BlockPearcelPressurePlate extends BlockBasePressurePlate implements IWailaDataProvider{
 
     public static final PropertyBool POWERED = PropertyBool.create("powered");
     public static final PropertyBool MODE_PLAYERS = PropertyBool.create("mode_players");
@@ -154,4 +164,34 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
         return new BlockStateContainer(this, POWERED, MODE_PLAYERS, MODE_ITEMS);
     }
 
+    @Nullable
+    @Override
+    public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        return new ItemStack(ModBlocks.pearcel_pressure_plate);
+    }
+
+    @Nonnull
+    @Override
+    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        return currenttip;
+    }
+
+    @Nonnull
+    @Override
+    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        currenttip.add(TextFormatting.YELLOW + "Mode: " + TextFormatting.AQUA + (accessor.getBlockState().getValue(MODE_PLAYERS) ? "Players Only" : "Items Only"));
+        return currenttip;
+    }
+
+    @Nonnull
+    @Override
+    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+        return currenttip;
+    }
+
+    @Nonnull
+    @Override
+    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
+        return tag;
+    }
 }

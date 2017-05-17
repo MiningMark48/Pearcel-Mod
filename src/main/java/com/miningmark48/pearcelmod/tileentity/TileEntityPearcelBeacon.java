@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.tileentity;
 
+import com.miningmark48.pearcelmod.block.BlockPearcelBeacon;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.mojang.authlib.GameProfile;
@@ -38,8 +39,12 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
         int range = ConfigurationHandler.pearcelBeaconRange;
         float damage = ConfigurationHandler.pearcelBeaconDamage;
 
+        BlockPearcelBeacon beacon = (BlockPearcelBeacon) world.getBlockState(pos).getBlock();
 
         if (!world.isBlockPowered(pos)) {
+
+            beacon.isActive = true;
+
             int num = rand.nextInt(2);
             switch (num) {
                 default:
@@ -80,6 +85,8 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
 
             }
 
+        }else{
+            beacon.isActive = false;
         }
 
     }

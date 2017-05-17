@@ -90,6 +90,8 @@ public class PearcelMod {
 
         LogHelper.info(Translate.toLocal("log.info.init"));
 
+
+
 	}
 
 	@Mod.EventHandler
@@ -106,6 +108,10 @@ public class PearcelMod {
 	@Mod.EventHandler
 	public void serverLoad(FMLServerStartingEvent event){
 		event.registerServerCommand(new CommandSpawnStructure());
+	}
+
+	private void registerAddons(){
+
 	}
 
 
