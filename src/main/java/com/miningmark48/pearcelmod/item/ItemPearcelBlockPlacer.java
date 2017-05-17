@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import cofh.api.energy.ItemEnergyContainer;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
@@ -18,9 +20,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemPearcelBlockPlacer extends ItemPearcelMod{
+public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
 
     public ItemPearcelBlockPlacer(){
+        super(10000, 100);
         setMaxStackSize(1);
     }
 
@@ -38,6 +41,8 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
             }
 
             list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pbp.line2"));
+            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_livingMagnet + " RF/T");
+            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
@@ -49,15 +54,20 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
     {
         if (!world.isRemote)
         {
-            if (!item.hasTagCompound()){
-                item.setTagCompound(new NBTTagCompound());
-                item.getTagCompound().setInteger("mode", 1);
+            if (hasEnoughEnergy(item, 10, player)) {
+                if (!item.hasTagCompound()) {
+                    item.setTagCompound(new NBTTagCompound());
+                    item.getTagCompound().setInteger("mode", 1);
+                }
+                if (item.getTagCompound().getInteger("mode") == 1) {
+                    world.setBlockState(pos.offset(side), ModBlocks.pearcel_stone.getDefaultState());
+                } else {
+                    world.setBlockState(pos.offset(side), ModBlocks.pearcel_cobblestone.getDefaultState());
+                }
             }
-            if (item.getTagCompound().getInteger("mode") == 1){
-                world.setBlockState(pos.offset(side), ModBlocks.pearcel_stone.getDefaultState());
-            }else{
-                world.setBlockState(pos.offset(side), ModBlocks.pearcel_cobblestone.getDefaultState());
-            }
+
+            useEnergy(item, 10, false, player);
+
         }
 
         player.playSound(SoundEvents.BLOCK_STONE_PLACE, 1.0F, 1.0F);
@@ -88,6 +98,25 @@ public class ItemPearcelBlockPlacer extends ItemPearcelMod{
             return new ActionResult(EnumActionResult.PASS, item);
         }else{
             return new ActionResult(EnumActionResult.PASS, item);
+        }
+    }
+
+    private static boolean hasEnoughEnergy(ItemStack stack, int energyPerUse, EntityPlayer player){
+        if (!player.isCreative()) {
+            ItemPearcelBlockPlacer stack1 = new ItemPearcelBlockPlacer();
+            if (energyPerUse <= stack1.getEnergyStored(stack)) {
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+
+    public static void useEnergy(ItemStack stack, int useAmount, boolean simulate, EntityPlayer player){
+        if (!player.isCreative()) {
+            ItemPearcelBlockPlacer stack1 = new ItemPearcelBlockPlacer();
+            stack1.extractEnergy(stack, useAmount, simulate);
         }
     }
 
