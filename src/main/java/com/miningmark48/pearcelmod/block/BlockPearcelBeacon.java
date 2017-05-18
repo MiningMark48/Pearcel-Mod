@@ -87,8 +87,10 @@ public class BlockPearcelBeacon extends BlockContainer implements IWailaDataProv
     @Nonnull
     @Override
     public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        //currenttip.add(TextFormatting.YELLOW + "Active? " + (isActive ? TextFormatting.DARK_GREEN + "Yes" : TextFormatting.RED + "No"));
-        currenttip.add("WIP");
+        if (accessor.getWorld().getTileEntity(accessor.getPosition()) != null && accessor.getWorld().getTileEntity(accessor.getPosition()) instanceof TileEntityPearcelBeacon) {
+            TileEntityPearcelBeacon beacon = (TileEntityPearcelBeacon) accessor.getWorld().getTileEntity(accessor.getPosition());
+            currenttip.add(TextFormatting.YELLOW + "Active? " + (beacon.isActive() ? TextFormatting.DARK_GREEN + "Yes" : TextFormatting.RED + "No"));
+        }
         return currenttip;
     }
 

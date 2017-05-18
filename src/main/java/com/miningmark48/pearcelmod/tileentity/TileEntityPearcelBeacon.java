@@ -28,6 +28,8 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
 
     FakePlayer fakePlayer;
 
+    boolean isActive;
+
     @Override
     public void update() {
         Random rand = new Random();
@@ -39,11 +41,9 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
         int range = ConfigurationHandler.pearcelBeaconRange;
         float damage = ConfigurationHandler.pearcelBeaconDamage;
 
-        BlockPearcelBeacon beacon = (BlockPearcelBeacon) world.getBlockState(pos).getBlock();
-
         if (!world.isBlockPowered(pos)) {
 
-            beacon.isActive = true;
+            isActive = true;
 
             int num = rand.nextInt(2);
             switch (num) {
@@ -86,9 +86,13 @@ public class TileEntityPearcelBeacon extends TileEntity implements ITickable{
             }
 
         }else{
-            beacon.isActive = false;
+            isActive = false;
         }
 
+    }
+
+    public boolean isActive(){
+        return this.isActive;
     }
 
 
