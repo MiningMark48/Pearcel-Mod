@@ -17,5 +17,6 @@ public class PMWailaPlugin implements IWailaPlugin{
         registrar.registerBodyProvider(new BlockPearcelBeacon(), BlockPearcelBeacon.class);
         registrar.registerBodyProvider(new BlockPearcelStorageCrate(), BlockPearcelStorageCrate.class);
         registrar.registerBodyProvider(new BlockPearcelWorkbench(), BlockPearcelWorkbench.class);
+        registrar.registerBodyProvider(new BlockPearcelSpike(0.0F), BlockPearcelSpike.class);
     }
 }
