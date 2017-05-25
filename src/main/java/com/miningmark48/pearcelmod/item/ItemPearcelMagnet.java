@@ -41,8 +41,8 @@ public class ItemPearcelMagnet extends ItemEnergyContainer{
             list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pearcel_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
             list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + Translate.toLocal("tooltip.item.pearcel_magnet.line2.p2"));
             list.add(Translate.toLocal("tooltip.item.pearcel_magnet.line3"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_magnet + " RF/T");
-            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+            if (ConfigurationHandler.rfUseEnabled_magnet) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_magnet + " RF/T");
+            if (ConfigurationHandler.rfUseEnabled_magnet) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
 
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
@@ -145,8 +145,21 @@ public class ItemPearcelMagnet extends ItemEnergyContainer{
         }
     }
 
+    @Override
+    public int receiveEnergy(ItemStack container, int maxReceive, boolean simulate) {
+        if (!ConfigurationHandler.rfUseEnabled_magnet){
+            return 0;
+        }
+        return super.receiveEnergy(container, maxReceive, simulate);
+    }
+
     private static boolean hasEnoughEnergy(ItemStack stack, int energyPerUse, EntityPlayer player){
-        if (!player.isCreative()) {
+
+        if (!ConfigurationHandler.rfUseEnabled_magnet){
+            return true;
+        }
+
+            if (!player.isCreative()) {
             ItemPearcelMagnet stack1 = new ItemPearcelMagnet();
             if (energyPerUse <= stack1.getEnergyStored(stack)) {
                 return true;
@@ -158,7 +171,7 @@ public class ItemPearcelMagnet extends ItemEnergyContainer{
     }
 
     public static void useEnergy(ItemStack stack, int useAmount, boolean simulate, EntityPlayer player){
-        if (!player.isCreative()) {
+        if (!player.isCreative() && ConfigurationHandler.rfUseEnabled_magnet) {
             ItemPearcelMagnet stack1 = new ItemPearcelMagnet();
             stack1.extractEnergy(stack, useAmount, simulate);
         }

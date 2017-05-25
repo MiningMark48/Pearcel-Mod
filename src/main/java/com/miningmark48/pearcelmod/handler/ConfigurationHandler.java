@@ -39,6 +39,7 @@ public class ConfigurationHandler {
     public static float enderPearcelVelocity;
     public static float rifPPickBaseHardness;
 
+    public static boolean rfUseEnabled_charmedPearcel;
     public static int rfStorage_charmedPearcel;
     public static int rfTransferPerTick_charmedPeacel;
     public static int rfPerTick_charmedPearcel_fire;
@@ -53,9 +54,11 @@ public class ConfigurationHandler {
     public static int rfPerTick_charmedPearcel_physco;
     public static int rfPerTick_charmedPearcel_thirdEye;
     public static int rfPerTick_charmedPearcel_fall;
+    public static boolean rfUseEnabled_magnet;
     public static int rfStorage_magnet;
     public static int rfTransferPerTick_magnet;
     public static int rfPerTick_magnet;
+    public static boolean rfUseEnabled_livingMagnet;
     public static int rfStorage_livingMagnet;
     public static int rfTransferPerTick_livingMagnet;
     public static int rfPerTick_livingMagnet;
@@ -139,6 +142,7 @@ public class ConfigurationHandler {
         enableStructure3 = configuration.getBoolean(Translate.toLocal("config.enableStructure3.title"), Translate.toLocal("config.category.structures.title"), true, Translate.toLocal("config.enableStructure3.desc"));
 
         //Power Usage
+        rfUseEnabled_charmedPearcel = configuration.getBoolean(Translate.toLocal("config.rfUseEnabled_charmedPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), true, Translate.toLocal("config.rfUseEnabled.desc"));
         rfStorage_charmedPearcel = configuration.getInt(Translate.toLocal("config.rfStorage_charmedPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 2500000, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfStorage.desc"));
         rfTransferPerTick_charmedPeacel = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_charmedPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 1000, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfTransferPerTick.desc"));
         rfPerTick_charmedPearcel_fire = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_fire.title"), Translate.toLocal("config.category.powerUsage.title"), 50, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
@@ -153,9 +157,11 @@ public class ConfigurationHandler {
         rfPerTick_charmedPearcel_physco = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_physco.title"), Translate.toLocal("config.category.powerUsage.title"), 300, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerTick_charmedPearcel_thirdEye = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_thirdEye.title"), Translate.toLocal("config.category.powerUsage.title"), 200, 0, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerTick_charmedPearcel_fall = configuration.getInt(Translate.toLocal("config.rfPerTick_charmedPearcel_fall.title"), Translate.toLocal("config.category.powerUsage.title"), 20, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfUseEnabled_magnet = configuration.getBoolean(Translate.toLocal("config.rfUseEnabled_magnet.title"), Translate.toLocal("config.category.powerUsage.title"), true, Translate.toLocal("config.rfUseEnabled.desc"));
         rfStorage_magnet = configuration.getInt(Translate.toLocal("config.rfStorage_magnet.title"), Translate.toLocal("config.category.powerUsage.title"), 100000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfTransferPerTick_magnet = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_magnet.title"), Translate.toLocal("config.category.powerUsage.title"), 1000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerTick_magnet = configuration.getInt(Translate.toLocal("config.rfPerTick_magnet.title"), Translate.toLocal("config.category.powerUsage.title"), 25, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfUseEnabled_livingMagnet = configuration.getBoolean(Translate.toLocal("config.rfUseEnabled_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), true, Translate.toLocal("config.rfUseEnabled.desc"));
         rfStorage_livingMagnet = configuration.getInt(Translate.toLocal("config.rfStorage_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), 100000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfTransferPerTick_livingMagnet = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), 1000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerTick_livingMagnet = configuration.getInt(Translate.toLocal("config.rfPerTick_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), 100, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));

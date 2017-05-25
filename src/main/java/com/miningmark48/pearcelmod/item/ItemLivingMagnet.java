@@ -40,8 +40,8 @@ public class ItemLivingMagnet extends ItemEnergyContainer{
             list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.living_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
             list.add(Translate.toLocal("tooltip.item.living_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + Translate.toLocal("tooltip.item.living_magnet.line2.p2"));
             list.add(Translate.toLocal("tooltip.item.living_magnet.line3"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_livingMagnet + " RF/T");
-            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+            if (ConfigurationHandler.rfUseEnabled_livingMagnet) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_livingMagnet + " RF/T");
+            if (ConfigurationHandler.rfUseEnabled_livingMagnet) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
@@ -127,7 +127,20 @@ public class ItemLivingMagnet extends ItemEnergyContainer{
         }
     }
 
+    @Override
+    public int receiveEnergy(ItemStack container, int maxReceive, boolean simulate) {
+        if (!ConfigurationHandler.rfUseEnabled_livingMagnet){
+            return 0;
+        }
+        return super.receiveEnergy(container, maxReceive, simulate);
+    }
+
     private static boolean hasEnoughEnergy(ItemStack stack, int energyPerUse, EntityPlayer player){
+
+        if (!ConfigurationHandler.rfUseEnabled_livingMagnet){
+            return true;
+        }
+
         if (!player.isCreative()) {
             ItemLivingMagnet stack1 = new ItemLivingMagnet();
             if (energyPerUse <= stack1.getEnergyStored(stack)) {
@@ -140,7 +153,7 @@ public class ItemLivingMagnet extends ItemEnergyContainer{
     }
 
     public static void useEnergy(ItemStack stack, int useAmount, boolean simulate, EntityPlayer player){
-        if (!player.isCreative()) {
+        if (!player.isCreative() && ConfigurationHandler.rfUseEnabled_livingMagnet) {
             ItemLivingMagnet stack1 = new ItemLivingMagnet();
             stack1.extractEnergy(stack, useAmount, simulate);
         }
