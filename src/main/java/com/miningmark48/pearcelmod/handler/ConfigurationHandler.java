@@ -38,6 +38,8 @@ public class ConfigurationHandler {
     public static float pearcelMagnetPullSpeed;
     public static float enderPearcelVelocity;
     public static float rifPPickBaseHardness;
+    public static int pearcelFurnace_speedMultiplier;
+    public static int pearcelFurnace_efficiency;
 
     public static boolean rfUseEnabled_charmedPearcel;
     public static int rfStorage_charmedPearcel;
@@ -107,6 +109,8 @@ public class ConfigurationHandler {
         glowingPearcelRange = configuration.getInt(Translate.toLocal("config.glowingPearcelRange.title"), Configuration.CATEGORY_GENERAL, 35, 1, Integer.MAX_VALUE, Translate.toLocal("config.glowingPearcelRange.desc"));
         doRIFArmorFlight = configuration.getBoolean(Translate.toLocal("config.doRIFArmorFlight.title"), Configuration.CATEGORY_GENERAL, true, Translate.toLocal("config.doRIFArmorFlight.desc"));
         creativeTabSearchBar = configuration.getBoolean(Translate.toLocal("config.creativeTabSearchBar.title"), Configuration.CATEGORY_GENERAL, false, Translate.toLocal("config.creativeTabSearchBar.desc"));
+        pearcelFurnace_speedMultiplier = configuration.getInt(Translate.toLocal("config.pearcelFurnace_speedMultiplier.title"), Configuration.CATEGORY_GENERAL, 3, 0, Integer.MAX_VALUE, Translate.toLocal("config.pearcelFurnace_speedMultiplier.desc"));
+        pearcelFurnace_efficiency = configuration.getInt(Translate.toLocal("config.pearcelFurnace_efficiency.title"), Configuration.CATEGORY_GENERAL, 2, 0, Integer.MAX_VALUE, Translate.toLocal("config.pearcelFurnace_efficiency.desc"));
 
         //Ender Pearcel
         enderPearcelVelocity = configuration.getFloat(Translate.toLocal("config.enderPearcelVelocity.title"), Translate.toLocal("config.category.enderPearcel.title"), 3.0F, 1, Float.MAX_VALUE, Translate.toLocal("config.enderPearcelVelocity.desc"));

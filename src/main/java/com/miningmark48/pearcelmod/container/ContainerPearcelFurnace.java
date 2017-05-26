@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class ContainerPearcelFurnace extends Container{
+public class ContainerPearcelFurnace extends Container {
 
     private final IInventory tileFurnace;
     private int cookTime;
@@ -90,6 +90,9 @@ public class ContainerPearcelFurnace extends Container{
         this.tileFurnace.setField(id, data);
     }
 
+    /**
+     * Determines whether supplied player can use this container
+     */
     public boolean canInteractWith(EntityPlayer playerIn)
     {
         return this.tileFurnace.isUsableByPlayer(playerIn);

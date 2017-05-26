@@ -126,6 +126,7 @@ tile.pearcel_pressure_plate.name=Pearcel Pressure Plate
 tile.pearcel_spike.name=Pearcel Spike
 tile.pearcel_spike_ender.name=Ender Pearcel Spike
 tile.pearcel_spike_guardian.name=Spike of the Pearcel Guardian
+tile.pearcel_furnace.name=Pearcel Furnace
 
 #Entities
 entity.pearcelmod.pearcel_boss.name=Pearcel Guardian
@@ -269,6 +270,7 @@ desc.block.pearcel_workbench=Acts as a vanilla crafting table, but holds its inv
 desc.block.pearcel_pressure_plate=By default, the pressure plate will only work for players. Right click on the block with an arrow to set it to item-only mode. Right click with an empty hand to remove the arrow.
 desc.block.pearcel_spike=When a living entity stands on the block, they will take damage. Damage is dealt as a player.
 desc.block.pearcel_spike_guardian=When a living entity stands on the block, they will be killed instantly. Damage is dealt as a player.
+desc.block.pearcel_furnace=Operates just like the vanilla counterpart, but at a faster and more efficient pace.
 
 #Chat Messages
 chat.versionChecker.outOfDate=Pearcel Mod version is out of date! Click here to download latest:
@@ -434,6 +436,10 @@ config.pearcelBeaconDamage.title=EPET Damage
 config.pearcelBeaconDamage.desc=How much damage does the EPET do to hostile mobs per hit?
 config.creativeTabSearchBar.title=Creative Tab Search Bar
 config.creativeTabSearchBar.desc=Should there be a search bar on the creative tab?
+config.pearcelFurnace_speedMultiplier.title=Pearcel Furnace Speed Multiplier
+config.pearcelFurnace_speedMultiplier.desc=Multiplier for how fast the furnace operates (compared to vanilla furnace)
+config.pearcelFurnace_efficiency.title=Pearcel Furnace Efficiency
+config.pearcelFurnace_efficiencytitle.desc=Efficiency of the fuel for the furnace (compared to vanilla furnace)
 config.structureRarity1.title=9x9 Pearcel House Rarity
 config.structureRarity1.desc=Higher the number, the more rare the structure will be.
 config.structureRarity2.title=Pearcel Tower Rarity

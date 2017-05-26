@@ -60,6 +60,7 @@ public class PMJEIPlugin implements IModPlugin{
         //Blacklist
         //jeiHelpers.getItemBlacklist().addItemToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
         jeiHelpers.getIngredientBlacklist().addIngredientToBlacklist(new ItemStack(ModBlocks.lit_pearcel_lamp));
+        jeiHelpers.getIngredientBlacklist().addIngredientToBlacklist(new ItemStack(ModBlocks.pearcel_furnace_lit));
 
         //Descriptions
         registry.addDescription(new ItemStack(ModItems.pearcel_item), Translate.toLocal("desc.item.pearcel_item"));
@@ -98,6 +99,7 @@ public class PMJEIPlugin implements IModPlugin{
         registry.addDescription(new ItemStack(ModBlocks.pearcel_workbench), Translate.toLocal("desc.block.pearcel_workbench"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_pressure_plate), Translate.toLocal("desc.block.pearcel_pressure_plate"));
         registry.addDescription(new ItemStack(ModBlocks.pearcel_spike_guardian), Translate.toLocal("desc.block.pearcel_spike_guardian"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_furnace), Translate.toLocal("desc.block.pearcel_furnace"));
 
         //Descriptions - Lists
         registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));

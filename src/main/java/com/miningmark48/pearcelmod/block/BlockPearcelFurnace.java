@@ -1,6 +1,10 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.pearcelmod.PearcelMod;
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.reference.GUIs;
+import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelFurnace;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
@@ -124,6 +128,7 @@ public class BlockPearcelFurnace extends BlockContainer {
         }
     }
 
+    @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if (worldIn.isRemote)
@@ -134,15 +139,18 @@ public class BlockPearcelFurnace extends BlockContainer {
         {
             TileEntity tileentity = worldIn.getTileEntity(pos);
 
-            if (tileentity instanceof TileEntityFurnace)
+            if (tileentity instanceof TileEntityPearcelFurnace)
             {
-                playerIn.displayGUIChest((TileEntityFurnace)tileentity);
+                //playerIn.displayGUIChest((TileEntityPearcelFurnace)tileentity);
+                playerIn.openGui(Reference.MOD_ID, GUIs.gui_id_pearcel_furnace, worldIn, pos.getX(), pos.getY(), pos.getZ());
                 playerIn.addStat(StatList.FURNACE_INTERACTION);
             }
 
             return true;
         }
     }
+
+
 
     public static void setState(boolean active, World worldIn, BlockPos pos)
     {
@@ -172,21 +180,14 @@ public class BlockPearcelFurnace extends BlockContainer {
 
     public TileEntity createNewTileEntity(World worldIn, int meta)
     {
-        return new TileEntityFurnace();
+        return new TileEntityPearcelFurnace();
     }
 
-    /**
-     * Called by ItemBlocks just before a block is actually set in the world, to allow for adjustments to the
-     * IBlockstate
-     */
-    public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
         return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
 
-    /**
-     * Called by ItemBlocks after a block is set in the world, to allow post-place logic
-     */
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
@@ -195,9 +196,9 @@ public class BlockPearcelFurnace extends BlockContainer {
         {
             TileEntity tileentity = worldIn.getTileEntity(pos);
 
-            if (tileentity instanceof TileEntityFurnace)
+            if (tileentity instanceof TileEntityPearcelFurnace)
             {
-                ((TileEntityFurnace)tileentity).setCustomInventoryName(stack.getDisplayName());
+                ((TileEntityPearcelFurnace)tileentity).setCustomInventoryName(stack.getDisplayName());
             }
         }
     }
@@ -208,9 +209,9 @@ public class BlockPearcelFurnace extends BlockContainer {
         {
             TileEntity tileentity = worldIn.getTileEntity(pos);
 
-            if (tileentity instanceof TileEntityFurnace)
+            if (tileentity instanceof TileEntityPearcelFurnace)
             {
-                InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityFurnace)tileentity);
+                InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityPearcelFurnace)tileentity);
                 worldIn.updateComparatorOutputLevel(pos, this);
             }
         }

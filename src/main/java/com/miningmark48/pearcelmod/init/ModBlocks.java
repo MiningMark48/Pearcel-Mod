@@ -173,6 +173,8 @@ public class ModBlocks {
         registerBlock(pearcel_spike);
         registerBlock(pearcel_spike_ender);
         registerBlock(pearcel_spike_guardian);
+        registerBlock(pearcel_furnace);
+        registerBlock(pearcel_furnace_lit);
 
     }
 
