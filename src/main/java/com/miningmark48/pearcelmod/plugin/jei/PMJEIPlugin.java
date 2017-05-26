@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.plugin.jei;
 
 import com.miningmark48.pearcelmod.gui.GuiPCP;
+import com.miningmark48.pearcelmod.gui.GuiPearcelFurnace;
 import com.miningmark48.pearcelmod.gui.GuiPearcelWorkbench;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
@@ -115,6 +116,7 @@ public class PMJEIPlugin implements IModPlugin{
         //Recipe Click Areas
         registry.addRecipeClickArea(GuiPearcelWorkbench.class, 90, 35, 20, 20, "minecraft.crafting");
         registry.addRecipeClickArea(GuiPCP.class, 90, 35, 20, 20, "minecraft.crafting");
+        registry.addRecipeClickArea(GuiPearcelFurnace.class, 90, 35, 20, 20, "minecraft.smelting");
 
     }
 
