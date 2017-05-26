@@ -33,11 +33,8 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
     private static final int[] SLOTS_TOP = new int[] {0};
     private static final int[] SLOTS_BOTTOM = new int[] {2, 1};
     private static final int[] SLOTS_SIDES = new int[] {1};
-    /** The ItemStacks that hold the items currently being used in the furnace */
     private ItemStack[] furnaceItemStacks = new ItemStack[3];
-    /** The number of ticks that the furnace will keep burning */
     private int furnaceBurnTime;
-    /** The number of ticks that a fresh copy of the currently-burning item would keep the furnace burning for */
     private int currentItemBurnTime;
     private int cookTime;
     private int totalCookTime;
@@ -46,44 +43,29 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
     private static int speedMultiplier = ConfigurationHandler.pearcelFurnace_speedMultiplier;
     private static int effiency = ConfigurationHandler.pearcelFurnace_efficiency;
 
-    /**
-     * Returns the number of slots in the inventory.
-     */
     public int getSizeInventory()
     {
         return this.furnaceItemStacks.length;
     }
 
-    /**
-     * Returns the stack in the given slot.
-     */
     @Nullable
     public ItemStack getStackInSlot(int index)
     {
         return this.furnaceItemStacks[index];
     }
 
-    /**
-     * Removes up to a specified number of items from an inventory slot and returns them in a new stack.
-     */
     @Nullable
     public ItemStack decrStackSize(int index, int count)
     {
         return ItemStackHelper.getAndSplit(this.furnaceItemStacks, index, count);
     }
 
-    /**
-     * Removes a stack from the given slot and returns it.
-     */
     @Nullable
     public ItemStack removeStackFromSlot(int index)
     {
         return ItemStackHelper.getAndRemove(this.furnaceItemStacks, index);
     }
 
-    /**
-     * Sets the given item stack to the specified slot in the inventory (can be crafting or armor sections).
-     */
     public void setInventorySlotContents(int index, @Nullable ItemStack stack)
     {
         boolean flag = stack != null && stack.isItemEqual(this.furnaceItemStacks[index]) && ItemStack.areItemStackTagsEqual(stack, this.furnaceItemStacks[index]);
@@ -102,17 +84,11 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         }
     }
 
-    /**
-     * Get the name of this object. For players this returns their username
-     */
     public String getName()
     {
         return this.hasCustomName() ? this.furnaceCustomName : ModBlocks.pearcel_furnace.getLocalizedName();
     }
 
-    /**
-     * Returns true if this thing is named
-     */
     public boolean hasCustomName()
     {
         return this.furnaceCustomName != null && !this.furnaceCustomName.isEmpty();
@@ -185,17 +161,11 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         return compound;
     }
 
-    /**
-     * Returns the maximum stack size for a inventory slot. Seems to always be 64, possibly will be extended.
-     */
     public int getInventoryStackLimit()
     {
         return 64;
     }
 
-    /**
-     * Furnace isBurning
-     */
     public boolean isBurning()
     {
         return this.furnaceBurnTime > 0;
@@ -207,9 +177,6 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         return inventory.getField(0) > 0;
     }
 
-    /**
-     * Like the old updateEntity(), except more generic.
-     */
     public void update()
     {
         boolean flag = this.isBurning();
@@ -285,9 +252,6 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         return (200) / speedMultiplier;
     }
 
-    /**
-     * Returns true if the furnace can smelt an item, i.e. has a source item, destination stack isn't full, etc.
-     */
     private boolean canSmelt()
     {
         if (this.furnaceItemStacks[0] == null)
@@ -305,9 +269,6 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         }
     }
 
-    /**
-     * Turn one item from the furnace source stack into the appropriate smelted item in the furnace result stack
-     */
     public void smeltItem()
     {
         if (this.canSmelt())
@@ -337,10 +298,6 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         }
     }
 
-    /**
-     * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
-     * fuel
-     */
     public static int getItemBurnTime(ItemStack stack)
     {
 
@@ -389,9 +346,6 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         return getItemBurnTime(stack) > 0;
     }
 
-    /**
-     * Don't rename this method to canInteractWith due to conflicts with Container
-     */
     public boolean isUsableByPlayer(EntityPlayer player)
     {
         return this.world.getTileEntity(this.pos) != this ? false : player.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
@@ -405,10 +359,6 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
     {
     }
 
-    /**
-     * Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot. For
-     * guis use Slot.isItemValid
-     */
     public boolean isItemValidForSlot(int index, ItemStack stack)
     {
         if (index == 2)
@@ -431,17 +381,11 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
         return side == EnumFacing.DOWN ? SLOTS_BOTTOM : (side == EnumFacing.UP ? SLOTS_TOP : SLOTS_SIDES);
     }
 
-    /**
-     * Returns true if automation can insert the given item in the given slot from the given side.
-     */
     public boolean canInsertItem(int index, ItemStack itemStackIn, EnumFacing direction)
     {
         return this.isItemValidForSlot(index, itemStackIn);
     }
 
-    /**
-     * Returns true if automation can extract the given item in the given slot from the given side.
-     */
     public boolean canExtractItem(int index, ItemStack stack, EnumFacing direction)
     {
         if (direction == EnumFacing.DOWN && index == 1)
@@ -459,7 +403,7 @@ public class TileEntityPearcelFurnace extends TileEntityLockable implements ITic
 
     public String getGuiID()
     {
-        return "pearcel:pearcel_furnace";
+        return "pearcelmod:pearcel_furnace";
     }
 
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)
