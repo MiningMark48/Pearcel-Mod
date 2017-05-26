@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
 import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -22,7 +24,7 @@ import net.minecraftforge.common.util.Constants;
 
 import java.util.List;
 
-public class ItemCharmBag extends ItemPearcelMod{
+public class ItemCharmBag extends ItemPearcelMod implements IBauble{
 
     public ItemCharmBag(){
         setMaxStackSize(1);
@@ -121,4 +123,20 @@ public class ItemCharmBag extends ItemPearcelMod{
 
         }
     }
+
+    //Baubles
+
+    @Override
+    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+        if (player instanceof EntityPlayer) {
+            doUpdate(itemstack, player);
+        }
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack itemstack) {
+        return BaubleType.BODY;
+    }
+
+
 }

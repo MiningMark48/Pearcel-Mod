@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
 import cofh.api.energy.ItemEnergyContainer;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
@@ -31,7 +33,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
-public class ItemCharmedPearcel extends ItemEnergyContainer{
+public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble{
 
     public ItemCharmedPearcel(){
         super(ConfigurationHandler.rfStorage_charmedPearcel, ConfigurationHandler.rfTransferPerTick_charmedPeacel);
@@ -280,6 +282,8 @@ public class ItemCharmedPearcel extends ItemEnergyContainer{
         return new ActionResult(EnumActionResult.SUCCESS, stack);
     }
 
+    //COFH - Energy
+
     @Override
     public int receiveEnergy(ItemStack container, int maxReceive, boolean simulate) {
         if (!ConfigurationHandler.rfUseEnabled_charmedPearcel){
@@ -312,4 +316,17 @@ public class ItemCharmedPearcel extends ItemEnergyContainer{
         }
     }
 
+    //Baubles
+
+    @Override
+    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+        if (player instanceof EntityPlayer) {
+            doEffects((EntityPlayer) player, itemstack);
+        }
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack itemstack) {
+        return BaubleType.CHARM;
+    }
 }

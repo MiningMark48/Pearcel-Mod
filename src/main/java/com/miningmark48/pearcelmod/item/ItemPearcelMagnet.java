@@ -1,5 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
+import baubles.api.BaubleType;
+import baubles.api.IBauble;
 import cofh.api.energy.ItemEnergyContainer;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
@@ -22,7 +24,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemPearcelMagnet extends ItemEnergyContainer{
+public class ItemPearcelMagnet extends ItemEnergyContainer implements IBauble{
 
     public ItemPearcelMagnet(){
         super(ConfigurationHandler.rfStorage_magnet, ConfigurationHandler.rfTransferPerTick_magnet);
@@ -175,6 +177,20 @@ public class ItemPearcelMagnet extends ItemEnergyContainer{
             ItemPearcelMagnet stack1 = new ItemPearcelMagnet();
             stack1.extractEnergy(stack, useAmount, simulate);
         }
+    }
+
+    //Baubles
+
+    @Override
+    public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+        if (player instanceof EntityPlayer) {
+            doUpdate(itemstack, player.getEntityWorld(), player);
+        }
+    }
+
+    @Override
+    public BaubleType getBaubleType(ItemStack itemstack) {
+        return BaubleType.AMULET;
     }
 
 
