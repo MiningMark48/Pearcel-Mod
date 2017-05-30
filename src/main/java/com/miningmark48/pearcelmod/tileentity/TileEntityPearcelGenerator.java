@@ -1,15 +1,14 @@
 package com.miningmark48.pearcelmod.tileentity;
 
 import cofh.api.energy.IEnergyProvider;
+import com.miningmark48.pearcelmod.handler.IGeneratorHandler;
+import com.miningmark48.pearcelmod.init.GeneratorRegistry;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.LogHelper;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -20,13 +19,14 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
-import sun.rmi.runtime.Log;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
 public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyProvider, ITickable{
 
-    private int increase_per_tick = 20;
+    private int increase_per_tick;
 
     private int maxRF = 100000;
     private int current_RF;
@@ -167,7 +167,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
 
     @Override
     public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return stack.getItem() == ModItems.pearcel_item || this.current_RF < this.maxRF;
+        return stack.getItem() instanceof IGeneratorHandler;
     }
 
     @Override
@@ -191,11 +191,11 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
             case 0:
                 this.current_RF = value;
             case 1:
-                this.maxRF = value;
+                break;
             case 2:
                 this.cooldown = value;
             case 3:
-                this.increase_per_tick = value;
+                break;
         }
     }
 
@@ -261,16 +261,12 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     @Override
     public void update() {
 
-        if(this.world != null) { //changed this
+        if(this.world != null) {
             if(canUse()) {
                 if(this.cooldown <= 0) {
-                    if(this.inventory[0].getItem() == ModItems.pearcel_item) {
-                        this.cooldown = 70;
-                        this.increase_per_tick = 200;
-                    } else {
-                        this.cooldown = 600;
-                        this.increase_per_tick = 50;
-                    }
+                    this.cooldown = getCooldownTime(this.inventory[0]);
+                    this.increase_per_tick = getRFPerTick(this.inventory[0]);
+
                     this.inventory[0].stackSize -= 1;
                     if(this.inventory[0].stackSize == 0) {
                         this.inventory[0] = null;
@@ -280,10 +276,10 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
             if(this.cooldown > 0) {
                 this.cooldown--;
                 if(this.current_RF < this.maxRF) {
-                    this.current_RF += this.increase_per_tick;
-                    LogHelper.info("Current RF: " + this.current_RF);
+                    this.current_RF += this.getField(3);
                 }
             }
+
             this.markDirty();
         }
 
@@ -292,9 +288,8 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     private boolean canUse() {
         if(this.inventory[0] == null) {
             return false;
-        }
-        else {
-            if(this.inventory[0].getItem() == ModItems.pearcel_item) {
+        } else {
+            if(this.inventory[0].getItem() instanceof IGeneratorHandler) {
                 if(this.current_RF < this.maxRF) {
                     return true;
                 }
@@ -325,7 +320,18 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         this.readFromNBT(pkt.getNbtCompound());
     }
 
+    public static int getCooldownTime(ItemStack stack){
+        if (stack.getItem() instanceof IGeneratorHandler){
+            return GeneratorRegistry.getCooldownTime(stack);
+        }
+        return 0;
+    }
 
-
+    public static int getRFPerTick(ItemStack stack){
+        if (stack.getItem() instanceof IGeneratorHandler) {
+            return GeneratorRegistry.getRFPerTick(stack);
+        }
+        return 0;
+    }
 
 }

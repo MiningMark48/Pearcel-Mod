@@ -3,16 +3,11 @@ package com.miningmark48.pearcelmod.gui;
 import com.miningmark48.pearcelmod.container.ContainerPearcelGenerator;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelGenerator;
-import com.miningmark48.pearcelmod.utility.GuiUtils;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.util.LoggingPrintStream;
 import net.minecraft.util.ResourceLocation;
-import sun.rmi.runtime.Log;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -75,7 +70,6 @@ public class GuiPearcelGenerator extends GuiContainer{
     private boolean isMouseOver(int mouseX, int mouseY, int minX, int minY, int maxX, int maxY){
         int actualX = mouseX - ((this.width - this.xSize) / 2);
         int actualY = mouseY - ((this.height - this.ySize) / 2);
-        //LogHelper.info(actualX + ", " + actualY);
         return (actualX >= minX) && (actualX <= maxX) && (actualY >= minY) && (actualY <= maxY);
     }
 
@@ -87,8 +81,6 @@ public class GuiPearcelGenerator extends GuiContainer{
     private int getProgressLevel(int pixels) {
         int rf = this.te.getField(0);
         int maxRF = this.te.getField(1);
-        //LogHelper.info(maxRF != 0 && rf != 0 ? (rf * pixels) / maxRF : 0);
-
         return maxRF != 0 && rf != 0 ? (rf * pixels) / maxRF : 0;
 
     }

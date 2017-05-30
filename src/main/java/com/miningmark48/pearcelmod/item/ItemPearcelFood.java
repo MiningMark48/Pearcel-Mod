@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.IGeneratorHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
@@ -10,7 +11,7 @@ import net.minecraft.util.text.TextFormatting;
 
 import java.util.List;
 
-public class ItemPearcelFood extends ItemFood{
+public class ItemPearcelFood extends ItemFood implements IGeneratorHandler{
 
     public ItemPearcelFood(int amount, float saturation, boolean isWolfFood) {
         super(amount, saturation, isWolfFood);
@@ -28,4 +29,23 @@ public class ItemPearcelFood extends ItemFood{
         }
     }
 
+    @Override
+    public int getCooldownTime(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_item))){
+            return 60;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_bread))){
+            return 120;
+        }
+        return 0;
+    }
+
+    @Override
+    public int getRFPetTick(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_item))){
+            return 10;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_bread))){
+            return 30;
+        }
+        return 0;
+    }
 }

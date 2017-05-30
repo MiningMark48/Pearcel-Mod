@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.proxy;
 
+import com.google.common.util.concurrent.ListenableFuture;
 import com.miningmark48.pearcelmod.entity.EntityThrowPearcel;
 import com.miningmark48.pearcelmod.gui.manual.GuiManual;
 import com.miningmark48.pearcelmod.handler.KeyHandler;
@@ -15,6 +16,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy extends CommonProxy{
@@ -33,7 +35,7 @@ public class ClientProxy extends CommonProxy{
     }
 
     @Override
-    public void init(){
+    public void init(FMLInitializationEvent event){
         MinecraftForge.EVENT_BUS.register(new KeyHandler());
     }
 
@@ -53,4 +55,5 @@ public class ClientProxy extends CommonProxy{
     public void openManualGuiClient(){
         Minecraft.getMinecraft().displayGuiScreen(new GuiManual(0));
     }
+
 }

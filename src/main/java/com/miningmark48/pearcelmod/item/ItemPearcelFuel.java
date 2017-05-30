@@ -1,12 +1,13 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.IGeneratorHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
 
-public class ItemPearcelFuel extends Item implements IFuelHandler{
+public class ItemPearcelFuel extends Item implements IFuelHandler, IGeneratorHandler{
 
     @Override
     public int getBurnTime(ItemStack fuel) {
@@ -26,4 +27,19 @@ public class ItemPearcelFuel extends Item implements IFuelHandler{
         }
     }
 
+    @Override
+    public int getCooldownTime(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_charcoal))){
+            return 80;
+        }
+        return 0;
+    }
+
+    @Override
+    public int getRFPetTick(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_charcoal))){
+            return 60;
+        }
+        return 0;
+    }
 }

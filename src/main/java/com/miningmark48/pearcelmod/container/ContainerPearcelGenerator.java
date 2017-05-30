@@ -3,13 +3,21 @@ package com.miningmark48.pearcelmod.container;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelGenerator;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ContainerPearcelGenerator extends Container{
 
     private TileEntityPearcelGenerator te;
+
+    private int currentRF;
+    private int maxRF;
+    private int cooldown;
+    private int rfPerTick;
 
     public ContainerPearcelGenerator(IInventory playerInv, TileEntityPearcelGenerator te){
         this.te = te;
@@ -61,4 +69,50 @@ public class ContainerPearcelGenerator extends Container{
         return previous;
     }
 
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void updateProgressBar(int id, int data)
+    {
+        this.te.setField(id, data);
+    }
+
+    @Override
+    public void addListener(IContainerListener listener) {
+        super.addListener(listener);
+        listener.sendAllWindowProperties(this, this.te);
+    }
+
+    @Override
+    public void detectAndSendChanges() {
+        super.detectAndSendChanges();
+
+        for (int i = 0; i < this.listeners.size(); i++)
+        {
+            IContainerListener icontainerlistener = (IContainerListener)this.listeners.get(i);
+
+            if (this.currentRF != this.te.getField(0))
+            {
+                icontainerlistener.sendProgressBarUpdate(this, 0, this.te.getField(0));
+            }
+            if (this.maxRF != this.te.getField(1))
+            {
+                icontainerlistener.sendProgressBarUpdate(this, 1, this.te.getField(1));
+            }
+            if (this.cooldown != this.te.getField(2))
+            {
+                icontainerlistener.sendProgressBarUpdate(this, 2, this.te.getField(2));
+            }
+            if (this.rfPerTick != this.te.getField(3))
+            {
+                icontainerlistener.sendProgressBarUpdate(this, 3, this.te.getField(3));
+            }
+
+        }
+
+        this.currentRF = this.te.getField(0);
+        this.maxRF = this.te.getField(1);
+        this.cooldown = this.te.getField(2);
+        this.rfPerTick = this.te.getField(3);
+
+    }
 }
