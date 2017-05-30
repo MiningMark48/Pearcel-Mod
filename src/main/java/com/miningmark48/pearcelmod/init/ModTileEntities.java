@@ -12,6 +12,7 @@ public class ModTileEntities {
         GameRegistry.registerTileEntity(TileEntityPearcelStorageCrate.class, "te_pearcel_storage_crate");
         GameRegistry.registerTileEntity(TileEntityPearcelWorkbench.class, "te_pearcel_workbench");
         GameRegistry.registerTileEntity(TileEntityPearcelFurnace.class, "te_pearcel_furnace");
+        GameRegistry.registerTileEntity(TileEntityPearcelGenerator.class, "te_pearcel_generator");
     }
 
 }
