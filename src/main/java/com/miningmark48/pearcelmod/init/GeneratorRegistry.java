@@ -3,9 +3,8 @@ package com.miningmark48.pearcelmod.init;
 import com.google.common.collect.Lists;
 import com.miningmark48.pearcelmod.handler.IGeneratorHandler;
 import com.miningmark48.pearcelmod.item.ItemPearcelFood;
-import com.miningmark48.pearcelmod.utility.LogHelper;
+import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.IFuelHandler;
 
 import java.util.List;
 
@@ -15,6 +14,7 @@ public class GeneratorRegistry {
 
     public static void registerGeneratorFuels(){
         registerGeneratorFuel(new ItemPearcelFood(0, 0.0F, false));
+        registerGeneratorFuel(new ItemPearcelFuel());
     }
 
     public static void registerGeneratorFuel(IGeneratorHandler handler){

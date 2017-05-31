@@ -1,14 +1,12 @@
 package com.miningmark48.pearcelmod.tileentity;
 
-import cofh.api.energy.IEnergyProvider;
+import cofh.api.energy.IEnergyHandler;
 import com.miningmark48.pearcelmod.handler.IGeneratorHandler;
 import com.miningmark48.pearcelmod.init.GeneratorRegistry;
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -19,20 +17,21 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.energy.*;
+import sun.rmi.runtime.Log;
 
 import javax.annotation.Nullable;
 
-public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyProvider, ITickable{
+public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyStorage, ITickable, IEnergyHandler{
 
     private int increase_per_tick;
 
     private int maxRF = 100000;
     private int current_RF;
     private int cooldown;
+    private int maxExtract = 10000;
 
-    private ItemStack[] inventory;
+    public ItemStack[] inventory;
     private String customName;
 
     public TileEntityPearcelGenerator(){
@@ -51,27 +50,6 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     @Override
     public ITextComponent getDisplayName() {
         return this.hasCustomName() ? new TextComponentString(this.customName) : new TextComponentString(ModBlocks.pearcel_generator.getLocalizedName());
-    }
-
-    @Override
-    public int extractEnergy(EnumFacing from, int maxExtract, boolean simulate) {
-        current_RF -= maxExtract;
-        return maxExtract;
-    }
-
-    @Override
-    public int getEnergyStored(EnumFacing from) {
-        return this.current_RF;
-    }
-
-    @Override
-    public int getMaxEnergyStored(EnumFacing from) {
-        return this.maxRF;
-    }
-
-    @Override
-    public boolean canConnectEnergy(EnumFacing from) {
-        return true;
     }
 
     @Override
@@ -280,6 +258,17 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
                 }
             }
 
+            if (this.getEnergyStored() > 0){
+                for (EnumFacing facing : EnumFacing.values()){
+                    TileEntity tile = world.getTileEntity(pos.offset(facing));
+                    if (tile != null) {
+                        if (tile.hasCapability(CapabilityEnergy.ENERGY, facing.getOpposite())) {
+                            tile.getCapability(CapabilityEnergy.ENERGY, facing.getOpposite()).receiveEnergy(this.extractEnergy(this.maxExtract, false), false);
+                        }
+                    }
+                }
+            }
+
             this.markDirty();
         }
 
@@ -334,4 +323,62 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         return 0;
     }
 
+    @Override
+    public int receiveEnergy(int maxReceive, boolean simulate) {
+        return 0;
+    }
+
+    @Override
+    public int extractEnergy(int maxExtract, boolean simulate) {
+        if (!canExtract()){
+            return 0;
+        }
+
+        int energyExtracted = Math.min(this.current_RF, Math.min(this.maxExtract, maxExtract));
+        if (!simulate){
+            this.current_RF -= energyExtracted;
+        }
+
+        return energyExtracted;
+    }
+
+    @Override
+    public int getEnergyStored() {
+        if (this.current_RF >= this.getMaxEnergyStored()){
+            this.current_RF = this.getMaxEnergyStored();
+        }
+        return current_RF;
+    }
+
+    @Override
+    public int getMaxEnergyStored() {
+        return maxRF;
+    }
+
+    @Override
+    public boolean canExtract() {
+        return true;
+    }
+
+    @Override
+    public boolean canReceive() {
+        return false;
+    }
+
+    //COFH
+
+    @Override
+    public int getEnergyStored(EnumFacing from) {
+        return this.getEnergyStored();
+    }
+
+    @Override
+    public int getMaxEnergyStored(EnumFacing from) {
+        return this.getMaxEnergyStored();
+    }
+
+    @Override
+    public boolean canConnectEnergy(EnumFacing from) {
+        return true;
+    }
 }

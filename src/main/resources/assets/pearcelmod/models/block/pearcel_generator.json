@@ -1,9 +1,7 @@
 {
   "_comment": "Generated using MiningMark48's JSON Generator.",
-  "parent": "block/orientable",
+  "parent": "block/cube_all",
   "textures": {
-    "top": "pearcelmod:blocks/pearcel_generator_top",
-    "front": "pearcelmod:blocks/pearcel_generator_front",
-    "side": "pearcelmod:blocks/pearcel_generator_sides"
+    "all": "pearcelmod:blocks/pearcel_generator"
   }
 }

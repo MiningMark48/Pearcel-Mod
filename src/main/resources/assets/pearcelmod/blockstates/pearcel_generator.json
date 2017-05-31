@@ -1,20 +1,8 @@
 {
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "variants": {
-    "facing=north": {
-      "model": "pearcel_generator"
-    },
-    "facing=south": {
-      "model": "pearcel_generator",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "pearcel_generator",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "pearcel_generator",
-      "y": 90
+    "normal": {
+      "model": "pearcelmod:pearcel_generator"
     }
   }
 }
