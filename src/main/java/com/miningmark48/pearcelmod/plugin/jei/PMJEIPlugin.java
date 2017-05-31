@@ -2,12 +2,18 @@ package com.miningmark48.pearcelmod.plugin.jei;
 
 import com.miningmark48.pearcelmod.gui.GuiPCP;
 import com.miningmark48.pearcelmod.gui.GuiPearcelFurnace;
+import com.miningmark48.pearcelmod.gui.GuiPearcelGenerator;
 import com.miningmark48.pearcelmod.gui.GuiPearcelWorkbench;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
+import com.miningmark48.pearcelmod.plugin.jei.generator.GeneratorFuelCategory;
+import com.miningmark48.pearcelmod.plugin.jei.generator.GeneratorFuelHandler;
+import com.miningmark48.pearcelmod.plugin.jei.generator.GeneratorFuelRecipeMaker;
+import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.Translate;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IModIngredientRegistration;
+import mezz.jei.api.recipe.VanillaRecipeCategoryUid;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -32,6 +38,7 @@ public class PMJEIPlugin implements IModPlugin{
     public void register(IModRegistry registry) {
 
         jeiHelpers = registry.getJeiHelpers();
+        final IGuiHelper guiHelper = jeiHelpers.getGuiHelper();
 
         List<ItemStack> backpacks = new ArrayList<ItemStack>();
         backpacks.add(new ItemStack(ModItems.bindle));
@@ -118,6 +125,19 @@ public class PMJEIPlugin implements IModPlugin{
         registry.addRecipeClickArea(GuiPearcelWorkbench.class, 90, 35, 20, 20, "minecraft.crafting");
         registry.addRecipeClickArea(GuiPCP.class, 90, 35, 20, 20, "minecraft.crafting");
         registry.addRecipeClickArea(GuiPearcelFurnace.class, 90, 35, 20, 20, "minecraft.smelting");
+
+
+        //Custom Recipes
+        //Generator
+        registry.addRecipeCategories(
+                new GeneratorFuelCategory(guiHelper)
+        );
+        registry.addRecipeHandlers(
+                new GeneratorFuelHandler()
+        );
+        registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_generator), Reference.MOD_ID + ".generator_fuel");
+        registry.addRecipes(GeneratorFuelRecipeMaker.getFuelRecipes(jeiHelpers));
+        registry.addRecipeClickArea(GuiPearcelGenerator.class, 34, 19, 100, 27, Reference.MOD_ID + ".generator_fuel");
 
     }
 

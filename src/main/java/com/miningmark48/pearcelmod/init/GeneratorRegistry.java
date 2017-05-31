@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.item.ItemPearcelFood;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.item.ItemPearcelModEffect;
 import com.miningmark48.pearcelmod.utility.LogHelper;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
 public class GeneratorRegistry {
 
     private static List<IGeneratorFuelHandler> fuelHandlers = Lists.newArrayList();
+    private static List<ItemStack> fuels = Lists.newArrayList();
 
     public static void registerGeneratorFuels(){
         fuelHandlers.clear();
@@ -22,6 +24,14 @@ public class GeneratorRegistry {
         registerGeneratorFuel(new ItemPearcelFuel());
         registerGeneratorFuel(new ItemPearcelModEffect());
         registerGeneratorFuel(new BlockPearcelMod());
+
+
+        addFuelToList(new ItemStack(ModItems.pearcel_item));
+        addFuelToList(new ItemStack(ModItems.pearcel_bread));
+        addFuelToList(new ItemStack(ModItems.pearcel_charcoal));
+        addFuelToList(new ItemStack(ModItems.pearcel_matter));
+        addFuelToList(new ItemStack(ModItems.pearcel_sandwich));
+        addFuelToList(new ItemStack(ModItems.pearcel_star));
 
         LogHelper.info("Registered Generator Fuels");
     }
@@ -48,6 +58,14 @@ public class GeneratorRegistry {
             rfPerTick = Math.max(rfPerTick, handler.getRFPerTick(itemStack));
         }
         return rfPerTick;
+    }
+
+    public static void addFuelToList(ItemStack itemStack){
+        fuels.add(itemStack);
+    }
+
+    public static List<ItemStack> getFuels(){
+        return fuels;
     }
 
 }
