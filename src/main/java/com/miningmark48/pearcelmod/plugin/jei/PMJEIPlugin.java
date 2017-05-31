@@ -112,6 +112,7 @@ public class PMJEIPlugin implements IModPlugin{
         //Categories
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_workbench), "minecraft.crafting");
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModItems.pcp), "minecraft.crafting");
+        registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_furnace), "minecraft.smelting");
 
         //Recipe Click Areas
         registry.addRecipeClickArea(GuiPearcelWorkbench.class, 90, 35, 20, 20, "minecraft.crafting");
