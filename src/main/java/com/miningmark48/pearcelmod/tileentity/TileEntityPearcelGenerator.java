@@ -1,10 +1,9 @@
 package com.miningmark48.pearcelmod.tileentity;
 
 import cofh.api.energy.IEnergyHandler;
-import com.miningmark48.pearcelmod.handler.IGeneratorHandler;
+import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.GeneratorRegistry;
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -18,7 +17,6 @@ import net.minecraft.util.ITickable;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.energy.*;
-import sun.rmi.runtime.Log;
 
 import javax.annotation.Nullable;
 
@@ -145,7 +143,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
 
     @Override
     public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return stack.getItem() instanceof IGeneratorHandler;
+        return stack.getItem() instanceof IGeneratorFuelHandler;
     }
 
     @Override
@@ -278,7 +276,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         if(this.inventory[0] == null) {
             return false;
         } else {
-            if(this.inventory[0].getItem() instanceof IGeneratorHandler) {
+            if(this.inventory[0].getItem() instanceof IGeneratorFuelHandler) {
                 if(this.current_RF < this.maxRF) {
                     return true;
                 }
@@ -310,17 +308,11 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     }
 
     public static int getCooldownTime(ItemStack stack){
-        if (stack.getItem() instanceof IGeneratorHandler){
-            return GeneratorRegistry.getCooldownTime(stack);
-        }
-        return 0;
+        return GeneratorRegistry.getCooldownTime(stack);
     }
 
     public static int getRFPerTick(ItemStack stack){
-        if (stack.getItem() instanceof IGeneratorHandler) {
-            return GeneratorRegistry.getRFPerTick(stack);
-        }
-        return 0;
+        return GeneratorRegistry.getRFPerTick(stack);
     }
 
     @Override

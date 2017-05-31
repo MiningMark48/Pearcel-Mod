@@ -22,7 +22,7 @@ public class ContainerPearcelGenerator extends Container{
     public ContainerPearcelGenerator(IInventory playerInv, TileEntityPearcelGenerator te){
         this.te = te;
 
-        this.addSlotToContainer(new Slot(te, 0, 8, 20));
+        this.addSlotToContainer(new SlotGeneratorFuel(te, 0, 8, 20));
 
         //Player Inventory
         for (int y = 0; y < 3; ++y) {
