@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.block.BlockPearcelMod;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.item.ItemPearcelFood;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
+import com.miningmark48.pearcelmod.item.ItemPearcelMod;
 import com.miningmark48.pearcelmod.item.ItemPearcelModEffect;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.item.Item;
@@ -23,7 +24,7 @@ public class GeneratorRegistry {
         registerGeneratorFuel(new ItemPearcelFood(0, 0.0F, false));
         registerGeneratorFuel(new ItemPearcelFuel());
         registerGeneratorFuel(new ItemPearcelModEffect());
-        registerGeneratorFuel(new BlockPearcelMod());
+        registerGeneratorFuel(new ItemPearcelMod());
 
 
         addFuelToList(new ItemStack(ModItems.pearcel_item));
@@ -32,6 +33,10 @@ public class GeneratorRegistry {
         addFuelToList(new ItemStack(ModItems.pearcel_matter));
         addFuelToList(new ItemStack(ModItems.pearcel_sandwich));
         addFuelToList(new ItemStack(ModItems.pearcel_star));
+        addFuelToList(new ItemStack(ModItems.tier_4_crafting_component));
+        addFuelToList(new ItemStack(ModItems.tier_3_crafting_component));
+        addFuelToList(new ItemStack(ModItems.tier_2_crafting_component));
+        addFuelToList(new ItemStack(ModItems.tier_1_crafting_component));
 
         LogHelper.info("Registered Generator Fuels");
     }

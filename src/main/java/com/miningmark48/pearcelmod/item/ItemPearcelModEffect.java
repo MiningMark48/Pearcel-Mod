@@ -20,6 +20,8 @@ public class ItemPearcelModEffect extends ItemPearcelMod implements IGeneratorFu
             return 160;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_star))){
             return 300;
+        }else if (fuel.isItemEqual(new ItemStack(ModItems.tier_4_crafting_component))){
+            return 340;
         }
         return 0;
     }
@@ -30,6 +32,8 @@ public class ItemPearcelModEffect extends ItemPearcelMod implements IGeneratorFu
             return 120;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_star))){
             return 175;
+        }else if (fuel.isItemEqual(new ItemStack(ModItems.tier_4_crafting_component))){
+            return 475;
         }
         return 0;
     }

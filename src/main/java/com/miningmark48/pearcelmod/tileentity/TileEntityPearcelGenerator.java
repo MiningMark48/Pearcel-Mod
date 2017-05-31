@@ -24,7 +24,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
 
     private int increase_per_tick;
 
-    private int maxRF = 100000;
+    private int maxRF = 250000;
     private int current_RF;
     private int cooldown;
     private int maxExtract = 10000;
