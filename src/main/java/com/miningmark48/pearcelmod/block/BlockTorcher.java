@@ -131,7 +131,7 @@ public class BlockTorcher extends BlockPearcelMod{
                         break;
                 }
                 if (world.getBlockState(new BlockPos(torchX, torchY, torchZ)).getBlock().isReplaceable(world, new BlockPos(torchX, torchY, torchZ))){
-                    if (world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ)).getBlock().isBlockSolid(world, pos, null)){
+                    if (world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ)).getBlock().isBlockSolid(world, pos, null) && !world.isAirBlock(new BlockPos(torchX, torchY - 1, torchZ))){
                         world.setBlockState(new BlockPos(torchX, torchY, torchZ), ModBlocks.pearcel_torch.getDefaultState());
                     }
                 }
