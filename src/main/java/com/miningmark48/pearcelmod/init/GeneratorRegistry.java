@@ -3,10 +3,7 @@ package com.miningmark48.pearcelmod.init;
 import com.google.common.collect.Lists;
 import com.miningmark48.pearcelmod.block.BlockPearcelMod;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
-import com.miningmark48.pearcelmod.item.ItemPearcelFood;
-import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
-import com.miningmark48.pearcelmod.item.ItemPearcelMod;
-import com.miningmark48.pearcelmod.item.ItemPearcelModEffect;
+import com.miningmark48.pearcelmod.item.*;
 import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -25,8 +22,10 @@ public class GeneratorRegistry {
         registerGeneratorFuel(new ItemPearcelFuel());
         registerGeneratorFuel(new ItemPearcelModEffect());
         registerGeneratorFuel(new ItemPearcelMod());
+        registerGeneratorFuel(new ItemCharmedPearcel());
+        registerGeneratorFuel(new ItemEnderPearcel());
 
-
+        //Currently only for JEI
         addFuelToList(new ItemStack(ModItems.pearcel_item));
         addFuelToList(new ItemStack(ModItems.pearcel_bread));
         addFuelToList(new ItemStack(ModItems.pearcel_charcoal));
@@ -43,6 +42,9 @@ public class GeneratorRegistry {
         addFuelToList(new ItemStack(ModItems.jeweled_pearcel));
         addFuelToList(new ItemStack(ModItems.glowing_pearcel));
         addFuelToList(new ItemStack(ModItems.pearcel_juice_bottle));
+        addFuelToList(new ItemStack(ModItems.charmed_pearcel));
+        addFuelToList(new ItemStack(ModItems.ender_pearcel));
+        addFuelToList(new ItemStack(ModItems.blood_drop));
 
         LogHelper.info("Registered Generator Fuels");
     }

@@ -3,6 +3,8 @@ package com.miningmark48.pearcelmod.item;
 import cofh.api.energy.ItemEnergyContainer;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
+import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,7 +20,7 @@ import net.minecraftforge.common.config.Config;
 
 import java.util.List;
 
-public class ItemEnderPearcel extends ItemEnergyContainer{
+public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorFuelHandler{
 
     public ItemEnderPearcel(){
         super(ConfigurationHandler.rfStorage_enderPearcel, ConfigurationHandler.rfTransferPerTick_enderPearcel);
@@ -85,4 +87,19 @@ public class ItemEnderPearcel extends ItemEnergyContainer{
         }
     }
 
+    @Override
+    public int getCooldownTime(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.ender_pearcel))) {
+            return 500;
+        }
+        return 0;
+    }
+
+    @Override
+    public int getRFPerTick(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.ender_pearcel))) {
+            return 25;
+        }
+        return 0;
+    }
 }

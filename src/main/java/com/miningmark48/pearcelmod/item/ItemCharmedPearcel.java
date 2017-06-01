@@ -4,6 +4,7 @@ import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import cofh.api.energy.ItemEnergyContainer;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.LogHelper;
@@ -33,7 +34,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
-public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble{
+public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble, IGeneratorFuelHandler{
 
     public ItemCharmedPearcel(){
         super(ConfigurationHandler.rfStorage_charmedPearcel, ConfigurationHandler.rfTransferPerTick_charmedPeacel);
@@ -328,5 +329,21 @@ public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble{
     @Override
     public BaubleType getBaubleType(ItemStack itemstack) {
         return BaubleType.CHARM;
+    }
+
+    @Override
+    public int getCooldownTime(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.charmed_pearcel))) {
+            return 370;
+        }
+        return 0;
+    }
+
+    @Override
+    public int getRFPerTick(ItemStack fuel) {
+        if (fuel.isItemEqual(new ItemStack(ModItems.charmed_pearcel))) {
+            return 475;
+        }
+        return 0;
     }
 }
