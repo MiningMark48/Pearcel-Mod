@@ -18,6 +18,8 @@ public class ItemPearcelMod extends Item implements IGeneratorFuelHandler{
             return 50;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.tier_3_crafting_component))){
             return 340;
+        }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_juice_bottle))){
+            return 30;
         }
         return 0;
     }
@@ -30,6 +32,8 @@ public class ItemPearcelMod extends Item implements IGeneratorFuelHandler{
             return 150;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.tier_3_crafting_component))){
             return 70;
+        }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_juice_bottle))){
+            return 30;
         }
         return 0;
     }

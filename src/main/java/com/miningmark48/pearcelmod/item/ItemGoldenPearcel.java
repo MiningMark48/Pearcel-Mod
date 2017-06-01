@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.EntityLivingBase;
@@ -17,7 +18,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class ItemGoldenPearcel extends ItemPearcelFood{
+public class ItemGoldenPearcel extends ItemPearcelFood implements IGeneratorFuelHandler{
 
     public ItemGoldenPearcel() {
         super(8, 5.0F, false);

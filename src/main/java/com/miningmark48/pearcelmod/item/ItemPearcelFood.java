@@ -37,6 +37,16 @@ public class ItemPearcelFood extends ItemFood implements IGeneratorFuelHandler {
             return 120;
         }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_sandwich))){
             return 60;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_cookie))){
+            return 40;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_pie))){
+            return 250;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.golden_pearcel))){
+            return 100;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.jeweled_pearcel))){
+            return 250;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.glowing_pearcel))){
+            return 120;
         }
         return 0;
     }
@@ -49,6 +59,16 @@ public class ItemPearcelFood extends ItemFood implements IGeneratorFuelHandler {
             return 20;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_sandwich))){
             return 40;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_cookie))){
+            return 50;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.pearcel_pie))){
+            return 20;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.golden_pearcel))){
+            return 100;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.jeweled_pearcel))){
+            return 75;
+        }else if(fuel.isItemEqual(new ItemStack(ModItems.glowing_pearcel))){
+            return 10;
         }
         return 0;
     }

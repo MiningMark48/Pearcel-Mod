@@ -37,6 +37,12 @@ public class GeneratorRegistry {
         addFuelToList(new ItemStack(ModItems.tier_3_crafting_component));
         addFuelToList(new ItemStack(ModItems.tier_2_crafting_component));
         addFuelToList(new ItemStack(ModItems.tier_1_crafting_component));
+        addFuelToList(new ItemStack(ModItems.pearcel_cookie));
+        addFuelToList(new ItemStack(ModItems.pearcel_pie));
+        addFuelToList(new ItemStack(ModItems.golden_pearcel));
+        addFuelToList(new ItemStack(ModItems.jeweled_pearcel));
+        addFuelToList(new ItemStack(ModItems.glowing_pearcel));
+        addFuelToList(new ItemStack(ModItems.pearcel_juice_bottle));
 
         LogHelper.info("Registered Generator Fuels");
     }

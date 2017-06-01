@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +18,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class ItemGlowingPearcel extends ItemPearcelFood{
+public class ItemGlowingPearcel extends ItemPearcelFood implements IGeneratorFuelHandler{
 
     public ItemGlowingPearcel() {
         super(3, 1.2F, false);

@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -16,7 +17,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class ItemPearcelJuiceBottle extends ItemPearcelMod{
+public class ItemPearcelJuiceBottle extends ItemPearcelMod implements IGeneratorFuelHandler{
 
     public ItemPearcelJuiceBottle(){
         setMaxStackSize(1);
