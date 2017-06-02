@@ -7,6 +7,7 @@ import net.minecraft.world.chunk.Chunk;
 
 public class WorldTools {
 
+    @SuppressWarnings("deprecation")
     public static int findEmptySpot(World world, int x, int z) {
         int y = world.getTopSolidOrLiquidBlock(new BlockPos(x, 0, z)).getY();
         if (y == -1) {
@@ -19,7 +20,7 @@ public class WorldTools {
 
 
         Block block = world.getBlockState(new BlockPos(x, y + 1, z)).getBlock();
-        while (block.getMaterial(block.getDefaultState()).isLiquid()) {
+        while (block.getMaterial(block.getDefaultState()).isLiquid() || world.isAirBlock(new BlockPos(x, y - 1, z))) {
             y++;
             if (y > world.getHeight() - 10) {
                 return -1;
