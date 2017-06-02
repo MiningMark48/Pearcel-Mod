@@ -4,10 +4,6 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.init.ModSoundEvents;
 import com.miningmark48.pearcelmod.utility.Translate;
-import mcp.mobius.waila.api.IWailaConfigHandler;
-import mcp.mobius.waila.api.IWailaDataAccessor;
-import mcp.mobius.waila.api.IWailaDataProvider;
-import mcp.mobius.waila.api.IWailaPlugin;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -38,7 +34,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
-public class BlockSummoner extends BlockPearcelMod implements IWailaDataProvider{
+public class BlockSummoner extends BlockPearcelMod {
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.375D, 0.0D, 0.375D, 0.625D, 1.0D, 0.625D);
 
@@ -240,38 +236,4 @@ public class BlockSummoner extends BlockPearcelMod implements IWailaDataProvider
         world.setBlockState(basePos.add(0, 1, -3), ModBlocks.tainted_pearcel.getDefaultState());
     }
 
-    @Nullable
-    @Override
-    public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return new ItemStack(ModBlocks.summoner);
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        if (isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.DRAGON_EGG, Blocks.DIAMOND_BLOCK) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.SKULL, Blocks.DIAMOND_BLOCK) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.WOOL, Blocks.WOOL) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.END_STONE, Blocks.END_STONE) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.GRAVEL, Blocks.NETHERRACK) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.COBBLESTONE, Blocks.SOUL_SAND) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.PLANKS, Blocks.SAND) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.TNT, Blocks.TNT) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.HAY_BLOCK, Blocks.HAY_BLOCK) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.IRON_BLOCK, Blocks.IRON_BLOCK) || isCorrectSetup(accessor.getPosition(), accessor.getWorld(), Blocks.EMERALD_BLOCK, Blocks.SKULL)){
-            currenttip.add(TextFormatting.YELLOW + "Is Valid? " + TextFormatting.DARK_GREEN + "Yes");
-        }else{
-            currenttip.add(TextFormatting.YELLOW + "Is Valid? " + TextFormatting.RED + "No");
-        }
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
-        return tag;
-    }
 }

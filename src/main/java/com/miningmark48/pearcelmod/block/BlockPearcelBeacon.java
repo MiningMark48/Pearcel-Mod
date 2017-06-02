@@ -2,9 +2,6 @@ package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelBeacon;
-import mcp.mobius.waila.api.IWailaConfigHandler;
-import mcp.mobius.waila.api.IWailaDataAccessor;
-import mcp.mobius.waila.api.IWailaDataProvider;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -25,7 +22,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class BlockPearcelBeacon extends BlockContainer implements IWailaDataProvider{
+public class BlockPearcelBeacon extends BlockContainer{
 
     public boolean isActive;
 
@@ -72,37 +69,4 @@ public class BlockPearcelBeacon extends BlockContainer implements IWailaDataProv
         return BlockRenderLayer.CUTOUT;
     }
 
-    @Nullable
-    @Override
-    public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return new ItemStack(ModBlocks.pearcel_beacon);
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        if (accessor.getWorld().getTileEntity(accessor.getPosition()) != null && accessor.getWorld().getTileEntity(accessor.getPosition()) instanceof TileEntityPearcelBeacon) {
-            TileEntityPearcelBeacon beacon = (TileEntityPearcelBeacon) accessor.getWorld().getTileEntity(accessor.getPosition());
-            currenttip.add(TextFormatting.YELLOW + "Active? " + (beacon.isActive() ? TextFormatting.DARK_GREEN + "Yes" : TextFormatting.RED + "No"));
-        }
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
-        return tag;
-    }
 }

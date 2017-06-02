@@ -2,9 +2,6 @@ package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.mojang.authlib.GameProfile;
-import mcp.mobius.waila.api.IWailaConfigHandler;
-import mcp.mobius.waila.api.IWailaDataAccessor;
-import mcp.mobius.waila.api.IWailaDataProvider;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -30,7 +27,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.UUID;
 
-public class BlockPearcelSpike extends BlockPearcelMod implements IWailaDataProvider{
+public class BlockPearcelSpike extends BlockPearcelMod {
 
     private FakePlayer fakePlayer;
 
@@ -99,42 +96,4 @@ public class BlockPearcelSpike extends BlockPearcelMod implements IWailaDataProv
         return this.spike_damage;
     }
 
-    @Nullable
-    @Override
-    public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return new ItemStack(accessor.getBlock());
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaHead(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        if (accessor.getBlock() instanceof BlockPearcelSpike){
-            BlockPearcelSpike spike = (BlockPearcelSpike) accessor.getBlock();
-            float dmg = spike.getSpikeDamage();
-            if (dmg == Float.MAX_VALUE) {
-                currenttip.add("Damage: " + "∞");
-            }else{
-                currenttip.add("Damage: " + Math.round(dmg/2) + (Math.round(dmg/2) == 1 ? " heart" : " hearts"));
-            }
-        }
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
-        return currenttip;
-    }
-
-    @Nonnull
-    @Override
-    public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, BlockPos pos) {
-        return tag;
-    }
 }
