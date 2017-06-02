@@ -45,6 +45,7 @@ public class GeneratorRegistry {
         addFuelToList(new ItemStack(ModItems.charmed_pearcel));
         addFuelToList(new ItemStack(ModItems.ender_pearcel));
         addFuelToList(new ItemStack(ModItems.blood_drop));
+        addFuelToList(new ItemStack(ModItems.pearcel_ingot));
 
         LogHelper.info("Registered Generator Fuels");
     }

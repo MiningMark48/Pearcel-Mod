@@ -21,7 +21,9 @@ public class ItemPearcelMod extends Item implements IGeneratorFuelHandler{
         }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_juice_bottle))){
             return 30;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.blood_drop))){
-            return 1200;
+            return 60;
+        }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_ingot))){
+            return 20;
         }
         return 0;
     }
@@ -37,7 +39,9 @@ public class ItemPearcelMod extends Item implements IGeneratorFuelHandler{
         }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_juice_bottle))){
             return 30;
         }else if (fuel.isItemEqual(new ItemStack(ModItems.blood_drop))){
-            return 5;
+            return 100;
+        }else if (fuel.isItemEqual(new ItemStack(ModItems.pearcel_ingot))){
+            return 50;
         }
         return 0;
     }
