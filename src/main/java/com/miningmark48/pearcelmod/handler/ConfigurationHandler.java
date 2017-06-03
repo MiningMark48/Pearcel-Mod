@@ -64,9 +64,11 @@ public class ConfigurationHandler {
     public static int rfStorage_livingMagnet;
     public static int rfTransferPerTick_livingMagnet;
     public static int rfPerTick_livingMagnet;
+    public static boolean rfUseEnabled_enderPearcel;
     public static int rfStorage_enderPearcel;
     public static int rfTransferPerTick_enderPearcel;
     public static int rfPerUse_enderPearcel;
+    public static boolean rfUseEnabled_pbp;
     public static int rfStorage_pbp;
     public static int rfTransferPerTick_pbp;
     public static int rfPerUse_pbp;
@@ -169,9 +171,11 @@ public class ConfigurationHandler {
         rfStorage_livingMagnet = configuration.getInt(Translate.toLocal("config.rfStorage_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), 100000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfTransferPerTick_livingMagnet = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), 1000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerTick_livingMagnet = configuration.getInt(Translate.toLocal("config.rfPerTick_livingMagnet.title"), Translate.toLocal("config.category.powerUsage.title"), 100, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
+        rfUseEnabled_enderPearcel = configuration.getBoolean(Translate.toLocal("config.rfUseEnabled_enderPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), true, Translate.toLocal("config.rfUseEnabled.desc"));
         rfStorage_enderPearcel = configuration.getInt(Translate.toLocal("config.rfStorage_enderPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 100000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfTransferPerTick_enderPearcel = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_enderPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 1000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerUse_enderPearcel = configuration.getInt(Translate.toLocal("config.rfPerUse_enderPearcel.title"), Translate.toLocal("config.category.powerUsage.title"), 100, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerUse.desc"));
+        rfUseEnabled_pbp = configuration.getBoolean(Translate.toLocal("config.rfUseEnabled_pbp.title"), Translate.toLocal("config.category.powerUsage.title"), true, Translate.toLocal("config.rfUseEnabled.desc"));
         rfStorage_pbp = configuration.getInt(Translate.toLocal("config.rfStorage_pbp.title"), Translate.toLocal("config.category.powerUsage.title"), 10000, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfTransferPerTick_pbp = configuration.getInt(Translate.toLocal("config.rfTransferPerTick_pbp.title"), Translate.toLocal("config.category.powerUsage.title"), 100, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerTick.desc"));
         rfPerUse_pbp = configuration.getInt(Translate.toLocal("config.rfPerUse_pbp.title"), Translate.toLocal("config.category.powerUsage.title"), 10, 1, Integer.MAX_VALUE, Translate.toLocal("config.rfPerUse.desc"));

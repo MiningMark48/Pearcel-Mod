@@ -32,8 +32,8 @@ public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorF
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
         if (KeyCheck.isHoldingShift()) {
             list.add(Translate.toLocal("tooltip.item.pearcelPearl.line1"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_enderPearcel + " RF/Use");
-            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+            if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_enderPearcel + " RF/Use");
+            if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
@@ -69,6 +69,11 @@ public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorF
     }
 
     private static boolean hasEnoughEnergy(ItemStack stack, int energyPerUse, EntityPlayer player){
+
+        if (!ConfigurationHandler.rfUseEnabled_enderPearcel){
+            return true;
+        }
+
         if (!player.isCreative()) {
             ItemEnderPearcel stack1 = new ItemEnderPearcel();
             if (energyPerUse <= stack1.getEnergyStored(stack)) {
@@ -81,7 +86,7 @@ public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorF
     }
 
     public static void useEnergy(ItemStack stack, int useAmount, boolean simulate, EntityPlayer player){
-        if (!player.isCreative()) {
+        if (!player.isCreative() && ConfigurationHandler.rfUseEnabled_enderPearcel) {
             ItemEnderPearcel stack1 = new ItemEnderPearcel();
             stack1.extractEnergy(stack, useAmount, simulate);
         }

@@ -42,8 +42,8 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
             }
 
             list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pbp.line2"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_pbp + " RF/Use");
-            list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+            if (ConfigurationHandler.rfUseEnabled_pbp) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_pbp + " RF/Use");
+            if (ConfigurationHandler.rfUseEnabled_pbp) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
             list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
         }
@@ -103,6 +103,11 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
     }
 
     private static boolean hasEnoughEnergy(ItemStack stack, int energyPerUse, EntityPlayer player){
+
+        if (!ConfigurationHandler.rfUseEnabled_pbp){
+            return true;
+        }
+
         if (!player.isCreative()) {
             ItemPearcelBlockPlacer stack1 = new ItemPearcelBlockPlacer();
             if (energyPerUse <= stack1.getEnergyStored(stack)) {
@@ -115,7 +120,7 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
     }
 
     public static void useEnergy(ItemStack stack, int useAmount, boolean simulate, EntityPlayer player){
-        if (!player.isCreative()) {
+        if (!player.isCreative() && ConfigurationHandler.rfUseEnabled_pbp) {
             ItemPearcelBlockPlacer stack1 = new ItemPearcelBlockPlacer();
             stack1.extractEnergy(stack, useAmount, simulate);
         }
