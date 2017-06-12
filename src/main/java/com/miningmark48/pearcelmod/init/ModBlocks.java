@@ -12,6 +12,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
@@ -54,6 +55,7 @@ public class ModBlocks {
     public static Block dense_pearcel_ore;
     public static Block dense_pearcel_matter_ore;
     public static Block fools_pearcel_ore;
+    public static Block dense_fools_pearcel_ore;
 
     //Functional
     public static Block pearcel_workbench;
@@ -107,7 +109,8 @@ public class ModBlocks {
         pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_ore").setRegistryName("pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         dense_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_ore").setRegistryName("dense_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         dense_pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_matter_ore").setRegistryName("dense_pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        fools_pearcel_ore = new BlockFoolsPearcelOre().setUnlocalizedName("fools_pearcel_ore").setRegistryName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        fools_pearcel_ore = new BlockFoolsPearcelOre(3F, 4, new ItemStack(ModBlocks.pearcel_ore)).setUnlocalizedName("fools_pearcel_ore").setRegistryName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dense_fools_pearcel_ore = new BlockFoolsPearcelOre(6F, 5, new ItemStack(ModBlocks.dense_pearcel_ore)).setUnlocalizedName("dense_fools_pearcel_ore").setRegistryName("dense_fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Functional
         pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setRegistryName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -164,6 +167,7 @@ public class ModBlocks {
         registerBlock(dense_pearcel_ore);
         registerBlock(dense_pearcel_matter_ore);
         registerBlock(fools_pearcel_ore);
+        registerBlock(dense_fools_pearcel_ore);
 
         //Functional
         registerBlock(pearcel_workbench);
@@ -220,6 +224,7 @@ public class ModBlocks {
         registerRender(dense_pearcel_ore);
         registerRender(dense_pearcel_matter_ore);
         registerRender(fools_pearcel_ore);
+        registerRender(dense_fools_pearcel_ore);
 
         //Functional
         registerRender(pearcel_workbench);
