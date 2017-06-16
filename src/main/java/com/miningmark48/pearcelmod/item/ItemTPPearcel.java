@@ -5,6 +5,7 @@ import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
@@ -13,6 +14,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -20,16 +22,18 @@ import java.util.List;
 
 public class ItemTPPearcel extends ItemPearcelMod{
 
-    double tpX = 0;
-    double tpY = 0;
-    double tpZ = 0;
-    int dim = 0;
-    float yaw = 0;
-    float pitch = 0;
+    private double tpX = 0;
+    private double tpY = 0;
+    private double tpZ = 0;
+    private int dim = 0;
+    private float yaw = 0;
+    private float pitch = 0;
+    private boolean dimensional;
 
-    public ItemTPPearcel(){
+    public ItemTPPearcel(boolean dimensional){
         setMaxStackSize(1);
         setMaxDamage(128);
+        this.dimensional = dimensional;
     }
 
     @Override
@@ -92,7 +96,6 @@ public class ItemTPPearcel extends ItemPearcelMod{
                 }
             } else {
                 if (player.dimension == dim) {
-                    //player.setPositionAndUpdate(tpX, tpY, tpZ);
                     player.setLocationAndAngles(tpX, tpY, tpZ, yaw, pitch);
                     player.addStat(Achievements.achievement_use_tp_pearcel);
                     if (!world.isRemote) {
@@ -106,8 +109,16 @@ public class ItemTPPearcel extends ItemPearcelMod{
                         }
                     }
                 }else{
-                    if(!world.isRemote){
-                        player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.wrongDim"))));
+                    if (dimensional){
+                        WorldServer worldServer = (WorldServer)world;
+                        EntityPlayerMP playerMP = (EntityPlayerMP)player;
+                        if (!player.isRiding() && !player.isBeingRidden() && player instanceof EntityPlayer && player.dimension != 0){
+                            //TODO
+                        }
+                    }else {
+                        if (!world.isRemote) {
+                            player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.wrongDim"))));
+                        }
                     }
                 }
             }

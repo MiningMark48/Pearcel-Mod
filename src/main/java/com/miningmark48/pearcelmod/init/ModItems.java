@@ -142,7 +142,7 @@ public class ModItems {
         pearcel_hoe = new ItemPearcelHoe(matToolPearcel).setUnlocalizedName("pearcel_hoe").setRegistryName("pearcel_hoe").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_shears = new ItemPearcelShears().setUnlocalizedName("pearcel_shears").setRegistryName("pearcel_shears").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         experience_pearcel = new ItemExperiencePearcel().setUnlocalizedName("experience_pearcel").setRegistryName("experience_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        tp_pearcel = new ItemTPPearcel().setUnlocalizedName("tp_pearcel").setRegistryName("tp_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        tp_pearcel = new ItemTPPearcel(false).setUnlocalizedName("tp_pearcel").setRegistryName("tp_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         sap = new ItemSAP().setUnlocalizedName("sap").setRegistryName("sap").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pepc = new ItemPEPC().setUnlocalizedName("pepc").setRegistryName("pepc").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_helmet = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.HEAD).setUnlocalizedName("pearcel_helmet").setRegistryName("pearcel_helmet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
