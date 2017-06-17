@@ -46,7 +46,8 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand){
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand){
+        ItemStack stack = player.getHeldItem(hand);
         if (!player.isSneaking()) {
             if (!world.isRemote) {
                 if (!player.isSneaking() && hand == EnumHand.MAIN_HAND) {
@@ -66,7 +67,7 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
             for (int i = 0; i < items.tagCount(); i++) {
                 NBTTagCompound item = (NBTTagCompound) items.getCompoundTagAt(i);
                 int slot = item.getInteger("Slot");
-                ItemStack charmStack = ItemStack.loadItemStackFromNBT(item);
+                ItemStack charmStack = new ItemStack(item);
 
                 if (slot >= 0 && slot < InventoryCharmBag.INV_SIZE) {
                     if (!stack.getTagCompound().getBoolean("active")) {
@@ -113,8 +114,8 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
                 int slot = item.getInteger("Slot");
 
                 if (slot >= 0 && slot < InventoryCharmBag.INV_SIZE){
-                    if (ItemStack.loadItemStackFromNBT(item).getTagCompound().getBoolean("active")) {
-                        ItemCharmedPearcel.doEffects(player, ItemStack.loadItemStackFromNBT(item));
+                    if (new ItemStack(item).getTagCompound().getBoolean("active")) {
+                        ItemCharmedPearcel.doEffects(player, new ItemStack(item));
                     }
                 }
 

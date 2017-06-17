@@ -11,6 +11,7 @@ import net.minecraft.inventory.IInventory;
  */
 public class BaublesApi 
 {	
+	
 	/**
 	 * Retrieves the baubles inventory capability handler for the supplied player
 	 */
@@ -31,4 +32,5 @@ public class BaublesApi
 		handler.setPlayer(player);
 		return new BaublesInventoryWrapper(handler, player);
 	}
+	
 }

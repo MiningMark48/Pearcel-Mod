@@ -30,8 +30,8 @@ public class GuiBindle extends GuiContainer{
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
         String text = Translate.toLocal("gui.bindle.name");
-        int x = GuiUtils.getXCenter(text, this.fontRendererObj, xSize);
-        this.fontRendererObj.drawString(text, x, 5, 0x404040);
+        int x = GuiUtils.getXCenter(text, this.fontRenderer, xSize);
+        this.fontRenderer.drawString(text, x, 5, 0x404040);
     }
 
     @Override

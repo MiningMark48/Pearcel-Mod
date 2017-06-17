@@ -29,7 +29,7 @@ public class ItemPearcelJuiceBottle extends ItemPearcelMod implements IGenerator
         if (entityLiving instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) entityLiving;
             if (!player.capabilities.isCreativeMode) {
-                --item.stackSize;
+                item.shrink(1);
             }
 
             if (!world.isRemote) {
@@ -38,7 +38,7 @@ public class ItemPearcelJuiceBottle extends ItemPearcelMod implements IGenerator
                 player.heal(5.0F);
             }
         }
-        return item.stackSize <= 0 ? new ItemStack((Items.GLASS_BOTTLE)) : item;
+        return item.getCount() <= 0 ? new ItemStack((Items.GLASS_BOTTLE)) : item;
     }
 
     public int getMaxItemUseDuration(ItemStack stack)

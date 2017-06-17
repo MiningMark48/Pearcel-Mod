@@ -50,7 +50,7 @@ public class ItemGlowingPearcel extends ItemPearcelFood implements IGeneratorFue
             entityplayer.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 1500, 0));
 
             if(!entityplayer.isCreative()) {
-                --stack.stackSize;
+                stack.shrink(1);
             }
 
         }

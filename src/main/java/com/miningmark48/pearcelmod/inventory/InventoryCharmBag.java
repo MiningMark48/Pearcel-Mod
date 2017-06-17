@@ -6,6 +6,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraftforge.common.util.Constants;
 
@@ -16,7 +17,7 @@ public class InventoryCharmBag implements IInventory{
     private String name = "Bindle";
     private final ItemStack invItem;
     public static final int INV_SIZE = 9;
-    private ItemStack[] inventory = new ItemStack[INV_SIZE];
+    private NonNullList<ItemStack> inventory = NonNullList.withSize(INV_SIZE, ItemStack.EMPTY);
 
     public InventoryCharmBag(ItemStack stack){
 
@@ -32,13 +33,18 @@ public class InventoryCharmBag implements IInventory{
 
     @Override
     public int getSizeInventory() {
-        return inventory.length;
+        return inventory.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
     }
 
     @Nullable
     @Override
     public ItemStack getStackInSlot(int index) {
-        return inventory[index];
+        return inventory.get(index);
     }
 
     @Nullable
@@ -46,12 +52,12 @@ public class InventoryCharmBag implements IInventory{
     public ItemStack decrStackSize(int index, int count) {
 
         ItemStack stack = getStackInSlot(index);
-        if(stack != null){
-            if(stack.stackSize > count){
+        if(stack != ItemStack.EMPTY){
+            if(stack.getCount() > count){
                 stack = stack.splitStack(count);
                 markDirty();
             }else{
-                setInventorySlotContents(index, null);
+                setInventorySlotContents(index, ItemStack.EMPTY);
             }
         }
 
@@ -62,16 +68,16 @@ public class InventoryCharmBag implements IInventory{
     @Override
     public ItemStack removeStackFromSlot(int index) {
         ItemStack stack = getStackInSlot(index);
-        setInventorySlotContents(index, null);
+        setInventorySlotContents(index, ItemStack.EMPTY);
         return stack;
     }
 
     @Override
     public void setInventorySlotContents(int index, @Nullable ItemStack stack) {
-        inventory[index] = stack;
+        inventory.set(index, stack);
 
-        if(stack != null && stack.stackSize > getInventoryStackLimit()){
-            stack.stackSize = getInventoryStackLimit();
+        if(stack != ItemStack.EMPTY && stack.getCount() > getInventoryStackLimit()){
+            stack.setCount(getInventoryStackLimit());
         }
 
         markDirty();
@@ -85,8 +91,8 @@ public class InventoryCharmBag implements IInventory{
     @Override
     public void markDirty() {
         for(int i = 0; i < getSizeInventory(); i++){
-            if(getStackInSlot(i) != null && getStackInSlot(i).stackSize == 0){
-                inventory[i] = null;
+            if(getStackInSlot(i) != ItemStack.EMPTY && getStackInSlot(i).getCount() == 0){
+                inventory.set(i, ItemStack.EMPTY);
             }
         }
 
@@ -125,7 +131,7 @@ public class InventoryCharmBag implements IInventory{
             int slot = item.getInteger("Slot");
 
             if(slot >= 0 && slot < getSizeInventory()){
-                inventory[slot] = ItemStack.loadItemStackFromNBT(item);
+                inventory.set(slot, new ItemStack(item));
             }
 
         }

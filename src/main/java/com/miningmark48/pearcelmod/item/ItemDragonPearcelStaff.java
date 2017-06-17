@@ -34,8 +34,9 @@ public class ItemDragonPearcelStaff extends ItemPearcelSword{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+        ItemStack item = player.getHeldItem(hand);
         if (player.isSneaking()){
             player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 5000, 1, true, false));
             return new ActionResult(EnumActionResult.PASS, item);

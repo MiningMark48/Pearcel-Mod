@@ -46,13 +46,14 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
     }
 
     @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ) {
+        ItemStack heldItem = playerIn.getHeldItem(hand);
         if (heldItem != null){
             if (heldItem.getItem().equals(mode_items_item) && !worldIn.getBlockState(pos).getValue(MODE_ITEMS)){
                 worldIn.setBlockState(pos, getDefaultState().withProperty(POWERED, false).withProperty(MODE_PLAYERS, false).withProperty(MODE_ITEMS, true));
                 if (!playerIn.isCreative() && !worldIn.isRemote){
-                    if (heldItem.stackSize > 0){
-                        --heldItem.stackSize;
+                    if (heldItem.getCount() > 0){
+                        heldItem.setCount(-1);
                     }
                 }
             }
@@ -61,7 +62,7 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
                 worldIn.setBlockState(pos, getDefaultState().withProperty(POWERED, false).withProperty(MODE_PLAYERS, true).withProperty(MODE_ITEMS, false));
                 if (!playerIn.isCreative() && !worldIn.isRemote){
                     EntityItem entityItem = new EntityItem(worldIn);
-                    entityItem.setEntityItemStack(new ItemStack(mode_items_item));
+                    entityItem.setItem(new ItemStack(mode_items_item));
                     entityItem.setPosition(playerIn.posX + 0.5D, playerIn.posY + 0.5D, playerIn.posZ + 0.5D);
                     worldIn.spawnEntity(entityItem);
                 }
@@ -78,7 +79,7 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
         if (!player.isCreative()) {
             if (state.getValue(MODE_ITEMS)) {
                 EntityItem mode_entity = new EntityItem(worldIn);
-                mode_entity.setEntityItemStack(new ItemStack(mode_items_item));
+                mode_entity.setItem(new ItemStack(mode_items_item));
                 mode_entity.setPosition(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D);
                 if (!worldIn.isRemote) {
                     worldIn.spawnEntity(mode_entity);

@@ -4,6 +4,7 @@ import cofh.api.energy.IEnergyHandler;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.GeneratorRegistry;
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,7 @@ import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.energy.*;
@@ -29,11 +31,12 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     private int cooldown;
     private int maxExtract = 10000;
 
-    public ItemStack[] inventory;
+    //public ItemStack[] inventory;
+    public NonNullList<ItemStack> inventory;
     private String customName;
 
     public TileEntityPearcelGenerator(){
-        this.inventory = new ItemStack[this.getSizeInventory()];
+        this.inventory = NonNullList.withSize(1, ItemStack.EMPTY);
     }
 
     public String getCustomName(){
@@ -55,32 +58,45 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         return 1;
     }
 
+    @Override
+    public boolean isEmpty() {
+        for (ItemStack itemstack : this.inventory)
+        {
+            if (!itemstack.isEmpty())
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     @Nullable
     @Override
     public ItemStack getStackInSlot(int index) {
         if (index < 0 || index >= this.getSizeInventory()){
-            return null;
+            return ItemStack.EMPTY;
         }
-        return this.inventory[index];
+        return this.inventory.get(index);
 
     }
 
     @Nullable
     @Override
     public ItemStack decrStackSize(int index, int count) {
-        if (this.getStackInSlot(index) != null){
+        if (this.getStackInSlot(index) != ItemStack.EMPTY){
             ItemStack itemStack;
 
-            if (this.getStackInSlot(index).stackSize <= count){
+            if (this.getStackInSlot(index).getCount() <= count){
                 itemStack = this.getStackInSlot(index);
-                this.setInventorySlotContents(index, null);
+                this.setInventorySlotContents(index, ItemStack.EMPTY);
                 this.markDirty();
                 return itemStack;
             }else{
                 itemStack = this.getStackInSlot(index).splitStack(count);
 
-                if (this.getStackInSlot(index).stackSize <= 0){
-                    this.setInventorySlotContents(index, null);
+                if (this.getStackInSlot(index).getCount() <= 0){
+                    this.setInventorySlotContents(index, ItemStack.EMPTY);
                 }else{
                     this.setInventorySlotContents(index, this.getStackInSlot(index));
                 }
@@ -90,7 +106,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
 
             }
         }else{
-            return null;
+            return ItemStack.EMPTY;
         }
     }
 
@@ -98,7 +114,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     @Override
     public ItemStack removeStackFromSlot(int index) {
         ItemStack stack = this.getStackInSlot(index);
-        this.setInventorySlotContents(index, null);
+        this.setInventorySlotContents(index, ItemStack.EMPTY);
         return stack;
     }
 
@@ -108,15 +124,15 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
             return;
         }
 
-        if (stack != null && stack.stackSize > this.getInventoryStackLimit()){
-            stack.stackSize = this.getInventoryStackLimit();
+        if (stack != ItemStack.EMPTY && stack.getCount() > this.getInventoryStackLimit()){
+            stack.setCount(this.getInventoryStackLimit());
         }
 
-        if (stack != null && stack.stackSize == 0){
-            stack = null;
+        if (stack != ItemStack.EMPTY && stack.isEmpty()){
+            stack = ItemStack.EMPTY;
         }
 
-        this.inventory[index] = stack;
+        this.inventory.set(index, stack);
         this.markDirty();
 
     }
@@ -183,7 +199,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     @Override
     public void clear() {
         for (int i = 0; i < this.getSizeInventory(); i++){
-            this.setInventorySlotContents(i, null);
+            this.setInventorySlotContents(i, ItemStack.EMPTY);
         }
     }
 
@@ -195,7 +211,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         NBTTagList list = new NBTTagList();
 
         for (int i = 0; i < this.getSizeInventory(); i++){
-            if (this.getStackInSlot(i) != null){
+            if (this.getStackInSlot(i) != ItemStack.EMPTY && this.getStackInSlot(i) != null){
                 NBTTagCompound stackTag = new NBTTagCompound();
                 stackTag.setByte("Slot", (byte) i);
                 this.getStackInSlot(i).writeToNBT(stackTag);
@@ -223,7 +239,7 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         for (int i = 0; i < list.tagCount(); i++) {
             NBTTagCompound stackTag = list.getCompoundTagAt(i);
             int slot = stackTag.getByte("Slot") & 255;
-            this.setInventorySlotContents(slot, ItemStack.loadItemStackFromNBT(stackTag));
+            this.setInventorySlotContents(slot, new ItemStack(stackTag));
         }
         this.current_RF = compound.getInteger("currentRF");
         this.cooldown = compound.getInteger("cooldown");
@@ -240,12 +256,12 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
         if(this.world != null) {
             if(canUse()) {
                 if(this.cooldown <= 0) {
-                    this.cooldown = getCooldownTime(this.inventory[0]);
-                    this.increase_per_tick = getRFPerTick(this.inventory[0]);
+                    this.cooldown = getCooldownTime(this.inventory.get(0));
+                    this.increase_per_tick = getRFPerTick(this.inventory.get(0));
 
-                    this.inventory[0].stackSize -= 1;
-                    if(this.inventory[0].stackSize == 0) {
-                        this.inventory[0] = null;
+                    this.inventory.get(0).shrink(1);
+                    if(this.inventory.get(0).isEmpty()) {
+                        this.inventory.set(0, ItemStack.EMPTY);
                     }
                 }
             }
@@ -273,14 +289,13 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     }
 
     private boolean canUse() {
-        if(this.inventory[0] == null) {
-            return false;
-        } else {
-            if(this.inventory[0].getItem() instanceof IGeneratorFuelHandler) {
+        if(this.inventory.get(0) != ItemStack.EMPTY) {
+            if(this.inventory.get(0).getItem() instanceof IGeneratorFuelHandler) {
                 if(this.current_RF < this.maxRF) {
                     return true;
                 }
             }
+            return false;
         }
         return false;
     }

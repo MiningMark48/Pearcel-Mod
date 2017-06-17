@@ -84,7 +84,7 @@ public class EntityPearcelBoss extends EntityMob{
             this.setHealth(0);
             this.bossInfo.setPercent(0);
 
-            if (source.getEntity() instanceof EntityPlayer)
+            if (source.getTrueSource() instanceof EntityPlayer)
             {
                 //TODO
             }

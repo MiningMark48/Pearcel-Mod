@@ -46,15 +46,10 @@ public class GeneratorFuelRecipe extends BlankRecipeWrapper{
     }
 
     @Override
-    public List getInputs() {
-        return inputs;
-    }
-
-    @Override
     public void drawInfo(Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
         flame.draw(minecraft, 2, 0);
-        minecraft.fontRendererObj.drawString(cooldownString, 24, 3, Color.DARK_GRAY.getRGB());
-        minecraft.fontRendererObj.drawString(rfPetTickString, 24, 13, Color.DARK_GRAY.getRGB());
-        minecraft.fontRendererObj.drawString(totalRF, 24, 23, Color.DARK_GRAY.getRGB());
+        minecraft.fontRenderer.drawString(cooldownString, 24, 3, Color.DARK_GRAY.getRGB());
+        minecraft.fontRenderer.drawString(rfPetTickString, 24, 13, Color.DARK_GRAY.getRGB());
+        minecraft.fontRenderer.drawString(totalRF, 24, 23, Color.DARK_GRAY.getRGB());
     }
 }

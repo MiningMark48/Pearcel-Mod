@@ -43,7 +43,7 @@ public class BlockTorcher extends BlockPearcelMod{
 
     @Override
     @SuppressWarnings("deprecation")
-    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn) {
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean p_185477_7_) {
         super.addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
@@ -64,12 +64,13 @@ public class BlockTorcher extends BlockPearcelMod{
         return BlockRenderLayer.CUTOUT;
     }
 
-    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ){
+    @Override
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ){
         if (!player.isSneaking()){
 
             Random rand = new Random();
             int rangeRand = (rand.nextInt(ConfigurationHandler.torcherRange) + 1) * 2;
-            if (world.getBlockState(new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ())).getBlock().isBlockSolid(world, pos, null)){
+            if (blockState.getBlock().getMaterial(world.getBlockState(new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ()))).isSolid()){
                 world.setBlockState(pos, ModBlocks.pearcel_torch.getDefaultState());
             }else{
                 world.setBlockToAir(pos);
@@ -131,7 +132,7 @@ public class BlockTorcher extends BlockPearcelMod{
                         break;
                 }
                 if (world.getBlockState(new BlockPos(torchX, torchY, torchZ)).getBlock().isReplaceable(world, new BlockPos(torchX, torchY, torchZ))){
-                    if (world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ)).getBlock().isBlockSolid(world, pos, null) && !world.isAirBlock(new BlockPos(torchX, torchY - 1, torchZ))){
+                    if (blockState.getBlock().getMaterial(world.getBlockState(new BlockPos(torchX, torchY - 1, torchZ))).isSolid()){
                         world.setBlockState(new BlockPos(torchX, torchY, torchZ), ModBlocks.pearcel_torch.getDefaultState());
                     }
                 }

@@ -14,11 +14,6 @@ public class GeneratorFuelHandler implements IRecipeHandler<GeneratorFuelRecipe>
     }
 
     @Override
-    public String getRecipeCategoryUid() {
-        return Reference.MOD_ID + ".generator_fuel";
-    }
-
-    @Override
     public String getRecipeCategoryUid(GeneratorFuelRecipe generatorFuelRecipe) {
         return Reference.MOD_ID + ".generator_fuel";
     }
@@ -30,12 +25,6 @@ public class GeneratorFuelHandler implements IRecipeHandler<GeneratorFuelRecipe>
 
     @Override
     public boolean isRecipeValid(GeneratorFuelRecipe generatorFuelRecipe) {
-        if (generatorFuelRecipe.getInputs().isEmpty()){
-            LogHelper.info("Generator Fuel Recipe Error: Input");
-        }
-        if (!generatorFuelRecipe.getOutputs().isEmpty()){
-            LogHelper.info("Generator Fuel Recipe Error: Output");
-        }
         return true;
     }
 }

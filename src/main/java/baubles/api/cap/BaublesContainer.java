@@ -9,7 +9,7 @@ public class BaublesContainer extends ItemStackHandler implements IBaublesItemHa
 
 	private final static int BAUBLE_SLOTS = 7;
 	private boolean[] changed = new boolean[BAUBLE_SLOTS];
-	private boolean blockEvents = false;
+	private boolean blockEvents=false;	
 	private EntityLivingBase player;
 	
 	public BaublesContainer()
@@ -35,16 +35,16 @@ public class BaublesContainer extends ItemStackHandler implements IBaublesItemHa
 	 * stack size) into the given slot.
 	 */
 	@Override
-	public boolean isItemValidForSlot(int slot, ItemStack stack, EntityLivingBase player) {		
-		if (stack == null || stack.getItem()==null || !(stack.getItem() instanceof IBauble) ||
+	public boolean isItemValidForSlot(int slot, ItemStack stack, EntityLivingBase player) {
+		if (stack==null || stack.isEmpty() || !(stack.getItem() instanceof IBauble) ||
 				!((IBauble) stack.getItem()).canEquip(stack, player))
 			return false;		
 		return ((IBauble) stack.getItem()).getBaubleType(stack).hasSlot(slot);
-	}	
+	}
 	
 	@Override
 	public void setStackInSlot(int slot, ItemStack stack) {
-		if (stack==null || this.isItemValidForSlot(slot, stack, player)) {
+		if (stack==null || stack.isEmpty() || this.isItemValidForSlot(slot, stack, player)) {
 			super.setStackInSlot(slot, stack);
 		}
 	}
@@ -54,7 +54,7 @@ public class BaublesContainer extends ItemStackHandler implements IBaublesItemHa
 		if (!this.isItemValidForSlot(slot, stack, player)) return stack;
 		return super.insertItem(slot, stack, simulate);
 	}
-
+	
 	@Override
 	public boolean isEventBlocked() {
 		return blockEvents;
@@ -69,25 +69,27 @@ public class BaublesContainer extends ItemStackHandler implements IBaublesItemHa
 	protected void onContentsChanged(int slot)
     {
 		setChanged(slot,true);
-    }
-	
+    }	
 	
 	@Override
 	public boolean isChanged(int slot) {
+		if (changed==null) {
+			changed = new boolean[this.getSlots()];
+		}
 		return changed[slot];
 	}
 
 	@Override
 	public void setChanged(int slot, boolean change) {
+		if (changed==null) {
+			changed = new boolean[this.getSlots()];
+		}
 		this.changed[slot] = change;
 	}
 
 	@Override
 	public void setPlayer(EntityLivingBase player) {
-		this.player = player;		
+		this.player=player;
 	}
-
-
-	
 	
 }

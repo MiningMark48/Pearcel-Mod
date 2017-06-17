@@ -41,7 +41,7 @@ public class ItemGoldenPearcel extends ItemPearcelFood implements IGeneratorFuel
         {
             EntityPlayer entityplayer = (EntityPlayer)entityLiving;
             if(!entityplayer.isCreative()) {
-                --stack.stackSize;
+                stack.shrink(1);
             }
 
             entityplayer.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 4000, 2));

@@ -31,9 +31,11 @@ public class BlockPearcelGenerator extends BlockContainer{
     }
 
     @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ) {
         if (!worldIn.isRemote){
-            playerIn.openGui(PearcelMod.instance, GUIs.gui_id_pearcel_generator, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            if (playerIn != null) {
+                playerIn.openGui(PearcelMod.instance, GUIs.gui_id_pearcel_generator, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            }
         }
         return true;
     }

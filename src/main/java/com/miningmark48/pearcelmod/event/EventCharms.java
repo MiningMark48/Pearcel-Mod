@@ -19,7 +19,7 @@ public class EventCharms {
     public void onPlayerHurt(LivingHurtEvent e){
         if (e.getEntity() instanceof EntityPlayer){
             EntityPlayer player = (EntityPlayer) e.getEntity();
-            if (e.getSource() == DamageSource.fall){
+            if (e.getSource() == DamageSource.FALL){
                 if (player.inventory.hasItemStack(new ItemStack(ModItems.charmed_pearcel)) || player.inventory.hasItemStack(new ItemStack(ModItems.charm_bag))){
                     for (int i = 0; i <= player.inventory.getSizeInventory(); i++){
                         if (player.inventory.getStackInSlot(i) != null){
@@ -39,8 +39,8 @@ public class EventCharms {
                                         NBTTagCompound item = (NBTTagCompound) items.getCompoundTagAt(j);
                                         int slot = item.getInteger("Slot");
                                         if(slot >= 0 && slot < InventoryCharmBag.INV_SIZE){
-                                            if (ItemStack.loadItemStackFromNBT(item).hasTagCompound()){
-                                                if (ItemStack.loadItemStackFromNBT(item).getTagCompound().getString("type").equalsIgnoreCase("fall")){
+                                            if (new ItemStack(item).hasTagCompound()){
+                                                if (new ItemStack(item).getTagCompound().getString("type").equalsIgnoreCase("fall")){
                                                     e.setCanceled(true);
                                                 }
                                             }

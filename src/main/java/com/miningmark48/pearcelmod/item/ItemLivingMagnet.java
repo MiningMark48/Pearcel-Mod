@@ -51,7 +51,8 @@ public class ItemLivingMagnet extends ItemEnergyContainer implements IBauble{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand) {
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
+        ItemStack stack = player.getHeldItem(hand);
         if (!stack.hasTagCompound()){
             stack.setTagCompound(new NBTTagCompound());
             stack.getTagCompound().setBoolean("enabled", false);

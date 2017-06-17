@@ -40,7 +40,7 @@ public class ContainerPearcelBackpack extends Container {
 
     @Override
     public ItemStack transferStackInSlot(EntityPlayer player, int index){
-        ItemStack stack = null;
+        ItemStack stack = ItemStack.EMPTY;
         Slot slot = (Slot) this.inventorySlots.get(index);
 
         if (slot != null && slot.getHasStack()){
@@ -49,27 +49,27 @@ public class ContainerPearcelBackpack extends Container {
 
             if (index < INV_START){
                 if (!this.mergeItemStack(itemstack1, INV_START, HOTBAR_END + 1, true)){
-                    return null;
+                    return ItemStack.EMPTY;
                 }
 
                 slot.onSlotChange(itemstack1, stack);
             }else{
                 if(!this.mergeItemStack(itemstack1, 0, INV_START, false)){
-                    return null;
+                    return ItemStack.EMPTY;
                 }
             }
 
-            if (itemstack1.stackSize == 0){
-                slot.putStack((ItemStack) null);
+            if (itemstack1.getCount() == 0){
+                slot.putStack(ItemStack.EMPTY);
             }else{
                 slot.onSlotChanged();
             }
 
-            if (itemstack1.stackSize == stack.stackSize){
-                return null;
+            if (itemstack1.getCount() == stack.getCount()){
+                return ItemStack.EMPTY;
             }
 
-            slot.onPickupFromSlot(player, itemstack1);
+            slot.onTake(player, itemstack1);
 
         }
 
@@ -80,7 +80,7 @@ public class ContainerPearcelBackpack extends Container {
     @Override
     public ItemStack slotClick(int slot, int button, ClickType flag, EntityPlayer player){
         if (slot >= 0 && getSlot(slot) != null && getSlot(slot).getStack() == player.getHeldItem(EnumHand.MAIN_HAND)){
-            return null;
+            return ItemStack.EMPTY;
         }
         return super.slotClick(slot, button, flag, player);
     }

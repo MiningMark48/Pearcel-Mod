@@ -44,20 +44,20 @@ public class GuiPearcelGenerator extends GuiContainer{
         this.drawTexturedModalRect(145, 72 - getProgressLevel(51), 180, 21, 21, getProgressLevel(51));
 
         String s = this.te.getDisplayName().getUnformattedText();
-        this.fontRendererObj.drawString(s, 88 - this.fontRendererObj.getStringWidth(s) / 2, 6, 4210752);
-        this.fontRendererObj.drawString(this.playerInv.getDisplayName().getUnformattedText(), 8, 75, 4210752);
+        this.fontRenderer.drawString(s, 88 - this.fontRenderer.getStringWidth(s) / 2, 6, 4210752);
+        this.fontRenderer.drawString(this.playerInv.getDisplayName().getUnformattedText(), 8, 75, 4210752);
 
         if (this.te.getField(2) != 0) {
-            this.fontRendererObj.drawString("Time Left: " + (this.te.getField(2) / 20) + "s", 36, 36, 4210752);
+            this.fontRenderer.drawString("Time Left: " + (this.te.getField(2) / 20) + "s", 36, 36, 4210752);
         }
 
         if (this.te.getField(0) >= this.te.getField(1)){
-            this.fontRendererObj.drawString("Energy Buffer Full", 36, 23, 4210752);
+            this.fontRenderer.drawString("Energy Buffer Full", 36, 23, 4210752);
         }else if(this.te.getField(0) < this.te.getField(1) && this.te.getField(2) > 0) {
             NumberFormat format = NumberFormat.getInstance();
-            this.fontRendererObj.drawString("RF/T: " + format.format(this.te.getField(3)), 36, 23, 4210752);
-        }else if(this.te.inventory[0] == null){
-            this.fontRendererObj.drawString("Insert Fuel", 36, 23, 4210752);
+            this.fontRenderer.drawString("RF/T: " + format.format(this.te.getField(3)), 36, 23, 4210752);
+        }else if(this.te.inventory.get(0) == null){
+            this.fontRenderer.drawString("Insert Fuel", 36, 23, 4210752);
         }
 
 //        Debug Code
@@ -70,7 +70,7 @@ public class GuiPearcelGenerator extends GuiContainer{
 
             List<String> text = new ArrayList<String>();
             text.add(this.getOverlayText());
-            net.minecraftforge.fml.client.config.GuiUtils.drawHoveringText(text, mouseX - ((this.width - this.xSize) / 2), mouseY - ((this.height - this.ySize) / 2), mc.displayWidth, mc.displayHeight, -1, mc.fontRendererObj);
+            net.minecraftforge.fml.client.config.GuiUtils.drawHoveringText(text, mouseX - ((this.width - this.xSize) / 2), mouseY - ((this.height - this.ySize) / 2), mc.displayWidth, mc.displayHeight, -1, mc.fontRenderer);
         }
 
     }

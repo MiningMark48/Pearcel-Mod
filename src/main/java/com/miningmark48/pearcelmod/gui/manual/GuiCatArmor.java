@@ -73,10 +73,10 @@ public class GuiCatArmor extends GuiScreen{
 
         int widthOfString;
         String stringPageIndicator = Translate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage + 1) + "/" + (bookTotalPages);
-        widthOfString = fontRendererObj.getStringWidth(stringPageIndicator);
+        widthOfString = fontRenderer.getStringWidth(stringPageIndicator);
 
-        fontRendererObj.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);
-        fontRendererObj.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 34, 116, 0);
+        fontRenderer.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);
+        fontRenderer.drawSplitString(stringPageText[currentPage], offsetFromScreenLeft + 36, 34, 116, 0);
 
         super.drawScreen(parWidth, parHeight, par3);
 

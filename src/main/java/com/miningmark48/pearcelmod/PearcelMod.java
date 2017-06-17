@@ -55,8 +55,6 @@ public class PearcelMod {
 		ModLoots.init();
 		ModSoundEvents.registerSounds();
 
-		EntityRegistry.registerModEntity(EntityEnderPearcel.class, "EnderPearcel", 10, this, 350, 50, true);
-
 		GameRegistry.registerFuelHandler(new ItemPearcelFuel());
 		GeneratorRegistry.registerGeneratorFuels();
 

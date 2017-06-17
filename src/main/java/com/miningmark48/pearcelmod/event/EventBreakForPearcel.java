@@ -26,7 +26,7 @@ public class EventBreakForPearcel {
         if (!player.isCreative()) {
             if (block == Blocks.LEAVES || block == Blocks.TALLGRASS) {
                 EntityItem entityItem = new EntityItem(world);
-                entityItem.setEntityItemStack(new ItemStack(ModItems.pearcel_item));
+                entityItem.setItem(new ItemStack(ModItems.pearcel_item));
                 entityItem.setPosition(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5);
 
                 Random rand = new Random();

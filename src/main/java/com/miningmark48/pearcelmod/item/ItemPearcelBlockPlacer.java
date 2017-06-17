@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.utility.KeyCheck;
 import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
@@ -51,8 +52,9 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
     }
 
     @Override
-    public EnumActionResult onItemUse(ItemStack item, EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ)
+    public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ)
     {
+        ItemStack item = player.getHeldItem(hand);
         if (!world.isRemote)
         {
             if (hasEnoughEnergy(item, ConfigurationHandler.rfPerUse_pbp, player)) {
@@ -77,8 +79,9 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+        ItemStack item = player.getHeldItem(hand);
         if (player.isSneaking()){
             if (!item.hasTagCompound()){
                 item.setTagCompound(new NBTTagCompound());

@@ -16,8 +16,9 @@ public class ItemPEPC extends ItemPearcelMod{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+        ItemStack stack = player.getHeldItem(hand);
         if (!player.isSneaking()){
             player.displayGUIChest(player.getInventoryEnderChest());
             player.addStat(Achievements.achievement_use_pepc);

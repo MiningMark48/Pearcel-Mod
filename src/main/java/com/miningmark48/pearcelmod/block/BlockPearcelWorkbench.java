@@ -39,7 +39,8 @@ public class BlockPearcelWorkbench extends BlockContainer {
         return EnumBlockRenderType.MODEL;
     }
 
-    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ){
+    @Override
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ){
         if (!player.isSneaking()){
             player.openGui(Reference.MOD_ID, GUIs.gui_id_pearcel_workbench, world, pos.getX(), pos.getY(), pos.getZ());
             return true;

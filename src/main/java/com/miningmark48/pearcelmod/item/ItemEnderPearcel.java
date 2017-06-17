@@ -17,6 +17,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.common.config.Config;
+import net.minecraftforge.event.world.BlockEvent;
 
 import java.util.List;
 
@@ -41,8 +42,9 @@ public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorF
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+        ItemStack stack = player.getHeldItem(hand);
         float velocity = ConfigurationHandler.enderPearcelVelocity;
 
         if (!player.isCreative()) {

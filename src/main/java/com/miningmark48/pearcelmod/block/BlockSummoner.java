@@ -48,7 +48,7 @@ public class BlockSummoner extends BlockPearcelMod {
     }
 
     @Override
-    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn) {
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean p_185477_7_) {
         super.addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
@@ -198,7 +198,7 @@ public class BlockSummoner extends BlockPearcelMod {
                 world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, x, y, z, 1.0D, 0.0D, 0.0D);
                 if (!player.isCreative()){
                     player.getHeldItem(EnumHand.MAIN_HAND).damageItem(1, player);
-                    player.attackEntityFrom(DamageSource.outOfWorld, 10.0F);
+                    player.attackEntityFrom(DamageSource.OUT_OF_WORLD, 10.0F);
                 }
 
             } else {

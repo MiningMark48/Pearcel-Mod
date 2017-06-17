@@ -42,8 +42,7 @@ public class BlockPearcelLamp extends Block{
     }
 
     @Override
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn)
-    {
+    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
         if (!worldIn.isRemote)
         {
             if (this.isOn && !worldIn.isBlockPowered(pos))

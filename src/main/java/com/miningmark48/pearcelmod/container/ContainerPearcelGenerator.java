@@ -43,7 +43,7 @@ public class ContainerPearcelGenerator extends Container{
 
     @Override
     public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
-        ItemStack previous = null;
+        ItemStack previous = ItemStack.EMPTY;
         Slot slot = (Slot) this.inventorySlots.get(fromSlot);
 
         if (slot != null && slot.getHasStack()) {
@@ -53,16 +53,16 @@ public class ContainerPearcelGenerator extends Container{
             if (fromSlot < 1) {
                 // From TE Inventory to Player Inventory
                 if (!this.mergeItemStack(current, 1, this.inventorySlots.size(), true)){
-                    return null;
+                    return ItemStack.EMPTY;
                 }
             } else {
                 // From Player Inventory to TE Inventory
                 if (!this.mergeItemStack(current, 0, 1, false))
-                    return null;
+                    return ItemStack.EMPTY;
             }
 
-            if (current.stackSize == 0)
-                slot.putStack((ItemStack) null);
+            if (current.isEmpty())
+                slot.putStack(ItemStack.EMPTY);
             else
                 slot.onSlotChanged();
         }
@@ -92,19 +92,19 @@ public class ContainerPearcelGenerator extends Container{
 
             if (this.currentRF != this.te.getField(0))
             {
-                icontainerlistener.sendProgressBarUpdate(this, 0, this.te.getField(0));
+                icontainerlistener.sendWindowProperty(this, 0, this.te.getField(0));
             }
             if (this.maxRF != this.te.getField(1))
             {
-                icontainerlistener.sendProgressBarUpdate(this, 1, this.te.getField(1));
+                icontainerlistener.sendWindowProperty(this, 1, this.te.getField(1));
             }
             if (this.cooldown != this.te.getField(2))
             {
-                icontainerlistener.sendProgressBarUpdate(this, 2, this.te.getField(2));
+                icontainerlistener.sendWindowProperty(this, 2, this.te.getField(2));
             }
             if (this.rfPerTick != this.te.getField(3))
             {
-                icontainerlistener.sendProgressBarUpdate(this, 3, this.te.getField(3));
+                icontainerlistener.sendWindowProperty(this, 3, this.te.getField(3));
             }
 
         }

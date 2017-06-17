@@ -19,7 +19,7 @@ public class ComponentNextPageButton extends GuiButton{
     @Override
     public void drawButton(Minecraft mc, int parX, int parY){
         if (visible){
-            boolean isButtonPressed = (parX >= xPosition && parY >= yPosition && parX < xPosition + width && parY < yPosition + height);
+            boolean isButtonPressed = (parX >= x && parY >= y && parX < x + width && parY < y + height);
             GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
             mc.getTextureManager().bindTexture(GuiManual.bookPageTextures[1]);
             int textureX = 0;
@@ -32,7 +32,7 @@ public class ComponentNextPageButton extends GuiButton{
                 textureY +=13;
             }
 
-            drawTexturedModalRect(xPosition, yPosition, textureX, textureY, 23, 13);
+            drawTexturedModalRect(x, y, textureX, textureY, 23, 13);
         }
     }
 

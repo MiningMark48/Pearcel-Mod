@@ -178,9 +178,9 @@ public class ItemPearcelBow extends ItemBow{
 
     public int getInventorySlotContainItem(Item itemIn, EntityPlayer player)
     {
-        for (int i = 0; i < player.inventory.mainInventory.length; ++i)
+        for (int i = 0; i < player.inventory.mainInventory.size(); ++i)
         {
-            if (player.inventory.mainInventory[i] != null && player.inventory.mainInventory[i].getItem() == itemIn)
+            if (player.inventory.mainInventory.get(i) != ItemStack.EMPTY && player.inventory.mainInventory.get(i).getItem() == itemIn)
             {
                 return i;
             }
@@ -205,8 +205,11 @@ public class ItemPearcelBow extends ItemBow{
     }
 
     @Override
-    public ActionResult<ItemStack> onItemRightClick(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+
+        ItemStack stack = player.getHeldItem(hand);
+
         if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_arrow))) {
             int i = this.getInventorySlotContainItem(ModItems.pearcel_arrow, player);
             if (player.inventory.getStackInSlot(i).hasTagCompound()) {

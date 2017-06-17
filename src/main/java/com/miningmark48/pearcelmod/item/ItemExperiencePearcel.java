@@ -54,8 +54,10 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+        ItemStack item = player.getHeldItem(hand);
+
         if(!item.hasTagCompound()){
             item.setTagCompound(new NBTTagCompound());
             item.getTagCompound().setInteger("playerXP", 0);

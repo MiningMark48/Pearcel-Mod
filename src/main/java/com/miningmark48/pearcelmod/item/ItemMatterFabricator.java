@@ -56,8 +56,9 @@ public class ItemMatterFabricator extends ItemPickaxe{
     }
 
     @Override
-    public ActionResult onItemRightClick(ItemStack item, World world, EntityPlayer player, EnumHand hand)
+    public ActionResult onItemRightClick(World world, EntityPlayer player, EnumHand hand)
     {
+        ItemStack item = player.getHeldItem(hand);
         if (player.isSneaking()){
             if (!item.hasTagCompound()){
                 item.setTagCompound(new NBTTagCompound());

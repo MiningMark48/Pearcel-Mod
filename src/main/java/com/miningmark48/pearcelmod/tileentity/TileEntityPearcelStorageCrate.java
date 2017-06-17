@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
@@ -15,13 +16,12 @@ import javax.annotation.Nullable;
 
 public class TileEntityPearcelStorageCrate extends TileEntity implements IInventory{
 
-    private ItemStack[] inventory;
+    private NonNullList<ItemStack> inventory = NonNullList.withSize(INV_SIZE, ItemStack.EMPTY);
     private String custom_name;
 
     public static int INV_SIZE = 36;
 
     public TileEntityPearcelStorageCrate(){
-        this.inventory = new ItemStack[this.getSizeInventory()];
     }
 
     public void setCustomName(String custom_name){
@@ -50,11 +50,16 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
     }
 
     @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
     public ItemStack getStackInSlot(int index) {
         if (index < 0 || index >= this.getSizeInventory()){
             return null;
         }
-        return this.inventory[index];
+        return inventory.get(index);
     }
 
     @Override
@@ -62,29 +67,29 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
         if (this.getStackInSlot(index) != null){
             ItemStack itemStack;
 
-            if (this.getStackInSlot(index).stackSize <= count){
+            if (this.getStackInSlot(index).getCount() <= count){
                 itemStack = this.getStackInSlot(index);
-                this.setInventorySlotContents(index, null);
+                this.setInventorySlotContents(index, ItemStack.EMPTY);
                 this.markDirty();
                 return itemStack;
             }else{
                 itemStack = this.getStackInSlot(index).splitStack(count);
-                if (this.getStackInSlot(index).stackSize <= 0){
-                    this.setInventorySlotContents(index, null);
+                if (this.getStackInSlot(index).getCount() <= 0){
+                    this.setInventorySlotContents(index, ItemStack.EMPTY);
                 }
 
                 this.markDirty();
                 return itemStack;
             }
         }else {
-            return null;
+            return ItemStack.EMPTY;
         }
     }
 
     @Override
     public ItemStack removeStackFromSlot(int index) {
         ItemStack stack = getStackInSlot(index);
-        setInventorySlotContents(index, null);
+        setInventorySlotContents(index, ItemStack.EMPTY);
         return stack;
     }
 
@@ -94,15 +99,15 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
             return;
         }
 
-        if (stack != null && stack.stackSize > this.getInventoryStackLimit()){
-            stack.stackSize = this.getInventoryStackLimit();
+        if (stack != ItemStack.EMPTY && stack.getCount() > this.getInventoryStackLimit()){
+            stack.setCount(this.getInventoryStackLimit());
         }
 
-        if (stack != null && stack.stackSize == 0){
-            stack = null;
+        if (stack != ItemStack.EMPTY && stack.getCount() == 0){
+            stack = ItemStack.EMPTY;
         }
 
-        this.inventory[index] = stack;
+        this.inventory.set(index, stack);
         this.markDirty();
     }
 
@@ -184,7 +189,7 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
         for (int i = 0; i < list.tagCount(); i++) {
             NBTTagCompound stackTag = list.getCompoundTagAt(i);
             int slot = stackTag.getByte("Slot") & 255;
-            this.setInventorySlotContents(slot, ItemStack.loadItemStackFromNBT(stackTag));
+            this.setInventorySlotContents(slot, new ItemStack(stackTag));
         }
 
         if (nbt.hasKey("CustomName", 8)) {
