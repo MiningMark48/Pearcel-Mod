@@ -23,6 +23,8 @@ public class BlockPearcelGenerator extends BlockContainer{
 
     public BlockPearcelGenerator() {
         super(Material.ROCK);
+        setHardness(1.25F);
+        setResistance(3.5f);
     }
 
     public EnumBlockRenderType getRenderType(IBlockState state)
