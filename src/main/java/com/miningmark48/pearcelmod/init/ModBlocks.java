@@ -81,7 +81,7 @@ public class ModBlocks {
         packed_pearcel_bricks = new BlockPearcelMod().setUnlocalizedName("packed_pearcel_bricks").setRegistryName("packed_pearcel_bricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_stone = new BlockPearcelStone().setUnlocalizedName("pearcel_stone").setRegistryName("pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_cobblestone = new BlockPearcelStone().setUnlocalizedName("pearcel_cobblestone").setRegistryName("pearcel_cobblestone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        pearcel_glass = new BlockPearcelModTransparent().setUnlocalizedName("pearcel_glass").setRegistryName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_glass = new BlockPearcelGlass().setUnlocalizedName("pearcel_glass").setRegistryName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         distressed_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("distressed_pearcel_stone").setRegistryName("distressed_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         irradiated_pearcel_block = new BlockPearcelModLightEmit(5.0F).setUnlocalizedName("irradiated_pearcel_block").setRegistryName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         polished_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("polished_pearcel_stone").setRegistryName("polished_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);

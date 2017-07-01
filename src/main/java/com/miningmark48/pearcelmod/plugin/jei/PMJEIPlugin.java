@@ -37,7 +37,7 @@ public class PMJEIPlugin implements IModPlugin{
 
     @Override
     public void registerCategories(IRecipeCategoryRegistration iRecipeCategoryRegistration) {
-        iRecipeCategoryRegistration.addRecipeCategories();
+
     }
 
     @Override
