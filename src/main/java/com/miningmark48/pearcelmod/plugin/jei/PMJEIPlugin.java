@@ -13,6 +13,7 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.utility.Translate;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IModIngredientRegistration;
+import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.VanillaRecipeCategoryUid;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -32,6 +33,11 @@ public class PMJEIPlugin implements IModPlugin{
     @Override
     public void registerIngredients(IModIngredientRegistration iModIngredientRegistration) {
 
+    }
+
+    @Override
+    public void registerCategories(IRecipeCategoryRegistration iRecipeCategoryRegistration) {
+        iRecipeCategoryRegistration.addRecipeCategories();
     }
 
     @Override

@@ -37,6 +37,11 @@ public class GeneratorFuelCategory<T extends IRecipeWrapper> extends BlankRecipe
     }
 
     @Override
+    public String getModName() {
+        return Reference.MOD_NAME;
+    }
+
+    @Override
     public IDrawable getBackground() {
         return background;
     }

@@ -57,7 +57,7 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
     @Override
     public ItemStack getStackInSlot(int index) {
         if (index < 0 || index >= this.getSizeInventory()){
-            return null;
+            return ItemStack.EMPTY;
         }
         return inventory.get(index);
     }

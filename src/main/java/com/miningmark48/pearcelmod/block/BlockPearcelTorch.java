@@ -39,7 +39,8 @@ public class BlockPearcelTorch extends BlockPearcelMod {
         setLightLevel(0.85F);
     }
 
-    public void onBlockHarvested(World world, int par2, int par3, int par4, int par5, EntityPlayer player) {
+    @Override
+    public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
         if (!player.capabilities.isCreativeMode) {
             player.inventory.addItemStackToInventory(new ItemStack(ModBlocks.pearcel_torch));
         }
@@ -53,10 +54,6 @@ public class BlockPearcelTorch extends BlockPearcelMod {
         }
     });
 
-    public AxisAlignedBB getCollisionBoundingBox(World worldIn, BlockPos pos, IBlockState state)
-    {
-        return null;
-    }
 
     public boolean isOpaqueCube()
     {
@@ -86,19 +83,21 @@ public class BlockPearcelTorch extends BlockPearcelMod {
     }
 
     @Nullable
-    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
-    {
+    @Override
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
         return NULL_AABB;
     }
 
     /**
      * Used to determine ambient occlusion and culling when rebuilding chunks for render
      */
+    @Override
     public boolean isOpaqueCube(IBlockState state)
     {
         return false;
     }
 
+    @Override
     public boolean isFullCube(IBlockState state)
     {
         return false;
@@ -117,6 +116,7 @@ public class BlockPearcelTorch extends BlockPearcelMod {
         }
     }
 
+    @Override
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
     {
         for (EnumFacing enumfacing : FACING.getAllowedValues())
@@ -137,11 +137,8 @@ public class BlockPearcelTorch extends BlockPearcelMod {
         return flag && worldIn.isSideSolid(blockpos, facing, true) || facing.equals(EnumFacing.UP) && this.canPlaceOn(worldIn, blockpos);
     }
 
-    /**
-     * Called by ItemBlocks just before a block is actually set in the world, to allow for adjustments to the
-     * IBlockstate
-     */
-    public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    @Override
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
         if (this.canPlaceAt(worldIn, pos, facing))
         {
@@ -161,6 +158,12 @@ public class BlockPearcelTorch extends BlockPearcelMod {
         }
     }
 
+    @Override
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
+        super.onBlockPlacedBy(worldIn, pos, state, placer, stack);
+    }
+
+    @Override
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
     {
         this.checkForDrop(worldIn, pos, state);
