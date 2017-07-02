@@ -3,7 +3,6 @@ package com.miningmark48.pearcelmod.gui;
 import com.miningmark48.pearcelmod.container.ContainerPearcelGenerator;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.miningmark48.pearcelmod.tileentity.TileEntityPearcelGenerator;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -63,7 +62,7 @@ public class GuiPearcelGenerator extends GuiContainer{
 //        Debug Code
 //        int actualX = mouseX - ((this.width - this.xSize) / 2);
 //        int actualY = mouseY - ((this.height - this.ySize) / 2);
-//        LogHelper.info(actualX + ", " + actualY);
+//        ModLogger.info(actualX + ", " + actualY);
 
         if (this.isMouseOver(mouseX, mouseY, 144, 19, 166, 72)){
             Minecraft mc = Minecraft.getMinecraft();

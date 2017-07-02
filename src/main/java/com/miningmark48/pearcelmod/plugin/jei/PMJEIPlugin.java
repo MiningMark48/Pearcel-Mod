@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.plugin.jei;
 
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.gui.GuiPCP;
 import com.miningmark48.pearcelmod.gui.GuiPearcelFurnace;
 import com.miningmark48.pearcelmod.gui.GuiPearcelGenerator;
@@ -10,12 +11,9 @@ import com.miningmark48.pearcelmod.plugin.jei.generator.GeneratorFuelCategory;
 import com.miningmark48.pearcelmod.plugin.jei.generator.GeneratorFuelHandler;
 import com.miningmark48.pearcelmod.plugin.jei.generator.GeneratorFuelRecipeMaker;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.Translate;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IModIngredientRegistration;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
-import mezz.jei.api.recipe.VanillaRecipeCategoryUid;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import java.util.*;
@@ -77,50 +75,50 @@ public class PMJEIPlugin implements IModPlugin{
         jeiHelpers.getIngredientBlacklist().addIngredientToBlacklist(new ItemStack(ModBlocks.pearcel_furnace_lit));
 
         //Descriptions
-        registry.addDescription(new ItemStack(ModItems.pearcel_item), Translate.toLocal("desc.item.pearcel_item"));
-        registry.addDescription(new ItemStack(ModItems.matter_fabricator), Translate.toLocal("desc.item.matter_fabricator"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_bow), Translate.toLocal("desc.item.pearcel_bow"));
-        registry.addDescription(new ItemStack(ModItems.pcp), Translate.toLocal("desc.item.pcp"));
-        registry.addDescription(new ItemStack(ModItems.experience_pearcel), Translate.toLocal("desc.item.experience_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.stimulation_pearcel), Translate.toLocal("desc.item.stimulation_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.nullification_pearcel), Translate.toLocal("desc.item.nullification_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_magnet), Translate.toLocal("desc.item.pearcel_magnet"));
-        registry.addDescription(new ItemStack(ModItems.living_magnet), Translate.toLocal("desc.item.living_magnet"));
-        registry.addDescription(new ItemStack(ModItems.glowing_pearcel), Translate.toLocal("desc.item.glowing_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_infinifood), Translate.toLocal("desc.item.pearcel_infinifood"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_staff), Translate.toLocal("desc.item.pearcel_staff"));
-        registry.addDescription(new ItemStack(ModItems.guardian_pearcel_staff), Translate.toLocal("desc.item.guardian_pearcel_staff"));
-        registry.addDescription(new ItemStack(ModItems.pepc), Translate.toLocal("desc.item.pepc"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_crook), Translate.toLocal("desc.item.pearcel_crook"));
-        registry.addDescription(new ItemStack(ModItems.tp_pearcel), Translate.toLocal("desc.item.tp_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_stone_placer), Translate.toLocal("desc.item.pbp"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_juice_bottle), Translate.toLocal("desc.item.pearcel_juice"));
-        registry.addDescription(new ItemStack(ModItems.guardian_food), Translate.toLocal("desc.item.guardian_food"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_star), Translate.toLocal("desc.item.pearcel_star"));
-        registry.addDescription(new ItemStack(ModItems.sacrificial_pearcel), Translate.toLocal("desc.item.sacrificial_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.blood_drop), Translate.toLocal("desc.item.blood_drop"));
-        registry.addDescription(new ItemStack(ModItems.pearcel_blood_dagger), Translate.toLocal("desc.item.pearcel_blood_dagger"));
-        registry.addDescription(new ItemStack(ModItems.charmed_pearcel), Translate.toLocal("desc.item.charmed_pearcel"));
-        registry.addDescription(new ItemStack(ModItems.charm_bag), Translate.toLocal("desc.item.charm_bag"));
-        registry.addDescription(new ItemStack(ModItems.slimey_pearcel), Translate.toLocal("desc.item.slimey_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_item), ModTranslate.toLocal("desc.item.pearcel_item"));
+        registry.addDescription(new ItemStack(ModItems.matter_fabricator), ModTranslate.toLocal("desc.item.matter_fabricator"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_bow), ModTranslate.toLocal("desc.item.pearcel_bow"));
+        registry.addDescription(new ItemStack(ModItems.pcp), ModTranslate.toLocal("desc.item.pcp"));
+        registry.addDescription(new ItemStack(ModItems.experience_pearcel), ModTranslate.toLocal("desc.item.experience_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.stimulation_pearcel), ModTranslate.toLocal("desc.item.stimulation_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.nullification_pearcel), ModTranslate.toLocal("desc.item.nullification_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_magnet), ModTranslate.toLocal("desc.item.pearcel_magnet"));
+        registry.addDescription(new ItemStack(ModItems.living_magnet), ModTranslate.toLocal("desc.item.living_magnet"));
+        registry.addDescription(new ItemStack(ModItems.glowing_pearcel), ModTranslate.toLocal("desc.item.glowing_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_infinifood), ModTranslate.toLocal("desc.item.pearcel_infinifood"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_staff), ModTranslate.toLocal("desc.item.pearcel_staff"));
+        registry.addDescription(new ItemStack(ModItems.guardian_pearcel_staff), ModTranslate.toLocal("desc.item.guardian_pearcel_staff"));
+        registry.addDescription(new ItemStack(ModItems.pepc), ModTranslate.toLocal("desc.item.pepc"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_crook), ModTranslate.toLocal("desc.item.pearcel_crook"));
+        registry.addDescription(new ItemStack(ModItems.tp_pearcel), ModTranslate.toLocal("desc.item.tp_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_stone_placer), ModTranslate.toLocal("desc.item.pbp"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_juice_bottle), ModTranslate.toLocal("desc.item.pearcel_juice"));
+        registry.addDescription(new ItemStack(ModItems.guardian_food), ModTranslate.toLocal("desc.item.guardian_food"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_star), ModTranslate.toLocal("desc.item.pearcel_star"));
+        registry.addDescription(new ItemStack(ModItems.sacrificial_pearcel), ModTranslate.toLocal("desc.item.sacrificial_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.blood_drop), ModTranslate.toLocal("desc.item.blood_drop"));
+        registry.addDescription(new ItemStack(ModItems.pearcel_blood_dagger), ModTranslate.toLocal("desc.item.pearcel_blood_dagger"));
+        registry.addDescription(new ItemStack(ModItems.charmed_pearcel), ModTranslate.toLocal("desc.item.charmed_pearcel"));
+        registry.addDescription(new ItemStack(ModItems.charm_bag), ModTranslate.toLocal("desc.item.charm_bag"));
+        registry.addDescription(new ItemStack(ModItems.slimey_pearcel), ModTranslate.toLocal("desc.item.slimey_pearcel"));
 
-        registry.addDescription(new ItemStack(ModBlocks.torcher), Translate.toLocal("desc.block.torcher"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_torch), Translate.toLocal("desc.block.pearcel_torch"));
-        registry.addDescription(new ItemStack(ModBlocks.summoner), Translate.toLocal("desc.block.summoner"));
-        registry.addDescription(new ItemStack(ModBlocks.pedestal), Translate.toLocal("desc.block.pedestal"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_beacon), Translate.toLocal("desc.block.pearcel_beacon"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_storage_crate), Translate.toLocal("desc.block.pearcel_storage_crate"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_workbench), Translate.toLocal("desc.block.pearcel_workbench"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_pressure_plate), Translate.toLocal("desc.block.pearcel_pressure_plate"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_spike_guardian), Translate.toLocal("desc.block.pearcel_spike_guardian"));
-        registry.addDescription(new ItemStack(ModBlocks.pearcel_furnace), Translate.toLocal("desc.block.pearcel_furnace"));
+        registry.addDescription(new ItemStack(ModBlocks.torcher), ModTranslate.toLocal("desc.block.torcher"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_torch), ModTranslate.toLocal("desc.block.pearcel_torch"));
+        registry.addDescription(new ItemStack(ModBlocks.summoner), ModTranslate.toLocal("desc.block.summoner"));
+        registry.addDescription(new ItemStack(ModBlocks.pedestal), ModTranslate.toLocal("desc.block.pedestal"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_beacon), ModTranslate.toLocal("desc.block.pearcel_beacon"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_storage_crate), ModTranslate.toLocal("desc.block.pearcel_storage_crate"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_workbench), ModTranslate.toLocal("desc.block.pearcel_workbench"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_pressure_plate), ModTranslate.toLocal("desc.block.pearcel_pressure_plate"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_spike_guardian), ModTranslate.toLocal("desc.block.pearcel_spike_guardian"));
+        registry.addDescription(new ItemStack(ModBlocks.pearcel_furnace), ModTranslate.toLocal("desc.block.pearcel_furnace"));
 
         //Descriptions - Lists
-        registry.addDescription(backpacks, Translate.toLocal("desc.item.backpack"));
-        registry.addDescription(rif_armor, Translate.toLocal("desc.item.rif_armor"));
-        registry.addDescription(pearcel_tools, Translate.toLocal("desc.item.pearcel_tools"));
-        registry.addDescription(spikes, Translate.toLocal("desc.block.pearcel_spike"));
-        registry.addDescription(throwing_pearcels, Translate.toLocal("desc.item.throwing_pearcel"));
+        registry.addDescription(backpacks, ModTranslate.toLocal("desc.item.backpack"));
+        registry.addDescription(rif_armor, ModTranslate.toLocal("desc.item.rif_armor"));
+        registry.addDescription(pearcel_tools, ModTranslate.toLocal("desc.item.pearcel_tools"));
+        registry.addDescription(spikes, ModTranslate.toLocal("desc.block.pearcel_spike"));
+        registry.addDescription(throwing_pearcels, ModTranslate.toLocal("desc.item.throwing_pearcel"));
 
         //Categories
         registry.addRecipeCategoryCraftingItem(new ItemStack(ModBlocks.pearcel_workbench), "minecraft.crafting");

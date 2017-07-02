@@ -1,10 +1,10 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.inventory.InventoryBindle;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -23,10 +23,10 @@ public class ItemBindle extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            list.add(InventoryBindle.INV_SIZE + " " + Translate.toLocal("tooltip.item.pearcel_backpack.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            list.add(InventoryBindle.INV_SIZE + " " + ModTranslate.toLocal("tooltip.item.pearcel_backpack.line1"));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }

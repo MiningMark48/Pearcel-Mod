@@ -1,8 +1,8 @@
 package com.miningmark48.pearcelmod.world;
 
+import com.miningmark48.mininglib.utility.WorldUtil;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.WorldTools;
 import net.minecraft.block.BlockChest;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Biomes;
@@ -51,7 +51,7 @@ public class StructureGenPearcel1 implements IWorldGenerator{
 
         if (biome == Biomes.PLAINS || biome == Biomes.DESERT || biome == Biomes.EXTREME_HILLS || biome == Biomes.BEACH || biome == Biomes.FOREST || biome == Biomes.FOREST_HILLS || biome == Biomes.ICE_PLAINS) {
             if (random.nextInt(ConfigurationHandler.structureRarity2) == 0) { //Rarity
-                BlockPos pos = new BlockPos(x, WorldTools.findEmptySpot(world, x, z), z);
+                BlockPos pos = new BlockPos(x, WorldUtil.findEmptySpot(world, x, z), z);
                 generateStructure(serverworld, pos, random);
             }
         }

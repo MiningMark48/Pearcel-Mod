@@ -1,14 +1,12 @@
 package com.miningmark48.pearcelmod.commands;
 
-import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.Translate;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.world.*;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -60,7 +58,7 @@ public class CommandSpawnStructure extends CommandBase{
 
         if (!world.isRemote){
             if (args.length == 0){
-                sender.sendMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.no_args")));
+                sender.sendMessage(new TextComponentString(TextFormatting.RED + ModTranslate.toLocal("command.spawn_structure.no_args")));
                 return;
             }
 
@@ -82,9 +80,9 @@ public class CommandSpawnStructure extends CommandBase{
                         StructureGenPearcel3.generateStructure(worldServer, sender.getPosition().add(1, 0, 1), rand);
                         break;
                 }
-                sender.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("command.spawn_structure.spawned")));
+                sender.sendMessage(new TextComponentString(TextFormatting.GREEN + ModTranslate.toLocal("command.spawn_structure.spawned")));
             }catch (NumberFormatException e){
-                sender.sendMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("command.spawn_structure.invalid")));
+                sender.sendMessage(new TextComponentString(TextFormatting.RED + ModTranslate.toLocal("command.spawn_structure.invalid")));
             }
 
         }

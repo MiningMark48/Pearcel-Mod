@@ -1,10 +1,9 @@
 package com.miningmark48.pearcelmod.gui;
 
+import com.miningmark48.mininglib.utility.GuiUtil;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.container.ContainerPCP;
-import com.miningmark48.pearcelmod.container.ContainerPearcelWorkbench;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.GuiUtils;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -29,8 +28,8 @@ public class GuiPCP extends GuiContainer{
 
     protected void drawGuiContainerForegroundLayer(int i, int j){
 
-        String text = Translate.toLocal("gui.pcp.name");
-        int x = GuiUtils.getXCenter(text, this.fontRenderer, xSize);
+        String text = ModTranslate.toLocal("gui.pcp.name");
+        int x = GuiUtil.getXCenter(text, this.fontRenderer, xSize);
         this.fontRenderer.drawString(text, x, 5, 0x404040);
     }
 

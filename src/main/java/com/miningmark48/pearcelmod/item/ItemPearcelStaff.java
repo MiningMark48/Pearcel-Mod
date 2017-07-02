@@ -1,9 +1,9 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -49,7 +49,7 @@ public class ItemPearcelStaff extends ItemPearcelSword{
                 player.addVelocity(0, 0.5, 0);
             }else{
                 if (!world.isRemote) {
-                    player.sendMessage(new TextComponentTranslation(TextFormatting.DARK_RED + Translate.toLocal("chat.pearcel_staff.weaken")));
+                    player.sendMessage(new TextComponentTranslation(TextFormatting.DARK_RED + ModTranslate.toLocal("chat.pearcel_staff.weaken")));
                     item.damageItem(10, player);
                 }
             }

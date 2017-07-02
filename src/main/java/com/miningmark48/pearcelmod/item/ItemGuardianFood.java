@@ -1,10 +1,9 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.init.ModSoundEvents;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
-import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -27,10 +26,10 @@ public class ItemGuardianFood extends ItemPearcelFood{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            par3List.add(Translate.toLocal("tooltip.item.guardian_food.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            par3List.add(ModTranslate.toLocal("tooltip.item.guardian_food.line1"));
         }else{
-            par3List.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            par3List.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
     }
 
@@ -53,7 +52,7 @@ public class ItemGuardianFood extends ItemPearcelFood{
             world.spawnEntity(pb);
 
             for (EntityPlayer e : players) {
-                e.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.guardian_food.summoned")));
+                e.sendMessage(new TextComponentString(TextFormatting.GREEN + ModTranslate.toLocal("chat.item.guardian_food.summoned")));
             }
         }
 

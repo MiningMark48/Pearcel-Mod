@@ -1,12 +1,12 @@
 package com.miningmark48.pearcelmod.item;
 
 import cofh.api.energy.ItemEnergyContainer;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
@@ -16,8 +16,6 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
-import net.minecraftforge.common.config.Config;
-import net.minecraftforge.event.world.BlockEvent;
 
 import java.util.List;
 
@@ -31,12 +29,12 @@ public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorF
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            list.add(Translate.toLocal("tooltip.item.pearcelPearl.line1"));
-            if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_enderPearcel + " RF/Use");
-            if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+        if (KeyChecker.isHoldingShift()) {
+            list.add(ModTranslate.toLocal("tooltip.item.pearcelPearl.line1"));
+            if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_enderPearcel + " RF/Use");
+            if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.RED + ModTranslate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }

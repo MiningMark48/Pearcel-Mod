@@ -3,9 +3,9 @@ package com.miningmark48.pearcelmod.item;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import cofh.api.energy.ItemEnergyContainer;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -32,20 +32,20 @@ public class ItemLivingMagnet extends ItemEnergyContainer implements IBauble{
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
+        if (KeyChecker.isHoldingShift()) {
             if (!stack.hasTagCompound()) {
                 stack.setTagCompound(new NBTTagCompound());
                 stack.getTagCompound().setBoolean("enabled", false);
                 stack.getTagCompound().setString("mode", "Attracts");
             }
-            list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.living_magnet.line1") + " " + TextFormatting.AQUA + stack.getTagCompound().getBoolean("enabled"));
-            list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.living_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
-            list.add(Translate.toLocal("tooltip.item.living_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + Translate.toLocal("tooltip.item.living_magnet.line2.p2"));
-            list.add(Translate.toLocal("tooltip.item.living_magnet.line3"));
-            if (ConfigurationHandler.rfUseEnabled_livingMagnet) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_livingMagnet + " RF/T");
-            if (ConfigurationHandler.rfUseEnabled_livingMagnet) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+            list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.living_magnet.line1") + " " + TextFormatting.AQUA + stack.getTagCompound().getBoolean("enabled"));
+            list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.living_magnet.line4") + " " + TextFormatting.AQUA + stack.getTagCompound().getString("mode"));
+            list.add(ModTranslate.toLocal("tooltip.item.living_magnet.line2.p1") + " " + ConfigurationHandler.pearcelMagnetRange + " " + ModTranslate.toLocal("tooltip.item.living_magnet.line2.p2"));
+            list.add(ModTranslate.toLocal("tooltip.item.living_magnet.line3"));
+            if (ConfigurationHandler.rfUseEnabled_livingMagnet) list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerTick_livingMagnet + " RF/T");
+            if (ConfigurationHandler.rfUseEnabled_livingMagnet) list.add(TextFormatting.RED + ModTranslate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }
@@ -63,18 +63,18 @@ public class ItemLivingMagnet extends ItemEnergyContainer implements IBauble{
             if(!player.isSneaking()) {
                 if (stack.getTagCompound().getBoolean("enabled")) {
                     stack.getTagCompound().setBoolean("enabled", false);
-                    player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("chat.item.living_magnet.disabled")));
+                    player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + ModTranslate.toLocal("chat.item.living_magnet.disabled")));
                 } else {
                     stack.getTagCompound().setBoolean("enabled", true);
-                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.item.living_magnet.enabled")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("chat.item.living_magnet.enabled")));
                 }
             }else{
                 if (stack.getTagCompound().getString("mode").equalsIgnoreCase("attracts")) {
                     stack.getTagCompound().setString("mode", "Repels");
-                    player.sendMessage(new TextComponentString(TextFormatting.RED + Translate.toLocal("chat.item.living_magnet.repels")));
+                    player.sendMessage(new TextComponentString(TextFormatting.RED + ModTranslate.toLocal("chat.item.living_magnet.repels")));
                 } else {
                     stack.getTagCompound().setString("mode", "Attracts");
-                    player.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.item.living_magnet.attracts")));
+                    player.sendMessage(new TextComponentString(TextFormatting.GREEN + ModTranslate.toLocal("chat.item.living_magnet.attracts")));
                 }
             }
         }

@@ -1,10 +1,8 @@
 package com.miningmark48.pearcelmod.plugin.jei.generator;
 
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import mezz.jei.api.recipe.IRecipeHandler;
 import mezz.jei.api.recipe.IRecipeWrapper;
-import sun.rmi.runtime.Log;
 
 public class GeneratorFuelHandler implements IRecipeHandler<GeneratorFuelRecipe>{
 

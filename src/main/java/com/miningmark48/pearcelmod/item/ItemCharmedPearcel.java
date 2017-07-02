@@ -3,12 +3,11 @@ package com.miningmark48.pearcelmod.item;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import cofh.api.energy.ItemEnergyContainer;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import com.miningmark48.pearcelmod.utility.Translate;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,10 +24,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
-import net.minecraftforge.common.config.Config;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import sun.rmi.log.LogHandler;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -87,74 +84,74 @@ public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble, 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (KeyCheck.isHoldingShift()) {
+        if (KeyChecker.isHoldingShift()) {
             if (stack.hasTagCompound()) {
 
                 if (!stack.getTagCompound().getString("type").equalsIgnoreCase("none")) {
-                    list.add(TextFormatting.DARK_AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line2.mode") + " " + (stack.getTagCompound().getBoolean("active") ? TextFormatting.GREEN + Translate.toLocal("tooltip.item.charmed_pearcel.line2.mode.active") : TextFormatting.RED + Translate.toLocal("tooltip.item.charmed_pearcel.line2.mode.not_active")));
+                    list.add(TextFormatting.DARK_AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line2.mode") + " " + (stack.getTagCompound().getBoolean("active") ? TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line2.mode.active") : TextFormatting.RED + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line2.mode.not_active")));
                 }
 
                 if (stack.getTagCompound().getString("type").equalsIgnoreCase("fire")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.fire"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.fire.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.fire"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.fire.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_fire + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("water")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.water"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.water.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.water"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.water.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_water + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("saturation")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.saturation"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.saturation.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.saturation"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.saturation.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_saturation + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("step_assist")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.step_assist"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.step_assist.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.step_assist"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.step_assist.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_stepAssist + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("fall")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.fall"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.fall.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.fall"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.fall.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_fall + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("gravity")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.gravity"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.gravity.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.gravity"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.gravity.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_gravity + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("adrenaline")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.adrenaline"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.adrenaline.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.adrenaline"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.adrenaline.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_adrenaline + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("cloaking")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.cloaking"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.cloaking.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.cloaking"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.cloaking.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_cloaking + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("hearty")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.hearty"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.hearty.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.hearty"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.hearty.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_hearty + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("repair")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.repair"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.repair.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.repair"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.repair.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_repair + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("physco")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.physco"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.physco.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.physco"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.physco.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_physco + " RF/T");
                 }else if (stack.getTagCompound().getString("type").equalsIgnoreCase("third_eye")){
-                    list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.third_eye"));
-                    list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.charmed_pearcel.line1.type.third_eye.desc"));
+                    list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.third_eye"));
+                    list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.type.third_eye.desc"));
                     if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.GREEN + "Uses " + ConfigurationHandler.rfPerTick_charmedPearcel_thirdEye + " RF/T");
                 }else {
-                    list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
+                    list.add(TextFormatting.RED + (ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
                 }
 
-                if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+                if (ConfigurationHandler.rfUseEnabled_charmedPearcel) list.add(TextFormatting.RED + ModTranslate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
 
 
             } else {
-                list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
+                list.add(TextFormatting.RED + (ModTranslate.toLocal("tooltip.item.charmed_pearcel.line1.no_charm")));
             }
 
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
     }
 
@@ -275,10 +272,10 @@ public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble, 
         if (player.isSneaking() && !world.isRemote) {
             if (!stack.getTagCompound().getBoolean("active")) {
                 stack.getTagCompound().setBoolean("active", true);
-                player.sendMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
+                player.sendMessage(new TextComponentString(ChatFormatting.GREEN + ModTranslate.toLocal("chat.item.charmed_pearcel.activated")));
             } else {
                 stack.getTagCompound().setBoolean("active", false);
-                player.sendMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
+                player.sendMessage(new TextComponentString(ChatFormatting.RED + ModTranslate.toLocal("chat.item.charmed_pearcel.deactivated")));
             }
         }
 

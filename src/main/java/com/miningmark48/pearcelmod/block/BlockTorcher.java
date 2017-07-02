@@ -1,14 +1,13 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -141,7 +140,7 @@ public class BlockTorcher extends BlockPearcelMod{
             world.spawnParticle(EnumParticleTypes.EXPLOSION_HUGE, pos.getX(), pos.getY(), pos.getZ(), 1.0D, 0.0D, 0.0D);
             world.spawnEntity(new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ(), true));
             if (!world.isRemote){
-                player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("chat.torcher.lit")));
+                player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("chat.torcher.lit")));
             }
 
             return true;

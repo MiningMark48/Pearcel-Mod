@@ -1,8 +1,8 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.achievements.Achievements;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
@@ -28,21 +28,21 @@ public class ItemExperiencePearcel extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            list.add(Translate.toLocal("tooltip.item.experiencePearcel.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            list.add(ModTranslate.toLocal("tooltip.item.experiencePearcel.line1"));
             list.add("");
 
             if (stack.hasTagCompound()) {
                 if (stack.getTagCompound().getInteger("playerXP") == 0) {
-                    list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
+                    list.add(TextFormatting.RED + ModTranslate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
                 } else {
-                    list.add(TextFormatting.GOLD + Translate.toLocal("tooltip.item.experiencePearcel.line2.XP") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("playerXP"));
+                    list.add(TextFormatting.GOLD + ModTranslate.toLocal("tooltip.item.experiencePearcel.line2.XP") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("playerXP"));
                 }
             } else {
-                list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
+                list.add(TextFormatting.RED + ModTranslate.toLocal("tooltip.item.experiencePearcel.line2.noXP"));
             }
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }

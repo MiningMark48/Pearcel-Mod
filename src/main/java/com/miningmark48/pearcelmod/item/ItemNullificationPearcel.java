@@ -1,7 +1,7 @@
 package com.miningmark48.pearcelmod.item;
 
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -24,21 +24,21 @@ public class ItemNullificationPearcel extends ItemPearcelMod{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (KeyCheck.isHoldingShift()) {
+        if (KeyChecker.isHoldingShift()) {
 
             if (stack.hasTagCompound()) {
                 String txt = stack.getTagCompound().getString("nullBlock");
                 txt = txt.replace("Block{", "");
                 txt = txt.replace("}", "");
 
-                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.nullification_pearcel.line1") + " " + TextFormatting.AQUA + txt);
+                list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.nullification_pearcel.line1") + " " + TextFormatting.AQUA + txt);
             } else {
-                list.add(TextFormatting.YELLOW + Translate.toLocal("tooltip.item.nullification_pearcel.line2"));
+                list.add(TextFormatting.YELLOW + ModTranslate.toLocal("tooltip.item.nullification_pearcel.line2"));
             }
 
-            list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.nullification_pearcel.line3"));
+            list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.nullification_pearcel.line3"));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }
@@ -51,7 +51,7 @@ public class ItemNullificationPearcel extends ItemPearcelMod{
                 stack.setTagCompound(new NBTTagCompound());
             }
             stack.getTagCompound().setString("nullBlock", worldIn.getBlockState(pos).getBlock().toString());
-            playerIn.sendMessage(new TextComponentString(Translate.toLocal("chat.item.nullification_pearcel.set") + " " + TextFormatting.GOLD + new ItemStack(worldIn.getBlockState(pos).getBlock()).getDisplayName()));
+            playerIn.sendMessage(new TextComponentString(ModTranslate.toLocal("chat.item.nullification_pearcel.set") + " " + TextFormatting.GOLD + new ItemStack(worldIn.getBlockState(pos).getBlock()).getDisplayName()));
         }
         return EnumActionResult.SUCCESS;
     }

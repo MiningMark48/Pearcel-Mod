@@ -1,11 +1,9 @@
 package com.miningmark48.pearcelmod.init;
 
 import com.google.common.collect.Lists;
-import com.miningmark48.pearcelmod.block.BlockPearcelMod;
+import com.miningmark48.mininglib.utility.ModLogger;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.item.*;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import java.util.List;
@@ -47,7 +45,7 @@ public class GeneratorRegistry {
         addFuelToList(new ItemStack(ModItems.blood_drop));
         addFuelToList(new ItemStack(ModItems.pearcel_ingot));
 
-        LogHelper.info("Registered Generator Fuels");
+        ModLogger.info("Registered Generator Fuels");
     }
 
     public static void registerGeneratorFuel(IGeneratorFuelHandler handler){

@@ -1,8 +1,8 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
@@ -26,31 +26,31 @@ public class ItemMatterFabricator extends ItemPickaxe{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (KeyCheck.isHoldingShift()) {
+        if (KeyChecker.isHoldingShift()) {
 
             if (stack.hasTagCompound()) {
                 if(stack.getTagCompound().getInteger("mode") == 1) {
-                    list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "Junk Blocks");
+                    list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "Junk Blocks");
                 }else{
-                    list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "All Blocks");
+                    list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "All Blocks");
                 }
-                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.mf.line2") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("mp") + "/" + ConfigurationHandler.matterFabricatorMPAmount);
+                list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.mf.line2") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("mp") + "/" + ConfigurationHandler.matterFabricatorMPAmount);
             } else {
                 stack.setTagCompound(new NBTTagCompound());
                 stack.getTagCompound().setInteger("mode", 1);
                 stack.getTagCompound().setInteger("mf", 0);
                 if(stack.getTagCompound().getInteger("mode") == 1) {
-                    list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "Trash Blocks");
+                    list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "Trash Blocks");
                 }else{
-                    list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "All Blocks");
+                    list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.mf.line1") + " " + TextFormatting.AQUA + "All Blocks");
                 }
-                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.mf.line2") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("mp") + "/128");
+                list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.mf.line2") + " " + TextFormatting.AQUA + stack.getTagCompound().getInteger("mp") + "/128");
             }
 
-            list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.mf.line3"));
-            list.add(Translate.toLocal("tooltip.item.mf.line4"));
+            list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.mf.line3"));
+            list.add(ModTranslate.toLocal("tooltip.item.mf.line4"));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }
@@ -67,12 +67,12 @@ public class ItemMatterFabricator extends ItemPickaxe{
                 if (item.getTagCompound().getInteger("mode") == 1){
                     item.getTagCompound().setInteger("mode", 2);
                     if (!world.isRemote) {
-                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.mf.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (ModTranslate.toLocal("chat.item.mf.modeChange"))));
                     }
                 }else{
                     item.getTagCompound().setInteger("mode", 1);
                     if (!world.isRemote) {
-                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.mf.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (ModTranslate.toLocal("chat.item.mf.modeChange"))));
                     }
                 }
             }

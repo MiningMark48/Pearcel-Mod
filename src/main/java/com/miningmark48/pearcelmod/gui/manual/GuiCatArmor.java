@@ -1,7 +1,6 @@
 package com.miningmark48.pearcelmod.gui.manual;
 
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import com.miningmark48.pearcelmod.utility.Translate;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
@@ -26,7 +25,7 @@ public class GuiCatArmor extends GuiScreen{
         bookPageTextures[0] = GuiReference.manual_page;
 
         for (int i = 0; i < bookTotalPages; i++){
-            stringPageText[i] = StringEscapeUtils.unescapeJava(Translate.toLocal("gui.manual.armor.text." + Integer.valueOf(i)));
+            stringPageText[i] = StringEscapeUtils.unescapeJava(ModTranslate.toLocal("gui.manual.armor.text." + Integer.valueOf(i)));
         }
 
     }
@@ -40,7 +39,7 @@ public class GuiCatArmor extends GuiScreen{
         buttonList.add(buttonNextPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 120, 158, true));
         buttonList.add(buttonPreviousPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 38, 158, false));
 
-        buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, Translate.toLocal("gui.manual.button.home"));
+        buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, ModTranslate.toLocal("gui.manual.button.home"));
         buttonList.add(buttonHome);
 
         for (GuiButton e : buttonList){
@@ -72,7 +71,7 @@ public class GuiCatArmor extends GuiScreen{
         drawTexturedModalRect(offsetFromScreenLeft, 2, 0, 0, textureWidth, textureHeight);
 
         int widthOfString;
-        String stringPageIndicator = Translate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage + 1) + "/" + (bookTotalPages);
+        String stringPageIndicator = ModTranslate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage + 1) + "/" + (bookTotalPages);
         widthOfString = fontRenderer.getStringWidth(stringPageIndicator);
 
         fontRenderer.drawString(stringPageIndicator, offsetFromScreenLeft - widthOfString + textureWidth - 44, 18, 0);

@@ -1,9 +1,9 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
@@ -39,23 +39,23 @@ public class ItemTPPearcel extends ItemPearcelMod{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (KeyCheck.isHoldingShift()) {
+        if (KeyChecker.isHoldingShift()) {
 
-            list.add(Translate.toLocal("tooltip.item.tpPearcel.line1"));
+            list.add(ModTranslate.toLocal("tooltip.item.tpPearcel.line1"));
             list.add("");
 
             if (stack.hasTagCompound()) {
                 if (stack.getTagCompound().getDouble("tpX") == 0D && stack.getTagCompound().getDouble("tpY") == 0D && stack.getTagCompound().getDouble("tpZ") == 0D) {
-                    list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.tpPearcel.line2.notBound")));
+                    list.add(TextFormatting.RED + (ModTranslate.toLocal("tooltip.item.tpPearcel.line2.notBound")));
                 } else {
-                    list.add(TextFormatting.GREEN + (Translate.toLocal("tooltip.item.tpPearcel.line2.bound") + " " + TextFormatting.AQUA + Math.round(stack.getTagCompound().getDouble("tpX")) + " " + Math.round(stack.getTagCompound().getDouble("tpY")) + " " + Math.round(stack.getTagCompound().getDouble("tpZ"))));
+                    list.add(TextFormatting.GREEN + (ModTranslate.toLocal("tooltip.item.tpPearcel.line2.bound") + " " + TextFormatting.AQUA + Math.round(stack.getTagCompound().getDouble("tpX")) + " " + Math.round(stack.getTagCompound().getDouble("tpY")) + " " + Math.round(stack.getTagCompound().getDouble("tpZ"))));
                 }
             } else {
-                list.add(TextFormatting.RED + (Translate.toLocal("tooltip.item.tpPearcel.line2.notBound")));
+                list.add(TextFormatting.RED + (ModTranslate.toLocal("tooltip.item.tpPearcel.line2.notBound")));
             }
 
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
     }
 
@@ -82,7 +82,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
             stack.getTagCompound().setFloat("pitch", player.rotationPitch);
             stack.getTagCompound().setBoolean("set", true);
             if(!world.isRemote) {
-                player.sendMessage(new TextComponentTranslation(TextFormatting.DARK_GREEN + (Translate.toLocal("chat.tpPearcel.location.set"))));
+                player.sendMessage(new TextComponentTranslation(TextFormatting.DARK_GREEN + (ModTranslate.toLocal("chat.tpPearcel.location.set"))));
             }
         }else{
             tpX = stack.getTagCompound().getDouble("tpX");
@@ -93,14 +93,14 @@ public class ItemTPPearcel extends ItemPearcelMod{
             pitch = stack.getTagCompound().getFloat("pitch");
             if (!stack.getTagCompound().getBoolean("set")) {
                 if (!world.isRemote) {
-                    player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.location.notSet"))));
+                    player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (ModTranslate.toLocal("chat.tpPearcel.location.notSet"))));
                 }
             } else {
                 if (player.dimension == dim) {
                     player.setLocationAndAngles(tpX, tpY, tpZ, yaw, pitch);
                     player.addStat(Achievements.achievement_use_tp_pearcel);
                     if (!world.isRemote) {
-                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.tpPearcel.tp"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (ModTranslate.toLocal("chat.tpPearcel.tp"))));
                     }
                     if (!player.capabilities.isCreativeMode) {
                         if (player.inventory.hasItemStack(new ItemStack(ModItems.pearcel_item))) {
@@ -118,7 +118,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
                         }
                     }else {
                         if (!world.isRemote) {
-                            player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (Translate.toLocal("chat.tpPearcel.wrongDim"))));
+                            player.sendMessage(new TextComponentTranslation(TextFormatting.RED + (ModTranslate.toLocal("chat.tpPearcel.wrongDim"))));
                         }
                     }
                 }

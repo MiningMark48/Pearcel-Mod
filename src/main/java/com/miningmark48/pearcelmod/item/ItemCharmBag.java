@@ -2,11 +2,11 @@ package com.miningmark48.pearcelmod.item;
 
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -32,10 +32,10 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            list.add(Translate.toLocal("tooltip.item.charm_bag.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            list.add(ModTranslate.toLocal("tooltip.item.charm_bag.line1"));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }
@@ -80,10 +80,10 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
 
             if (!world.isRemote) {
                 if (stack.getTagCompound().getBoolean("active")) {
-                    player.sendMessage(new TextComponentString(ChatFormatting.RED + Translate.toLocal("chat.item.charmed_pearcel.deactivated")));
+                    player.sendMessage(new TextComponentString(ChatFormatting.RED + ModTranslate.toLocal("chat.item.charmed_pearcel.deactivated")));
                     stack.getTagCompound().setBoolean("active", false);
                 } else {
-                    player.sendMessage(new TextComponentString(ChatFormatting.GREEN + Translate.toLocal("chat.item.charmed_pearcel.activated")));
+                    player.sendMessage(new TextComponentString(ChatFormatting.GREEN + ModTranslate.toLocal("chat.item.charmed_pearcel.activated")));
                     stack.getTagCompound().setBoolean("active", true);
                 }
             }

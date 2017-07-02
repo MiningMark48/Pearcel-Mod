@@ -1,9 +1,9 @@
 package com.miningmark48.pearcelmod.block;
 
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.init.ModSoundEvents;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -112,7 +112,7 @@ public class BlockSummoner extends BlockPearcelMod {
                 if (!world.isRemote) {
                     //Missing Block
                     if (world.getBlockState(pos.up()).getBlock() == Blocks.AIR) {
-                        player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.missingBlock")));
+                        player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + ModTranslate.toLocal("summoner.error.missingBlock")));
                         if (world.isRemote) {
                             world.spawnEntity(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
                         }
@@ -121,73 +121,73 @@ public class BlockSummoner extends BlockPearcelMod {
                         if(player.dimension == 1) {
                             setTainted(pos, world);
                             world.spawnEntity(dragon);
-                            player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.dragon") + " " + Translate.toLocal("summoner.summoned")));
+                            player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.dragon") + " " + ModTranslate.toLocal("summoner.summoned")));
                         }else{
-                            player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.wrongDimension")));
+                            player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + ModTranslate.toLocal("summoner.error.wrongDimension")));
                         }
                     }//Wither
                     else if (isCorrectSetup(pos, world, Blocks.SKULL, Blocks.DIAMOND_BLOCK)) {
                         setTainted(pos, world);
                         world.spawnEntity(wither);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.wither") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.wither") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Sheep
                     else if (isCorrectSetup(pos, world, Blocks.WOOL, Blocks.WOOL)) {
                         setTainted(pos, world);
                         world.spawnEntity(sheep);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.sheep") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.sheep") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Enderman
                     else if (isCorrectSetup(pos, world, Blocks.END_STONE, Blocks.END_STONE)) {
                         setTainted(pos, world);
                         world.spawnEntity(enderman);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.enderman") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.enderman") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Blaze
                     else if (isCorrectSetup(pos, world, Blocks.GRAVEL, Blocks.NETHERRACK)) {
                         setTainted(pos, world);
                         world.spawnEntity(blaze);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.blaze") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.blaze") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Ghast
                     else if (isCorrectSetup(pos, world, Blocks.COBBLESTONE, Blocks.SOUL_SAND)) {
                         setTainted(pos, world);
                         world.spawnEntity(ghast);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.ghast") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.ghast") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Skeleton
                     else if (isCorrectSetup(pos, world, Blocks.PLANKS, Blocks.SAND)) {
                         setTainted(pos, world);
                         world.spawnEntity(skeleton);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.skeleton") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.skeleton") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Creeper
                     else if (isCorrectSetup(pos, world, Blocks.TNT, Blocks.TNT)) {
                         setTainted(pos, world);
                         world.spawnEntity(creeper);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.creeper") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.creeper") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Horse
                     else if (isCorrectSetup(pos, world, Blocks.HAY_BLOCK, Blocks.HAY_BLOCK)) {
                         setTainted(pos, world);
                         world.spawnEntity(horse);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.horse") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.horse") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Iron Golem
                     else if (isCorrectSetup(pos, world, Blocks.IRON_BLOCK, Blocks.IRON_BLOCK)) {
                         setTainted(pos, world);
                         world.spawnEntity(iron_golem);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.iron_golem") + " " +Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.iron_golem") + " " +ModTranslate.toLocal("summoner.summoned")));
                     }
                     //Villager
                     else if (isCorrectSetup(pos, world, Blocks.EMERALD_BLOCK, Blocks.SKULL)) {
                         setTainted(pos, world);
                         world.spawnEntity(villager);
-                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + Translate.toLocal("summoner.mob_summon.villager") + " " + Translate.toLocal("summoner.summoned")));
+                        player.sendMessage(new TextComponentString(TextFormatting.GOLD + ModTranslate.toLocal("summoner.mob_summon.villager") + " " + ModTranslate.toLocal("summoner.summoned")));
                     }else {
                         if (!world.isRemote) {
                             setTainted(pos, world);
-                            player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.incorrectBlock")));
+                            player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + ModTranslate.toLocal("summoner.error.incorrectBlock")));
                         }
                         if (world.isRemote) {
                             world.spawnEntity(new EntityLightningBolt(world, player.posX, player.posY, player.posZ, true));
@@ -203,7 +203,7 @@ public class BlockSummoner extends BlockPearcelMod {
 
             } else {
                 if (!world.isRemote) {
-                    player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + Translate.toLocal("summoner.error.incorrectItem")));
+                    player.sendMessage(new TextComponentString(TextFormatting.DARK_RED + ModTranslate.toLocal("summoner.error.incorrectItem")));
                 }
             }
         }

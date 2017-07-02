@@ -1,13 +1,10 @@
 package com.miningmark48.pearcelmod.gui.manual;
 
-import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import com.miningmark48.pearcelmod.utility.Translate;
+import com.miningmark48.mininglib.utility.ModLogger;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.lwjgl.opengl.GL11;
@@ -39,7 +36,7 @@ public class GuiManual extends GuiScreen{
         currentPage = page;
 
         for (int i = 0; i < bookTotalPages; i++){
-            stringPageText[i] = StringEscapeUtils.unescapeJava(Translate.toLocal("gui.manual.intro.text." + Integer.valueOf(i)));
+            stringPageText[i] = StringEscapeUtils.unescapeJava(ModTranslate.toLocal("gui.manual.intro.text." + Integer.valueOf(i)));
         }
 
     }
@@ -48,24 +45,24 @@ public class GuiManual extends GuiScreen{
     public void initGui(){
         super.initGui();
         //Debug
-        LogHelper.info("Gui Initialized!");
+        ModLogger.info("Gui Initialized!");
         buttonList.clear();
 
         int offsetFromScreenLeft = (width - textureWidth) / 2;
         buttonList.add(buttonNextPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 120, 158, true));
         buttonList.add(buttonPreviousPage = new ComponentNextPageButton(1, offsetFromScreenLeft + 38, 158, false));
 
-        buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, Translate.toLocal("gui.manual.button.home"));
+        buttonHome = new GuiButton(2, (width / 2) - 20, textureHeight, 40, 20, ModTranslate.toLocal("gui.manual.button.home"));
         buttonList.add(buttonHome);
 
         //Glossary
-        buttonTools = new GuiButton(3, width / 2 - 145, 2 + 30, 65, 20, Translate.toLocal("gui.manual.button.glossary.tools"));
-        buttonArmor = new GuiButton(3, width / 2 - 145, 2 + 55, 65, 20, Translate.toLocal("gui.manual.button.glossary.armor"));
-        buttonItems = new GuiButton(3, width / 2 - 145, 2 + 80, 65, 20, Translate.toLocal("gui.manual.button.glossary.items"));
-        buttonBlocks = new GuiButton(3, width / 2 - 145, 2 + 105, 65, 20, Translate.toLocal("gui.manual.button.glossary.blocks"));
-        buttonSummoning = new GuiButton(3, width / 2 - 145, 2 + 130, 65, 20, Translate.toLocal("gui.manual.button.glossary.summoning"));
-        buttonMobs = new GuiButton(3, width / 2 + 75, 2 + 30, 65, 20, Translate.toLocal("gui.manual.button.glossary.mobs"));
-        buttonCredits = new GuiButton(3, width / 2 + 75, 2 + 55, 65, 20, Translate.toLocal("gui.manual.button.glossary.credits"));
+        buttonTools = new GuiButton(3, width / 2 - 145, 2 + 30, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.tools"));
+        buttonArmor = new GuiButton(3, width / 2 - 145, 2 + 55, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.armor"));
+        buttonItems = new GuiButton(3, width / 2 - 145, 2 + 80, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.items"));
+        buttonBlocks = new GuiButton(3, width / 2 - 145, 2 + 105, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.blocks"));
+        buttonSummoning = new GuiButton(3, width / 2 - 145, 2 + 130, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.summoning"));
+        buttonMobs = new GuiButton(3, width / 2 + 75, 2 + 30, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.mobs"));
+        buttonCredits = new GuiButton(3, width / 2 + 75, 2 + 55, 65, 20, ModTranslate.toLocal("gui.manual.button.glossary.credits"));
 
         buttonList.add(buttonTools);
         buttonList.add(buttonArmor);
@@ -119,7 +116,7 @@ public class GuiManual extends GuiScreen{
         drawTexturedModalRect(offsetFromScreenLeft, 2, 0, 0, textureWidth, textureHeight);
 
         int widthOfString;
-        String stringPageIndicator = Translate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage) + "/" + (bookTotalPages - 1);
+        String stringPageIndicator = ModTranslate.toLocal("gui.manual.text.pageIndicator") + " " + Integer.valueOf(currentPage) + "/" + (bookTotalPages - 1);
         widthOfString = fontRenderer.getStringWidth(stringPageIndicator);
 
         //Pages

@@ -2,8 +2,6 @@ package com.miningmark48.pearcelmod.event;
 
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
-import com.miningmark48.pearcelmod.item.ItemCharmedPearcel;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

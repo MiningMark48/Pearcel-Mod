@@ -74,7 +74,7 @@ public class WorldGen implements IWorldGenerator{
             int yRand = random.nextInt(heightRange) + minY;
             int zRand = chunkZ * 16 + random.nextInt(16);
             gen.generate(world, random, new BlockPos(xRand, yRand, zRand));
-            //LogHelper.info("Ore at " + xRand + " " + yRand + " " + zRand);
+            //ModLogger.info("Ore at " + xRand + " " + yRand + " " + zRand);
         }
     }
 }

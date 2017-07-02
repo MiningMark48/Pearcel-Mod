@@ -1,8 +1,8 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -27,10 +27,10 @@ public class ItemJeweledPearcel extends ItemPearcelFood implements IGeneratorFue
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            par3List.add(Translate.toLocal("tooltip.item.jeweled_pearcel.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            par3List.add(ModTranslate.toLocal("tooltip.item.jeweled_pearcel.line1"));
         }else{
-            par3List.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            par3List.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
     }
 

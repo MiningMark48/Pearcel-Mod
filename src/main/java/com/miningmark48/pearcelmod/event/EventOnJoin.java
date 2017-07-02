@@ -1,7 +1,7 @@
 package com.miningmark48.pearcelmod.event;
 
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.PearcelMod;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -20,7 +20,7 @@ public class EventOnJoin{
             if(!PearcelMod.versionChecker.isLatestVersion()) {
                 ClickEvent versionCheckClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "https://minecraft.curseforge.com/projects/pearcel-mod");
 
-                e.player.sendMessage(new TextComponentString(TextFormatting.YELLOW + Translate.toLocal("chat.versionChecker.outOfDate") + TextFormatting.AQUA + " v" + PearcelMod.versionChecker.getLatestVersion()).setStyle(new Style().setClickEvent(versionCheckClickEvent)));
+                e.player.sendMessage(new TextComponentString(TextFormatting.YELLOW + ModTranslate.toLocal("chat.versionChecker.outOfDate") + TextFormatting.AQUA + " v" + PearcelMod.versionChecker.getLatestVersion()).setStyle(new Style().setClickEvent(versionCheckClickEvent)));
 
                 PearcelMod.haveWarnedVersionOutOfDate = true;
             }
@@ -29,7 +29,7 @@ public class EventOnJoin{
         if (!JoinMessageWikiSent && e.player.world.isRemote){ //TODO: Make config setting for message
             ClickEvent versionCheckClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "http://miningmark48.xyz/pearcelmod");
 
-            e.player.sendMessage(new TextComponentString(TextFormatting.GREEN + Translate.toLocal("chat.joinMessage.wiki")).setStyle(new Style().setClickEvent(versionCheckClickEvent)));
+            e.player.sendMessage(new TextComponentString(TextFormatting.GREEN + ModTranslate.toLocal("chat.joinMessage.wiki")).setStyle(new Style().setClickEvent(versionCheckClickEvent)));
 
             JoinMessageWikiSent = true;
 

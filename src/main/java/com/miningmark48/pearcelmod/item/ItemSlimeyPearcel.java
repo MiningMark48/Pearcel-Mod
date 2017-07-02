@@ -1,9 +1,8 @@
 package com.miningmark48.pearcelmod.item;
 
-import com.miningmark48.pearcelmod.init.ModSoundEvents;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
-import com.miningmark48.pearcelmod.utility.WorldTools;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
+import com.miningmark48.mininglib.utility.WorldUtil;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,7 +10,6 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.TextFormatting;
@@ -51,10 +49,10 @@ public class ItemSlimeyPearcel extends ItemPearcelMod{
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
-        if (KeyCheck.isHoldingShift()) {
-            tooltip.add(Translate.toLocal("tooltip.item.slimey_pearcel.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            tooltip.add(ModTranslate.toLocal("tooltip.item.slimey_pearcel.line1"));
         }else{
-            tooltip.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            tooltip.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
     }
 
@@ -71,7 +69,7 @@ public class ItemSlimeyPearcel extends ItemPearcelMod{
         }
 
         if (!worldIn.isRemote) {
-            if (WorldTools.isSlimeChunk(worldIn, MathHelper.floor(entityIn.posX), MathHelper.floor(entityIn.posZ))) {
+            if (WorldUtil.isSlimeChunk(worldIn, MathHelper.floor(entityIn.posX), MathHelper.floor(entityIn.posZ))) {
                 stack.getTagCompound().setBoolean("isChunk", true);
                 stack.getTagCompound().setBoolean("playSound", false);
             } else {

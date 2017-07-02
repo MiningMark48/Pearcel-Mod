@@ -1,13 +1,12 @@
 package com.miningmark48.pearcelmod.item;
 
 import cofh.api.energy.ItemEnergyContainer;
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModBlocks;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
@@ -18,7 +17,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
-import net.minecraftforge.common.config.Config;
 
 import java.util.List;
 
@@ -32,21 +30,21 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
 
-        if (KeyCheck.isHoldingShift()) {
+        if (KeyChecker.isHoldingShift()) {
 
             if (stack.hasTagCompound()) {
-                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
+                list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
             } else {
                 stack.setTagCompound(new NBTTagCompound());
                 stack.getTagCompound().setInteger("mode", 1);
-                list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
+                list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.pbp.line1") + " " + stack.getTagCompound().getInteger("mode"));
             }
 
-            list.add(TextFormatting.AQUA + Translate.toLocal("tooltip.item.pbp.line2"));
-            if (ConfigurationHandler.rfUseEnabled_pbp) list.add(TextFormatting.GREEN + Translate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_pbp + " RF/Use");
-            if (ConfigurationHandler.rfUseEnabled_pbp) list.add(TextFormatting.RED + Translate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
+            list.add(TextFormatting.AQUA + ModTranslate.toLocal("tooltip.item.pbp.line2"));
+            if (ConfigurationHandler.rfUseEnabled_pbp) list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_pbp + " RF/Use");
+            if (ConfigurationHandler.rfUseEnabled_pbp) list.add(TextFormatting.RED + ModTranslate.toLocal("tooltip.item.rf")+ " " + TextFormatting.GREEN + getEnergyStored(stack) + " / " + getMaxEnergyStored(stack));
         }else{
-            list.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            list.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
     }
@@ -90,12 +88,12 @@ public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
                 if (item.getTagCompound().getInteger("mode") == 1){
                     item.getTagCompound().setInteger("mode", 2);
                     if (!world.isRemote) {
-                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.pbp.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (ModTranslate.toLocal("chat.item.pbp.modeChange"))));
                     }
                 }else{
                     item.getTagCompound().setInteger("mode", 1);
                     if (!world.isRemote) {
-                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (Translate.toLocal("chat.item.pbp.modeChange"))));
+                        player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (ModTranslate.toLocal("chat.item.pbp.modeChange"))));
                     }
                 }
             }

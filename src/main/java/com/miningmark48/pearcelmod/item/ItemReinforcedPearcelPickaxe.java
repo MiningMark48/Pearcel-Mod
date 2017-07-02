@@ -1,9 +1,9 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,11 +23,11 @@ public class ItemReinforcedPearcelPickaxe extends ItemPickaxe {
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            par3List.add(Translate.toLocal("tooltip.item.reinforced_pearcel_pickaxe.line1"));
-            par3List.add(Translate.toLocal("tooltip.item.reinforced_pearcel_pickaxe.line2"));
+        if (KeyChecker.isHoldingShift()) {
+            par3List.add(ModTranslate.toLocal("tooltip.item.reinforced_pearcel_pickaxe.line1"));
+            par3List.add(ModTranslate.toLocal("tooltip.item.reinforced_pearcel_pickaxe.line2"));
         }else{
-            par3List.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            par3List.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
     }
 

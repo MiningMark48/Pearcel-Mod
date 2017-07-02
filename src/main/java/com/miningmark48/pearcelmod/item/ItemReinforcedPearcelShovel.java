@@ -1,8 +1,8 @@
 package com.miningmark48.pearcelmod.item;
 
+import com.miningmark48.mininglib.utility.KeyChecker;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.init.ModItems;
-import com.miningmark48.pearcelmod.utility.KeyCheck;
-import com.miningmark48.pearcelmod.utility.Translate;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Enchantments;
 import net.minecraft.item.Item;
@@ -22,10 +22,10 @@ public class ItemReinforcedPearcelShovel extends ItemSpade{
 
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        if (KeyCheck.isHoldingShift()) {
-            par3List.add(Translate.toLocal("tooltip.item.reinforced_pearcel_shovel.line1"));
+        if (KeyChecker.isHoldingShift()) {
+            par3List.add(ModTranslate.toLocal("tooltip.item.reinforced_pearcel_shovel.line1"));
         }else{
-            par3List.add(Translate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + Translate.toLocal("tooltip.item.shift"));
+            par3List.add(ModTranslate.toLocal("tooltip.item.hold") + " " + TextFormatting.AQUA + TextFormatting.ITALIC + ModTranslate.toLocal("tooltip.item.shift"));
         }
 
         if(!par1ItemStack.isItemEnchanted()) {

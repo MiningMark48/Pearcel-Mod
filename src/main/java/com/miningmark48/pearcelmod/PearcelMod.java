@@ -1,8 +1,9 @@
 package com.miningmark48.pearcelmod;
 
+import com.miningmark48.mininglib.utility.ModLogger;
+import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.commands.CommandSpawnStructure;
-import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.event.*;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.GuiHandler;
@@ -10,8 +11,6 @@ import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.LogHelper;
-import com.miningmark48.pearcelmod.utility.Translate;
 import com.miningmark48.pearcelmod.utility.VersionChecker;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel1;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel2;
@@ -24,7 +23,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, dependencies = Reference.MOD_DEPENDENCIES, acceptedMinecraftVersions = Reference.GAME_VERSION)
@@ -87,7 +85,7 @@ public class PearcelMod {
 
 		Achievements.init();
 
-        LogHelper.info(Translate.toLocal("log.info.init"));
+		ModLogger.info(ModTranslate.toLocal("log.info.init"));
 
 
 
@@ -96,7 +94,7 @@ public class PearcelMod {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
 
-		LogHelper.info(Translate.toLocal("log.info.postinit"));
+		ModLogger.info(ModTranslate.toLocal("log.info.postinit"));
 
 		versionChecker = new VersionChecker();
 		Thread versionCheckThread = new Thread(versionChecker, "Pearcel Mod Version Check");

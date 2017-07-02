@@ -2,7 +2,6 @@ package com.miningmark48.pearcelmod.event;
 
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.miningmark48.pearcelmod.item.ItemNullificationPearcel;
-import com.miningmark48.pearcelmod.utility.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -33,11 +32,9 @@ public class EventOnBreakNP {
                     }
 
                     if (item != null) {
-                        LogHelper.info(item.toString());
                         if (item.hasTagCompound()) {
                             if (block.toString().equalsIgnoreCase(item.getTagCompound().getString("nullBlock"))) {
                                 e.getDrops().clear();
-                                LogHelper.info(block.toString());
                             }
                         }
                     }

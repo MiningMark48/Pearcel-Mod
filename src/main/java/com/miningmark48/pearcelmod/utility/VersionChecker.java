@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.utility;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.miningmark48.mininglib.utility.ModLogger;
 import com.miningmark48.pearcelmod.reference.Reference;
 
 import java.io.IOException;
@@ -33,9 +34,9 @@ public class VersionChecker implements Runnable{
             isLatestVersion = Reference.MOD_VERSION.equals(latestVersion);
 
         }catch (MalformedURLException e){
-            LogHelper.error("Malformed URL Exception! Report to mod author.");
+            ModLogger.error("Malformed URL Exception! Report to mod author.");
         }catch (IOException e){
-            LogHelper.error("IO Exception! Report to mod author.");
+            ModLogger.error("IO Exception! Report to mod author.");
         }
     }
 
