@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.tileentity;
 
+import com.miningmark48.mininglib.base.tile.ModBaseTileInventory;
 import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -14,7 +15,7 @@ import net.minecraft.util.text.TextComponentTranslation;
 
 import javax.annotation.Nullable;
 
-public class TileEntityPearcelStorageCrate extends TileEntity implements IInventory{
+public class TileEntityPearcelStorageCrate extends ModBaseTileInventory{
 
     private NonNullList<ItemStack> inventory = NonNullList.withSize(INV_SIZE, ItemStack.EMPTY);
     private String custom_name;
@@ -22,6 +23,7 @@ public class TileEntityPearcelStorageCrate extends TileEntity implements IInvent
     public static int INV_SIZE = 36;
 
     public TileEntityPearcelStorageCrate(){
+        super(INV_SIZE);
     }
 
     public void setCustomName(String custom_name){

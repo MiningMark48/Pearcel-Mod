@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.init;
 
+import com.miningmark48.mininglib.base.block.ModBaseBlockLightEmitting;
 import com.miningmark48.pearcelmod.block.*;
 import com.miningmark48.pearcelmod.creativetabs.CreativeTabPearcelMod;
 import com.miningmark48.pearcelmod.reference.Reference;
@@ -83,7 +84,7 @@ public class ModBlocks {
         pearcel_cobblestone = new BlockPearcelStone().setUnlocalizedName("pearcel_cobblestone").setRegistryName("pearcel_cobblestone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_glass = new BlockPearcelGlass().setUnlocalizedName("pearcel_glass").setRegistryName("pearcel_glass").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         distressed_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("distressed_pearcel_stone").setRegistryName("distressed_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        irradiated_pearcel_block = new BlockPearcelModLightEmit(5.0F).setUnlocalizedName("irradiated_pearcel_block").setRegistryName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        irradiated_pearcel_block = new ModBaseBlockLightEmitting(5.0F, Material.GLASS, MapColor.GREEN, 0.25f, 0.125f).setUnlocalizedName("irradiated_pearcel_block").setRegistryName("irradiated_pearcel_block").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         polished_pearcel_stone = new BlockPearcelMod().setUnlocalizedName("polished_pearcel_stone").setRegistryName("polished_pearcel_stone").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_stonebricks = new BlockPearcelMod().setUnlocalizedName("pearcel_stonebricks").setRegistryName("pearcel_stonebricks").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         tainted_pearcel = new BlockPearcelMod().setUnlocalizedName("tainted_pearcel").setRegistryName("tainted_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
