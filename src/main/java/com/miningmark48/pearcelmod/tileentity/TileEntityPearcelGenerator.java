@@ -1,6 +1,6 @@
 package com.miningmark48.pearcelmod.tileentity;
 
-import cofh.api.energy.IEnergyHandler;
+import cofh.api.energy.IEnergyProvider;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.GeneratorRegistry;
 import com.miningmark48.pearcelmod.init.ModBlocks;
@@ -21,7 +21,7 @@ import net.minecraftforge.energy.*;
 
 import javax.annotation.Nullable;
 
-public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyStorage, ITickable, IEnergyHandler{
+public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyStorage, ITickable, IEnergyProvider{
 
     private int increase_per_tick;
 
@@ -387,4 +387,19 @@ public class TileEntityPearcelGenerator extends TileEntity implements IInventory
     public boolean canConnectEnergy(EnumFacing from) {
         return true;
     }
+
+    @Override
+    public int extractEnergy(EnumFacing from, int maxExtract, boolean simulate) {
+        if (!canExtract()){
+            return 0;
+        }
+
+        int energyExtracted = Math.min(this.current_RF, Math.min(this.maxExtract, maxExtract));
+        if (!simulate){
+            this.current_RF -= energyExtracted;
+        }
+
+        return energyExtracted;
+    }
+
 }
