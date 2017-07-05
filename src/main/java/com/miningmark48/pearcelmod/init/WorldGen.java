@@ -41,12 +41,12 @@ public class WorldGen implements IWorldGenerator{
     private void generateSurface(World world, Random rand, int x, int z)
     {
         if (ConfigurationHandler.doWorldGen) {
-            generateOre(ModBlocks.pearcel_ore, world, rand, x, z, 2, 6, 10, 10, 70, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_ore, world, rand, x, z, 2, 6, 15, 10, 70, Blocks.STONE);
             generateOre(ModBlocks.fools_pearcel_ore, world, rand, x, z, 2, 6, 15, 35, 65, Blocks.STONE);
-            generateOre(ModBlocks.dense_fools_pearcel_ore, world, rand, x, z, 1, 3, 10, 35, 45, Blocks.STONE);
-            generateOre(ModBlocks.pearcel_matter_ore, world, rand, x, z, 2, 4, 5, 10, 40, Blocks.STONE);
+            generateOre(ModBlocks.dense_fools_pearcel_ore, world, rand, x, z, 1, 10, 10, 35, 45, Blocks.STONE);
+            generateOre(ModBlocks.pearcel_matter_ore, world, rand, x, z, 2, 4, 10, 10, 40, Blocks.STONE);
             generateOre(ModBlocks.dense_pearcel_ore, world, rand, x, z, 2, 6, 10, 10, 30, Blocks.STONE);
-            generateOre(ModBlocks.dense_pearcel_matter_ore, world, rand, x, z, 1, 3, 5, 5, 15, Blocks.STONE);
+            generateOre(ModBlocks.dense_pearcel_matter_ore, world, rand, x, z, 1, 3, 8, 5, 15, Blocks.STONE);
         }
 
         if (ConfigurationHandler.doSpecialWorldGen){
