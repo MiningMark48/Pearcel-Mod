@@ -4,6 +4,7 @@ import com.miningmark48.pearcelmod.init.ModBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
@@ -17,13 +18,11 @@ public class BlockFoolsPearcelOre extends BlockPearcelMod {
 
     private float explosionStrength;
     private int explosionChance;
-    private ItemStack itemDrop;
 
-    public BlockFoolsPearcelOre(float explosionStrength, int explosionChance, ItemStack itemDrop){
+    public BlockFoolsPearcelOre(float explosionStrength, int explosionChance){
         super();
         this.explosionStrength = explosionStrength;
         this.explosionChance = explosionChance;
-        this.itemDrop = itemDrop;
     }
 
     @Override
@@ -55,6 +54,11 @@ public class BlockFoolsPearcelOre extends BlockPearcelMod {
     @Nullable
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return itemDrop.getItem();
+        if (state.getBlock() == ModBlocks.fools_pearcel_ore){
+            return ItemBlock.getItemFromBlock(ModBlocks.pearcel_ore);
+        }else if (state.getBlock() == ModBlocks.dense_fools_pearcel_ore){
+            return ItemBlock.getItemFromBlock(ModBlocks.dense_pearcel_ore);
+        }
+        return null;
     }
 }

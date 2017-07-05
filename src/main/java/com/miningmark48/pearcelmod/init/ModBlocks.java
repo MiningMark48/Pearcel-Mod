@@ -110,8 +110,8 @@ public class ModBlocks {
         pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("pearcel_matter_ore").setRegistryName("pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         dense_pearcel_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_ore").setRegistryName("dense_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         dense_pearcel_matter_ore = new BlockPearcelMod().setUnlocalizedName("dense_pearcel_matter_ore").setRegistryName("dense_pearcel_matter_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        fools_pearcel_ore = new BlockFoolsPearcelOre(3F, 4, new ItemStack(ModBlocks.pearcel_ore)).setUnlocalizedName("fools_pearcel_ore").setRegistryName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        dense_fools_pearcel_ore = new BlockFoolsPearcelOre(6F, 5, new ItemStack(ModBlocks.dense_pearcel_ore)).setUnlocalizedName("dense_fools_pearcel_ore").setRegistryName("dense_fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        fools_pearcel_ore = new BlockFoolsPearcelOre(3F, 4).setUnlocalizedName("fools_pearcel_ore").setRegistryName("fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        dense_fools_pearcel_ore = new BlockFoolsPearcelOre(6F, 5).setUnlocalizedName("dense_fools_pearcel_ore").setRegistryName("dense_fools_pearcel_ore").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
         //Functional
         pearcel_workbench = new BlockPearcelWorkbench().setUnlocalizedName("pearcel_workbench").setRegistryName("pearcel_workbench").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
