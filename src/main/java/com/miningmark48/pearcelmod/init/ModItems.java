@@ -90,6 +90,7 @@ public class ModItems {
     public static Item bindle;
     public static Item nullification_pearcel;
     public static Item pearcel_magnet;
+    public static Item pearcel_magnet_advanced;
     public static Item living_magnet;
     public static Item sacrificial_pearcel;
     public static Item pearcel_blood_dagger;
@@ -169,6 +170,7 @@ public class ModItems {
         bindle = new ItemBindle().setUnlocalizedName("bindle").setRegistryName("bindle").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         nullification_pearcel = new ItemNullificationPearcel().setUnlocalizedName("nullification_pearcel").setRegistryName("nullification_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_magnet = new ItemPearcelMagnet().setUnlocalizedName("pearcel_magnet").setRegistryName("pearcel_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        pearcel_magnet_advanced = new ItemPearcelMagnetAdvanced().setUnlocalizedName("pearcel_magnet_advanced").setRegistryName("pearcel_magnet_advanced").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         living_magnet = new ItemLivingMagnet().setUnlocalizedName("living_magnet").setRegistryName("living_magnet").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         sacrificial_pearcel = new ItemPearcelMod().setUnlocalizedName("sacrificial_pearcel").setRegistryName("sacrificial_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB).setMaxStackSize(1);
         pearcel_blood_dagger = new ItemBloodSword(matToolPearcel).setUnlocalizedName("pearcel_blood_dagger").setRegistryName("pearcel_blood_dagger").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
@@ -248,6 +250,7 @@ public class ModItems {
         GameRegistry.register(bindle);
         GameRegistry.register(nullification_pearcel);
         GameRegistry.register(pearcel_magnet);
+        GameRegistry.register(pearcel_magnet_advanced);
         GameRegistry.register(living_magnet);
         GameRegistry.register(sacrificial_pearcel);
         GameRegistry.register(pearcel_blood_dagger);
@@ -329,6 +332,7 @@ public class ModItems {
         registerRender(bindle);
         registerRender(nullification_pearcel);
         registerRender(pearcel_magnet);
+        registerRender(pearcel_magnet_advanced);
         registerRender(living_magnet);
         registerRender(sacrificial_pearcel);
         registerRender(pearcel_blood_dagger);

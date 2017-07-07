@@ -149,6 +149,8 @@ public class ItemLivingMagnet extends ItemEnergyContainer implements IBauble{
             if (energyPerUse <= stack1.getEnergyStored(stack)) {
                 return true;
             }
+        }else{
+            return true;
         }
 
         return false;
