@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.item;
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import com.miningmark48.pearcelmod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
@@ -55,6 +56,11 @@ public class ItemRIFPearcelArmor extends ItemArmor{
             player.capabilities.allowFlying = false;
             player.capabilities.isFlying = false;
         }
+    }
+
+    @Override
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
+        return repair.isItemEqual(new ItemStack(ModItems.armor_plating)) || super.getIsRepairable(toRepair, repair);
     }
 
 }
