@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
@@ -14,6 +15,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemPearcelFoodInfinite extends ItemFood {
@@ -24,7 +26,7 @@ public class ItemPearcelFoodInfinite extends ItemFood {
     }
 
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> par3List, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             par3List.add(ModTranslate.toLocal("tooltip.item.pearcel_infinifood.line1"));
         }else{

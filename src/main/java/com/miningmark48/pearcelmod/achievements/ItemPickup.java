@@ -10,13 +10,7 @@ public class ItemPickup {
 
     @SubscribeEvent
     public void onItemPickup(PlayerEvent.ItemPickupEvent e){
-        ItemStack stack = e.pickedUp.getItem();
-        EntityPlayer player = e.player;
-
-        if(stack.isItemEqual(new ItemStack(ModItems.pearcel_item))){
-            player.addStat(Achievements.achievement_get_pearcel);
-        }
-
+        //Reserved for advancements
     }
 
 }

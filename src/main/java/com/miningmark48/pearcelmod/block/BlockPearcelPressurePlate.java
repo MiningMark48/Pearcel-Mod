@@ -62,7 +62,7 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
                 worldIn.setBlockState(pos, getDefaultState().withProperty(POWERED, false).withProperty(MODE_PLAYERS, true).withProperty(MODE_ITEMS, false));
                 if (!playerIn.isCreative() && !worldIn.isRemote){
                     EntityItem entityItem = new EntityItem(worldIn);
-                    entityItem.setItem(new ItemStack(mode_items_item));
+                    entityItem.setEntityItemStack(new ItemStack(mode_items_item));
                     entityItem.setPosition(playerIn.posX + 0.5D, playerIn.posY + 0.5D, playerIn.posZ + 0.5D);
                     worldIn.spawnEntity(entityItem);
                 }
@@ -79,7 +79,7 @@ public class BlockPearcelPressurePlate extends BlockBasePressurePlate{
         if (!player.isCreative()) {
             if (state.getValue(MODE_ITEMS)) {
                 EntityItem mode_entity = new EntityItem(worldIn);
-                mode_entity.setItem(new ItemStack(mode_items_item));
+                mode_entity.setEntityItemStack(new ItemStack(mode_items_item));
                 mode_entity.setPosition(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D);
                 if (!worldIn.isRemote) {
                     worldIn.spawnEntity(mode_entity);

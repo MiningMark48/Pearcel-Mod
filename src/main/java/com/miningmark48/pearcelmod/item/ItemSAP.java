@@ -2,10 +2,13 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemSAP extends ItemPearcelMod{
@@ -16,7 +19,7 @@ public class ItemSAP extends ItemPearcelMod{
     }
 
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+    public void addInformation(ItemStack par1ItemStack, @Nullable World playerIn, List<String> par3List, ITooltipFlag advanced) {
         int itemDurability = par1ItemStack.getMaxDamage() - par1ItemStack.getItemDamage();
 
         if (KeyChecker.isHoldingShift()) {

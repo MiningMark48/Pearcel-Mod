@@ -129,130 +129,66 @@ public class ModBlocks {
 
     }
 
-    public static void register(){
-        //General
-        registerBlock(pearcel_block);
-        registerBlock(pearcel_sand);
-        registerBlock(pearcel_sandstone);
-        registerBlock(pearcel_matter_block);
-        registerBlock(pearcel_bricks);
-        registerBlock(packed_pearcel_bricks);
-        registerBlock(pearcel_stone);
-        registerBlock(pearcel_cobblestone);
-        registerBlock(pearcel_glass);
-        registerBlock(distressed_pearcel_stone);
-        registerBlock(irradiated_pearcel_block);
-        registerBlock(polished_pearcel_stone);
-        registerBlock(pearcel_stonebricks);
-        registerBlock(tainted_pearcel);
-        registerBlock(pearcel_torch);
-        registerBlock(pearcel_planks);
-        registerBlock(pearcel_end_stone);
-        registerBlock(pearcel_charcoal_block);
-        registerBlock(pearcel_glass_pane);
-        registerBlock(pedestal);
-        registerBlock(pearcel_ladder);
-        registerBlock(pearcel_lamp);
-        registerBlock(lit_pearcel_lamp);
-        registerBlock(ender_pearcel_block);
-        registerBlock(pearcel_ingot_block);
-        registerBlock(pearcel_plush);
-        registerBlock(pearcel_fence);
-        registerBlock(pearcel_fence2);
-
-        //Ores
-        registerBlock(pearcel_ore);
-        registerBlock(nether_pearcel_ore);
-        registerBlock(ender_pearcel_ore);
-        registerBlock(pearcel_matter_ore);
-        registerBlock(dense_pearcel_ore);
-        registerBlock(dense_pearcel_matter_ore);
-        registerBlock(fools_pearcel_ore);
-        registerBlock(dense_fools_pearcel_ore);
-
-        //Functional
-        registerBlock(pearcel_workbench);
-        registerBlock(torcher);
-        registerBlock(summoner);
-        registerBlock(pearcel_beacon);
-        registerBlock(pearcel_storage_crate);
-        registerBlock(pearcel_pressure_plate);
-        registerBlock(pearcel_spike);
-        registerBlock(pearcel_spike_ender);
-        registerBlock(pearcel_spike_guardian);
-        registerBlock(pearcel_furnace);
-        registerBlock(pearcel_furnace_lit);
-        registerBlock(pearcel_generator);
-
-    }
-
-    public static void registerRenders(){
-        //General
-        registerRender(pearcel_block);
-        registerRender(pearcel_sand);
-        registerRender(pearcel_sandstone);
-        registerRender(pearcel_matter_block);
-        registerRender(pearcel_bricks);
-        registerRender(packed_pearcel_bricks);
-        registerRender(pearcel_cobblestone);
-        registerRender(pearcel_stone);
-        registerRender(pearcel_glass);
-        registerRender(distressed_pearcel_stone);
-        registerRender(irradiated_pearcel_block);
-        registerRender(polished_pearcel_stone);
-        registerRender(pearcel_stonebricks);
-        registerRender(tainted_pearcel);
-        registerRender(pearcel_torch);
-        registerRender(pearcel_planks);
-        registerRender(pearcel_end_stone);
-        registerRender(pearcel_charcoal_block);
-        registerRender(pearcel_glass_pane);
-        registerRender(pedestal);
-        registerRender(pearcel_ladder);
-        registerRender(pearcel_lamp);
-        registerRender(lit_pearcel_lamp);
-        registerRender(ender_pearcel_block);
-        registerRender(pearcel_ingot_block);
-        registerRender(pearcel_plush);
-        registerRender(pearcel_fence);
-        registerRender(pearcel_fence2);
-
-        //Ores
-        registerRender(pearcel_ore);
-        registerRender(nether_pearcel_ore);
-        registerRender(ender_pearcel_ore);
-        registerRender(pearcel_matter_ore);
-        registerRender(dense_pearcel_ore);
-        registerRender(dense_pearcel_matter_ore);
-        registerRender(fools_pearcel_ore);
-        registerRender(dense_fools_pearcel_ore);
-
-        //Functional
-        registerRender(pearcel_workbench);
-        registerRender(torcher);
-        registerRender(summoner);
-        registerRender(pearcel_furnace);
-        registerRender(pearcel_furnace_lit);
-        registerRender(pearcel_beacon);
-        registerRender(pearcel_storage_crate);
-        registerRender(pearcel_pressure_plate);
-        registerRender(pearcel_spike);
-        registerRender(pearcel_spike_ender);
-        registerRender(pearcel_spike_guardian);
-        registerRender(pearcel_generator);
-
-    }
-    
-    private static void registerBlock(Block block){
-        GameRegistry.register(block);
-        ItemBlock item = new ItemBlock(block);
-        item.setRegistryName(block.getRegistryName());
-        GameRegistry.register(item);
-    }
-
-    public static void registerRender(Block block){
-        Item item = Item.getItemFromBlock(block);
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
-    }
+//    public static void registerRenders(){
+//        //General
+//        registerRender(pearcel_block);
+//        registerRender(pearcel_sand);
+//        registerRender(pearcel_sandstone);
+//        registerRender(pearcel_matter_block);
+//        registerRender(pearcel_bricks);
+//        registerRender(packed_pearcel_bricks);
+//        registerRender(pearcel_cobblestone);
+//        registerRender(pearcel_stone);
+//        registerRender(pearcel_glass);
+//        registerRender(distressed_pearcel_stone);
+//        registerRender(irradiated_pearcel_block);
+//        registerRender(polished_pearcel_stone);
+//        registerRender(pearcel_stonebricks);
+//        registerRender(tainted_pearcel);
+//        registerRender(pearcel_torch);
+//        registerRender(pearcel_planks);
+//        registerRender(pearcel_end_stone);
+//        registerRender(pearcel_charcoal_block);
+//        registerRender(pearcel_glass_pane);
+//        registerRender(pedestal);
+//        registerRender(pearcel_ladder);
+//        registerRender(pearcel_lamp);
+//        registerRender(lit_pearcel_lamp);
+//        registerRender(ender_pearcel_block);
+//        registerRender(pearcel_ingot_block);
+//        registerRender(pearcel_plush);
+//        registerRender(pearcel_fence);
+//        registerRender(pearcel_fence2);
+//
+//        //Ores
+//        registerRender(pearcel_ore);
+//        registerRender(nether_pearcel_ore);
+//        registerRender(ender_pearcel_ore);
+//        registerRender(pearcel_matter_ore);
+//        registerRender(dense_pearcel_ore);
+//        registerRender(dense_pearcel_matter_ore);
+//        registerRender(fools_pearcel_ore);
+//        registerRender(dense_fools_pearcel_ore);
+//
+//        //Functional
+//        registerRender(pearcel_workbench);
+//        registerRender(torcher);
+//        registerRender(summoner);
+//        registerRender(pearcel_furnace);
+//        registerRender(pearcel_furnace_lit);
+//        registerRender(pearcel_beacon);
+//        registerRender(pearcel_storage_crate);
+//        registerRender(pearcel_pressure_plate);
+//        registerRender(pearcel_spike);
+//        registerRender(pearcel_spike_ender);
+//        registerRender(pearcel_spike_guardian);
+//        registerRender(pearcel_generator);
+//
+//    }
+//
+//    public static void registerRender(Block block){
+//        Item item = Item.getItemFromBlock(block);
+//        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+//    }
 
 }

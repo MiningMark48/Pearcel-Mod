@@ -6,6 +6,7 @@ import cofh.api.energy.ItemEnergyContainer;
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -21,6 +22,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemLivingMagnet extends ItemEnergyContainer implements IBauble{
@@ -31,7 +33,7 @@ public class ItemLivingMagnet extends ItemEnergyContainer implements IBauble{
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> list, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             if (!stack.hasTagCompound()) {
                 stack.setTagCompound(new NBTTagCompound());

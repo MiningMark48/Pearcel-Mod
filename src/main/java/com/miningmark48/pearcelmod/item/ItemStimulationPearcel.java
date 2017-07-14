@@ -5,6 +5,7 @@ import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -13,6 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
@@ -26,7 +28,7 @@ public class ItemStimulationPearcel extends ItemPearcelMod{
     }
 
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> par3List, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             par3List.add(ModTranslate.toLocal("tooltip.item.stimulation_pearcel.line1"));
         }else{

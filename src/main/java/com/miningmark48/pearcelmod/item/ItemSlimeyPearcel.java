@@ -3,6 +3,7 @@ package com.miningmark48.pearcelmod.item;
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.mininglib.utility.WorldUtil;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -48,7 +49,7 @@ public class ItemSlimeyPearcel extends ItemPearcelMod{
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> tooltip, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             tooltip.add(ModTranslate.toLocal("tooltip.item.slimey_pearcel.line1"));
         }else{

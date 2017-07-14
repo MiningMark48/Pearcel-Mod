@@ -5,6 +5,7 @@ import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemPickaxe;
@@ -14,6 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemReinforcedPearcelPickaxe extends ItemPickaxe {
@@ -22,7 +24,7 @@ public class ItemReinforcedPearcelPickaxe extends ItemPickaxe {
     }
 
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> par3List, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             par3List.add(ModTranslate.toLocal("tooltip.item.reinforced_pearcel_pickaxe.line1"));
             par3List.add(ModTranslate.toLocal("tooltip.item.reinforced_pearcel_pickaxe.line2"));

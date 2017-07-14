@@ -14,11 +14,9 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.stats.AchievementList;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
@@ -84,7 +82,7 @@ public class EntityPearcelBoss extends EntityMob{
             this.setHealth(0);
             this.bossInfo.setPercent(0);
 
-            if (source.getTrueSource() instanceof EntityPlayer)
+            if (source.getSourceOfDamage() instanceof EntityPlayer)
             {
                 //TODO
             }

@@ -9,6 +9,7 @@ import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
 import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -82,7 +83,7 @@ public class ItemCharmedPearcel extends ItemEnergyContainer implements IBauble, 
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> list, ITooltipFlag advanced) {
 
         if (KeyChecker.isHoldingShift()) {
             if (stack.hasTagCompound()) {

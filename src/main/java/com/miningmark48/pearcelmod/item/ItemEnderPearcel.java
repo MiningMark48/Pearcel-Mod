@@ -7,6 +7,7 @@ import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorFuelHandler{
@@ -28,7 +30,7 @@ public class ItemEnderPearcel extends ItemEnergyContainer implements IGeneratorF
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> list, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             list.add(ModTranslate.toLocal("tooltip.item.pearcelPearl.line1"));
             if (ConfigurationHandler.rfUseEnabled_enderPearcel) list.add(TextFormatting.GREEN + ModTranslate.toLocal("tooltip.item.rfUse") + " " + ConfigurationHandler.rfPerUse_enderPearcel + " RF/Use");

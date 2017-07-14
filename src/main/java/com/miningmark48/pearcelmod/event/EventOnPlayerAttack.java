@@ -19,8 +19,8 @@ public class EventOnPlayerAttack {
         if (e.getEntityLiving() instanceof FakePlayer) {
             return;
         }
-        if (e.getSource().getTrueSource() instanceof EntityPlayer){
-            EntityPlayer player = (EntityPlayer) e.getSource().getTrueSource();
+        if (e.getSource().getSourceOfDamage() instanceof EntityPlayer){
+            EntityPlayer player = (EntityPlayer) e.getSource().getSourceOfDamage();
             if (!player.isCreative()) {
                     if (e.getEntityLiving().getHealth() - e.getAmount() <= 0) {
                         if (player.getHeldItemMainhand() != null && player.getHeldItemMainhand().getItem() == ModItems.pearcel_blood_dagger) {
@@ -34,7 +34,7 @@ public class EventOnPlayerAttack {
                                 } else {
                                     stack.getTagCompound().setInteger("level", 0);
                                     EntityItem item = new EntityItem(player.getEntityWorld(), player.posX, player.posY + 0.5, player.posZ);
-                                    item.setItem(new ItemStack(ModItems.blood_drop));
+                                    item.setEntityItemStack(new ItemStack(ModItems.blood_drop));
                                     Random rand = new Random();
                                     int num = rand.nextInt(2) + 1;
                                     for (int i = 0; i <= num; i++) {

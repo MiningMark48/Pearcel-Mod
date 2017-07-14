@@ -8,6 +8,7 @@ import com.miningmark48.pearcelmod.inventory.InventoryCharmBag;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
 import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -22,6 +23,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemCharmBag extends ItemPearcelMod implements IBauble{
@@ -31,7 +33,7 @@ public class ItemCharmBag extends ItemPearcelMod implements IBauble{
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> list, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             list.add(ModTranslate.toLocal("tooltip.item.charm_bag.line1"));
         }else{

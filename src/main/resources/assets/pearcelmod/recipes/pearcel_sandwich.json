@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:pearcel_item"
+    },
+    {
+      "item": "pearcelmod:pearcel_bread"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:pearcel_sandwich"
+  }
+}

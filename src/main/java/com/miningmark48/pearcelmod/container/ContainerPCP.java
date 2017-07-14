@@ -47,7 +47,7 @@ public class ContainerPCP extends Container{
 
     public void onCraftMatrixChanged(IInventory player)
     {
-        this.craftResult.setInventorySlotContents(0, CraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
+        this.craftResult.setInventorySlotContents(0, CraftingManager.findMatchingRecipe(this.craftMatrix, this.worldObj));
     }
 
     @Override

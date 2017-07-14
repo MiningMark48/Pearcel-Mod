@@ -4,6 +4,7 @@ import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.entity.EntityPearcelBoss;
 import com.miningmark48.pearcelmod.init.ModSoundEvents;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
@@ -25,7 +27,7 @@ public class ItemGuardianFood extends ItemPearcelFood{
     }
 
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> par3List, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             par3List.add(ModTranslate.toLocal("tooltip.item.guardian_food.line1"));
         }else{

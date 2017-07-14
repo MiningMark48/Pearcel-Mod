@@ -1,6 +1,7 @@
 package com.miningmark48.pearcelmod.block;
 
 import com.miningmark48.pearcelmod.init.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockPane;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -185,10 +186,17 @@ public class BlockPearcelPane extends BlockPane{
         return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, WEST, SOUTH});
     }
 
+    @Override
+    public boolean canBeConnectedTo(IBlockAccess world, BlockPos pos, EnumFacing facing)
+    {
+        Block connector = world.getBlockState(pos.offset(facing)).getBlock();
+        return connector instanceof BlockPane;
+    }
+
     public boolean canPaneConnectTo(IBlockAccess world, BlockPos pos, EnumFacing dir)
     {
-        BlockPos off = pos.offset(dir);
-        IBlockState state = world.getBlockState(off);
-        return canPaneConnectToBlock(state.getBlock()) || state.isSideSolid(world, off, dir.getOpposite()) || state.getBlock() == ModBlocks.pearcel_glass;
+        BlockPos other = pos.offset(dir);
+        IBlockState state = world.getBlockState(other);
+        return state.getBlock().canBeConnectedTo(world, other, dir.getOpposite()) || func_193393_b(world, state, other, dir.getOpposite());
     }
 }

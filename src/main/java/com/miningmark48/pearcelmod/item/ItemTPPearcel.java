@@ -2,8 +2,8 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
-import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.init.ModItems;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
@@ -18,6 +18,7 @@ import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemTPPearcel extends ItemPearcelMod{
@@ -37,7 +38,7 @@ public class ItemTPPearcel extends ItemPearcelMod{
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> list, ITooltipFlag advanced) {
 
         if (KeyChecker.isHoldingShift()) {
 
@@ -98,7 +99,6 @@ public class ItemTPPearcel extends ItemPearcelMod{
             } else {
                 if (player.dimension == dim) {
                     player.setLocationAndAngles(tpX, tpY, tpZ, yaw, pitch);
-                    player.addStat(Achievements.achievement_use_tp_pearcel);
                     if (!world.isRemote) {
                         player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + (ModTranslate.toLocal("chat.tpPearcel.tp"))));
                     }

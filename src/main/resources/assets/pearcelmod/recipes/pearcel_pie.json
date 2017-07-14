@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:pearcel_flour"
+    },
+    {
+      "item": "pearcelmod:pearcel_item"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:pearcel_pie"
+  }
+}

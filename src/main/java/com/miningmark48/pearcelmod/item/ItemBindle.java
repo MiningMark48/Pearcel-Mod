@@ -5,6 +5,7 @@ import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.inventory.InventoryBindle;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -13,6 +14,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemBindle extends ItemPearcelMod{
@@ -22,7 +24,7 @@ public class ItemBindle extends ItemPearcelMod{
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> list, ITooltipFlag advanced) {
         if (KeyChecker.isHoldingShift()) {
             list.add(InventoryBindle.INV_SIZE + " " + ModTranslate.toLocal("tooltip.item.pearcel_backpack.line1"));
         }else{

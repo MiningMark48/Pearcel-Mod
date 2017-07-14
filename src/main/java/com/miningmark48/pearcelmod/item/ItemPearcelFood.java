@@ -4,11 +4,14 @@ import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.ModItems;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class ItemPearcelFood extends ItemFood implements IGeneratorFuelHandler {
@@ -18,8 +21,8 @@ public class ItemPearcelFood extends ItemFood implements IGeneratorFuelHandler {
     }
 
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        if(par1ItemStack.getItem() == ModItems.pearcel_item) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> par3List, ITooltipFlag advanced) {
+        if(stack.getItem() == ModItems.pearcel_item) {
             if (KeyChecker.isHoldingShift()) {
                 par3List.add(ModTranslate.toLocal("tooltip.item.pearcel_item.line1"));
                 par3List.add(ModTranslate.toLocal("tooltip.item.pearcel_item.line2"));

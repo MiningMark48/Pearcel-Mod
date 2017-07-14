@@ -2,7 +2,6 @@ package com.miningmark48.pearcelmod;
 
 import com.miningmark48.mininglib.utility.ModLogger;
 import com.miningmark48.mininglib.utility.ModTranslate;
-import com.miningmark48.pearcelmod.achievements.Achievements;
 import com.miningmark48.pearcelmod.commands.CommandSpawnStructure;
 import com.miningmark48.pearcelmod.event.*;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
@@ -45,13 +44,17 @@ public class PearcelMod {
 		MinecraftForge.EVENT_BUS.register(new ConfigurationHandler());
 
 		ModItems.init();
-		ModItems.register();
 		ModBlocks.init();
-		ModBlocks.register();
+		ModRegistry.init();
+
+		MinecraftForge.EVENT_BUS.register(new ModRegistry());
+
 		ModTileEntities.init();
 		ModEntities.init();
 		ModLoots.init();
 		ModSoundEvents.registerSounds();
+
+		MinecraftForge.EVENT_BUS.register(new ModSoundEvents());
 
 		GameRegistry.registerFuelHandler(new ItemPearcelFuel());
 		GeneratorRegistry.registerGeneratorFuels();
@@ -83,11 +86,7 @@ public class PearcelMod {
 
 		Recipes.init();
 
-		Achievements.init();
-
 		ModLogger.info(ModTranslate.toLocal("log.info.init"));
-
-
 
 	}
 
