@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XZX",
+    "XYX",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gold_ingot"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Z": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:golden_pearcel",
+    "count": 1
+  }
+}

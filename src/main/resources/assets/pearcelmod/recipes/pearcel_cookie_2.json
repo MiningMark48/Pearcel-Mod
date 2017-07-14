@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "XYX",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "minecraft:cookie"
+    }
+  },
+  "result": {
+    "item": "pearcel_cookie",
+    "count": 4
+  }
+}

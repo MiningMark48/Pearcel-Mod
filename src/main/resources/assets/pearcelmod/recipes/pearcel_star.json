@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "pearcelmod:pearcel_item"
+    },
+    {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    {
+      "item": "pearcelmod:pearcel_ingot"
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:pearcel_star",
+    "count": 1
+  }
+}

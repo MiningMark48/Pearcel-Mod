@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XAX",
+    "YZY",
+    "XBX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "A": {
+      "item": "pearcelmod:pearcel_bread"
+    },
+    "B": {
+      "item": "pearcelmod:golden_pearcel"
+    }
+  },
+  "result": {
+    "item": "pearcel_infinifood",
+    "count": 1
+  }
+}
