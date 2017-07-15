@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_ingot"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:neutral_pearcel_matter",
+    "count": 2
+  }
+}

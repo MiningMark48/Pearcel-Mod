@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "YX",
+    "Z ",
+    "Z "
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_ingot"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_stick"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_hoe",
+    "count": 1
+  }
+}
