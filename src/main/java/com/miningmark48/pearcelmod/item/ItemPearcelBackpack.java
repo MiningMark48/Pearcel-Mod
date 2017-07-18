@@ -5,6 +5,7 @@ import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.inventory.InventoryPearcelBackpack;
 import com.miningmark48.pearcelmod.reference.GUIs;
 import com.miningmark48.pearcelmod.reference.Reference;
+import com.miningmark48.pearcelmod.utility.crafting.INBTPreservingIngredient;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -17,7 +18,7 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ItemPearcelBackpack extends ItemPearcelMod{
+public class ItemPearcelBackpack extends ItemPearcelMod implements INBTPreservingIngredient {
 
     public ItemPearcelBackpack(){
         setMaxStackSize(1);

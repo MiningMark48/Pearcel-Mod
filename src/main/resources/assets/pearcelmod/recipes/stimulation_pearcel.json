@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_4_crafting_component"
+    },
+    "Z": {
+      "item": "minecraft:clock"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:stimulation_pearcel",
+    "count": 1
+  }
+}

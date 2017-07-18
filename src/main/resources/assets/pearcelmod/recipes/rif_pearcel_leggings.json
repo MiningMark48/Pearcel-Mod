@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AZA",
+    "ZYZ",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_leggings"
+    },
+    "Z": {
+      "item": "pearcelmod:armor_plating"
+    },
+    "A": {
+      "item": "pearcelmod:pearcel_matter"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:rif_pearcel_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XAX",
+    "ZYZ",
+    "AXA"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_storage_crate"
+    },
+    "A": {
+      "item": "minecraft:wool",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_backpack",
+    "count": 1
+  }
+}
