@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "AZA",
+    "YBY"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_ingot"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Z": {
+      "item": "minecraft:ender_chest"
+    },
+    "A": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "B": {
+      "item": "pearcelmod:ender_pearcel"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pepc",
+    "count": 1
+  }
+}

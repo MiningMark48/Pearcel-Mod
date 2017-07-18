@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Y Y",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:armor_plating"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_boots",
+    "count": 1
+  }
+}

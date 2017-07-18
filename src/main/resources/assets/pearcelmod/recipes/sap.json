@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XAB",
+    "YZY",
+    "BAX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "Z": {
+      "item": "minecraft:emerald"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "pearcelmod:pearcel_ingot"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:sap",
+    "count": 1
+  }
+}

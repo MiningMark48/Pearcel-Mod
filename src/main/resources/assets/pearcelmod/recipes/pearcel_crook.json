@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    " X",
+    " X"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_stick"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_crook",
+    "count": 1
+  }
+}

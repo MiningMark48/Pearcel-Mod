@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XAX",
+    "AYA",
+    "ZAZ"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:tier_4_crafting_component"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_staff"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "A": {
+      "item": "pearcelmod:tainted_pearcel"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:guardian_pearcel_staff",
+    "count": 1
+  }
+}

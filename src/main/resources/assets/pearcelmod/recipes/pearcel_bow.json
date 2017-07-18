@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " XY",
+    "Z Y",
+    " XY"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_stick"
+    },
+    "Y": {
+      "item": "minecraft:string"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_bow",
+    "count": 1
+  }
+}

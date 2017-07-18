@@ -151,7 +151,7 @@ public class ModItems {
         pearcel_leggings = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.LEGS).setUnlocalizedName("pearcel_leggings").setRegistryName("pearcel_leggings").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_boots = new ItemPearcelArmor(matPearcel, EntityEquipmentSlot.FEET).setUnlocalizedName("pearcel_boots").setRegistryName("pearcel_boots").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_staff = new ItemPearcelStaff(matToolPearcelStaff).setUnlocalizedName("pearcel_staff").setRegistryName("pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-        guardian_pearcel_staff = new ItemDragonPearcelStaff(matToolGuardianPearcelStaff).setUnlocalizedName("dragon_pearcel_staff").setRegistryName("dragon_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
+        guardian_pearcel_staff = new ItemDragonPearcelStaff(matToolGuardianPearcelStaff).setUnlocalizedName("guardian_pearcel_staff").setRegistryName("guardian_pearcel_staff").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pcp = new ItemPCP().setUnlocalizedName("pcp").setRegistryName("pcp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         ender_pearcel = new ItemEnderPearcel().setUnlocalizedName("ender_pearcel").setRegistryName("ender_pearcel").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         pearcel_bow = new ItemPearcelBow().setUnlocalizedName("pearcel_bow").setRegistryName("pearcel_bow").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);

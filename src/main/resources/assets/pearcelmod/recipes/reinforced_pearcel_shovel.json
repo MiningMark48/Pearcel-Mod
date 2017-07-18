@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "Y",
+    "Z"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_shovel"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:reinforced_pearcel_shovel",
+    "count": 1
+  }
+}

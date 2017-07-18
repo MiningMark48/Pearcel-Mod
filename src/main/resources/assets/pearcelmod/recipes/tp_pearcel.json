@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "minecraft:diamond"
+    },
+    "Z": {
+      "item": "pearcelmod:ender_pearcel"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:tp_pearcel",
+    "count": 1
+  }
+}

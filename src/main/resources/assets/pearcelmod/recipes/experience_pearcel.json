@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "ABA",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_ingot"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Z": {
+      "item": "minecraft:emerald"
+    },
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "B": {
+      "item": "pearcelmod:pearcel_item"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:experience_pearcel",
+    "count": 1
+  }
+}
