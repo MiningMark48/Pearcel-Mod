@@ -24,15 +24,6 @@ public class ClientProxy extends CommonProxy{
 
     @Override
     public void preInit(FMLPreInitializationEvent event) {
-        OBJLoader.INSTANCE.addDomain(Reference.MOD_ID);
-
-        registerModel(ModItems.pearcel_staff);
-        registerModel(ModItems.guardian_pearcel_staff);
-    }
-
-    @Override
-    public void registerModel(Item item) {
-        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 
     @Override
