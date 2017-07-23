@@ -1,0 +1,26 @@
+{
+  "type": "pearcelmod:copy_nbt",
+  "pattern": [
+    "AYA",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_magnet"
+    },
+    "A": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_magnet_advanced",
+    "count": 1
+  }
+}

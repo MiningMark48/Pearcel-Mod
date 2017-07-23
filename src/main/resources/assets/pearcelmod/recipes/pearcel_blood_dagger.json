@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BZZ",
+    "AXZ",
+    "YAB"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_sword"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_ingot"
+    },
+    "A": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "A": {
+      "item": "pearcelmod:pearcel_glass"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_blood_dagger",
+    "count": 1
+  }
+}

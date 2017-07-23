@@ -183,6 +183,7 @@ public class ModItems {
         throw_pearcel_entity_firework = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_LAUNCH, 32).setUnlocalizedName("throw_pearcel_entity_firework").setRegistryName("throw_pearcel_entity_firework").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         throw_pearcel_entity_mount = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_MOUNT, 32).setUnlocalizedName("throw_pearcel_entity_mount").setRegistryName("throw_pearcel_entity_mount").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
+
     }
 
 }

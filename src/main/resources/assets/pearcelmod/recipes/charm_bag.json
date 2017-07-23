@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:wool"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_storage_crate"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:charm_bag",
+    "count": 1
+  }
+}

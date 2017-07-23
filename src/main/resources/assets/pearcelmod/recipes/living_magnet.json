@@ -1,0 +1,26 @@
+{
+  "type": "pearcelmod:copy_nbt",
+  "pattern": [
+    "XAX",
+    "BYB",
+    "XAX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_magnet"
+    },
+    "A": {
+      "item": "minecraft:feather"
+    },
+    "B": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:living_magnet",
+    "count": 1
+  }
+}
