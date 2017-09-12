@@ -82,7 +82,7 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
 
     private void doMount(RayTraceResult result){
         if(!getEntityWorld().isRemote) {
-            if(result.entityHit != null) {
+            if(result.entityHit != null && !result.entityHit.isBeingRidden() && !result.entityHit.isRiding()) {
                 thrower.startRiding(result.entityHit);
             }
         }
