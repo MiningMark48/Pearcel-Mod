@@ -100,6 +100,7 @@ public class GuiManual extends GuiScreen{
 
     @Override
     public void drawScreen(int parWidth, int parHeight, float par3){
+        this.drawDefaultBackground();
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 
         //Textures

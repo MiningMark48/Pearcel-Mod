@@ -56,6 +56,12 @@ public class GuiPearcelFurnace extends GuiContainer {
         this.drawTexturedModalRect(i + 79, j + 34, 176, 14, l + 1, 16);
     }
 
+    @Override
+    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        this.drawDefaultBackground();
+        super.drawScreen(mouseX, mouseY, partialTicks);
+    }
+
     private int getCookProgressScaled(int pixels)
     {
         int i = this.tileFurnace.getField(2);

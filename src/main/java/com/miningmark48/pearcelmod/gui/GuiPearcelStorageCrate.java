@@ -48,5 +48,11 @@ public class GuiPearcelStorageCrate extends GuiContainer{
         this.fontRenderer.drawString(s, x, 5, 0x404040);
     }
 
+    @Override
+    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        this.drawDefaultBackground();
+        super.drawScreen(mouseX, mouseY, partialTicks);
+    }
+
 
 }
