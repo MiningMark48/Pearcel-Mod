@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:charmed_pearcel"
+    },
+    {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    {
+      "item": "minecraft:anvil",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:charmed_pearcel",
+    "count": 1,
+    "nbt": { "type": "repair" }
+  }
+}

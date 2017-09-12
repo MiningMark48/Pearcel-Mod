@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:charmed_pearcel"
+    },
+    {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:charmed_pearcel",
+    "count": 1,
+    "nbt": { "type": "water" }
+  }
+}

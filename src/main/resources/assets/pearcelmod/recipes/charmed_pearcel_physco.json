@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:charmed_pearcel"
+    },
+    {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    [
+      {
+        "item": "minecraft:skull",
+        "data": 0
+      },
+      {
+        "item": "minecraft:skull",
+        "data": 1
+      },
+      {
+        "item": "minecraft:skull",
+        "data": 2
+      },
+      {
+        "item": "minecraft:skull",
+        "data": 3
+      }
+    ]
+  ],
+  "result": {
+    "item": "pearcelmod:charmed_pearcel",
+    "count": 1,
+    "nbt": { "type": "physco" }
+  }
+}

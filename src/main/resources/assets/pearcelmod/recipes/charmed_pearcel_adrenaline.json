@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:charmed_pearcel"
+    },
+    {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "pearcelmod:pearcel_pickaxe"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:charmed_pearcel",
+    "count": 1,
+    "nbt": { "type": "adrenaline" }
+  }
+}
