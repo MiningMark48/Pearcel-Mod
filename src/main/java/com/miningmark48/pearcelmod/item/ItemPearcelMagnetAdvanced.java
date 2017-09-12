@@ -106,7 +106,7 @@ public class ItemPearcelMagnetAdvanced extends ItemEnergyContainer implements IB
                             world.spawnParticle(EnumParticleTypes.CLOUD, e.posX, e.posY + 0.3, e.posZ, 0.0D, 0.0D, 0.0D);
                         }
 
-                        e.setPositionAndUpdate(player.posX, player.posY, player.posZ);
+                        e.setLocationAndAngles(player.posX, player.posY, player.posZ, e.rotationYaw, e.rotationPitch);
 
                         useEnergy(stack, ConfigurationHandler.rfPerTick_magnet + (ConfigurationHandler.rfPerTick_magnet / 2), false, player);
 
@@ -115,7 +115,7 @@ public class ItemPearcelMagnetAdvanced extends ItemEnergyContainer implements IB
                 for (EntityXPOrb e: xp){
                     if (!player.isSneaking()){
 
-                        e.setPositionAndUpdate(player.posX, player.posY, player.posZ);
+                        e.setLocationAndAngles(player.posX, player.posY, player.posZ, e.rotationYaw, e.rotationPitch);
 
                         useEnergy(stack, ConfigurationHandler.rfPerTick_magnet + (ConfigurationHandler.rfPerTick_magnet / 2), false, player);
 
