@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:neutral_pearcel_matter"
+    },
+    {
+      "item": "pearcelmod:tier_2_crafting_component"
+    }
+  ],
+  "result": {
+    "item": "pearcelmod:pearcel_matter",
+    "count": 2
+  }
+}

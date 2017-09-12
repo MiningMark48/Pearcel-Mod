@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX ",
+    "   ",
+    "X  "
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_matter"
+    }
+  },
+  "result": {
+    "item": "minecraft:reeds",
+    "count": 48
+  }
+}

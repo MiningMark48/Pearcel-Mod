@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_matter"
+    }
+  },
+  "result": {
+    "item": "minecraft:obsidian",
+    "count": 48
+  }
+}

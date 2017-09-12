@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pearcelmod:pearcel_matter"
+    },
+    {
+      "item": "minecraft:stone",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "minecraft:stonebrick",
+    "data": 0,
+    "count": 64
+  }
+}

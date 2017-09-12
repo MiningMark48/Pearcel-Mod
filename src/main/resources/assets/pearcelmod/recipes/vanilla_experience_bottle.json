@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX ",
+    "X  "
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_matter"
+    }
+  },
+  "result": {
+    "item": "minecraft:experience_bottle",
+    "count": 16
+  }
+}
