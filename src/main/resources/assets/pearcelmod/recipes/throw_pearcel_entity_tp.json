@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Y ",
+    "XXX",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "minecraft:snowball"
+    },
+    "Z": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:throw_pearcel_entity_tp",
+    "count": 1
+  }
+}

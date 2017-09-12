@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_ingot"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_furnace"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_furnace",
+    "count": 1
+  }
+}

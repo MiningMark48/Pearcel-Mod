@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "ZZZ"
+  ],
+  "key": {
+    "X": [
+      {
+        "item": "minecraft:glass"
+      },
+      {
+        "item": "pearcelmod:pearcel_glass"
+      }
+    ],
+    "Y": {
+      "item": "pearcelmod:pearcel_star"
+    },
+    "Z": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "minecraft:beacon",
+    "count": 1
+  }
+}

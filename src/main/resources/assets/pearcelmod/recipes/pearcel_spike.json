@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "YAY",
+    "ZBZ"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_stick"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_block"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_planks"
+    },
+    "A": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    },
+    "B": {
+      "item": "pearcelmod:pearcel_ingot_block"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_spike",
+    "count": 3
+  }
+}

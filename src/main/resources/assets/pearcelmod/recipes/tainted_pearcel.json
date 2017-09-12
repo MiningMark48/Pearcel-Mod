@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZXZ",
+    "XYX",
+    "ZXZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:nether_wart"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_stone"
+    },
+    "Z": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:tainted_pearcel",
+    "count": 32
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "YAY",
+    "ZBZ"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_spike_ender"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_block"
+    },
+    "Z": {
+      "item": "pearcelmod:ender_pearcel_block"
+    },
+    "A": {
+      "item": "pearcelmod:tier_4_crafting_component"
+    },
+    "B": {
+      "item": "pearcelmod:pearcel_ingot_block"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_spike_guardian",
+    "count": 6
+  }
+}

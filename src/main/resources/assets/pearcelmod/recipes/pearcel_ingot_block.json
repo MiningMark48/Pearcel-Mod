@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_ingot"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_ingot_block",
+    "count": 1
+  }
+}

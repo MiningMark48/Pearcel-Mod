@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "XYX",
+    " X "
+  ],
+  "key": {
+    "X": [
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 1
+      }
+    ],
+    "Y": {
+      "item": "pearcelmod:pearcel_item"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_sand",
+    "count": 4
+  }
+}

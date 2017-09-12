@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_block"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_bricks",
+    "count": 16
+  }
+}

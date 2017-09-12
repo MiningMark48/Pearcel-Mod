@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_cobblestone"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_1_crafting_component"
+    },
+    "Z": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_furnace",
+    "count": 1
+  }
+}

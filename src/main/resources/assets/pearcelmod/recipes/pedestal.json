@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    " Z ",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_planks"
+    },
+    "Y": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    },
+    "Z": {
+      "item": "pearcelmod:pearcel_stick"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pedestal",
+    "count": 2
+  }
+}

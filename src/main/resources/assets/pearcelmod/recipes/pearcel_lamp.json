@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "pearcelmod:irradiated_pearcel_block"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_1_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_lamp",
+    "count": 8
+  }
+}

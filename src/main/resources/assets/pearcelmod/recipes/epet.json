@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZXZ",
+    "AYA",
+    "XZX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:polished_pearcel_stone"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_star"
+    },
+    "Z": {
+      "item": "pearcelmod:ender_pearcel_block"
+    },
+    "A": {
+      "item": "pearcelmod:tier_3_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_beacon",
+    "count": 1
+  }
+}

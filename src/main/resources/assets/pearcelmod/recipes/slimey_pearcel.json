@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZXZ",
+    "XYX",
+    "ZXZ"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:slime_ball"
+    },
+    "Y": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_1_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:slimey_pearcel",
+    "count": 1
+  }
+}

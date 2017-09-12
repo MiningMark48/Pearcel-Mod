@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_charcoal"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:pearcel_charcoal_block",
+    "count": 1
+  }
+}

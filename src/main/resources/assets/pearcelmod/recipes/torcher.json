@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:tnt"
+    },
+    "Y": {
+      "item": "minecraft:torch"
+    },
+    "Z": {
+      "item": "pearcelmod:tier_2_crafting_component"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:torcher",
+    "count": 4
+  }
+}
