@@ -1,6 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
-import cofh.api.energy.ItemEnergyContainer;
+import cofh.redstoneflux.impl.ItemEnergyContainer;
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
@@ -22,7 +22,7 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ItemPearcelBlockPlacer extends ItemEnergyContainer{
+public class ItemPearcelBlockPlacer extends ItemEnergyContainer {
 
     public ItemPearcelBlockPlacer(){
         super(ConfigurationHandler.rfStorage_pbp, ConfigurationHandler.rfTransferPerTick_pbp);

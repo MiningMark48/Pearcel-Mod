@@ -1,6 +1,6 @@
 package com.miningmark48.pearcelmod.tileentity;
 
-import cofh.api.energy.IEnergyProvider;
+import cofh.redstoneflux.api.IEnergyProvider;
 import com.miningmark48.pearcelmod.handler.IGeneratorFuelHandler;
 import com.miningmark48.pearcelmod.init.GeneratorRegistry;
 import com.miningmark48.pearcelmod.init.ModBlocks;
@@ -21,7 +21,7 @@ import net.minecraftforge.energy.*;
 
 import javax.annotation.Nullable;
 
-public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyStorage, ITickable, IEnergyProvider{
+public class TileEntityPearcelGenerator extends TileEntity implements IInventory, IEnergyStorage, ITickable, IEnergyProvider {
 
     private int increase_per_tick;
 

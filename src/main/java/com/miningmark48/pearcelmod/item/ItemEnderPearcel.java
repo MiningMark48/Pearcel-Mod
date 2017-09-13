@@ -1,6 +1,6 @@
 package com.miningmark48.pearcelmod.item;
 
-import cofh.api.energy.ItemEnergyContainer;
+import cofh.redstoneflux.impl.ItemEnergyContainer;
 import com.miningmark48.mininglib.utility.KeyChecker;
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.entity.EntityEnderPearcel;
