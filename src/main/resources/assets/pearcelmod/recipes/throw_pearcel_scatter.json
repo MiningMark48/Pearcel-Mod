@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Y ",
+    "XZX",
+    "ZZZ"
+  ],
+  "key": {
+    "X": {
+      "item": "pearcelmod:pearcel_item"
+    },
+    "Y": {
+      "item": "pearcelmod:throw_pearcel_explosive"
+    },
+    "Z": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "item": "pearcelmod:throw_pearcel_scatter",
+    "count": 1
+  }
+}

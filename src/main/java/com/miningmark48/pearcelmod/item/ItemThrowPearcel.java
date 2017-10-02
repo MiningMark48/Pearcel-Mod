@@ -2,11 +2,9 @@ package com.miningmark48.pearcelmod.item;
 
 import com.miningmark48.pearcelmod.entity.EntityThrowPearcel;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemSnowball;
 import net.minecraft.item.ItemStack;
-import net.minecraft.stats.StatList;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
@@ -41,7 +39,7 @@ public class ItemThrowPearcel extends ItemSnowball{
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemStackIn);
     }
 
-    public void launchThrowball(World world, EntityPlayer player) {
+    private void launchThrowball(World world, EntityPlayer player) {
         EntityThrowPearcel entity = new EntityThrowPearcel(world, player, type);
         entity.setHeadingFromThrower(player, player.rotationPitch, player.rotationYaw, 0.0F, 2.1F, 0.5F);
         world.spawnEntity(entity);
@@ -49,6 +47,7 @@ public class ItemThrowPearcel extends ItemSnowball{
 
     public enum TYPE{
         EXPLOSIVE,
+        SCATTER,
         ENTITY_TP,
         ENTITY_LAUNCH,
         ENTITY_MOUNT

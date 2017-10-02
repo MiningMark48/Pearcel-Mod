@@ -99,6 +99,7 @@ public class ModRegistry {
         registerItem(ModItems.throw_pearcel_entity_tp);
         registerItem(ModItems.throw_pearcel_entity_firework);
         registerItem(ModItems.throw_pearcel_entity_mount);
+        registerItem(ModItems.throw_pearcel_scatter);
     }
 
     private static void registerBlocks(){
@@ -233,6 +234,7 @@ public class ModRegistry {
         registerItemRender(ModItems.throw_pearcel_entity_tp);
         registerItemRender(ModItems.throw_pearcel_entity_firework);
         registerItemRender(ModItems.throw_pearcel_entity_mount);
+        registerItemRender(ModItems.throw_pearcel_scatter);
     }
 
     public static void registerRenderBlocks(){

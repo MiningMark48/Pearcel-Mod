@@ -12,6 +12,10 @@ import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 import javax.annotation.Nonnull;
 
+import java.util.Random;
+
+import static com.miningmark48.pearcelmod.item.ItemThrowPearcel.TYPE.*;
+
 public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditionalSpawnData{
 
     public ItemThrowPearcel.TYPE type;
@@ -48,6 +52,10 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
                     break;
                 case ENTITY_MOUNT:
                     doMount(result);
+                    break;
+                case SCATTER:
+                    doScatter();
+                    break;
                 default:
                     break;
             }
@@ -88,6 +96,35 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
         }
     }
 
+    private void doScatter(){
+        doExplosion(4.0f);
+        float baseVelocity = 0.75f;
+        float heightVelocityMultiplier = 1.5f;
+        int iMax = 8;
+        if (!getEntityWorld().isRemote){
+            if (iMax % 2 != 0) iMax--;
+            for (int i = 0; i <= iMax; i++){
+                Random rand = new Random();
+                EntityThrowPearcel entity = new EntityThrowPearcel(world, thrower, EXPLOSIVE);
+                entity.setPositionAndUpdate(this.posX, this.posY, this.posZ);
+                if (i % 2 == 0){
+                    if (i <= iMax / 2){
+                        entity.addVelocity(rand.nextFloat() * baseVelocity, baseVelocity * heightVelocityMultiplier, rand.nextFloat() * baseVelocity);
+                    }else{
+                        entity.addVelocity(rand.nextFloat() * baseVelocity, baseVelocity * heightVelocityMultiplier, -rand.nextFloat() * baseVelocity);
+                    }
+                }else{
+                    if (i <= iMax / 2) {
+                        entity.addVelocity(-rand.nextFloat() * baseVelocity, baseVelocity * heightVelocityMultiplier, -rand.nextFloat() * baseVelocity);
+                    }else{
+                        entity.addVelocity(-rand.nextFloat() * baseVelocity, baseVelocity * heightVelocityMultiplier, rand.nextFloat() * baseVelocity);
+                    }
+                }
+                world.spawnEntity(entity);
+            }
+        }
+    }
+
     @Override
     public void writeEntityToNBT(NBTTagCompound compound) {
         super.writeEntityToNBT(compound);
@@ -116,7 +153,7 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
 
     private void ensureType(){
         if (type == null){
-            type = ItemThrowPearcel.TYPE.EXPLOSIVE;
+            type = EXPLOSIVE;
         }
     }
 }

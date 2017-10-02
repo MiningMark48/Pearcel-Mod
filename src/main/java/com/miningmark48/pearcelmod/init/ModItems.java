@@ -6,6 +6,7 @@ import com.miningmark48.pearcelmod.reference.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -102,6 +103,7 @@ public class ModItems {
     public static Item throw_pearcel_entity_tp;
     public static Item throw_pearcel_entity_firework;
     public static Item throw_pearcel_entity_mount;
+    public static Item throw_pearcel_scatter;
 
     public static void init(){
         //General Items
@@ -182,7 +184,7 @@ public class ModItems {
         throw_pearcel_entity_tp = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_TP, 32).setUnlocalizedName("throw_pearcel_entity_tp").setRegistryName("throw_pearcel_entity_tp").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         throw_pearcel_entity_firework = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_LAUNCH, 32).setUnlocalizedName("throw_pearcel_entity_firework").setRegistryName("throw_pearcel_entity_firework").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
         throw_pearcel_entity_mount = new ItemThrowPearcel(ItemThrowPearcel.TYPE.ENTITY_MOUNT, 32).setUnlocalizedName("throw_pearcel_entity_mount").setRegistryName("throw_pearcel_entity_mount").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
-
+        throw_pearcel_scatter = new ItemThrowPearcel(ItemThrowPearcel.TYPE.SCATTER, 16).setUnlocalizedName("throw_pearcel_scatter").setRegistryName("throw_pearcel_scatter").setCreativeTab(CreativeTabPearcelMod.PearcelMod_TAB);
 
     }
 
