@@ -21,6 +21,7 @@ public class ConfigurationHandler {
     public static boolean enableStructure1;
     public static boolean enableStructure2;
     public static boolean enableStructure3;
+    public static boolean enableWikiJoinMessage;
     public static int torcherRange;
     public static int torcherFrequency;
     public static int maxStaffFlyHeight;
@@ -103,7 +104,6 @@ public class ConfigurationHandler {
         configuration.addCustomCategoryComment(ModTranslate.toLocal("config.category.powerUsage.title"), ModTranslate.toLocal("config.category.powerUsage.desc"));
         configuration.setCategoryRequiresWorldRestart(ModTranslate.toLocal("config.category.structures.title"), true);
 
-
         maxStaffFlyHeight = configuration.getInt(ModTranslate.toLocal("config.maxStaffFlyHeight.title"), Configuration.CATEGORY_GENERAL, 150, 1, 256, ModTranslate.toLocal("config.maxStaffFlyHeight.desc"));
         pearcelDropChance = configuration.getInt(ModTranslate.toLocal("config.pearcelDropChance.title"), Configuration.CATEGORY_GENERAL, 20, 1, 100, ModTranslate.toLocal("config.pearcelDropChance.desc"));
         matterFabricatorMPAmount = configuration.getInt(ModTranslate.toLocal("config.matterFabricatorMPAmount.title"), Configuration.CATEGORY_GENERAL, 128, 1, Integer.MAX_VALUE, ModTranslate.toLocal("config.matterFabricatorMPAmount.desc"));
@@ -111,6 +111,9 @@ public class ConfigurationHandler {
         glowingPearcelRange = configuration.getInt(ModTranslate.toLocal("config.glowingPearcelRange.title"), Configuration.CATEGORY_GENERAL, 35, 1, Integer.MAX_VALUE, ModTranslate.toLocal("config.glowingPearcelRange.desc"));
         doRIFArmorFlight = configuration.getBoolean(ModTranslate.toLocal("config.doRIFArmorFlight.title"), Configuration.CATEGORY_GENERAL, true, ModTranslate.toLocal("config.doRIFArmorFlight.desc"));
         creativeTabSearchBar = configuration.getBoolean(ModTranslate.toLocal("config.creativeTabSearchBar.title"), Configuration.CATEGORY_GENERAL, false, ModTranslate.toLocal("config.creativeTabSearchBar.desc"));
+        enableWikiJoinMessage = configuration.getBoolean(ModTranslate.toLocal("config.enableWikiJoinMessage.title"), Configuration.CATEGORY_GENERAL, false, ModTranslate.toLocal("config.enableWikiJoinMessage.desc"));
+
+        //Pearcel Furnace
         pearcelFurnace_speedMultiplier = configuration.getInt(ModTranslate.toLocal("config.pearcelFurnace_speedMultiplier.title"), Configuration.CATEGORY_GENERAL, 3, 0, Integer.MAX_VALUE, ModTranslate.toLocal("config.pearcelFurnace_speedMultiplier.desc"));
         pearcelFurnace_efficiency = configuration.getInt(ModTranslate.toLocal("config.pearcelFurnace_efficiency.title"), Configuration.CATEGORY_GENERAL, 2, 0, Integer.MAX_VALUE, ModTranslate.toLocal("config.pearcelFurnace_efficiency.desc"));
 

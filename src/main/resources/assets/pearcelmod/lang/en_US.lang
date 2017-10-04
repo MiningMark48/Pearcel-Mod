@@ -457,6 +457,10 @@ config.enableStructure2.title=Enable Pearcel Tower
 config.enableStructure2.desc=If false, structure won't spawn.
 config.enableStructure3.title=Enable Pearcel Fountain
 config.enableStructure3.desc=If false, structure won't spawn.
+config.enableWikiJoinMessage.title=Wiki Join Message
+config.enableWikiJoinMessage.desc=When enabled, the player will be greeted with a Pearcel Mod wiki message.
+
+#RF Configs
 config.rfUseEnabled.desc=Use RF
 config.rfPerTick.desc=RF/T Amount
 config.rfPerUse.desc=RF/Use Amount

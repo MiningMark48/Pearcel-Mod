@@ -2,6 +2,7 @@ package com.miningmark48.pearcelmod.event;
 
 import com.miningmark48.mininglib.utility.ModTranslate;
 import com.miningmark48.pearcelmod.PearcelMod;
+import com.miningmark48.pearcelmod.handler.ConfigurationHandler;
 import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -16,7 +17,7 @@ public class EventOnJoin{
     @SubscribeEvent
     public void onJoin(TickEvent.PlayerTickEvent e){
 
-        if (!JoinMessageWikiSent && e.player.world.isRemote){ //TODO: Make config setting for message
+        if (ConfigurationHandler.enableWikiJoinMessage && !JoinMessageWikiSent && e.player.world.isRemote){
             ClickEvent versionCheckClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "http://miningmark48.xyz/pearcelmod");
 
             e.player.sendMessage(new TextComponentString(TextFormatting.GREEN + ModTranslate.toLocal("chat.joinMessage.wiki")).setStyle(new Style().setClickEvent(versionCheckClickEvent)));
