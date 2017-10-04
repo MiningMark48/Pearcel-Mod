@@ -10,7 +10,6 @@ import com.miningmark48.pearcelmod.init.*;
 import com.miningmark48.pearcelmod.item.ItemPearcelFuel;
 import com.miningmark48.pearcelmod.proxy.CommonProxy;
 import com.miningmark48.pearcelmod.reference.Reference;
-import com.miningmark48.pearcelmod.utility.VersionChecker;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel1;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel2;
 import com.miningmark48.pearcelmod.world.StructureGenPearcel3;
@@ -26,10 +25,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, dependencies = Reference.MOD_DEPENDENCIES, acceptedMinecraftVersions = Reference.GAME_VERSION)
 public class PearcelMod {
-
-	// Version checking instance
-	public static VersionChecker versionChecker;
-	public static boolean haveWarnedVersionOutOfDate = false;
 
 	@Mod.Instance(Reference.MOD_ID)
 	public static PearcelMod instance;
@@ -94,10 +89,6 @@ public class PearcelMod {
 	public void postInit(FMLPostInitializationEvent event){
 
 		ModLogger.info(ModTranslate.toLocal("log.info.postinit"));
-
-		versionChecker = new VersionChecker();
-		Thread versionCheckThread = new Thread(versionChecker, "Pearcel Mod Version Check");
-		versionCheckThread.start();
 
 	}
 
