@@ -1,5 +1,6 @@
 package com.miningmark48.pearcelmod.entity;
 
+import com.miningmark48.mininglib.utility.ModLogger;
 import com.miningmark48.pearcelmod.item.ItemThrowPearcel;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.EntityLivingBase;
@@ -39,26 +40,31 @@ public class EntityThrowPearcel extends EntityThrowable implements IEntityAdditi
 
     @Override
     protected void onImpact(@Nonnull RayTraceResult result) {
-        if (type != null){
-            switch (type){
-                case EXPLOSIVE:
-                    doExplosion(6F);
-                    break;
-                case ENTITY_TP:
-                    doTP(result);
-                    break;
-                case ENTITY_LAUNCH:
-                    doLaunch(result, 2.25D);
-                    break;
-                case ENTITY_MOUNT:
-                    doMount(result);
-                    break;
-                case SCATTER:
-                    doScatter();
-                    break;
-                default:
-                    break;
+        try {
+            if (type != null) {
+                switch (type) {
+                    case EXPLOSIVE:
+                        doExplosion(6F);
+                        break;
+                    case ENTITY_TP:
+                        doTP(result);
+                        break;
+                    case ENTITY_LAUNCH:
+                        doLaunch(result, 2.25D);
+                        break;
+                    case ENTITY_MOUNT:
+                        doMount(result);
+                        break;
+                    case SCATTER:
+                        doScatter();
+                        break;
+                    default:
+                        break;
+                }
             }
+        } catch (NullPointerException e){
+            ModLogger.fatal("NPE was caught while running onImpact from Throw Pearcel");
+            e.printStackTrace();
         }
 
         if (!this.getEntityWorld().isRemote){
