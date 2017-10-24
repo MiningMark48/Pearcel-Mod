@@ -36,11 +36,7 @@ public class ItemPearcelCrook extends ItemSword {
     @Override
     public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving)
     {
-        if ((double)state.getBlockHardness(worldIn, pos) != 0.0D)
-        {
-            stack.damageItem(1, entityLiving);
-        }
-
+        stack.damageItem(1, entityLiving);
         return true;
     }
 }
