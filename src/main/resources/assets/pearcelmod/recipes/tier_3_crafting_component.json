@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XYX",
-    "YZY",
-    "XYX"
+    "XZX",
+    "ZYZ",
+    "XZX"
   ],
   "key": {
     "X": {
@@ -13,11 +13,11 @@
       "item": "minecraft:diamond"
     },
     "Z": {
-      "item": "pearcelmod:pearcel_item"
+      "item": "pearcelmod:tier_2_crafting_component"
     }
   },
   "result": {
     "item": "pearcelmod:tier_3_crafting_component",
-    "count": 6
+    "count": 1
   }
 }
